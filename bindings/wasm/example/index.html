@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BulkParse local conversion</title>
+<style>body{font:16px system-ui;max-width:850px;margin:48px auto;padding:0 20px}pre{white-space:pre-wrap;background:#f4f5f7;padding:20px;border-radius:8px}button,input{font:inherit;margin:8px 0}</style>
+<h1>BulkParse</h1>
+<p>Convert a document locally in your browser. Files are not uploaded.</p>
+<input id="file" type="file" accept=".txt,.md,.csv,.tsv,.ipynb,.docx,.pdf" disabled>
+<p id="status" role="status">Loading the engine…</p>
+<pre id="output"></pre>
+<script type="module">
+const worker = new Worker('./worker.js', {type:'module'});
+const input = document.querySelector('#file');
+const status = document.querySelector('#status');
+worker.onmessage = ({data}) => {
+  if (data.ready) { input.disabled = false; status.textContent = 'Ready'; return; }
+  input.disabled = false;
+  status.textContent = data.error ?? `Conversion ${data.result.status}`;
+  document.querySelector('#output').textContent = data.result ? JSON.stringify(data.result, null, 2) : '';
+};
+worker.onerror = event => {status.textContent = event.message; input.disabled = false;};
+input.onchange = async () => {
+  const file = input.files[0]; if (!file) return;
+  if (file.size > 33554432) { status.textContent='File exceeds the 32 MiB limit.'; return; }
+  input.disabled = true; status.textContent='Converting…';
+  const buffer = await file.arrayBuffer();
+  worker.postMessage({buffer, filename:file.name}, [buffer]);
+};
+</script>
+</html>

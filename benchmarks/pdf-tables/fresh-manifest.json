@@ -1,0 +1,38 @@
+[
+  {
+    "id": "four-columns-empty-cell",
+    "sha256": "c4b649824ce6675eceac3b7bcc95bc055d47803d88801ce4f523e9c034b5409b"
+  },
+  {
+    "id": "no-header-numeric",
+    "sha256": "1e3c0fb51823a13661b39151ae24ae06ce7eb320f2f48da7e2d99bf047bea337"
+  },
+  {
+    "id": "wrapped-cells",
+    "sha256": "d3589f156ba31c1684c5163bab061b43ea1498779a0a878e86b1fa5ad2f2a6cf"
+  },
+  {
+    "id": "two-separated-tables",
+    "sha256": "492b01ecb194ab3d6d23d40ecf66b20ef7e49afe2b51c584b73e011c9932968c"
+  },
+  {
+    "id": "surrounding-prose",
+    "sha256": "1eced5053e2985a7db51d8c21c3c1a908e4183819d6525426457c7d3556db2bf"
+  },
+  {
+    "id": "offset-small-font",
+    "sha256": "b93089737d9c4aebf269fa6852025c413c7c7c474bee8183cdc4a50bda3ab154"
+  },
+  {
+    "id": "border-only-ambiguous",
+    "sha256": "658d30fe83391cb1b763b29121a7314ad14b73ebb71bf02d72e1d7336b01a30d"
+  },
+  {
+    "id": "ruled-single-column-prose",
+    "sha256": "cf416ed31e99d030ab44eb550168b34fbc1351ba76b1a758130c1e1489e3277d"
+  },
+  {
+    "id": "spanning-cell-ambiguous",
+    "sha256": "c729e02ec012d0b50ae88debe4c8e3688e45e4154561a312c3dbef20d7ee8f08"
+  }
+]

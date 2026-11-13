@@ -1,0 +1,6 @@
+{
+  "rust_source_sha256": "a1fa1554adcd2555ecc730a1deaa4bd6f0e847f7d625d24e3ce333d80c8fadf7",
+  "binary_sha256": "d782b918abf41125fdf6b55f4520c37decb6e0c9296fef98df1c1017efb36492",
+  "baseline_binary_sha256": "a22574b9a04cb71802f76998bafb6b1f38ea4d02d52f01d3d02d2a6da8710213",
+  "policy": "Adds general clipped-word rejection after corpus review. All previous nine authored cases are now regression cases."
+}

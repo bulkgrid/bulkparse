@@ -1,0 +1,9 @@
+{
+  "default_measured_passes": 1,
+  "default_warmup_passes": 0,
+  "purpose": "Find and fix capability and performance gaps before spending time on repeated benchmarking.",
+  "repeat_only_for": "Explicit final validation after comparable coverage, source-checked quality and competitive speed/CPU/memory are demonstrated.",
+  "iteration": "Run BulkParse on affected and regression inputs; reuse frozen competitor outputs unless their version or configuration changes.",
+  "quality": "Do not count partial prefixes or nonempty output as complete extraction. No fabricated quality scores.",
+  "final_validation_flags": "--final-validation --passes 5 --warmup"
+}

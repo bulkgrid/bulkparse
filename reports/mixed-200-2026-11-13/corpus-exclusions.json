@@ -1,0 +1,3025 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/jakevdp/PythonDataScienceHandbook/master/notebooks/02.02-The-Basics-of-NumPy-Arrays.ipynb",
+    "reason": "download failure",
+    "detail": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/57a089b9e5274a31e0000228/ar5-pres-ilri-140623050758-phpapp01.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60acdc1de90e071b54214c2a/Promoting-gender-smart-manufacturing.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6051c878d3bf7f04528c53e3/WOW-Helpdesk-query-57.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fd229f3e90e076631fb21fb/Support_materials_and_advance_information_for_GCSE_AS_and_A_levels_in_2021.pptx",
+    "reason": "source exceeds 15 MiB download cap"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a82d94e40f0b62305b94abe/2017-09-21_Skills_and_Employability_-_The_Regulator_s_view.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5de8ee75e5274a06d662b1a9/Query-32-presentation-Transitions-Labour-Market.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/659d79077e3968000da81a90/Satellites_and_sea_water_-_slides.pptx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a0308d3e672177d0bc7705/Candidate_Process_Guide_-_2026.GOV.UK.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ebf36f6d1800802a31e783/WOW-programme-La-Igualdad-De-Genero-Es-Un-Buen_Negocio-March-2024.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fd22a0be90e07662b09d919/Support_materials_and_advance_information_for_GCSE_AS_and_A_levels_in_2021.odp",
+    "reason": "source exceeds 15 MiB download cap"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a030c507d7bff3604d6da0/WTPE_flyer4.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67aefdf82c594609b38acdad/Evidence_Digest_May_2024.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649033ddb32b9e000ca969aa/WOW_Helpdesk_Query_73_Womens_economic_empowerment_in_the_blue_economy_in_Small_Island_Developing_States_-_Carribean_slides.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a823074e5274a2e8ab57f68/2017-09-21_Skills_and_Employability_-_The_Regulator_s_view.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a03be2c497bac082bc770b/Candidate_Process_Guide_-_2026.GOV.UK.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67aefdda63d7f4cceef9e1ab/Evidence_Digest_February_2024_V2.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5bfbddad40f0b65b051658d7/regulatory-delivery-model-outline-presentation.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649033a35f7bb7000c7facf2/WOW_Helpdesk_Query_73_Women_s_economic_empowerment_in_the_blue_economy_in_Small_Island_Developing_States_-_Pacific_slides.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a03d1ec497bac082bc7711/WTPE_flyer4.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ed81eb69fa2ae94de74598/WOW-programme-Medir-La-Igualdad-de-genero-Es-Parte-Del-Negocio-March-2024.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66fff076e84ae1fd8592ee59/WOW-Evidence-Digest-September-2024.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5c6a6ea8ed915d4a3621cc06/bbfa-11-business-lifecycle.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6491613bb32b9e0012a96aba/WOW_Helpdesk_Query_71_women_s_economic_empowerment_drivers__slides_.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a03c226457311dafbbcd59/Advert2.odp",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/11.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/84.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67853bdff029f40e5088171c/12056.BNG.vf1_33343611.1_.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fc7c336d3bf7f7f5db85ba8/Excel_MacKay_Carbon_Calculator_v198.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/664b4c7eae748c43d3793e88/AFPS___Consolidated_Factor_Spreadsheet_2023-01.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6878eaf57ea2091686363904/9_Priory_road_-The_Statutory_Metric_Macro_Enabled_1.0.4.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60dda215d3bf7f7c33274622/regulatory-relief-tool.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/693831f66a12691d48491c79/The_Small_Sites_Metric_1.2.3.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f0789a599d03a16bff416/The_Statutory_Biodiversity_Metric_CNH24380_CH.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/696a1bff448fedc1eb4248a9/Provider_Bulkload_Spreadsheet_mac_v1.01.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d7f7231d56337f06b11f3f/Appendix_7._Statutory_Biodiversity_Metric_checked.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735d0a354652d03d5161112/12056.Statutory_BNG_Metric.vf_checked.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a1836201cc32678a5bd6e4/Provider_Bulkload_Spreadsheet_v1.40_Provider_release.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68220024d9c9bb76078f7f42/CFR_2024-25_XML_Generator_v_1.0.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4d19881828dd65c16a846/07._Biodiversity_Metric_4.0_Calculation_-_The_Downs__Stebbing_v2.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7dd7a3e5274a5eb14e784b/LAA-financial-eligibility-calculator-for-criminal-legal-aid.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67f51294b7e44efc70acc321/Applicant_to_Essex_County_Council_Ecology_Attachment_2_-_4_April_2025_-_Statutory_Biodiversity_Metric_Calculation_Tool.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/664b4bd3f34f9b5a56adcab0/AFPS___Consolidated_Factor_Spreadsheet_2023-04.xlsm",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4e32c4dd52dddeb16a857/R2_Biodiversity_Metric_4.0_Calculation_-_The_Downs__Stebbing_v2_checked.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f7df1ed915d74e622aca3/BIS-15-412-student_loan_repayment_model.xlsm",
+    "reason": "source exceeds 15 MiB download cap"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68cd42eab6d7ea468dbea6dc/SSM_baselineBASELINE.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b222f70808eaf43b50ddb3/552798sr06Jun24FV01_Terrace_SBM.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6866958fe134dfbc2e9e6d6d/The_Statutory_Biodiversity_Metric_CNH24380_REV_F.xlsm",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79c98de5274a18ba50ed4e/12-1215rf-consultation-on-implementing-employee-owner-status-form.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79ff66ed915d6eaf15305d/eemsuserguide.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a797be4e5274a3864fd7682/12-1193rf-civil-enforcement-remedies-consultation-on-extending-form.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a560040f0b66a2fc019b5/3595-atmospheric-calculation-simulations.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/696f839ff6aa424b452e3372/row_3349927_on.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79e09b40f0b66d161aecb7/human-resp-funding-logframe.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78e04de5274a277e690285/WF-Impact_of_the_Olympics.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a1fb8ed915d6d99f5d51a/radioactivity.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78ccc6e5274a277e68f8fd/12-1179rf-energy-intensive-industries-compensation-consultation-on-scheme-form.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0251f159f887526bbd92/ROW_3351043_Leeds_City_Council_DMMO_Rejection_Letter.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78c545ed915d0422065351/Item_14b_-_Response_to_consultation_-_Appendix_2_-_National_Lottery.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a796641e5274a2acd18c85b/CI_Economic_Estimates_feedback.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b27af3ae5274a190383bcef/NDA-Estate-Supplier-Event-2018-Supplier-Award-Export.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78feea40f0b676f4a7d09b/_International_comparisons_public_participationculture_and_sport-pt1.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b27c45840f0b634abe9131f/NDA-Estate-Supplier-Event-2018-Supplier-Award-application-people_strategy.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df4855f7bb7000c7fa4db/ORDERNOTICE_3310432__002_.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db0187540f0b609bbcd30b6/2._Support_for_Investments_on_Board_Fishing_Vessels_-_MFF_FBER_V_0.2.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df4865f7bb700127fa4b3/ROW_3302508_ON.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e68fa8f53bad5c9326/ROW_3221975M2_ON.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed02522adc28a81b4acfe7/ROW_3363729_Rejection_Letter.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79b04540f0b63d72fc7b68/human-resp-funding-output-cost-budget.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db0193940f0b609c0a95e97/EOI_Form_-_MFF_FBER_V_0.2.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a796fdbed915d07d35b5789/human-resp-funding-Concept-Note.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6537c6401bf90d000dd8450b/row_3295824_on.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78ac2fed915d07d35b1867/_International_comparisons_public_participationculture_and_sport-pt2.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78ba8bed915d07d35b1f7d/human-resp-funding-results-report.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78c1fde5274a277e68f3ad/human-resp-funding-mid-final-report.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ec002b8438f63153b1d94f/ROW_3317972_on.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79e593ed915d042206bd3f/12-1162rf-employee-ownership-share-buy-backs-consultation-form.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b27afb2ed915d2cddac83b1/NDA-Estate-Supplier-Event-2018-Supplier-Award-Ethical_Practice_and_Social_Responsibility.doc",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c4454e5274a1b004229b8/p21_measuring_outcomes_for_each_child.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a747fe2e5274a7f9c58678b/p13_understanding_environmental_factors.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c8496ed915d48c24104a3/p2_identifying_when_parenting_capacity_results_in_neglect.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c3288e5274a1f5cc76706/p26_understanding_barriers_to_recognition_and__response.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c486940f0b6321db38253/p3_identifying_family_and_environmental_factors_which_may_contribute_to_neglect.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c92b9ed915d6969f45d3b/p7_parenting_and_domestic_violence.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7cc37940f0b6629523baa6/p9_parenting_with_learning_disabilities.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7cb3ebed915d6822362036/p12_assessing_parental_capacity.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c0626e5274a7202e19116/p11_assessing_childrens_developmental_needs.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74b7a8ed915d4d83b5e613/p27_understanding_assessment_and_decision_making.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74dc91ed915d3c7d528860/p29_understanding_integrated_working.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c76d3ed915d48c240fe94/p10_parenting_with_mental_health_problems.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c789540f0b62aff6c1e6b/p28_understanding_cumulative_harm.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c2af8ed915d1d1741c898/p25_understanding_neglect_and_social_values.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c9bd2e5274a30fa38fd8f/p24_working_with_parents_with_learning_disabilities.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c9830e5274a7b7e3217e3/p30_child_neglect_and_supervision.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c9d6ee5274a30fa38fe45/p8_parenting_and_substance_misuse.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b82d3e5274a7318b8f227/p23_working_effectively_with_substance_misusing_parents.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c62a740f0b62aff6c14e2/p1_understanding_neglect.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74d83ae5274a3cb2867a48/p4_childrens_health_including_mental_health.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74ee2940f0b65c0e845a43/p15_communicating_with_parents.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7cb847e5274a2f304efab5/p5_neglect_and_young_people.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ca539ed915d6969f4657e/p16_assessing_the_role_of_fathersfather_figures.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ca15fed915d12ab4bc147/p20_the_role_of_schools.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74f135ed915d502d6cc3cd/p22_working_with_looked_after_children.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c2ecb40f0b674ed20f5c6/p14_assessing_attachment.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b81b9e5274a7318b8f1c9/p6_disabled_children.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c8870e5274a0bb7cb7a9d/p18_assessing_motivation_and_willingness_to_change.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c882de5274a7b7e321109/p17_understanding_the_contribution_extended_family.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b8d6540f0b645ba3c50f0/p19_effective_interventions_in_neglect_cases.ppt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a85c4b31b45e4e555421edf/passenger-arrivals-summary-jun-2026-tables.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64b807b02059dc000d5d2618/Ukraine_sponsorship_scheme_-_visa_data_18_July_2023.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/661d30b708c3be25cfbd3ede/row_3304242_mod_notice.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a9f860ab418ab05559302f/ROW_3319358_Order_notice_not_decision.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ffb8b40f0b62305b88766/The_Currency_Ordinance_1990.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5bf5500d40f0b60783ad9380/Boaty_McBoatface_50p.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/84.txt.utf-8",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1661.txt.utf-8",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/11.txt.utf-8",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/98.txt.utf-8",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67aa18df83dcca4d891ceaf2/11._TR01.2_Findings_of_Tree_Quality_Survey_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64903bbc103ca6000c03a11e/WOW_Helpdesk_Query_78_Sexual_exploitation_harassment_labour_market_May_2023.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/685a9450e9509f1a908eb110/Place_Services_-_Ecology_Consultant_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc3aed915d0e5d000105/120806_fipo_response_to_issues_statement.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc33e5274a226b0000bf/120724_independent_doctors_federation.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6955184da2fb6c15f98d18d9/DM23.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75831140f0b6360e474afc/n19_effective_interventions_in_neglect_cases.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcb340f0b60a76000158/consultant_128.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc95ed915d0e6000010b/consultant_71.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67c060a616dc9038974dbc4c/The_Clatterbridge_Cancer_Centre.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a7d024fc2bb7eed11aa8/BCS18_-_Housing_Type.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/54edcbc6e5274a4511000023/Private_healthcare_phase_2_timetable.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd9ced915d0e5d0001bb/140220_consultant_53.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5c6a7032e5274a72b26b3373/bbfa-00-journey-and-office-role.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67eebde2632d0f88e8248cfb/Erika_Finch_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/76.epub3.images",
+    "reason": "download failure",
+    "detail": "curl: (56) Maximum file size exceeded\n"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1661.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7e40f0b60a73000109/consultant_14.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db9ded915d0e5d00009d/evidence_on_switching_costs_ey.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6af3339ba4004bdbe54e547d/uk-duty-suspensions-2026-to-2027-application-and-extension-guidance.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e2ec16ae5274a6c3ee6901d/row_3235867_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735d43eb613efc3f18230d6/DLL_Bristol_Westbury_Ecological_Assessment_33057318.1__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d7f72179f0d993dfb11f39/060_PL_200_B_PROPOSED_GROUND_FLOOR.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbd4e5274a22680000c1/case_study_company_g.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5d31873140f0b64a8553160c/Evidence-digest-June-2019.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/53c5359aed915d106e00000b/Explanatory_memorandum.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcb5e5274a226b000133/consultant_131.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/584ad061ed915d0aeb000066/bupa-resp-vary-phmi-order14-and-implement-article-22.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b2245dce1fd0da7b5933a5/Flood_Risk_Assessment_CHECKED.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67bc96a0b3a80ad63e782ce4/Conservation_Area_Appraisal_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db48ed915d0e6000001b/views_of_investors_and_other_stakeholders.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f078ca599d03a16bff417/Transport_Assessment_April_2025_Appendix_C_-_Census_2021_Car_Ownerships_Data.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd8840f0b60a760001ca/140214_consultant_17.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682c3a57010c5c28d1c7e818/Sustainability_Statement_and_Energy_Assessment_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ae9c9fc0b4ef57b15121ef7/AFPS_Form_373.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682ef3dcb33f68eaba95395b/L23110.03.E_Hard_Landscape_Proposals_A1_Size_3_May_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fdc8c48e90e0745346e7b9f/Chapter_1_Gurkha_Service_Pensions.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc12e5274a22680000fb/appendices_part_4.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f078c7fb7a7d9cd7751e7/Transport_Assessment_April_2025_Appendix_E_-_2011_Census_Distribution_Data.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6808aafc92d50839757a61e0/Claire_Stopgate__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dce640f0b60a73000133/consultant_175.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6846961be5a089417c80611d/UK_Power_Networks_5_redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4d198a9f973ede06b3c61/07._119322_-_GLTA_report_1.0_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dc215cdb5bf0deba4b4fd3/Bob_and_Eileen_Bambridge_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682c3af502662c6f8ec24489/1714__L__51b_First_and_roof_plan.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcdee5274a226b000145/consultant_164.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbb1e5274a226b000085/aggrekko_remedies.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c712de5274a5255bceac0/n30_child_neglect_and_supervision.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329ddbfe5274a22680001eb/140221_st_anthonys_hospital.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e81aba1d3bf7f13416961f2/Helpdesk-Queries-Y1-analysis1.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d7f722752bf117d6c15e48/060_PL_208___PROPOSED_VIEWS.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7a40f0b60a7600012e/consultant_6.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a8abb391b93d5aa39a1f/DM29-_Design_of_New_Buildings.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735fa1d2469c5b71dbc7b63/Criminal_Keycard_48_-_MTR_Disregards_Nov_24.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/608abcad8fa8f51b98b15101/row_3265446_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db99e5274a226800008d/engagement_level_profitability_analysis_grant_thornton.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/584edb75e5274a13030000a9/fipo-resp-vary-phmi-order14-and-implement-article-22.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd8ce5274a22680001c5/140218_consultant_26.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f09eec054883884bff40e/23110__D__1210B_The_Rowan_Floor_Plans_A3_Size_30_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd23ed915d0e5d00018b/consultant_247.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc41ed915d0e5d000109/130513_ramsay_annex_4.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbdde5274a22680000cd/pdr_cpab.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a7d0fd57416292f12e10/BCS16_-_Flood_Risk_and_Water_Management.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4d9ce8259d52732f6adfd/I1_UTT_23_2496_FUL-ECOLOGY_PLACE_SERVICES_-_COMMENTS-4190704_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db5ced915d0e5d00004d/3i_group_summary_of_conference_call_16_january_2012.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b4f338c40f0b6184ba364ab/Evidence-digest-July-2018.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75825b40f0b6360e474ab3/Importance_of_LMI_-_South_West.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/693831f75cc812f50aa41e66/Completed_application_form_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db6140f0b60a73000049/restrictions_on_entry_or_expansion_wp_ey_response.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5f02d6c93a6f4023cec40786/row_3240185_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db64ed915d0e5d00005d/130801_kpmg_price_effects_of_switching.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbfaed915d0e600000b5/pdr_rds.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc85e5274a226800013b/consultant_33.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db9040f0b60a7600006c/characteristics_of_long_audit_tenure_companies_kpmg.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7aed915d0e600000fd/consultant_4.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4ea5da9f973ede06b3c80/TR03.2-B_Tree_Protetion_Plan_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d94f5aa87d546feeda0142/Christina_Cant_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fdc8cebe90e07452bd39b25/Chapter_5_Monetary_Allowances_for_Gallantry_Awards.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6955184ea2fb6c15f98d18dd/2795402-Delegated_Report-OFFICER_REPORT_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db5240f0b60a76000032/oxera_presentation_ideas_on_profitability_assessment.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6955184de8f9a8d94d8d18d5/DM21.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcd040f0b60a7600016e/consultant_157.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/55ffd73e40f0b61528000018/Summary_of_hearing_with_HCA_International_Limited_on_13_August_2015.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b49fabab418ab0555934a3/BCS23_-_Pollution.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6890cc7ea34b939141463ee9/CIL_Compliance_Statement_Former_Friends_School_01Aug2025_Ch.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4e7b7baccec3af36b3c74/241112_Planning_resubmission_housetypes1_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b2245eab418ab05559338b/Harbour_View_-_Photomontage_3_CHECKED.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc5340f0b60a7600010a/120726_british_insurance_brokers_association.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682c3af402662c6f8ec24487/1714__L__03a_Existing_Block_Plan.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/638f0c58d3bf7f32876c9b1d/Evidence-Review-Inter-Financial-Institutions-Womens-Economic-Emowerment.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd2b40f0b60a73000155/120516_london_clinic_initial_submission.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbd740f0b60a760000c0/130515_summary_company_v.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66e192c4c428f0f0a6cb251c/Wirral_University_Teaching_Hospital_NHS_Foundation_Trust.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6762d4653229e84d9bbde7cb/Bristol_City_Council_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbc140f0b60a7600009a/icaew_pfs_and_remedies.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/687f893cf2ecaeb756d0e1e6/Roadmap__Apple_.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/660453f091a320001a82b126/King_s_College_Hospital_NHS_Foundation_Trust_action_plan.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd9fe5274a226b00018b/140220_consultant_62.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f09efa599d03a16bff420/23110__D__124_Tenure_Plan_A3_Size_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682c3af5010c5c28d1c7e819/1714__L__55_Proposed_North_Elev.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67bc96a0d157fd4b79adddb3/Ancient_Monument_-_Stebbing_Park_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68469619d25e6f6afd4c0167/Cadent_Gas_Ltd_2_redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682eea037fb7a7d9cd7751c1/Drainage_Strategy_Report_April_2025_Appendix_A1_-_SuDS_Hierarchy.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ae878dd3d3bf10d235462c8/AFPS_Form_19.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682eea0bb33f68eaba953952/Drainage_Strategy_Report_April_2025_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60488746d3bf7f1d1a836a4a/WOW-Q58-MUVA-consultation-note.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc8840f0b60a73000115/consultant_37.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd69ed915d0e60000151/130930_cqc.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbcce5274a226b000095/smiths_group_plc_remedies.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd60ed915d0e5d0001a3/130910_pruhealth_response_to_remedies_final.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6938303a6a12691d48491c75/1645__L__56_Proposed_East_Elev.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4d1990e720adbd4f6adee/C1_FINDINGS_OF_TREE_QUALITY_SURVEY-4138969_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329ddade5274a226b000199/140224_consultant_95.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67c085afb0bb6528ee866bee/Colin_Mason__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682ef3dc7fb7a7d9cd7751c5/IDL-1229-10-01_P3_Vehicle_Tracking_Layout_A0_Size_1_May_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735d0a354652d03d5161113/1700996-RP-NIA-0001.3_-_Noise_Impact_Assessment_33052333.1__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc61e5274a226b0000f9/member_of_the_public_38.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db8c40f0b60a76000066/b2e_reputation_and_experience_ey.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5be5466740f0b6679b8f9bdf/Helpdesk-offer-nov-2018.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fa93678d3bf7f03acd13a49/row_3193904m1_on_.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db9a40f0b60a73000085/evidence_of_tacit_coordination_pwc.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f05957fb7a7d9cd7751e1/Landscape_Management_Plan_June_2024_Appendix_1_-_Landscape_Maintenance_Specification.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db74e5274a226b000033/bdo_response_to_deloittes_mfq_summary.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc05ed915d0e5d0000df/130828_remedies_notice.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd8ced915d0e5d0001ad/140218_consultant_23.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/680a14e39b25e1a97c9d8447/PINS_to_Applicant_confirming_procedure_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbe4e5274a22680000d3/131017_pdr_frc_further_submission.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f0598baff3dab997751f2/Schedule_of_Accommodation_May_2025_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f343bc054883884bff447/23110__D__1420B_The_Oak_Floor_Plans_A3_Size_30_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b8be6ed915d4147621150/n9_parenting_with_learning_disabilities.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fdc8c738fa8f5149718d63b/Chapter_2_Rules_and_Procedures_for_Commutation.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/537cb881e5274a1ede000014/Notice_accepting_Interim_undertakings.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67853bdfc6428e013188171b/12056.Biodiversity_Net_Gain_Report.vf1_33343610.1__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f08e8e9440506ee95399c/23110__D__099C_Site_Location_Plan_A3_Size_3_July_2024-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/55926834ed915d1592000013/Exhibit_2_-_mixed_use_and_office_to_residential_conversion.PDF",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db58e5274a2268000055/130620_response_hearing_summary_kpmg_summary_excised.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6aa3e1bc5f6e942efe37f1bb/Armed_Forces_Pension_Tax_Factsheet.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dd64d64fed20c7f559f42e/Kelly_Broadfield_2_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6720d1dc3758e4604742a862/review-of-extending-the-uks-2021-duty-suspensions.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db47ed915d0e5d000035/suppliers_of_statutory_audit_services_to_largecompanies_wp.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fec703de90e0711fe7f5d30/row_3247627___row_3257874_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc98e5274a2268000149/consultant_74.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbc1ed915d0e5d0000c1/icas_mafr_report.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcfbe5274a226b000159/consultant_198.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5c90b5b1e5274a470f4fd03f/Helpdesk-Query-18-girls-clubs-self-help.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dc3dbdc5528de3aa67121e/Kate_Leftly_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e7cdcda86650c74472ce208/Query-41-Toolkit.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66e1922918e01a81482c8d84/The_New_Foscote_Private_Hospital.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc3be5274a226b0000c9/130503_hca_aviva_s_reponse_to_ais.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d94f5a594182179fe08746/Andrea___Russell_Alexander_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d3f2391078db33c5dab276/Screening_direction_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc9ced915d0e5d000141/consultant80.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbbae5274a22680000a1/crowe_clark_whitehill_pfs.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b222f6fc8e12ac3edb0b40/3716-HAR-SRA-XX-XX-DR-A-PL-205_-_Level_1_Existing_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68811f9c3f77077624120561/Proposed_decision.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fec6f44e90e071203e1f622/row_3207992_on_revised.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a8ab24fc2bb7eed11aaa/DM23-_Transport_Development_Management.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/684699035e9253957280611c/Accessible_Homes_SPD_Nov05.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a81985e40f0b62305b8fccd/The_Official_Gazette__Publication__Order_2016.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcb940f0b60a76000162/consultant_141.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4ea5ba9f973ede06b3c7d/SD204A_S62A_Plot_B_Landscape_Plan___Materialty_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329ddb340f0b60a73000193/140224_consultant_108.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d7ffb84e1deef5a8c15e5c/19181_-_GEOTECHNICAL_REPORT_-_The_Bull_Inn__333_Crew_s_Hole_Road__Bristol._BS5_8BQ_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b222f70808eaf43b50ddb5/Biodiversity_Net_Gain_Assessment_CHECKED.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6758354dd8ec18542851787d/Martin_Stephen_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db7f40f0b60a7600004c/pwc__response_to_beattie_literature_review.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc1e40f0b60a760000e6/130603_hospital_competition.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/684699054d039a010411f0a5/Saffron_Walden_Neighbourhood_Plan_-_Made_10.22.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a8ab0cef4b4e32f12e26/BCS23_-_Pollution.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4ea5ca9f973ede06b3c7f/TR02.2-_B_S62A_Tree_Constraints_Plan_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f08ecbaff3dab99775200/Tree_Survey_and_Impact_Assessment_April_2025_Appendix_4_-_Tree_Preservation_Order_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68cd42e925860ae11bbea6d9/AE515_13_Risdale_Road__Bristol_-_PEA_and_BNG_Assessment_V2_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329ddbd40f0b60a7300019b/140218_member_of_public_5.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6866958e366e9dfacb785c5a/23110__D__1371C_-_The_Bronte_Elevations.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67bc96a44ad141d90835348e/Interim_Climate_Change_Planning_Policy_01.03.21_PDFA_1__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dd64d770323a45fe6a6f57/Mr_and_Mrs_R_Daya_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/665f1323d470e3279dd3357a/QLR_Scheme_-_Applying_for_a_payment_account_v1.1.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd57e5274a22680001a7/140213_hca_annex_2.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbdf40f0b60a760000ca/pdr_ernst_and_young.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/56a237a6ed915d6d2a000006/Bupa_response_hearing_summary.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc5e40f0b60a730000ed/member_of_the_public_29.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68074a34e16c376084e7c74e/John_Hartigan.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74ff00ed915d502d6ccad9/Table3-4.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ec3461c8398625c331e7e3/2024_to_2025_rate_review_request_form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624da962d3bf7f6009d69e73/2022_to_2023_moratorium_new_qualification_form_exemption_3_apr22.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/640067008fa8f527f4f54b37/Applicant_s_response_template.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d56bd1d3bf7f1f71aa7d24/ROW_3281569_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21a5401cc32678a5bd72d/Guidance_note-_Burns.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/98.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1342.epub3.images",
+    "reason": "download failure",
+    "detail": "curl: (56) Maximum file size exceeded\n"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/17989.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/174.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a85c4f754bcee010d514572/returns-datasets-jun-2026.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a05e19c5f39105e0848a2c3/education-visas-datasets-mar-2026.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/685a6ffa8567a0182009fdc1/PINS_to_Applicant_confirming_procedure_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682ef3dba599d03a16bff3f4/Heritage_and_Archaeology_Statement_April_2025_Appendix_5_-_Proposed_Site_Plan_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/58493639ed915d0b12000061/ppf-resp-vary-phmi-order14-and-implement-article-22.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e7ccd0286650c7446207792/Query-22-Sexual-Harassment-Garment-Factories.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a233f5ab418ab055592d1f/Bristol_City_Council_-_not_CIL_liable_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6867e2ca2cfe301b5fb67777/Diane_Van_Grondelle_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbf3ed915d0e600000ab/note_of_meeting_with_lma_23_8_13.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67c05feaa0f0c95a498d206d/Mid_South_Essex.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7e40f0b60a7300010b/consultant_11.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db6a40f0b60a7300005d/views_of_investors_bdo.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dda2ed915d0e5d0001bf/140220_consultant_68.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b22461fc8e12ac3edb0b43/Level_3_Mezzanine_Existing_CHECKED.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e81b232e90e0706f38966f5/WOW-Helpdesk-Query-2-Mapping-of-Good-PracticeMarch2020.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dd64d764220b68ed6a6f5a/Victoria_Roberts_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbfc40f0b60a760000d6/pdr_wareing_michael.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66e191e6caa02d92e72c8d7b/Spamedica_Ltd.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735d43c54652d03d516111f/Appendix_4___Tree_Protection_Plan___RMT908___TPP_33052335.1__checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b38e6e5274a34770ea3e8/waste.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/584935f5ed915d0aeb000054/hca-resp-vary-phmi-order14-and-implement-article-22.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f8c05f190c6607448bb74a/SMS_decision_notice__Apple_.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db3ce5274a2268000027/64-11_audit_issues.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc9ded915d0e5d000143/consultant_84.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbd0e5274a22680000b7/case_study_cover_note.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75c717e5274a545822e248/dft-monthly-spend-201207.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a80cbd0e5274a2e87dbbde6/dft-monthly-spend-oct-2013.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c421aed915d7d70d1da45/Table7-2a.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75557fe5274a59fa71757f/ehrc-spend-dec11.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a748eebe5274a44083b7a1e/Table16.5-Europe.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c4fe1ed915d3d0e87b873/Table16.2-Africa.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c875140f0b626628acb28/Table13.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63ecc0d3e90e077bb77ed956/ROW-3297710_ONWR.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a233f8ab418ab055592d25/S62A_Questionnaire_Wine_Street.docx",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54045b6a200123d4613/ROW_3321707_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54106179b00113f7612/ROW_3261678_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64512852c33b460012f5e57e/PSR_Written_Indication_of_Guilty_Plea_Form_v1_MCSPA-O.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54206179b00113f7615/row_3291096_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb543bb13dc0012b2e413/ROW3291419_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54306179b00113f7616/ROW-3272235_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df2ab103ca6000c039951/row_3229117m1_on_6_jUNE_CANCELLED.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21abe286b6fdc85daeafb/Guidance_note-_Assessing_care_needs_and_costs.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5cb5f2b9ed915d3f4ee59616/interim_tender_claim_April_2019.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb541bb13dc000cb2e40d/row_3256281_final_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21aa2ec82ce45f05bd71d/Guidance_note_-_Female_Genital_Mutilation__FGM__and_breast_ironing.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e8e90e076633a68cef/ROW-3296793_ORDERNOTICEW.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624ef438e90e0729fb842778/row_3268692_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54106179b000c3f75ff/ROW_3274048_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/655dfdac544aea0019fb3266/HCF_Contract_2018_HR.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54206179b00113f7614/ROW_3287679_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21a3c01cc32678a5bd72c/Guidance_note-_Scarring.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63ecc0d3d3bf7f62edc83596/ROW-3280814_ON_WR.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21a8b286b6fdc85daeafa/Guidance_note-_Physical_abuse_of_children.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62d5455fd3bf7f28671e91f8/ROW-3283869_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69e5f3e384ac36aaf2cc92af/CY_Template_ES1.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb542bb13dc000cb2e410/ROW-3212585M_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c1206e90b54500143e83a2/EARLY_MARKET_ENGAGEMENT_NOTICE.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d574288fa8f54c0f303a00/ROW_3245926_ON.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7eedb0e5274a2e87db2c9e/IOM_registration_form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54206179b000c3f7600/ROW_3290135_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb541bb13dc000cb2e40e/ROW_3272220_interim_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a21a75286b6fdc85daeaf9/Guidance_note-_Multiple_facial_fractures.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e6d3bf7f1bcb6336cc/ROW_3243669_MODNOTICE__002_.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c1205190b54500143e83a0/AWARDED_CONTRACT_NOTICE.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68a725d9969253904d155758/Appendix_2_S55_checklist_EXTERNAL_May_2025.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e281fc7ed915d1f2426f979/3._Support_for_Improvements_to_Shore-Based_Facilities_-_MFF_FBER_V_0.2.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0251f159f887526bbd93/row_3353411_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6780f7ce61e798853601840c/ROW__3327834__on_odt.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64a5680ec531eb001364feb1/TemplateLetters_GardensTrust_forApplicantUse_v1.0.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62d545fed3bf7f285d975444/row_3278588_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6453a297c33b460012f5e686/row_3302626_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620a3a91d3bf7f4f0743dadd/Discrim-legal-reform.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62d544ed8fa8f50bfff50edf/ROW3262504_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f7525d3bf7f4f019092d7/3264909_Rejection_Letter.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6aeb2abc454448f4fe5f1138/04.20260805_Tariff_Guidance_Part_A_PSND.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64cce2da995827000dc1e911/Practice_guides__part_2_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68653eeeb24f7b12e1a072b4/row_3336636_on_cancelled.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6446302c8b86bb0013f1b770/ROW_3313266_ON_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/694a7e9c033693d5d50eb8e6/row_3349290_on_v2.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/65dd90f3f1cab30011fc4750/ROW_3302072_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ad23b92dfa45fcb6753cb33/Regional_B_Web_List_-15-10-2026.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c0fa5cd4051a00145a938d/ORDERNOTICEW_3290583.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6537c6401bf90d0013d84509/row_3322263_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/661e3158d4a839725cbd3d4a/Standard_Arrived_Export_Declaration_for_Excise_duty_suspended_goods_from_excise_warehouse_using_CSE_via_a_GVMS_location.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ae0af0c7cf9b22489046782/list-of-cost-of-living-tariff-suspensions-on-additional-goods-26-November-2026.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a6c7e190c36759b5ccaa2b7/ROW_3360254_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c0fa5d1e10bf000e17cf01/row_3292724_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0251e7b6794c076bbd93/row_3358570_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6446302d8b86bb000cf1b735/row_3305057_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a9f85fa3c2a28abb50da2f/row_3295334M-on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed02528427701993d5dfd2/row_33475107_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a0434b081a251700a20b4d7/ROW_3360963_inq_order_notice_2026.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64a56826c531eb000c64fec6/TemplateLetters_WorldHeritageSites_forApplicantUse_v1.0.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0251e7b6794c076bbd91/row_3352182_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6501769f1886eb0013977275/row_3314389_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e78fa8f53ba420dedf/row_3209564m2_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/65dd90f3b8da630011c8625d/row_3318409_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ec002b8438f63153b1d950/row_3331063_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6810c76e66f9750e984d6247/Privacy_notice_2_Employees_contractors_and_agency_workers.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ad1e48d0f7b53973e0267c7/3370763_MODNOTICEW.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a4d10e5274a34770e5b10/asylum3-q4-2011-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79a69f40f0b63d72fc76f8/1179496.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c4193e5274a1b0042288d/dft-exceptions-list-apr-jun-2013.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a1742e5274a319e777ca3/study-q4-2011-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b3b7d40f0b66a2fc060ba/study-q4-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b673ce5274a34770eb769/citizenship-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78fd3be5274a277e69105d/1179493.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79e100e5274a684690cc11/1179487.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b04abe5274a319e77c699/admissions-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7abbf6ed915d71db8b21df/asylum2-q3-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b03a140f0b66eab99e518/detention-q4-2011-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b3a5740f0b66a2fc0602b/asylum1-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a757cafe5274a1622e222da/before-entry-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7564d640f0b6360e473c57/asylum5-q3-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c690ee5274a5590059adc/Table2-4.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c2b84e5274a25a9140e97/Table3-1.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7e0538ed915d74e33ef87c/dft-monthly-spend-201308.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62bdccd68fa8f519bfe931d1/hcf_fully_costed_case_plan_v2_FINAL.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb543bb13dc0012b2e411/ROW3280814_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54206179b000c3f7601/ROW+3278807_interim_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b49fac0808eaf43b50ded1/Planning_history.docx",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f78aa8fa8f549069a64e0/ROW-3280120_ON.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/65dd90f2f1cab3001afc4746/ROW_3297207M_ON_V3.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d56b84e90e07196fe01457/ROW-3257816_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54345b6a200123d4615/ROW3296810_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d56ad3d3bf7f1f7bc0acd4/ROW_3280233_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54145b6a2000c3d462b/row_3278588_interim_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64cbb92cef14e6000d178910/MCS_External_transcript_request_form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/655dfd5a544aea0019fb3265/HCF_Contract_2018_CCFS_.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624daa0dd3bf7f600d4055ab/2022_to_2023_rate_review_request_form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64ba61b906f78d00147426dd/Making_a_case_to_maintain_current_subcontracting_form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5f84832c8fa8f50458d347ec/Estate_projects_checklist.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2000.epub3.images",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75ab0fe5274a545822d4b5/asylum4-q4-2014-tabs.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ad09783a89985bb970266ed/ONS_mags_gov_uk_v3.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6294e9468fa8f5039927d13e/Ukraine_sponsorship_scheme_visas_issued_3rd_May_2022.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f7843e90e0710ae790ec3/ROW3247695ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69cba5162d120d9d5ec0f2ef/row_3364452_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/655cbf47d03a8d000d07fddc/row_3301332_ON__REPLACEMENT_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60d57fe0d3bf7f7c34dff49e/row_3252833___row_3252834_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66b49faca3c2a28abb50debe/site_history_appeal_.rtf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79813140f0b63d72fc6610/CIEE_Full_Release_Dec2010.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6037d69d8fa8f5049a051f82/file-5-transitional-version-of-regulation-469-2009.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78c004e5274a277e68f2b3/Letter_SoS-to-Ofcom_11JUL2011.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79b169ed915d042206a540/Letter_SoS-to-OFT_11JUL2011.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b095bed915d429748c5bb/settlement-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b6d3c40f0b64646936151/citizenship-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a798b7ae5274a3864fd7d9a/Appendix_A_-_Book.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6331b7288fa8f51d29278ec4/LAA_Cross_Examination_Full_Privacy_Notice_v1.1.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc0f40f0b60a730000c7/appendices_part_2.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67d7f7234e1deef5a8c15e4e/2025-001_-_Residential_Proposals_-_Bull_Inn_PH_Bristol-_Technical_Note_Final+Jan25_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dccae5274a226b00013d/consultant_154.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ae0832f779378370fd809c9/Pension_savings_statement_step_by_step_guide_for_tax_year_20252026.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc6a40f0b60a76000120/140113_spire_hearing_14_march.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd38ed915d0e60000139/131011_bupa_remedies_response.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/684696195e92539572806114/ESP_Utilities_Group_Ltd_3_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcf4ed915d0e5d00016f/consultant_192.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db58ed915d0e5d000041/hermes_equity_ownership_management_hearing_summary_.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4e9a78259d52732f6ae15/250107_Stebbing_S62A_Landscape_Stage_3_Report_Part3_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db63ed915d0e5d00005b/restrictions_on_entry_or_expansion_wp_kpmg_response.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68cd42e9a1e4472207995dc3/cil_questions.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fdc8c938fa8f5148b8b040a/Chapter_3_Disability_Pensions.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67f51294e3c60873d6c90cf7/Applicant_to_Essex_County_Council_Ecology_Attachment_3_email_attachment_-_4_April_2025.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db9fe5274a226b000075/evidence_relating_to_the_selection_process_bdo.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db99ed915d0e60000061/engagement_level_profitability_analysis_pwc.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f08e8baff3dab997751fc/23110__D__007A_Proposed_Site_Layout_Coloured_A0_Size_29_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc11e5274a22680000f9/130315_notice_data_room.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/684bfa27da3d1b49e679701e/Hertfordshire_and_West_Essex_Integrated_Care_Board_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f09f2b33f68eaba95398e/23110__D__1270B_Fog_Floor_Plans_A3_Size_30_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc97ed915d0e6000010f/consultant_72.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db45ed915d0e60000015/nature_and_strength_of_competition.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f343be9440506ee9539d9/23110__D__1411C_Maisonettes_1___2_Beds_Elevations_A3_Size_7_May_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/670d33003b919067bb483107/Peer_Reviewer_Panel__Appointment_Information_for_Candidates.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67bc97974ad141d908353492/Screening_Opinion_re_UTT.23.2496.FUL_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6808aafc148a9969d2394ebb/Charlotte_Sawyer_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a21447ab418ab055592ce3/Drwg_JLL_146_D2_Proposed_Glass_Balustade_Details_A3_size_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a215f5a3c2a28abb50d6d6/Drwg_JLL_146_E2_Existing_Front_Elevation_A1_size_CHECKED.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67c0846468a61757838d20a1/National_Highways_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/608abc21d3bf7f013dea69a3/row_3265359_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6842ed110392ed9b784c0125/DM21.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e73278d86650c1e2f0dd304/row_3220645m_mod_notice.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67bc98424ad141d908353493/UDC_Design_Code__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66044eeaf9ab410011eea42f/Bedfordshire_Hospitals._Bridges_Clinic._Action_Plan.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5f84ac9c8fa8f50455cd95d5/How_to_prioritise_maintenance.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd58ed915d0e5d0001a1/131206_hca_response_to_remedies_notice_annex_5.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67c085af72e83aab48866bfa/Dr_David_Crome_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc34ed915d0e5d000103/130402_aviva_health_ais_response_redacted.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db9f40f0b60a73000089/130801_deloitte_response_on_trends_in_audit_fees.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f0595b33f68eaba95397c/Landscape_Statement_April_2025_CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f09f1c054883884bff411/23110__D__1261B_The_Mulberry_Elevations_A3_Size_30_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc8540f0b60a73000111/consultant_30.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dbb3e5274a226b000087/pfs_bdo.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dcea40f0b60a76000172/consultant_174.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6604568c91a320001a82b128/Kingston_NHS_Foundation_Trust_CMA_action_planpdfa.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/608aba58d3bf7f01310199a0/row_3243919_on.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a790857e5274a3864fd5d94/LAS_on_sport_participation1.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6735d0a4f6920bfb5abc7aff/A-PL-005xP04_-_Proposed_Ground_Floor_Plan_32929851.1__Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/56dd826f40f0b60379000010/Administrative_timetable_-_revised_March_2016.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/686695d2e134dfbc2e9e6d6e/Karen_and_Raymond_Judd_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6807a2b24dd7e0f8897a619b/PINS_to_Applicant_confirming_procedure_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/57d6c3bee5274a34fb000032/private-healthcare-remittal-final-report.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd03ed915d0e6000012b/consultant_209.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/58f9ee2fe5274a06b30001e3/fipo-submission-following-hearing.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f334ca599d03a16bff44d/23110__D__1331B_Fog_Elevations_A3_Size_30_April_2025-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/537cb80d40f0b60fe200000b/Administrative_Timetable.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd50e5274a22680001a1/131017_consultant_38.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db8ce5274a226b00005d/b2e_reputation_and_experience_bdo.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c01f6ed915d41476222f8/Table5.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7e21f5ed915d74e62244fd/dft-monthly-spend-201303.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7e4f16e5274a2e8ab472f3/dft-monthly-spend-201307.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f6f3740f0b6230268f7a2/Table3-top-20-recipients-DFID-bilateral-gross-public-expend-excluding-humanitarian-2012-15.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7cfa65ed915d28e9f39505/dft-monthly-spend-201212.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ab3b6718cb3c0580e501065/Table_P155.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a0c61b7f7c2e79c33db91fa/row_3368392_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f765ee90e0710ae790ec2/ROW3255726_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6807ae9d148a9969d2394e75/PIL_Panel.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69941a2a75466636847f6bf8/row_3356949_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0252e7b6794c076bbd94/row_3360001_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69cba517024cdf09254f3f2e/row_3367034_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6740437f4ebce30ac7baf0c3/row_3329919_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63172984d3bf7f792bcfb1a1/row_3274785_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624ef69b8fa8f54a8aed3143/row_3260915_on___Order.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a916256f5b35599aec18f22/ORDERNOTICEL_ROW_3361452_v2.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fd127a393a986ec5cf8ce2/Order_notice_ROW_3339930.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6446302c22ef3b000c66f735/row_3243669M1_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63ecc0d3d3bf7f62ef2b17b7/ROW_3294823_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f767d8fa8f54916f45e96/ROW3245044_ON.dot.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/690b68ae7a88fd270a95fe18/Mary_Cowe_Biography.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6aeb2ea4454448f4fe5f1144/10.20260804_Neck.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6740437fb3f0df6d2ebaf0dc/row_3262023_ordernoticelm.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f6ebce90e0710bfc89db3/row_3261101_on___Order.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fd127a4f66a92e28546661/row__3253424_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6810c897d521737e2f0f4a78/Privacy_notice_7_Visitors_to_our_buildings.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63b43c088fa8f57357b9ea2d/ROW_3241907M1_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a800bf9ed915d74e622c27a/The_Income_Tax_Ordinance_1990.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5bf54f9ae5274a2b030d7d9f/BAT_Currency_Regulations.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f51b640f0b6230268ec76/The_Customs_Ordinance_1990.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6501769e57e8840013e129ed/row_3307808_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/655cbf48046ed4000d8b9d7a/row_3315799_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df486103ca6000c039958/row_3301051_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68aedc97960e2d135b4c8e70/row_3351976_on.odt.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0251e7b6794c076bbd90/row_3349549_on.doc.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed024f82670806f9d5dfd7/Order_Notice_3350936_V2.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67404380ad6a5d7d2b1b0a88/ROW_3332262_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6740437e2ff787d4e01b0a50/ROW__3333509_Order_Notice.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6aeb2a2f94cf002ba86fb017/41.20250818_The_voice_of_the_expert.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62d5471ae90e071e7defb9b9/3273599_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ad23ec467af5c09d047972d/Check_mate_helping_you_submit_complete_and_correct_applications.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620f7825e90e0710c4506b9a/ROW3243669ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60d580858fa8f50abc106b93/row_3241907_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f230e40f0b6230268da8d/The_United_Nations__International_Tribunal___Former_Yugoslavia__Ordinance_1996.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6446302b22ef3b000f66f6f5/row_3291358_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69133bd78c90b927c818ad8c/row_3351718_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a814a2140f0b62305b8e237/The_Crown_Proceedings_Ordinance_1990.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6584055623b70a0013234d5e/ROW_3309318_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a75c769ed915d506ee8169f/DCMS_BCs_return_July-Sept09.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db018cded915d095c89f0ff/6._Support_for_Aquaculture__Processing_and_Marketing_-_MFF_FBER_V_0.2.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78cea140f0b6324769a51b/DCMSBCs_returnOct2010-Jun11-update.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6037d666e90e07055167bb59/file-2-consolidated-version-of-regulation-1610-96.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db01890ed915d09581ecdc9/4._Support_for_partnerships__information_sharing__advisory_services__job_creation_and_training_applications_-_MFF_FBER_V_0.2.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7908cfed915d042206745c/1179523.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e78c19c86650c29731ff2fd/frs-self-employment-data-tables-2018-19.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/668d50267541f54efe51bc9e/Facility-Time-22_23-Dataset.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ab28036997a4b2950cced22/Charts_data_file_202606.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624da9b8d3bf7f600b448d76/2022_to_2023_stepping_stones_replacement_form.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f9b83e5274a2e87db6df8/GPEX-tables-2014-15a.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd4f40f0b60a7300015b/131017_consultant_37.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67ee4193199d1cd55b48c6c9/Ellie_Eversett_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7eed915d0e60000101/consultant_13.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc6840f0b60a7600011c/bupa.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/696a1b65448fedc1eb4248a8/Fee_Uplifts_FAQs.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/654caf2be2e16a001242ac05/Charge_example.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd2fed915d0e60000135/140124_bmi_annex_4_response_to_pfs_pca.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db56ed915d0e60000031/130620_response_hearing_deloitte_summary_excised.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ab8d9e0808eaf43b50dbde/Application_Form_12_July_2024_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/540ef916e5274a12f700000b/Herbert_Smith_Freehills_LLP.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dd66f364220b68ed6a6f67/Infrastructure_Planning_Officer_Redacted.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67f3e35153505b2ca44eff2b/Trish_Panchaud.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/552e7f2fe5274a1575000009/Invitation_to_comment_and_submit_further_evidence.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5335482040f0b62e9900000d/pf_appendices_21_30_glossarys.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68f7a8ab529ccfa62ea39a2c/DM21-_Development_of_Private_Gardens.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66045a8591a320001182b142/Orthopaedics_And_Spine_Specialist_Hospital_Hospitals_action_plan_template__publication_pdfa.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/552d3fe0e5274a1575000007/Nuffield_submission.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682f343ba599d03a16bff452/23110__D__1425_Bin___Cycle_Stores_A3_Size_May_2024-CH.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc60e5274a226b0000f5/member_of_the_public_33.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6867e301a08d3a3ca3b67781/Uttlesford_District_Council_3_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a0c4a70279ebb7d24f8f4ae/Court_Martial_Board_-_Standard_Operating_Procedure.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67dc215dcb8c6838d74b4fcf/N_Allen_2_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/56f129cee5274a14d7000010/Remittal_provisional_decision_on_remedies.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dd87e5274a22680001bd/140214_consultant_14.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66e191fedd4e6b59f0cb251e/Tetbury_Hospital.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329db59e5274a2268000057/130704_response_hearing_summary_mazars.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.digital.cabinet-office.gov.uk/media/5329dc7de5274a226b00010b/consultant_10.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a8c2f10ac563f363ba3c402/epr_organisation_details_template.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df4855f7bb700127fa4b2/Order_Decision_ROW_3256093_with_Order_map__dated_.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d56bfed3bf7f1f7036fb85/ROW_3241933_modnotice.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a916256f5b35599aec18f21/MODNOTICEW_ROW_3360497_v2.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d56b02e90e07196a66beba/ROW_3281354_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f59d6e5274a2e8ab4ba6b/Interim-Report-template.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5cb5f071ed915d3f565608cc/final_costs_claim_April_2019.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5cb5f2c5ed915d3f4bc3d677/unitary_pfi_charge_April_2019.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/632c7a3de90e0711d40cf0db/2_Counsel_Final_FAST_Checklist_September_2019.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb543bb13dc000cb2e412/ROW-3280029_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d570f9e90e071971e25670/ROW-3259617_on.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5caf3183e5274a17b5d626e8/ccfs-form-version-2-october-2015.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b27af1eed915d2cbae4afee/NDA-Estate-Supplier-Event-2018-Supplier-Award-Collaboration.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c1205dd4051a000d5a9429/SUBCONTRACTING_OPPORTUNITY_NOTICE.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6740437eb3f0df6d2ebaf0db/3318887_MODNOTICEW_v2.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67cecd371e2f37b1f3fd13da/20230310_Section_28_Video_Edits_Request_Form.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ab281d3997a4b2950cced27/Table_PDR3__.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62e167d1d3bf7f75b305faf5/Ukraine_sponsorship_scheme_-_visa_data_26_July_2022.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7d4cfbed915d321c2de3a5/entry-visas1-q2-2014-tabs.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6408b733e90e0740d874e92c/Ukraine_sponsorship_scheme_-_visa_data_7_March_2023.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5bd87ae940f0b6050306ae58/FacilityTimePublicationRegulationsData17_18.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f32e4ed915d74e6228fcc/entry-visas1-q1-2016-tabs.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6584055723b70a0013234d5f/row_3319513_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/672367ba8812c830eb8c1de3/GAHOS_Key_information_about_the_home_document.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62864e97d3bf7f1f47c65e47/Multi_Item_import_declaration_with_additional_costs_for_freight_and_insurance_being_declared.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6536670626b9b1000faf1d58/row_3308400_ON__to_replace_previous_incorrect_version_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60d58048e90e07716e01e5e9/row_3240969_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/689a02a9ad0cbc0e27643248/cattle-follow-up-summary-PI-hunt-not_done_including_herd_details.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/655cbf48d03a8d000d07fddd/row_3319526_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6446302d6dda69000c11e2c9/row_3299844_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6abf673426660e5f62a7f282/Understand_onward_disclosure_to_the_BBNJ_Clearing_House_Mechanism.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5c6a6e39e5274a72bac384cf/bbfa-08-business-regulation-made-simple.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fd127c4f66a92e28546664/row_3340489_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f34ace5274a2e8ab4ac3f/The_Interpretation_and_General_Provisions_Ordinance_1990.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/681c7e929ef97b58cce3e590/20250212_SpecialCategoryCriminalOffenceDataProcessingPolicy_V02.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61d5732ed3bf7f1f72b5ffee/ROW_3259664M1_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a916256df4246cf45e4667e/row_3367861_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5c66de5eed915d4a3506ad41/bbfa-05-growth-hubs.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68aedc979e1cebdd2c96a1f0/row_3349071_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68653eefe6c3cc9242289444/row_3349385_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68653eeee6557c544c74db4f/ROW_3327834_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68653eef6569be0acf74db63/ROW_3362526_rejection_letter__notation_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60d580cb8fa8f50ab966e88f/row_3201659_change_of_date.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69b41888e2719934bb53a213/row_3366914_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69cba516024cdf09254f3f2d/row_3295824m1_on__13_March_2026_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6780f7ce153753104a9217ba/ROW_3322875_MODNOTICEW__v2___ON_ODT.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624ef6828fa8f54a8bb65ae5/row_3268331_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68ed0252e7b6794c076bbd95/row_3369259_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a6afb810ddb7e4831c629fe/3347972_MODNOTICEW_v2.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63ecc0d3d3bf7f62ecf1d985/NOTICE_OF_ORDER_3293515_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/62d54591d3bf7f2859357c0e/row_3272929_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6780f7ced5422b88ec018411/row_3295824m1_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ad23b920f7b53973e02683f/Regional_C_Web_List_-15-10-2026.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/666ac7bb673d4d30f3372db2/ROW_3325707_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624ef7bd8fa8f54a8e856ec5/ROW_3257981_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fd127b4f66a92e28546662/ROW_3337228_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/65840557fc07f3000d8d45ff/row_3317780_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/653a57d4e6c968000daa9b93/WOW_guidance_note_on_unpaid_care_and_domestic_work.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69b41888b84f01b2be53a212/row_3363197_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a6c7e190c36759b5ccaa2b8/row_3369029_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/694a7e9d3022cdf03a0eb8e0/row_3360497_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c0fa5d1e10bf000e17cf02/row_3315315_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66ec002b50c0ff1bc7fa1459/row_3311269m_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64c0fa5b1e10bf000d17cf00/MODNOTICEW_3302254_start_date_16_August_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6107da7ce90e0703b58e8cc5/row_3273966_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63b43c088fa8f5735278cead/row_3281765_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a0c61b6f7c2e79c33db91f8/row_3348735_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/694a7e9c888ddc41b48a54db/row_3353568_on_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a451c32d200ca05e289e2af/row_3360497_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e7e90e0766313f1975/row_3278807_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df4865f7bb700127fa4b5/row_3314913_on___Order_combined.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68653eef18fa24320d289448/ROW3336884_ON_pdf.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66fc1121a31f45a9c765ef87/Checklist_-_things_to_consider_when_transacting_with_a_related_party.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a795198e5274a3864fd5f8b/1179500.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b0cd0e5274a319e77ca85/before-entry2-q4-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a20a9e5274a34770e4738/removals-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b2afeed915d429748d496/asylum1-q3-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b1591e5274a319e77ce82/asylum3-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a0e33ed915d6d99f5cd39/asylum2-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a1fed40f0b66a2fc00111/asylum4-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79050c40f0b679c0a07e70/Appendix_A_-_Living.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74bb1eed915d502d6ca886/Exports_-_Table_2.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7963a5e5274a3864fd69ba/NI8_APS3.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a758303e5274a1242c9ee37/asylum5-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a74e75bed915d502d6cbee0/work-q4-2011-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78dd07ed915d0422065efd/J2_REPI.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79d52740f0b670a8025c19/Appendix_A_-_Attendance.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a031140f0b66a2fbff414/removals3-q3-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78f928ed915d07d35b3df8/Employment_-_Table_3.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7980c640f0b63d72fc65dc/C1ii_REPI.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7aec6eed915d670dd7f8a3/asylum2-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78bd71ed915d07d35b20f0/Appendix_A_-_Culture.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7abd07e5274a34770e6c7e/asylum1-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a3f38e5274a34770e54c5/asylum5-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ae04ee5274a34770e7bb6/citizenship-q3-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79f61fed915d6d99f5c24e/citizenship-q4-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b58e0ed915d429748e775/settlement-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7a031b40f0b66a2fbff417/removals2-q1-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a795ce640f0b642860d7752/Appendix_A_-_Barriers.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ab715e5274a34770e69da/detention-q2-11-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b181d40f0b66a2fc051e2/oppcsubmission.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b24e2ed915d3ed9062758/settlement-q4-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78ad6ced915d07d35b1910/1179530.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a85c4ddc9205b515d421eef/resettlement-scheme-datasets-jun-2026.xlsx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/59034a62ed915d06ac0002ba/private-healthcare-investigation-final-mcc-decision.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69f33037ab602a88957eef27/Remediable_Service_Statement_Delivery_Update_April.pdf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/682eea03b33f68eaba953950/Drainage_Strategy_Report_April_2025_Appendix_A2_-_Simple_Index_Tools.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/611f71b4e90e07053ec5e3d2/Template__CSV_v2_Welsh.csv",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ae9df89a45504d226c49a71/ROW_3371923_Rejection_Letter__1_.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a82efac40f0b6230269d792/admissions-jul-sep-2017-tables.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f3a84ed915d74e62292c5/removals2-q4-2014-tabs.ods",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/620a3e04d3bf7f4f00af8993/Financial-Service-KeySheet.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6780f7ce00e3d719f19217b9/row_3311106_mod_notice.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5cb5f474ed915d3f586d3630/final_costs_claim_April_2019.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fd127a4f66a92e28546660/Order_notice.3339941_V2__004_.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66a2343b49b9c0597fdb04c5/property_history.rtf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a798f75e5274a684690a75a/CI_Economic_Estimates_feedback.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79b53ded915d07d35b7835/DCMSBCs__Apr-June09.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79e0c4ed915d6b1deb4000/minsterial_hospitality_Q1_2010.rtf",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ee5efe5274a2e87db299f/dft-qds-201207.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a78e4dc40f0b6324769aff4/J1_REPI.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b0407ed915d3ed9061846/before-entry2-q2-2012-tabs.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7edd24ed915d74e6226f0f/UK_BUDGET-costs-summary__2_.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a790908ed915d042206747a/Appendix_A_-_Museums-Galleries.xls",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4e7ba4dd52dddeb16a85d/241112_Planning_resubmission_housetypes10_elevations_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67a4ea5a0e720adbd4f6ae12/SD202A_S62A_Plot_A_Landscape_Plan___Materiality_checked.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/67fcef9c694d57c6b1cf8cbc/Uttlesford_District_Council_s_Consultation_Response.pdf",
+    "reason": "planning case family excluded before conversion"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb54106179b00113f7613/ROW_3280388_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/64b132bd48826b00103a9e40/Moratorium_new_qualification_form_exemption_3_2023_to_2024.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/696a1cd6cbe2202b384248b4/legal-aid-claim-amendment-guidance.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e88fa8f53babfce580/ROW-3295342_ORDERNOTICEW.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/63ecc0d3e90e077bb2487a4b/ROW-3302343_ONWR.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/632c7a0cd3bf7f567eeb5c1f/2_Counsel_CCFS_Form_July_2019.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5e70a2d2d3bf7f26918b786e/2022_to_2023_moratorium_new_qualification_form_exemption_3_apr22.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6391e0e9e90e076638c27b0f/ROW-3301707_ORDERNOTICEW.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69899b166da2dee8230a9b8e/Appeal_Form_UPDATE_18-11-2025.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/648a00a1103ca60013039f5f/20230527_Staged__Direction__Application__Form_MCS.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/649eb543bb13dc0012b2e412/ROW-3284297_OD.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db0194440f0b609cdd52799/EOI_Guidance_Word_Version_-_MFF_FBER_V_0.2.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a86d7671b45e4e555421f29/EEMS_Unlock_form_2026.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5b27af6e40f0b634c9002cca/NDA-Estate-Supplier-Event-2018-Supplier-Award-Technical-Innovation.docx",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/61e18ed3e90e0703731d3a8d/Inventory_linked_pre-lodged_import_declaration_with_certificates_to_import_plants_and_plant_products.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/624ef736d3bf7f6009d69ea2/row_3193904m2_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/694a7e9b72075a1d4a508a43/Replacement_ON_3362930.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/666ac7bb673d4d30f3372db1/row_3321757_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/66d077da1df0ac810b1f84e3/row_3330113_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6780f7cf9b205eeb6cede46b/ROW_3334639_ON.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/647df4865f7bb7000c7fa4de/ORDERNOTICEL_row_3285066.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a0c61b7c75cc34a8ff8f52c/row_3370751_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/60a3d074d3bf7f288aaa5c9f/row_3245803_on.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/696e5a0d091f0cc41e81a28d/pig-review-summary_including_herd_details.odt",
+    "reason": "publication already represented"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6501769e1886eb000d97725c/row_3309474_ON.odt",
+    "reason": "publication already represented"
+  }
+]

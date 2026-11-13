@@ -1,0 +1,56 @@
+[
+  {
+    "name": "before",
+    "argv": [
+      "target/bulkparse-before-tables",
+      "convert",
+      "{input}"
+    ],
+    "version": "0.1.0 before tables",
+    "configuration": {
+      "ocr": false,
+      "tables": false
+    },
+    "success_exit_codes": [
+      0,
+      2
+    ]
+  },
+  {
+    "name": "tables",
+    "argv": [
+      "target/release/bulkparse",
+      "convert",
+      "{input}"
+    ],
+    "version": "0.1.0 ruled tables",
+    "configuration": {
+      "ocr": false,
+      "tables": "conservative ruled",
+      "normalization": false
+    },
+    "success_exit_codes": [
+      0,
+      2
+    ]
+  },
+  {
+    "name": "normalized",
+    "argv": [
+      "target/release/bulkparse",
+      "convert",
+      "{input}",
+      "--pdf-normalize-unicode"
+    ],
+    "version": "0.1.0 ruled tables",
+    "configuration": {
+      "ocr": false,
+      "tables": "conservative ruled",
+      "normalization": "presentation forms"
+    },
+    "success_exit_codes": [
+      0,
+      2
+    ]
+  }
+]

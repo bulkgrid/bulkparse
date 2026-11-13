@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-13T21:06:51.128510+00:00",
+  "metric": "macOS /usr/bin/time -l maximum resident set size",
+  "definition": "High-water RSS includes waited-for child process high-water values; it is not the simultaneous sum of the process tree.",
+  "validation": {
+    "parent": "python3 launching a Python child that allocates a 64 MiB bytearray",
+    "one_child_peak_bytes": 82591744,
+    "two_sequential_children_peak_bytes": 82690048,
+    "interpretation": "Child allocation is included, and sequential child peaks are not added together."
+  },
+  "correction": "The original run/resources.json scope string called this worker-lifetime RSS. The values are unchanged; the report uses the corrected OS peak-RSS scope. Killed worker groups may lack OS samples, so their reported peak is a lower bound."
+}

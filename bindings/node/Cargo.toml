@@ -1,0 +1,18 @@
+[package]
+name = "bulkparse-node"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bulkparse = { workspace = true, features = ["docx", "pdf", "office"] }
+serde_json.workspace = true
+napi = { version = "3", default-features = false, features = ["napi4"] }
+napi-derive = "3"
+
+[build-dependencies]
+napi-build = "2"

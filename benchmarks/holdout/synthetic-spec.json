@@ -1,0 +1,736 @@
+[
+  {
+    "id": "prose",
+    "category": "native",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Harbor staff recorded the morning tide.",
+            "x": 48,
+            "y": 730,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Three vessels arrived before noon.",
+            "x": 48,
+            "y": 710,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "The eastern gate reopened after inspection.",
+            "x": 48,
+            "y": 690,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Evening crews checked every berth.",
+            "x": 48,
+            "y": 670,
+            "size": 12,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Harbor staff recorded the morning tide.\nThree vessels arrived before noon.\nThe eastern gate reopened after inspection.\nEvening crews checked every berth.\n",
+    "ordered_blocks": [
+      "Harbor staff recorded the morning tide.",
+      "Three vessels arrived before noon.",
+      "The eastern gate reopened after inspection.",
+      "Evening crews checked every berth."
+    ]
+  },
+  {
+    "id": "columns-2",
+    "category": "columns",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Cedar section records item 1.",
+            "x": 36,
+            "y": 700,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 1.",
+            "x": 306,
+            "y": 700,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 2.",
+            "x": 36,
+            "y": 678,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 2.",
+            "x": 306,
+            "y": 678,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 3.",
+            "x": 36,
+            "y": 656,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 3.",
+            "x": 306,
+            "y": 656,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 4.",
+            "x": 36,
+            "y": 634,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 4.",
+            "x": 306,
+            "y": 634,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Cedar section records item 1.\nCedar section records item 2.\nCedar section records item 3.\nCedar section records item 4.\nMaple section records item 1.\nMaple section records item 2.\nMaple section records item 3.\nMaple section records item 4.\n",
+    "ordered_blocks": [
+      "Cedar section records item 1.",
+      "Cedar section records item 2.",
+      "Cedar section records item 3.",
+      "Cedar section records item 4.",
+      "Maple section records item 1.",
+      "Maple section records item 2.",
+      "Maple section records item 3.",
+      "Maple section records item 4."
+    ]
+  },
+  {
+    "id": "columns-3",
+    "category": "columns",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Cedar section records item 1.",
+            "x": 36,
+            "y": 700,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 1.",
+            "x": 216,
+            "y": 700,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Willow section records item 1.",
+            "x": 396,
+            "y": 700,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 2.",
+            "x": 36,
+            "y": 678,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 2.",
+            "x": 216,
+            "y": 678,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Willow section records item 2.",
+            "x": 396,
+            "y": 678,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 3.",
+            "x": 36,
+            "y": 656,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 3.",
+            "x": 216,
+            "y": 656,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Willow section records item 3.",
+            "x": 396,
+            "y": 656,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cedar section records item 4.",
+            "x": 36,
+            "y": 634,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Maple section records item 4.",
+            "x": 216,
+            "y": 634,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Willow section records item 4.",
+            "x": 396,
+            "y": 634,
+            "size": 9,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Cedar section records item 1.\nCedar section records item 2.\nCedar section records item 3.\nCedar section records item 4.\nMaple section records item 1.\nMaple section records item 2.\nMaple section records item 3.\nMaple section records item 4.\nWillow section records item 1.\nWillow section records item 2.\nWillow section records item 3.\nWillow section records item 4.\n",
+    "ordered_blocks": [
+      "Cedar section records item 1.",
+      "Cedar section records item 2.",
+      "Cedar section records item 3.",
+      "Cedar section records item 4.",
+      "Maple section records item 1.",
+      "Maple section records item 2.",
+      "Maple section records item 3.",
+      "Maple section records item 4.",
+      "Willow section records item 1.",
+      "Willow section records item 2.",
+      "Willow section records item 3.",
+      "Willow section records item 4."
+    ]
+  },
+  {
+    "id": "spanning-title",
+    "category": "columns",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Regional water maintenance report",
+            "x": 48,
+            "y": 730,
+            "size": 20,
+            "font": "Helvetica"
+          },
+          {
+            "text": "North team repaired the pump.",
+            "x": 40,
+            "y": 675,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Fresh water reached the village.",
+            "x": 40,
+            "y": 655,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "South team tested the valves.",
+            "x": 320,
+            "y": 675,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Pressure remained within limits.",
+            "x": 320,
+            "y": 655,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Regional water maintenance report\nNorth team repaired the pump.\nFresh water reached the village.\nSouth team tested the valves.\nPressure remained within limits.\n",
+    "ordered_blocks": [
+      "Regional water maintenance report",
+      "North team repaired the pump.",
+      "Fresh water reached the village.",
+      "South team tested the valves.",
+      "Pressure remained within limits."
+    ]
+  },
+  {
+    "id": "ruled-table",
+    "category": "table",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Item",
+            "x": 60,
+            "y": 700,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Units",
+            "x": 260,
+            "y": 700,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Cost",
+            "x": 420,
+            "y": 700,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Copper",
+            "x": 60,
+            "y": 670,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "17",
+            "x": 260,
+            "y": 670,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "420",
+            "x": 420,
+            "y": 670,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Zinc",
+            "x": 60,
+            "y": 640,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "28",
+            "x": 260,
+            "y": 640,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "310",
+            "x": 420,
+            "y": 640,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Nickel",
+            "x": 60,
+            "y": 610,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "39",
+            "x": 260,
+            "y": 610,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "650",
+            "x": 420,
+            "y": 610,
+            "size": 12,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            45,
+            720,
+            550,
+            720
+          ],
+          [
+            45,
+            690,
+            550,
+            690
+          ],
+          [
+            45,
+            660,
+            550,
+            660
+          ],
+          [
+            45,
+            630,
+            550,
+            630
+          ],
+          [
+            45,
+            600,
+            550,
+            600
+          ]
+        ]
+      }
+    ],
+    "expected": "Item Units Cost\nCopper 17 420\nZinc 28 310\nNickel 39 650\n",
+    "ordered_blocks": [
+      "Item Units Cost",
+      "Copper 17 420",
+      "Zinc 28 310",
+      "Nickel 39 650"
+    ],
+    "table_rows": [
+      [
+        "Item",
+        "Units",
+        "Cost"
+      ],
+      [
+        "Copper",
+        "17",
+        "420"
+      ],
+      [
+        "Zinc",
+        "28",
+        "310"
+      ],
+      [
+        "Nickel",
+        "39",
+        "650"
+      ]
+    ]
+  },
+  {
+    "id": "arabic-mixed",
+    "category": "direction",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "تقرير الميناء اليومي",
+            "x": 120,
+            "y": 730,
+            "size": 18,
+            "font": "Arial"
+          },
+          {
+            "text": "وصلت السفينة صباح اليوم",
+            "x": 120,
+            "y": 695,
+            "size": 18,
+            "font": "Arial"
+          },
+          {
+            "text": "إصدار Python 3.12 متاح الآن",
+            "x": 120,
+            "y": 660,
+            "size": 18,
+            "font": "Arial"
+          },
+          {
+            "text": "المجموع 123 وحدة",
+            "x": 120,
+            "y": 625,
+            "size": 18,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected": "تقرير الميناء اليومي\nوصلت السفينة صباح اليوم\nإصدار Python 3.12 متاح الآن\nالمجموع 123 وحدة\n",
+    "ordered_blocks": [
+      "تقرير الميناء اليومي",
+      "وصلت السفينة صباح اليوم",
+      "إصدار Python 3.12 متاح الآن",
+      "المجموع 123 وحدة"
+    ]
+  },
+  {
+    "id": "font-subsets",
+    "category": "fonts",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Office affinity: efficient filing.",
+            "x": 48,
+            "y": 730,
+            "size": 12,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Ångström café naïve façade.",
+            "x": 48,
+            "y": 695,
+            "size": 12,
+            "font": "ArialMT"
+          },
+          {
+            "text": "Σύνολο 42 — résumé accepted.",
+            "x": 48,
+            "y": 660,
+            "size": 12,
+            "font": "TimesNewRomanPS-ItalicMT"
+          }
+        ]
+      }
+    ],
+    "expected": "Office affinity: efficient filing.\nÅngström café naïve façade.\nΣύνολο 42 — résumé accepted.\n",
+    "ordered_blocks": [
+      "Office affinity: efficient filing.",
+      "Ångström café naïve façade.",
+      "Σύνολο 42 — résumé accepted."
+    ]
+  },
+  {
+    "id": "quarter-turn",
+    "category": "rotation",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Vertical inventory record",
+            "x": 80,
+            "y": 120,
+            "size": 12,
+            "font": "Helvetica",
+            "angle": 90
+          },
+          {
+            "text": "Seven crates cleared inspection",
+            "x": 105,
+            "y": 120,
+            "size": 12,
+            "font": "Helvetica",
+            "angle": 90
+          }
+        ]
+      }
+    ],
+    "expected": "Vertical inventory record\nSeven crates cleared inspection\n",
+    "ordered_blocks": [
+      "Vertical inventory record",
+      "Seven crates cleared inspection"
+    ]
+  },
+  {
+    "id": "scan-only",
+    "category": "scan",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Warehouse receipt",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Delivered twelve sealed boxes",
+            "x": 48,
+            "y": 700,
+            "size": 16,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Inspection completed on Tuesday",
+            "x": 48,
+            "y": 670,
+            "size": 16,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Warehouse receipt\nDelivered twelve sealed boxes\nInspection completed on Tuesday\n",
+    "ordered_blocks": [
+      "Warehouse receipt",
+      "Delivered twelve sealed boxes",
+      "Inspection completed on Tuesday"
+    ]
+  },
+  {
+    "id": "native-and-scan",
+    "category": "mixed-scan",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Harbor staff recorded the morning tide.",
+            "x": 48,
+            "y": 730,
+            "size": 12,
+            "font": "Helvetica"
+          }
+        ]
+      },
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Warehouse receipt",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Delivered twelve sealed boxes",
+            "x": 48,
+            "y": 700,
+            "size": 16,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Inspection completed on Tuesday",
+            "x": 48,
+            "y": 670,
+            "size": 16,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Harbor staff recorded the morning tide.\nWarehouse receipt\nDelivered twelve sealed boxes\nInspection completed on Tuesday\n",
+    "ordered_blocks": [
+      "Harbor staff recorded the morning tide.",
+      "Warehouse receipt",
+      "Delivered twelve sealed boxes",
+      "Inspection completed on Tuesday"
+    ]
+  },
+  {
+    "id": "two-pages",
+    "category": "multipage",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Harbor staff recorded the morning tide.",
+            "x": 48,
+            "y": 730,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Three vessels arrived before noon.",
+            "x": 48,
+            "y": 710,
+            "size": 12,
+            "font": "Helvetica"
+          }
+        ]
+      },
+      {
+        "spans": [
+          {
+            "text": "The eastern gate reopened after inspection.",
+            "x": 48,
+            "y": 730,
+            "size": 12,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Evening crews checked every berth.",
+            "x": 48,
+            "y": 710,
+            "size": 12,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Harbor staff recorded the morning tide.\nThree vessels arrived before noon.\nThe eastern gate reopened after inspection.\nEvening crews checked every berth.\n",
+    "ordered_blocks": [
+      "Harbor staff recorded the morning tide.",
+      "Three vessels arrived before noon.",
+      "The eastern gate reopened after inspection.",
+      "Evening crews checked every berth."
+    ]
+  },
+  {
+    "id": "narrow-gutter",
+    "category": "columns",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Oak plot: ten seedlings.",
+            "x": 45,
+            "y": 700,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Elm plot: nine seedlings.",
+            "x": 200,
+            "y": 700,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Oak plot: soil restored.",
+            "x": 45,
+            "y": 680,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Elm plot: water added.",
+            "x": 200,
+            "y": 680,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ]
+      }
+    ],
+    "expected": "Oak plot: ten seedlings.\nOak plot: soil restored.\nElm plot: nine seedlings.\nElm plot: water added.\n",
+    "ordered_blocks": [
+      "Oak plot: ten seedlings.",
+      "Oak plot: soil restored.",
+      "Elm plot: nine seedlings.",
+      "Elm plot: water added."
+    ]
+  }
+]

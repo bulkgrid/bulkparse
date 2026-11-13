@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ocr-prose",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Community library notice",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "The library opens at eight in the morning.",
+            "x": 48,
+            "y": 698,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Return borrowed books before Friday.",
+            "x": 48,
+            "y": 666,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Please keep the reading room quiet.",
+            "x": 48,
+            "y": 634,
+            "size": 16,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected_lines": [
+      "Community library notice",
+      "The library opens at eight in the morning.",
+      "Return borrowed books before Friday.",
+      "Please keep the reading room quiet."
+    ]
+  },
+  {
+    "id": "ocr-numbers",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Invoice number: BP-4827",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Units: 18",
+            "x": 48,
+            "y": 698,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Unit price: 24.50",
+            "x": 48,
+            "y": 666,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Total: 441.00",
+            "x": 48,
+            "y": 634,
+            "size": 16,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected_lines": [
+      "Invoice number: BP-4827",
+      "Units: 18",
+      "Unit price: 24.50",
+      "Total: 441.00"
+    ]
+  },
+  {
+    "id": "ocr-swedish",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Leveransrapport",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Åtta lådor anlände på måndagen.",
+            "x": 48,
+            "y": 698,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Kontrollen är klar.",
+            "x": 48,
+            "y": 666,
+            "size": 16,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected_lines": [
+      "Leveransrapport",
+      "Åtta lådor anlände på måndagen.",
+      "Kontrollen är klar."
+    ]
+  },
+  {
+    "id": "ocr-columns",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Maple team planted oak trees.",
+            "x": 42,
+            "y": 730,
+            "size": 11,
+            "font": "Arial"
+          },
+          {
+            "text": "Roots received fresh water.",
+            "x": 42,
+            "y": 704,
+            "size": 11,
+            "font": "Arial"
+          },
+          {
+            "text": "Work finished before lunch.",
+            "x": 42,
+            "y": 678,
+            "size": 11,
+            "font": "Arial"
+          },
+          {
+            "text": "Willow team repaired fences.",
+            "x": 320,
+            "y": 730,
+            "size": 11,
+            "font": "Arial"
+          },
+          {
+            "text": "Posts were checked carefully.",
+            "x": 320,
+            "y": 704,
+            "size": 11,
+            "font": "Arial"
+          },
+          {
+            "text": "Tools returned to storage.",
+            "x": 320,
+            "y": 678,
+            "size": 11,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected_lines": [
+      "Maple team planted oak trees.",
+      "Roots received fresh water.",
+      "Work finished before lunch.",
+      "Willow team repaired fences.",
+      "Posts were checked carefully.",
+      "Tools returned to storage."
+    ]
+  },
+  {
+    "id": "ocr-blank",
+    "pages": [
+      {
+        "scan": true,
+        "spans": []
+      }
+    ],
+    "expected_lines": []
+  },
+  {
+    "id": "ocr-two-pages",
+    "pages": [
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Community library notice",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "The library opens at eight in the morning.",
+            "x": 48,
+            "y": 698,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Return borrowed books before Friday.",
+            "x": 48,
+            "y": 666,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Please keep the reading room quiet.",
+            "x": 48,
+            "y": 634,
+            "size": 16,
+            "font": "Arial"
+          }
+        ]
+      },
+      {
+        "scan": true,
+        "spans": [
+          {
+            "text": "Invoice number: BP-4827",
+            "x": 48,
+            "y": 730,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Units: 18",
+            "x": 48,
+            "y": 698,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Unit price: 24.50",
+            "x": 48,
+            "y": 666,
+            "size": 16,
+            "font": "Arial"
+          },
+          {
+            "text": "Total: 441.00",
+            "x": 48,
+            "y": 634,
+            "size": 16,
+            "font": "Arial"
+          }
+        ]
+      }
+    ],
+    "expected_lines": [
+      "Community library notice",
+      "The library opens at eight in the morning.",
+      "Return borrowed books before Friday.",
+      "Please keep the reading room quiet.",
+      "Invoice number: BP-4827",
+      "Units: 18",
+      "Unit price: 24.50",
+      "Total: 441.00"
+    ]
+  }
+]

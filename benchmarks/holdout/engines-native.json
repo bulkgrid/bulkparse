@@ -1,0 +1,43 @@
+[
+  {
+    "name": "bulkparse",
+    "argv": [
+      "target/release/bulkparse",
+      "convert",
+      "{input}"
+    ],
+    "version": "0.1.0",
+    "configuration": {
+      "pipeline": "positioned native text",
+      "ocr": false,
+      "tables": false
+    },
+    "success_exit_codes": [
+      0,
+      2
+    ],
+    "pin_files": [
+      "Cargo.toml",
+      "Cargo.lock"
+    ]
+  },
+  {
+    "name": "anydoc",
+    "argv": [
+      "target/competitors/anydoc/release/examples/convert",
+      "{input}"
+    ],
+    "version": "0.2.4 / pdf-inspector 1.14.2",
+    "configuration": {
+      "pipeline": "default native PDF",
+      "ocr": false
+    },
+    "success_exit_codes": [
+      0
+    ],
+    "pin_files": [
+      "anydoc-main/Cargo.toml",
+      "anydoc-main/Cargo.lock"
+    ]
+  }
+]

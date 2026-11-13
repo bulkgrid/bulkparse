@@ -1,0 +1,4 @@
+Item Units Cost
+Copper 17 420
+Zinc 28 310
+Nickel 39 650

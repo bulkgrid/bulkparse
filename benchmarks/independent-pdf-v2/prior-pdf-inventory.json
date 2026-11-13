@@ -1,0 +1,1978 @@
+[
+  {
+    "path": "fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v3/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v3/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v3/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v2/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v2/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10-v2/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-tables-after-2026-11-10/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/before-run/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/before-run/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/before-run/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-2026-11-10/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-precision-before-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-precision-before-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-precision-before-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-before-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-before-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-before-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/before-run/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/before-run/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/before-run/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-before-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-before-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-remaining-headings-before-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/before-run/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/before-run/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/before-run/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-reading-headings-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/before-run/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/before-run/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/before-run/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-2026-11-10-v2/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-before-2026-11-10/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-before-2026-11-10/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-layout-headings-before-2026-11-10/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-before-2026-11-10/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-before-2026-11-10/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-merged-cells-before-2026-11-10/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/before-run/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/before-run/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/before-run/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "reports/opendataloader-precision-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/font_metadata_faces.pdf",
+    "sha256": "c189d92e8c3a0ae7521360bad3bead15c2eec9132a19e4045f616d56b0e2aa7f"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/shannon-entropy-p1-2.pdf",
+    "sha256": "2565be194dd1566b7b0543534d48aa04f6a57c25d51ed4c568c7311f4cee648c"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/stacked_header_glyph_runs.pdf",
+    "sha256": "d713d08e56fd65e29d2232e0a8f23ede3afe1981cd707039f79dae444ae71b03"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/scan_with_native_header_text.pdf",
+    "sha256": "bd9864ec2efa8a86de3b4e246340b58dea4e359dc814e9bba9ecd33d69e7faf6"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/symbol_builtin_encoding.pdf",
+    "sha256": "50781b42a3992817e5270c0d34d94a7dc5ea3f6e86e2f43fcbbcb8b1499a4a77"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/thermo-freon12.pdf",
+    "sha256": "5b3e6b76f9bfebff088b3d6ddbb69233b411d8e789ffc827be0718a9a11a8738"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/p1244-1996.pdf",
+    "sha256": "921fa863a5a4aba7b3de2be031cf32d5e03ce80c562d5aed6987a72f80091dfe"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/base_encoding_without_differences.pdf",
+    "sha256": "aa183ae3431b41ccc6443caf7ee1b78eebc04390a21b11b300deaad47ee3d305"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/wireless_two_col_no_rects.pdf",
+    "sha256": "603d71e12f52d9801a9d82995babf69681d923f493b8d49abfbab8662a88b376"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_glyph_by_glyph.pdf",
+    "sha256": "664180ef6c4941409b241f63473ae917e0333d4a48a903329b13b389be4b919b"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/author_block_superscripts.pdf",
+    "sha256": "22a9b858f8739cd31cbe0c46d6adf65b89246f782ece5ab9c57b27b8cae4847c"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/2013-app2.pdf",
+    "sha256": "e220fcbada9b68cd93c8ecfdc64324f87de1c63bbd9f23e47116b3a8efb2b1bb"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/stacked_header_string_runs.pdf",
+    "sha256": "00f3e0e71b399761739a5cc17523f1f03f5eedbb3c49a39458513c3003c83b70"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/td9264.pdf",
+    "sha256": "3e05f55f70f41c95c742f19bdc731f072194d5d2f52a355630eb4930686e3dfe"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/wired_header_data_misalign.pdf",
+    "sha256": "f50fd5a06dc040b9301588707dcd764a050414621f5a99255ff716a88a281220"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/upstage_key_functions.pdf",
+    "sha256": "646f014ab615ac22266a43be2691010032d9fd62368737d488ffcb912cd68fd2"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/encrypted-secret123.pdf",
+    "sha256": "4590c7c046c2ffe1fe0bd6fa848390a3a604516f523b2bd40eaec7c3b32dbe8e"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/vector_outlined_text_with_caption.pdf",
+    "sha256": "505f450a4b19e333c3ed58f96e65a2a0fcd259f740fe4cdc992f35290a24b041"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/hebrew_visual_order.pdf",
+    "sha256": "75924095655ced91b940738a6d05ef2c12d4901e15375a59f2aac2f02f3b3f3e"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/bits_pilani_feedback.pdf",
+    "sha256": "729585d45aa9bd9aa36b542303f91653102e94fad7fcfef9f0908ae9400fe30c"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/government_positions_women.pdf",
+    "sha256": "4682941b1a9a3ec96599d8188b673e8c6d1c4f2a555b5dc0d739c6c706815553"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_mixed_direction.pdf",
+    "sha256": "3a19bde1363cf76dcb81d9800d28ead0e7085a340eed161a8942c901e10b1793"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rotated_margin_stamp.pdf",
+    "sha256": "87375ede8cdaa0219a3f0428316536acf65d75270aef1b563cb464f49bbb445f"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/bare_name_struct.pdf",
+    "sha256": "28034217153984a33d5c424ce3505b31ce0a67a790a1c5f3fa4a60edca596d30"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/real-estate-pricing.pdf",
+    "sha256": "c39c1bf1cc3b23700c7b1a1f7690af229f68a945fb9f2161ee8b8ae676544677"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/text_page_with_watermark_image.pdf",
+    "sha256": "c2d48411795cb07a4ab8975326ff02fa14d20bf12cfdd72536227694289f1098"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/wireless_dense_no_rects.pdf",
+    "sha256": "39f32d6a01b8e434ad2fb16ff3896931153cdf4f85bca09194b71e1514711355"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_visual_words_in_reading_order.pdf",
+    "sha256": "0830dfeb0d4f3119190a8ecfae992ec82b2881c607e181d450a100eca7e54719"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/greencomp_competence.pdf",
+    "sha256": "ba0e025d53c091e8d4bb87499ff69ed3428dcee325c8895ecdb40e973b4c835c"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/cropbox_offset_origin.pdf",
+    "sha256": "6ee817c5af9c3f84aea0c920d01dd096efa31eef3fec8fc6628447793ef92d1c"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/multiline_indent_cell_rect_grid.pdf",
+    "sha256": "7087e0df66ae179d61334648a23395d0421f65da620bfafe74faf899ecea7205"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/broken_startxref_pointer.pdf",
+    "sha256": "e1434ed34da5861c423f65807c5c480532d8eb4ae4b196c652cded390ba65974"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/shifted_cipher_tounicode.pdf",
+    "sha256": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/shinagawa_identity_h.pdf",
+    "sha256": "85ba04ef261067df3c133342bf5b39b8af2f42f52ad82799021c454863c61535"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/forecast_table_chart.pdf",
+    "sha256": "a0edae1fa147c7bb78ebc493743a68ba4372b5ead31f2a2b146c35119462379e"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_invisible_logical_words.pdf",
+    "sha256": "34844c72a756da9fdbe68905eefcb52a39970026ccf0a699295a99df337f5d8a"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/accessory_building_permit_prose_frame.pdf",
+    "sha256": "8ba56d03ae8c2ee3d2cb7922a2c274858970024a093594dd216513af1c4dc568"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/firecrawl_docs_tagged.pdf",
+    "sha256": "9cf8b251ade155b16a934f21613da51198d8b59fb13baf1e6c19c11b43f4077a"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_arabic_presentation_forms.pdf",
+    "sha256": "89dd2bd8e3520fc8500504aaffb48287ec19e77357066e5423470fb51988a99b"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_visual_words.pdf",
+    "sha256": "1a489feaa4e241b777d7ace9ceb241d5999061b710cd76b1d4d5b17e87a24ecd"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/ligature_glyph_names.pdf",
+    "sha256": "2c2e4776ace1c0f26e8f3411273a08cbcb9fa441909467b4cf42187728b3d090"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/nexo-price-en.pdf",
+    "sha256": "c9ca85d416d191ba802cdbd438bd1d3195e263d8b815d5cc4304f972c5e38400"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/glyph_names_in_embedded_fonts.pdf",
+    "sha256": "bf208052805fbfa772909036f4305c41ab8043157f8bb6bbbac626976bc43bb7"
+  },
+  {
+    "path": "pdf-inspector-main/tests/fixtures/tnagriculture_06_12.pdf",
+    "sha256": "20d8b88cdf4ba4912f23da0895f0cbcdc01d29fa5bc7326a44bd280966cb6d30"
+  },
+  {
+    "path": "docling-main/docs/examples/data/chart_document.pdf",
+    "sha256": "eac5de8bf44007d0da9285d1ebb353ec55e9e12eaa58189b9197105b7832de69"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/text_with_vector_glyphs.pdf",
+    "sha256": "7026e92d1ea428e71c7ad0ca0d0c0271eb1ee3c4fd03497df752d254306adba6"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/vector_glyphs_in_figure.pdf",
+    "sha256": "0a2615899ffe7d12ee3a6f1bf7b4d9f5c9a6b37072d0b4bfd45f9a86145e8fe4"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/vector_glyphs_merged_fill.pdf",
+    "sha256": "8a34a64068cf98ef4d15ae79ed3d441c43fe3b0ded361c4521737b788586bf60"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/script_position.pdf",
+    "sha256": "851f660c7df487d97f3f2b485176421ae43ff1b36a5dc5161327a185f8619383"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/text_with_vector_rule.pdf",
+    "sha256": "4ab90294f8afa67e460ad84b7292de7b2c3a9d02bc4b67f1ede07a5e5df6d94a"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/vector_glyph_edge_cases.pdf",
+    "sha256": "a8258557e2f08dbff895b7bf7200afb3c8d52b14900006ad708306390f43f59c"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/invisible_text_layer.pdf",
+    "sha256": "cffa50020d709b0eb4d0b6d7c94e02002a7f80b8700b6b9e7f82eaf3f7ca8a28"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/bookmark_sample.pdf",
+    "sha256": "058daa14c4aea4676d9b8bf79dd382e127664e73da0334d8b370ed588b183ea2"
+  },
+  {
+    "path": "docling-main/tests/data/pdf_password/sources/2206.01062_pg3.pdf",
+    "sha256": "2bec8dacdd842a2e6f62fd9bf555e5b278cf9237fb1de2593bd515046bb71279"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/code_and_formula.pdf",
+    "sha256": "6cb63fba2ad42dd0e0afe6a26dcf3b3bff5a86919c4c06157c71c65ebc0fc9e6"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_01.pdf",
+    "sha256": "30d675db2a5c9613f2b12cb03e74c8f9384f473274216ee6a271cf0c99301f14"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_03.pdf",
+    "sha256": "ecfb67cbdbd082308765c070ba692033d6e92fc33d03e9448f4d7ad2b398440c"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/normal_4pages.pdf",
+    "sha256": "ca9c83b1653221a66b30cdb543c1ef7b116827762ae65fca36b87b332532b51e"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_02.pdf",
+    "sha256": "1f0d0b33d156b073907436b74acb2b2d2afe6ff3b037ed4e5ce87300226ec195"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/amt_handbook_sample.pdf",
+    "sha256": "7099fe05ade36067cf66e72b23277972a1a2b7d2da1cb82c8d690efd70143fe0"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/newspaper-00.pdf",
+    "sha256": "ba5f7a78792369ea36dbf2a554aa1635fa9f25983664ff17b406dca326279019"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/multi_page.pdf",
+    "sha256": "956846c28f9ed9d3b5cbe071865c082bd415f56e3e299c479aeea1f615eefa61"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/skipped_2pages.pdf",
+    "sha256": "63c849bc5a6a3e452e4ff06b823288c4b138cde24e7dc5ca57eb19b3c00635e9"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/2206.01062.pdf",
+    "sha256": "5dfbd8c115a15fd3396b68409124cfee29fc8efac7b5c846634ff924e635e0dc"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/skipped_1page.pdf",
+    "sha256": "827288488d4497fc02adc18313c6bffe9d43c2e73256b0330ce4d33da9ba57dc"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/table_mislabeled_as_picture.pdf",
+    "sha256": "a0d1ed0063db208ccad7ebd54cf549987deaf8f53948d95c3755f6b515925ce7"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/redp5110_sampled.pdf",
+    "sha256": "2f6bc92861997d1434c069040dc63447c3e415e8e9eadbd1a8129ba2327ddba5"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/elsevier-00.pdf",
+    "sha256": "519d4e8d7dde865ea5a9bfb7328c23b286299c1752365f0ce7c724a0ebb8a491"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/2305.03393v1-pg9.pdf",
+    "sha256": "a07f5c34601ba2c234d898cbfaa9e29a7045996ccd82ccab3012516220a1f3a4"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/2203.01017v2.pdf",
+    "sha256": "4fa8dff93d74a84069210c84a38d14d62a39ec8f4e4c90bf955fdebdebcf6636"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/table_misidentified_as_form.pdf",
+    "sha256": "7e8e895d8b1d97676bbddf4274fe83b0c17ce1f3238078d0d705392ef81256ff"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/2305.03393v1.pdf",
+    "sha256": "62f2a2163d768d5b125a207967797aefa6c9cc113de8bb5c725c582595dd0c1d"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/picture_classification.pdf",
+    "sha256": "dc38947ee802b7bcf82915804ccb8d04c4611e1b17491c415972821a329352fb"
+  },
+  {
+    "path": "docling-main/tests/data/pdf/sources/acroform_sample.pdf",
+    "sha256": "a4c3afbd5f7bf5d9ba7c13b84772e072f451b275bf4a7f05f6750b9a46548ddc"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_90.pdf",
+    "sha256": "39d7fab939f52c2e88a0f51d6ae7ae5e83ece0576f6ec00860fef325ca6e6c5e"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_180.pdf",
+    "sha256": "5e612719cff9ea5ab877d0ce6c1fae44f0b70ee15d4157e9231e6a5d5d7de906"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/nemotron_multipage.pdf",
+    "sha256": "b4f6d15c517b5d6b0d674e1b4a04219903528c3601fd026f98eadc62c814f568"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/sample_with_rotation_mismatch.pdf",
+    "sha256": "ceaa5e8218ca60ff366117a66bd1b6084e02fea903223a69eb63b479c2752757"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/ocr_test.pdf",
+    "sha256": "73f23122e9edbdb0a115b448e03c8064a0ea8bdc21d02917ce220cf032454f31"
+  },
+  {
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_270.pdf",
+    "sha256": "1b731058c6c1b68ce271e23c5ecc2fbdf07827fc04c965c897241a01c81911d9"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/BQSC-1003.pdf",
+    "sha256": "0b877b7da1eaf2472bb9ca5c9e168a1cadfd49e851c7cd5f8ff69fdcc0bd2d37"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_M.pdf",
+    "sha256": "eafaff9490f74acbea297d3144d817aa48b4d60405705f0e8ce0fefaafeed13f"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/D-BQSC-0004-1003.pdf",
+    "sha256": "8d672deb624199c462e83e1ba087febfdcde696253298d18f4291ecc673ec0d4"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/m_q.pdf",
+    "sha256": "63f6e14af97ad11ea0642b79a5250ee03ca2773da03b03264669d224c00c876e"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_B.pdf",
+    "sha256": "b26be4ea3236d65a024efba0d45ed11016c540faf124b23c9aaab58bff961407"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_q.pdf",
+    "sha256": "82fa4b019a46d0220975080ff19d24df09728a1efc8781bee3bfa5621e72fa7b"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/SFNet_ResNet18-TopK.pdf",
+    "sha256": "b8193714a49731d09c6a09ee41a0472199962818ca6e658d0c15cfb470f206f4"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/157-bpt_scatter_examples_3x3.pdf",
+    "sha256": "0247d97612e57998e5335e10e94a4096f6b11db000aa561682611c54bf92b58a"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/322-bpt_scatter_examples_3x3.pdf",
+    "sha256": "071fa44ae1689a07ce7bd4cc324230f99ad69f1cd4954b13d9bdb8ac9d89ca51"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/pca-comparison.pdf",
+    "sha256": "22ae75692ddaa4277bec69f7178506a4dafbd9f11e601a0d297194e836354eb0"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/equations.pdf",
+    "sha256": "5c8fbb9a3eb7a645e2db3cef2ad2c59c301b23c5e32bb069d1eefe2fa046b8fd"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/17-bpt_scatter_examples_3x3.pdf",
+    "sha256": "624181d79946ac7f00883213e7dcb5c8b64b248db4283a3e41d7519cc1f199e9"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2501.00089/138-bpt_scatter_examples_3x3.pdf",
+    "sha256": "94a4c4ffc473fbd6666be05528ffd5472feffea597a3dc7058b4f4082409d631"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/llncsdoc.pdf",
+    "sha256": "ae2f8d45f42a39bc8674ead7cc3d6e7da3f241cf67dfbb78f0217520e4ffa0ac"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/html_v_otsl_intro_v2.pdf",
+    "sha256": "224357eb3d94c891eb2d2f4157befac58ae65c6eafd6184a75c6bf8ea365bb9e"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/HTMLvOTSLv7.pdf",
+    "sha256": "c2ccc4a79d89f245f95d9b70e373b5cdb70255969279a31f1cd3ecf90ae1dece"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/tablemodel_overview_otsl.pdf",
+    "sha256": "addadf04ef5b2937a5bbbbbca4e341362b2acf7dafadf714ba3a9736c4d1962d"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/otsl_proof_v3.pdf",
+    "sha256": "f3f0c201f2a3d9dca9851933a1cd312f53b884c1c47479c94c475dcfe51fb0b2"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/otsl_vs_html_ex3_v2.pdf",
+    "sha256": "c75d3a229da32cc4ec5f9d5c1e84d672774d6e06fef382809239c6f067f8dcd2"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/attending_to_head2_new.pdf",
+    "sha256": "70e5f99d3dea638e1974c29f91a8fc394fa1d7862e9205044f339f911c69d6b3"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/anaphora_resolution_new.pdf",
+    "sha256": "adbd1c70e65ad463b8f405f805349144bef0aaa7efd9cb8da9874d2880fef348"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/attending_to_head_new.pdf",
+    "sha256": "f7e2a6931e8735af0fdd2ed71c219f769d7866edaf28ab19d3aebe9a0d032722"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/anaphora_resolution2_new.pdf",
+    "sha256": "c0ae1f58eaeeb7638d35c81de72937385bc3646a6bf0107f51426c2544b860cd"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/making_more_difficult_new.pdf",
+    "sha256": "99e0024b1019aee2c012d5ce1b75d4499a9ea8acf0d5ab22675f21f046cdc085"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/making_more_difficult5_new.pdf",
+    "sha256": "4533259d2f0e05bbbe5893d62af639c578d6e16c5077759a4645fae829a55d89"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/logo/DeepSeek.pdf",
+    "sha256": "d3942cc1322bb60599e082e230eff8cd820f1b1a1e6aa726d0bcec7eaed51a9c"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/overlap.pdf",
+    "sha256": "6dd9646dbde7863e0a303ad007a0b39d919a7cdef3fcacf5ac446cd6afffd01e"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-128accumulatorv4.pdf",
+    "sha256": "6191582bbb5f531e0fdb3f128b32360160e7bb8d66f2f198c29689cb2bfd4d3e"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-frameworkv3.pdf",
+    "sha256": "aeb757c71f01957a5bf93ee8e0129a2f092c4e5d133cf731e326caae28a230b9"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/dsv3_performance.pdf",
+    "sha256": "2adc9e7c317e240ef06ff0dd12624a2d6bff2bc806295b132a5c5e1189769fd2"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-v.s.-bf16.pdf",
+    "sha256": "a9cb6c013e195fac06178c934c1c9e86835c5beb50d8710ac39828e3ce35377b"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi.pdf",
+    "sha256": "4936e1fb227b0ce75a334084052c7f5d895f9fca954e9b2b80a0bae5d3711f29"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_1-6.pdf",
+    "sha256": "577bcdea27883ade22eee16363ed1ab41fe13caa0ca7bedf3e3741f1362ba24d"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/basic_arch.pdf",
+    "sha256": "41a3c7e12fd2bb3d61903e526debde1b01fcdb29103577bb6a97ffbb5b74e68e"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/nextn.pdf",
+    "sha256": "a4c43b5106e32e70862ab72f87ee766e16c3326f2e3a47ae88d1a53f4d1e8d43"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/needle_in_a_haystack.pdf",
+    "sha256": "e7fcb54b575828e5017025769cd92684689d0d98dc7bfe90d30b1553ebf36ee7"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/dualpipe.pdf",
+    "sha256": "2c47fab68ba1f76d3d7f0c2b39794d60534f11385922cac06600c300865e3beb"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_25-26.pdf",
+    "sha256": "bf6d213e26e578efdcdbe9e70fe7fb3389114bbd02b86d63f1865afd5bf87e5c"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_13-18.pdf",
+    "sha256": "75f8797e8dd3c4ac15710b8fd08b99b1ab89f5fbd55ee95df9e167c1c2aa7562"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_7-12.pdf",
+    "sha256": "271ced9fc5b9214f70169b17dd36dd5110376595421f12a6da2eede4061ae770"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_19-24.pdf",
+    "sha256": "85c42ba0cc882f8a11215a56c9c7ddb388d8a02df48fe5956422a3851ff10afb"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/rolling_buffer.pdf",
+    "sha256": "0453747468552fa164a5c18d9100084ff4f324bd74d09f7b1fb564dfce3f4adf"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/chunking.pdf",
+    "sha256": "7b5eed13e646f8f24a12c4b78c9cdfc60749d2a9e262350882f8647ccc1d6742"
+  },
+  {
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/swa.pdf",
+    "sha256": "1c1138e79d4ec8bf1a6e7183e797be0f6bcfc90792ebb4f848e72758b55e52e5"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/odf_presentation_01.odp.pdf",
+    "sha256": "5400452918f7a4fc4cdf895084c5f419ff5c80dd0d591cc8d3dd01b4794af1fb"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/odf_presentation_02.odp.pdf",
+    "sha256": "4fa78681d827d49459f4d8aacc864a7c98af50a0cff272fc50e5076f28c53488"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/text_document_03.odt.pdf",
+    "sha256": "3cb1bd59a1c2b323d3f30ea9b1d8587ef9d36924b710a612ed2bd0560a94224a"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/text_document_02.odt.pdf",
+    "sha256": "4fe68010b0a2de9456b6bd490eb12df6a0d72c1037a052943e2162a011b5a049"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/odf_table_with_title_01.ods.pdf",
+    "sha256": "76313f269e897aba02f0191f2e4582fe5080925e2bcc9a93f974496d5dff3f4b"
+  },
+  {
+    "path": "docling-main/tests/data/odf/sources/text_document_01.odt.pdf",
+    "sha256": "78d2b3e7ba14f3d506340ed6c37abe1e1db8a916d1487c1d8322f07b41080b81"
+  },
+  {
+    "path": "fixtures/pdf-tables/surrounding-prose.pdf",
+    "sha256": "1eced5053e2985a7db51d8c21c3c1a908e4183819d6525426457c7d3556db2bf"
+  },
+  {
+    "path": "fixtures/pdf-tables/spanning-cell-ambiguous.pdf",
+    "sha256": "c729e02ec012d0b50ae88debe4c8e3688e45e4154561a312c3dbef20d7ee8f08"
+  },
+  {
+    "path": "fixtures/pdf-tables/four-columns-empty-cell.pdf",
+    "sha256": "c4b649824ce6675eceac3b7bcc95bc055d47803d88801ce4f523e9c034b5409b"
+  },
+  {
+    "path": "fixtures/pdf-tables/two-separated-tables.pdf",
+    "sha256": "492b01ecb194ab3d6d23d40ecf66b20ef7e49afe2b51c584b73e011c9932968c"
+  },
+  {
+    "path": "fixtures/pdf-tables/offset-small-font.pdf",
+    "sha256": "b93089737d9c4aebf269fa6852025c413c7c7c474bee8183cdc4a50bda3ab154"
+  },
+  {
+    "path": "fixtures/pdf-tables/wrapped-cells.pdf",
+    "sha256": "d3589f156ba31c1684c5163bab061b43ea1498779a0a878e86b1fa5ad2f2a6cf"
+  },
+  {
+    "path": "fixtures/pdf-tables/border-only-ambiguous.pdf",
+    "sha256": "658d30fe83391cb1b763b29121a7314ad14b73ebb71bf02d72e1d7336b01a30d"
+  },
+  {
+    "path": "fixtures/pdf-tables/ruled-single-column-prose.pdf",
+    "sha256": "cf416ed31e99d030ab44eb550168b34fbc1351ba76b1a758130c1e1489e3277d"
+  },
+  {
+    "path": "fixtures/pdf-tables/no-header-numeric.pdf",
+    "sha256": "1e3c0fb51823a13661b39151ae24ae06ce7eb320f2f48da7e2d99bf047bea337"
+  },
+  {
+    "path": "fixtures/holdout/ruled-table.pdf",
+    "sha256": "f6f9fa350f70329b140858ab926f10c047abae84e9ea20f59338f33378b6aec0"
+  },
+  {
+    "path": "fixtures/holdout/prose.pdf",
+    "sha256": "1a16a93a91a43aad01d9c9fc69040c4b9156ccdd995b131820eab734322b3410"
+  },
+  {
+    "path": "fixtures/holdout/narrow-gutter.pdf",
+    "sha256": "67e83141e7a6f992bf72f2bd2564a717be5479080e698e063ce1b78a17064577"
+  },
+  {
+    "path": "fixtures/holdout/font-subsets.pdf",
+    "sha256": "8d94411be8080289a9cde89a79564cb536c26472bebd7c6289d115c5339c9cda"
+  },
+  {
+    "path": "fixtures/holdout/arabic-mixed.pdf",
+    "sha256": "d1e46e331d1d22829c6b76f4826117013b9faa1271edbcbc7a18bd2047dcc4e1"
+  },
+  {
+    "path": "fixtures/holdout/two-pages.pdf",
+    "sha256": "e457761cc160cb2daf479e78b2b440170a22c3cca59914302593466bf6934370"
+  },
+  {
+    "path": "fixtures/holdout/spanning-title.pdf",
+    "sha256": "decb7e4dfc1378ad2e461f1dedcbc19658200a4d68f85d9ba0c6761fef90e858"
+  },
+  {
+    "path": "fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "fixtures/holdout/columns-3.pdf",
+    "sha256": "84b3637f6a175acc3cbdac9a3dd41d853ec53083cb4c74138d3de8a5f52c103f"
+  },
+  {
+    "path": "fixtures/holdout/columns-2.pdf",
+    "sha256": "7f652a1a002514731d0d5d8f57c5763e2ff7db07b9aac8677ca0c98363133a19"
+  },
+  {
+    "path": "fixtures/holdout/quarter-turn.pdf",
+    "sha256": "74ff96ffe2a7979d9ca8188eeb0017b4707ef7d7fd44c32e97780e6dcab3f38c"
+  },
+  {
+    "path": "fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "fixtures/ocr-stress/swedish-b-clean.pdf",
+    "sha256": "17a5795d00e2e842f6ad6eec460c792c534eb76aeae1d90c914535e2935eb2c6"
+  },
+  {
+    "path": "fixtures/ocr-stress/chinese-clean.pdf",
+    "sha256": "b6659fad1188ec83d7a9bed548b06d7998804e4f69cbcbadd44e5aa94588bc2f"
+  },
+  {
+    "path": "fixtures/ocr-stress/danish-clean.pdf",
+    "sha256": "80a7fb1875a554896a870cc1c7d1d8ac12a533213b4936df009458d8eb4474ce"
+  },
+  {
+    "path": "fixtures/ocr-stress/english-low-resolution.pdf",
+    "sha256": "5181fc444ebb1a605a26b8a2912c2c2677e9dd2a8561a365e555ed802863c323"
+  },
+  {
+    "path": "fixtures/ocr-stress/polish-clean.pdf",
+    "sha256": "9e4530afe0c906bb5bcecf5ce621feb0b933c44523e89ed334671f844ac97698"
+  },
+  {
+    "path": "fixtures/ocr-stress/swedish-a-skew.pdf",
+    "sha256": "178e8215972d89de216ba47d8f03dbecff09b513639ed3df86f781c3f2744700"
+  },
+  {
+    "path": "fixtures/ocr-stress/swedish-a-low-resolution.pdf",
+    "sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8"
+  },
+  {
+    "path": "fixtures/ocr-stress/english-skew.pdf",
+    "sha256": "65257441224f50d7c89dcc311c6f6b3b5bdef3cd18d96f7813062afce81b0867"
+  },
+  {
+    "path": "fixtures/ocr-stress/turkish-clean.pdf",
+    "sha256": "80dbf54cb4d189d55dbaee6dbfceff9419da666a473e91c57476871e6e01f155"
+  },
+  {
+    "path": "fixtures/ocr-stress/german-clean.pdf",
+    "sha256": "e986e70f98d9f255508d9f8861128a0b7c0e17cb235af35daba45186925c384b"
+  },
+  {
+    "path": "fixtures/ocr-stress/english-noise.pdf",
+    "sha256": "88d3bb74216b48c0a84e2a703ecccbdc185d0aa7abec2306e8f3ef3a3973c2d0"
+  },
+  {
+    "path": "fixtures/ocr-stress/french-clean.pdf",
+    "sha256": "f9c94e21d3e6e2128cd7efb6614ae879e748cb311e1add46d4a272ec1c243cbb"
+  },
+  {
+    "path": "fixtures/ocr-stress/swedish-a-clean.pdf",
+    "sha256": "04602c90ac160e4bf425400d394fd812997517a7e42d72f68f5fc6598d778d0b"
+  },
+  {
+    "path": "fixtures/ocr-stress/spanish-clean.pdf",
+    "sha256": "c3fb4140578e507bcb3015547f23306afb9694e125ff2189de9f0c98324b20da"
+  },
+  {
+    "path": "fixtures/ocr-stress/swedish-a-noise.pdf",
+    "sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e"
+  },
+  {
+    "path": "fixtures/ocr-stress/english-clean.pdf",
+    "sha256": "8389346761d247e60e5a35a2372604ec24cd92a0464d912355468e694bf11f78"
+  },
+  {
+    "path": "fixtures/ocr/ocr-prose.pdf",
+    "sha256": "0f197e0531e24e9a0bcb3a5a800be7965007fc1995335a4f6997470eeee41412"
+  },
+  {
+    "path": "fixtures/ocr/ocr-numbers.pdf",
+    "sha256": "b2b68a3ff4d49b5869d07cd85a0cafe67736b63f080688003abefe8d7bd04e8d"
+  },
+  {
+    "path": "fixtures/ocr/ocr-swedish.pdf",
+    "sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103"
+  },
+  {
+    "path": "fixtures/ocr/ocr-columns.pdf",
+    "sha256": "e07ad420c06de44d0f833237dc03d64749d3293dbb510be963816857e4fe2011"
+  },
+  {
+    "path": "fixtures/ocr/ocr-blank.pdf",
+    "sha256": "b249d1d6d2230f9ea91b0f1dea668e563746cfa85b274787a1e2676b8520e48d"
+  },
+  {
+    "path": "fixtures/ocr/ocr-two-pages.pdf",
+    "sha256": "c933dd94a1667b485da9eb125a2ce38e142c897e6d772345fe119f5cf90f5af7"
+  },
+  {
+    "path": "fixtures/inspection/header-over-scan.pdf",
+    "sha256": "b9ce00cf103e789860d438f272905072fbaa19b6c8fcd181f15a9e1e7ebdb11e"
+  },
+  {
+    "path": "anydoc-main/tests/fixtures/pdf/handmade-mixed.pdf",
+    "sha256": "cd9c10c20b4c324273f98a3f63018eea07592e3e3103092ee1f9499f7a38cede"
+  },
+  {
+    "path": "anydoc-main/tests/fixtures/pdf/handmade-scanned.pdf",
+    "sha256": "f298b75294aa55400691fb88abb7c30e88fbde4ad04a9a43d809c12b214545c4"
+  },
+  {
+    "path": "anydoc-main/tests/fixtures/pdf/text.pdf",
+    "sha256": "7d1fd0932634cffa80bf9fb1bd73a6871f82a2cb29b4d7bcfb689927bc5d84e7"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10/hundred-pages.pdf",
+    "sha256": "ae3e21a22f26be24026846147fe49ffd0407e15f0c90b0421fe8d595af52faf9"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10/broken.pdf",
+    "sha256": "9e7f871e7ba17980e66ca233bd892b1940670fec6441cda9416ad80b747228f7"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v3/hundred-pages.pdf",
+    "sha256": "ae3e21a22f26be24026846147fe49ffd0407e15f0c90b0421fe8d595af52faf9"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v3/broken.pdf",
+    "sha256": "9e7f871e7ba17980e66ca233bd892b1940670fec6441cda9416ad80b747228f7"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v4/hundred-pages.pdf",
+    "sha256": "ae3e21a22f26be24026846147fe49ffd0407e15f0c90b0421fe8d595af52faf9"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v4/broken.pdf",
+    "sha256": "9e7f871e7ba17980e66ca233bd892b1940670fec6441cda9416ad80b747228f7"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v2/hundred-pages.pdf",
+    "sha256": "ae3e21a22f26be24026846147fe49ffd0407e15f0c90b0421fe8d595af52faf9"
+  },
+  {
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v2/broken.pdf",
+    "sha256": "9e7f871e7ba17980e66ca233bd892b1940670fec6441cda9416ad80b747228f7"
+  },
+  {
+    "path": "target/competitors/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/zlib-rs-0.6.8/src/deflate/test-data/paper-100k.pdf",
+    "sha256": "60f73a051b7ca35bfec44734b2eed7736cb5c0b7f728beb7b97ade6c5e44849b"
+  },
+  {
+    "path": "target/competitors/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/zlib-rs-0.6.6/src/deflate/test-data/paper-100k.pdf",
+    "sha256": "60f73a051b7ca35bfec44734b2eed7736cb5c0b7f728beb7b97ade6c5e44849b"
+  },
+  {
+    "path": "target/precision-investigation/before-source/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "target/precision-investigation/before-source/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/precision-investigation/before-source/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/ruled-table.pdf",
+    "sha256": "f6f9fa350f70329b140858ab926f10c047abae84e9ea20f59338f33378b6aec0"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/prose.pdf",
+    "sha256": "1a16a93a91a43aad01d9c9fc69040c4b9156ccdd995b131820eab734322b3410"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/narrow-gutter.pdf",
+    "sha256": "67e83141e7a6f992bf72f2bd2564a717be5479080e698e063ce1b78a17064577"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/font-subsets.pdf",
+    "sha256": "8d94411be8080289a9cde89a79564cb536c26472bebd7c6289d115c5339c9cda"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/arabic-mixed.pdf",
+    "sha256": "d1e46e331d1d22829c6b76f4826117013b9faa1271edbcbc7a18bd2047dcc4e1"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/two-pages.pdf",
+    "sha256": "e457761cc160cb2daf479e78b2b440170a22c3cca59914302593466bf6934370"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/spanning-title.pdf",
+    "sha256": "decb7e4dfc1378ad2e461f1dedcbc19658200a4d68f85d9ba0c6761fef90e858"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/columns-3.pdf",
+    "sha256": "84b3637f6a175acc3cbdac9a3dd41d853ec53083cb4c74138d3de8a5f52c103f"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/columns-2.pdf",
+    "sha256": "7f652a1a002514731d0d5d8f57c5763e2ff7db07b9aac8677ca0c98363133a19"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/quarter-turn.pdf",
+    "sha256": "74ff96ffe2a7979d9ca8188eeb0017b4707ef7d7fd44c32e97780e6dcab3f38c"
+  },
+  {
+    "path": "target/independent-inputs/synthetic/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/nics-background-checks-2015-11-rotated.pdf",
+    "sha256": "3820767f7b9c8a80d20916daa8664afee49421c4bc6d6efb70bb21ae5f9a7195"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/issue-912.pdf",
+    "sha256": "317f8e045ec0a67a272bcfd0d38e33f6aaf1110d0a57a26faa739dbdc4bc09bb"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/issue-463-example.pdf",
+    "sha256": "7337e4267970818c55692f371d1fbaeb18a6dbc2d2d58739a07df94a4e3b7999"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/nics-background-checks-2015-11.pdf",
+    "sha256": "4f0ae6e017b0e97de211da8fd97316e55bd927af5740d6ce95e1b7b1539f9407"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/annotations-rotated-180.pdf",
+    "sha256": "b8910d64033eeb7560e11a1bbc397751261597f8bc781ba79ca1a77362386ceb"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/issue-1054-example.pdf",
+    "sha256": "87c424c0833734a4d2dff996a20b686c0cc252f3231fe067fbcffaf2d90723de"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/issue-598-example.pdf",
+    "sha256": "022dc4c57d995bea2317537fd91ca3b08d267f1c20469b9104e3a682e0b7dad8"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/image_structure.pdf",
+    "sha256": "ce664b97ca3f765ad6a82352c2555cbfcd687d554722341413d633178164fad4"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/figure_structure.pdf",
+    "sha256": "46ffbb251fbefd6f0b0e7410f504a3b0370f7f5c98f374b10cd1907fb400ee65"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/issue-1147-example.pdf",
+    "sha256": "39e9d5e5876c0fc833fdc01e84019a0f5d2f74a203cf99070d359ac20603de45"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/federal-register-2020-17221.pdf",
+    "sha256": "ac419e4e084ea7a7a33a7be3f129dd07bc705b1a9e45ad751e33357f17d60f5c"
+  },
+  {
+    "path": "target/independent-inputs/external/tests/pdfs/scotus-transcript-p1.pdf",
+    "sha256": "c63508c7b195e6b6c398311fb1f3a36de31f604e3ae94b486a6776f1f144b379"
+  },
+  {
+    "path": "target/ocr/stress-generation/swedish-b.pdf",
+    "sha256": "faf136eac0146df5ae658432afe032d8f69903b81c40528198b5cfc4c52864d2"
+  },
+  {
+    "path": "target/ocr/stress-generation/swedish-a.pdf",
+    "sha256": "539f2bad10bc9de31293cb787cc87a9af4bca11c9040c1b62324db997e8a1e11"
+  },
+  {
+    "path": "target/ocr/stress-generation/chinese.pdf",
+    "sha256": "9e2573f33a46a8bec5f9e38224fea96d18b59edfbb83e212d6e09ded76351ec8"
+  },
+  {
+    "path": "target/ocr/stress-generation/danish.pdf",
+    "sha256": "ecd48018e92d4fc8c3e44c8d30521dafe1daadfbc2d4d1bd4f76cf924b069bf9"
+  },
+  {
+    "path": "target/ocr/stress-generation/french.pdf",
+    "sha256": "a95eb7970e7406a5938142243ccc38e8f6838c1f753ec68c577498b9ef33a500"
+  },
+  {
+    "path": "target/ocr/stress-generation/german.pdf",
+    "sha256": "f13ef445e473dea387bc42bce2f77a96d4c18cb3c62e98f29a2a63abf000be6f"
+  },
+  {
+    "path": "target/ocr/stress-generation/turkish.pdf",
+    "sha256": "7da69da6235222ed65e243be3fc092f20454bab557f6fcfdd8380564c2f42b28"
+  },
+  {
+    "path": "target/ocr/stress-generation/spanish.pdf",
+    "sha256": "5720994bd81f002a6f1ec75529410237641ad027465febfeb4e027e7660e23e0"
+  },
+  {
+    "path": "target/ocr/stress-generation/polish.pdf",
+    "sha256": "cf2aa089674e4fd36e67bd8a2d223ec3271bc04bfeda3243aff1c5921aefcc80"
+  },
+  {
+    "path": "target/ocr/stress-generation/english.pdf",
+    "sha256": "a2c3eb98f92be8ad5a0173fdfe2166e3a2d7e6168d6d31ea77e7251c2beb287d"
+  },
+  {
+    "path": "target/layout-heading-investigation/before-source/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "target/layout-heading-investigation/before-source/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/layout-heading-investigation/before-source/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000119.pdf",
+    "sha256": "b9e5879b4dcd812e854cc06c6c3cb4f54231af28c919be63e27bef4c639551c9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000125.pdf",
+    "sha256": "2183cb0d11b4e22a1fd54f2e79e9d91b280e63c24da91c4164d52a89732dd1b0"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000131.pdf",
+    "sha256": "32b723d3d51157dd3e96717aff7efc3d13c5c6c942668b1fbce46bcbe8d94354"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000079.pdf",
+    "sha256": "63111d8ed6b32c2b3473840ace01896244527d3dc306d81410a3cc7d87a45226"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000051.pdf",
+    "sha256": "4682941b1a9a3ec96599d8188b673e8c6d1c4f2a555b5dc0d739c6c706815553"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000045.pdf",
+    "sha256": "00f0adaaa8358a28b4b4e83bc97dcd83a01f7283605b140c2be8e8d47bba8b6b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000092.pdf",
+    "sha256": "0cf2e856478f66d96690a306b55ff40c01ab24cb26d048fe248eac8e3d66e65c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000086.pdf",
+    "sha256": "4f6d9c52848acf2346013388db8ef25c40e6e2fd1232c49f2abfa7a21f65c82c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000087.pdf",
+    "sha256": "c1381b5a2db9ca221ea4d47f1e037d837679114eb70cafb1b7bb1d681d355d75"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000093.pdf",
+    "sha256": "9877e33f447b370ad098531c25e340b9e786d1e84f4ac7365bab9c6746b57247"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000044.pdf",
+    "sha256": "29dfa90e45920fd79e68e82f0f171119fc1b4d494aac703edf21c3ea74dd6fca"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000050.pdf",
+    "sha256": "97d60e0c292030da220648b4ce7e8971adbe29731b7077d9c3c8d7c6dd778e42"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000078.pdf",
+    "sha256": "c4416f86c1db7fee5dccc1a10e85b1aade1cd77803f4ee626a090e8bc26aa9a9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000130.pdf",
+    "sha256": "95f808815969717e4ef6390b2b789a8ea552a000a2b936c3c9371f695a71bd9e"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000124.pdf",
+    "sha256": "bcb3dafc35b5e7476fd1b9cd6eccf5eeef936cd5b13ad846a4943f1e7797f4e9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000118.pdf",
+    "sha256": "39aec6caead187513fa9e2a26a3bbb54ba0a3a4ae8e879642ca1584330b0c285"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000132.pdf",
+    "sha256": "eded7804127acce26e4b9e7138aa8c95d0d8886280a21148efb0ae9519941ede"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000126.pdf",
+    "sha256": "e2b604a3fb1541b82b6af8caca05682dff0c7735e0a3a4fa7c6a68246fb60e57"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000046.pdf",
+    "sha256": "d276ca9a5ecb8d6d11359f515e50c8f78395548de4e3e2c49e38f5500ee40ebe"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000052.pdf",
+    "sha256": "f4dea73d2b75fbc7d590e2085b14e9bee7e766da73e14f723a2580fb0f36c707"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000085.pdf",
+    "sha256": "df678b583abe6afa6971fac9efa23189bd235105d697ae1b2b12d25e3b9fb8b4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000091.pdf",
+    "sha256": "475c037beeba4ba75b3e749b51f3781a67e8e8f9db6a31772f7bf2ed2bd05d00"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000090.pdf",
+    "sha256": "d1437ae1c6bedfa2bbf72e4d04dee3a01896dd045024438ee7c4e775e0ab6e9c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000084.pdf",
+    "sha256": "39a0d95abd6dc977dfc7986b57fbbd9a8331af6b5b603e023f41dfcbc67003c7"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000053.pdf",
+    "sha256": "0ce1ded16152ad18c45203c1dcba0287235b888266fbcd112396fdf7cd094fab"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000047.pdf",
+    "sha256": "934fbf534914863f6431eef38f5bf66fa91afd439ddf20fb1af0cf3225159ac1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000127.pdf",
+    "sha256": "603d71e12f52d9801a9d82995babf69681d923f493b8d49abfbab8662a88b376"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000133.pdf",
+    "sha256": "733825a2a8367b6d61ceccd19b6781c3520730c0fff34ab4c2e8411f625f34be"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000137.pdf",
+    "sha256": "a7f0764fac3ab64711acc91fa88e2632f3e0d27b6d57ab58ee3b709b0889adba"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000123.pdf",
+    "sha256": "12b156f795da26f2c74fb91e0c828427582d595d8bdf1d9acc695cf01e11bf10"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000043.pdf",
+    "sha256": "99199a6ab7aff04e417c953ce0b87f56b1d9fc6a91d891b2c74720778ac3a95a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000057.pdf",
+    "sha256": "4c8f779a89fd348e058a875f9182d6b3070199531adaa187bc3a602b5f746df3"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000080.pdf",
+    "sha256": "c2b60a018b0503378c804fbf3f75b8ff956d30b3fcecdc30c37781b7dbe0c1c4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000094.pdf",
+    "sha256": "a546d4f7375892bde50a7ceb4e665e565000286a1c007c51105a3ca3fba87bf4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000095.pdf",
+    "sha256": "c04c230b8dfa00d0fabbe9730c078c840ccaa27f5f270d5899f35405784a535d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000081.pdf",
+    "sha256": "24ab9416df440de9d792a4034e177eb71933a6eed72d4cf1ead17d22a787702f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000056.pdf",
+    "sha256": "5699486e354a93df094404bae0cd17381bfab180f9ab2b5c9f55428c07a106c5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000042.pdf",
+    "sha256": "a14ebf0077dbbb76dd91f3d7d0b66b66b4ab62260846cc75fb466b85a4a762b4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000122.pdf",
+    "sha256": "770c9434a3530bfb67ef32510b63e1da347dfd6c51e5db9e0b13e90c8b287895"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000136.pdf",
+    "sha256": "ee0a6175753e8cfc2f35fcbb1c5f7666f56969fb8111e326757835f062c65bb0"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000120.pdf",
+    "sha256": "6916893bac49ba4fefa0a83eaf039b73c4adf00ed81ef97d4aad8f1a5cb90994"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000134.pdf",
+    "sha256": "4a6baa0f883743ec25b853bae06a49d230ec010c973501945d46a16f9bb75aa9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000108.pdf",
+    "sha256": "3e5b086e7392fbe139a3c42dbcf1442d95c4d0d97a5671e15cbeee2191e59747"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000054.pdf",
+    "sha256": "d09e9a559e05904e7a73e547f179ed617b016a94065e045b9f46bbe0e2ae8528"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000040.pdf",
+    "sha256": "771caa3e8ec1bce887caac49940cab3c5b06a8a42ce120daa1999c30204aab33"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000068.pdf",
+    "sha256": "32398c8e13acf26f1de76c730eaf6f57742037357a0eb25338b1fd7a5b816bf1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000097.pdf",
+    "sha256": "6182c54724e702a8ed0936580d2096ab8b372a599589e731c66bd40ba5c252c0"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000083.pdf",
+    "sha256": "970804c04c81dd9cc3ba80f0063b9551d290e83934c4e2c258e376845b3d180f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000082.pdf",
+    "sha256": "0ec2813813e8e7496d97aa4fa15dd414aa66cae2d6f62db818d30d9856ff0439"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000096.pdf",
+    "sha256": "b966d5aee5a17b377107ade67238d7215faef6303ac980080fd68534ab3ce5ae"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000069.pdf",
+    "sha256": "42a416ed4de970abf9cc8ed74dbc543df8d7cc6ed24547189c0e8c77e5fed1d5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000041.pdf",
+    "sha256": "e786231794e24874e66321d9a2ce9d80050a73cd0e02fa358c88a1e87a183735"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000055.pdf",
+    "sha256": "275419814c80169ba0ca779343d8cf778903225b34dd40d0d63ef119b9892f78"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000109.pdf",
+    "sha256": "462529434b77fc469f72c781c14663f8a787e4785af189268f5aeac71e823aba"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000135.pdf",
+    "sha256": "ed941b5cde32cfc778c225dcfa90c334d9995d70c46e7f508635073a3227784b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000121.pdf",
+    "sha256": "f151ca1888000160dc6ce2e46c3438bc13f9a034200b1ec5d81b03c77606eed6"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000146.pdf",
+    "sha256": "ba0e025d53c091e8d4bb87499ff69ed3428dcee325c8895ecdb40e973b4c835c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000152.pdf",
+    "sha256": "16bc03112342160922798dc0b3220b260ad4ebe06deafb9ab3c67df528877717"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000185.pdf",
+    "sha256": "b639c25ab157f6f4ecbdb7cd31724bf4c8869f03134f5e606c49dd5fbee2bb54"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000191.pdf",
+    "sha256": "196876d21778214061c0d970de83cf37204a90e0f58c3da7e9f3c8c7e803b770"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000032.pdf",
+    "sha256": "65be3f78649d4ee59fa39b9d2b94a44570e52ddbf31cb7213f92853bc23ceb16"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000026.pdf",
+    "sha256": "9720f5990852942d3d2e0c84e6dfb1db5c528f3811b1fce9d320e8fe55219b78"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000027.pdf",
+    "sha256": "93ce1e59ab01c6352a98eca26b4a356b1e46e923cd60ea7145a458a3fbb5fd41"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000033.pdf",
+    "sha256": "f81cbaef6c20bdadec11a3e9622d381850f6f7d3ab059e3949a9a6a877fd144e"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000190.pdf",
+    "sha256": "eac01901729786f15ba498716c592370d50f00658c291495086ff49a8538c5c6"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000184.pdf",
+    "sha256": "a7914baa31ab36088e7d4199120e23630c800e99d8f96aa5a21091d7a67ff1cf"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000153.pdf",
+    "sha256": "4ba951e3da05a42523676d164548037c97a09984433bd37bf71b1f2a7acfd598"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000147.pdf",
+    "sha256": "b862cd0d6f06c06ee5ab7729ed4e8ce58e6964eb0f1ab98b3865b57a4808216f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000179.pdf",
+    "sha256": "ee9af89ec8d82b15d0fdff8908560e597e71cd4662d28472bc1a4d485d6c6712"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000151.pdf",
+    "sha256": "ab0f3ac6ce114304cc331404f20a780f57fcb060b5c96c54c69478d474997d1f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000145.pdf",
+    "sha256": "764990d134c06378c3f496bfae33215c8ff57a0d306cc984e6429a6ed48257df"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000192.pdf",
+    "sha256": "eaafa071048c2ec1309751325280ea3d354317cf67ebda400cdf4fd39503392b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000186.pdf",
+    "sha256": "22d276b33b49ec941acbc323e24fa57ed07579760f472c136f226d755a0c3b13"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000019.pdf",
+    "sha256": "43725982fe76bf6e308a001ad81cab4781e803e1d8574e9896be7cfdf2fa8732"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000025.pdf",
+    "sha256": "c00f679ff2c9acbd9ae3904fd350d0f24bea93fb90f44128c7c29a00483b6611"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000031.pdf",
+    "sha256": "a5b975710668800f4d4712155bc597a028f0ffbfe162efef92ded23cb2c23b9f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000030.pdf",
+    "sha256": "9c897807c023cf6c34295d03cccb262ed0cbef83bef63d4908ab6d3775b15597"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000024.pdf",
+    "sha256": "da3f562f120acab3005c9735a195e3c57322c6b1439f22c72d7951eaa2544985"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000018.pdf",
+    "sha256": "321a42833cde040a5e4525c5f84ca2e7df18ee57649c9b47a0e5472e1357abb6"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000187.pdf",
+    "sha256": "29d883eb26e7b9d08250b4bab1c51092d74e310e6acfa955f8fe28f1008accf5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000193.pdf",
+    "sha256": "fcaa8c3de4757ff51e604d84c983c59c421e31b9989df5b74c930e0e8720e5ae"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000144.pdf",
+    "sha256": "64f31210764923368012a82e8741b32b217654d91f54fc9e0a13be613d63bbc1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000150.pdf",
+    "sha256": "a46e40b2b04dc83e4014fca656dae6df20af1fe7a420df306406409ea8c0db31"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000178.pdf",
+    "sha256": "62c4b0340519f5963a37534d3abeb0546766cb53bc90504f663eb7cc321a6a6d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000154.pdf",
+    "sha256": "512a6e53e0a6661cb6bb77da54c354496ca75723048e2411ac5d1796a18cda8f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000140.pdf",
+    "sha256": "aa00d01e639cf879439b5f4c9313f1647bba27070a833569dee0b3eeb3476731"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000168.pdf",
+    "sha256": "d6ce9ae24c7a15aa55e9a8c232c913cb8bcc1dc2d5d7f129258f4cbf6f46719d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000197.pdf",
+    "sha256": "39f32d6a01b8e434ad2fb16ff3896931153cdf4f85bca09194b71e1514711355"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000183.pdf",
+    "sha256": "cbb4a13ffd01d9f777fdb939451d6a21cea1b869ee50d79581451e3601df9ec8"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000020.pdf",
+    "sha256": "4b2666400d10ffed958b17ba6fc8b72a0526f1f346d130198afc2ba142537502"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000034.pdf",
+    "sha256": "e1a31e05b65ada20646a1136bdc3293f68e3641893a48674c791bc2b8fadffa9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000008.pdf",
+    "sha256": "906d54a21ef3c7bfac03f4bb613b0c79ef32fdf81b362450c79e98a96f88708a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000009.pdf",
+    "sha256": "9e22636736c43765307cbc5e876b0a18e340b52c909fc36043cefb38a7a11638"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000035.pdf",
+    "sha256": "5cba8e49a880e4f6d1c1fba64f03b3d638fe26cfc00d77fddeb450334c8e0667"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000021.pdf",
+    "sha256": "8cfcbba6c953185e59b1edf5dfab0d36df31ef74a32548308deca21a8a96e615"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000182.pdf",
+    "sha256": "c31d842c665085cb1379d441ef0b65869f29537b9252956d6105e6b4cc972311"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000196.pdf",
+    "sha256": "1c0d070f25babee3e3b5e2a842c54258f41939a7774c0e7c6d85fb7078e1196d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000169.pdf",
+    "sha256": "37b2674a918c0c0782194d45b011f7c9ffca19ccc245545fb5e35027e7c67a9d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000141.pdf",
+    "sha256": "827d21de372a2c26237ee1db526460851ae71c1867761776583535f532432e32"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000155.pdf",
+    "sha256": "b2c11e30c537ecc6ac4d39ea937e512500882bc479ac6e5c3b380cf1627dc189"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000143.pdf",
+    "sha256": "b4d90b6cc2d96d952b49dd227148c08018baffbfebd8d204705384f0a4a0c8a3"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000157.pdf",
+    "sha256": "e5cd36c1ca7a2c476b14a19497ea75921899a21c6b510f63ef571abf0c000d5b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000180.pdf",
+    "sha256": "4b5f23f97fd273cacb8de95fc1799ed4dc4d5c15e9ed86d707cdf4be53eb7c7c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000194.pdf",
+    "sha256": "2ad0df434ac3f29ff1dfd1ce8e378a2badf1bb6b9aede5d18de2945460f55c1d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000037.pdf",
+    "sha256": "14e279e87615e3e3bb697729ecd97a2c5f3cd1195d9b1a2733ebfde630fea23d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000023.pdf",
+    "sha256": "2bc220dfeed673f84b74c53248a4c4ef8ee5c01d1591188c2b770519de94e82d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000022.pdf",
+    "sha256": "348bff737da27234885d263b9983064513fc33b1ff2ce858171e58f88c954c1a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000036.pdf",
+    "sha256": "020d140f50e8e8332a8b2099bc306d83ecf46b851e3ee6cc03e456ccd05411bd"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000195.pdf",
+    "sha256": "2b12f031b9b42e6f54b76b7d4666df76b7c8410a676d63b0ad2afdb40388d623"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000181.pdf",
+    "sha256": "92ba5d5f6f6e627a3e9ddc00bcdd31b9c2c047e0461fff6c8fa08894a68b72da"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000156.pdf",
+    "sha256": "3cc8da158da98e9b4e7b3c8ba7d1a74afc558fb6afc7ac8eadbe74afb4e7b14c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000142.pdf",
+    "sha256": "e30779548a80ff14228753ece493dbce0b4329e426b5dbe61b19d8721fec6dee"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000167.pdf",
+    "sha256": "18fbe4800ce186f3338eade3d1800bde4e275396656df9781f0d84f4b6e22f0c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000173.pdf",
+    "sha256": "85ce99d1f5e9e0661f3cda228e68c36ac7b735b3c78caef8165c906074c6e7ab"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000198.pdf",
+    "sha256": "8d09961d139152e2bbe65e06bd7237b707dad351bd2ebc6fcbc3123f9ecd5086"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000013.pdf",
+    "sha256": "a266dd4ddaff135dc5b1ce3d960d4b29cfc96bee5f30f3fb879a0b730c57e6f7"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000007.pdf",
+    "sha256": "2fd524178510079b3618bd62ef2f0db3ff4e5f967afe578924c336d74e031f70"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000006.pdf",
+    "sha256": "9713894c940f2ad16f015d857757b003e4ecaaa1602afa72799c08526806f533"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000012.pdf",
+    "sha256": "d2773d8fcd2f2b18b6bd0b2952ba8dd56702e1f738a4f8a7b1e0e03c9cad9dba"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000199.pdf",
+    "sha256": "8bfb767df3506b4bd76b31e8823f59714c7abfc2a34ab11018e66fa2d9b5ed29"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000172.pdf",
+    "sha256": "4a23b09904c5fbb871fcf792e30b87c4b7cae0cdd0079b5ee0e3e34a353638b7"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000166.pdf",
+    "sha256": "2e4f2561d8624cab6140564d53aed11862cf5979572fc3d1205af105486e0b1f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000158.pdf",
+    "sha256": "118cb93e60d052c799e7119026c02fd68ca57362f5ac749ee58c8de8556f9393"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000170.pdf",
+    "sha256": "4d5b682effaf9580928a7073980e3916687d168238bc96b6c17222f747eacde6"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000164.pdf",
+    "sha256": "286f10070b1be903eb23c297dee52da2d8f108a4c4db79e0f6b62eda54050067"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000038.pdf",
+    "sha256": "22f4e5d348c45a3399f3c8a0e48756dd82a96ed9f5723a2a39183b554667d19a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000004.pdf",
+    "sha256": "0c00e243f924c0b33ccb0aede1a67b433927a1519cb33bfd704e23f6724dd560"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000010.pdf",
+    "sha256": "4d4bf58bf1563cdfb71b2e1272e95c33d01625a9627694fafdf0c69b50816ea5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000011.pdf",
+    "sha256": "f3e3d62292122d9be48e262e7d8e1f9363bab000e26437ffb6f2f94afc3c2294"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000005.pdf",
+    "sha256": "daa5167329cda28a8a3841b6d5b8a37ee30273285f174af98ce5c0e5c76c0976"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000039.pdf",
+    "sha256": "1a5c949c602fb587c39618443a00915582b2d20a32f959e5d3f4f3fc99ab9db5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000165.pdf",
+    "sha256": "ed046862e68a27a7260da60f3984484577f83500dea61020d043c7af8b76731f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000171.pdf",
+    "sha256": "7a0dc2cafa8fc77f28d78c90092a4cd31670dcf0ccfe8474a2765148448f44d7"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000159.pdf",
+    "sha256": "0d4c4e8911eb53569e91f3c53a1deb5951ad138e767ef5edff79b490053fc82a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000175.pdf",
+    "sha256": "94ba5468fcb6277721947697048846dc0d0551296be3b45f5918ab857d21dcc7"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000161.pdf",
+    "sha256": "66c1d3c3d52df005397d2b458d43a0c2a5c1a2ba8ab8db4ed5a20ee07d7fe090"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000149.pdf",
+    "sha256": "750091cec2c31ca61ffaa40c282148258f40bf5db7356a7ed3f918a07c81ef0f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000001.pdf",
+    "sha256": "cd34bf0452e0bc9b7f26515c7426f9a197480478f52f464e67a0a5912221da69"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000015.pdf",
+    "sha256": "93bc667fb64454b9df1688b9873ed8fbf3f548d58c81ec0ca3d9cc50e79fb667"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000029.pdf",
+    "sha256": "b2cd33ed246c6dca7d94b8937a8abbc44eb870a5007e5c07fcfbd2845e9b1d07"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000028.pdf",
+    "sha256": "ace262c34d2a1ad90acd6fce0e75610f64e96a8c35e03cd11505efd130953264"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000014.pdf",
+    "sha256": "10817297774a93c1838650c06b79f518db43af558496041e256bd8c259057f79"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000148.pdf",
+    "sha256": "6572d153a938b50167baca0e724b25a02adb927d3c6adb9f1985484b7b1791b6"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000160.pdf",
+    "sha256": "d7f2535a168ba996bb0caccbcc719373580d555909bd5d46ed1748e8f3c17807"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000174.pdf",
+    "sha256": "caa98180e7cec3f27dfa28e4d67a66748ba4921bd3e2cc6d3cf5ceab4e765ec1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000162.pdf",
+    "sha256": "165dfeaf31832cc4547b6b638a033c1057ddb6384874c16c4574c6278856dd30"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000176.pdf",
+    "sha256": "3b10e813590fb9c9f54883151a2dd4b4ccb407becc54fd516a82972dc261630b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000189.pdf",
+    "sha256": "2f972daaa81cb3949db12a39cf6910c4f9952135f7eb3850e1f60ef7d8b5aaf9"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000016.pdf",
+    "sha256": "0592b0a1dff0c0b4a48b4504c035336bc9b30831fa2ac2ca8ef8b43a9b5df271"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000002.pdf",
+    "sha256": "5d089e42c7c614828adb0ec78abd0c87d078aa01b79789d79aecea6411ff53e8"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000200.pdf",
+    "sha256": "646f014ab615ac22266a43be2691010032d9fd62368737d488ffcb912cd68fd2"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000003.pdf",
+    "sha256": "f23d48a7427bb9747681758df25281d6da6606363d6891058af006389747ee68"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000017.pdf",
+    "sha256": "0bd9bf7f193c5670d79bea2d81c123c7dc3094467ec9616245f81a148b063c77"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000188.pdf",
+    "sha256": "61070c2fe64a690c7c9cc97d12b76380e7a134feda3c5315f779306699a89a1b"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000177.pdf",
+    "sha256": "fbee4ae063533d20dc7339a3ffa2412d58504af06420fe15054657c87ed81a79"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000163.pdf",
+    "sha256": "d6612de0987496c11003e3acc3632cc1a34f17c6b3473cafc2f736be9ba40308"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000138.pdf",
+    "sha256": "78698056c30504beba802bc806711c307553d8b8aa39a6d8ff8388aafdc3953a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000104.pdf",
+    "sha256": "f01f786e76db9a4e8e321342660e2a539d4b060e123b42a58ec84df128455d59"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000110.pdf",
+    "sha256": "cd160a4e2296bd7c23f19c26af5bb6ed772f766ee1eacfe9998703c38146b494"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000058.pdf",
+    "sha256": "f0ab823f66709631e6226a937a8d68b52bde1e7ff6ef28086563c0646867c769"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000070.pdf",
+    "sha256": "9899a637992e35363176c7b7aca0633879da307327f5c434122856c639a6e9f1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000064.pdf",
+    "sha256": "bdf0e09acee7a07f7e60c6055128967b36b44564842983ad3b0f273f1c1c5914"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000065.pdf",
+    "sha256": "edafb0db61c16517e87d60ab4d1216bbabb43bcb39779d21707ab4b8ccf1e81c"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000071.pdf",
+    "sha256": "8a87099365535d996d3167c933ff78e2890f96e70d4a8e2291d0c420fe7093ba"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000059.pdf",
+    "sha256": "0687b8e7d87922833102a8e792d999184f73fd8ccbc147bba73ab036a28ca776"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000111.pdf",
+    "sha256": "fad8cdcee7f7884bddedf0ee485bf259f815315699f35ef82b2afca5fb28f68a"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000105.pdf",
+    "sha256": "c8f35048844313b77c8c6d6a059b9f91a3b5e34f30e7a774a0f2d8fca82101eb"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000139.pdf",
+    "sha256": "747e0d37d78ca840e89dd820e032b90a350809453bdf96c7359204b4a324e933"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000113.pdf",
+    "sha256": "f17954b5fdd9abdb6b4ec921c26ef9949f8c3f34b35b4efae11d57f49efa8283"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000107.pdf",
+    "sha256": "4b667a2eb374a8566044a6c90f5641fb0aa4a7f2127350296f2a038b59c00208"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000067.pdf",
+    "sha256": "30628cf0d5ec4d1d9dd94853d0711fdf496cbaa199fcab19f6fd4a4ddd34965d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000073.pdf",
+    "sha256": "f99de206dc21ba8ea57548b1c0c007eb736da5f26c925dc99a4027806297bd8f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000098.pdf",
+    "sha256": "c98bfca166e04c05a1aa04e801e44dfc9282b1b112d230785873d1fb6930d4a4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000099.pdf",
+    "sha256": "a59c54dbc6c578c176e9c6627245740637da434d62a4460d865528ac3a2eecd4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000072.pdf",
+    "sha256": "ce6853fb0ca94a72685ef90aa5ece8a180f95cd4a11386b2cf5fb8f29c35fe09"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000066.pdf",
+    "sha256": "c9c49f563c6f47d9c28f9caf13455ef61345a0c9be4bba251d064958f546c6f5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000106.pdf",
+    "sha256": "1f051b82d968ba073f99a2f78e15e82072c9986127614e36eb8c1fa1ccb0d261"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000112.pdf",
+    "sha256": "7abbca82ea23276bbd534ca90a667ede80429690d2f06ae0e83459f75c42670f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000116.pdf",
+    "sha256": "a5528f4dd6f5ba0d52e6bf97a0aae99ede782fe97f4a0b4f96029e5ed7fe18b5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000102.pdf",
+    "sha256": "872d56afecf02a9a4ff4ec021e4347ead2b7f227e9299ff85fee4e3c4993788e"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000062.pdf",
+    "sha256": "e6023c1836d06942e984ed27b47b9de1677a107476544793a17058699a123435"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000076.pdf",
+    "sha256": "6d5a00597cdd1d363b56eb0fdc9f239a462b44fcb0be53a93d62f0d6e35d428f"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000089.pdf",
+    "sha256": "1cf54980192667fd7a6977b301a175e98be02b11651bbf78b6cae338858db2aa"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000088.pdf",
+    "sha256": "1039bce8b948fac48b0b9a42f8266700a104aca355c3681a544d65e6b136b8d5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000077.pdf",
+    "sha256": "a012af9597cad209a43dc6a6a4543994e857a56fac9fdd3eed92a5e1b93f79b2"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000063.pdf",
+    "sha256": "9aae5aa80d0ada0a9a0c1306993e96dcbdbec4cdf48766f56955cf8d3d8c46a4"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000103.pdf",
+    "sha256": "2cd17a32ee330a239e19c915738df0c27e8ec3635a60a7e16e2a0cf3868d4af3"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000117.pdf",
+    "sha256": "10f75857bb705a5441260399c3fca1080262cc0c271270825caf141cf7b31770"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000101.pdf",
+    "sha256": "c75d25277c58e07bf91528ae08deccc80715b6f7f13b5ed571cf226463b364e8"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000115.pdf",
+    "sha256": "12e9c991f3d907593bacefdcf9a46c2cb57b7fb599e7840f438df04e416aab9d"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000129.pdf",
+    "sha256": "54f70eba37eddc8a529fcb090d690185698ea98d3bd6a9a55ebace7ffb0042e8"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000075.pdf",
+    "sha256": "a24a2d4ed5bc5e9aa585d4d29ea5b66737ea96bcaa84756d1b183e7c0ad77e91"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000061.pdf",
+    "sha256": "20c3068a37794e1e2db40c6227d57172ad308c8a81815c4c08970219586ef4ee"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000049.pdf",
+    "sha256": "c33c2993fe1e5c2945bb894f1a8e54c756753c344bd66f11024715e6375f07d1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000048.pdf",
+    "sha256": "31e7fbfc5b038d471b2fc82b248c4807152284bc35d6d5bd036c0aaa42504f17"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000060.pdf",
+    "sha256": "5179e446711cbe5535f394ec85fb83d4f25c56b7d180d0c3ce97878843afe59e"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000074.pdf",
+    "sha256": "f974132511fc3655d9602cf317b6ae2ed040787671bb21e387322961b5ac30f1"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000128.pdf",
+    "sha256": "a0edae1fa147c7bb78ebc493743a68ba4372b5ead31f2a2b146c35119462379e"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000114.pdf",
+    "sha256": "be866d1b599b669a33acbc07b07847d6c72011cf4d221b20d889ad5a90ab30f5"
+  },
+  {
+    "path": "target/opendataloader-bench/pdfs/01030000000100.pdf",
+    "sha256": "7675bb9557d6e1e663237098f37aaecb61ab411b71034c2d397487ed0deb2ecd"
+  },
+  {
+    "path": "target/merged-table-investigation/before-source/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "target/merged-table-investigation/before-source/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/merged-table-investigation/before-source/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "target/order-heading-investigation/before-source/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "target/order-heading-investigation/before-source/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/order-heading-investigation/before-source/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  },
+  {
+    "path": "target/remaining-heading-investigation/before-source/fixtures/native-and-empty.pdf",
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41"
+  },
+  {
+    "path": "target/remaining-heading-investigation/before-source/fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81"
+  },
+  {
+    "path": "target/remaining-heading-investigation/before-source/fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680"
+  }
+]

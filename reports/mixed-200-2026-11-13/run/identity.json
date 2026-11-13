@@ -1,0 +1,213 @@
+{
+  "method": "Eight-converter mixed-corpus diagnostic; explicit coverage and CPU, no quality scores.",
+  "commands": {
+    "bulkparse": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/reports/mixed-200-2026-11-13/bulkparse-worker"
+    ],
+    "anydoc": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/multiformat-anydoc/release/anydoc-bench-worker"
+    ],
+    "docling": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/docling-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "docling"
+    ],
+    "markitdown": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "markitdown"
+    ],
+    "pandoc": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "pandoc"
+    ],
+    "mammoth": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "mammoth"
+    ],
+    "libreoffice": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "libreoffice"
+    ],
+    "unstructured": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/realworld-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_mixed200.py",
+      "unstructured"
+    ]
+  },
+  "binary_sha256": {
+    "bulkparse": "97dced723328a5f66a121dc67727c23fa92c576c94aaccd25aa303f6168a89b5",
+    "anydoc": "7219c99194249af3ccfa2f9ba6c85104e40431ab39fa1c61f90fa30550d106c1",
+    "docling": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "markitdown": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "pandoc": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "mammoth": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "libreoffice": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "unstructured": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3"
+  },
+  "hardware": [
+    "Apple M3 Max",
+    "38654705664",
+    "14"
+  ],
+  "support": {
+    "bulkparse": [
+      "csv",
+      "doc",
+      "docm",
+      "docx",
+      "epub",
+      "ipynb",
+      "md",
+      "odp",
+      "ods",
+      "odt",
+      "pdf",
+      "pot",
+      "pps",
+      "ppsm",
+      "ppsx",
+      "ppt",
+      "pptm",
+      "pptx",
+      "rtf",
+      "tsv",
+      "txt",
+      "xls",
+      "xlsb",
+      "xlsm",
+      "xlsx"
+    ],
+    "anydoc": [
+      "csv",
+      "doc",
+      "docm",
+      "docx",
+      "epub",
+      "odp",
+      "ods",
+      "odt",
+      "pdf",
+      "pot",
+      "pps",
+      "ppsm",
+      "ppsx",
+      "ppt",
+      "pptm",
+      "pptx",
+      "rtf",
+      "xls",
+      "xlsb",
+      "xlsm",
+      "xlsx"
+    ],
+    "docling": [
+      "csv",
+      "doc",
+      "docm",
+      "docx",
+      "epub",
+      "md",
+      "odp",
+      "ods",
+      "odt",
+      "pdf",
+      "ppt",
+      "pptx",
+      "rtf",
+      "xls",
+      "xlsm",
+      "xlsx"
+    ],
+    "markitdown": [
+      "csv",
+      "docm",
+      "docx",
+      "epub",
+      "ipynb",
+      "md",
+      "pdf",
+      "pptx",
+      "tsv",
+      "txt",
+      "xls",
+      "xlsm",
+      "xlsx"
+    ],
+    "pandoc": [
+      "csv",
+      "docx",
+      "epub",
+      "ipynb",
+      "md",
+      "odt",
+      "rtf",
+      "tsv"
+    ],
+    "mammoth": [
+      "docm",
+      "docx"
+    ],
+    "libreoffice": [
+      "csv",
+      "doc",
+      "docm",
+      "docx",
+      "odp",
+      "ods",
+      "odt",
+      "pot",
+      "pps",
+      "ppsm",
+      "ppsx",
+      "ppt",
+      "pptm",
+      "pptx",
+      "rtf",
+      "tsv",
+      "txt",
+      "xls",
+      "xlsb",
+      "xlsm",
+      "xlsx"
+    ],
+    "unstructured": [
+      "csv",
+      "doc",
+      "docm",
+      "docx",
+      "epub",
+      "md",
+      "odt",
+      "pdf",
+      "ppt",
+      "pptx",
+      "rtf",
+      "tsv",
+      "txt",
+      "xls",
+      "xlsm",
+      "xlsx"
+    ]
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "warmup": 0,
+  "measured_passes": 1,
+  "deadline_seconds": 90,
+  "purpose": "one-pass diagnostic",
+  "environment": {
+    "RAYON_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "started_utc": "2026-11-13T20:30:43.701527+00:00",
+  "power_before": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true",
+  "quality": "Conversion coverage and performance, not a quality score; status conventions differ across tools.",
+  "extra_profiles": "BulkParse writer and recovery profiles measured separately after the main comparison; never substituted into default results."
+}

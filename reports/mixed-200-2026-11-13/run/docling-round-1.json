@@ -1,0 +1,3761 @@
+{
+  "index": 1,
+  "order": [
+    "anydoc",
+    "docling",
+    "markitdown",
+    "pandoc",
+    "mammoth",
+    "libreoffice",
+    "unstructured",
+    "bulkparse"
+  ],
+  "documents": [
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pptx-301f76bca4e3befd.pptx",
+      "elapsed_ns": 13514394625,
+      "cpu_seconds": 12.406181000000002,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pptx-301f76bca4e3befd",
+      "format": "pptx",
+      "historical_failure": false,
+      "output_sha256": "cbffd711e16d969ac1aa2708d52c754d79171f722a11040436901e48c34a8060",
+      "output_bytes": 35415
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-ccadc238f4617b0c.epub",
+      "elapsed_ns": 813812333,
+      "cpu_seconds": 0.7181169999999995,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-ccadc238f4617b0c",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "ada5c1a69434e765ca16f90883b031e2c5127af44a7ef823f56d7fbf03f3d031",
+      "output_bytes": 580560
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odp-564869358ea09276.odp",
+      "elapsed_ns": 191230792,
+      "cpu_seconds": 0.1271109999999993,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odp-564869358ea09276",
+      "format": "odp",
+      "historical_failure": false,
+      "output_sha256": "367ec473df6823e0466e922410de5488cd9b81b631c7c1afd96e7921c6238105",
+      "output_bytes": 1821
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-2b0d18bd1e4b6a34.xlsm",
+      "elapsed_ns": 1832636542,
+      "cpu_seconds": 1.8279860000000028,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-2b0d18bd1e4b6a34",
+      "format": "xlsm",
+      "historical_failure": true,
+      "output_sha256": "194c8c73ae5fa0caebf866eb0505bdb2b2446f08394d7a3c031a19c9d1987986",
+      "output_bytes": 10996229
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-c94c186c5c7a7e2e.doc",
+      "elapsed_ns": 735347958,
+      "cpu_seconds": 0.586356999999996,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-c94c186c5c7a7e2e",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "488fff6f4e355a0fc6008762e3bba6ff4457199f9188ca55f1cfdbe8739f7640",
+      "output_bytes": 4088
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ppt-186c7d6024cd48d6.ppt",
+      "elapsed_ns": 901474208,
+      "cpu_seconds": 0.8137680000000032,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ppt-186c7d6024cd48d6",
+      "format": "ppt",
+      "historical_failure": false,
+      "output_sha256": "6744abf4bb19cd44fbe4f5054d52b0cb91105e2a72be2673563e6993bdc81a56",
+      "output_bytes": 6516
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-4fb11fb2da406a04.rtf",
+      "elapsed_ns": 2886598625,
+      "cpu_seconds": 2.715133999999999,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-4fb11fb2da406a04",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "5fb4a0b2eda461332d5c0b73dbc94e340b283fcf55a866119c1bd1dd06ccfa29",
+      "output_bytes": 55436
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-f556d7df1c5cc8c5.csv",
+      "elapsed_ns": 14570625,
+      "cpu_seconds": 0.014122999999997887,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-f556d7df1c5cc8c5",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "b25baadc1ffd8390333a67b7a2306d85476e89c654bc394f29cfbdd9ba1d3390",
+      "output_bytes": 62321
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-f62997ec2a50f78b.docx",
+      "elapsed_ns": 6372178041,
+      "cpu_seconds": 6.1466470000000015,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-f62997ec2a50f78b",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "2609386e1090b1730e4d5b547b671a6a1f9ed43499094c948bcaa93e4642e6db",
+      "output_bytes": 18733
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-ad544845941ae38f.xls",
+      "elapsed_ns": 9832987959,
+      "cpu_seconds": 10.123388999999996,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-ad544845941ae38f",
+      "format": "xls",
+      "historical_failure": true,
+      "output_sha256": "ef9d33409276aff3d0afa04889019d67a1a234e40cd391f080d7c4b5bf3cb38b",
+      "output_bytes": 8592753
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-d44178482c9703c8.xlsx",
+      "elapsed_ns": 1296330208,
+      "cpu_seconds": 1.1707310000000106,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-d44178482c9703c8",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "997f57ccf768d448c2ff411451c3a29818e060c73456f8a7de3b54864fa4e1b8",
+      "output_bytes": 441995
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-20234a4bf0a85cd1.ods",
+      "elapsed_ns": 415173209,
+      "cpu_seconds": 0.41451800000000105,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-20234a4bf0a85cd1",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "a4c601d086e921923295a14212f1daf6d601d3b9b00f203f9eb323322eacce92",
+      "output_bytes": 199896
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-96d97547e4f2d87d.odt",
+      "elapsed_ns": 1582919416,
+      "cpu_seconds": 1.5822010000000049,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-96d97547e4f2d87d",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "fb01257a9e7644662ff52e26411e34ff2a01f3aac00ca7720c2068626f1d9f66",
+      "output_bytes": 6788
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pptx-46dd935a730802e5.pptx",
+      "elapsed_ns": 460190959,
+      "cpu_seconds": 0.4574620000000067,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pptx-46dd935a730802e5",
+      "format": "pptx",
+      "historical_failure": false,
+      "output_sha256": "4385a96f82256149b28798ef77cfcf6947c2df22a5cc7ef4da9574ec9abf501e",
+      "output_bytes": 5224
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-2ef24c1d450028ab.epub",
+      "elapsed_ns": 217074791,
+      "cpu_seconds": 0.21682799999999958,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-2ef24c1d450028ab",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "dcf3cee7d4e8463488d5753750f63208cd7beb935f0a0f2fd56f174de2f7f95f",
+      "output_bytes": 163003
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odp-9c873e44e721b125.odp",
+      "elapsed_ns": 5142586459,
+      "cpu_seconds": 5.134338,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odp-9c873e44e721b125",
+      "format": "odp",
+      "historical_failure": false,
+      "output_sha256": "24ad078e2bb73a73ce184dceb4a09bf9b875e91e042fadf21f31b3e7a772089d",
+      "output_bytes": 6856
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-d735ed10fae7b3dd.xlsm",
+      "elapsed_ns": 1912555875,
+      "cpu_seconds": 1.7842680000000044,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-d735ed10fae7b3dd",
+      "format": "xlsm",
+      "historical_failure": false,
+      "output_sha256": "94b8704c27de4723a20799b4bf5bad1504474ef3ba846f537793b5719e1866bc",
+      "output_bytes": 224307
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-3147695a1a548516.doc",
+      "elapsed_ns": 8377711083,
+      "cpu_seconds": 7.841963999999997,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-3147695a1a548516",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "df83ee563310d14fe99d43b63381fd04a659329599ac95c2837779a51e0402fc",
+      "output_bytes": 48774
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-de53f4b43e40a995.rtf",
+      "elapsed_ns": 2708576958,
+      "cpu_seconds": 2.642736999999997,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-de53f4b43e40a995",
+      "format": "rtf",
+      "historical_failure": true,
+      "output_sha256": "80511e07c4eb47f3b40346b197765f11ba9b3f8504a3e9abca50e4c00c7212fb",
+      "output_bytes": 103692
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-b7dcfafc7921241e.csv",
+      "elapsed_ns": 1794583,
+      "cpu_seconds": 0.0016039999999932775,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-b7dcfafc7921241e",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "fda26816b5b0f7c8d3f754d5f1cc4a1833396f03fea9d18c22b617d607ccbc63",
+      "output_bytes": 1469
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-28622481c8d0689c.docx",
+      "elapsed_ns": 151281292,
+      "cpu_seconds": 0.15094799999999964,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-28622481c8d0689c",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "6886d2c47659813977226e568892e4ec362cec6bad2afda94684187896475ae6",
+      "output_bytes": 124054
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-cad9314378e3f0a6.xls",
+      "elapsed_ns": 3652723417,
+      "cpu_seconds": 3.738053999999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-cad9314378e3f0a6",
+      "format": "xls",
+      "historical_failure": true,
+      "output_sha256": "c83cbe961cfe433c203c6bc424927b5acdae3de81795206ec6781b285ed4158e",
+      "output_bytes": 4298748
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-c6b7ed51f3c6eb9b.xlsx",
+      "elapsed_ns": 11968769417,
+      "cpu_seconds": 11.959383000000003,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-c6b7ed51f3c6eb9b",
+      "format": "xlsx",
+      "historical_failure": true,
+      "output_sha256": "fce100cebe3a5a52a737bed3398b6c1c9bffa79fecf8a4febee11a48db1a170f",
+      "output_bytes": 6543495
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-5cefbfc9f77dafdd.ods",
+      "elapsed_ns": 46192601083,
+      "cpu_seconds": 46.15085100000002,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-5cefbfc9f77dafdd",
+      "format": "ods",
+      "historical_failure": true,
+      "output_sha256": "8695a293edb2eb97c2ad01f553ccf2c32e23ab7d478750c808a37efed7aa5550",
+      "output_bytes": 12648558
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-2d6db61dc4830eaf.odt",
+      "elapsed_ns": 75772250,
+      "cpu_seconds": 0.07535200000000941,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-2d6db61dc4830eaf",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "87110e0b7de9af1c70ca7778db1e681201989af15a3abc26438752ad2e47ce43",
+      "output_bytes": 2975
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pptx-80e3d4b6f96ada2e.pptx",
+      "elapsed_ns": 2427160583,
+      "cpu_seconds": 2.426534999999987,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pptx-80e3d4b6f96ada2e",
+      "format": "pptx",
+      "historical_failure": false,
+      "output_sha256": "e0b7232b2ff63bc65956698a0dc707bf8ae003e5845520f92f2a03307c57311f",
+      "output_bytes": 1597
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-bbeb9aafdfc67094.epub",
+      "elapsed_ns": 306307625,
+      "cpu_seconds": 0.30604499999998325,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-bbeb9aafdfc67094",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "bf17a96b5119cde08ff0c057d10ebe73d80c857229ebd7b09f20e3b31e4579c6",
+      "output_bytes": 447661
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odp-2c5c51cf84856009.odp",
+      "elapsed_ns": 119802125,
+      "cpu_seconds": 0.11946599999998853,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odp-2c5c51cf84856009",
+      "format": "odp",
+      "historical_failure": false,
+      "output_sha256": "187b9be3432be1be7a467bf6870e9a953a3e9a2433c3e042025792e1074e1943",
+      "output_bytes": 2452
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-1d715c8cac42f89c.xlsm",
+      "elapsed_ns": 62501750,
+      "cpu_seconds": 0.062192999999993503,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-1d715c8cac42f89c",
+      "format": "xlsm",
+      "historical_failure": false,
+      "output_sha256": "75eeaa46275a394f34bb7d6fc16781bc6cb40a2ae175c8713f1be11bbede5917",
+      "output_bytes": 36056
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-52bb77f11c2474f5.doc",
+      "elapsed_ns": 2408249709,
+      "cpu_seconds": 1.9972069999999889,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-52bb77f11c2474f5",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "df6873d3ada9e9dfe4eafba0f69d87802faa75ce3c96d31dae00785110efe552",
+      "output_bytes": 6457
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-401b7816a5f427e3.rtf",
+      "elapsed_ns": 619402667,
+      "cpu_seconds": 0.5864099999999723,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-401b7816a5f427e3",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "64a811357b9f7e698bba051629106ff607614d341b29b0495d72e87054ed4c5a",
+      "output_bytes": 2255
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-fbeb7b5e9b4f3ed9.csv",
+      "elapsed_ns": 11760036250,
+      "cpu_seconds": 11.751878999999974,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-fbeb7b5e9b4f3ed9",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "8ba7a3c2141ea625872f57afb1e308930e5a85c4072ff6a15ad398be0ebd88aa",
+      "output_bytes": 22502661
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-28a174ed631cdcbb.docx",
+      "elapsed_ns": 51292542,
+      "cpu_seconds": 0.05087199999999825,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-28a174ed631cdcbb",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "7f843b44eca127d96d7fb1b329b52c4f5c11984944c6e3d69ed40021c2019596",
+      "output_bytes": 6493
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-4704f5ad102551dc.xls",
+      "elapsed_ns": 733326666,
+      "cpu_seconds": 0.6747500000000173,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-4704f5ad102551dc",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "8cb6c0922ab4ae61bc3483d2fba227f796ad3986c53b30923b71569e9351332e",
+      "output_bytes": 35055
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-4dfa5e74dbca1243.xlsx",
+      "elapsed_ns": 98760500,
+      "cpu_seconds": 0.09848000000002344,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-4dfa5e74dbca1243",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "6937af1cb2c857051917537ba711bc367ba35500a2f10d01d077629608442bf2",
+      "output_bytes": 216676
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-39a8edec753b433a.ods",
+      "elapsed_ns": 39265735667,
+      "cpu_seconds": 39.250842000000034,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-39a8edec753b433a",
+      "format": "ods",
+      "historical_failure": true,
+      "output_sha256": "440584d71f4689a72cf5b55be84f4e19097c6d3ce40f1d30825797de84e2819d",
+      "output_bytes": 15209246
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-47a6bf98c3cb6731.odt",
+      "elapsed_ns": 225563542,
+      "cpu_seconds": 0.2250879999999995,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-47a6bf98c3cb6731",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "f8011ad391959fb60d35dd1a34ada0af597f55c502fa56b0865eb6bd78463c06",
+      "output_bytes": 5035
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pptx-e9ec7655aac7cd8c.pptx",
+      "elapsed_ns": 2607629292,
+      "cpu_seconds": 2.5335599999999943,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pptx-e9ec7655aac7cd8c",
+      "format": "pptx",
+      "historical_failure": false,
+      "output_sha256": "672b961065022310f29af20a87cb2e29ba692e912c3c50b6984d10de3955a35c",
+      "output_bytes": 14570
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-3dbc61354eb6907b.epub",
+      "elapsed_ns": 767226583,
+      "cpu_seconds": 0.7670080000000041,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-3dbc61354eb6907b",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "ed94cf5eabedd66af7669edaf65ccff225e07821798e46021a40471a78cd79e4",
+      "output_bytes": 765312
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odp-5252bb92605f4c4f.odp",
+      "elapsed_ns": 158575000,
+      "cpu_seconds": 0.1582300000000032,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odp-5252bb92605f4c4f",
+      "format": "odp",
+      "historical_failure": false,
+      "output_sha256": "5e8879f460a590cd2792cd072fc611ce51c418771a9b5321fec70f061ab73615",
+      "output_bytes": 2515
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-3c742899d69127d3.xlsm",
+      "elapsed_ns": 4640034125,
+      "cpu_seconds": 4.638151999999991,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-3c742899d69127d3",
+      "format": "xlsm",
+      "historical_failure": true,
+      "output_sha256": "56b7b52d06d4e331438d016c56bf37a12705dc4da9c83e10544579d4fcf69818",
+      "output_bytes": 1726235
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-2cbbb8c09f8f3894.doc",
+      "elapsed_ns": 6509411042,
+      "cpu_seconds": 6.1740660000000105,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-2cbbb8c09f8f3894",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "ed5cbbea84e021985de3c5de3a2deca0bb0b2dab76363f5736810811ca35d72f",
+      "output_bytes": 3379
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-044d0a30d6587133.rtf",
+      "elapsed_ns": 5407578917,
+      "cpu_seconds": 4.959969999999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-044d0a30d6587133",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "fb44388da0448018930e959fd386d50a1a51783af9ff890d2a11d27333aeb698",
+      "output_bytes": 2739
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-ed3a7edd76ea8313.csv",
+      "elapsed_ns": 17028792,
+      "cpu_seconds": 0.01683599999995522,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-ed3a7edd76ea8313",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "ca0db64d05725c584ad412f36c028447ff1982728a55dbf412ed6462e5e21960",
+      "output_bytes": 46163
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-79a64a30ba117a4a.docx",
+      "elapsed_ns": 106028459,
+      "cpu_seconds": 0.10508800000002338,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-79a64a30ba117a4a",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "335075007c5918549837b161e6c96413c595acc94fdbdfd76d1b7080359767ce",
+      "output_bytes": 209014
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-85accb68a8a2daac.xls",
+      "elapsed_ns": 728202833,
+      "cpu_seconds": 0.6535219999999811,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-85accb68a8a2daac",
+      "format": "xls",
+      "historical_failure": true,
+      "output_sha256": "b63df64557736e7c5f8fb95c6ba7a64cecd8a7d9371671b242605bf978b5a8be",
+      "output_bytes": 6806
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-cac5a4611b7f7aec.xlsx",
+      "elapsed_ns": 41191875,
+      "cpu_seconds": 0.04076299999999833,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-cac5a4611b7f7aec",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "dd73725b0f9692035d72f600e96aca50996011425b193508955d89dac1db20b3",
+      "output_bytes": 21321
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-729c3707bbe50f51.ods",
+      "elapsed_ns": 70291923417,
+      "cpu_seconds": 70.27722600000004,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-729c3707bbe50f51",
+      "format": "ods",
+      "historical_failure": true,
+      "output_sha256": "246137f7b3924d2b2762841fe2c1cf09663c1f82fe1f9d84389c4d4ab3ed8189",
+      "output_bytes": 16561164
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-eb78dd0b8a336233.odt",
+      "elapsed_ns": 323062000,
+      "cpu_seconds": 0.32281299999999646,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-eb78dd0b8a336233",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "b7a80709b810cf25cabb97ad73b44ceb3ae2522509d22478902e9b298397286e",
+      "output_bytes": 18659
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-f6bb344a25fc9295.epub",
+      "elapsed_ns": 184701333,
+      "cpu_seconds": 0.1842100000000073,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-f6bb344a25fc9295",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "e41b2f493e988165e6aaad19d68705b8c407a15276dda4fd684d67ebbff5f557",
+      "output_bytes": 437833
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-c6ee0b16ff832902.xlsm",
+      "elapsed_ns": 269247125,
+      "cpu_seconds": 0.2689189999999826,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-c6ee0b16ff832902",
+      "format": "xlsm",
+      "historical_failure": false,
+      "output_sha256": "2db0c6f2744331dd8547edb105e6ed32f1d30da91e6382955e9e05e67db728ec",
+      "output_bytes": 324009
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-2d3fa2c84661e6aa.doc",
+      "elapsed_ns": 26053374916,
+      "cpu_seconds": 24.39784199999997,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-2d3fa2c84661e6aa",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "8b6a62086f0c937f59e7c092f132e9d72b8ea9086bbbe656477908800ebd5d69",
+      "output_bytes": 135828
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-04f180aaec98d069.rtf",
+      "elapsed_ns": 1591976792,
+      "cpu_seconds": 1.5035539999999514,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-04f180aaec98d069",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "772342c27b93e75ea90c74f6c8467ec0c2fec7328ed13f2e39c67807c2f4a8a7",
+      "output_bytes": 13200
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-7d372f57f2ec54f0.csv",
+      "elapsed_ns": 2729584,
+      "cpu_seconds": 0.0025570000000243454,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-7d372f57f2ec54f0",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "330ceb38e9c53494fbf79aee07e09f80d3f41494baa61081768d62a62ef545de",
+      "output_bytes": 3542
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-51ef90f6f0648fba.docx",
+      "elapsed_ns": 30608417,
+      "cpu_seconds": 0.030211000000008426,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-51ef90f6f0648fba",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "b4abd74065212d6a9bfe9517d88057f5c6682effe7f9491654a68ffd36bcadf9",
+      "output_bytes": 6236
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-b0aaa1a67a6a133c.xls",
+      "elapsed_ns": 3249017917,
+      "cpu_seconds": 3.320177000000001,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-b0aaa1a67a6a133c",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "69c1165c24b189ecaba66f8fb19839a43653f5411911845fbe9f951475bce571",
+      "output_bytes": 1482148
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-bc31edc4699094ef.xlsx",
+      "elapsed_ns": 3153541,
+      "cpu_seconds": 0.0027370000000246364,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-bc31edc4699094ef",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "8425fa202b7c56423435208a539e1bbd283ced14816d42c5157b9558bc467e82",
+      "output_bytes": 134
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-20f58e9c6ef54e2c.ods",
+      "elapsed_ns": 2617776541,
+      "cpu_seconds": 2.617411000000004,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-20f58e9c6ef54e2c",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "aa174a43434c146cb9e6a3340427e06296b85df616418a67f8fbdf499f11a6cf",
+      "output_bytes": 1314012
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-b3a998372ff672e2.odt",
+      "elapsed_ns": 770932375,
+      "cpu_seconds": 0.7706000000000017,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-b3a998372ff672e2",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "176d0a3de6061635a4622bf721111c695a1341fa01fa78ebea0e1eb89558adf2",
+      "output_bytes": 176273
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-a127c968ef9aa556.epub",
+      "elapsed_ns": 1143383041,
+      "cpu_seconds": 1.1429960000000392,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-a127c968ef9aa556",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "ad4da1667d2c7a2816f370687da901fe03aa326913668b93c86b0af6de90b026",
+      "output_bytes": 2176918
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsm-1c382d45c18005cd.xlsm",
+      "elapsed_ns": 41461654333,
+      "cpu_seconds": 41.35796399999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsm-1c382d45c18005cd",
+      "format": "xlsm",
+      "historical_failure": true,
+      "output_sha256": "fd1b430972548f5a6e92ec744fac4d63b004e2c0267247ad991cee84fda38456",
+      "output_bytes": 156490346
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-78ed9d3abd7ebc03.doc",
+      "elapsed_ns": 3561270166,
+      "cpu_seconds": 3.0960830000000215,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-78ed9d3abd7ebc03",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "87823d4e56352d958cb05d38631e10bcbd1b300d4f8204e990fdfa17e4485760",
+      "output_bytes": 6860
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-e68703d8744564d7.rtf",
+      "elapsed_ns": 1692869667,
+      "cpu_seconds": 1.6275450000000546,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-e68703d8744564d7",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "61c78736d30c627bd6c4f7d9e68b8c3a1fea47760e67884c3eb0f3e58e34dd92",
+      "output_bytes": 23217
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-7a2e611f4e059f98.csv",
+      "elapsed_ns": 52409375,
+      "cpu_seconds": 0.05217499999997699,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-7a2e611f4e059f98",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "1f8e2aa6706272703d00c4fe7a6585be8fe8f6aa820b4591dc8050c8a94031c8",
+      "output_bytes": 196102
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-e5b62304af29d253.docx",
+      "elapsed_ns": 88854542,
+      "cpu_seconds": 0.08785600000004479,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-e5b62304af29d253",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "5a4935828b2ddb9a092793f332757f9ea5fb287c497acc3f9b8ce55e6aa5b40c",
+      "output_bytes": 6459
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-d3232e7ce2233494.xls",
+      "elapsed_ns": 613600000,
+      "cpu_seconds": 0.545522999999946,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-d3232e7ce2233494",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "b0c9a0b08b7db411e68caff0d35e2d80d5c15b3c826275e750913d27616931f6",
+      "output_bytes": 5029
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-f6e8af8ebdefba8d.xlsx",
+      "elapsed_ns": 62883083,
+      "cpu_seconds": 0.06268000000005713,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-f6e8af8ebdefba8d",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "8801e8ff3db0d7115cfa2516e20b762f0e533947bb7c0c3f3bf15acb490cc6d1",
+      "output_bytes": 58541
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-37673dc956a05d28.ods",
+      "elapsed_ns": 82286500,
+      "cpu_seconds": 0.08039800000000241,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-37673dc956a05d28",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "4dc9d4feea99a58c76247e7499b1f8746c53f368eb2f167124011fe7cbeddfed",
+      "output_bytes": 16081
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-00e398ed307d3b65.odt",
+      "elapsed_ns": 7505959,
+      "cpu_seconds": 0.00554400000004307,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-00e398ed307d3b65",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "2df28a9d918a6cfb79556bb7015d1818d4c553e5e7bff4dffe8ba1a93869782b",
+      "output_bytes": 2080
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-b4c2ced09ac76ce1.epub",
+      "elapsed_ns": 1385273292,
+      "cpu_seconds": 1.384495999999956,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-b4c2ced09ac76ce1",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "e1ddad9ae36f16443e2f65f9d139736b5f4528d2d07dd8495c62b143f498aae0",
+      "output_bytes": 778578
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-17e9bdae24d89d4f.doc",
+      "elapsed_ns": 687275250,
+      "cpu_seconds": 0.6241280000000415,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-17e9bdae24d89d4f",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "df3629290e2b2457dda3d4b828f92d54c2c5ec81f372963114f2fdce55b05a2b",
+      "output_bytes": 30052
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-31714b26363ccbb1.rtf",
+      "elapsed_ns": 1087079625,
+      "cpu_seconds": 1.0659049999999866,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-31714b26363ccbb1",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "4cd971748d6b0628afe0e8b1c9ad6e8df713dc319aef11ede95fbaa31ae4fffa",
+      "output_bytes": 133856
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-1b314698f52fbae4.csv",
+      "elapsed_ns": 4347625,
+      "cpu_seconds": 0.004146999999989021,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-1b314698f52fbae4",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "9310a95e6175fbef7fe0ce239e98a6ecfb9eaec14c9bbfbddaf1817bdb8073b1",
+      "output_bytes": 7564
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-e0e5f8436e9f876b.docx",
+      "elapsed_ns": 48645083,
+      "cpu_seconds": 0.04848400000003039,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-e0e5f8436e9f876b",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "cf25dd8a5fafd90803a91ecc7f162c875da91e1fbfc74733385e30c6f1da3314",
+      "output_bytes": 21858
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-fca77b163b2732bc.xls",
+      "elapsed_ns": 568374666,
+      "cpu_seconds": 0.5516110000000367,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-fca77b163b2732bc",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "64d69d62a7ce5c6f5f67192874451fef73b1ef5a6eb80d658fbbe1a903fdcd6a",
+      "output_bytes": 20234
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-fafffef6e7e8e008.xlsx",
+      "elapsed_ns": 42760333,
+      "cpu_seconds": 0.042519999999967695,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-fafffef6e7e8e008",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "888a6d73f5e713df647e19b632b00e16902acf793d318e636838c26b9cb8051e",
+      "output_bytes": 17197
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-6df1f9c102f8d1a4.ods",
+      "elapsed_ns": 103791542,
+      "cpu_seconds": 0.10361299999999574,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-6df1f9c102f8d1a4",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "844f66b970c82fbe3e0e59801b60d63b4740c397fd5309b8ecb716ec860540c1",
+      "output_bytes": 96756
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-0328e791eab0b3a1.odt",
+      "elapsed_ns": 6977458,
+      "cpu_seconds": 0.00675300000000334,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-0328e791eab0b3a1",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "7204c34fd762a0755c62f5ec5c02563a8b53f2abae1307570838d9c4eab97e09",
+      "output_bytes": 2145
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/doc-5e8a921b9fe74d8f.doc",
+      "elapsed_ns": 1972983333,
+      "cpu_seconds": 1.8560909999999922,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "doc-5e8a921b9fe74d8f",
+      "format": "doc",
+      "historical_failure": false,
+      "output_sha256": "fcbdee84ba79196bd90094d6575076522a9814ffc161375b0aaa4ffd1c4e9a66",
+      "output_bytes": 8471
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-dcd6e1663bf622fc.rtf",
+      "elapsed_ns": 28292803584,
+      "cpu_seconds": 26.611195000000066,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-dcd6e1663bf622fc",
+      "format": "rtf",
+      "historical_failure": true,
+      "output_sha256": "e998b3424d9f588bd085db7e365d391bf0e049a1189fd78d287a515c85c99e17",
+      "output_bytes": 172293
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-cfa227027af67347.csv",
+      "elapsed_ns": 8409334,
+      "cpu_seconds": 0.008231000000023414,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-cfa227027af67347",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "cb4a747f9723d5cef3e03ad86944ab5f538a51524b1af7a7da5784aa8b18cc6f",
+      "output_bytes": 36244
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-97c10db5c1ec700f.docx",
+      "elapsed_ns": 40306042,
+      "cpu_seconds": 0.040063000000031934,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-97c10db5c1ec700f",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "7659d00729f514470b90ea7c693f7484c721a295223e3b2a2c00833500f366f3",
+      "output_bytes": 1852
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-9e13fd1af7af5a9f.xls",
+      "elapsed_ns": 13582342042,
+      "cpu_seconds": 14.031642000000033,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-9e13fd1af7af5a9f",
+      "format": "xls",
+      "historical_failure": true,
+      "output_sha256": "550972b1a4cb0ef01d454788cccaa0ca0219135b5b3b042e097d91e92aa4f12e",
+      "output_bytes": 12331454
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-fff9298f89cd9571.xlsx",
+      "elapsed_ns": 306616459,
+      "cpu_seconds": 0.30629800000008345,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-fff9298f89cd9571",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "e46295999e2aaf5cf491ba76bf636a6e88aafaf081b7f2f98ab3cf608cac1f3e",
+      "output_bytes": 357522
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-c197f40e846f9d2b.ods",
+      "elapsed_ns": 22278015375,
+      "cpu_seconds": 22.27621399999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-c197f40e846f9d2b",
+      "format": "ods",
+      "historical_failure": true,
+      "output_sha256": "1ab4b4c40107590f8eddb489100fd75fc880ec4fdf3e41c091735c4896a69a5f",
+      "output_bytes": 7642103
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-43334429a443e679.odt",
+      "elapsed_ns": 33712375,
+      "cpu_seconds": 0.03345400000000609,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-43334429a443e679",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "392124d54405d49e0542f838d4589ec1c862b2831031e46ec6c3db80c0c78a1a",
+      "output_bytes": 9538
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-5ef331e9ecfd2b01.rtf",
+      "elapsed_ns": 1409759916,
+      "cpu_seconds": 1.3664149999999609,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-5ef331e9ecfd2b01",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "1c76364e103389632a239e85bce05efe04965fa772158e7b5d9aaf9061899f44",
+      "output_bytes": 2272
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-5862825d8339bd46.csv",
+      "elapsed_ns": 22165375,
+      "cpu_seconds": 0.0212139999999863,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-5862825d8339bd46",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "144c5c527e10e3e6a7f5f01a89548586255b5e82197657a48b1b79901ac3fe4a",
+      "output_bytes": 494642
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-0ccd420844268ba1.docx",
+      "elapsed_ns": 2004188333,
+      "cpu_seconds": 1.8865880000000175,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-0ccd420844268ba1",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "9e3d2869244b1703ffa3abab490940c4c13b2e76d6546eccb789bb38312fdd93",
+      "output_bytes": 3805
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-262346875d84601e.xls",
+      "elapsed_ns": 695818917,
+      "cpu_seconds": 0.6575839999999857,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-262346875d84601e",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "7bf340cc1b4f15ed30aa54516d8885d0b31db7603b0acf635c7529733b06746c",
+      "output_bytes": 4503
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-3d7484ae52ab377f.xlsx",
+      "elapsed_ns": 8795901000,
+      "cpu_seconds": 8.790569999999946,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-3d7484ae52ab377f",
+      "format": "xlsx",
+      "historical_failure": true,
+      "output_sha256": "32f66597e208bb0697b81ed10bd5281e3a15b55981f95ee366e91d060b73dee0",
+      "output_bytes": 1875158
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-b3185d3043cb268a.ods",
+      "elapsed_ns": 65742845000,
+      "cpu_seconds": 65.73469399999993,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-b3185d3043cb268a",
+      "format": "ods",
+      "historical_failure": true,
+      "output_sha256": "4a3abe45725183879beeb467543682d0e24a6909d64ab2a36f73914747cfc3b7",
+      "output_bytes": 32942913
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-63c6b825af83ec7a.odt",
+      "elapsed_ns": 1052074958,
+      "cpu_seconds": 1.051637000000028,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-63c6b825af83ec7a",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "5c2ac9a58f92dfc46e1ad236ce6ef7fb34fb49ff36fd934a69db61609666e64d",
+      "output_bytes": 441426
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-e7fb2bec9b55430a.rtf",
+      "elapsed_ns": 3230838125,
+      "cpu_seconds": 2.802137000000073,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-e7fb2bec9b55430a",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "45cb52e68ded5274d13f40182f4f08ae8ee0640fbcaf34b79f79b376a58fe270",
+      "output_bytes": 10341
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-8d5e54393ec2c231.csv",
+      "elapsed_ns": 2845333,
+      "cpu_seconds": 0.002705999999989217,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-8d5e54393ec2c231",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "dc274ef4f59e5164b174b2e271ea87b22e4bab2b43546fccc23ee34af02a7c7a",
+      "output_bytes": 5303
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-74df23a8ae8850b9.docx",
+      "elapsed_ns": 2860864000,
+      "cpu_seconds": 2.64186200000006,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-74df23a8ae8850b9",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "9593add82ed2bc0676d728427dca979edcff6b85290edd11eea0c2946bd552b5",
+      "output_bytes": 15352
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-c55634ddabc2dbd2.xls",
+      "elapsed_ns": 789800541,
+      "cpu_seconds": 0.6996280000000183,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-c55634ddabc2dbd2",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "8ef93d1433ef2754a873418ff364429148c19aae384fe502ff34276c0c7556a5",
+      "output_bytes": 14296
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-63ec78f6069e1087.xlsx",
+      "elapsed_ns": 20669708,
+      "cpu_seconds": 0.019475999999997384,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-63ec78f6069e1087",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "f9cfcb86ec3d95027ae59bec17fff41e84197abd896f3b029bb18c526ce03a40",
+      "output_bytes": 6450
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-21d4c1846feb99a9.ods",
+      "elapsed_ns": 2026597042,
+      "cpu_seconds": 2.026284999999973,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-21d4c1846feb99a9",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "9fd23a423046bfbc0b5403c148756469be76f0564281fe31569e92a8888c56a0",
+      "output_bytes": 3440692
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-d188488b70aeff60.odt",
+      "elapsed_ns": 11378250,
+      "cpu_seconds": 0.0111299999999801,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-d188488b70aeff60",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "972878d201b6c79c7b7df1916686c08fa33bd0be419b542426914b8890464b1e",
+      "output_bytes": 1352
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-81ca11b11d4d10ee.rtf",
+      "elapsed_ns": 3260683208,
+      "cpu_seconds": 3.208108999999979,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-81ca11b11d4d10ee",
+      "format": "rtf",
+      "historical_failure": true,
+      "output_sha256": "79e2b127fd67f7396b6da5cf0f6f3eca5e0873e73abf349468b7a0b5bd7d3baa",
+      "output_bytes": 84619
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-694b7b75298efd2b.csv",
+      "elapsed_ns": 44723375,
+      "cpu_seconds": 0.044174999999995634,
+      "ok": false,
+      "status": "error",
+      "error": "RuntimeError: component_type=<DoclingComponentType.USER_INPUT: 'user_input'> module_name='' error_message='The document is not valid UTF-8, but 97% of its non-ASCII bytes still form well-formed UTF-8 sequences, so it reads as damaged UTF-8 rather than as another encoding. Decoding it as cp1252 would turn the damage into text that looks fine and is not. Set the `encoding` backend option (for example `MarkdownBackendOptions(encoding=\"shift_jis\")`) to decode it explicitly.' category=<FailureCategory.BACKEND_FAILURE: 'backend_failure'> page_no=None",
+      "id": "csv-694b7b75298efd2b",
+      "format": "csv",
+      "historical_failure": true,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-b3748ff715455dad.docx",
+      "elapsed_ns": 2195533625,
+      "cpu_seconds": 2.076956999999993,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-b3748ff715455dad",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "5917be09970f88af0ab6f7161f9953640cbe50b4457783e7e868683e3f2f8b4e",
+      "output_bytes": 453117
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-aed2154ce0e620bd.xls",
+      "elapsed_ns": 5618646250,
+      "cpu_seconds": 5.697174000000018,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-aed2154ce0e620bd",
+      "format": "xls",
+      "historical_failure": true,
+      "output_sha256": "a2276d2c7ac0f6c562fd7ee316cfbfcf467cef3375bfddbbef66f3db2652c425",
+      "output_bytes": 5997043
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-82d52520f3cb4d0f.xlsx",
+      "elapsed_ns": 55000667,
+      "cpu_seconds": 0.05471599999998489,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-82d52520f3cb4d0f",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "c6fa9eee9ad9e7fb8cdb94bc250b801eedc89a1f50d798544a12c9fedd7c8f1a",
+      "output_bytes": 42603
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-c14b342a8f148642.ods",
+      "elapsed_ns": 159306000,
+      "cpu_seconds": 0.15908599999988837,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-c14b342a8f148642",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "745ce9fbfaadac871f91e28d559e0212aa35516b3b2073f6412306fbaac0f7de",
+      "output_bytes": 79104
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-6f5e54a20bc45406.odt",
+      "elapsed_ns": 56174750,
+      "cpu_seconds": 0.05590099999994891,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-6f5e54a20bc45406",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "48b7caaf417039b268fc134600c74990865c926e46aeedea0c07fe56d91a7f9d",
+      "output_bytes": 4409
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-f0041e60d9f5d66d.rtf",
+      "elapsed_ns": 701496583,
+      "cpu_seconds": 0.6638809999999467,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-f0041e60d9f5d66d",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "0880745aef89175c36f5040c78f0037526411625ad3c4be8ba58d5f413d638bb",
+      "output_bytes": 11806
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-cf46988b69844cd2.csv",
+      "elapsed_ns": 16967625,
+      "cpu_seconds": 0.016789000000130727,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-cf46988b69844cd2",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "d97e2d891268383934dea6ac53eed6d1e12cc0496e0a73a4601ce7236580f1be",
+      "output_bytes": 56799
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-81218a1a8a2d2812.docx",
+      "elapsed_ns": 27505292,
+      "cpu_seconds": 0.02718800000002375,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-81218a1a8a2d2812",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "2a84ff90a0e3263303e25d0967a03cd67527917d014aa1a3f8fb3652bf104e4e",
+      "output_bytes": 11356
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-589ace4188fb7ccc.xls",
+      "elapsed_ns": 2814809333,
+      "cpu_seconds": 2.9609199999999873,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-589ace4188fb7ccc",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "1f793539a19f19d893908cc61e8040194edefbd057c6a43501a74111a6f3891e",
+      "output_bytes": 2476720
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-43eab8ba38301e43.xlsx",
+      "elapsed_ns": 56528959,
+      "cpu_seconds": 0.05626900000004298,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-43eab8ba38301e43",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "5d91f1ea3eeede4239348efa32bb7c719c93c5f3cfebfc2f84aab32b6613ac33",
+      "output_bytes": 1961
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docm-0d0f68a17819e210.docm",
+      "elapsed_ns": 3251042,
+      "cpu_seconds": 0.0028630000000475775,
+      "ok": false,
+      "status": "error",
+      "error": "RuntimeError: component_type=<DoclingComponentType.USER_INPUT: 'user_input'> module_name='' error_message='MsWordDocumentBackend could not load document with hash bdfbd03a35391cc1659aa092b9889360514a662e721d8209e03dcb0bad10ce1b' category=<FailureCategory.BACKEND_FAILURE: 'backend_failure'> page_no=None",
+      "id": "docm-0d0f68a17819e210",
+      "format": "docm",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/tsv-5b4fff4f406b785c.tsv",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "tsv-5b4fff4f406b785c",
+      "format": "tsv",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/txt-7a442a121d104733.txt",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "txt-7a442a121d104733",
+      "format": "txt",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/md-d88f362bdba93c8b.md",
+      "elapsed_ns": 11408166,
+      "cpu_seconds": 0.011261999999987893,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "md-d88f362bdba93c8b",
+      "format": "md",
+      "historical_failure": false,
+      "output_sha256": "4d24e81ce53372ba8e6829da3c6fcb03293e8138a519037b6fa24113ac23b3f8",
+      "output_bytes": 2560
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ipynb-a210be796948ec1c.ipynb",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "ipynb-a210be796948ec1c",
+      "format": "ipynb",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-b6d0013274f3a622.epub",
+      "elapsed_ns": 832373334,
+      "cpu_seconds": 0.8320739999999205,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-b6d0013274f3a622",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "e30f0f91f453ff79407ce25147a81ea15d247a7043317dd4ebc95ba212ecd1fc",
+      "output_bytes": 1239746
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-9d9a12a7de860893.ods",
+      "elapsed_ns": 10667083,
+      "cpu_seconds": 0.010451999999986583,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-9d9a12a7de860893",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "fdce346d5ec5a547e5dc7e6d5ba3828ba33730d05b2f4c322c8bc360fc0eb281",
+      "output_bytes": 3085
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-cede57fea79bbca0.odt",
+      "elapsed_ns": 66488125,
+      "cpu_seconds": 0.06629299999997329,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-cede57fea79bbca0",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "71565f56e383fa054463e07fd6d33c17c76174af48bf5e201464ef54c37ae316",
+      "output_bytes": 14318
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-05c7b1962ea38a3a.pdf",
+      "elapsed_ns": 4904273708,
+      "cpu_seconds": 5.739599999999996,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-05c7b1962ea38a3a",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "b7f6ffc64f6eb536da4e94734ef7fe84584294fac37e0bcf809f2d597e9166a6",
+      "output_bytes": 4667
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/md-b836950e8e95e9a7.md",
+      "elapsed_ns": 10459500,
+      "cpu_seconds": 0.010296000000039385,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "md-b836950e8e95e9a7",
+      "format": "md",
+      "historical_failure": false,
+      "output_sha256": "5ea724b79e58195b4acd6f6800ce43e77386111da0f1b03ac8a43966522d338b",
+      "output_bytes": 1581
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ipynb-00fb0b350dc83491.ipynb",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "ipynb-00fb0b350dc83491",
+      "format": "ipynb",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-87820642b8664d28.epub",
+      "elapsed_ns": 921324875,
+      "cpu_seconds": 0.920882000000006,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-87820642b8664d28",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "74b860e4ddf383c0a373afa56b04ade074c78da750143e1bb9e670aa342005ba",
+      "output_bytes": 1154044
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-cc66c72d80c24a7a.pdf",
+      "elapsed_ns": 338164958,
+      "cpu_seconds": 0.4031760000000304,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-cc66c72d80c24a7a",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "ce3cdda4639a0cc675784e0886b3d913eb4e5d31e2e19b4d34ec1827e45cf511",
+      "output_bytes": 3574
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/md-ebf9130f9c59b837.md",
+      "elapsed_ns": 142305959,
+      "cpu_seconds": 0.1419029999999566,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "md-ebf9130f9c59b837",
+      "format": "md",
+      "historical_failure": false,
+      "output_sha256": "e884b2cdf6dbfce71001e927c975999911b13f5cc901a94af097d3ccd65ac0f9",
+      "output_bytes": 16925
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ipynb-80ea076a5497f074.ipynb",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "ipynb-80ea076a5497f074",
+      "format": "ipynb",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-b02d8fd32a182a18.epub",
+      "elapsed_ns": 20177833,
+      "cpu_seconds": 0.01991900000007263,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-b02d8fd32a182a18",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "90db7382641423c27c9b3f767d43683d413397031f9a76a271e4ffc6db1cc2d5",
+      "output_bytes": 37432
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-79cabd7d849a0058.pdf",
+      "elapsed_ns": 5759989583,
+      "cpu_seconds": 8.516186000000062,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-79cabd7d849a0058",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "446fddc27a3ee0492b4ab1be01fd256a430557a6e20cd162824aedb89e7655eb",
+      "output_bytes": 14852
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/md-11e94e2beb8e57f7.md",
+      "elapsed_ns": 40182792,
+      "cpu_seconds": 0.04003099999999904,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "md-11e94e2beb8e57f7",
+      "format": "md",
+      "historical_failure": false,
+      "output_sha256": "38a93234221249c91c9b28e1efb9d2b14bcd6de9af97065684ddface5b3c7e1d",
+      "output_bytes": 4296
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ipynb-2eeddcc0fe672901.ipynb",
+      "elapsed_ns": 0,
+      "cpu_seconds": 0,
+      "ok": false,
+      "status": "unsupported",
+      "error": "Outside configured format support",
+      "id": "ipynb-2eeddcc0fe672901",
+      "format": "ipynb",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-1e003fd2f8103b08.epub",
+      "elapsed_ns": 1980841625,
+      "cpu_seconds": 1.9804609999999911,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-1e003fd2f8103b08",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "463579806aa375450235229afeda0590e1d6202b99a439d2ad2b7375a0100012",
+      "output_bytes": 1537254
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-1872a1a6054476a2.pdf",
+      "elapsed_ns": 856611834,
+      "cpu_seconds": 1.0703040000000783,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-1872a1a6054476a2",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "92b9ec24272d90d8b0482ed2fa0afdbf0020b20f336017a78b4f2c40d97a281e",
+      "output_bytes": 5726
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/md-ce59833a6038447b.md",
+      "elapsed_ns": 7731208,
+      "cpu_seconds": 0.007583000000067841,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "md-ce59833a6038447b",
+      "format": "md",
+      "historical_failure": false,
+      "output_sha256": "3e1b7d34b6461224d0688612cafcc6fb07ab2b86c7b917b047507078a1e6b62d",
+      "output_bytes": 1425
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-1c62ba1da0bb481f.epub",
+      "elapsed_ns": 36822083,
+      "cpu_seconds": 0.036606000000006134,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-1c62ba1da0bb481f",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "1cabb5674d5ea013cea07995df85c21845c6d5c229b6672026e527063242070d",
+      "output_bytes": 136905
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-d9033cf747db3151.pdf",
+      "elapsed_ns": 4923495333,
+      "cpu_seconds": 6.382882999999879,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-d9033cf747db3151",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "9d77b528a262ce72ada5fd48e5c181683ad2e484dfacb820f4bebcabdb20672a",
+      "output_bytes": 6974
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-d896f43f6c355d3d.pdf",
+      "elapsed_ns": 1929654167,
+      "cpu_seconds": 2.4872609999999895,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-d896f43f6c355d3d",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "3967be6653558476c5afd7e2e7011cd464fb65bb89c10a3f7997e0ed392002fe",
+      "output_bytes": 6240
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-f3a560a34a17215a.pdf",
+      "elapsed_ns": 829963167,
+      "cpu_seconds": 1.044493999999986,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-f3a560a34a17215a",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "0df8f33301d103da971840d4493d15f5a76b81c13abd9b8f4ecb1209665935b9",
+      "output_bytes": 5319
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-ff206d7d59a3913a.pdf",
+      "elapsed_ns": 4651150458,
+      "cpu_seconds": 6.505679999999984,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-ff206d7d59a3913a",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "087dd492657f445bfbed7562652b5dce68610f4d5f018bfeef73e2d869029142",
+      "output_bytes": 11863
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-5b5caefc15d82641.pdf",
+      "elapsed_ns": 1634599000,
+      "cpu_seconds": 2.1508460000000014,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-5b5caefc15d82641",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "6f2eec511b6f58f5f9ae6cb1bf8bdc690e81c0eca24a128f81a429592d608f2f",
+      "output_bytes": 19564
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-634fad87b13329fd.pdf",
+      "elapsed_ns": 4347244834,
+      "cpu_seconds": 4.417412000000013,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-634fad87b13329fd",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "4c15c99f69840a790b25bc3ba24bb43ec794bc23e79e56bdf3af7da360766e99",
+      "output_bytes": 187
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-9c9f2c3e4c116a76.pdf",
+      "elapsed_ns": 366887750,
+      "cpu_seconds": 0.43110300000000734,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-9c9f2c3e4c116a76",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "127832eff562f242894690c4188176417aaa15e2674b6a4abc117a549390a81f",
+      "output_bytes": 560
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-8212f662307e2b0a.pdf",
+      "elapsed_ns": 755512500,
+      "cpu_seconds": 0.9436940000000504,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-8212f662307e2b0a",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "bd97c0f563e3b7513149aff327deb72487036654d2138dfaeec2887e660bfe63",
+      "output_bytes": 12275
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-c3a64c5ec4ab9ff2.csv",
+      "elapsed_ns": 35633917,
+      "cpu_seconds": 0.03544699999997647,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-c3a64c5ec4ab9ff2",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "efbe4b1b735bc0f85a31a28b19224f71739649c5b65ddda9cc8cf438e8073867",
+      "output_bytes": 144575
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-73161cfba12d6f64.docx",
+      "elapsed_ns": 20512375,
+      "cpu_seconds": 0.019980999999916094,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-73161cfba12d6f64",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "53ef0b4d9619b512cd6c0f9e194b6cd9b7e275bb73adcd1a1cb7f07984bc4106",
+      "output_bytes": 12229
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-e85b568e7c94795d.epub",
+      "elapsed_ns": 143938709,
+      "cpu_seconds": 0.14368600000000242,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-e85b568e7c94795d",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "3cedfdf236c6f68b5b42561864dced622adc77cc4cfd613c3d9bd86ab80a785e",
+      "output_bytes": 305963
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-5c5d73b7fd1ce864.ods",
+      "elapsed_ns": 90002182250,
+      "cpu_seconds": null,
+      "ok": false,
+      "status": "timeout_or_worker_failure",
+      "error": "90-second conversion deadline exceeded",
+      "id": "ods-5c5d73b7fd1ce864",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-3514f5cd176f1976.odt",
+      "elapsed_ns": 35636584,
+      "cpu_seconds": 0.033783999999999814,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-3514f5cd176f1976",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "a6149f35fa572393af7c0329adff881c96151b48d799fca31b6edc4e6a3dd0a5",
+      "output_bytes": 14246
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-609a513ddfe87242.rtf",
+      "elapsed_ns": 1642364750,
+      "cpu_seconds": 1.3100139999999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-609a513ddfe87242",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "c2b4a623dbe9a8cb15db35b417d5bd40106bc9e5603664ef233988d4bcdceaf1",
+      "output_bytes": 1319
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-98c4582ee4ac67ec.xls",
+      "elapsed_ns": 722352083,
+      "cpu_seconds": 0.6565570000000003,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-98c4582ee4ac67ec",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "05f5408fefa73ddaadcca2385260f2484531ddf02e601b37b7f9f2db534589cc",
+      "output_bytes": 20266
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-ed3233c774d78621.xlsx",
+      "elapsed_ns": 31926833,
+      "cpu_seconds": 0.03149299999999933,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-ed3233c774d78621",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "75ae9ff2ccbd068e75eec5a63a3216530bc5536f0bfc8f7045bf88b085d442b1",
+      "output_bytes": 35327
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-b677a770b3df021e.pdf",
+      "elapsed_ns": 1208607584,
+      "cpu_seconds": 1.5015359999999998,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-b677a770b3df021e",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "6b734283344ee675ca4f6fcfd6ff4f016ab2e702032fe421c0ea7722ab703b40",
+      "output_bytes": 8167
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-44e67b24c85fda40.csv",
+      "elapsed_ns": 2740708,
+      "cpu_seconds": 0.0024399999999999977,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-44e67b24c85fda40",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "8e62eae38b2d686b3354227f03dc96391a6520e5abe4cdb0a7618bfcc256f949",
+      "output_bytes": 3544
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-1eb2b1255aa61b79.docx",
+      "elapsed_ns": 2619387500,
+      "cpu_seconds": 2.362292,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-1eb2b1255aa61b79",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "c7676315a15263ec4bea141786ff7195b1208731d5fb708b04a5aaabdcafb5b0",
+      "output_bytes": 9549
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-17b8d1a2585497bd.epub",
+      "elapsed_ns": 680228708,
+      "cpu_seconds": 0.680575000000001,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-17b8d1a2585497bd",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "a22ff2941f597575471d9e3181cc56836a9eea0755fcb2ac36b86c438ef1c04d",
+      "output_bytes": 857293
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-6e5aadc6326a5376.ods",
+      "elapsed_ns": 59138765167,
+      "cpu_seconds": 59.125845000000005,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-6e5aadc6326a5376",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "8bdd30abdf08f0f7d35bb8676e7be28f6b94fd03db04fdde10dc6d966a080f22",
+      "output_bytes": 22207514
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-1da355eb65c7f283.odt",
+      "elapsed_ns": 1140681709,
+      "cpu_seconds": 1.1404160000000019,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-1da355eb65c7f283",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "9fe8bc80e55926ce1c6454dcb958d915aef6195a21b8896b595bd6a893c8944f",
+      "output_bytes": 277419
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-ab314211dbff0ad8.rtf",
+      "elapsed_ns": 5742319000,
+      "cpu_seconds": 5.136918999999992,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-ab314211dbff0ad8",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "35d3af585e55e8d6a26730cf0bd77134bc86624cca845f1daa13ac6b53f069c8",
+      "output_bytes": 14160
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-b26c9bb999865dee.xls",
+      "elapsed_ns": 724253250,
+      "cpu_seconds": 0.6203000000000003,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-b26c9bb999865dee",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "9b0187490700910d1781cafe7feca6efb3e3c11f769031facf16a8a0f96cf5ef",
+      "output_bytes": 39872
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-81b8482e33f111e1.xlsx",
+      "elapsed_ns": 849310833,
+      "cpu_seconds": 0.848938000000004,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-81b8482e33f111e1",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "9138fea7f43287e58eb1fd8e5b16355db4c6b57fe5154aaefcdc9ad9668e6db2",
+      "output_bytes": 1573767
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-1788abf191ac3b3d.pdf",
+      "elapsed_ns": 613779875,
+      "cpu_seconds": 0.749350000000021,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-1788abf191ac3b3d",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "d43c7293f612df48b3e13ff4007bdf78cb9955716f1799974fea003501c7da3b",
+      "output_bytes": 4677
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-844be9860737650f.csv",
+      "elapsed_ns": 2490917,
+      "cpu_seconds": 0.0024029999999868323,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-844be9860737650f",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "237162a1820865ed763bb49417cd0df5f619e93e6e0b328d722f676348ee7441",
+      "output_bytes": 3962
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-887049f5d27c6658.docx",
+      "elapsed_ns": 284813666,
+      "cpu_seconds": 0.28447199999999384,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-887049f5d27c6658",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "e50cb754142d9ece4baa2b0d895fc1e24205724e7de135b216fc804d26908720",
+      "output_bytes": 7105
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-b9065aa9ad0d36b5.epub",
+      "elapsed_ns": 2682628833,
+      "cpu_seconds": 2.6820699999999817,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-b9065aa9ad0d36b5",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "9f31d69a0d94a607930503bf7a00fd5e87e495ab20948e9d59264d6d00d3a468",
+      "output_bytes": 3250781
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-b56a6a8313ac59d8.ods",
+      "elapsed_ns": 333552166,
+      "cpu_seconds": 0.3309960000000274,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-b56a6a8313ac59d8",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "38830bb00e5f7e1369b3e8d9fda7fd5d176bfb8f4ac5cb01bc60cea704de5289",
+      "output_bytes": 59754
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-c3f4f7648a09ff8b.odt",
+      "elapsed_ns": 29820834,
+      "cpu_seconds": 0.029638999999974658,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-c3f4f7648a09ff8b",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "ecee6e849487e412afa076cd8ad2805a621e39dadb637f392061e8abb3adec3b",
+      "output_bytes": 9374
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-81e86fc8bfc89dde.rtf",
+      "elapsed_ns": 1548570875,
+      "cpu_seconds": 1.4341919999999817,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-81e86fc8bfc89dde",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "443f0c16916fb15a672562bacf11b6fdd6a53b7b2530fdb6ca15bbc5ae2b166e",
+      "output_bytes": 33590
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-4afa8f1bdd578a74.xls",
+      "elapsed_ns": 4131932583,
+      "cpu_seconds": 4.062473999999995,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-4afa8f1bdd578a74",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "f1e745c7502d0a01ccd68938d97a108494486694cd1fd74f551d884c897aac0b",
+      "output_bytes": 569516
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-f588b6b21f7aaf5a.xlsx",
+      "elapsed_ns": 830779333,
+      "cpu_seconds": 0.7979310000000055,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-f588b6b21f7aaf5a",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "0f1d23570e91b30e8ff096c13d3dc79f189c0eb9f4e85436c745b5547c21306f",
+      "output_bytes": 254101
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-29e4833e700f4d49.pdf",
+      "elapsed_ns": 802376166,
+      "cpu_seconds": 0.9970100000000031,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-29e4833e700f4d49",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "800db4a0878f8be4a1aefe678cbf140a4ccc9b3c8aa36503c9b31bbbc9617716",
+      "output_bytes": 8248
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-fec9aeb8734f29ba.csv",
+      "elapsed_ns": 1548250,
+      "cpu_seconds": 0.0011869999999873926,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-fec9aeb8734f29ba",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "aafe8aa28ea39144f1935758cd10526ae86f8fe434053bb4c00b0c9e1c72f73b",
+      "output_bytes": 149
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-a085666334458d65.docx",
+      "elapsed_ns": 954153708,
+      "cpu_seconds": 0.8863039999999813,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-a085666334458d65",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "89aec8554961f71e8cbd51f0e7d147d2a1ef8ec56f17927841d3b63ab84a1c7e",
+      "output_bytes": 92631
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/epub-2141da99a7be9d88.epub",
+      "elapsed_ns": 65376667,
+      "cpu_seconds": 0.0651160000000175,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "epub-2141da99a7be9d88",
+      "format": "epub",
+      "historical_failure": false,
+      "output_sha256": "9de9a70151ad8994f7b49a0477f813e945300bd6c8ab6d17d9c09da9fb4de22c",
+      "output_bytes": 49494
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-d6e65678b01a9986.ods",
+      "elapsed_ns": 7488542,
+      "cpu_seconds": 0.007270000000005439,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-d6e65678b01a9986",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "52b2fd6cbdd1aa12ea9e46f823f3d86a5adcc7ac603775b61c8b0825349d7356",
+      "output_bytes": 9253
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-0ca5484539bbd086.odt",
+      "elapsed_ns": 20977375,
+      "cpu_seconds": 0.02080599999999322,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-0ca5484539bbd086",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "609b34e9346c334f3f1a23c1a0cda3147f812f1fba0bd6187afa74b15fcf6886",
+      "output_bytes": 2813
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-1589b62109c3cc60.rtf",
+      "elapsed_ns": 5616114791,
+      "cpu_seconds": 5.118551999999994,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-1589b62109c3cc60",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "83c7452c2943431aebc8588322e442bb282210856f60502cd99234cfc85ffd57",
+      "output_bytes": 24590
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-0cdb5f1ab2e1dc50.xls",
+      "elapsed_ns": 779835375,
+      "cpu_seconds": 0.7211800000000181,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-0cdb5f1ab2e1dc50",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "0c8224aa2528083b40e1c8cfa1ae6521150c89ec03d0e8d0dc334ef54875eb8a",
+      "output_bytes": 485122
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-10c9f5a16f5e22db.xlsx",
+      "elapsed_ns": 38711333,
+      "cpu_seconds": 0.03638899999998557,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-10c9f5a16f5e22db",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "a4f9ea3670d0272d099fb192bdc564f4759b76a97af0b6abae5851cf13d168e6",
+      "output_bytes": 140536
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-e6f8cad196a1a9af.pdf",
+      "elapsed_ns": 4077703541,
+      "cpu_seconds": 7.519580000000019,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-e6f8cad196a1a9af",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "4f13befe8034daa0dad13255f398b361e7d57ad3633301305137483335f12ff2",
+      "output_bytes": 40775
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-d9fb7c0eb30c3482.csv",
+      "elapsed_ns": 21298125,
+      "cpu_seconds": 0.021150000000005775,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-d9fb7c0eb30c3482",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "51a0f9f04568046705639a00cbf5d6d5d6516bf305167518aa17dade9a545dd2",
+      "output_bytes": 74669
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-d2b007806365a31d.docx",
+      "elapsed_ns": 1526052375,
+      "cpu_seconds": 1.460012000000006,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-d2b007806365a31d",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "99172d38182cc966c8de879be33d35b5fd7b7d2c966f83d73d45248efed37ba4",
+      "output_bytes": 111343
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-9e715a03fce43bec.ods",
+      "elapsed_ns": 9992912792,
+      "cpu_seconds": 9.991913000000011,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-9e715a03fce43bec",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "b27a8ec9aae5e5507584d14c08696adce2eb56d848109e0375187c6444ae6c6d",
+      "output_bytes": 5683445
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-f28625bff823ea2f.odt",
+      "elapsed_ns": 343594125,
+      "cpu_seconds": 0.3419709999999867,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-f28625bff823ea2f",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "6057e6c9b56503233d5cfb3074c7afd49da502a073cfeee386e18316b7da6090",
+      "output_bytes": 69321
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-1bd7b37078b9e742.rtf",
+      "elapsed_ns": 1534143750,
+      "cpu_seconds": 1.4589500000000015,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-1bd7b37078b9e742",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "2dc90d0d7ebbd79490f4b09787f3a2cbf017a29e3ff618473ba7b2911b8f96ea",
+      "output_bytes": 12039
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-833005d37701140f.xls",
+      "elapsed_ns": 856669125,
+      "cpu_seconds": 0.8465989999999977,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-833005d37701140f",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "c538ab7e15716f84789b9479f6914cb873ae584b5db155293a23aabd89989447",
+      "output_bytes": 69725
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-2e9e3e60a90c3c8c.xlsx",
+      "elapsed_ns": 193192000,
+      "cpu_seconds": 0.19297699999999907,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-2e9e3e60a90c3c8c",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "07ee62941aecf7482550f74b53f2fafd16925487b44a50e83f70efb48f59083b",
+      "output_bytes": 369037
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-2ca01bb757c9f9fb.pdf",
+      "elapsed_ns": 346109083,
+      "cpu_seconds": 0.40298399999998935,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-2ca01bb757c9f9fb",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "5d4e58f25180770cbb5b51e1a5e9dc45cdc776651589834402df20ef7beeb256",
+      "output_bytes": 860
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-e7ddb49aaf400f4b.csv",
+      "elapsed_ns": 2226667,
+      "cpu_seconds": 0.002134999999995557,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-e7ddb49aaf400f4b",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "f2f530deba6c29748068dd8cdd36931f5f1d4da4b9ca2d4a9c4aaa88e503ecd4",
+      "output_bytes": 3586
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-dc2aaff061b16401.docx",
+      "elapsed_ns": 36597583,
+      "cpu_seconds": 0.03643900000000144,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-dc2aaff061b16401",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "f81854d7a9e0a69785b41b5aa550683277c5c89ecfb29a1d20817fc2799a7504",
+      "output_bytes": 7112
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-eb7143958f9f65f4.ods",
+      "elapsed_ns": 24557875,
+      "cpu_seconds": 0.024476999999990312,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-eb7143958f9f65f4",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "37a1defbaa6b23e72e92c1c7e27936136e0ae4cf1b46c6b8a50ffcbddbaf044a",
+      "output_bytes": 22223
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-83ed5768066ea5cb.odt",
+      "elapsed_ns": 123006750,
+      "cpu_seconds": 0.12288800000000322,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-83ed5768066ea5cb",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "d8d2635e931137dfdc185124dbc5cc67f7592b3895c7f8c098b174416d2a1754",
+      "output_bytes": 17159
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-36b6d27886a90986.rtf",
+      "elapsed_ns": 812412208,
+      "cpu_seconds": 0.7418150000000026,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-36b6d27886a90986",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "c85e5c9598906099dbe8f93b8f70c497e2b40f66d7cdcffbce134c12810cad3a",
+      "output_bytes": 2080
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xls-9e98fc4163c8af7f.xls",
+      "elapsed_ns": 600284125,
+      "cpu_seconds": 0.6045560000000165,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xls-9e98fc4163c8af7f",
+      "format": "xls",
+      "historical_failure": false,
+      "output_sha256": "17660bca55ee2fc2e20894fecec2da158a5c2d11b1fe014c0fc2f89d31693211",
+      "output_bytes": 5741
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/xlsx-c22668654f804e10.xlsx",
+      "elapsed_ns": 274068667,
+      "cpu_seconds": 0.2735799999999955,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "xlsx-c22668654f804e10",
+      "format": "xlsx",
+      "historical_failure": false,
+      "output_sha256": "7f738d2f69c4343992434e86d486091ef9fc96c0d2fdca9dc25370f84fccc7aa",
+      "output_bytes": 167638
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/pdf-b4093e43f54b231e.pdf",
+      "elapsed_ns": 11394304166,
+      "cpu_seconds": 24.836822999999995,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "pdf-b4093e43f54b231e",
+      "format": "pdf",
+      "historical_failure": false,
+      "output_sha256": "e8747e96f8c815636b5f5f6300dff57e951b106d219b0b72e9b2c6884f1449b7",
+      "output_bytes": 103361
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/csv-2bb40ac5853ed7c6.csv",
+      "elapsed_ns": 19800541,
+      "cpu_seconds": 0.019381000000009863,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "csv-2bb40ac5853ed7c6",
+      "format": "csv",
+      "historical_failure": false,
+      "output_sha256": "47b6b39d13200f7f1412810d2eb8860e84a97e72b26c34b58d2124a358abc2a8",
+      "output_bytes": 66504
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docx-7bba08f18cca89dd.docx",
+      "elapsed_ns": 4741539042,
+      "cpu_seconds": 4.275216,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "docx-7bba08f18cca89dd",
+      "format": "docx",
+      "historical_failure": false,
+      "output_sha256": "651c481a2906def14bbb8b2d96793f1e251b8a9982a724488725888405506ba1",
+      "output_bytes": 13311
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/ods-b3d2ced785e1482e.ods",
+      "elapsed_ns": 15182994625,
+      "cpu_seconds": 15.182102000000015,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "ods-b3d2ced785e1482e",
+      "format": "ods",
+      "historical_failure": false,
+      "output_sha256": "76a43f8525b4e7ac606acec1fab0567a629d97f556e0afb27e71e40d4bc76587",
+      "output_bytes": 5952480
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/odt-33654e87541c031a.odt",
+      "elapsed_ns": 38862667,
+      "cpu_seconds": 0.03855599999999981,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "odt-33654e87541c031a",
+      "format": "odt",
+      "historical_failure": false,
+      "output_sha256": "95244cea6915b5d751b1513d5f7e11d56e004e53b84517aed8e7a74ade8a3561",
+      "output_bytes": 9921
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/rtf-496b0231bb4eee50.rtf",
+      "elapsed_ns": 677996792,
+      "cpu_seconds": 0.6384569999999883,
+      "ok": true,
+      "status": "returned",
+      "diagnostics": [
+        {
+          "status": "success",
+          "errors": []
+        }
+      ],
+      "error": null,
+      "id": "rtf-496b0231bb4eee50",
+      "format": "rtf",
+      "historical_failure": false,
+      "output_sha256": "098547d874b8e62b0474ef6f1141e87bd359237e3bac30a8cadd1fd0ceac9836",
+      "output_bytes": 3415
+    }
+  ]
+}

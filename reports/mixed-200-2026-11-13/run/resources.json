@@ -1,0 +1,42 @@
+{
+  "bulkparse": {
+    "worker_starts": 1,
+    "lifetime_peak_rss_bytes": 1947549696,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "anydoc": {
+    "worker_starts": 1,
+    "lifetime_peak_rss_bytes": 2742829056,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "docling": {
+    "worker_starts": 2,
+    "lifetime_peak_rss_bytes": 3438100480,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "markitdown": {
+    "worker_starts": 1,
+    "lifetime_peak_rss_bytes": 3224928256,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "pandoc": {
+    "worker_starts": 1,
+    "lifetime_peak_rss_bytes": 2234433536,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "mammoth": {
+    "worker_starts": 1,
+    "lifetime_peak_rss_bytes": 698155008,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "libreoffice": {
+    "worker_starts": 4,
+    "lifetime_peak_rss_bytes": 4929347584,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  },
+  "unstructured": {
+    "worker_starts": 2,
+    "lifetime_peak_rss_bytes": 1023606784,
+    "scope": "OS worker-lifetime high-water RSS, including warmup and transport; excludes aggregate subprocess-tree peak. Killed workers can lack an OS high-water sample."
+  }
+}

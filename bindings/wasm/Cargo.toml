@@ -1,0 +1,17 @@
+[package]
+name = "bulkparse-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[dependencies]
+bulkparse = { workspace = true, features = ["docx", "pdf", "office"] }
+serde_json.workspace = true
+wasm-bindgen = "0.2"

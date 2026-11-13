@@ -1,0 +1,22 @@
+[package]
+name = "anydoc-bench-worker"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[features]
+bulkparse = []
+
+[[bin]]
+name = "anydoc-bench-worker"
+path = "../native.rs"
+
+[dependencies]
+anydoc = { path = "../../../anydoc-main" }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

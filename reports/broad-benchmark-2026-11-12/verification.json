@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "suites": {
+    "pdf": {
+      "engines_or_profiles": 9,
+      "inputs": 200,
+      "passes_per_engine": 6
+    },
+    "office": {
+      "engines_or_profiles": 6,
+      "inputs": 92,
+      "passes_per_engine": 6
+    }
+  },
+  "ocr_profiles": 4,
+  "fresh_spot_check_outcomes": 37,
+  "production_source_files_unchanged": 76,
+  "prior_office_outputs_unchanged": 81,
+  "prior_pdf_outputs_unchanged": 200
+}

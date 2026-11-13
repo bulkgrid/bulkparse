@@ -1,0 +1,67 @@
+[
+  {
+    "name": "bulkparse",
+    "argv": [
+      "target/workers/bulkparse/release/bulkparse-bench-worker"
+    ],
+    "version": "0.1.0 ruled-table parser",
+    "configuration": {
+      "worker": "persistent native Rust process",
+      "ocr": false,
+      "tables": "conservative ruled",
+      "normalization": false
+    },
+    "pin_files": [
+      "benchmarks/workers/native.rs",
+      "benchmarks/workers/bulkparse/Cargo.toml",
+      "benchmarks/workers/bulkparse/Cargo.lock",
+      "Cargo.lock"
+    ]
+  },
+  {
+    "name": "anydoc",
+    "argv": [
+      "target/workers/anydoc/release/anydoc-bench-worker"
+    ],
+    "version": "0.2.4 / pdf-inspector 1.14.2",
+    "configuration": {
+      "worker": "persistent native Rust process",
+      "ocr": false,
+      "tables": "default native heuristics"
+    },
+    "pin_files": [
+      "benchmarks/workers/native.rs",
+      "benchmarks/workers/anydoc/Cargo.toml",
+      "benchmarks/workers/anydoc/Cargo.lock",
+      "anydoc-main/Cargo.toml",
+      "anydoc-main/Cargo.lock"
+    ]
+  },
+  {
+    "name": "docling",
+    "argv": [
+      "target/competitors/docling-venv/bin/python",
+      "scripts/worker_docling.py",
+      "--artifacts",
+      "target/competitors/models"
+    ],
+    "version": "2.150.0 / docling-parse 7.23.0",
+    "configuration": {
+      "worker": "persistent Python process; initialized converter and PDF pipeline",
+      "ocr": false,
+      "tables": false,
+      "device": "cpu",
+      "threads_per_worker": 4,
+      "model": "Heron",
+      "offline": true
+    },
+    "pin_files": [
+      "scripts/worker_docling.py",
+      "benchmarks/holdout/docling-environment.txt",
+      "target/competitors/docling-model.json"
+    ],
+    "pin_dirs": [
+      "target/competitors/models/docling-project--docling-layout-heron"
+    ]
+  }
+]

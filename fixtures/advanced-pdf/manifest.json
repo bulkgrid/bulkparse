@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "scope": "Three authored scan smoke tests; selected checks, not independent production accuracy.",
+  "font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+  "cases": [
+    {
+      "id": "scanned-merged-table",
+      "path": "scanned-merged-table.pdf",
+      "sha256": "7462a58589556cefbc7e56d2ac209c51a2ede7da28694942ca3712c3f5313e32",
+      "checks": [
+        {
+          "type": "text",
+          "contains": "All amounts are in USD."
+        },
+        {
+          "type": "table",
+          "header_rows": 2,
+          "rows": [
+            [
+              {
+                "text": "Quarter",
+                "col_span": 1,
+                "row_span": 2
+              },
+              {
+                "text": "Revenue",
+                "col_span": 2,
+                "row_span": 1
+              }
+            ],
+            [
+              {
+                "text": "Domestic",
+                "col_span": 1,
+                "row_span": 1
+              },
+              {
+                "text": "Export",
+                "col_span": 1,
+                "row_span": 1
+              }
+            ],
+            [
+              {
+                "text": "Q1",
+                "col_span": 1,
+                "row_span": 1
+              },
+              {
+                "text": "1250",
+                "col_span": 1,
+                "row_span": 1
+              },
+              {
+                "text": "730",
+                "col_span": 1,
+                "row_span": 1
+              }
+            ],
+            [
+              {
+                "text": "Q2",
+                "col_span": 1,
+                "row_span": 1
+              },
+              {
+                "text": "1480",
+                "col_span": 1,
+                "row_span": 1
+              },
+              {
+                "text": "910",
+                "col_span": 1,
+                "row_span": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scanned-formulas",
+      "path": "scanned-formulas.pdf",
+      "sha256": "85510b6b5a99105f5ae644772545bac86eb902da7ad06b04371591061f9c54bd",
+      "checks": [
+        {
+          "type": "text",
+          "contains": "Mass and energy are related by"
+        },
+        {
+          "type": "formula",
+          "tex": "E=mc^2"
+        },
+        {
+          "type": "formula",
+          "tex": "\\frac{a+b}{c}=d"
+        }
+      ]
+    },
+    {
+      "id": "scanned-columns",
+      "path": "scanned-columns.pdf",
+      "sha256": "501a0742e84d64e26230876aa1bfa114093c43df26220b7e15a642d3d218c730",
+      "checks": [
+        {
+          "type": "order",
+          "anchors": [
+            "Maple team planted oak trees.",
+            "Roots received fresh water.",
+            "Work finished before lunch.",
+            "Willow team repaired fences.",
+            "Posts were checked carefully.",
+            "Tools returned to storage."
+          ]
+        }
+      ]
+    }
+  ]
+}

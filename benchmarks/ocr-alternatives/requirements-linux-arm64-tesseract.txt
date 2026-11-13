@@ -1,0 +1,4 @@
+# Exact Python package versions from the measured Linux ARM64 environment.
+pillow==12.2.0
+pip==25.0.1
+tesserocr==2.12.0

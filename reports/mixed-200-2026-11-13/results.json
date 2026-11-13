@@ -1,0 +1,2231 @@
+{
+  "overall": {
+    "bulkparse": {
+      "attempted": 200,
+      "returned": 199,
+      "nonempty": 199,
+      "unsupported": 0,
+      "failed": 1,
+      "empty": 0,
+      "formats": 19,
+      "median_success_ms": 2.768417,
+      "p95_success_ms": 674.672625,
+      "attempt_seconds": 16.318177379,
+      "known_cpu_seconds": 16.242203999999987,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 1857.328125,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 112,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 87,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "partial": 172,
+        "complete": 27,
+        "error": 1
+      }
+    },
+    "anydoc": {
+      "attempted": 189,
+      "returned": 185,
+      "nonempty": 185,
+      "unsupported": 11,
+      "failed": 4,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 5.273792,
+      "p95_success_ms": 375.085542,
+      "attempt_seconds": 13.722752377,
+      "known_cpu_seconds": 13.672033000000004,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 2615.765625,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 109,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 76,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 185,
+        "error": 4,
+        "unsupported": 11
+      }
+    },
+    "docling": {
+      "attempted": 194,
+      "returned": 191,
+      "nonempty": 191,
+      "unsupported": 6,
+      "failed": 3,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 722.352083,
+      "p95_success_ms": 15182.994625,
+      "attempt_seconds": 800.278096249,
+      "known_cpu_seconds": 724.9653600000003,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 3278.828125,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 111,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 80,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 191,
+        "error": 2,
+        "unsupported": 6,
+        "timeout_or_worker_failure": 1
+      }
+    },
+    "markitdown": {
+      "attempted": 130,
+      "returned": 128,
+      "nonempty": 128,
+      "unsupported": 70,
+      "failed": 2,
+      "empty": 0,
+      "formats": 13,
+      "median_success_ms": 73.6912705,
+      "p95_success_ms": 4938.828416,
+      "attempt_seconds": 140.32560871,
+      "known_cpu_seconds": 147.93243300000017,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 3075.53125,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 63,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 65,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 128,
+        "unsupported": 70,
+        "error": 2
+      }
+    },
+    "pandoc": {
+      "attempted": 102,
+      "returned": 102,
+      "nonempty": 102,
+      "unsupported": 98,
+      "failed": 0,
+      "empty": 0,
+      "formats": 8,
+      "median_success_ms": 101.73514549999999,
+      "p95_success_ms": 2248.865833,
+      "attempt_seconds": 59.75398075,
+      "known_cpu_seconds": 58.02251800000001,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 2130.921875,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 54,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 48,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "unsupported": 98,
+        "returned": 102
+      }
+    },
+    "mammoth": {
+      "attempted": 20,
+      "returned": 20,
+      "nonempty": 20,
+      "unsupported": 180,
+      "failed": 0,
+      "empty": 0,
+      "formats": 2,
+      "median_success_ms": 36.463896,
+      "p95_success_ms": 325.831583,
+      "attempt_seconds": 1.792390831,
+      "known_cpu_seconds": 1.7902389999999997,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 665.8125,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 12,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 8,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "unsupported": 180,
+        "returned": 20
+      }
+    },
+    "libreoffice": {
+      "attempted": 157,
+      "returned": 154,
+      "nonempty": 154,
+      "unsupported": 43,
+      "failed": 3,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 877.5665,
+      "p95_success_ms": 7862.399041,
+      "attempt_seconds": 582.573276416,
+      "known_cpu_seconds": 310.33569,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 4700.9921875,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 102,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 52,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 154,
+        "unsupported": 43,
+        "timeout_or_worker_failure": 3
+      }
+    },
+    "unstructured": {
+      "attempted": 173,
+      "returned": 158,
+      "nonempty": 158,
+      "unsupported": 27,
+      "failed": 15,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 252.402125,
+      "p95_success_ms": 8461.749667,
+      "attempt_seconds": 332.841883882,
+      "known_cpu_seconds": 241.0250009999999,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 976.1875,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 87,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 71,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 158,
+        "unsupported": 27,
+        "error": 14,
+        "timeout_or_worker_failure": 1
+      }
+    }
+  },
+  "formats": {
+    "bulkparse": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 0.322125
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 8,
+        "nonempty": 8,
+        "median_success_ms": 0.8960835
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 1.957958
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 2.405375
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 9.123375
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 0.445854
+      },
+      "md": {
+        "total": 5,
+        "attempted": 5,
+        "nonempty": 5,
+        "median_success_ms": 0.128375
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 9.1056455
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 51.885917
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 0.939458
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 7.481813
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 0.771541
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 8.2090625
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 5.599917
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 1.320541
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 1.740292
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 17,
+        "median_success_ms": 0.852083
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 6,
+        "median_success_ms": 76.5678955
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 3.9579795000000004
+      }
+    },
+    "anydoc": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 0.808083
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 8,
+        "nonempty": 8,
+        "median_success_ms": 1.0011459999999999
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 3.201
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 2.665875
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 16.1240415
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "md": {
+        "total": 5,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 12.632437
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 16,
+        "median_success_ms": 15.296521
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 1.825208
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 14.5525625
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 0.570292
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 9.1564795
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 12.1375
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 1.7336665
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 5,
+        "median_success_ms": 39.024917
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 7.391646
+      }
+    },
+    "docling": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 18,
+        "median_success_ms": 11.4899795
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 8,
+        "nonempty": 8,
+        "median_success_ms": 2984.7599375
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 151.281292
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 723.7276455
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "md": {
+        "total": 5,
+        "attempted": 5,
+        "nonempty": 5,
+        "median_success_ms": 11.408166
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 174.902896
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 18,
+        "median_success_ms": 2322.1867915000003
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 66.488125
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 1421.603292
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 901.474208
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 2517.3949375
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 1642.36475
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 784.817958
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 6,
+        "median_success_ms": 1872.5962085
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 80.82179149999999
+      }
+    },
+    "markitdown": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 17,
+        "median_success_ms": 5.153291
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 73.617291
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 117.166542
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 131.8140625
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 3.6012709999999997
+      },
+      "md": {
+        "total": 5,
+        "attempted": 5,
+        "nonempty": 5,
+        "median_success_ms": 3.954791
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 199.5784165
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 46.744667
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 5.082208
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 10.886084
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 39.426979
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 6,
+        "median_success_ms": 3006.8971039999997
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 139.089125
+      }
+    },
+    "pandoc": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 54.739833
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 89.494375
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 1328.6663125
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 77.10206299999999
+      },
+      "md": {
+        "total": 5,
+        "attempted": 5,
+        "nonempty": 5,
+        "median_success_ms": 68.74075
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 69.594042
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 252.277375
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 188.31775
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      }
+    },
+    "mammoth": {
+      "csv": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 36.035917
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 36.891875
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "md": {
+        "total": 5,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      }
+    },
+    "libreoffice": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 18,
+        "median_success_ms": 647.374062
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 8,
+        "nonempty": 8,
+        "median_success_ms": 792.9745415
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 707.774458
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 783.202292
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "md": {
+        "total": 5,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 1511.458729
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 2047.775459
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 704.171
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 1352.871375
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 5809.2346875
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 939.769125
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 1106.927583
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 929.163459
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 843.447208
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 5,
+        "median_success_ms": 6245.445292
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 17,
+        "median_success_ms": 1146.635167
+      }
+    },
+    "unstructured": {
+      "csv": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 7,
+        "median_success_ms": 58.078375
+      },
+      "doc": {
+        "total": 8,
+        "attempted": 8,
+        "nonempty": 8,
+        "median_success_ms": 727.3453125000001
+      },
+      "docm": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "docx": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 46.377625
+      },
+      "epub": {
+        "total": 16,
+        "attempted": 16,
+        "nonempty": 16,
+        "median_success_ms": 7143.057124999999
+      },
+      "ipynb": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "md": {
+        "total": 5,
+        "attempted": 5,
+        "nonempty": 5,
+        "median_success_ms": 23.847167
+      },
+      "odp": {
+        "total": 4,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "ods": {
+        "total": 19,
+        "attempted": 0,
+        "nonempty": 0,
+        "median_success_ms": null
+      },
+      "odt": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 242.391792
+      },
+      "pdf": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 231.6369375
+      },
+      "ppt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 816.307125
+      },
+      "pptx": {
+        "total": 4,
+        "attempted": 4,
+        "nonempty": 4,
+        "median_success_ms": 127.736167
+      },
+      "rtf": {
+        "total": 19,
+        "attempted": 19,
+        "nonempty": 19,
+        "median_success_ms": 429.800667
+      },
+      "tsv": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 333.075958
+      },
+      "txt": {
+        "total": 1,
+        "attempted": 1,
+        "nonempty": 1,
+        "median_success_ms": 3793.666417
+      },
+      "xls": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 17,
+        "median_success_ms": 74.632458
+      },
+      "xlsm": {
+        "total": 6,
+        "attempted": 6,
+        "nonempty": 5,
+        "median_success_ms": 1924.591917
+      },
+      "xlsx": {
+        "total": 18,
+        "attempted": 18,
+        "nonempty": 18,
+        "median_success_ms": 216.87870850000002
+      }
+    }
+  },
+  "common_all_ids": [
+    "docx-0ccd420844268ba1",
+    "docx-1eb2b1255aa61b79",
+    "docx-28622481c8d0689c",
+    "docx-28a174ed631cdcbb",
+    "docx-51ef90f6f0648fba",
+    "docx-73161cfba12d6f64",
+    "docx-74df23a8ae8850b9",
+    "docx-79a64a30ba117a4a",
+    "docx-7bba08f18cca89dd",
+    "docx-81218a1a8a2d2812",
+    "docx-887049f5d27c6658",
+    "docx-97c10db5c1ec700f",
+    "docx-a085666334458d65",
+    "docx-b3748ff715455dad",
+    "docx-d2b007806365a31d",
+    "docx-dc2aaff061b16401",
+    "docx-e0e5f8436e9f876b",
+    "docx-e5b62304af29d253",
+    "docx-f62997ec2a50f78b"
+  ],
+  "common_all": {
+    "bulkparse": {
+      "documents": 19,
+      "total_seconds": 0.136146873,
+      "median_ms": 2.405375
+    },
+    "anydoc": {
+      "documents": 19,
+      "total_seconds": 0.138813665,
+      "median_ms": 2.665875
+    },
+    "docling": {
+      "documents": 19,
+      "total_seconds": 24.160341917,
+      "median_ms": 151.281292
+    },
+    "markitdown": {
+      "documents": 19,
+      "total_seconds": 3.602881878,
+      "median_ms": 117.166542
+    },
+    "pandoc": {
+      "documents": 19,
+      "total_seconds": 2.644261875,
+      "median_ms": 89.494375
+    },
+    "mammoth": {
+      "documents": 19,
+      "total_seconds": 1.756354914,
+      "median_ms": 36.891875
+    },
+    "libreoffice": {
+      "documents": 19,
+      "total_seconds": 15.751007416,
+      "median_ms": 783.202292
+    },
+    "unstructured": {
+      "documents": 19,
+      "total_seconds": 2.203003376,
+      "median_ms": 46.377625
+    }
+  },
+  "pairwise_common": {
+    "anydoc": {
+      "ids": [
+        "csv-1b314698f52fbae4",
+        "csv-2bb40ac5853ed7c6",
+        "csv-44e67b24c85fda40",
+        "csv-5862825d8339bd46",
+        "csv-694b7b75298efd2b",
+        "csv-7a2e611f4e059f98",
+        "csv-7d372f57f2ec54f0",
+        "csv-844be9860737650f",
+        "csv-8d5e54393ec2c231",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-cfa227027af67347",
+        "csv-d9fb7c0eb30c3482",
+        "csv-e7ddb49aaf400f4b",
+        "csv-ed3a7edd76ea8313",
+        "csv-f556d7df1c5cc8c5",
+        "csv-fbeb7b5e9b4f3ed9",
+        "csv-fec9aeb8734f29ba",
+        "doc-17e9bdae24d89d4f",
+        "doc-2cbbb8c09f8f3894",
+        "doc-2d3fa2c84661e6aa",
+        "doc-3147695a1a548516",
+        "doc-52bb77f11c2474f5",
+        "doc-5e8a921b9fe74d8f",
+        "doc-78ed9d3abd7ebc03",
+        "doc-c94c186c5c7a7e2e",
+        "docm-0d0f68a17819e210",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "epub-17b8d1a2585497bd",
+        "epub-1c62ba1da0bb481f",
+        "epub-1e003fd2f8103b08",
+        "epub-2141da99a7be9d88",
+        "epub-2ef24c1d450028ab",
+        "epub-3dbc61354eb6907b",
+        "epub-87820642b8664d28",
+        "epub-a127c968ef9aa556",
+        "epub-b02d8fd32a182a18",
+        "epub-b4c2ced09ac76ce1",
+        "epub-b6d0013274f3a622",
+        "epub-b9065aa9ad0d36b5",
+        "epub-bbeb9aafdfc67094",
+        "epub-ccadc238f4617b0c",
+        "epub-e85b568e7c94795d",
+        "epub-f6bb344a25fc9295",
+        "odp-2c5c51cf84856009",
+        "odp-5252bb92605f4c4f",
+        "odp-564869358ea09276",
+        "odp-9c873e44e721b125",
+        "ods-20234a4bf0a85cd1",
+        "ods-20f58e9c6ef54e2c",
+        "ods-21d4c1846feb99a9",
+        "ods-37673dc956a05d28",
+        "ods-39a8edec753b433a",
+        "ods-5cefbfc9f77dafdd",
+        "ods-6df1f9c102f8d1a4",
+        "ods-6e5aadc6326a5376",
+        "ods-9d9a12a7de860893",
+        "ods-9e715a03fce43bec",
+        "ods-b3d2ced785e1482e",
+        "ods-b56a6a8313ac59d8",
+        "ods-c14b342a8f148642",
+        "ods-c197f40e846f9d2b",
+        "ods-d6e65678b01a9986",
+        "ods-eb7143958f9f65f4",
+        "odt-00e398ed307d3b65",
+        "odt-0328e791eab0b3a1",
+        "odt-0ca5484539bbd086",
+        "odt-1da355eb65c7f283",
+        "odt-2d6db61dc4830eaf",
+        "odt-33654e87541c031a",
+        "odt-3514f5cd176f1976",
+        "odt-43334429a443e679",
+        "odt-47a6bf98c3cb6731",
+        "odt-63c6b825af83ec7a",
+        "odt-6f5e54a20bc45406",
+        "odt-83ed5768066ea5cb",
+        "odt-96d97547e4f2d87d",
+        "odt-b3a998372ff672e2",
+        "odt-c3f4f7648a09ff8b",
+        "odt-cede57fea79bbca0",
+        "odt-d188488b70aeff60",
+        "odt-eb78dd0b8a336233",
+        "odt-f28625bff823ea2f",
+        "pdf-05c7b1962ea38a3a",
+        "pdf-1788abf191ac3b3d",
+        "pdf-1872a1a6054476a2",
+        "pdf-29e4833e700f4d49",
+        "pdf-2ca01bb757c9f9fb",
+        "pdf-5b5caefc15d82641",
+        "pdf-634fad87b13329fd",
+        "pdf-79cabd7d849a0058",
+        "pdf-8212f662307e2b0a",
+        "pdf-9c9f2c3e4c116a76",
+        "pdf-b4093e43f54b231e",
+        "pdf-b677a770b3df021e",
+        "pdf-cc66c72d80c24a7a",
+        "pdf-d896f43f6c355d3d",
+        "pdf-d9033cf747db3151",
+        "pdf-e6f8cad196a1a9af",
+        "pdf-f3a560a34a17215a",
+        "pdf-ff206d7d59a3913a",
+        "ppt-186c7d6024cd48d6",
+        "pptx-301f76bca4e3befd",
+        "pptx-46dd935a730802e5",
+        "pptx-80e3d4b6f96ada2e",
+        "pptx-e9ec7655aac7cd8c",
+        "rtf-044d0a30d6587133",
+        "rtf-04f180aaec98d069",
+        "rtf-1589b62109c3cc60",
+        "rtf-1bd7b37078b9e742",
+        "rtf-31714b26363ccbb1",
+        "rtf-36b6d27886a90986",
+        "rtf-401b7816a5f427e3",
+        "rtf-496b0231bb4eee50",
+        "rtf-4fb11fb2da406a04",
+        "rtf-5ef331e9ecfd2b01",
+        "rtf-609a513ddfe87242",
+        "rtf-81ca11b11d4d10ee",
+        "rtf-81e86fc8bfc89dde",
+        "rtf-ab314211dbff0ad8",
+        "rtf-dcd6e1663bf622fc",
+        "rtf-de53f4b43e40a995",
+        "rtf-e68703d8744564d7",
+        "rtf-e7fb2bec9b55430a",
+        "rtf-f0041e60d9f5d66d",
+        "xls-0cdb5f1ab2e1dc50",
+        "xls-262346875d84601e",
+        "xls-4704f5ad102551dc",
+        "xls-4afa8f1bdd578a74",
+        "xls-589ace4188fb7ccc",
+        "xls-833005d37701140f",
+        "xls-85accb68a8a2daac",
+        "xls-9e13fd1af7af5a9f",
+        "xls-9e98fc4163c8af7f",
+        "xls-ad544845941ae38f",
+        "xls-aed2154ce0e620bd",
+        "xls-b0aaa1a67a6a133c",
+        "xls-b26c9bb999865dee",
+        "xls-c55634ddabc2dbd2",
+        "xls-cad9314378e3f0a6",
+        "xls-d3232e7ce2233494",
+        "xls-fca77b163b2732bc",
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd",
+        "xlsx-10c9f5a16f5e22db",
+        "xlsx-2e9e3e60a90c3c8c",
+        "xlsx-3d7484ae52ab377f",
+        "xlsx-43eab8ba38301e43",
+        "xlsx-4dfa5e74dbca1243",
+        "xlsx-63ec78f6069e1087",
+        "xlsx-81b8482e33f111e1",
+        "xlsx-82d52520f3cb4d0f",
+        "xlsx-bc31edc4699094ef",
+        "xlsx-c22668654f804e10",
+        "xlsx-c6b7ed51f3c6eb9b",
+        "xlsx-cac5a4611b7f7aec",
+        "xlsx-d44178482c9703c8",
+        "xlsx-ed3233c774d78621",
+        "xlsx-f588b6b21f7aaf5a",
+        "xlsx-f6e8af8ebdefba8d",
+        "xlsx-fafffef6e7e8e008",
+        "xlsx-fff9298f89cd9571"
+      ],
+      "documents": 184,
+      "bulkparse_seconds": 9.001839504,
+      "competitor_seconds": 11.431892084
+    },
+    "docling": {
+      "ids": [
+        "csv-1b314698f52fbae4",
+        "csv-2bb40ac5853ed7c6",
+        "csv-44e67b24c85fda40",
+        "csv-5862825d8339bd46",
+        "csv-7a2e611f4e059f98",
+        "csv-7d372f57f2ec54f0",
+        "csv-844be9860737650f",
+        "csv-8d5e54393ec2c231",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-cfa227027af67347",
+        "csv-d9fb7c0eb30c3482",
+        "csv-e7ddb49aaf400f4b",
+        "csv-ed3a7edd76ea8313",
+        "csv-f556d7df1c5cc8c5",
+        "csv-fbeb7b5e9b4f3ed9",
+        "csv-fec9aeb8734f29ba",
+        "doc-17e9bdae24d89d4f",
+        "doc-2cbbb8c09f8f3894",
+        "doc-2d3fa2c84661e6aa",
+        "doc-3147695a1a548516",
+        "doc-52bb77f11c2474f5",
+        "doc-5e8a921b9fe74d8f",
+        "doc-78ed9d3abd7ebc03",
+        "doc-c94c186c5c7a7e2e",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "epub-17b8d1a2585497bd",
+        "epub-1c62ba1da0bb481f",
+        "epub-1e003fd2f8103b08",
+        "epub-2141da99a7be9d88",
+        "epub-2ef24c1d450028ab",
+        "epub-3dbc61354eb6907b",
+        "epub-87820642b8664d28",
+        "epub-a127c968ef9aa556",
+        "epub-b02d8fd32a182a18",
+        "epub-b4c2ced09ac76ce1",
+        "epub-b6d0013274f3a622",
+        "epub-b9065aa9ad0d36b5",
+        "epub-bbeb9aafdfc67094",
+        "epub-ccadc238f4617b0c",
+        "epub-e85b568e7c94795d",
+        "epub-f6bb344a25fc9295",
+        "md-11e94e2beb8e57f7",
+        "md-b836950e8e95e9a7",
+        "md-ce59833a6038447b",
+        "md-d88f362bdba93c8b",
+        "md-ebf9130f9c59b837",
+        "odp-2c5c51cf84856009",
+        "odp-5252bb92605f4c4f",
+        "odp-564869358ea09276",
+        "odp-9c873e44e721b125",
+        "ods-20234a4bf0a85cd1",
+        "ods-20f58e9c6ef54e2c",
+        "ods-21d4c1846feb99a9",
+        "ods-37673dc956a05d28",
+        "ods-39a8edec753b433a",
+        "ods-5cefbfc9f77dafdd",
+        "ods-6df1f9c102f8d1a4",
+        "ods-6e5aadc6326a5376",
+        "ods-729c3707bbe50f51",
+        "ods-9d9a12a7de860893",
+        "ods-9e715a03fce43bec",
+        "ods-b3185d3043cb268a",
+        "ods-b3d2ced785e1482e",
+        "ods-b56a6a8313ac59d8",
+        "ods-c14b342a8f148642",
+        "ods-c197f40e846f9d2b",
+        "ods-d6e65678b01a9986",
+        "ods-eb7143958f9f65f4",
+        "odt-00e398ed307d3b65",
+        "odt-0328e791eab0b3a1",
+        "odt-0ca5484539bbd086",
+        "odt-1da355eb65c7f283",
+        "odt-2d6db61dc4830eaf",
+        "odt-33654e87541c031a",
+        "odt-3514f5cd176f1976",
+        "odt-43334429a443e679",
+        "odt-47a6bf98c3cb6731",
+        "odt-63c6b825af83ec7a",
+        "odt-6f5e54a20bc45406",
+        "odt-83ed5768066ea5cb",
+        "odt-96d97547e4f2d87d",
+        "odt-b3a998372ff672e2",
+        "odt-c3f4f7648a09ff8b",
+        "odt-cede57fea79bbca0",
+        "odt-d188488b70aeff60",
+        "odt-eb78dd0b8a336233",
+        "odt-f28625bff823ea2f",
+        "pdf-05c7b1962ea38a3a",
+        "pdf-1788abf191ac3b3d",
+        "pdf-1872a1a6054476a2",
+        "pdf-29e4833e700f4d49",
+        "pdf-2ca01bb757c9f9fb",
+        "pdf-5b5caefc15d82641",
+        "pdf-634fad87b13329fd",
+        "pdf-79cabd7d849a0058",
+        "pdf-8212f662307e2b0a",
+        "pdf-9c9f2c3e4c116a76",
+        "pdf-b4093e43f54b231e",
+        "pdf-b677a770b3df021e",
+        "pdf-cc66c72d80c24a7a",
+        "pdf-d896f43f6c355d3d",
+        "pdf-d9033cf747db3151",
+        "pdf-e6f8cad196a1a9af",
+        "pdf-f3a560a34a17215a",
+        "pdf-ff206d7d59a3913a",
+        "ppt-186c7d6024cd48d6",
+        "pptx-301f76bca4e3befd",
+        "pptx-46dd935a730802e5",
+        "pptx-80e3d4b6f96ada2e",
+        "pptx-e9ec7655aac7cd8c",
+        "rtf-044d0a30d6587133",
+        "rtf-04f180aaec98d069",
+        "rtf-1589b62109c3cc60",
+        "rtf-1bd7b37078b9e742",
+        "rtf-31714b26363ccbb1",
+        "rtf-36b6d27886a90986",
+        "rtf-401b7816a5f427e3",
+        "rtf-496b0231bb4eee50",
+        "rtf-4fb11fb2da406a04",
+        "rtf-5ef331e9ecfd2b01",
+        "rtf-609a513ddfe87242",
+        "rtf-81ca11b11d4d10ee",
+        "rtf-81e86fc8bfc89dde",
+        "rtf-ab314211dbff0ad8",
+        "rtf-dcd6e1663bf622fc",
+        "rtf-de53f4b43e40a995",
+        "rtf-e68703d8744564d7",
+        "rtf-e7fb2bec9b55430a",
+        "rtf-f0041e60d9f5d66d",
+        "xls-0cdb5f1ab2e1dc50",
+        "xls-262346875d84601e",
+        "xls-4704f5ad102551dc",
+        "xls-4afa8f1bdd578a74",
+        "xls-589ace4188fb7ccc",
+        "xls-833005d37701140f",
+        "xls-85accb68a8a2daac",
+        "xls-9e13fd1af7af5a9f",
+        "xls-9e98fc4163c8af7f",
+        "xls-ad544845941ae38f",
+        "xls-aed2154ce0e620bd",
+        "xls-b0aaa1a67a6a133c",
+        "xls-b26c9bb999865dee",
+        "xls-c55634ddabc2dbd2",
+        "xls-cad9314378e3f0a6",
+        "xls-d3232e7ce2233494",
+        "xls-fca77b163b2732bc",
+        "xlsm-1c382d45c18005cd",
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd",
+        "xlsx-10c9f5a16f5e22db",
+        "xlsx-2e9e3e60a90c3c8c",
+        "xlsx-3d7484ae52ab377f",
+        "xlsx-43eab8ba38301e43",
+        "xlsx-4dfa5e74dbca1243",
+        "xlsx-63ec78f6069e1087",
+        "xlsx-81b8482e33f111e1",
+        "xlsx-82d52520f3cb4d0f",
+        "xlsx-bc31edc4699094ef",
+        "xlsx-c22668654f804e10",
+        "xlsx-c6b7ed51f3c6eb9b",
+        "xlsx-cac5a4611b7f7aec",
+        "xlsx-d44178482c9703c8",
+        "xlsx-ed3233c774d78621",
+        "xlsx-f588b6b21f7aaf5a",
+        "xlsx-f6e8af8ebdefba8d",
+        "xlsx-fafffef6e7e8e008",
+        "xlsx-fff9298f89cd9571"
+      ],
+      "documents": 190,
+      "bulkparse_seconds": 14.286681046,
+      "competitor_seconds": 709.505587499
+    },
+    "markitdown": {
+      "ids": [
+        "csv-1b314698f52fbae4",
+        "csv-2bb40ac5853ed7c6",
+        "csv-44e67b24c85fda40",
+        "csv-5862825d8339bd46",
+        "csv-7a2e611f4e059f98",
+        "csv-7d372f57f2ec54f0",
+        "csv-844be9860737650f",
+        "csv-8d5e54393ec2c231",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-cfa227027af67347",
+        "csv-d9fb7c0eb30c3482",
+        "csv-e7ddb49aaf400f4b",
+        "csv-ed3a7edd76ea8313",
+        "csv-f556d7df1c5cc8c5",
+        "csv-fec9aeb8734f29ba",
+        "docm-0d0f68a17819e210",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "epub-17b8d1a2585497bd",
+        "epub-1c62ba1da0bb481f",
+        "epub-1e003fd2f8103b08",
+        "epub-2141da99a7be9d88",
+        "epub-2ef24c1d450028ab",
+        "epub-3dbc61354eb6907b",
+        "epub-87820642b8664d28",
+        "epub-a127c968ef9aa556",
+        "epub-b02d8fd32a182a18",
+        "epub-b4c2ced09ac76ce1",
+        "epub-b6d0013274f3a622",
+        "epub-b9065aa9ad0d36b5",
+        "epub-bbeb9aafdfc67094",
+        "epub-ccadc238f4617b0c",
+        "epub-e85b568e7c94795d",
+        "epub-f6bb344a25fc9295",
+        "ipynb-00fb0b350dc83491",
+        "ipynb-2eeddcc0fe672901",
+        "ipynb-80ea076a5497f074",
+        "ipynb-a210be796948ec1c",
+        "md-11e94e2beb8e57f7",
+        "md-b836950e8e95e9a7",
+        "md-ce59833a6038447b",
+        "md-d88f362bdba93c8b",
+        "md-ebf9130f9c59b837",
+        "pdf-05c7b1962ea38a3a",
+        "pdf-1788abf191ac3b3d",
+        "pdf-1872a1a6054476a2",
+        "pdf-29e4833e700f4d49",
+        "pdf-2ca01bb757c9f9fb",
+        "pdf-5b5caefc15d82641",
+        "pdf-634fad87b13329fd",
+        "pdf-79cabd7d849a0058",
+        "pdf-8212f662307e2b0a",
+        "pdf-9c9f2c3e4c116a76",
+        "pdf-b4093e43f54b231e",
+        "pdf-b677a770b3df021e",
+        "pdf-cc66c72d80c24a7a",
+        "pdf-d896f43f6c355d3d",
+        "pdf-d9033cf747db3151",
+        "pdf-e6f8cad196a1a9af",
+        "pdf-f3a560a34a17215a",
+        "pdf-ff206d7d59a3913a",
+        "pptx-301f76bca4e3befd",
+        "pptx-46dd935a730802e5",
+        "pptx-80e3d4b6f96ada2e",
+        "pptx-e9ec7655aac7cd8c",
+        "tsv-5b4fff4f406b785c",
+        "txt-7a442a121d104733",
+        "xls-0cdb5f1ab2e1dc50",
+        "xls-262346875d84601e",
+        "xls-4704f5ad102551dc",
+        "xls-4afa8f1bdd578a74",
+        "xls-589ace4188fb7ccc",
+        "xls-833005d37701140f",
+        "xls-85accb68a8a2daac",
+        "xls-9e13fd1af7af5a9f",
+        "xls-9e98fc4163c8af7f",
+        "xls-ad544845941ae38f",
+        "xls-aed2154ce0e620bd",
+        "xls-b0aaa1a67a6a133c",
+        "xls-b26c9bb999865dee",
+        "xls-c55634ddabc2dbd2",
+        "xls-cad9314378e3f0a6",
+        "xls-d3232e7ce2233494",
+        "xls-fca77b163b2732bc",
+        "xlsm-1c382d45c18005cd",
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd",
+        "xlsx-10c9f5a16f5e22db",
+        "xlsx-2e9e3e60a90c3c8c",
+        "xlsx-3d7484ae52ab377f",
+        "xlsx-43eab8ba38301e43",
+        "xlsx-4dfa5e74dbca1243",
+        "xlsx-63ec78f6069e1087",
+        "xlsx-81b8482e33f111e1",
+        "xlsx-82d52520f3cb4d0f",
+        "xlsx-bc31edc4699094ef",
+        "xlsx-c22668654f804e10",
+        "xlsx-c6b7ed51f3c6eb9b",
+        "xlsx-cac5a4611b7f7aec",
+        "xlsx-d44178482c9703c8",
+        "xlsx-ed3233c774d78621",
+        "xlsx-f588b6b21f7aaf5a",
+        "xlsx-f6e8af8ebdefba8d",
+        "xlsx-fafffef6e7e8e008",
+        "xlsx-fff9298f89cd9571"
+      ],
+      "documents": 127,
+      "bulkparse_seconds": 7.040371499,
+      "competitor_seconds": 140.290191793
+    },
+    "pandoc": {
+      "ids": [
+        "csv-1b314698f52fbae4",
+        "csv-2bb40ac5853ed7c6",
+        "csv-44e67b24c85fda40",
+        "csv-5862825d8339bd46",
+        "csv-694b7b75298efd2b",
+        "csv-7a2e611f4e059f98",
+        "csv-7d372f57f2ec54f0",
+        "csv-844be9860737650f",
+        "csv-8d5e54393ec2c231",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-cfa227027af67347",
+        "csv-d9fb7c0eb30c3482",
+        "csv-e7ddb49aaf400f4b",
+        "csv-ed3a7edd76ea8313",
+        "csv-f556d7df1c5cc8c5",
+        "csv-fbeb7b5e9b4f3ed9",
+        "csv-fec9aeb8734f29ba",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "epub-17b8d1a2585497bd",
+        "epub-1c62ba1da0bb481f",
+        "epub-1e003fd2f8103b08",
+        "epub-2141da99a7be9d88",
+        "epub-2ef24c1d450028ab",
+        "epub-3dbc61354eb6907b",
+        "epub-87820642b8664d28",
+        "epub-a127c968ef9aa556",
+        "epub-b02d8fd32a182a18",
+        "epub-b4c2ced09ac76ce1",
+        "epub-b6d0013274f3a622",
+        "epub-b9065aa9ad0d36b5",
+        "epub-bbeb9aafdfc67094",
+        "epub-ccadc238f4617b0c",
+        "epub-e85b568e7c94795d",
+        "epub-f6bb344a25fc9295",
+        "ipynb-00fb0b350dc83491",
+        "ipynb-2eeddcc0fe672901",
+        "ipynb-80ea076a5497f074",
+        "ipynb-a210be796948ec1c",
+        "md-11e94e2beb8e57f7",
+        "md-b836950e8e95e9a7",
+        "md-ce59833a6038447b",
+        "md-d88f362bdba93c8b",
+        "md-ebf9130f9c59b837",
+        "odt-00e398ed307d3b65",
+        "odt-0328e791eab0b3a1",
+        "odt-0ca5484539bbd086",
+        "odt-1da355eb65c7f283",
+        "odt-2d6db61dc4830eaf",
+        "odt-33654e87541c031a",
+        "odt-3514f5cd176f1976",
+        "odt-43334429a443e679",
+        "odt-47a6bf98c3cb6731",
+        "odt-63c6b825af83ec7a",
+        "odt-6f5e54a20bc45406",
+        "odt-83ed5768066ea5cb",
+        "odt-96d97547e4f2d87d",
+        "odt-b3a998372ff672e2",
+        "odt-c3f4f7648a09ff8b",
+        "odt-cede57fea79bbca0",
+        "odt-d188488b70aeff60",
+        "odt-eb78dd0b8a336233",
+        "odt-f28625bff823ea2f",
+        "rtf-044d0a30d6587133",
+        "rtf-04f180aaec98d069",
+        "rtf-1589b62109c3cc60",
+        "rtf-1bd7b37078b9e742",
+        "rtf-31714b26363ccbb1",
+        "rtf-36b6d27886a90986",
+        "rtf-401b7816a5f427e3",
+        "rtf-496b0231bb4eee50",
+        "rtf-4fb11fb2da406a04",
+        "rtf-5ef331e9ecfd2b01",
+        "rtf-609a513ddfe87242",
+        "rtf-81ca11b11d4d10ee",
+        "rtf-81e86fc8bfc89dde",
+        "rtf-ab314211dbff0ad8",
+        "rtf-dcd6e1663bf622fc",
+        "rtf-de53f4b43e40a995",
+        "rtf-e68703d8744564d7",
+        "rtf-e7fb2bec9b55430a",
+        "rtf-f0041e60d9f5d66d",
+        "tsv-5b4fff4f406b785c"
+      ],
+      "documents": 102,
+      "bulkparse_seconds": 0.667641501,
+      "competitor_seconds": 59.75398075
+    },
+    "mammoth": {
+      "ids": [
+        "docm-0d0f68a17819e210",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b"
+      ],
+      "documents": 20,
+      "bulkparse_seconds": 0.138104831,
+      "competitor_seconds": 1.792390831
+    },
+    "libreoffice": {
+      "ids": [
+        "csv-1b314698f52fbae4",
+        "csv-2bb40ac5853ed7c6",
+        "csv-44e67b24c85fda40",
+        "csv-5862825d8339bd46",
+        "csv-694b7b75298efd2b",
+        "csv-7a2e611f4e059f98",
+        "csv-7d372f57f2ec54f0",
+        "csv-844be9860737650f",
+        "csv-8d5e54393ec2c231",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-cfa227027af67347",
+        "csv-d9fb7c0eb30c3482",
+        "csv-e7ddb49aaf400f4b",
+        "csv-ed3a7edd76ea8313",
+        "csv-f556d7df1c5cc8c5",
+        "csv-fec9aeb8734f29ba",
+        "doc-17e9bdae24d89d4f",
+        "doc-2cbbb8c09f8f3894",
+        "doc-2d3fa2c84661e6aa",
+        "doc-3147695a1a548516",
+        "doc-52bb77f11c2474f5",
+        "doc-5e8a921b9fe74d8f",
+        "doc-78ed9d3abd7ebc03",
+        "doc-c94c186c5c7a7e2e",
+        "docm-0d0f68a17819e210",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "odp-2c5c51cf84856009",
+        "odp-5252bb92605f4c4f",
+        "odp-564869358ea09276",
+        "odp-9c873e44e721b125",
+        "ods-20234a4bf0a85cd1",
+        "ods-20f58e9c6ef54e2c",
+        "ods-21d4c1846feb99a9",
+        "ods-37673dc956a05d28",
+        "ods-39a8edec753b433a",
+        "ods-5c5d73b7fd1ce864",
+        "ods-5cefbfc9f77dafdd",
+        "ods-6df1f9c102f8d1a4",
+        "ods-6e5aadc6326a5376",
+        "ods-729c3707bbe50f51",
+        "ods-9d9a12a7de860893",
+        "ods-9e715a03fce43bec",
+        "ods-b3185d3043cb268a",
+        "ods-b3d2ced785e1482e",
+        "ods-b56a6a8313ac59d8",
+        "ods-c14b342a8f148642",
+        "ods-c197f40e846f9d2b",
+        "ods-d6e65678b01a9986",
+        "ods-eb7143958f9f65f4",
+        "odt-00e398ed307d3b65",
+        "odt-0328e791eab0b3a1",
+        "odt-0ca5484539bbd086",
+        "odt-1da355eb65c7f283",
+        "odt-2d6db61dc4830eaf",
+        "odt-33654e87541c031a",
+        "odt-3514f5cd176f1976",
+        "odt-43334429a443e679",
+        "odt-47a6bf98c3cb6731",
+        "odt-63c6b825af83ec7a",
+        "odt-6f5e54a20bc45406",
+        "odt-83ed5768066ea5cb",
+        "odt-96d97547e4f2d87d",
+        "odt-b3a998372ff672e2",
+        "odt-c3f4f7648a09ff8b",
+        "odt-cede57fea79bbca0",
+        "odt-d188488b70aeff60",
+        "odt-eb78dd0b8a336233",
+        "odt-f28625bff823ea2f",
+        "ppt-186c7d6024cd48d6",
+        "pptx-301f76bca4e3befd",
+        "pptx-46dd935a730802e5",
+        "pptx-80e3d4b6f96ada2e",
+        "pptx-e9ec7655aac7cd8c",
+        "rtf-044d0a30d6587133",
+        "rtf-04f180aaec98d069",
+        "rtf-1589b62109c3cc60",
+        "rtf-1bd7b37078b9e742",
+        "rtf-31714b26363ccbb1",
+        "rtf-36b6d27886a90986",
+        "rtf-401b7816a5f427e3",
+        "rtf-496b0231bb4eee50",
+        "rtf-4fb11fb2da406a04",
+        "rtf-5ef331e9ecfd2b01",
+        "rtf-609a513ddfe87242",
+        "rtf-81ca11b11d4d10ee",
+        "rtf-81e86fc8bfc89dde",
+        "rtf-ab314211dbff0ad8",
+        "rtf-dcd6e1663bf622fc",
+        "rtf-de53f4b43e40a995",
+        "rtf-e68703d8744564d7",
+        "rtf-e7fb2bec9b55430a",
+        "rtf-f0041e60d9f5d66d",
+        "tsv-5b4fff4f406b785c",
+        "txt-7a442a121d104733",
+        "xls-0cdb5f1ab2e1dc50",
+        "xls-262346875d84601e",
+        "xls-4704f5ad102551dc",
+        "xls-4afa8f1bdd578a74",
+        "xls-589ace4188fb7ccc",
+        "xls-833005d37701140f",
+        "xls-85accb68a8a2daac",
+        "xls-9e13fd1af7af5a9f",
+        "xls-9e98fc4163c8af7f",
+        "xls-ad544845941ae38f",
+        "xls-aed2154ce0e620bd",
+        "xls-b0aaa1a67a6a133c",
+        "xls-b26c9bb999865dee",
+        "xls-c55634ddabc2dbd2",
+        "xls-cad9314378e3f0a6",
+        "xls-d3232e7ce2233494",
+        "xls-fca77b163b2732bc",
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd",
+        "xlsx-10c9f5a16f5e22db",
+        "xlsx-2e9e3e60a90c3c8c",
+        "xlsx-3d7484ae52ab377f",
+        "xlsx-43eab8ba38301e43",
+        "xlsx-4dfa5e74dbca1243",
+        "xlsx-63ec78f6069e1087",
+        "xlsx-81b8482e33f111e1",
+        "xlsx-82d52520f3cb4d0f",
+        "xlsx-bc31edc4699094ef",
+        "xlsx-c22668654f804e10",
+        "xlsx-cac5a4611b7f7aec",
+        "xlsx-d44178482c9703c8",
+        "xlsx-ed3233c774d78621",
+        "xlsx-f588b6b21f7aaf5a",
+        "xlsx-f6e8af8ebdefba8d",
+        "xlsx-fafffef6e7e8e008",
+        "xlsx-fff9298f89cd9571"
+      ],
+      "documents": 153,
+      "bulkparse_seconds": 11.895288503,
+      "competitor_seconds": 311.812080666
+    },
+    "unstructured": {
+      "ids": [
+        "csv-2bb40ac5853ed7c6",
+        "csv-5862825d8339bd46",
+        "csv-b7dcfafc7921241e",
+        "csv-c3a64c5ec4ab9ff2",
+        "csv-cf46988b69844cd2",
+        "csv-d9fb7c0eb30c3482",
+        "csv-fec9aeb8734f29ba",
+        "doc-17e9bdae24d89d4f",
+        "doc-2cbbb8c09f8f3894",
+        "doc-2d3fa2c84661e6aa",
+        "doc-3147695a1a548516",
+        "doc-52bb77f11c2474f5",
+        "doc-5e8a921b9fe74d8f",
+        "doc-78ed9d3abd7ebc03",
+        "doc-c94c186c5c7a7e2e",
+        "docx-0ccd420844268ba1",
+        "docx-1eb2b1255aa61b79",
+        "docx-28622481c8d0689c",
+        "docx-28a174ed631cdcbb",
+        "docx-51ef90f6f0648fba",
+        "docx-73161cfba12d6f64",
+        "docx-74df23a8ae8850b9",
+        "docx-79a64a30ba117a4a",
+        "docx-7bba08f18cca89dd",
+        "docx-81218a1a8a2d2812",
+        "docx-887049f5d27c6658",
+        "docx-97c10db5c1ec700f",
+        "docx-a085666334458d65",
+        "docx-b3748ff715455dad",
+        "docx-d2b007806365a31d",
+        "docx-dc2aaff061b16401",
+        "docx-e0e5f8436e9f876b",
+        "docx-e5b62304af29d253",
+        "docx-f62997ec2a50f78b",
+        "epub-17b8d1a2585497bd",
+        "epub-1c62ba1da0bb481f",
+        "epub-1e003fd2f8103b08",
+        "epub-2141da99a7be9d88",
+        "epub-2ef24c1d450028ab",
+        "epub-3dbc61354eb6907b",
+        "epub-87820642b8664d28",
+        "epub-a127c968ef9aa556",
+        "epub-b02d8fd32a182a18",
+        "epub-b4c2ced09ac76ce1",
+        "epub-b6d0013274f3a622",
+        "epub-b9065aa9ad0d36b5",
+        "epub-bbeb9aafdfc67094",
+        "epub-ccadc238f4617b0c",
+        "epub-e85b568e7c94795d",
+        "epub-f6bb344a25fc9295",
+        "md-11e94e2beb8e57f7",
+        "md-b836950e8e95e9a7",
+        "md-ce59833a6038447b",
+        "md-d88f362bdba93c8b",
+        "md-ebf9130f9c59b837",
+        "odt-00e398ed307d3b65",
+        "odt-0328e791eab0b3a1",
+        "odt-0ca5484539bbd086",
+        "odt-1da355eb65c7f283",
+        "odt-2d6db61dc4830eaf",
+        "odt-33654e87541c031a",
+        "odt-3514f5cd176f1976",
+        "odt-43334429a443e679",
+        "odt-47a6bf98c3cb6731",
+        "odt-63c6b825af83ec7a",
+        "odt-6f5e54a20bc45406",
+        "odt-83ed5768066ea5cb",
+        "odt-96d97547e4f2d87d",
+        "odt-b3a998372ff672e2",
+        "odt-c3f4f7648a09ff8b",
+        "odt-cede57fea79bbca0",
+        "odt-d188488b70aeff60",
+        "odt-eb78dd0b8a336233",
+        "odt-f28625bff823ea2f",
+        "pdf-05c7b1962ea38a3a",
+        "pdf-1788abf191ac3b3d",
+        "pdf-1872a1a6054476a2",
+        "pdf-29e4833e700f4d49",
+        "pdf-2ca01bb757c9f9fb",
+        "pdf-5b5caefc15d82641",
+        "pdf-634fad87b13329fd",
+        "pdf-79cabd7d849a0058",
+        "pdf-8212f662307e2b0a",
+        "pdf-9c9f2c3e4c116a76",
+        "pdf-b4093e43f54b231e",
+        "pdf-b677a770b3df021e",
+        "pdf-cc66c72d80c24a7a",
+        "pdf-d896f43f6c355d3d",
+        "pdf-d9033cf747db3151",
+        "pdf-e6f8cad196a1a9af",
+        "pdf-f3a560a34a17215a",
+        "pdf-ff206d7d59a3913a",
+        "ppt-186c7d6024cd48d6",
+        "pptx-301f76bca4e3befd",
+        "pptx-46dd935a730802e5",
+        "pptx-80e3d4b6f96ada2e",
+        "pptx-e9ec7655aac7cd8c",
+        "rtf-044d0a30d6587133",
+        "rtf-04f180aaec98d069",
+        "rtf-1589b62109c3cc60",
+        "rtf-1bd7b37078b9e742",
+        "rtf-31714b26363ccbb1",
+        "rtf-36b6d27886a90986",
+        "rtf-401b7816a5f427e3",
+        "rtf-496b0231bb4eee50",
+        "rtf-4fb11fb2da406a04",
+        "rtf-5ef331e9ecfd2b01",
+        "rtf-609a513ddfe87242",
+        "rtf-81ca11b11d4d10ee",
+        "rtf-81e86fc8bfc89dde",
+        "rtf-ab314211dbff0ad8",
+        "rtf-dcd6e1663bf622fc",
+        "rtf-de53f4b43e40a995",
+        "rtf-e68703d8744564d7",
+        "rtf-e7fb2bec9b55430a",
+        "rtf-f0041e60d9f5d66d",
+        "tsv-5b4fff4f406b785c",
+        "txt-7a442a121d104733",
+        "xls-0cdb5f1ab2e1dc50",
+        "xls-262346875d84601e",
+        "xls-4704f5ad102551dc",
+        "xls-4afa8f1bdd578a74",
+        "xls-589ace4188fb7ccc",
+        "xls-833005d37701140f",
+        "xls-85accb68a8a2daac",
+        "xls-9e13fd1af7af5a9f",
+        "xls-9e98fc4163c8af7f",
+        "xls-ad544845941ae38f",
+        "xls-aed2154ce0e620bd",
+        "xls-b0aaa1a67a6a133c",
+        "xls-b26c9bb999865dee",
+        "xls-c55634ddabc2dbd2",
+        "xls-cad9314378e3f0a6",
+        "xls-d3232e7ce2233494",
+        "xls-fca77b163b2732bc",
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd",
+        "xlsx-10c9f5a16f5e22db",
+        "xlsx-2e9e3e60a90c3c8c",
+        "xlsx-3d7484ae52ab377f",
+        "xlsx-43eab8ba38301e43",
+        "xlsx-4dfa5e74dbca1243",
+        "xlsx-63ec78f6069e1087",
+        "xlsx-81b8482e33f111e1",
+        "xlsx-82d52520f3cb4d0f",
+        "xlsx-bc31edc4699094ef",
+        "xlsx-c22668654f804e10",
+        "xlsx-c6b7ed51f3c6eb9b",
+        "xlsx-cac5a4611b7f7aec",
+        "xlsx-d44178482c9703c8",
+        "xlsx-ed3233c774d78621",
+        "xlsx-f588b6b21f7aaf5a",
+        "xlsx-f6e8af8ebdefba8d",
+        "xlsx-fafffef6e7e8e008",
+        "xlsx-fff9298f89cd9571"
+      ],
+      "documents": 158,
+      "bulkparse_seconds": 4.629277627,
+      "competitor_seconds": 242.768694756
+    }
+  },
+  "quality": "not assessed; no quality scores"
+}

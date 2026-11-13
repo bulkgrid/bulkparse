@@ -1,0 +1,8 @@
+Community library notice
+The library opens at eight in the morning.
+Return borrowed books before Friday.
+Please keep the reading room quiet.
+Invoice number: BP-4827
+Units: 18
+Unit price: 24.50
+Total: 441.00

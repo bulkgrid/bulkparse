@@ -1,0 +1,20 @@
+[package]
+name = "anydoc-bench-worker"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[[bin]]
+name = "anydoc-bench-worker"
+path = "../anydoc.rs"
+
+[dependencies]
+anydoc = { path = "../../../anydoc-main" }
+serde_json = "1"
+libc = "0.2"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

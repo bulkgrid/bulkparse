@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bulkparse_positioned",
+    "argv": ["target/release/bulkparse", "convert", "{input}"],
+    "version": "0.1.0",
+    "configuration": {"pipeline": "positioned native text", "ocr": false, "tables": false},
+    "pin_files": ["Cargo.lock", "Cargo.toml"]
+  },
+  {
+    "name": "anydoc",
+    "argv": ["target/competitors/anydoc/release/examples/convert", "{input}"],
+    "version": "0.2.4",
+    "configuration": {"pipeline": "default pdf-inspector native extraction", "ocr": false},
+    "success_exit_codes": [0],
+    "pin_files": ["anydoc-main/Cargo.toml", "anydoc-main/Cargo.lock"]
+  },
+  {
+    "name": "docling_native_layout",
+    "argv": [".venv-docling/bin/python", "scripts/benchmark_docling.py", "{input}", "--artifacts", "models/docling"],
+    "version": "2.150.0 / docling-parse 7.23.0",
+    "configuration": {"pipeline": "standard native PDF with learned layout", "ocr": false, "tables": false, "network": false},
+    "success_exit_codes": [0],
+    "pin_files": ["scripts/benchmark_docling.py", "docling-main/uv.lock"],
+    "pin_dirs": ["models/docling"]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "bulkparse": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 177242112
+  },
+  "anydoc": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 182534144
+  },
+  "pdf-inspector": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 177602560
+  },
+  "liteparse": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 67338240
+  },
+  "opendataloader": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 759873536
+  },
+  "pymupdf4llm": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 499531776
+  },
+  "pymupdf4llm-layout": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 775700480
+  },
+  "markitdown": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 312262656
+  },
+  "docling": {
+    "exit": 0,
+    "lifetime_peak_rss_bytes": 1666547712
+  }
+}

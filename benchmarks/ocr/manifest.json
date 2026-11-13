@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ocr-blank",
+    "path": "fixtures/ocr/ocr-blank.pdf",
+    "sha256": "b249d1d6d2230f9ea91b0f1dea668e563746cfa85b274787a1e2676b8520e48d",
+    "reference": "fixtures/ocr/ocr-blank.txt",
+    "reference_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "id": "ocr-columns",
+    "path": "fixtures/ocr/ocr-columns.pdf",
+    "sha256": "e07ad420c06de44d0f833237dc03d64749d3293dbb510be963816857e4fe2011",
+    "reference": "fixtures/ocr/ocr-columns.txt",
+    "reference_sha256": "4a2cc507b8b6b844a5c57c181d90b9c7efa259485718b7b11da85018861d691a"
+  },
+  {
+    "id": "ocr-numbers",
+    "path": "fixtures/ocr/ocr-numbers.pdf",
+    "sha256": "b2b68a3ff4d49b5869d07cd85a0cafe67736b63f080688003abefe8d7bd04e8d",
+    "reference": "fixtures/ocr/ocr-numbers.txt",
+    "reference_sha256": "771dd64f4b9b5acce0fc3fce339b0e7bb17ec14d91c0f1b212d34c5c94978c21"
+  },
+  {
+    "id": "ocr-prose",
+    "path": "fixtures/ocr/ocr-prose.pdf",
+    "sha256": "0f197e0531e24e9a0bcb3a5a800be7965007fc1995335a4f6997470eeee41412",
+    "reference": "fixtures/ocr/ocr-prose.txt",
+    "reference_sha256": "c20f7e26a09408b05423bfabcabdd2acc6d329b741e747c02336489140a70371"
+  },
+  {
+    "id": "ocr-swedish",
+    "path": "fixtures/ocr/ocr-swedish.pdf",
+    "sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103",
+    "reference": "fixtures/ocr/ocr-swedish.txt",
+    "reference_sha256": "457f0672630b31ac3d80e23a2bc118e40aec37ab5341412d3053be3f9a1a2371"
+  },
+  {
+    "id": "ocr-two-pages",
+    "path": "fixtures/ocr/ocr-two-pages.pdf",
+    "sha256": "c933dd94a1667b485da9eb125a2ce38e142c897e6d772345fe119f5cf90f5af7",
+    "reference": "fixtures/ocr/ocr-two-pages.txt",
+    "reference_sha256": "6c007d506045807979a3b45f8d0b397ebb73ffaa1fe7b8628752eda52844dfce"
+  },
+  {
+    "id": "scan-only",
+    "path": "fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81",
+    "reference": "fixtures/holdout/scan-only.txt",
+    "reference_sha256": "9179077d6af556ec72f2de2da68b08c6721156047d49965112feb20119bf69e4"
+  },
+  {
+    "id": "native-and-scan",
+    "path": "fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680",
+    "reference": "fixtures/holdout/native-and-scan.txt",
+    "reference_sha256": "e872f5f34400cb3159ab6a1563ab9de255f1e162f2a9a8f779769820a0bee3b8"
+  }
+]

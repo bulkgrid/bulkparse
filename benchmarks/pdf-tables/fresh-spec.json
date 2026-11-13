@@ -1,0 +1,950 @@
+[
+  {
+    "id": "four-columns-empty-cell",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Material",
+            "x": 48.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Quantity",
+            "x": 178.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Batch",
+            "x": 308.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Price",
+            "x": 438.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Brass",
+            "x": 48.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "47",
+            "x": 178.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "R8",
+            "x": 308.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "615",
+            "x": 438.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Steel",
+            "x": 48.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "",
+            "x": 178.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "T3",
+            "x": 308.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "920",
+            "x": 438.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Glass",
+            "x": 48.0,
+            "y": 631,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "63",
+            "x": 178.0,
+            "y": 631,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "V6",
+            "x": 308.0,
+            "y": 631,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "130",
+            "x": 438.0,
+            "y": 631,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            560,
+            730
+          ],
+          [
+            40,
+            702,
+            560,
+            702
+          ],
+          [
+            40,
+            674,
+            560,
+            674
+          ],
+          [
+            40,
+            646,
+            560,
+            646
+          ],
+          [
+            40,
+            618,
+            560,
+            618
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "Material",
+          "Quantity",
+          "Batch",
+          "Price"
+        ],
+        [
+          "Brass",
+          "47",
+          "R8",
+          "615"
+        ],
+        [
+          "Steel",
+          "",
+          "T3",
+          "920"
+        ],
+        [
+          "Glass",
+          "63",
+          "V6",
+          "130"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "no-header-numeric",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "11",
+            "x": 48.0,
+            "y": 712,
+            "size": 14,
+            "font": "Helvetica"
+          },
+          {
+            "text": "22",
+            "x": 198.0,
+            "y": 712,
+            "size": 14,
+            "font": "Helvetica"
+          },
+          {
+            "text": "33",
+            "x": 48.0,
+            "y": 678,
+            "size": 14,
+            "font": "Helvetica"
+          },
+          {
+            "text": "44",
+            "x": 198.0,
+            "y": 678,
+            "size": 14,
+            "font": "Helvetica"
+          },
+          {
+            "text": "55",
+            "x": 48.0,
+            "y": 644,
+            "size": 14,
+            "font": "Helvetica"
+          },
+          {
+            "text": "66",
+            "x": 198.0,
+            "y": 644,
+            "size": 14,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            340,
+            730
+          ],
+          [
+            40,
+            696,
+            340,
+            696
+          ],
+          [
+            40,
+            662,
+            340,
+            662
+          ],
+          [
+            40,
+            628,
+            340,
+            628
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "11",
+          "22"
+        ],
+        [
+          "33",
+          "44"
+        ],
+        [
+          "55",
+          "66"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "wrapped-cells",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Description",
+            "x": 48.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Amount",
+            "x": 308.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Packed",
+            "x": 48.0,
+            "y": 669,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "carefully",
+            "x": 48.0,
+            "y": 656,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "41",
+            "x": 308.0,
+            "y": 669,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Sent",
+            "x": 48.0,
+            "y": 623,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "today",
+            "x": 48.0,
+            "y": 610,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "82",
+            "x": 308.0,
+            "y": 623,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            560,
+            730
+          ],
+          [
+            40,
+            684,
+            560,
+            684
+          ],
+          [
+            40,
+            638,
+            560,
+            638
+          ],
+          [
+            40,
+            592,
+            560,
+            592
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "Description",
+          "Amount"
+        ],
+        [
+          "Packed\ncarefully",
+          "41"
+        ],
+        [
+          "Sent\ntoday",
+          "82"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "two-separated-tables",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Fruit",
+            "x": 48.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Count",
+            "x": 228.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Peach",
+            "x": 48.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "14",
+            "x": 228.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Plum",
+            "x": 48.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "27",
+            "x": 228.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Tool",
+            "x": 48.0,
+            "y": 405,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Count",
+            "x": 228.0,
+            "y": 405,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Drill",
+            "x": 48.0,
+            "y": 377,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "38",
+            "x": 228.0,
+            "y": 377,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Saw",
+            "x": 48.0,
+            "y": 349,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "59",
+            "x": 228.0,
+            "y": 349,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            400,
+            730
+          ],
+          [
+            40,
+            702,
+            400,
+            702
+          ],
+          [
+            40,
+            674,
+            400,
+            674
+          ],
+          [
+            40,
+            646,
+            400,
+            646
+          ],
+          [
+            40,
+            420,
+            400,
+            420
+          ],
+          [
+            40,
+            392,
+            400,
+            392
+          ],
+          [
+            40,
+            364,
+            400,
+            364
+          ],
+          [
+            40,
+            336,
+            400,
+            336
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "Fruit",
+          "Count"
+        ],
+        [
+          "Peach",
+          "14"
+        ],
+        [
+          "Plum",
+          "27"
+        ]
+      ],
+      [
+        [
+          "Tool",
+          "Count"
+        ],
+        [
+          "Drill",
+          "38"
+        ],
+        [
+          "Saw",
+          "59"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "surrounding-prose",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Opening paragraph",
+            "x": 40,
+            "y": 740,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Fruit",
+            "x": 48.0,
+            "y": 635,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Count",
+            "x": 228.0,
+            "y": 635,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Peach",
+            "x": 48.0,
+            "y": 607,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "14",
+            "x": 228.0,
+            "y": 607,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Plum",
+            "x": 48.0,
+            "y": 579,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "27",
+            "x": 228.0,
+            "y": 579,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Closing paragraph",
+            "x": 40,
+            "y": 500,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            650,
+            400,
+            650
+          ],
+          [
+            40,
+            622,
+            400,
+            622
+          ],
+          [
+            40,
+            594,
+            400,
+            594
+          ],
+          [
+            40,
+            566,
+            400,
+            566
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "Fruit",
+          "Count"
+        ],
+        [
+          "Peach",
+          "14"
+        ],
+        [
+          "Plum",
+          "27"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "offset-small-font",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Label",
+            "x": 178.0,
+            "y": 507,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Value",
+            "x": 318.0,
+            "y": 507,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "One",
+            "x": 178.0,
+            "y": 485,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "101",
+            "x": 318.0,
+            "y": 485,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Two",
+            "x": 178.0,
+            "y": 463,
+            "size": 9,
+            "font": "Helvetica"
+          },
+          {
+            "text": "202",
+            "x": 318.0,
+            "y": 463,
+            "size": 9,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            170,
+            520,
+            450,
+            520
+          ],
+          [
+            170,
+            498,
+            450,
+            498
+          ],
+          [
+            170,
+            476,
+            450,
+            476
+          ],
+          [
+            170,
+            454,
+            450,
+            454
+          ]
+        ]
+      }
+    ],
+    "expected_tables": [
+      [
+        [
+          "Label",
+          "Value"
+        ],
+        [
+          "One",
+          "101"
+        ],
+        [
+          "Two",
+          "202"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "border-only-ambiguous",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "Label",
+            "x": 48.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Value",
+            "x": 308.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "One",
+            "x": 48.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "101",
+            "x": 308.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Two",
+            "x": 48.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "202",
+            "x": 308.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            560,
+            730
+          ],
+          [
+            40,
+            646,
+            560,
+            646
+          ]
+        ]
+      }
+    ],
+    "expected_tables": []
+  },
+  {
+    "id": "ruled-single-column-prose",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "A long sentence with several words.",
+            "x": 48.0,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Another ordinary sentence follows.",
+            "x": 48.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "The final paragraph remains prose.",
+            "x": 48.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            560,
+            730
+          ],
+          [
+            40,
+            702,
+            560,
+            702
+          ],
+          [
+            40,
+            674,
+            560,
+            674
+          ],
+          [
+            40,
+            646,
+            560,
+            646
+          ]
+        ]
+      }
+    ],
+    "expected_tables": []
+  },
+  {
+    "id": "spanning-cell-ambiguous",
+    "pages": [
+      {
+        "spans": [
+          {
+            "text": "One",
+            "x": 48.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "101",
+            "x": 308.0,
+            "y": 687,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "Two",
+            "x": 48.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "202",
+            "x": 308.0,
+            "y": 659,
+            "size": 11,
+            "font": "Helvetica"
+          },
+          {
+            "text": "A wide spanning label that crosses every column gutter in this region",
+            "x": 48,
+            "y": 715,
+            "size": 11,
+            "font": "Helvetica"
+          }
+        ],
+        "rules": [
+          [
+            40,
+            730,
+            560,
+            730
+          ],
+          [
+            40,
+            702,
+            560,
+            702
+          ],
+          [
+            40,
+            674,
+            560,
+            674
+          ],
+          [
+            40,
+            646,
+            560,
+            646
+          ]
+        ]
+      }
+    ],
+    "expected_tables": []
+  }
+]

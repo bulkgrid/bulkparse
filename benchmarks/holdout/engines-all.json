@@ -1,0 +1,73 @@
+[
+  {
+    "name": "bulkparse",
+    "argv": [
+      "target/release/bulkparse",
+      "convert",
+      "{input}"
+    ],
+    "version": "0.1.0",
+    "configuration": {
+      "pipeline": "positioned native text",
+      "ocr": false,
+      "tables": false
+    },
+    "success_exit_codes": [
+      0,
+      2
+    ],
+    "pin_files": [
+      "Cargo.toml",
+      "Cargo.lock"
+    ]
+  },
+  {
+    "name": "anydoc",
+    "argv": [
+      "target/competitors/anydoc/release/examples/convert",
+      "{input}"
+    ],
+    "version": "0.2.4 / pdf-inspector 1.14.2",
+    "configuration": {
+      "pipeline": "default native PDF",
+      "ocr": false
+    },
+    "success_exit_codes": [
+      0
+    ],
+    "pin_files": [
+      "anydoc-main/Cargo.toml",
+      "anydoc-main/Cargo.lock"
+    ]
+  },
+  {
+    "name": "docling",
+    "argv": [
+      "target/competitors/docling-venv/bin/python",
+      "scripts/benchmark_docling.py",
+      "{input}",
+      "--artifacts",
+      "target/competitors/models"
+    ],
+    "version": "2.150.0 / docling-parse 7.23.0",
+    "configuration": {
+      "pipeline": "standard native PDF with learned Heron layout",
+      "ocr": false,
+      "tables": false,
+      "device": "cpu",
+      "threads": 4,
+      "offline": true
+    },
+    "success_exit_codes": [
+      0
+    ],
+    "pin_files": [
+      "scripts/benchmark_docling.py",
+      "benchmarks/holdout/docling-environment.txt",
+      "target/competitors/docling-model.json"
+    ],
+    "pin_dirs": [
+      "target/competitors/models/docling-project--docling-layout-heron"
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "hardware": [
+    "Apple M3 Max",
+    "38654705664",
+    "14"
+  ],
+  "commands": {
+    "bulkparse": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/broad/bulkparse/release/bulkparse-opendataloader-bench"
+    ],
+    "anydoc": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/same-machine-benchmark/anydoc-build/release/anydoc-bench-worker"
+    ],
+    "pdf-inspector": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/broad/pdf-inspector/release/pdf-inspector-bench-worker"
+    ],
+    "liteparse": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_broad.py",
+      "liteparse"
+    ],
+    "opendataloader": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_broad.py",
+      "opendataloader"
+    ],
+    "pymupdf4llm": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_broad.py",
+      "pymupdf4llm"
+    ],
+    "pymupdf4llm-layout": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_broad.py",
+      "pymupdf4llm-layout"
+    ],
+    "markitdown": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/broad-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_broad.py",
+      "markitdown"
+    ],
+    "docling": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/docling-venv/bin/python",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/scripts/worker_docling_corpus.py",
+      "--artifacts",
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/models"
+    ]
+  },
+  "env": {
+    "RAYON_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "binary_sha256": {
+    "bulkparse": "cc6b10c684df97a194f5f0cb630a365f381ca54b824791abc37076a23a5e10f0",
+    "anydoc": "def00c3afd6e1ad316e78e2068d975c3edbcaa7efce4c4330a98832d5ad8aa1b",
+    "pdf-inspector": "224812c8bb9cf3e6202222a0655b8f83e72ee28b2982b4cc19f136413abea097",
+    "liteparse": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "opendataloader": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "pymupdf4llm": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "pymupdf4llm-layout": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "markitdown": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3",
+    "docling": "b53b3dd0df204848ef894e1e93289ea2a879d4af45692b3478380fdde1976bf3"
+  },
+  "warmup": 1,
+  "passes": 5,
+  "mode": "pdf",
+  "smoke": false,
+  "started_utc": "2026-11-12T12:24:57.144498+00:00"
+}

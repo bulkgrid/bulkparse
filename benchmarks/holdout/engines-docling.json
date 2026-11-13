@@ -1,0 +1,32 @@
+[
+  {
+    "name": "docling",
+    "argv": [
+      "target/competitors/docling-venv/bin/python",
+      "scripts/benchmark_docling.py",
+      "{input}",
+      "--artifacts",
+      "target/competitors/models"
+    ],
+    "version": "2.150.0 / docling-parse 7.23.0",
+    "configuration": {
+      "pipeline": "standard native PDF with learned Heron layout",
+      "ocr": false,
+      "tables": false,
+      "device": "cpu",
+      "threads": 4,
+      "offline": true
+    },
+    "success_exit_codes": [
+      0
+    ],
+    "pin_files": [
+      "scripts/benchmark_docling.py",
+      "benchmarks/holdout/docling-environment.txt",
+      "target/competitors/docling-model.json"
+    ],
+    "pin_dirs": [
+      "target/competitors/models/docling-project--docling-layout-heron"
+    ]
+  }
+]

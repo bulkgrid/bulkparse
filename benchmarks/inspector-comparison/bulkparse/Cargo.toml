@@ -1,0 +1,18 @@
+[package]
+name = "bulkparse-inspector-bench"
+version = "0.1.0"
+edition = "2021"
+publish = false
+[workspace]
+[[bin]]
+name = "bulkparse-inspector-bench"
+path = "../worker.rs"
+[features]
+default = ["bulkparse-engine"]
+bulkparse-engine = []
+[dependencies]
+bulkparse = { path = "../../../crates/bulkparse", default-features = false, features = ["pdf"] }
+serde_json = "1"
+[profile.release]
+lto = "thin"
+strip = "symbols"

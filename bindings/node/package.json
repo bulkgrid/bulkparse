@@ -1,0 +1,21 @@
+{
+  "name": "@bulkgrid/bulkparse",
+  "version": "0.1.0",
+  "description": "Node.js bindings for the BulkParse Rust document engine",
+  "license": "MIT",
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "*.node",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node --test test/*.test.cjs"
+  }
+}

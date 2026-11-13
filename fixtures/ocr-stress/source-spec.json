@@ -1,0 +1,382 @@
+[
+  {
+    "id": "english",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Maintenance report",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Replace valve C-731 before Thursday.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Pressure: 18.75 bar. Quantity: 24.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Send the signed copy to the archive.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swedish-a",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Årets leverans går till Västerås.",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Öppna dörren före klockan åtta.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Ärendet gäller blå och gröna lådor.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Pris: 1 249,50 kr. Antal: 27.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swedish-b",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "På måndag hämtar Åsa nyckeln.",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Räksmörgåsen kostar 89 kronor.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Förrådet är låst efter sjutton.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          },
+          {
+            "text": "Referens: SK-6038.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "TimesNewRomanPSMT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "french",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Compte rendu de réception",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Élodie vérifie les pièces déjà reçues.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Le coût annoncé est de 248,75 euros.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "La façade sera réparée jeudi.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "german",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Prüfbericht für das Außengerät",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Öffnen Sie die Tür erst nach zwölf Uhr.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Die Größe beträgt 48,5 Millimeter.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Auftrag: DE-5821.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spanish",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Informe de inspección",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "¿Cuándo llegará el próximo envío?",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "El técnico revisó dieciséis piezas.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Código: ES-7249. Total: 318,40 euros.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "danish",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Årsrapport fra værkstedet",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Søren åbner døren klokken ni.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "De grønne æsker står på bordet.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Antal: 32. Pris: 875,50 kr.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polish",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Protokół odbioru części",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Łukasz sprawdził żółtą skrzynię.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Następna dostawa będzie w środę.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Numer: PL-3916. Liczba sztuk: 48.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "turkish",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "Ürün kontrol raporu",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "İpek ışığı açtı ve ölçümü yaptı.",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Yağmur başlamadan önce kapıyı kapatın.",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "Arial"
+          },
+          {
+            "text": "Sipariş: TR-2864. Tutar: 735,25 lira.",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "Arial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chinese",
+    "pages": [
+      {
+        "scan": false,
+        "spans": [
+          {
+            "text": "仓库检查记录",
+            "x": 48,
+            "y": 730,
+            "size": 17,
+            "font": "HiraginoSansGB-W3"
+          },
+          {
+            "text": "今天收到二十四个蓝色箱子。",
+            "x": 48,
+            "y": 694,
+            "size": 17,
+            "font": "HiraginoSansGB-W3"
+          },
+          {
+            "text": "请在星期五之前完成检查。",
+            "x": 48,
+            "y": 658,
+            "size": 17,
+            "font": "HiraginoSansGB-W3"
+          },
+          {
+            "text": "订单编号：CN-4826。",
+            "x": 48,
+            "y": 622,
+            "size": 17,
+            "font": "HiraginoSansGB-W3"
+          }
+        ]
+      }
+    ]
+  }
+]

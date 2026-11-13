@@ -1,0 +1,235 @@
+{
+  "scope": "README overview: BulkParse current-build diagnostic; other engines original same-day single pass on identical corpus. Different engine runs, no mixed-corpus quality assessment.",
+  "overall": {
+    "bulkparse": {
+      "nonempty": 200,
+      "attempted": 200,
+      "failed": 0,
+      "empty": 0,
+      "unsupported": 0,
+      "formats": 19,
+      "median_success_ms": 2.9273125,
+      "attempt_seconds": 16.359189828,
+      "known_cpu_seconds": 16.325546000000035,
+      "peak_worker_mib": 1883.59375,
+      "source": "../biff-legacy-2026-11-13/diagnostic/after-0.json"
+    },
+    "anydoc": {
+      "attempted": 189,
+      "returned": 185,
+      "nonempty": 185,
+      "unsupported": 11,
+      "failed": 4,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 5.273792,
+      "p95_success_ms": 375.085542,
+      "attempt_seconds": 13.722752377,
+      "known_cpu_seconds": 13.672033000000004,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 2615.765625,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 109,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 76,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 185,
+        "error": 4,
+        "unsupported": 11
+      }
+    },
+    "docling": {
+      "attempted": 194,
+      "returned": 191,
+      "nonempty": 191,
+      "unsupported": 6,
+      "failed": 3,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 722.352083,
+      "p95_success_ms": 15182.994625,
+      "attempt_seconds": 800.278096249,
+      "known_cpu_seconds": 724.9653600000003,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 3278.828125,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 111,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 80,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 191,
+        "error": 2,
+        "unsupported": 6,
+        "timeout_or_worker_failure": 1
+      }
+    },
+    "markitdown": {
+      "attempted": 130,
+      "returned": 128,
+      "nonempty": 128,
+      "unsupported": 70,
+      "failed": 2,
+      "empty": 0,
+      "formats": 13,
+      "median_success_ms": 73.6912705,
+      "p95_success_ms": 4938.828416,
+      "attempt_seconds": 140.32560871,
+      "known_cpu_seconds": 147.93243300000017,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 3075.53125,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 63,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 65,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 128,
+        "unsupported": 70,
+        "error": 2
+      }
+    },
+    "pandoc": {
+      "attempted": 102,
+      "returned": 102,
+      "nonempty": 102,
+      "unsupported": 98,
+      "failed": 0,
+      "empty": 0,
+      "formats": 8,
+      "median_success_ms": 101.73514549999999,
+      "p95_success_ms": 2248.865833,
+      "attempt_seconds": 59.75398075,
+      "known_cpu_seconds": 58.02251800000001,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 2130.921875,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 54,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 48,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "unsupported": 98,
+        "returned": 102
+      }
+    },
+    "mammoth": {
+      "attempted": 20,
+      "returned": 20,
+      "nonempty": 20,
+      "unsupported": 180,
+      "failed": 0,
+      "empty": 0,
+      "formats": 2,
+      "median_success_ms": 36.463896,
+      "p95_success_ms": 325.831583,
+      "attempt_seconds": 1.792390831,
+      "known_cpu_seconds": 1.7902389999999997,
+      "cpu_incomplete": false,
+      "peak_worker_mib": 665.8125,
+      "memory_incomplete": false,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 12,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 8,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "unsupported": 180,
+        "returned": 20
+      }
+    },
+    "libreoffice": {
+      "attempted": 157,
+      "returned": 154,
+      "nonempty": 154,
+      "unsupported": 43,
+      "failed": 3,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 877.5665,
+      "p95_success_ms": 7862.399041,
+      "attempt_seconds": 582.573276416,
+      "known_cpu_seconds": 310.33569,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 4700.9921875,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 102,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 52,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 154,
+        "unsupported": 43,
+        "timeout_or_worker_failure": 3
+      }
+    },
+    "unstructured": {
+      "attempted": 173,
+      "returned": 158,
+      "nonempty": 158,
+      "unsupported": 27,
+      "failed": 15,
+      "empty": 0,
+      "formats": 15,
+      "median_success_ms": 252.402125,
+      "p95_success_ms": 8461.749667,
+      "attempt_seconds": 332.841883882,
+      "known_cpu_seconds": 241.0250009999999,
+      "cpu_incomplete": true,
+      "peak_worker_mib": 976.1875,
+      "memory_incomplete": true,
+      "cohorts": {
+        "retained-112": {
+          "nonempty": 87,
+          "total": 112
+        },
+        "added-88": {
+          "nonempty": 71,
+          "total": 88
+        }
+      },
+      "statuses": {
+        "returned": 158,
+        "unsupported": 27,
+        "error": 14,
+        "timeout_or_worker_failure": 1
+      }
+    }
+  }
+}

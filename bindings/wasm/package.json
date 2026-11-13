@@ -1,0 +1,23 @@
+{
+  "name": "@bulkgrid/bulkparse-wasm",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "pkg/*.js",
+    "pkg/*.d.ts",
+    "pkg/*.wasm",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node test/smoke.mjs",
+    "prepack": "node scripts/prepare-package.mjs",
+    "test:package": "node test/package.mjs"
+  },
+  "types": "index.d.ts"
+}

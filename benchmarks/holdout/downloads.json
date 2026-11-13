@@ -1,0 +1,72 @@
+[
+  {
+    "path": "tests/pdfs/scotus-transcript-p1.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/scotus-transcript-p1.pdf",
+    "sha256": "c63508c7b195e6b6c398311fb1f3a36de31f604e3ae94b486a6776f1f144b379"
+  },
+  {
+    "path": "tests/pdfs/nics-background-checks-2015-11.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/nics-background-checks-2015-11.pdf",
+    "sha256": "4f0ae6e017b0e97de211da8fd97316e55bd927af5740d6ce95e1b7b1539f9407"
+  },
+  {
+    "path": "tests/pdfs/nics-background-checks-2015-11-rotated.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/nics-background-checks-2015-11-rotated.pdf",
+    "sha256": "3820767f7b9c8a80d20916daa8664afee49421c4bc6d6efb70bb21ae5f9a7195"
+  },
+  {
+    "path": "tests/pdfs/federal-register-2020-17221.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/federal-register-2020-17221.pdf",
+    "sha256": "ac419e4e084ea7a7a33a7be3f129dd07bc705b1a9e45ad751e33357f17d60f5c"
+  },
+  {
+    "path": "tests/pdfs/figure_structure.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/figure_structure.pdf",
+    "sha256": "46ffbb251fbefd6f0b0e7410f504a3b0370f7f5c98f374b10cd1907fb400ee65"
+  },
+  {
+    "path": "tests/pdfs/issue-1054-example.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/issue-1054-example.pdf",
+    "sha256": "87c424c0833734a4d2dff996a20b686c0cc252f3231fe067fbcffaf2d90723de"
+  },
+  {
+    "path": "tests/pdfs/issue-463-example.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/issue-463-example.pdf",
+    "sha256": "7337e4267970818c55692f371d1fbaeb18a6dbc2d2d58739a07df94a4e3b7999"
+  },
+  {
+    "path": "tests/pdfs/issue-598-example.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/issue-598-example.pdf",
+    "sha256": "022dc4c57d995bea2317537fd91ca3b08d267f1c20469b9104e3a682e0b7dad8"
+  },
+  {
+    "path": "tests/pdfs/image_structure.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/image_structure.pdf",
+    "sha256": "ce664b97ca3f765ad6a82352c2555cbfcd687d554722341413d633178164fad4"
+  },
+  {
+    "path": "tests/pdfs/issue-1147-example.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/issue-1147-example.pdf",
+    "sha256": "39e9d5e5876c0fc833fdc01e84019a0f5d2f74a203cf99070d359ac20603de45"
+  },
+  {
+    "path": "tests/pdfs/annotations-rotated-180.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/annotations-rotated-180.pdf",
+    "sha256": "b8910d64033eeb7560e11a1bbc397751261597f8bc781ba79ca1a77362386ceb"
+  },
+  {
+    "path": "tests/pdfs/issue-912.pdf",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/pdfs/issue-912.pdf",
+    "sha256": "317f8e045ec0a67a272bcfd0d38e33f6aaf1110d0a57a26faa739dbdc4bc09bb"
+  },
+  {
+    "path": "tests/comparisons/scotus-transcript-p1.txt",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/tests/comparisons/scotus-transcript-p1.txt",
+    "sha256": "55d81094ce6066f48f04694d88cee6d322c6dc4c5061ce47858cbb55603f4650"
+  },
+  {
+    "path": "LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/jsvine/pdfplumber/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45/LICENSE.txt",
+    "sha256": "0d48994da4d1321e395b5e64a724ed4dec63fb96b88ac5b88fc014771e690821"
+  }
+]

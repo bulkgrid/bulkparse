@@ -1,0 +1,2020 @@
+{
+  "elapsed_ns": 733997958,
+  "documents": [
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000001.pdf",
+      "document_id": "01030000000001",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8551708,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000002.pdf",
+      "document_id": "01030000000002",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 7937167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000003.pdf",
+      "document_id": "01030000000003",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5103500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000004.pdf",
+      "document_id": "01030000000004",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4144833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000005.pdf",
+      "document_id": "01030000000005",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1918208,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000006.pdf",
+      "document_id": "01030000000006",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1594542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000007.pdf",
+      "document_id": "01030000000007",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3152500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000008.pdf",
+      "document_id": "01030000000008",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6077292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000009.pdf",
+      "document_id": "01030000000009",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3608042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000010.pdf",
+      "document_id": "01030000000010",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3587417,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000011.pdf",
+      "document_id": "01030000000011",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5060750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000012.pdf",
+      "document_id": "01030000000012",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4069500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000013.pdf",
+      "document_id": "01030000000013",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5257167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000014.pdf",
+      "document_id": "01030000000014",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4100750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000015.pdf",
+      "document_id": "01030000000015",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2989250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000016.pdf",
+      "document_id": "01030000000016",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3116875,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000017.pdf",
+      "document_id": "01030000000017",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2958208,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000018.pdf",
+      "document_id": "01030000000018",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5025041,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000019.pdf",
+      "document_id": "01030000000019",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3434375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000020.pdf",
+      "document_id": "01030000000020",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1907958,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000021.pdf",
+      "document_id": "01030000000021",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3058583,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000022.pdf",
+      "document_id": "01030000000022",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3103042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000023.pdf",
+      "document_id": "01030000000023",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3427667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000024.pdf",
+      "document_id": "01030000000024",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3480792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000025.pdf",
+      "document_id": "01030000000025",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3118833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000026.pdf",
+      "document_id": "01030000000026",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2578333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000027.pdf",
+      "document_id": "01030000000027",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3552042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000028.pdf",
+      "document_id": "01030000000028",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 7729792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000029.pdf",
+      "document_id": "01030000000029",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8283583,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000030.pdf",
+      "document_id": "01030000000030",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8279042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000031.pdf",
+      "document_id": "01030000000031",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 9032625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000032.pdf",
+      "document_id": "01030000000032",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3960166,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000033.pdf",
+      "document_id": "01030000000033",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5118334,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000034.pdf",
+      "document_id": "01030000000034",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4464166,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000035.pdf",
+      "document_id": "01030000000035",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4473083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000036.pdf",
+      "document_id": "01030000000036",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6277458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000037.pdf",
+      "document_id": "01030000000037",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5273667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000038.pdf",
+      "document_id": "01030000000038",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4768792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000039.pdf",
+      "document_id": "01030000000039",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4046125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000040.pdf",
+      "document_id": "01030000000040",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5408625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000041.pdf",
+      "document_id": "01030000000041",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5358458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000042.pdf",
+      "document_id": "01030000000042",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5651167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000043.pdf",
+      "document_id": "01030000000043",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4641083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000044.pdf",
+      "document_id": "01030000000044",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1413417,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000045.pdf",
+      "document_id": "01030000000045",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2126333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000046.pdf",
+      "document_id": "01030000000046",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3071083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000047.pdf",
+      "document_id": "01030000000047",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2442209,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000048.pdf",
+      "document_id": "01030000000048",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3305917,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000049.pdf",
+      "document_id": "01030000000049",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3231209,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000050.pdf",
+      "document_id": "01030000000050",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3050167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000051.pdf",
+      "document_id": "01030000000051",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3890667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000052.pdf",
+      "document_id": "01030000000052",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3904709,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000053.pdf",
+      "document_id": "01030000000053",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4085542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000054.pdf",
+      "document_id": "01030000000054",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4168750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000055.pdf",
+      "document_id": "01030000000055",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3051125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000056.pdf",
+      "document_id": "01030000000056",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2530750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000057.pdf",
+      "document_id": "01030000000057",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2548792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000058.pdf",
+      "document_id": "01030000000058",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2435041,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000059.pdf",
+      "document_id": "01030000000059",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2743000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000060.pdf",
+      "document_id": "01030000000060",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2577667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000061.pdf",
+      "document_id": "01030000000061",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2332500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000062.pdf",
+      "document_id": "01030000000062",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3616334,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000063.pdf",
+      "document_id": "01030000000063",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2076292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000064.pdf",
+      "document_id": "01030000000064",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3089083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000065.pdf",
+      "document_id": "01030000000065",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2591042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000066.pdf",
+      "document_id": "01030000000066",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4701625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000067.pdf",
+      "document_id": "01030000000067",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3965875,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000068.pdf",
+      "document_id": "01030000000068",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4436000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000069.pdf",
+      "document_id": "01030000000069",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4694375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000070.pdf",
+      "document_id": "01030000000070",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2324833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000071.pdf",
+      "document_id": "01030000000071",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3098042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000072.pdf",
+      "document_id": "01030000000072",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2349708,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000073.pdf",
+      "document_id": "01030000000073",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1836625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000074.pdf",
+      "document_id": "01030000000074",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6771375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000075.pdf",
+      "document_id": "01030000000075",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4179625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000076.pdf",
+      "document_id": "01030000000076",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3006541,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000077.pdf",
+      "document_id": "01030000000077",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4142125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000078.pdf",
+      "document_id": "01030000000078",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4347375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000079.pdf",
+      "document_id": "01030000000079",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3283333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000080.pdf",
+      "document_id": "01030000000080",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4044709,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000081.pdf",
+      "document_id": "01030000000081",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2819875,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000082.pdf",
+      "document_id": "01030000000082",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2429042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000083.pdf",
+      "document_id": "01030000000083",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3294250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000084.pdf",
+      "document_id": "01030000000084",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2128666,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000085.pdf",
+      "document_id": "01030000000085",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1149375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000086.pdf",
+      "document_id": "01030000000086",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3528042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000087.pdf",
+      "document_id": "01030000000087",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3967417,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000088.pdf",
+      "document_id": "01030000000088",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2778333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000089.pdf",
+      "document_id": "01030000000089",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2583625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000090.pdf",
+      "document_id": "01030000000090",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2731416,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000091.pdf",
+      "document_id": "01030000000091",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3538750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000092.pdf",
+      "document_id": "01030000000092",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3735000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000093.pdf",
+      "document_id": "01030000000093",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3108458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000094.pdf",
+      "document_id": "01030000000094",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1863125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000095.pdf",
+      "document_id": "01030000000095",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2132834,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000096.pdf",
+      "document_id": "01030000000096",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1737625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000097.pdf",
+      "document_id": "01030000000097",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2552416,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000098.pdf",
+      "document_id": "01030000000098",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1766000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000099.pdf",
+      "document_id": "01030000000099",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1789333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000100.pdf",
+      "document_id": "01030000000100",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1302917,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000101.pdf",
+      "document_id": "01030000000101",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3710250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000102.pdf",
+      "document_id": "01030000000102",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2623375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000103.pdf",
+      "document_id": "01030000000103",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3908417,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000104.pdf",
+      "document_id": "01030000000104",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1322916,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000105.pdf",
+      "document_id": "01030000000105",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1370750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000106.pdf",
+      "document_id": "01030000000106",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1856666,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000107.pdf",
+      "document_id": "01030000000107",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 652500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000108.pdf",
+      "document_id": "01030000000108",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1205709,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000109.pdf",
+      "document_id": "01030000000109",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2125667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000110.pdf",
+      "document_id": "01030000000110",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1788292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000111.pdf",
+      "document_id": "01030000000111",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1701000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000112.pdf",
+      "document_id": "01030000000112",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2144709,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000113.pdf",
+      "document_id": "01030000000113",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2887292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000114.pdf",
+      "document_id": "01030000000114",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2002542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000115.pdf",
+      "document_id": "01030000000115",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3139333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000116.pdf",
+      "document_id": "01030000000116",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3085125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000117.pdf",
+      "document_id": "01030000000117",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3694833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000118.pdf",
+      "document_id": "01030000000118",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3672042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000119.pdf",
+      "document_id": "01030000000119",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2396209,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000120.pdf",
+      "document_id": "01030000000120",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3394625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000121.pdf",
+      "document_id": "01030000000121",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5116208,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000122.pdf",
+      "document_id": "01030000000122",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3495167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000123.pdf",
+      "document_id": "01030000000123",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1640500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000124.pdf",
+      "document_id": "01030000000124",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1798916,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000125.pdf",
+      "document_id": "01030000000125",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1062333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000126.pdf",
+      "document_id": "01030000000126",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1480709,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000127.pdf",
+      "document_id": "01030000000127",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3202250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000128.pdf",
+      "document_id": "01030000000128",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2006792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000129.pdf",
+      "document_id": "01030000000129",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3541125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000130.pdf",
+      "document_id": "01030000000130",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2064000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000131.pdf",
+      "document_id": "01030000000131",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1363917,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000132.pdf",
+      "document_id": "01030000000132",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2657750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000133.pdf",
+      "document_id": "01030000000133",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3477625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000134.pdf",
+      "document_id": "01030000000134",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1252625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000135.pdf",
+      "document_id": "01030000000135",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2653541,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000136.pdf",
+      "document_id": "01030000000136",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1508541,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000137.pdf",
+      "document_id": "01030000000137",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2263292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000138.pdf",
+      "document_id": "01030000000138",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2715625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000139.pdf",
+      "document_id": "01030000000139",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2296875,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000140.pdf",
+      "document_id": "01030000000140",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3133125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000141.pdf",
+      "document_id": "01030000000141",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 51313083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000142.pdf",
+      "document_id": "01030000000142",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8616000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000143.pdf",
+      "document_id": "01030000000143",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6148916,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000144.pdf",
+      "document_id": "01030000000144",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5350833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000145.pdf",
+      "document_id": "01030000000145",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4939083,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000146.pdf",
+      "document_id": "01030000000146",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4233167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000147.pdf",
+      "document_id": "01030000000147",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5663458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000148.pdf",
+      "document_id": "01030000000148",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2120250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000149.pdf",
+      "document_id": "01030000000149",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2019375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000150.pdf",
+      "document_id": "01030000000150",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3827500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000151.pdf",
+      "document_id": "01030000000151",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2069250,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000152.pdf",
+      "document_id": "01030000000152",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1925209,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000153.pdf",
+      "document_id": "01030000000153",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2438708,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000154.pdf",
+      "document_id": "01030000000154",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1401458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000155.pdf",
+      "document_id": "01030000000155",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1107542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000156.pdf",
+      "document_id": "01030000000156",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2199458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000157.pdf",
+      "document_id": "01030000000157",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2344416,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000158.pdf",
+      "document_id": "01030000000158",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1657667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000159.pdf",
+      "document_id": "01030000000159",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1998416,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000160.pdf",
+      "document_id": "01030000000160",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1938667,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000161.pdf",
+      "document_id": "01030000000161",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1874042,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000162.pdf",
+      "document_id": "01030000000162",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1968000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000163.pdf",
+      "document_id": "01030000000163",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4031167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000164.pdf",
+      "document_id": "01030000000164",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4022166,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000165.pdf",
+      "document_id": "01030000000165",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4029000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000166.pdf",
+      "document_id": "01030000000166",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2890208,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000167.pdf",
+      "document_id": "01030000000167",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3505542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000168.pdf",
+      "document_id": "01030000000168",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3833125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000169.pdf",
+      "document_id": "01030000000169",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3519292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000170.pdf",
+      "document_id": "01030000000170",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3338125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000171.pdf",
+      "document_id": "01030000000171",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2073833,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000172.pdf",
+      "document_id": "01030000000172",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2601792,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000173.pdf",
+      "document_id": "01030000000173",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1752625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000174.pdf",
+      "document_id": "01030000000174",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2038375,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000175.pdf",
+      "document_id": "01030000000175",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2036708,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000176.pdf",
+      "document_id": "01030000000176",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2157000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000177.pdf",
+      "document_id": "01030000000177",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2347333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000178.pdf",
+      "document_id": "01030000000178",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2751041,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000179.pdf",
+      "document_id": "01030000000179",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1493125,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000180.pdf",
+      "document_id": "01030000000180",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1567708,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000181.pdf",
+      "document_id": "01030000000181",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1593625,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000182.pdf",
+      "document_id": "01030000000182",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2600875,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000183.pdf",
+      "document_id": "01030000000183",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2769541,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000184.pdf",
+      "document_id": "01030000000184",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2330000,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000185.pdf",
+      "document_id": "01030000000185",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8207791,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000186.pdf",
+      "document_id": "01030000000186",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6407167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000187.pdf",
+      "document_id": "01030000000187",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5635750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000188.pdf",
+      "document_id": "01030000000188",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 8814666,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000189.pdf",
+      "document_id": "01030000000189",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 7496292,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000190.pdf",
+      "document_id": "01030000000190",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 7252542,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000191.pdf",
+      "document_id": "01030000000191",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6797084,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000192.pdf",
+      "document_id": "01030000000192",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 6289458,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000193.pdf",
+      "document_id": "01030000000193",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5811916,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000194.pdf",
+      "document_id": "01030000000194",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4394416,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000195.pdf",
+      "document_id": "01030000000195",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5071167,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000196.pdf",
+      "document_id": "01030000000196",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 5194500,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000197.pdf",
+      "document_id": "01030000000197",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 2550333,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000198.pdf",
+      "document_id": "01030000000198",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 1029750,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000199.pdf",
+      "document_id": "01030000000199",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 3276959,
+      "markdown": ""
+    },
+    {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/opendataloader-bench/pdfs/01030000000200.pdf",
+      "document_id": "01030000000200",
+      "ok": true,
+      "error": null,
+      "status": "returned",
+      "elapsed_ns": 4414375,
+      "markdown": ""
+    }
+  ],
+  "index": 2,
+  "engine_order": [
+    "pdf-inspector",
+    "liteparse",
+    "opendataloader",
+    "pymupdf4llm",
+    "pymupdf4llm-layout",
+    "markitdown",
+    "docling",
+    "bulkparse",
+    "anydoc"
+  ],
+  "prediction_sha256": {
+    "01030000000001.md": "b8e264857ef6e6e4efce383adef82ebd91634cfa2e56dca0b857848d3d7b5744",
+    "01030000000002.md": "b84ba9bbabe4cf4f0ccea1e779d6865ae416e466edbe7f4f284f513f3726df5c",
+    "01030000000003.md": "2d6b7ad1897bcfd264e5b249e75fa8d9776eaa440b18c4da2fd65d0c6b1a88e5",
+    "01030000000004.md": "cdcac824e424a7b28c18e8e6626e5ad475432033ee9043da73e50240dc8f222d",
+    "01030000000005.md": "a586dfed658fd842ea38ae79241bf8c74dd1436ea362e02cd5868f9b74aed9f1",
+    "01030000000006.md": "4643c8bdcffd5e325155ca0bc3abd5a488a759f5bd95fd7406ab7a6fe339744d",
+    "01030000000007.md": "ce911c944a51a2872f3c2a325bf7fc7a81f61566ab4ba731c3190b5a6d7479dc",
+    "01030000000008.md": "3a553b10fe6dd3309a58f1169f228101cfe948306076e2a2ba07ec4c9f70b5d9",
+    "01030000000009.md": "d056f8e15f7361a1cf5389ccb797b430b6bb1c435da0ab2f30f1ee03599b7b11",
+    "01030000000010.md": "7fdf737f5d72779b9b0ad0afd067764a3a88e9432712385da0854b3370525861",
+    "01030000000011.md": "01287295b5b0a9cbd4f0470375b141a81d992c7bd2a7e46159cb6f7cff620a9e",
+    "01030000000012.md": "e2c32ccaec003b62cbdb8804280817094d56d1514c09e7f6ec7e013ebcdac325",
+    "01030000000013.md": "fb9dbf01723a607afb2b9631106506716d24bd03a51174d9e6562a63a2f51d52",
+    "01030000000014.md": "aea0a34b95c326f3aac17d92d793c797fed1a6457a542644745b6f15d61b64ca",
+    "01030000000015.md": "07cbc08f4c6c282d49ed79cebfc20a1d438edcdfcfcd231558540dfa8e9954b3",
+    "01030000000016.md": "671349d9b5f44e195a3ec66365043b9527782650bc3b5033233a6547cbb7dec4",
+    "01030000000017.md": "2bd1bbed91e29a891934f7ed0ca4b5fbe944d2735579c2dc45291c70ba0aefe5",
+    "01030000000018.md": "19ae74e43e3745022b12c99f06a1c2696d44be3638e475472aa3a7c31d5bb072",
+    "01030000000019.md": "fcf7c7c18ecdeeaac7b6275ac906d7378496b091dc18d9ffbef20b2400144d55",
+    "01030000000020.md": "9484fc3a88272e73dc34981c51a0f3b7ef7906c811d022812742d9ff2ac28864",
+    "01030000000021.md": "e2c78a65f16fdbbebebf032e8db108a878a455fd90babd32afc90a630037ed9c",
+    "01030000000022.md": "fa2648eb6f30d51fc37121a7f94bfd1c76d4ceb03591bf5c584f127bb080bd9b",
+    "01030000000023.md": "415d1335d4997d1494e5bd8ce8c5edcf1cda8fe28e546258263b76470f243d46",
+    "01030000000024.md": "2c77301c364d58355a20f62e8de8edeec21d257956c57ffa87c1c25fcaa5a7bf",
+    "01030000000025.md": "b1d4e700f7cf1e8e04232b9e40289315a7dc79579aa4066692fbb348459abfa5",
+    "01030000000026.md": "3db5a324983555ef66d64e606581aef08717bb362a9474a9c6494dfdef768273",
+    "01030000000027.md": "1615b7c2e3b538a874cab9a45d107528fe99f1eb83c1ac2f2461a11b4b8301d5",
+    "01030000000028.md": "27967edb28810ecde7a8db7b2086670d570adbf3ac8b06da87a61e843ddf228a",
+    "01030000000029.md": "e20faeacd4b8204fb6c6727da3b07ba9fd1def48c6b2c30aa2568c549ab82cc2",
+    "01030000000030.md": "524ea1426e4cd6f9f5c28cf0982be5a6e2352f5c028c10a816fe0e983806d5c4",
+    "01030000000031.md": "529a02dcaa27555aa909ccaeb09bad5198470a17d5eceabf141f672609802b79",
+    "01030000000032.md": "acb38fb3f83950070ba458df1d44526bf5f0d96cd44dc05cda2b30c0d32ed187",
+    "01030000000033.md": "8441b9457645e2a2c5625232c80298137d928113fe1aa73480809d6ba78888fd",
+    "01030000000034.md": "6e592678d3be28abe0a8c21bf91ad46da73e6d3f7f1cae39d6c9effa3bc78888",
+    "01030000000035.md": "80355922d5f187f3f80bfe9222ae7f0c58f8b6bec2e500edd1fa32f1c5374092",
+    "01030000000036.md": "653583c9d67fe20201b0d48e6e9ede97539ac370cd42ffda682cf6bec448328c",
+    "01030000000037.md": "89e22147a6cfff0eae4ab427173a02e6e11deed8a9e3d6d5dca962c3e70bfd50",
+    "01030000000038.md": "0b00c0b2e230c98a0a5e46820f111eed39b2b4ef2a4b4efe8486d3a18db76868",
+    "01030000000039.md": "41237c43ed3107a9e6aec4761eac2e05e1fd9c477f9f9c77782c582e8518fdde",
+    "01030000000040.md": "eaa170adae8aaedf6a975e319ddcfa75306e56d2e7c9f2f9275c130fc2446049",
+    "01030000000041.md": "d920d4a8346a50196bcbd0a84194fdea0f89d48e1953627c01bee356f87f97fb",
+    "01030000000042.md": "443ccf5fc56dd9ce6c296871f4a8f1de05c3294b548b549a1b82a60b8b143e93",
+    "01030000000043.md": "de93d9574ac67f1bd6f540c71b41ddadbdf33c14ae181bfe298c9716f151afe0",
+    "01030000000044.md": "fbac45fa2a84dc8864ab8d12ac3391252d2fe60fd8cad23e0d133f72444fc5d4",
+    "01030000000045.md": "c96c0d22a875cff23d301068c4a6746eaa4dc2636aabcdad9a50ab06fe7aa16c",
+    "01030000000046.md": "c046fa783a468df6cfc1b765c40bf01e2db81a3440194b666671695b8f61fe05",
+    "01030000000047.md": "9839554f1a15f53b5ff61ff68efc5b63e1c5a65aa40c2db6ae0cbd295a8c2fa1",
+    "01030000000048.md": "d3356284e8f8dae2ca34eb925c060df612404feb49882118a6a93970ab28b225",
+    "01030000000049.md": "c48a02bc348715019e80fb3cf4560811aba7db7dd0bdf076818f50d160676bfc",
+    "01030000000050.md": "594c639a3b36d410a311f1ab0946215c6894f47ae2e73c6e016f7b717da22a9c",
+    "01030000000051.md": "cc5d59de458e1b4a2bc312d8280bdcdf0b3055d06d49dfd5dc6105f7b5844eee",
+    "01030000000052.md": "543c692c79783b23deddbe500645074dadfc3d4ca11e0e2c1d42ad7943192bc5",
+    "01030000000053.md": "f0f4b1fe75f9526b792ce277b145c41ba08cd0b370514f9b72757dba099a516e",
+    "01030000000054.md": "805ef4ca66024f6124c8d1407001791026e6b815fd10000299c5cb83a2624d49",
+    "01030000000055.md": "d31fd9bc51d985775b85db7b42d2468f8ce62a786862cb628d91f67982c57104",
+    "01030000000056.md": "94a94048d92d5a2a0131d55ff2e11a18f264f35bd87cbb9a44ebeba40d9350cc",
+    "01030000000057.md": "a68c2bf03a7a7a821506c8ec1cec4aa6d67c16bcd02fb6ed2c502e4ea2689505",
+    "01030000000058.md": "86f59fe78077024f244b403880e27bb26ce7feb750f92c288bf987eff09fde3f",
+    "01030000000059.md": "42cdd176f5fa794ed9f3d6186ab0c799f61a0c9e908309ec68264d0421c0a250",
+    "01030000000060.md": "cb4bd133e0a7dae8175f60ba6e657926f83b39bc91dab02fb60c16500469d212",
+    "01030000000061.md": "7d2ed0149424f882ae13606ac3b0eccea4587bb80b546056de11660011ca19b7",
+    "01030000000062.md": "677ba4442790f78e6e54c362944ca76c9d40d9415b4b18a4ce610bed80e0cbc9",
+    "01030000000063.md": "abc3266ad4605ff336ac0704d1025ee25b9c15b6a990172b27086b5b38f39930",
+    "01030000000064.md": "5692cf9e883f2adbd2b747ee3c3fdee5f5815811cd8e0f0d5d6873474f59c393",
+    "01030000000065.md": "0099c555b0e116a88f36510b0108503b9721cd2e3e5fe29d3d603454cd339c86",
+    "01030000000066.md": "04359189af847cc1ccc36fb03d0b46f9c7b6230a315b252bdb5563fbcb3c5393",
+    "01030000000067.md": "f6f213e371b417040cfdab28451518d33312e7d3c6ba30a5f96c91203d2527c4",
+    "01030000000068.md": "b750bcfcde435a1e3950c9d13fd39497017b02a6fa9c1b97a14981c456b59a62",
+    "01030000000069.md": "9053e736fef7b00b6240fd64cd8605ff3d7c25638fe368ac668b0808223cf13f",
+    "01030000000070.md": "1f6f765c83e40f2fd42eba33971c196e10d869606b3748ca667e1df836530cf0",
+    "01030000000071.md": "7aad7845359df244dc1bab7132d93220ad0c55c5ce78e26c752d26a6df9e8f2f",
+    "01030000000072.md": "69612770e91bdea1878f6ead9eff17a743eb4eb9083c505bd6a087a144ea862c",
+    "01030000000073.md": "446d408d2e42ef78406f71e280f4d64d233520ba21e33a9a8e15c0fc4f6a68e6",
+    "01030000000074.md": "41a2eb62f2af4eec91ffd61b31093c29fa4e6a0e7dc99490894ab75b8e6aac50",
+    "01030000000075.md": "2b6c408b49f15878bb328cf63d75040abeea3c7395c0e402d4ecda425ecd35d5",
+    "01030000000076.md": "decf65f963c8844e895eae567df2bce6102c8f64cb07dac0c9c60ccd348fdc28",
+    "01030000000077.md": "6a94bf2285efa75abf4ff28b425d92971309b9465361007e52925c955ab005ad",
+    "01030000000078.md": "2b115e4f78e3e0201dfebfdcef59c57a5fe14210cdc240396c82de633f79cc7c",
+    "01030000000079.md": "7f53e69ded6f7cf59df188a7823f3041301f38426dd164771481f925ef6fa32c",
+    "01030000000080.md": "4f4210f2fea018a64888f6e5ea0b957067f99e7d0b79004c6a198692ead442e4",
+    "01030000000081.md": "8f3f45865fb848780f3cb58d626f4fc0fc781ae505bc9bef71543f25ac8b63dd",
+    "01030000000082.md": "a02a576a86d6736b0ea37ff7e2ed0fd550bfc4d17969ea965ef4d1f6f6207777",
+    "01030000000083.md": "5889196e64ae0cc283d05e3e75c892e02ecf042b0b6c29014c404060cfa8a2cd",
+    "01030000000084.md": "f86b3f213171c97e02ff6ecb7fc18c98c87e3c30c7fe0c0a0a77cfa94551821c",
+    "01030000000085.md": "123003032b0536bfe0df9a716f74430e9ba463d4a3dd3cf7870457bcd3a5ef14",
+    "01030000000086.md": "473bce0a9bf17a1c62faa52ce4696f233351bdd14773914b1837669b306ebd33",
+    "01030000000087.md": "d60735f7221387b443b244640209468436df91248e71803ca34d3b718fcd9053",
+    "01030000000088.md": "f574c75f5c84c9d7e68672e64dc5dadd4e3fa7f038daed0bf158bab524522210",
+    "01030000000089.md": "828ada1d5aae5ea849e6d7bc4afd58af4d4234631b8b616a5fdb18c6a457a51d",
+    "01030000000090.md": "abb32eac6a4f6dc4c2ffdf9ac3cafe2777371597487730bf2291674c2e666fba",
+    "01030000000091.md": "6d3b2d1d551c11cb64f9ef64de3df0401a6c19f9a182f12d9954785311bcb9a1",
+    "01030000000092.md": "d8a7a53f6a074d38886ce954e4ea0f96b6de960afdb9ee627239dd8a84a4d7d4",
+    "01030000000093.md": "bc7fa347fafab6022e1798f6f23d76c8da2956a6d38321023e462fcf71ad3869",
+    "01030000000094.md": "fef797bee362e26b905e13ed8e429c2c7d1d47a37ce4b2cc10c2a353fd048a23",
+    "01030000000095.md": "6a06af2b0866b6a4f2f5134f84bc687caf2f89ca22396ed541f865a1299e7d85",
+    "01030000000096.md": "d4fb341bc3e153e538a2a38b38f790a2d042921d299660504f79c5e55ed745a9",
+    "01030000000097.md": "341d21b84d70dc5db2f60f595b5f72c226efd482379ac3cb698504f3909848d7",
+    "01030000000098.md": "01d357f81c263a4f35f8bcea47b60d35b4cb5b88096727ba89d553ed09de9a39",
+    "01030000000099.md": "387572a93fbafb0d468791265e663422905f7f0b3b6c8330a8a0a4a0b4cfd63b",
+    "01030000000100.md": "763d7402e01615db2bb2d1ba2fa8278aee6bc038d9c40b45d7bee69a40aa8de0",
+    "01030000000101.md": "2c262438c7cdc7950d93c008625347ab285391ae1aa3c61e2923ef0fb048a2c9",
+    "01030000000102.md": "d7cb7f3595973c46900573d50a1ca44442ecafd97da0051435b5b691e28ff5f4",
+    "01030000000103.md": "30854e4e78d08034d9164cfa98bbd772081493f508b44e70d4a174b3a4c09e1c",
+    "01030000000104.md": "f408fe18f3ff130d3eeeab43f46c2e7d8995187ae4e3d155b05528f0afa4faaf",
+    "01030000000105.md": "ef1c5a67142ec21d37255dccdacded11b03ab13876857ab40530e9be49fbcd98",
+    "01030000000106.md": "0d471e60cddff600c71025cf7126513d5fe0e26c55be3046c7762551ae250ed7",
+    "01030000000107.md": "43a219c9336fcc885bf335c79b14b1863928a4cbbd74d878159169821ce19e7b",
+    "01030000000108.md": "6a7aef09a04b55565e1b8ded57a2325e13a95e1f288f10e12bee9516d447b5ad",
+    "01030000000109.md": "4bee1b66676eb80951924109b56e69d68194ceb381612724cf740e3af50a1255",
+    "01030000000110.md": "966a31ceec029927ea5882df48fee0aa3b4bdfa427c4457968d0f66efc4d26cb",
+    "01030000000111.md": "64a339efebf0ec56a91ca5c053f29001012c9c726cf01eac1a7f6bb1c89c16a3",
+    "01030000000112.md": "e7dd2b38791d54caaf13973a174a7900425da08632aaa9e79ae1b4d5fccd87df",
+    "01030000000113.md": "69ed68c06fcaa93bbbc2453c68b33803bcbd4aadedc06c0b500b69c6c6d5932b",
+    "01030000000114.md": "b6653e108f70ced99c9e211637f76c5233b53a1eb9d1f5d3541492e80b4d3c12",
+    "01030000000115.md": "170abe26221f3dea2ac7fa74e9bdeabd7d7484143ad95f8ed3cad6266f7cab9a",
+    "01030000000116.md": "836e78e31628971bcf726ef7c9767b4061b1ede7cdf3d28f6650d88cdb89680b",
+    "01030000000117.md": "a05758f4ea6387bc0e09c1377bd0552c097116bb34fb8dcabb0e5d3263cebbc7",
+    "01030000000118.md": "206cc9ffca1b24cbfb72599173b47deb5f51a1e6080a7f01f495789fbee3c1a7",
+    "01030000000119.md": "ee225accc08a4e5d302c5e72d4d915addcdef051a22e50f04c09d4aafc0eb190",
+    "01030000000120.md": "e9a7fd3a47f3f6af94edf4848a8c68acd55e57084b3808356851a855e36b5cc9",
+    "01030000000121.md": "a42b0215c9f3c3609c6565f7350ec5eb2e6d82c8d574dda37c4c4b4ff7dfbb2e",
+    "01030000000122.md": "1ce0721248932d403f0bc5ef9bf394ddde8e7374fec4bba80247f9e0ff79cb48",
+    "01030000000123.md": "c3122e6e071c2f2aca6b1dfa523902d6f5b66338df086140ef306178273b1381",
+    "01030000000124.md": "113aa9b83378e228b3507d884978b5f7458e44076805e096b6176bc8ae9de99b",
+    "01030000000125.md": "63decb58b7ff79df9a1092ca1f965ff15aa4bdad36d62df41893cd7971aa4b44",
+    "01030000000126.md": "80ee801871919aedd463ec2f8a4d593b1747ccac6a70c08f63a0a4acddda5bf4",
+    "01030000000127.md": "15ae3e68a04b92ea2c70b61fc567c751c48139a8e06eaeaedd9a50fea8d09bef",
+    "01030000000128.md": "d38a729e67e445c0e340fa84ab1fc3e5c269b28755039c4448c00fdc78f56c48",
+    "01030000000129.md": "04a6ebe9b4845eb07a500f955edb7716cdf6985c9ad27cecb8d7c289715b7526",
+    "01030000000130.md": "79bb807f6083e53c5d82e6f13c0e34b05a64e05216b73598918d15b19cebcc31",
+    "01030000000131.md": "a940f36221df77519f812c4b3851084eb785e0f5f0a4cf20a753854c3ec98a54",
+    "01030000000132.md": "1b2b564003eb6c032ceeac89a933e29cbd2b149434193013a5e22dbb7d8d2c28",
+    "01030000000133.md": "f22a28ff65892eb2c3a5098f2f53e1d6846f814342badc36436504832b1f6ed3",
+    "01030000000134.md": "86a303e04766112d4d9b93416e254f4726de3eb2cf447b0e59f15421b41d269c",
+    "01030000000135.md": "c2b8b50fe63ca350034783c3e9a241e0b9ddfb5ef6162f7a8c85de5c135f0f07",
+    "01030000000136.md": "53cc5ffdc6b11475c00906ea60ae97417abf79b3d5a8e33372e41257c9679b9c",
+    "01030000000137.md": "d025beef7ea53f9bed0ac807c979a9719100056925d81314f62dd40c61e7c911",
+    "01030000000138.md": "3fc3a021202794672365c509dfc7b98cb29ba7c21a6f09bdb6a2081d10d6cac9",
+    "01030000000139.md": "e3a818be5a57a0f1f491c5cc544ce7bad8ae367bceb9c5436f5604d9f7489f31",
+    "01030000000140.md": "236726d025384e340086f184bff9d2eac02cbc7d9aed57b02d1dacea16631758",
+    "01030000000141.md": "6e47ed10439d7302c41c0a39053d927ae5db98be58067fa460664e041f10011e",
+    "01030000000142.md": "9777232328ebf249bfe8bf7657ad9dbdbae1eebcbb0dd6e5e4b9174c4e2205e7",
+    "01030000000143.md": "416abf53075e2b611611df6b6bb1634a88707351ae6e7b96025db5952dcaf6c4",
+    "01030000000144.md": "80015df2740ae68b312bcc6b971066b2cff484cbd030a0853a5d2424c2244f44",
+    "01030000000145.md": "c653bccdd69d6bba27b739afbf7421f4534312320797f458dedd355bea1c59ed",
+    "01030000000146.md": "dabdbbc4dab2b9507a91012725fd26faa1c757c892a400b5646135cd8c6e3daa",
+    "01030000000147.md": "bf78f01a826d2ce2df9728fd048991a6f90452b30944586a2c62defd6df3303e",
+    "01030000000148.md": "a710015cd5c45bdfd8497ec6fb78dcae08d9e115c3c2d3b9e8976acd13ad11fe",
+    "01030000000149.md": "3e1eb2851b50879c49ecc6f12b919505e7e3074ff2bf883a6e05c46b8ab60880",
+    "01030000000150.md": "ed767ead492a77814d22955943a74039ad7ac8079b59382d1293a9980ee443b2",
+    "01030000000151.md": "31607574f46b899d4261eb931f7e6cc9fae744e6b015ad911d0adb224ff69205",
+    "01030000000152.md": "b94ab476f201191237def338c779800ae1c8b58242eee92fa9a0593928469cb8",
+    "01030000000153.md": "0fb1645778eae8a3d85bd7c74c5067a3130eba8cbad4dbd4bd7b1676269114a7",
+    "01030000000154.md": "001bb7f2bd14e8d90892326fe18b9abeaadb9b95f78128405190c710c51254d0",
+    "01030000000155.md": "012d826fe36cbfe95bf0f2b3faf21488fc31c4c7c1d6620db306344d420d9ffc",
+    "01030000000156.md": "a021a6156c0c2b14a2a19187e56031eb69ab4cdd6419ee82e1f60ea61fd0a05e",
+    "01030000000157.md": "5325688a7a2554ed4281b24726c92eab489aa3d884b00e3e15143574e53bd119",
+    "01030000000158.md": "421f1cd9fdd3ee81267a29cae8c83f84bb6bf2039f82e2101db2f80da07b202d",
+    "01030000000159.md": "1b6190c68f8cddc8af0e87a9cf794dc9244cc679c0748fb7aec2d95e5ea5e36e",
+    "01030000000160.md": "b9d4385019fba8332695b7c4f0490da69c868da6c06653a56765d9f93370bb1f",
+    "01030000000161.md": "3ecbbfdab3b34080950d601872e43ff943b4d8de5c55d10dc688ab97161b4318",
+    "01030000000162.md": "8af5bec9ccddc5e2c75b58e2485a595ed8f6cbaa34f8c8bf1227c3a03c21cf21",
+    "01030000000163.md": "7a028d0ea1002cce3c36306a2d1b8d7d4dd957e2e090088bb957ad90e6917588",
+    "01030000000164.md": "566ffa9e89ee1de8ee3bd354e0e9cb2b883fe723bf0de0dbd9e7cfcc2cda4cc8",
+    "01030000000165.md": "dbc947632173740d087d6297e3df4bd3b345f038ba8d5158d4a006e76a3e6280",
+    "01030000000166.md": "aef4cd508677799465bd98bc84518852cc54593a5796839cfdb7a86c4efe7164",
+    "01030000000167.md": "54f912a281a9d0f11f5808fb87a34a4be6ac744c869bcb35bcab77cb6caee2b1",
+    "01030000000168.md": "91ef555501ab17a342630c0006f576796a204928f8e0d34bfbb6bb9783d244a6",
+    "01030000000169.md": "89f66516a3b5f8facbab386432f5fa10db470a24a76a948349f54fe982f3f7e0",
+    "01030000000170.md": "1b10ba1aba256de19eac63bee2cb8e995a1ae0e1e8c95308d151cfb2a4f7068b",
+    "01030000000171.md": "12d211a93782089bcceee60beba69deb8a8efa786bf4d53f3b3c26ddf4f2bd6b",
+    "01030000000172.md": "a2ec1e88ae851bdb320d8105340b4ea89cf58c23be3c709e4e2ba385d52acb78",
+    "01030000000173.md": "abf5b8462c02714899cda72ededee7129b551040c3f3ea1c77c98979f4fd49e2",
+    "01030000000174.md": "ca83049eb3774ae9591b46d07bd41872aecf3e4f12820196ba5b77372ee0cfa0",
+    "01030000000175.md": "dfb202a6d1ada501c8423e25fd9f8686ebe9bc88605215f3dc96cc9f4e6233eb",
+    "01030000000176.md": "3a16eb6654ee4efcb1942d0d36af1ad566082e433472ec80760036bcc60ca9e4",
+    "01030000000177.md": "0515bb43ce5259558ed04b42d44168ad6bd306e7dbffca3348fd73ae11bf5b88",
+    "01030000000178.md": "849c1cd701d6a10480001272ee471ce0808da2457a0e216a07c6c34ff827c573",
+    "01030000000179.md": "76c1c8c4310d3d79a026f6518052459bba3ee1abdd39de9a7882765d728738e5",
+    "01030000000180.md": "45bb96cd86b2be61ae9f08a45bef4904b072c60a7f371e5485a43232ef5d9001",
+    "01030000000181.md": "13ff46395de3c0ed045612431ce635ed18172cf3e33b02cf7554773db41a3928",
+    "01030000000182.md": "a59846e1e563d6ca5610bc4e1cbf477a5415183387847aa1e5ec5ab6bd67dc04",
+    "01030000000183.md": "407e126e90128e93ad3dfda29849cf445a018aeb71c213dfddb73b79ca4c96ca",
+    "01030000000184.md": "a85120dac09546179e992e5fdd09617a9a8dc5ad660a7d66f4c02ff9d6645c8a",
+    "01030000000185.md": "a1b48f0a377e0fde37e4d40b5d7288672273eacc0f3c22fb06471b2d1aba38cb",
+    "01030000000186.md": "d5d987cd371074d07babbee941c0cf71cc63729f1cd96c5604605119089f3d85",
+    "01030000000187.md": "773c9a06307aebadce5d6dc7907f19926383bcfb6477eadcc26d5bce1f5f11e1",
+    "01030000000188.md": "c75d4a3fb9519695adff0244fcd27b6faab09de080fa22e485d3e92623c279ca",
+    "01030000000189.md": "cb241d152b856d3c1ab302350b3c152bab87dc914b704225c3c9d3b3c29c95e4",
+    "01030000000190.md": "7bbfed524c8a0e53df79dd10532dc0f41bafe60795db2249d06ecc6375c8222d",
+    "01030000000191.md": "c049d558ec7ca228fd404fcefc86467c335e8f1e04f577b0c852bd9ba1a00802",
+    "01030000000192.md": "0425633d8e327cfcaa69d84e1aa8bb384b2b62699512589e68f21ac0b556ffc8",
+    "01030000000193.md": "d274f7c63e565caac8a04994cd2b6cbcd0222fb0b04e3c6dd707f4e844f72e82",
+    "01030000000194.md": "eb7f0b2116563927f1171eaf46cd6313509180794c67691356f7f1e236a18878",
+    "01030000000195.md": "9d76a37b894ee0b92685a325628e26a3978fa231829aad9e4f1ee9dc2bed6181",
+    "01030000000196.md": "2e209e8422c1d0d0b767af433238567619c5ee0180020f07c0eb672e9b7c48bc",
+    "01030000000197.md": "a780aedec860f601143346de1c6e5664403568284d0882b5e5afe616818cab30",
+    "01030000000198.md": "83b33cb793a54f69a47ab9c60270bbf6149f5fe6fe7743ebaef990722b009f9f",
+    "01030000000199.md": "b05c5901a5ee341938b50a71f7ef5c3dc9d34d4c823d087c4bbe251825767812",
+    "01030000000200.md": "1c7e142a0e80835c48cfde2fe5c72c0799d0fecc3c24fc122ba22ad4a5be27f4"
+  },
+  "corpus_elapsed_ns": 733997958
+}

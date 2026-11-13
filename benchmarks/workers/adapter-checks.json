@@ -1,0 +1,20 @@
+[
+  {
+    "engine": "bulkparse",
+    "cases": 24,
+    "matches_prior_cli_success_and_output": true,
+    "reference_report": "reports/pdf-tables-regression-2026-11-10-v2/samples.jsonl"
+  },
+  {
+    "engine": "anydoc",
+    "cases": 24,
+    "matches_prior_cli_success_and_output": true,
+    "reference_report": "reports/holdout-comparison-2026-11-10/samples.jsonl"
+  },
+  {
+    "engine": "docling",
+    "cases": 24,
+    "matches_prior_cli_success_and_output": true,
+    "reference_report": "reports/holdout-comparison-2026-11-10/samples.jsonl"
+  }
+]

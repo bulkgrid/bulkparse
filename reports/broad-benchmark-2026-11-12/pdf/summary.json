@@ -1,0 +1,293 @@
+{
+  "bulkparse": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 200,
+    "deterministic": true,
+    "median_seconds": 0.439813458,
+    "measured_seconds": [
+      0.455680541,
+      0.42708575,
+      0.439813458,
+      0.461092667,
+      0.386619083
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 177242112
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.900860250326769,
+      "nid_mean": 0.9188677401807404,
+      "nid_s_mean": 0.9199245360181059,
+      "teds_mean": 0.8871977938417841,
+      "teds_s_mean": 0.9016136510084323,
+      "mhs_mean": 0.8601522040598967,
+      "mhs_s_mean": 0.9277754284076438
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "anydoc": {
+    "attempted": 200,
+    "returned": 197,
+    "partial": 0,
+    "deterministic": true,
+    "median_seconds": 1.217171917,
+    "measured_seconds": [
+      1.254173375,
+      1.217474083,
+      1.207303667,
+      1.217171917,
+      1.2016115
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 182534144
+    },
+    "failed_documents": [
+      "01030000000018",
+      "01030000000113",
+      "01030000000141"
+    ],
+    "metrics": {
+      "overall_mean": 0.8665440118844863,
+      "nid_mean": 0.905710911107565,
+      "nid_s_mean": 0.8877808167765076,
+      "teds_mean": 0.8143676383166115,
+      "teds_s_mean": 0.866195645522535,
+      "mhs_mean": 0.7716528231029626,
+      "mhs_s_mean": 0.8494961272311465
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "pdf-inspector": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 4,
+    "deterministic": true,
+    "median_seconds": 0.870366625,
+    "measured_seconds": [
+      0.883908333,
+      0.909117875,
+      0.86708875,
+      0.868103709,
+      0.870366625
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 177602560
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.8698421439142566,
+      "nid_mean": 0.91099394607734,
+      "nid_s_mean": 0.9009042020780385,
+      "teds_mean": 0.8001019992650646,
+      "teds_s_mean": 0.8423861217130112,
+      "mhs_mean": 0.7774563898747241,
+      "mhs_s_mean": 0.859189964027787
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "liteparse": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": true,
+    "median_seconds": 0.73311975,
+    "measured_seconds": [
+      0.733281959,
+      0.733997958,
+      0.729933458,
+      0.73311975,
+      0.731670709
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 67338240
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.8863873297081275,
+      "nid_mean": 0.9161026875682581,
+      "nid_s_mean": 0.9193997373170478,
+      "teds_mean": 0.8179168165145227,
+      "teds_s_mean": 0.8437379094824116,
+      "mhs_mean": 0.8237597529967738,
+      "mhs_s_mean": 0.8922876578250409
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "opendataloader": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": true,
+    "median_seconds": 1.58758025,
+    "measured_seconds": [
+      1.687020333,
+      1.58758025,
+      1.524659792,
+      1.432665083,
+      1.7384805
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 759873536
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.8426625298565371,
+      "nid_mean": 0.9127795302332867,
+      "nid_s_mean": 0.9170379757851665,
+      "teds_mean": 0.4831169282847324,
+      "teds_s_mean": 0.5058049437510318,
+      "mhs_mean": 0.7570969372672566,
+      "mhs_s_mean": 0.8367909349217761
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "pymupdf4llm": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": false,
+    "median_seconds": 15.668480542,
+    "measured_seconds": [
+      15.774769292,
+      15.734370042,
+      15.625717,
+      15.668480542,
+      15.62785475
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 499531776
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.7348313492207035,
+      "nid_mean": 0.8851324425553753,
+      "nid_s_mean": 0.9133264957609581,
+      "teds_mean": 0.40316304867987945,
+      "teds_s_mean": 0.4298331007418945,
+      "mhs_mean": 0.4225007624010394,
+      "mhs_s_mean": 0.4943016614745587
+    },
+    "quality_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "pymupdf4llm-layout": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": true,
+    "median_seconds": 17.318585416,
+    "measured_seconds": [
+      17.318585416,
+      17.193612083,
+      17.362362292,
+      17.84491825,
+      17.265291208
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 775700480
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.8664353398528973,
+      "nid_mean": 0.9056838198091828,
+      "nid_s_mean": 0.8888295137805287,
+      "teds_mean": 0.7728311993072393,
+      "teds_s_mean": 0.8113243510487829,
+      "mhs_mean": 0.7819567648502757,
+      "mhs_s_mean": 0.8892992651170222
+    },
+    "quality_rounds": [
+      5
+    ]
+  },
+  "markitdown": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": false,
+    "median_seconds": 15.402887791,
+    "measured_seconds": [
+      15.9837755,
+      15.299878958,
+      15.402887791,
+      15.8121205,
+      15.244487375
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 312262656
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.5885038226670316,
+      "nid_mean": 0.8436592536585112,
+      "nid_s_mean": 0.8378045989253643,
+      "teds_mean": 0.2729007862854617,
+      "teds_s_mean": 0.32836632064334365,
+      "mhs_mean": 0.0,
+      "mhs_s_mean": 0.0
+    },
+    "quality_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "docling": {
+    "attempted": 200,
+    "returned": 200,
+    "partial": 0,
+    "deterministic": true,
+    "median_seconds": 64.489971833,
+    "measured_seconds": [
+      64.530590375,
+      64.209588417,
+      64.489971833,
+      64.048558375,
+      65.349799625
+    ],
+    "resources": {
+      "exit": 0,
+      "lifetime_peak_rss_bytes": 1666547712
+    },
+    "failed_documents": [],
+    "metrics": {
+      "overall_mean": 0.8874218423090308,
+      "nid_mean": 0.9024868255592259,
+      "nid_s_mean": 0.8584657823601759,
+      "teds_mean": 0.8793409788891247,
+      "teds_s_mean": 0.8962484498647433,
+      "mhs_mean": 0.835998691631365,
+      "mhs_s_mean": 0.9121006070772426
+    },
+    "quality_rounds": [
+      5
+    ]
+  }
+}

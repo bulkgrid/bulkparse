@@ -1,0 +1,42 @@
+{
+  "ready": true,
+  "init_wall_seconds": 0.24593299999997953,
+  "usage": {
+    "cpu_seconds": 0.24475599999999997,
+    "peak_rss_bytes": 65769472
+  },
+  "options": {
+    "Det.model_path": "/data/models/PP-OCRv6_det_tiny.onnx",
+    "Rec.model_path": "/data/models/PP-OCRv6_rec_tiny.onnx",
+    "Cls.model_path": "/data/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+    "EngineConfig.onnxruntime.intra_op_num_threads": 1,
+    "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+    "Global.log_level": "error",
+    "Global.text_score": 0.5,
+    "Det.model_type": "ModelType.TINY",
+    "Rec.model_type": "ModelType.TINY",
+    "Rec.rec_keys_path": "/data/models/ppocrv6_tiny_dict.txt"
+  },
+  "environment": {
+    "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+    "machine": "aarch64",
+    "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+    "packages": {
+      "pillow": "13.0.0",
+      "numpy": "2.5.4",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "urllib3": "2.8.0",
+      "pip": "25.0.1",
+      "requests": "2.34.2",
+      "tqdm": "4.70.1",
+      "certifi": "2026.10.23",
+      "rapidocrlite": "5.0.0a16",
+      "PyYAML": "6.0.3"
+    },
+    "cpu.max": "100000 100000",
+    "memory.max": "4294967296",
+    "pids.max": "256"
+  },
+  "container_launch_to_ready_seconds": 0.39040091587230563
+}

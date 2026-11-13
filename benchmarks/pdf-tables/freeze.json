@@ -1,0 +1,6 @@
+{
+  "rust_source_sha256": "3d9ae0adec44a94b3fe180a8a951adfebcb01e7d0248468cf8849237d9a75964",
+  "binary_sha256": "00a65a864fd7ddcd63a9b2c9607fc53d43fd49c1050a64229c71bfbd81e67e40",
+  "baseline_binary_sha256": "a22574b9a04cb71802f76998bafb6b1f38ea4d02d52f01d3d02d2a6da8710213",
+  "policy": "Freeze table implementation before fresh authored-case evaluation. Previous 24-case holdout is now regression data."
+}

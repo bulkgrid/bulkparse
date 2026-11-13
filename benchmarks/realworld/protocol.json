@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "frozen_before_conversion": true,
+  "target_documents": 112,
+  "desired_per_format": 8,
+  "formats": ["doc", "docx", "docm", "epub", "odp", "ods", "odt", "ppt", "pptx", "rtf", "xls", "xlsm", "xlsx", "csv"],
+  "selection_seed": "bulkparse-realworld-2026-11-12-v1",
+  "selection": "Public primary-source publications, instructional material, published spreadsheets and ebooks. No parser test fixtures or newly authored synthetic inputs. SHA-256 ranked within format, one per publication landing page, exact and package-text duplicate exclusions. All exclusions recorded before converter runs. If rare formats lack independent eligible inputs, retain the actual shortfall, do not manufacture variants; add available publications in other formats to reach at least 100.",
+  "max_download_bytes": 15728640,
+  "independence": "Check input hashes against recorded previous reports and fixture trees; also review publication families. Independence is from recorded development inputs, not a claim that AI model pretraining excluded public documents.",
+  "engines": ["bulkparse", "anydoc", "docling", "markitdown", "pandoc", "mammoth", "libreoffice", "unstructured"],
+  "freeze_parser": true,
+  "timing": {"warmup_passes": 1, "measured_passes": 5, "sequential_documents": true, "rotate_engine_order": true, "headline": "median across documents of each document's median measured conversion time; format-macro average also reported", "reads_and_markdown_export": "included", "worker_initialization": "excluded", "CLI_subprocesses": "included"},
+  "quality": {"output_contract": "GitHub-Flavored Markdown with valid semantic HTML tables allowed consistently for all engines; no automatic penalty solely for HTML syntax", "dimensions": ["completeness", "structure", "formatting", "cleanliness"], "scores": "0-100 with anchored rubric", "pairing": "BulkParse against each supported comparator; both A/B orders; tool identities hidden from judge", "aggregation": "average orders, average each document once per engine, average documents within format, macro-average supported formats", "failed_attempts": "empty output retained; zero content score where nonblank reference exists", "unsupported": "excluded and coverage explicitly reported", "references": "first six rendered pages or slides; native package/source evidence where layout rendering is unavailable; only score content visible in supplied references", "truncation": "explicitly recorded, same limit for all engines, do not penalize content outside reference scope", "human_review": "fixed seeded sample of verdicts plus all large order disagreements; no claim of human review before it occurs"},
+  "paid_jobs": "disabled until the user approves a concrete payload manifest and estimated cost",
+  "readme": "publish scores only after validated returned verdicts; pending stages labeled"
+}

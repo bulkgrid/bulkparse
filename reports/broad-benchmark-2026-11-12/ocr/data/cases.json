@@ -1,0 +1,538 @@
+[
+  {
+    "id": "ocr-blank",
+    "path": "fixtures/ocr/ocr-blank.pdf",
+    "sha256": "b249d1d6d2230f9ea91b0f1dea668e563746cfa85b274787a1e2676b8520e48d",
+    "reference": "fixtures/ocr/ocr-blank.txt",
+    "reference_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-blank",
+    "images": [
+      {
+        "path": "images/ocr-blank-1.png",
+        "sha256": "fa30f961ec9a073b3bebcf3fe858f55957f336b8d628d4032320c8f167bcd734",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "\n"
+  },
+  {
+    "id": "ocr-columns",
+    "path": "fixtures/ocr/ocr-columns.pdf",
+    "sha256": "e07ad420c06de44d0f833237dc03d64749d3293dbb510be963816857e4fe2011",
+    "reference": "fixtures/ocr/ocr-columns.txt",
+    "reference_sha256": "4a2cc507b8b6b844a5c57c181d90b9c7efa259485718b7b11da85018861d691a",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-columns",
+    "images": [
+      {
+        "path": "images/ocr-columns-1.png",
+        "sha256": "eef4684ded4d034c6d8a2a5aac5dcc17641268d50dfe951e1f133452779a5aa7",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Maple team planted oak trees.\nRoots received fresh water.\nWork finished before lunch.\nWillow team repaired fences.\nPosts were checked carefully.\nTools returned to storage.\n"
+  },
+  {
+    "id": "ocr-numbers",
+    "path": "fixtures/ocr/ocr-numbers.pdf",
+    "sha256": "b2b68a3ff4d49b5869d07cd85a0cafe67736b63f080688003abefe8d7bd04e8d",
+    "reference": "fixtures/ocr/ocr-numbers.txt",
+    "reference_sha256": "771dd64f4b9b5acce0fc3fce339b0e7bb17ec14d91c0f1b212d34c5c94978c21",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-numbers",
+    "images": [
+      {
+        "path": "images/ocr-numbers-1.png",
+        "sha256": "2c5636d48aa0b2407b339827cb39ec2cb6b128e1e3986a03dc0369a12dddbb25",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Invoice number: BP-4827\nUnits: 18\nUnit price: 24.50\nTotal: 441.00\n"
+  },
+  {
+    "id": "ocr-prose",
+    "path": "fixtures/ocr/ocr-prose.pdf",
+    "sha256": "0f197e0531e24e9a0bcb3a5a800be7965007fc1995335a4f6997470eeee41412",
+    "reference": "fixtures/ocr/ocr-prose.txt",
+    "reference_sha256": "c20f7e26a09408b05423bfabcabdd2acc6d329b741e747c02336489140a70371",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-prose",
+    "images": [
+      {
+        "path": "images/ocr-prose-1.png",
+        "sha256": "d1d421c1f9d21d23b0a073eba968ccccc014d8737762dcef7dc3ec4b9f14766f",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Community library notice\nThe library opens at eight in the morning.\nReturn borrowed books before Friday.\nPlease keep the reading room quiet.\n"
+  },
+  {
+    "id": "ocr-swedish",
+    "path": "fixtures/ocr/ocr-swedish.pdf",
+    "sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103",
+    "reference": "fixtures/ocr/ocr-swedish.txt",
+    "reference_sha256": "457f0672630b31ac3d80e23a2bc118e40aec37ab5341412d3053be3f9a1a2371",
+    "track": "regression",
+    "language": "sv",
+    "base_id": "ocr-swedish",
+    "images": [
+      {
+        "path": "images/ocr-swedish-1.png",
+        "sha256": "fa74a44e529c187ccee10786f40c4afc3b1a46276d3a9d40df33eec747a2f619",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Leveransrapport\nÅtta lådor anlände på måndagen.\nKontrollen är klar.\n"
+  },
+  {
+    "id": "ocr-two-pages",
+    "path": "fixtures/ocr/ocr-two-pages.pdf",
+    "sha256": "c933dd94a1667b485da9eb125a2ce38e142c897e6d772345fe119f5cf90f5af7",
+    "reference": "fixtures/ocr/ocr-two-pages.txt",
+    "reference_sha256": "6c007d506045807979a3b45f8d0b397ebb73ffaa1fe7b8628752eda52844dfce",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-two-pages",
+    "images": [
+      {
+        "path": "images/ocr-two-pages-1.png",
+        "sha256": "d1d421c1f9d21d23b0a073eba968ccccc014d8737762dcef7dc3ec4b9f14766f",
+        "size": [
+          1700,
+          2200
+        ]
+      },
+      {
+        "path": "images/ocr-two-pages-2.png",
+        "sha256": "2c5636d48aa0b2407b339827cb39ec2cb6b128e1e3986a03dc0369a12dddbb25",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Community library notice\nThe library opens at eight in the morning.\nReturn borrowed books before Friday.\nPlease keep the reading room quiet.\nInvoice number: BP-4827\nUnits: 18\nUnit price: 24.50\nTotal: 441.00\n"
+  },
+  {
+    "id": "scan-only",
+    "path": "fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81",
+    "reference": "fixtures/holdout/scan-only.txt",
+    "reference_sha256": "9179077d6af556ec72f2de2da68b08c6721156047d49965112feb20119bf69e4",
+    "track": "regression",
+    "language": "en",
+    "base_id": "scan-only",
+    "images": [
+      {
+        "path": "images/scan-only-1.png",
+        "sha256": "51367096f58608167c8cd2f3577f60f1fca6c5feb1b121e7282a942cbddc0f35",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Warehouse receipt\nDelivered twelve sealed boxes\nInspection completed on Tuesday\n"
+  },
+  {
+    "id": "native-and-scan",
+    "path": "fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680",
+    "reference": "fixtures/holdout/native-and-scan.txt",
+    "reference_sha256": "e872f5f34400cb3159ab6a1563ab9de255f1e162f2a9a8f779769820a0bee3b8",
+    "track": "regression",
+    "language": "en",
+    "base_id": "native-and-scan",
+    "images": [
+      {
+        "path": "images/native-and-scan-1.png",
+        "sha256": "b4ed9438aa838d31a479e90147b9096cca779f195723475bdd53aa43b6114515",
+        "size": [
+          1700,
+          2200
+        ]
+      },
+      {
+        "path": "images/native-and-scan-2.png",
+        "sha256": "51367096f58608167c8cd2f3577f60f1fca6c5feb1b121e7282a942cbddc0f35",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Harbor staff recorded the morning tide.\nWarehouse receipt\nDelivered twelve sealed boxes\nInspection completed on Tuesday\n"
+  },
+  {
+    "id": "english-clean",
+    "base_id": "english",
+    "language": "en",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-clean.pdf",
+    "sha256": "8389346761d247e60e5a35a2372604ec24cd92a0464d912355468e694bf11f78",
+    "reference": "fixtures/ocr-stress/english-clean.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4",
+    "images": [
+      {
+        "path": "images/english-clean-1.png",
+        "sha256": "3a8204fdd7e3aff25017c5def7e6f92bb0a33a7d2f7215350c4f91aec2fffdb5",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Maintenance report\nReplace valve C-731 before Thursday.\nPressure: 18.75 bar. Quantity: 24.\nSend the signed copy to the archive.\n"
+  },
+  {
+    "id": "english-low-resolution",
+    "base_id": "english",
+    "language": "en",
+    "variant": "low-resolution",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-low-resolution.pdf",
+    "sha256": "5181fc444ebb1a605a26b8a2912c2c2677e9dd2a8561a365e555ed802863c323",
+    "reference": "fixtures/ocr-stress/english-low-resolution.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4",
+    "images": [
+      {
+        "path": "images/english-low-resolution-1.png",
+        "sha256": "ae8df3a118b1d5b31857e740b143b60c3307bbe5dd908af20c0f0668c31b277e",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Maintenance report\nReplace valve C-731 before Thursday.\nPressure: 18.75 bar. Quantity: 24.\nSend the signed copy to the archive.\n"
+  },
+  {
+    "id": "english-skew",
+    "base_id": "english",
+    "language": "en",
+    "variant": "skew",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-skew.pdf",
+    "sha256": "65257441224f50d7c89dcc311c6f6b3b5bdef3cd18d96f7813062afce81b0867",
+    "reference": "fixtures/ocr-stress/english-skew.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4",
+    "images": [
+      {
+        "path": "images/english-skew-1.png",
+        "sha256": "0203ca2b10a29bdec42102ee401f3ffa8e85125a140a3c8283040ebcb7679979",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Maintenance report\nReplace valve C-731 before Thursday.\nPressure: 18.75 bar. Quantity: 24.\nSend the signed copy to the archive.\n"
+  },
+  {
+    "id": "english-noise",
+    "base_id": "english",
+    "language": "en",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-noise.pdf",
+    "sha256": "88d3bb74216b48c0a84e2a703ecccbdc185d0aa7abec2306e8f3ef3a3973c2d0",
+    "reference": "fixtures/ocr-stress/english-noise.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4",
+    "images": [
+      {
+        "path": "images/english-noise-1.png",
+        "sha256": "b172716580f992ec61387f088851fe22fdd2482a5bdc49d9f1058e58ff2c9a1e",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Maintenance report\nReplace valve C-731 before Thursday.\nPressure: 18.75 bar. Quantity: 24.\nSend the signed copy to the archive.\n"
+  },
+  {
+    "id": "swedish-a-clean",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-clean.pdf",
+    "sha256": "04602c90ac160e4bf425400d394fd812997517a7e42d72f68f5fc6598d778d0b",
+    "reference": "fixtures/ocr-stress/swedish-a-clean.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387",
+    "images": [
+      {
+        "path": "images/swedish-a-clean-1.png",
+        "sha256": "f22174efe82279d9b7bb8ed8b9ee7615cf8df545a46d3f6d0eeae759f3de52f1",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n"
+  },
+  {
+    "id": "swedish-a-low-resolution",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "low-resolution",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-low-resolution.pdf",
+    "sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8",
+    "reference": "fixtures/ocr-stress/swedish-a-low-resolution.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387",
+    "images": [
+      {
+        "path": "images/swedish-a-low-resolution-1.png",
+        "sha256": "84f5d47fc1421844782ae3fe8884d14f2ab10a78208e5f0038d556bb07d4397e",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n"
+  },
+  {
+    "id": "swedish-a-skew",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "skew",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-skew.pdf",
+    "sha256": "178e8215972d89de216ba47d8f03dbecff09b513639ed3df86f781c3f2744700",
+    "reference": "fixtures/ocr-stress/swedish-a-skew.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387",
+    "images": [
+      {
+        "path": "images/swedish-a-skew-1.png",
+        "sha256": "77b46c5038a4cd34c1b70d8edea7bb76a4aa29309987465c08b71bfb69c36063",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n"
+  },
+  {
+    "id": "swedish-a-noise",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-noise.pdf",
+    "sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e",
+    "reference": "fixtures/ocr-stress/swedish-a-noise.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387",
+    "images": [
+      {
+        "path": "images/swedish-a-noise-1.png",
+        "sha256": "d7ba36e0c91c11792ae376b068f74021f30021b42419a12a24c9747a7cf05464",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n"
+  },
+  {
+    "id": "swedish-b-clean",
+    "base_id": "swedish-b",
+    "language": "sv",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-b-clean.pdf",
+    "sha256": "17a5795d00e2e842f6ad6eec460c792c534eb76aeae1d90c914535e2935eb2c6",
+    "reference": "fixtures/ocr-stress/swedish-b-clean.txt",
+    "reference_sha256": "f2047f0774a49eb6457d4573e36807259589efb89011b062708f336767d6a837",
+    "images": [
+      {
+        "path": "images/swedish-b-clean-1.png",
+        "sha256": "ce501d34f6e3eef0b873c8710d3fc2cd0c55290c82765b7036f164ed59e7ca89",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "På måndag hämtar Åsa nyckeln.\nRäksmörgåsen kostar 89 kronor.\nFörrådet är låst efter sjutton.\nReferens: SK-6038.\n"
+  },
+  {
+    "id": "french-clean",
+    "base_id": "french",
+    "language": "fr",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/french-clean.pdf",
+    "sha256": "f9c94e21d3e6e2128cd7efb6614ae879e748cb311e1add46d4a272ec1c243cbb",
+    "reference": "fixtures/ocr-stress/french-clean.txt",
+    "reference_sha256": "9d334ca904b8b4726840f4affc82f51ff1524302fef3c3f68e29ee15a3419596",
+    "images": [
+      {
+        "path": "images/french-clean-1.png",
+        "sha256": "4e6e7cebf3af9a8836c46e26bcbfdb5cfcecb5d2d83f645dc07b48ba0b6cf3d9",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Compte rendu de réception\nÉlodie vérifie les pièces déjà reçues.\nLe coût annoncé est de 248,75 euros.\nLa façade sera réparée jeudi.\n"
+  },
+  {
+    "id": "german-clean",
+    "base_id": "german",
+    "language": "de",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/german-clean.pdf",
+    "sha256": "e986e70f98d9f255508d9f8861128a0b7c0e17cb235af35daba45186925c384b",
+    "reference": "fixtures/ocr-stress/german-clean.txt",
+    "reference_sha256": "bd08191501e097c0106ae5c6818df27991d8e776139b805f36d335524380d9f4",
+    "images": [
+      {
+        "path": "images/german-clean-1.png",
+        "sha256": "fabcd53d8cc8b3ca7aa793e29d74a04dcbbde2e2cf86d31ee1f869748cbf4a61",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Prüfbericht für das Außengerät\nÖffnen Sie die Tür erst nach zwölf Uhr.\nDie Größe beträgt 48,5 Millimeter.\nAuftrag: DE-5821.\n"
+  },
+  {
+    "id": "spanish-clean",
+    "base_id": "spanish",
+    "language": "es",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/spanish-clean.pdf",
+    "sha256": "c3fb4140578e507bcb3015547f23306afb9694e125ff2189de9f0c98324b20da",
+    "reference": "fixtures/ocr-stress/spanish-clean.txt",
+    "reference_sha256": "54b4311484c064cf9af2601df8e233349cc8d4bb99289acd6fa15269bf761936",
+    "images": [
+      {
+        "path": "images/spanish-clean-1.png",
+        "sha256": "5bcc1a2544ba4662eb0e86cd1ce562b69d08223583f82a9f04facfa03901df74",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Informe de inspección\n¿Cuándo llegará el próximo envío?\nEl técnico revisó dieciséis piezas.\nCódigo: ES-7249. Total: 318,40 euros.\n"
+  },
+  {
+    "id": "danish-clean",
+    "base_id": "danish",
+    "language": "da",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/danish-clean.pdf",
+    "sha256": "80a7fb1875a554896a870cc1c7d1d8ac12a533213b4936df009458d8eb4474ce",
+    "reference": "fixtures/ocr-stress/danish-clean.txt",
+    "reference_sha256": "aaa7d513ca0c20cc17f8d598b8007a031db01da6260567d1dfd326a6a69c9714",
+    "images": [
+      {
+        "path": "images/danish-clean-1.png",
+        "sha256": "8057f73e0fc3c10b3b04642177455b23fd5943f0cd15b1fe6848e470cb710685",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Årsrapport fra værkstedet\nSøren åbner døren klokken ni.\nDe grønne æsker står på bordet.\nAntal: 32. Pris: 875,50 kr.\n"
+  },
+  {
+    "id": "polish-clean",
+    "base_id": "polish",
+    "language": "pl",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/polish-clean.pdf",
+    "sha256": "9e4530afe0c906bb5bcecf5ce621feb0b933c44523e89ed334671f844ac97698",
+    "reference": "fixtures/ocr-stress/polish-clean.txt",
+    "reference_sha256": "f72f35c15250378e4e8b6c11384ecbdb19b7885a3eae252bb4227fe69dde372a",
+    "images": [
+      {
+        "path": "images/polish-clean-1.png",
+        "sha256": "9850da1b63627ad6bad9805120b8f4177d48e5421a22f67cc86d1fbb94ec20d0",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Protokół odbioru części\nŁukasz sprawdził żółtą skrzynię.\nNastępna dostawa będzie w środę.\nNumer: PL-3916. Liczba sztuk: 48.\n"
+  },
+  {
+    "id": "turkish-clean",
+    "base_id": "turkish",
+    "language": "tr",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/turkish-clean.pdf",
+    "sha256": "80dbf54cb4d189d55dbaee6dbfceff9419da666a473e91c57476871e6e01f155",
+    "reference": "fixtures/ocr-stress/turkish-clean.txt",
+    "reference_sha256": "cc32c47a253f36e8ccb232bdfbd4b111fb52090fee56cb311ce5e1ef28e2f074",
+    "images": [
+      {
+        "path": "images/turkish-clean-1.png",
+        "sha256": "31b1e22b55872dcbda99aedca299541afbcb7d7828b7c1dd81cfdeca23289954",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "Ürün kontrol raporu\nİpek ışığı açtı ve ölçümü yaptı.\nYağmur başlamadan önce kapıyı kapatın.\nSipariş: TR-2864. Tutar: 735,25 lira.\n"
+  },
+  {
+    "id": "chinese-clean",
+    "base_id": "chinese",
+    "language": "zh",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/chinese-clean.pdf",
+    "sha256": "b6659fad1188ec83d7a9bed548b06d7998804e4f69cbcbadd44e5aa94588bc2f",
+    "reference": "fixtures/ocr-stress/chinese-clean.txt",
+    "reference_sha256": "58ba2ea7c11e096d7d90b543a07e5f9dab90a4d49cb7ed18ce02188e8b2d8e37",
+    "images": [
+      {
+        "path": "images/chinese-clean-1.png",
+        "sha256": "d11bbc91328c908d6067d53b6ad505127858cdff7735ff9dae8ef99504c03ef2",
+        "size": [
+          1700,
+          2200
+        ]
+      }
+    ],
+    "reference_text": "仓库检查记录\n今天收到二十四个蓝色箱子。\n请在星期五之前完成检查。\n订单编号：CN-4826。\n"
+  }
+]

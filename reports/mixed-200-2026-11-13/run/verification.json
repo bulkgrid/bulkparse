@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "smoke": false,
+  "all_input_hashes_unchanged": true,
+  "all_source_hashes_unchanged": true,
+  "source_edits_during_measurement": [],
+  "source_snapshot_verified": true,
+  "all_binary_hashes_unchanged": true,
+  "finished_utc": "2026-11-13T21:03:42.038904+00:00",
+  "power_after": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true"
+}

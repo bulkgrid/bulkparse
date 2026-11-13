@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-11T09:44:52.846944+00:00",
+  "predictions_inspected": false,
+  "documents": 67,
+  "eligible": 67,
+  "files": {
+    "references.json": "3589507d0018adfd742595d4346b4e71ca6edf423a90dff9ccf2ea753aa68d66",
+    "manifest.json": "57212659db54bb0cb9123a7caa084d3112d3b3e9f98e99c383ccd995a46fea5b",
+    "prior-inventory.json": "40c9e725a50d9aab3006ef9e6ef6e501d7c309e31c51d29bd1a9a0c530276da1",
+    "PROTOCOL.md": "5ea5299fd56445c47d2c874e4cef6c48c613de568c5ede9ead86d43ab44881f1"
+  },
+  "script_sha256": "ff486a4e4b0a501e7bab9fa7ba03ad55f18e0e46cac5f7fda519f589c499afbf"
+}

@@ -1,0 +1,30 @@
+{
+  "commands": {
+    "before": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/reports/biff-legacy-2026-11-13/before-office-bench"
+    ],
+    "after": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/reports/biff-legacy-2026-11-13/after-office-bench"
+    ],
+    "anydoc": [
+      "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/multiformat-anydoc/release/anydoc-bench-worker"
+    ]
+  },
+  "binary_sha256": {
+    "before": "97dced723328a5f66a121dc67727c23fa92c576c94aaccd25aa303f6168a89b5",
+    "after": "c77c75270363dbe2f2bbcae373738ba50c4d4cef0747d9044a8637c7819f7051",
+    "anydoc": "7219c99194249af3ccfa2f9ba6c85104e40431ab39fa1c61f90fa30550d106c1"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "hardware": [
+    "Apple M3 Max",
+    "38654705664",
+    "14"
+  ],
+  "warmup": 0,
+  "passes": 1,
+  "started_utc": "2026-11-13T21:24:41.617599+00:00",
+  "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n",
+  "harness_sha256": "33c47db1c500bf39c224afd9d700e7dd0881d2387ed3c044cf09e3390e0669c5",
+  "scope": "Sequential reads, conversion and Markdown rendering; worker startup and protocol excluded from time. RSS includes full worker lifetime and transport. Optional JSON verification excluded from conversion time but included in RSS. Rotating profile order; unchanged inputs and binaries verified."
+}

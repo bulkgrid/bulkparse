@@ -1,0 +1,19 @@
+{
+  "scope": "112 original real-world documents, with all 27 historical failures separately reported; no duplicates",
+  "engines": [
+    "bulkparse",
+    "anydoc",
+    "docling"
+  ],
+  "selection": "User selected these three first; remaining five converters deferred, not reported as measured",
+  "warmup_passes": 1,
+  "measured_passes": 5,
+  "execution": "Sequential documents, persistent workers, rotating engine order; no builds or heavy checks during timings",
+  "timing": "Reads, parse and Markdown export included; imports, result verification and transport excluded; in-conversion child process launch included",
+  "cpu": "Per-conversion user+system CPU seconds via getrusage SELF plus waited-for CHILDREN; live/unreaped subprocess CPU is not captured; timeouts have missing CPU, never zero",
+  "memory": "OS worker-lifetime RSS from /usr/bin/time -l including setup, warmup, parsing and transport; not an aggregate process-tree peak",
+  "failures": "Keep every failed input. Report the full cohort and identical nonempty-returned subset. Returning output does not establish completeness. Partial recovery is a separate BulkParse profile, never substituted for defaults.",
+  "quality": "No new LLM judging or paid jobs; retain outputs for source-scoped inspection. No quality score inferred from success, size or timing.",
+  "limits": "Original BulkParse defaults, 90-second document deadline; no OCR or model downloads for this Office/EPUB corpus",
+  "source_freeze": "Parser source, adapter source, installed versions, input/binary hashes and effective options recorded before conversion"
+}

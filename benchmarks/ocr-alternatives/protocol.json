@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "date": "2026-11-11",
+  "target": "Linux CPU, multilingual documents",
+  "host": "Apple M3 Max, 36 GiB; Docker Desktop Linux ARM64 guest; not an x86 production server",
+  "profiles": ["rapid-tiny", "rapid-small", "rapid-medium", "rapid-latin", "lite-tiny", "lite-small", "tesseract-fast", "tesseract-best", "paddle-tiny", "paddle-small"],
+  "data": "24 existing authored PDF cases, 26 rendered pages, nine languages; includes correlated degraded variants, not independent real-world scans",
+  "input": "Identical frozen RGB PNGs rendered with PDFium at 200 DPI; no reference-dependent engine settings or text correction",
+  "language_selection": "Tesseract always loads eng+swe+fra+deu+spa+dan+pol+tur+chi_sim; other engines use fixed multilingual models; Latin model retained as a coverage control",
+  "resources": "One active benchmark worker/container at a time; 1 CPU quota, 4 GiB memory limit, 256 process limit, no GPU, native thread settings 1; network disabled",
+  "sequence": "Profile order shuffled with seed 20261111; each process does one excluded full-corpus warm-up then five complete sequential corpus passes; profiles are not interleaved, to avoid concurrent resident model memory",
+  "timing": "Sum of per-document worker wall times, median across five passes. Includes PNG loading, image conversion and recognition. Excludes PDF rendering, model initialization, output serialization, IPC and BulkParse layout reconstruction",
+  "cpu": "Sum of worker process user+system CPU seconds from getrusage RUSAGE_SELF, including native threads; median across five passes",
+  "memory": "Maximum process ru_maxrss across initialization, warm-up and measured passes, Linux KiB converted to bytes. Includes imports and models; excludes container daemon and page cache; container memory limit includes other memory",
+  "startup": "Initialization seconds and container launch-to-ready measured separately once; filesystem cache not purged, so not disk-cold measurements",
+  "quality": "First measured pass; micro CER/WER from Levenshtein distance after Unicode NFC and whitespace normalization, case/accent/punctuation sensitive. Blank insertions counted and blank false positives reported separately. Engine reading order retained. Errors remain as empty text. All runs checked for text changes",
+  "differences": "RapidOCR and RapidOCRLite use the existing line-orientation classifier and .5 text score. Official Paddle disables orientation/unwarping and uses .5 text score, tiny/tiny or small/small models, MKLDNN disabled for ARM portability. Rapid medium uses small detector and medium recognizer. Tesseract uses AUTO page segmentation and LSTM_ONLY",
+  "limits": "Small synthetic corpus; only Latin-script languages and one Chinese example. No Arabic, Indic, Cyrillic, handwriting, orientation, table-structure or full-page scan evaluation. Raw OCR-stage outputs differ from existing end-to-end BulkParse OCR benchmarks. Timing conclusions require confirmation on production CPU architecture"
+}

@@ -1,0 +1,23 @@
+[package]
+name = "bulkparse-bench-worker"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[features]
+default = ["bulkparse"]
+bulkparse = []
+
+[[bin]]
+name = "bulkparse-bench-worker"
+path = "../native.rs"
+
+[dependencies]
+bulkparse = { path = "../../../crates/bulkparse" }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

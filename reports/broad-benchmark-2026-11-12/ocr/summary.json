@@ -1,0 +1,870 @@
+[
+  {
+    "profile": "rapid-small",
+    "startup": {
+      "ready": true,
+      "init_wall_seconds": 0.4498520840000002,
+      "usage": {
+        "cpu_seconds": 0.36547599999999997,
+        "peak_rss_bytes": 97054720
+      },
+      "options": {
+        "Det.model_path": "/data/models/PP-OCRv6_det_small.onnx",
+        "Rec.model_path": "/data/models/PP-OCRv6_rec_small.onnx",
+        "Cls.model_path": "/data/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+        "EngineConfig.onnxruntime.intra_op_num_threads": 1,
+        "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+        "Global.log_level": "error",
+        "Global.text_score": 0.5,
+        "Det.model_type": "ModelType.SMALL",
+        "Rec.model_type": "ModelType.SMALL"
+      },
+      "environment": {
+        "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+        "machine": "aarch64",
+        "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+        "packages": {
+          "pip": "25.0.1",
+          "pillow": "13.0.0",
+          "protobuf": "7.36.2",
+          "psutil": "7.2.2",
+          "numpy": "2.5.4",
+          "packaging": "26.3",
+          "flatbuffers": "25.12.19",
+          "charset-normalizer": "3.5.2",
+          "onnxruntime": "1.31.1",
+          "idna": "3.20",
+          "urllib3": "2.8.0",
+          "requests": "2.34.2",
+          "tqdm": "4.70.1",
+          "pypdfium2": "5.15.2",
+          "six": "1.17.0",
+          "colorlog": "6.12.0",
+          "pyclipper": "1.4.0",
+          "shapely": "2.2.0",
+          "certifi": "2026.10.23",
+          "PyYAML": "6.0.3",
+          "rapidocr": "3.10.0",
+          "opencv-python-headless": "5.0.0.93",
+          "omegaconf": "2.4.0"
+        },
+        "cpu.max": "100000 100000",
+        "memory.max": "4294967296",
+        "pids.max": "256"
+      },
+      "container_launch_to_ready_seconds": 2.924949417123571
+    },
+    "full_corpus_wall_seconds": [
+      35.246731515,
+      36.01939947599996,
+      36.06862689399999,
+      35.57566867799997,
+      35.6352327649999
+    ],
+    "full_corpus_cpu_seconds": [
+      35.19599700000002,
+      35.92972599999999,
+      35.94448700000001,
+      35.51763599999995,
+      35.553379000000035
+    ],
+    "peak_rss_bytes": 844185600,
+    "quality": {
+      "character_errors": 89,
+      "reference_characters": 2787,
+      "word_errors": 20,
+      "reference_words": 422,
+      "cases": 24,
+      "exact": 19,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.031933979189092215,
+      "word_error_rate": 0.04739336492890995
+    },
+    "by_track": {
+      "authored_stress": {
+        "character_errors": 3,
+        "reference_characters": 1940,
+        "word_errors": 3,
+        "reference_words": 298,
+        "cases": 16,
+        "exact": 13,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0015463917525773195,
+        "word_error_rate": 0.010067114093959731
+      },
+      "regression": {
+        "character_errors": 86,
+        "reference_characters": 847,
+        "word_errors": 17,
+        "reference_words": 124,
+        "cases": 8,
+        "exact": 6,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.10153482880755609,
+        "word_error_rate": 0.13709677419354838
+      }
+    },
+    "by_language": {
+      "da": {
+        "character_errors": 0,
+        "reference_characters": 115,
+        "word_errors": 0,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "de": {
+        "character_errors": 0,
+        "reference_characters": 123,
+        "word_errors": 0,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "en": {
+        "character_errors": 85,
+        "reference_characters": 1288,
+        "word_errors": 16,
+        "reference_words": 191,
+        "cases": 11,
+        "exact": 10,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.06599378881987578,
+        "word_error_rate": 0.08376963350785341
+      },
+      "es": {
+        "character_errors": 0,
+        "reference_characters": 129,
+        "word_errors": 0,
+        "reference_words": 18,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "fr": {
+        "character_errors": 0,
+        "reference_characters": 131,
+        "word_errors": 0,
+        "reference_words": 22,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "pl": {
+        "character_errors": 0,
+        "reference_characters": 123,
+        "word_errors": 0,
+        "reference_words": 17,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "sv": {
+        "character_errors": 3,
+        "reference_characters": 702,
+        "word_errors": 3,
+        "reference_words": 113,
+        "cases": 6,
+        "exact": 3,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.004273504273504274,
+        "word_error_rate": 0.02654867256637168
+      },
+      "tr": {
+        "character_errors": 1,
+        "reference_characters": 129,
+        "word_errors": 1,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.007751937984496124,
+        "word_error_rate": 0.05263157894736842
+      },
+      "zh": {
+        "character_errors": 0,
+        "reference_characters": 47,
+        "word_errors": 0,
+        "reference_words": 4,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      }
+    },
+    "error_documents_first_pass": 0,
+    "changed_text_across_runs": [],
+    "median_wall_seconds": 35.6352327649999,
+    "median_cpu_seconds": 35.553379000000035
+  },
+  {
+    "profile": "paddle-tiny",
+    "startup": {
+      "ready": true,
+      "init_wall_seconds": 1.7717341249999947,
+      "usage": {
+        "cpu_seconds": 1.3186499999999999,
+        "peak_rss_bytes": 397328384
+      },
+      "options": {
+        "text_detection_model_name": "PP-OCRv6_tiny_det",
+        "text_recognition_model_name": "PP-OCRv6_tiny_rec",
+        "device": "cpu",
+        "cpu_threads": 1,
+        "enable_mkldnn": false,
+        "use_doc_orientation_classify": false,
+        "use_doc_unwarping": false,
+        "use_textline_orientation": false,
+        "text_rec_score_thresh": 0.5
+      },
+      "environment": {
+        "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+        "machine": "aarch64",
+        "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+        "packages": {
+          "aiohttp": "3.14.5",
+          "py-cpuinfo": "9.0.0",
+          "huggingface_hub": "2.4.0",
+          "cryptography": "50.0.2",
+          "aiosignal": "1.4.0",
+          "pillow": "13.0.0",
+          "protobuf": "7.36.2",
+          "psutil": "7.2.2",
+          "typing_extensions": "4.16.0",
+          "pandas": "3.1.1",
+          "bce-python-sdk": "0.9.79",
+          "crc32c": "2.9.post0",
+          "h11": "0.16.0",
+          "packaging": "26.3",
+          "pydantic_core": "2.50.4",
+          "opencv-contrib-python": "4.10.0.84",
+          "typing-inspection": "0.4.5",
+          "annotated-types": "0.8.0",
+          "charset-normalizer": "3.5.2",
+          "chardet": "7.7.0",
+          "paddleocr": "3.7.0",
+          "fsspec": "2026.9.0",
+          "paddlex": "3.7.2",
+          "click": "8.5.1",
+          "httpx2": "2.16.0",
+          "future": "1.0.0",
+          "paddlepaddle": "3.2.2",
+          "opt-einsum": "3.3.0",
+          "pycparser": "3.12",
+          "networkx": "3.7",
+          "tzdata": "2026.6",
+          "PyYAML": "6.0.2",
+          "python-dateutil": "4.0.0",
+          "idna": "3.20",
+          "httpcore": "1.0.9",
+          "anyio": "4.16.0",
+          "urllib3": "2.8.0",
+          "hf-xet": "1.8.0",
+          "ruamel.yaml": "0.19.1",
+          "pydantic": "2.14.3",
+          "pip": "25.0.1",
+          "truststore": "0.10.5",
+          "requests": "2.34.2",
+          "tqdm": "4.70.1",
+          "propcache": "0.5.4",
+          "pypdfium2": "5.15.2",
+          "modelscope": "1.40.3",
+          "six": "1.17.0",
+          "frozenlist": "1.8.0",
+          "pycryptodome": "4.4.0",
+          "colorlog": "6.12.0",
+          "pyclipper": "1.4.0",
+          "prettytable": "3.18.0",
+          "setuptools": "84.2.1",
+          "modelscope-hub": "0.7.1",
+          "python-bidi": "0.6.12",
+          "multidict": "7.2.1",
+          "attrs": "26.1.0",
+          "filelock": "4.2.10",
+          "wcwidth": "0.9.4",
+          "shapely": "2.2.0",
+          "numpy": "2.3.5",
+          "yarl": "1.25.1",
+          "certifi": "2026.10.23",
+          "ujson": "6.1.0",
+          "cffi": "2.1.1",
+          "safetensors": "0.8.0",
+          "imagesize": "2.0.1",
+          "aistudio_sdk": "0.3.9",
+          "httpx": "0.28.1",
+          "httpcore2": "2.16.0",
+          "aiohappyeyeballs": "2.7.1",
+          "more-itertools": "10.8.0",
+          "platformdirs": "4.4.0",
+          "wheel": "0.46.3",
+          "autocommand": "2.2.2",
+          "importlib_metadata": "8.7.1",
+          "tomli": "2.4.0",
+          "jaraco.context": "6.1.0",
+          "backports.tarfile": "1.2.0",
+          "jaraco.functools": "4.4.0",
+          "zipp": "3.23.0",
+          "jaraco.text": "4.0.0"
+        },
+        "cpu.max": "100000 100000",
+        "memory.max": "4294967296",
+        "pids.max": "256"
+      },
+      "container_launch_to_ready_seconds": 1.8961044999305159
+    },
+    "full_corpus_wall_seconds": [
+      32.56808401400011,
+      33.141064515999915,
+      33.17572288900004,
+      32.87693630499996,
+      33.06006197800019
+    ],
+    "full_corpus_cpu_seconds": [
+      32.49738300000003,
+      33.08791100000002,
+      33.01589999999999,
+      32.85308500000005,
+      33.03337400000001
+    ],
+    "peak_rss_bytes": 1433415680,
+    "quality": {
+      "character_errors": 112,
+      "reference_characters": 2787,
+      "word_errors": 41,
+      "reference_words": 422,
+      "cases": 24,
+      "exact": 14,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.040186580552565486,
+      "word_error_rate": 0.0971563981042654
+    },
+    "by_track": {
+      "authored_stress": {
+        "character_errors": 26,
+        "reference_characters": 1940,
+        "word_errors": 24,
+        "reference_words": 298,
+        "cases": 16,
+        "exact": 8,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.013402061855670102,
+        "word_error_rate": 0.08053691275167785
+      },
+      "regression": {
+        "character_errors": 86,
+        "reference_characters": 847,
+        "word_errors": 17,
+        "reference_words": 124,
+        "cases": 8,
+        "exact": 6,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.10153482880755609,
+        "word_error_rate": 0.13709677419354838
+      }
+    },
+    "by_language": {
+      "da": {
+        "character_errors": 1,
+        "reference_characters": 115,
+        "word_errors": 1,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.008695652173913044,
+        "word_error_rate": 0.05263157894736842
+      },
+      "de": {
+        "character_errors": 0,
+        "reference_characters": 123,
+        "word_errors": 0,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "en": {
+        "character_errors": 85,
+        "reference_characters": 1288,
+        "word_errors": 16,
+        "reference_words": 191,
+        "cases": 11,
+        "exact": 10,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.06599378881987578,
+        "word_error_rate": 0.08376963350785341
+      },
+      "es": {
+        "character_errors": 0,
+        "reference_characters": 129,
+        "word_errors": 0,
+        "reference_words": 18,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "fr": {
+        "character_errors": 0,
+        "reference_characters": 131,
+        "word_errors": 0,
+        "reference_words": 22,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "pl": {
+        "character_errors": 3,
+        "reference_characters": 123,
+        "word_errors": 2,
+        "reference_words": 17,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.024390243902439025,
+        "word_error_rate": 0.11764705882352941
+      },
+      "sv": {
+        "character_errors": 16,
+        "reference_characters": 702,
+        "word_errors": 16,
+        "reference_words": 113,
+        "cases": 6,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.022792022792022793,
+        "word_error_rate": 0.1415929203539823
+      },
+      "tr": {
+        "character_errors": 7,
+        "reference_characters": 129,
+        "word_errors": 6,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.05426356589147287,
+        "word_error_rate": 0.3157894736842105
+      },
+      "zh": {
+        "character_errors": 0,
+        "reference_characters": 47,
+        "word_errors": 0,
+        "reference_words": 4,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      }
+    },
+    "error_documents_first_pass": 0,
+    "changed_text_across_runs": [],
+    "median_wall_seconds": 33.06006197800019,
+    "median_cpu_seconds": 33.01589999999999
+  },
+  {
+    "profile": "lite-tiny",
+    "startup": {
+      "ready": true,
+      "init_wall_seconds": 0.24593299999997953,
+      "usage": {
+        "cpu_seconds": 0.24475599999999997,
+        "peak_rss_bytes": 65769472
+      },
+      "options": {
+        "Det.model_path": "/data/models/PP-OCRv6_det_tiny.onnx",
+        "Rec.model_path": "/data/models/PP-OCRv6_rec_tiny.onnx",
+        "Cls.model_path": "/data/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+        "EngineConfig.onnxruntime.intra_op_num_threads": 1,
+        "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+        "Global.log_level": "error",
+        "Global.text_score": 0.5,
+        "Det.model_type": "ModelType.TINY",
+        "Rec.model_type": "ModelType.TINY",
+        "Rec.rec_keys_path": "/data/models/ppocrv6_tiny_dict.txt"
+      },
+      "environment": {
+        "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+        "machine": "aarch64",
+        "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+        "packages": {
+          "pillow": "13.0.0",
+          "numpy": "2.5.4",
+          "charset-normalizer": "3.5.2",
+          "idna": "3.20",
+          "urllib3": "2.8.0",
+          "pip": "25.0.1",
+          "requests": "2.34.2",
+          "tqdm": "4.70.1",
+          "certifi": "2026.10.23",
+          "rapidocrlite": "5.0.0a16",
+          "PyYAML": "6.0.3"
+        },
+        "cpu.max": "100000 100000",
+        "memory.max": "4294967296",
+        "pids.max": "256"
+      },
+      "container_launch_to_ready_seconds": 0.39040091587230563
+    },
+    "full_corpus_wall_seconds": [
+      29.790488680000124,
+      29.817753471999993,
+      33.65878913900002,
+      30.499211720999938,
+      30.410787926999774
+    ],
+    "full_corpus_cpu_seconds": [
+      29.75685800000001,
+      29.77303400000006,
+      33.44955,
+      30.445166999999955,
+      30.365193000000005
+    ],
+    "peak_rss_bytes": 362672128,
+    "quality": {
+      "character_errors": 104,
+      "reference_characters": 2787,
+      "word_errors": 35,
+      "reference_words": 422,
+      "cases": 24,
+      "exact": 14,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.037316110513096516,
+      "word_error_rate": 0.08293838862559241
+    },
+    "by_track": {
+      "authored_stress": {
+        "character_errors": 18,
+        "reference_characters": 1940,
+        "word_errors": 18,
+        "reference_words": 298,
+        "cases": 16,
+        "exact": 8,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.009278350515463918,
+        "word_error_rate": 0.06040268456375839
+      },
+      "regression": {
+        "character_errors": 86,
+        "reference_characters": 847,
+        "word_errors": 17,
+        "reference_words": 124,
+        "cases": 8,
+        "exact": 6,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.10153482880755609,
+        "word_error_rate": 0.13709677419354838
+      }
+    },
+    "by_language": {
+      "da": {
+        "character_errors": 1,
+        "reference_characters": 115,
+        "word_errors": 1,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.008695652173913044,
+        "word_error_rate": 0.05263157894736842
+      },
+      "de": {
+        "character_errors": 0,
+        "reference_characters": 123,
+        "word_errors": 0,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "en": {
+        "character_errors": 85,
+        "reference_characters": 1288,
+        "word_errors": 16,
+        "reference_words": 191,
+        "cases": 11,
+        "exact": 10,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.06599378881987578,
+        "word_error_rate": 0.08376963350785341
+      },
+      "es": {
+        "character_errors": 0,
+        "reference_characters": 129,
+        "word_errors": 0,
+        "reference_words": 18,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "fr": {
+        "character_errors": 0,
+        "reference_characters": 131,
+        "word_errors": 0,
+        "reference_words": 22,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "pl": {
+        "character_errors": 1,
+        "reference_characters": 123,
+        "word_errors": 1,
+        "reference_words": 17,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.008130081300813009,
+        "word_error_rate": 0.058823529411764705
+      },
+      "sv": {
+        "character_errors": 11,
+        "reference_characters": 702,
+        "word_errors": 11,
+        "reference_words": 113,
+        "cases": 6,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.01566951566951567,
+        "word_error_rate": 0.09734513274336283
+      },
+      "tr": {
+        "character_errors": 6,
+        "reference_characters": 129,
+        "word_errors": 6,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.046511627906976744,
+        "word_error_rate": 0.3157894736842105
+      },
+      "zh": {
+        "character_errors": 0,
+        "reference_characters": 47,
+        "word_errors": 0,
+        "reference_words": 4,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      }
+    },
+    "error_documents_first_pass": 0,
+    "changed_text_across_runs": [],
+    "median_wall_seconds": 30.410787926999774,
+    "median_cpu_seconds": 30.365193000000005
+  },
+  {
+    "profile": "tesseract-fast",
+    "startup": {
+      "ready": true,
+      "init_wall_seconds": 0.4544659999999112,
+      "usage": {
+        "cpu_seconds": 0.454958,
+        "peak_rss_bytes": 186523648
+      },
+      "options": {
+        "languages": "eng+swe+fra+deu+spa+dan+pol+tur+chi_sim",
+        "psm": "AUTO",
+        "oem": "LSTM_ONLY",
+        "version": "tesseract 5.5.3\n leptonica-1.87.0\n  libjpeg 6b (libjpeg-turbo 1.5.3) : libpng 1.6.34 : libtiff 4.0.9 : zlib 1.2.11 : libwebp 1.0.0"
+      },
+      "environment": {
+        "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+        "machine": "aarch64",
+        "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+        "packages": {
+          "pillow": "12.2.0",
+          "tesserocr": "2.12.0",
+          "pip": "25.0.1"
+        },
+        "cpu.max": "100000 100000",
+        "memory.max": "4294967296",
+        "pids.max": "256"
+      },
+      "container_launch_to_ready_seconds": 0.5732884588651359
+    },
+    "full_corpus_wall_seconds": [
+      5.493423711999981,
+      5.45064954399993,
+      5.4126614170002085,
+      5.522263627999905,
+      5.506721169999878
+    ],
+    "full_corpus_cpu_seconds": [
+      5.482447999999997,
+      5.442440000000003,
+      5.403836999999999,
+      5.513345000000015,
+      5.497668999999988
+    ],
+    "peak_rss_bytes": 271872000,
+    "quality": {
+      "character_errors": 147,
+      "reference_characters": 2787,
+      "word_errors": 75,
+      "reference_words": 422,
+      "cases": 24,
+      "exact": 11,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.0527448869752422,
+      "word_error_rate": 0.17772511848341233
+    },
+    "by_track": {
+      "authored_stress": {
+        "character_errors": 60,
+        "reference_characters": 1940,
+        "word_errors": 57,
+        "reference_words": 298,
+        "cases": 16,
+        "exact": 5,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.030927835051546393,
+        "word_error_rate": 0.1912751677852349
+      },
+      "regression": {
+        "character_errors": 87,
+        "reference_characters": 847,
+        "word_errors": 18,
+        "reference_words": 124,
+        "cases": 8,
+        "exact": 6,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.10271546635182999,
+        "word_error_rate": 0.14516129032258066
+      }
+    },
+    "by_language": {
+      "da": {
+        "character_errors": 4,
+        "reference_characters": 115,
+        "word_errors": 3,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.034782608695652174,
+        "word_error_rate": 0.15789473684210525
+      },
+      "de": {
+        "character_errors": 3,
+        "reference_characters": 123,
+        "word_errors": 2,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.024390243902439025,
+        "word_error_rate": 0.10526315789473684
+      },
+      "en": {
+        "character_errors": 85,
+        "reference_characters": 1288,
+        "word_errors": 16,
+        "reference_words": 191,
+        "cases": 11,
+        "exact": 10,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.06599378881987578,
+        "word_error_rate": 0.08376963350785341
+      },
+      "es": {
+        "character_errors": 2,
+        "reference_characters": 129,
+        "word_errors": 2,
+        "reference_words": 18,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.015503875968992248,
+        "word_error_rate": 0.1111111111111111
+      },
+      "fr": {
+        "character_errors": 1,
+        "reference_characters": 131,
+        "word_errors": 1,
+        "reference_words": 22,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.007633587786259542,
+        "word_error_rate": 0.045454545454545456
+      },
+      "pl": {
+        "character_errors": 4,
+        "reference_characters": 123,
+        "word_errors": 2,
+        "reference_words": 17,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.032520325203252036,
+        "word_error_rate": 0.11764705882352941
+      },
+      "sv": {
+        "character_errors": 23,
+        "reference_characters": 702,
+        "word_errors": 21,
+        "reference_words": 113,
+        "cases": 6,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.03276353276353276,
+        "word_error_rate": 0.18584070796460178
+      },
+      "tr": {
+        "character_errors": 0,
+        "reference_characters": 129,
+        "word_errors": 0,
+        "reference_words": 19,
+        "cases": 1,
+        "exact": 1,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.0,
+        "word_error_rate": 0.0
+      },
+      "zh": {
+        "character_errors": 25,
+        "reference_characters": 47,
+        "word_errors": 28,
+        "reference_words": 4,
+        "cases": 1,
+        "exact": 0,
+        "blank_false_positives": 0,
+        "character_error_rate": 0.5319148936170213,
+        "word_error_rate": 7.0
+      }
+    },
+    "error_documents_first_pass": 0,
+    "changed_text_across_runs": [],
+    "median_wall_seconds": 5.493423711999981,
+    "median_cpu_seconds": 5.482447999999997
+  }
+]

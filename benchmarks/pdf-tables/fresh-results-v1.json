@@ -1,0 +1,316 @@
+{
+  "freeze": {
+    "rust_source_sha256": "3d9ae0adec44a94b3fe180a8a951adfebcb01e7d0248468cf8849237d9a75964",
+    "binary_sha256": "00a65a864fd7ddcd63a9b2c9607fc53d43fd49c1050a64229c71bfbd81e67e40",
+    "baseline_binary_sha256": "a22574b9a04cb71802f76998bafb6b1f38ea4d02d52f01d3d02d2a6da8710213",
+    "policy": "Freeze table implementation before fresh authored-case evaluation. Previous 24-case holdout is now regression data."
+  },
+  "generator_sha256": "124584f6df7c082a0d791c4fe8226d1a4242e5a08a505683b6a20d6240ef39dd",
+  "harness_sha256": "589902a439bf076dae16c84cc1e6952dc06a08926b20baefc002d3318fd78842",
+  "cases": [
+    {
+      "id": "four-columns-empty-cell",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "Material",
+            "Quantity",
+            "Batch",
+            "Price"
+          ],
+          [
+            "Brass",
+            "47",
+            "R8",
+            "615"
+          ],
+          [
+            "Steel",
+            "",
+            "T3",
+            "920"
+          ],
+          [
+            "Glass",
+            "63",
+            "V6",
+            "130"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "Material",
+            "Quantity",
+            "Batch",
+            "Price"
+          ],
+          [
+            "Brass",
+            "47",
+            "R8",
+            "615"
+          ],
+          [
+            "Steel",
+            "",
+            "T3",
+            "920"
+          ],
+          [
+            "Glass",
+            "63",
+            "V6",
+            "130"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "c4b649824ce6675eceac3b7bcc95bc055d47803d88801ce4f523e9c034b5409b"
+    },
+    {
+      "id": "no-header-numeric",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "11",
+            "22"
+          ],
+          [
+            "33",
+            "44"
+          ],
+          [
+            "55",
+            "66"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "11",
+            "22"
+          ],
+          [
+            "33",
+            "44"
+          ],
+          [
+            "55",
+            "66"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "1e3c0fb51823a13661b39151ae24ae06ce7eb320f2f48da7e2d99bf047bea337"
+    },
+    {
+      "id": "wrapped-cells",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "Description",
+            "Amount"
+          ],
+          [
+            "Packed\ncarefully",
+            "41"
+          ],
+          [
+            "Sent\ntoday",
+            "82"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "Description",
+            "Amount"
+          ],
+          [
+            "Packed\ncarefully",
+            "41"
+          ],
+          [
+            "Sent\ntoday",
+            "82"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "d3589f156ba31c1684c5163bab061b43ea1498779a0a878e86b1fa5ad2f2a6cf"
+    },
+    {
+      "id": "two-separated-tables",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "Fruit",
+            "Count"
+          ],
+          [
+            "Peach",
+            "14"
+          ],
+          [
+            "Plum",
+            "27"
+          ]
+        ],
+        [
+          [
+            "Tool",
+            "Count"
+          ],
+          [
+            "Drill",
+            "38"
+          ],
+          [
+            "Saw",
+            "59"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "Fruit",
+            "Count"
+          ],
+          [
+            "Peach",
+            "14"
+          ],
+          [
+            "Plum",
+            "27"
+          ]
+        ],
+        [
+          [
+            "Tool",
+            "Count"
+          ],
+          [
+            "Drill",
+            "38"
+          ],
+          [
+            "Saw",
+            "59"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "492b01ecb194ab3d6d23d40ecf66b20ef7e49afe2b51c584b73e011c9932968c"
+    },
+    {
+      "id": "surrounding-prose",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "Fruit",
+            "Count"
+          ],
+          [
+            "Peach",
+            "14"
+          ],
+          [
+            "Plum",
+            "27"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "Fruit",
+            "Count"
+          ],
+          [
+            "Peach",
+            "14"
+          ],
+          [
+            "Plum",
+            "27"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "1eced5053e2985a7db51d8c21c3c1a908e4183819d6525426457c7d3556db2bf"
+    },
+    {
+      "id": "offset-small-font",
+      "passed": true,
+      "expected_tables": [
+        [
+          [
+            "Label",
+            "Value"
+          ],
+          [
+            "One",
+            "101"
+          ],
+          [
+            "Two",
+            "202"
+          ]
+        ]
+      ],
+      "actual_tables": [
+        [
+          [
+            "Label",
+            "Value"
+          ],
+          [
+            "One",
+            "101"
+          ],
+          [
+            "Two",
+            "202"
+          ]
+        ]
+      ],
+      "exit_code": 2,
+      "source_sha256": "b93089737d9c4aebf269fa6852025c413c7c7c474bee8183cdc4a50bda3ab154"
+    },
+    {
+      "id": "border-only-ambiguous",
+      "passed": true,
+      "expected_tables": [],
+      "actual_tables": [],
+      "exit_code": 2,
+      "source_sha256": "658d30fe83391cb1b763b29121a7314ad14b73ebb71bf02d72e1d7336b01a30d"
+    },
+    {
+      "id": "ruled-single-column-prose",
+      "passed": true,
+      "expected_tables": [],
+      "actual_tables": [],
+      "exit_code": 2,
+      "source_sha256": "cf416ed31e99d030ab44eb550168b34fbc1351ba76b1a758130c1e1489e3277d"
+    },
+    {
+      "id": "spanning-cell-ambiguous",
+      "passed": true,
+      "expected_tables": [],
+      "actual_tables": [],
+      "exit_code": 2,
+      "source_sha256": "c729e02ec012d0b50ae88debe4c8e3688e45e4154561a312c3dbef20d7ee8f08"
+    }
+  ]
+}

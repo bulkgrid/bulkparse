@@ -1,0 +1,3 @@
+FROM bulkparse-ocr-alternatives:2026-11-11
+RUN apt-get update && apt-get install -y --no-install-recommends libgl1 && rm -rf /var/lib/apt/lists/*
+RUN python -m venv /opt/paddle && /opt/paddle/bin/pip install --no-cache-dir -r /requirements/requirements-linux-arm64-paddle.txt

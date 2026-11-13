@@ -1,0 +1,25 @@
+{
+  "bulkparse": "0.1.0 (preserved build; SHA-256 in run/identity.json)",
+  "anydoc": "0.2.4 (vendored source snapshot)",
+  "docling": {
+    "docling": "2.150.0"
+  },
+  "markitdown": {
+    "markitdown": "0.1.9"
+  },
+  "pandoc": {
+    "pandoc": "pandoc 3.9"
+  },
+  "mammoth": {
+    "mammoth": "1.13.0",
+    "markdownify": "1.2.3"
+  },
+  "libreoffice": {
+    "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+    "pandoc": "pandoc 3.9"
+  },
+  "unstructured": {
+    "unstructured": "0.27.37",
+    "markdownify": "1.2.3"
+  }
+}

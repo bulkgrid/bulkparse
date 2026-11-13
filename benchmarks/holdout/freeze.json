@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-11-10T13:35:29.177752+00:00",
+  "rust_source_sha256": "e3438d3c3115a836c012f9cd8d66949bd7c9ee5c020a36881ddef5511edeb837",
+  "binary_sha256": "a22574b9a04cb71802f76998bafb6b1f38ea4d02d52f01d3d02d2a6da8710213",
+  "policy": "No parser changes until evaluation is recorded. External sample selected by seeded path hash from paired PDF/text files, excluding previous fixture hashes. Generated cases are developer-authored synthetic stress tests, not an independent real-world corpus. Failed or empty conversions remain in results."
+}

@@ -1,0 +1,28 @@
+{
+  "ready": true,
+  "init_wall_seconds": 0.4544659999999112,
+  "usage": {
+    "cpu_seconds": 0.454958,
+    "peak_rss_bytes": 186523648
+  },
+  "options": {
+    "languages": "eng+swe+fra+deu+spa+dan+pol+tur+chi_sim",
+    "psm": "AUTO",
+    "oem": "LSTM_ONLY",
+    "version": "tesseract 5.5.3\n leptonica-1.87.0\n  libjpeg 6b (libjpeg-turbo 1.5.3) : libpng 1.6.34 : libtiff 4.0.9 : zlib 1.2.11 : libwebp 1.0.0"
+  },
+  "environment": {
+    "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+    "machine": "aarch64",
+    "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+    "packages": {
+      "pillow": "12.2.0",
+      "tesserocr": "2.12.0",
+      "pip": "25.0.1"
+    },
+    "cpu.max": "100000 100000",
+    "memory.max": "4294967296",
+    "pids.max": "256"
+  },
+  "container_launch_to_ready_seconds": 0.5732884588651359
+}

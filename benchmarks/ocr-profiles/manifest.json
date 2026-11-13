@@ -1,0 +1,280 @@
+[
+  {
+    "id": "ocr-blank",
+    "path": "fixtures/ocr/ocr-blank.pdf",
+    "sha256": "b249d1d6d2230f9ea91b0f1dea668e563746cfa85b274787a1e2676b8520e48d",
+    "reference": "fixtures/ocr/ocr-blank.txt",
+    "reference_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-blank"
+  },
+  {
+    "id": "ocr-columns",
+    "path": "fixtures/ocr/ocr-columns.pdf",
+    "sha256": "e07ad420c06de44d0f833237dc03d64749d3293dbb510be963816857e4fe2011",
+    "reference": "fixtures/ocr/ocr-columns.txt",
+    "reference_sha256": "4a2cc507b8b6b844a5c57c181d90b9c7efa259485718b7b11da85018861d691a",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-columns"
+  },
+  {
+    "id": "ocr-numbers",
+    "path": "fixtures/ocr/ocr-numbers.pdf",
+    "sha256": "b2b68a3ff4d49b5869d07cd85a0cafe67736b63f080688003abefe8d7bd04e8d",
+    "reference": "fixtures/ocr/ocr-numbers.txt",
+    "reference_sha256": "771dd64f4b9b5acce0fc3fce339b0e7bb17ec14d91c0f1b212d34c5c94978c21",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-numbers"
+  },
+  {
+    "id": "ocr-prose",
+    "path": "fixtures/ocr/ocr-prose.pdf",
+    "sha256": "0f197e0531e24e9a0bcb3a5a800be7965007fc1995335a4f6997470eeee41412",
+    "reference": "fixtures/ocr/ocr-prose.txt",
+    "reference_sha256": "c20f7e26a09408b05423bfabcabdd2acc6d329b741e747c02336489140a70371",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-prose"
+  },
+  {
+    "id": "ocr-swedish",
+    "path": "fixtures/ocr/ocr-swedish.pdf",
+    "sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103",
+    "reference": "fixtures/ocr/ocr-swedish.txt",
+    "reference_sha256": "457f0672630b31ac3d80e23a2bc118e40aec37ab5341412d3053be3f9a1a2371",
+    "track": "regression",
+    "language": "sv",
+    "base_id": "ocr-swedish"
+  },
+  {
+    "id": "ocr-two-pages",
+    "path": "fixtures/ocr/ocr-two-pages.pdf",
+    "sha256": "c933dd94a1667b485da9eb125a2ce38e142c897e6d772345fe119f5cf90f5af7",
+    "reference": "fixtures/ocr/ocr-two-pages.txt",
+    "reference_sha256": "6c007d506045807979a3b45f8d0b397ebb73ffaa1fe7b8628752eda52844dfce",
+    "track": "regression",
+    "language": "en",
+    "base_id": "ocr-two-pages"
+  },
+  {
+    "id": "scan-only",
+    "path": "fixtures/holdout/scan-only.pdf",
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81",
+    "reference": "fixtures/holdout/scan-only.txt",
+    "reference_sha256": "9179077d6af556ec72f2de2da68b08c6721156047d49965112feb20119bf69e4",
+    "track": "regression",
+    "language": "en",
+    "base_id": "scan-only"
+  },
+  {
+    "id": "native-and-scan",
+    "path": "fixtures/holdout/native-and-scan.pdf",
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680",
+    "reference": "fixtures/holdout/native-and-scan.txt",
+    "reference_sha256": "e872f5f34400cb3159ab6a1563ab9de255f1e162f2a9a8f779769820a0bee3b8",
+    "track": "regression",
+    "language": "en",
+    "base_id": "native-and-scan"
+  },
+  {
+    "id": "english-clean",
+    "base_id": "english",
+    "language": "en",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-clean.pdf",
+    "sha256": "8389346761d247e60e5a35a2372604ec24cd92a0464d912355468e694bf11f78",
+    "reference": "fixtures/ocr-stress/english-clean.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4"
+  },
+  {
+    "id": "english-low-resolution",
+    "base_id": "english",
+    "language": "en",
+    "variant": "low-resolution",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-low-resolution.pdf",
+    "sha256": "5181fc444ebb1a605a26b8a2912c2c2677e9dd2a8561a365e555ed802863c323",
+    "reference": "fixtures/ocr-stress/english-low-resolution.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4"
+  },
+  {
+    "id": "english-skew",
+    "base_id": "english",
+    "language": "en",
+    "variant": "skew",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-skew.pdf",
+    "sha256": "65257441224f50d7c89dcc311c6f6b3b5bdef3cd18d96f7813062afce81b0867",
+    "reference": "fixtures/ocr-stress/english-skew.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4"
+  },
+  {
+    "id": "english-noise",
+    "base_id": "english",
+    "language": "en",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-noise.pdf",
+    "sha256": "88d3bb74216b48c0a84e2a703ecccbdc185d0aa7abec2306e8f3ef3a3973c2d0",
+    "reference": "fixtures/ocr-stress/english-noise.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4"
+  },
+  {
+    "id": "swedish-a-clean",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-clean.pdf",
+    "sha256": "04602c90ac160e4bf425400d394fd812997517a7e42d72f68f5fc6598d778d0b",
+    "reference": "fixtures/ocr-stress/swedish-a-clean.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  },
+  {
+    "id": "swedish-a-low-resolution",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "low-resolution",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-low-resolution.pdf",
+    "sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8",
+    "reference": "fixtures/ocr-stress/swedish-a-low-resolution.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  },
+  {
+    "id": "swedish-a-skew",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "skew",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-skew.pdf",
+    "sha256": "178e8215972d89de216ba47d8f03dbecff09b513639ed3df86f781c3f2744700",
+    "reference": "fixtures/ocr-stress/swedish-a-skew.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  },
+  {
+    "id": "swedish-a-noise",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-noise.pdf",
+    "sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e",
+    "reference": "fixtures/ocr-stress/swedish-a-noise.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  },
+  {
+    "id": "swedish-b-clean",
+    "base_id": "swedish-b",
+    "language": "sv",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-b-clean.pdf",
+    "sha256": "17a5795d00e2e842f6ad6eec460c792c534eb76aeae1d90c914535e2935eb2c6",
+    "reference": "fixtures/ocr-stress/swedish-b-clean.txt",
+    "reference_sha256": "f2047f0774a49eb6457d4573e36807259589efb89011b062708f336767d6a837"
+  },
+  {
+    "id": "french-clean",
+    "base_id": "french",
+    "language": "fr",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/french-clean.pdf",
+    "sha256": "f9c94e21d3e6e2128cd7efb6614ae879e748cb311e1add46d4a272ec1c243cbb",
+    "reference": "fixtures/ocr-stress/french-clean.txt",
+    "reference_sha256": "9d334ca904b8b4726840f4affc82f51ff1524302fef3c3f68e29ee15a3419596"
+  },
+  {
+    "id": "german-clean",
+    "base_id": "german",
+    "language": "de",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/german-clean.pdf",
+    "sha256": "e986e70f98d9f255508d9f8861128a0b7c0e17cb235af35daba45186925c384b",
+    "reference": "fixtures/ocr-stress/german-clean.txt",
+    "reference_sha256": "bd08191501e097c0106ae5c6818df27991d8e776139b805f36d335524380d9f4"
+  },
+  {
+    "id": "spanish-clean",
+    "base_id": "spanish",
+    "language": "es",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/spanish-clean.pdf",
+    "sha256": "c3fb4140578e507bcb3015547f23306afb9694e125ff2189de9f0c98324b20da",
+    "reference": "fixtures/ocr-stress/spanish-clean.txt",
+    "reference_sha256": "54b4311484c064cf9af2601df8e233349cc8d4bb99289acd6fa15269bf761936"
+  },
+  {
+    "id": "danish-clean",
+    "base_id": "danish",
+    "language": "da",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/danish-clean.pdf",
+    "sha256": "80a7fb1875a554896a870cc1c7d1d8ac12a533213b4936df009458d8eb4474ce",
+    "reference": "fixtures/ocr-stress/danish-clean.txt",
+    "reference_sha256": "aaa7d513ca0c20cc17f8d598b8007a031db01da6260567d1dfd326a6a69c9714"
+  },
+  {
+    "id": "polish-clean",
+    "base_id": "polish",
+    "language": "pl",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/polish-clean.pdf",
+    "sha256": "9e4530afe0c906bb5bcecf5ce621feb0b933c44523e89ed334671f844ac97698",
+    "reference": "fixtures/ocr-stress/polish-clean.txt",
+    "reference_sha256": "f72f35c15250378e4e8b6c11384ecbdb19b7885a3eae252bb4227fe69dde372a"
+  },
+  {
+    "id": "turkish-clean",
+    "base_id": "turkish",
+    "language": "tr",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/turkish-clean.pdf",
+    "sha256": "80dbf54cb4d189d55dbaee6dbfceff9419da666a473e91c57476871e6e01f155",
+    "reference": "fixtures/ocr-stress/turkish-clean.txt",
+    "reference_sha256": "cc32c47a253f36e8ccb232bdfbd4b111fb52090fee56cb311ce5e1ef28e2f074"
+  },
+  {
+    "id": "chinese-clean",
+    "base_id": "chinese",
+    "language": "zh",
+    "variant": "clean",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/chinese-clean.pdf",
+    "sha256": "b6659fad1188ec83d7a9bed548b06d7998804e4f69cbcbadd44e5aa94588bc2f",
+    "reference": "fixtures/ocr-stress/chinese-clean.txt",
+    "reference_sha256": "58ba2ea7c11e096d7d90b543a07e5f9dab90a4d49cb7ed18ce02188e8b2d8e37"
+  },
+  {
+    "id": "ocr-test",
+    "base_id": "ocr-test",
+    "track": "external_smoke",
+    "language": "unscored",
+    "path": "docling-main/tests/data/ocr/sources/ocr_test.pdf",
+    "sha256": "73f23122e9edbdb0a115b448e03c8064a0ea8bdc21d02917ce220cf032454f31",
+    "source_url": "https://github.com/docling-project/docling/blob/main/tests/data/ocr/sources/ocr_test.pdf",
+    "reference": null,
+    "note": "Upstream scan; no independent accuracy reference; bytes identified by SHA256, excluded from source bundle."
+  },
+  {
+    "id": "sample-with-rotation-mismatch",
+    "base_id": "sample-with-rotation-mismatch",
+    "track": "external_smoke",
+    "language": "unscored",
+    "path": "docling-main/tests/data/ocr/sources/sample_with_rotation_mismatch.pdf",
+    "sha256": "ceaa5e8218ca60ff366117a66bd1b6084e02fea903223a69eb63b479c2752757",
+    "source_url": "https://github.com/docling-project/docling/blob/main/tests/data/ocr/sources/sample_with_rotation_mismatch.pdf",
+    "reference": null,
+    "note": "Upstream scan; no independent accuracy reference; bytes identified by SHA256, excluded from source bundle."
+  }
+]

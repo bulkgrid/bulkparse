@@ -1,0 +1,2557 @@
+[
+  {
+    "sha256": "00f0adaaa8358a28b4b4e83bc97dcd83a01f7283605b140c2be8e8d47bba8b6b",
+    "path": "target/opendataloader-bench/pdfs/01030000000045.pdf",
+    "text_sha256": "940772cff6b539f4f4995adde499ef543ea60907ba4561cb38b566a8623d6200"
+  },
+  {
+    "sha256": "00f3e0e71b399761739a5cc17523f1f03f5eedbb3c49a39458513c3003c83b70",
+    "path": "pdf-inspector-main/tests/fixtures/stacked_header_string_runs.pdf",
+    "text_sha256": "ef51718f61a5ce7786364dbf150f9bbba982f738b64675ac96c9b461d706a0ba"
+  },
+  {
+    "sha256": "011089f3fee63e4307703752fe581cb078484124aa4756c71f14f84439fc77c2",
+    "path": "target/independent-pdf-v2/pdfs/7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.pdf",
+    "text_sha256": "8ebd2c23523e42526b45c85a11a98b96ce8afd6b002d05373901ab3df195f584"
+  },
+  {
+    "sha256": "020d140f50e8e8332a8b2099bc306d83ecf46b851e3ee6cc03e456ccd05411bd",
+    "path": "target/opendataloader-bench/pdfs/01030000000036.pdf",
+    "text_sha256": "e6cc15aad2b9382f99817beb624c0530ebfe97a0ea6776ade3e13cf909f4ac10"
+  },
+  {
+    "sha256": "022dc4c57d995bea2317537fd91ca3b08d267f1c20469b9104e3a682e0b7dad8",
+    "path": "target/independent-inputs/external/tests/pdfs/issue-598-example.pdf",
+    "text_sha256": "f1b1710a6dffb41f0e2ae78c76f5a5ca9c11c614d3f3b2306a6e8be5dc03d002"
+  },
+  {
+    "sha256": "0247d97612e57998e5335e10e94a4096f6b11db000aa561682611c54bf92b58a",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/157-bpt_scatter_examples_3x3.pdf",
+    "text_sha256": "f26980af78cc968a01843e821a12ae14c5b637dce102c21b7ebef2f87855ecbc"
+  },
+  {
+    "sha256": "0453747468552fa164a5c18d9100084ff4f324bd74d09f7b1fb564dfce3f4adf",
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/rolling_buffer.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "04602c90ac160e4bf425400d394fd812997517a7e42d72f68f5fc6598d778d0b",
+    "path": "fixtures/ocr-stress/swedish-a-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "058daa14c4aea4676d9b8bf79dd382e127664e73da0334d8b370ed588b183ea2",
+    "path": "docling-main/tests/data/pdf/bookmark_sample.pdf",
+    "text_sha256": "de32474ab1d7113e34419fa878a527460a92955297b64cdc56fd782e2af26c5f"
+  },
+  {
+    "sha256": "0592b0a1dff0c0b4a48b4504c035336bc9b30831fa2ac2ca8ef8b43a9b5df271",
+    "path": "target/opendataloader-bench/pdfs/01030000000016.pdf",
+    "text_sha256": "e64e340b09ec87e655ca918aa32758dc6a7e1d94c26cb418bc3771ba806d18c4"
+  },
+  {
+    "sha256": "0687b8e7d87922833102a8e792d999184f73fd8ccbc147bba73ab036a28ca776",
+    "path": "target/opendataloader-bench/pdfs/01030000000059.pdf",
+    "text_sha256": "9efc10fc9ba33848dce24001f8444feb2616cd00437bd087134d0f75c9f2da2f"
+  },
+  {
+    "sha256": "071fa44ae1689a07ce7bd4cc324230f99ad69f1cd4954b13d9bdb8ac9d89ca51",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/322-bpt_scatter_examples_3x3.pdf",
+    "text_sha256": "76e5246d8d19b15cf049e87da3dbc29667550a0e8e62279bf06058c0625072af"
+  },
+  {
+    "sha256": "0830dfeb0d4f3119190a8ecfae992ec82b2881c607e181d450a100eca7e54719",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_visual_words_in_reading_order.pdf",
+    "text_sha256": "9ee5fb970b909a75f524214984cbaded4de3f2f0724a359890afd6bd1cd99a78"
+  },
+  {
+    "sha256": "0876138981f988e63d7d99b4363c17585f4f5372f8a6ca507828109f4644f9a0",
+    "path": "target/independent-pdf-v2/pdfs/c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.pdf",
+    "text_sha256": "aa4795965dd79c29e620ebdabfc987f994c5dcb60fe1e7063347ee6609288043"
+  },
+  {
+    "sha256": "0a2615899ffe7d12ee3a6f1bf7b4d9f5c9a6b37072d0b4bfd45f9a86145e8fe4",
+    "path": "docling-main/tests/data/pdf/vector_glyphs_in_figure.pdf",
+    "text_sha256": "076d96ae88bce8402f475a9478c15b5fd0fa886250ccf49f9ed9066a1625b883"
+  },
+  {
+    "sha256": "0b877b7da1eaf2472bb9ca5c9e168a1cadfd49e851c7cd5f8ff69fdcc0bd2d37",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/BQSC-1003.pdf",
+    "text_sha256": "1d35d0bbd8be966ab0f315b1462f71bc514702e14c6f7efe5e5cca7e877623fc"
+  },
+  {
+    "sha256": "0bd9bf7f193c5670d79bea2d81c123c7dc3094467ec9616245f81a148b063c77",
+    "path": "target/opendataloader-bench/pdfs/01030000000017.pdf",
+    "text_sha256": "38ffa6f736006ae6d8354bceedb45e62c9c071c39f9c4fe9bea50e17fc7ecdd7"
+  },
+  {
+    "sha256": "0c00e243f924c0b33ccb0aede1a67b433927a1519cb33bfd704e23f6724dd560",
+    "path": "target/opendataloader-bench/pdfs/01030000000004.pdf",
+    "text_sha256": "a18653db72dceda4ca1caa8fe7325221acc8c781b3eef68dfb2fb882f92d4fac"
+  },
+  {
+    "sha256": "0ce1ded16152ad18c45203c1dcba0287235b888266fbcd112396fdf7cd094fab",
+    "path": "target/opendataloader-bench/pdfs/01030000000053.pdf",
+    "text_sha256": "7e907862d7bbff0f3c16068a78d71fcabfde374a0dfb5d12f8f3ea63112b9718"
+  },
+  {
+    "sha256": "0cf2e856478f66d96690a306b55ff40c01ab24cb26d048fe248eac8e3d66e65c",
+    "path": "target/opendataloader-bench/pdfs/01030000000092.pdf",
+    "text_sha256": "5210f7096dfdb08e0d9a47047364702c13f4d9833fbd68d43449bc6baa608485"
+  },
+  {
+    "sha256": "0d4c4e8911eb53569e91f3c53a1deb5951ad138e767ef5edff79b490053fc82a",
+    "path": "target/opendataloader-bench/pdfs/01030000000159.pdf",
+    "text_sha256": "b8828bafcaa68378b8382e7705feddd88a0ad38f7da3cec42ff2164c014602b7"
+  },
+  {
+    "sha256": "0ec2813813e8e7496d97aa4fa15dd414aa66cae2d6f62db818d30d9856ff0439",
+    "path": "target/opendataloader-bench/pdfs/01030000000082.pdf",
+    "text_sha256": "b6326c8640237a3810f4000d537f0fe50a28c68c3f4497c519c809035822e085"
+  },
+  {
+    "sha256": "0f197e0531e24e9a0bcb3a5a800be7965007fc1995335a4f6997470eeee41412",
+    "path": "fixtures/ocr/ocr-prose.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "0f82b7a77edd28c4eedc79b9aed6b2bc7b0ad7776506f269b25211b26f30f03f",
+    "path": "target/independent-pdf-v2/pdfs/a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.pdf",
+    "text_sha256": "baa7e9d749b620fedd26414997fcc3b069961a844c6e831482032fa3b5e152fb"
+  },
+  {
+    "sha256": "1039bce8b948fac48b0b9a42f8266700a104aca355c3681a544d65e6b136b8d5",
+    "path": "target/opendataloader-bench/pdfs/01030000000088.pdf",
+    "text_sha256": "bc3dd7da0adbc68141904cd378f6282fb4db87630875327ec8fa089c933b102b"
+  },
+  {
+    "sha256": "10817297774a93c1838650c06b79f518db43af558496041e256bd8c259057f79",
+    "path": "target/opendataloader-bench/pdfs/01030000000014.pdf",
+    "text_sha256": "f134a28d688775282755a90bd3350c70d57ead037703d970d55e9d33671f102b"
+  },
+  {
+    "sha256": "10f75857bb705a5441260399c3fca1080262cc0c271270825caf141cf7b31770",
+    "path": "target/opendataloader-bench/pdfs/01030000000117.pdf",
+    "text_sha256": "ea38d64e73941594536cf8d351a04ad620ec1f293b202c0dd3c8e2ccdfd7ad3d"
+  },
+  {
+    "sha256": "118cb93e60d052c799e7119026c02fd68ca57362f5ac749ee58c8de8556f9393",
+    "path": "target/opendataloader-bench/pdfs/01030000000158.pdf",
+    "text_sha256": "b30410e874c99a932ed22ce0c152c2b11315a5ad06c2c49711e24bc4ee68d5ad"
+  },
+  {
+    "sha256": "12b156f795da26f2c74fb91e0c828427582d595d8bdf1d9acc695cf01e11bf10",
+    "path": "target/opendataloader-bench/pdfs/01030000000123.pdf",
+    "text_sha256": "304cf9a5f1f1e3f719bb9d5349fd16892447447e67035a8c8983d6a95e62ea00"
+  },
+  {
+    "sha256": "12e9c991f3d907593bacefdcf9a46c2cb57b7fb599e7840f438df04e416aab9d",
+    "path": "target/opendataloader-bench/pdfs/01030000000115.pdf",
+    "text_sha256": "1cc0eab57c0a0504d2fc1100d6839aa25198d29762de1461b6a7b974010f1c34"
+  },
+  {
+    "sha256": "132ada8f2242385b34d477765e4d1f9c852899ab4095386a3d8cc44a8b79988e",
+    "path": "target/independent-pdf-v2/pdfs/c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.pdf",
+    "text_sha256": "2331f2ef503a428c78ff95ec7deb617d43e05dca2005ee5b8b1dc6147b2c772a"
+  },
+  {
+    "sha256": "14e279e87615e3e3bb697729ecd97a2c5f3cd1195d9b1a2733ebfde630fea23d",
+    "path": "target/opendataloader-bench/pdfs/01030000000037.pdf",
+    "text_sha256": "a11fd2901efaa11630f05600b36d2829437da2245866ed2bbf103f672ae89b86"
+  },
+  {
+    "sha256": "15b8e9be5abbd5e650dc12d768ad2d0490e88f2765dd51539c5380c229f4e970",
+    "path": "target/independent-pdf-v2/pdfs/8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.pdf",
+    "text_sha256": "afac88f200f232540f7a38a6ec2c6f5974a467d49de6dce99ce0fa4bb2617739"
+  },
+  {
+    "sha256": "165dfeaf31832cc4547b6b638a033c1057ddb6384874c16c4574c6278856dd30",
+    "path": "target/opendataloader-bench/pdfs/01030000000162.pdf",
+    "text_sha256": "df33969a23a922d94cf7e11d81837f7ddf672e67817fe73495ee8fa12aee05c9"
+  },
+  {
+    "sha256": "16bc03112342160922798dc0b3220b260ad4ebe06deafb9ab3c67df528877717",
+    "path": "target/opendataloader-bench/pdfs/01030000000152.pdf",
+    "text_sha256": "cafa171282eb8f4ce407c3bad50844550a2ea2d9ce5bb233f2c766d4824c6461"
+  },
+  {
+    "sha256": "1719a37daecdab2814720c1d9bdd48d1cca4f6c49b0e95525e67f881dec9feb1",
+    "path": "target/independent-pdf-v2/pdfs/96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.pdf",
+    "text_sha256": "54facd567ff4ec20be13240c15a6450484a48e6ea8c5a6195a9b9d01d132a4d7"
+  },
+  {
+    "sha256": "178e8215972d89de216ba47d8f03dbecff09b513639ed3df86f781c3f2744700",
+    "path": "fixtures/ocr-stress/swedish-a-skew.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "17a5795d00e2e842f6ad6eec460c792c534eb76aeae1d90c914535e2935eb2c6",
+    "path": "fixtures/ocr-stress/swedish-b-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "185718be7bae73c13b4676b2221a66fce8861302773386059079508331a8c57f",
+    "path": "target/independent-pdf-v2/pdfs/640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.pdf",
+    "text_sha256": "232960b87b3e3872d8c2d088f6697353f2511a75a27e515cfcafe9e51c2e5bd4"
+  },
+  {
+    "sha256": "18fbe4800ce186f3338eade3d1800bde4e275396656df9781f0d84f4b6e22f0c",
+    "path": "target/opendataloader-bench/pdfs/01030000000167.pdf",
+    "text_sha256": "8784cb03e7f284e0717c1254c0ab3c6da61bd59d6d615221f087faa281ed07a0"
+  },
+  {
+    "sha256": "196876d21778214061c0d970de83cf37204a90e0f58c3da7e9f3c8c7e803b770",
+    "path": "target/opendataloader-bench/pdfs/01030000000191.pdf",
+    "text_sha256": "b795b7fb76be4780cf94e72a4af3a90e21515add8c65ed7be31fa945237cf8f9"
+  },
+  {
+    "sha256": "1a16a93a91a43aad01d9c9fc69040c4b9156ccdd995b131820eab734322b3410",
+    "path": "target/independent-inputs/synthetic/prose.pdf",
+    "text_sha256": "ccea48e56e8462b4e52aa6508f1774e53478656d6e6d42964aadd8752fa9a009"
+  },
+  {
+    "sha256": "1a489feaa4e241b777d7ace9ceb241d5999061b710cd76b1d4d5b17e87a24ecd",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_visual_words.pdf",
+    "text_sha256": "7f6e3f2dbec08b5fb65158f74bb2233924100281d515c91b07b4d53b8a672066"
+  },
+  {
+    "sha256": "1a5c949c602fb587c39618443a00915582b2d20a32f959e5d3f4f3fc99ab9db5",
+    "path": "target/opendataloader-bench/pdfs/01030000000039.pdf",
+    "text_sha256": "0131d56edc6e37e138ba33a4fad50a26a18b750e693161603de6de96c3493370"
+  },
+  {
+    "sha256": "1b731058c6c1b68ce271e23c5ecc2fbdf07827fc04c965c897241a01c81911d9",
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_270.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "1c0d070f25babee3e3b5e2a842c54258f41939a7774c0e7c6d85fb7078e1196d",
+    "path": "target/opendataloader-bench/pdfs/01030000000196.pdf",
+    "text_sha256": "4c13184c53906b82cedf71c9e276971d39ff5396692d5da7c8c205d5b239e4d0"
+  },
+  {
+    "sha256": "1c1138e79d4ec8bf1a6e7183e797be0f6bcfc90792ebb4f848e72758b55e52e5",
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/swa.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "1cf54980192667fd7a6977b301a175e98be02b11651bbf78b6cae338858db2aa",
+    "path": "target/opendataloader-bench/pdfs/01030000000089.pdf",
+    "text_sha256": "b14fdd73b8cf5562cad24e9793b07719ea23826b8347641f0481130e271f8333"
+  },
+  {
+    "sha256": "1d7a85872c1c789792589e849dba42113b96b3ab510ffa2f9f67a307dfef81bc",
+    "path": "target/independent-pdf-v2/pdfs/206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.pdf",
+    "text_sha256": "363fbe75695537fdef2f1d0ee39c2f0d6b7688a25d509ebcf4c24ef66225b6b4"
+  },
+  {
+    "sha256": "1d9e41b0dc596b8d2785788d4a71a5abc04dc434a51e458a2a5dedc8e5d39d89",
+    "path": "target/independent-pdf-v2/pdfs/61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.pdf",
+    "text_sha256": "09b50a9a322d4e00a0e0e5eaf4620f04fbf8ddf7efefb04b423f642b261b8ec1"
+  },
+  {
+    "sha256": "1e3c0fb51823a13661b39151ae24ae06ce7eb320f2f48da7e2d99bf047bea337",
+    "path": "fixtures/pdf-tables/no-header-numeric.pdf",
+    "text_sha256": "142a1e503c6f29cef1e3511440fdcd3e79ad74b974da22299ca3d4a0c69358b6"
+  },
+  {
+    "sha256": "1e59c57f65b3dafdcf87c4996214eff213b498d76dc32801da3c1b2217a5f1f7",
+    "path": "target/independent-pdf-v2/pdfs/63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.pdf",
+    "text_sha256": "86d54c77e50c4d0a948c736e47e57e86dbf2c009edbd4b0badcbd7ccd2431813"
+  },
+  {
+    "sha256": "1eced5053e2985a7db51d8c21c3c1a908e4183819d6525426457c7d3556db2bf",
+    "path": "fixtures/pdf-tables/surrounding-prose.pdf",
+    "text_sha256": "9dc1a8d43b80111a1c74bba167f100ffefc4e075a844950b8e9adb7154dc09e1"
+  },
+  {
+    "sha256": "1f051b82d968ba073f99a2f78e15e82072c9986127614e36eb8c1fa1ccb0d261",
+    "path": "target/opendataloader-bench/pdfs/01030000000106.pdf",
+    "text_sha256": "0e1e4a0d6faff12454c0540149b46d061dc967fddb818510ee206b348a6af84e"
+  },
+  {
+    "sha256": "1f0d0b33d156b073907436b74acb2b2d2afe6ff3b037ed4e5ce87300226ec195",
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_02.pdf",
+    "text_sha256": "86f24f2259b677eec55511f1d7f0c78a2b775ac97987865defad9152e80d7c22"
+  },
+  {
+    "sha256": "20c3068a37794e1e2db40c6227d57172ad308c8a81815c4c08970219586ef4ee",
+    "path": "target/opendataloader-bench/pdfs/01030000000061.pdf",
+    "text_sha256": "7a7451e37e1f7e9debaf978a1d8f76b9e4572bdb83df623c12c2b239b5a0c50e"
+  },
+  {
+    "sha256": "20d8b88cdf4ba4912f23da0895f0cbcdc01d29fa5bc7326a44bd280966cb6d30",
+    "path": "pdf-inspector-main/tests/fixtures/tnagriculture_06_12.pdf",
+    "text_sha256": "c23eaff0fe90aac2f82fc6f1915bd1fc4749e510c387850d3691e68a2d37f79f"
+  },
+  {
+    "sha256": "2183cb0d11b4e22a1fd54f2e79e9d91b280e63c24da91c4164d52a89732dd1b0",
+    "path": "target/opendataloader-bench/pdfs/01030000000125.pdf",
+    "text_sha256": "372a665d7f399c84219ea31ffad72f04016dbf0c6dfbaa01d1316d7f0b3c41e5"
+  },
+  {
+    "sha256": "224357eb3d94c891eb2d2f4157befac58ae65c6eafd6184a75c6bf8ea365bb9e",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/html_v_otsl_intro_v2.pdf",
+    "text_sha256": "1b463cfdba58c87ec87890383cc1f91dd4f17c4005c1013faf9bd3bd14302380"
+  },
+  {
+    "sha256": "22a9b858f8739cd31cbe0c46d6adf65b89246f782ece5ab9c57b27b8cae4847c",
+    "path": "pdf-inspector-main/tests/fixtures/author_block_superscripts.pdf",
+    "text_sha256": "6428c9c96211822b983d7152cfe4f67dc3cb96b64fab08c9dc3a7c443071b153"
+  },
+  {
+    "sha256": "22ae75692ddaa4277bec69f7178506a4dafbd9f11e601a0d297194e836354eb0",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/pca-comparison.pdf",
+    "text_sha256": "6a0a06208b49f293442e1c9d3a3b9b795ded6ace49e2bb90040f32f419ed0283"
+  },
+  {
+    "sha256": "22d276b33b49ec941acbc323e24fa57ed07579760f472c136f226d755a0c3b13",
+    "path": "target/opendataloader-bench/pdfs/01030000000186.pdf",
+    "text_sha256": "98a7119b98590f67fc449768fd4d4d68a18dae7b550bd873676036913d99841f"
+  },
+  {
+    "sha256": "22f4e5d348c45a3399f3c8a0e48756dd82a96ed9f5723a2a39183b554667d19a",
+    "path": "target/opendataloader-bench/pdfs/01030000000038.pdf",
+    "text_sha256": "eda3ba34638975dcbba6ebba2731e7f2ea7ec24a1de8ca569c1fd0533b35c53c"
+  },
+  {
+    "sha256": "24ab9416df440de9d792a4034e177eb71933a6eed72d4cf1ead17d22a787702f",
+    "path": "target/opendataloader-bench/pdfs/01030000000081.pdf",
+    "text_sha256": "e37901e302aa36f37b889bf4d25e1617dce7d834111e011f97e9d7e8e29f4ede"
+  },
+  {
+    "sha256": "2565be194dd1566b7b0543534d48aa04f6a57c25d51ed4c568c7311f4cee648c",
+    "path": "pdf-inspector-main/tests/fixtures/shannon-entropy-p1-2.pdf",
+    "text_sha256": "b932959b76fe2de3243dc3fe5868074170907f77a224075db3346b4e5aa2f99e"
+  },
+  {
+    "sha256": "271ced9fc5b9214f70169b17dd36dd5110376595421f12a6da2eede4061ae770",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_7-12.pdf",
+    "text_sha256": "a21a1c0681cfd0785d3a5f0a6dc5469647d5f24f8c94c7e0505cbd8a0fd6f300"
+  },
+  {
+    "sha256": "275419814c80169ba0ca779343d8cf778903225b34dd40d0d63ef119b9892f78",
+    "path": "target/opendataloader-bench/pdfs/01030000000055.pdf",
+    "text_sha256": "f9186d1e529b4890612bcceb2415ad729d4280a62912305d5f2a964498472e8c"
+  },
+  {
+    "sha256": "28034217153984a33d5c424ce3505b31ce0a67a790a1c5f3fa4a60edca596d30",
+    "path": "pdf-inspector-main/tests/fixtures/bare_name_struct.pdf",
+    "text_sha256": "bc4f9a11f1138cb655b6897fcd09215b4f90dc972e935394e17d46a5b93b655b"
+  },
+  {
+    "sha256": "286f10070b1be903eb23c297dee52da2d8f108a4c4db79e0f6b62eda54050067",
+    "path": "target/opendataloader-bench/pdfs/01030000000164.pdf",
+    "text_sha256": "2fa653e33827dda60df2b68a52af70ca9484a826d18feded50d76990f0cde6f7"
+  },
+  {
+    "sha256": "28bd76e634090e1d57eaa51bbb51b3eed75d5e3858646ce6e83a4ade51fc9680",
+    "path": "reports/independent-pdf-v2-2026-11-11/reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/holdout/native-and-scan.pdf",
+    "text_sha256": "7a162f43762d31590cb4ae6ac3a4a75ae0eed7515f081353b899f02d39066738"
+  },
+  {
+    "sha256": "29d883eb26e7b9d08250b4bab1c51092d74e310e6acfa955f8fe28f1008accf5",
+    "path": "target/opendataloader-bench/pdfs/01030000000187.pdf",
+    "text_sha256": "32bd04f975280e3467dc851671ea4bdde453b0487f74f1320c2bd5efc45c506f"
+  },
+  {
+    "sha256": "29dfa90e45920fd79e68e82f0f171119fc1b4d494aac703edf21c3ea74dd6fca",
+    "path": "target/opendataloader-bench/pdfs/01030000000044.pdf",
+    "text_sha256": "088a83b562971075ef105a3fea40a0c5e5a49da6e94c3f980225f4c794d9aea0"
+  },
+  {
+    "sha256": "2ad0df434ac3f29ff1dfd1ce8e378a2badf1bb6b9aede5d18de2945460f55c1d",
+    "path": "target/opendataloader-bench/pdfs/01030000000194.pdf",
+    "text_sha256": "32574f53cf26c5a5239969fd74fb18f6f0a00fc49e85b72b7fb5ff8c7ca8f6cc"
+  },
+  {
+    "sha256": "2adc9e7c317e240ef06ff0dd12624a2d6bff2bc806295b132a5c5e1189769fd2",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/dsv3_performance.pdf",
+    "text_sha256": "a068abda31470e3da5d989f0d0237c83262dae7c87640900eb80bd7aa1be214e"
+  },
+  {
+    "sha256": "2b12f031b9b42e6f54b76b7d4666df76b7c8410a676d63b0ad2afdb40388d623",
+    "path": "target/opendataloader-bench/pdfs/01030000000195.pdf",
+    "text_sha256": "8e088dcea7feda6cf1682321381fd7dc4ab7836c10a12ee0f0623024399345f2"
+  },
+  {
+    "sha256": "2bc220dfeed673f84b74c53248a4c4ef8ee5c01d1591188c2b770519de94e82d",
+    "path": "target/opendataloader-bench/pdfs/01030000000023.pdf",
+    "text_sha256": "1b5f327baab3e6c4be7bb58b1f6a4456e59a2e1fd929324a572c830bcb3a33dc"
+  },
+  {
+    "sha256": "2bec8dacdd842a2e6f62fd9bf555e5b278cf9237fb1de2593bd515046bb71279",
+    "path": "docling-main/tests/data/pdf_password/sources/2206.01062_pg3.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "2c2e4776ace1c0f26e8f3411273a08cbcb9fa441909467b4cf42187728b3d090",
+    "path": "pdf-inspector-main/tests/fixtures/ligature_glyph_names.pdf",
+    "text_sha256": "52a21309faff3b7fd787c9451fe4c772ef86f5ff1f41d59067d485e07ab44186"
+  },
+  {
+    "sha256": "2c47fab68ba1f76d3d7f0c2b39794d60534f11385922cac06600c300865e3beb",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/dualpipe.pdf",
+    "text_sha256": "33b096a52ed617e0ac3baba15a1a55bc1af552da0c26ef3ffc5b1d7bc01e452f"
+  },
+  {
+    "sha256": "2cd17a32ee330a239e19c915738df0c27e8ec3635a60a7e16e2a0cf3868d4af3",
+    "path": "target/opendataloader-bench/pdfs/01030000000103.pdf",
+    "text_sha256": "71a36a0c201aaaeb6393cedf7ac62278b66ba13f30f74c9588f5a650311bdf13"
+  },
+  {
+    "sha256": "2e349d8616b9ab74860a0a679d2d7b958cb8c1728e6dfa7e267c6f1ee73ef8ec",
+    "path": "target/independent-pdf-v2/pdfs/783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.pdf",
+    "text_sha256": "74d243f812c9a058cc53f6c15962633761248eb7a7cee793c84243a2a74bf384"
+  },
+  {
+    "sha256": "2e4f2561d8624cab6140564d53aed11862cf5979572fc3d1205af105486e0b1f",
+    "path": "target/opendataloader-bench/pdfs/01030000000166.pdf",
+    "text_sha256": "73c971c4c5a8b867100487721b1dd046c6bf7aeb8483918318285bacafe83b8b"
+  },
+  {
+    "sha256": "2f6bc92861997d1434c069040dc63447c3e415e8e9eadbd1a8129ba2327ddba5",
+    "path": "docling-main/tests/data/pdf/sources/redp5110_sampled.pdf",
+    "text_sha256": "e513bf222900e845561a776ab7b89a3717cdd70f7b578a969260e3aa2b54c056"
+  },
+  {
+    "sha256": "2f972daaa81cb3949db12a39cf6910c4f9952135f7eb3850e1f60ef7d8b5aaf9",
+    "path": "target/opendataloader-bench/pdfs/01030000000189.pdf",
+    "text_sha256": "a781090bfdce06abb576b0716ca880ba810874712034cd805723ef5c78c42a28"
+  },
+  {
+    "sha256": "2fd524178510079b3618bd62ef2f0db3ff4e5f967afe578924c336d74e031f70",
+    "path": "target/opendataloader-bench/pdfs/01030000000007.pdf",
+    "text_sha256": "367bf8798c762bea400ba106d40b7f79cf85e2abb16ea69fa30a35009f0fd22d"
+  },
+  {
+    "sha256": "30628cf0d5ec4d1d9dd94853d0711fdf496cbaa199fcab19f6fd4a4ddd34965d",
+    "path": "target/opendataloader-bench/pdfs/01030000000067.pdf",
+    "text_sha256": "ef9db9baa4e86ecf4a12eff9f9abd490987533a3f75632b84415765e4ef3a245"
+  },
+  {
+    "sha256": "30d675db2a5c9613f2b12cb03e74c8f9384f473274216ee6a271cf0c99301f14",
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_01.pdf",
+    "text_sha256": "b21db7571006abc8ff6b65b9d80b79d555b0d1d6e18498545d5e07ee9af13657"
+  },
+  {
+    "sha256": "317f8e045ec0a67a272bcfd0d38e33f6aaf1110d0a57a26faa739dbdc4bc09bb",
+    "path": "target/independent-inputs/external/tests/pdfs/issue-912.pdf",
+    "text_sha256": "0d5a89668f9d57e3ac28eb2b53bfcdfa821881297c095ca488958e091a9ae9c1"
+  },
+  {
+    "sha256": "31e7fbfc5b038d471b2fc82b248c4807152284bc35d6d5bd036c0aaa42504f17",
+    "path": "target/opendataloader-bench/pdfs/01030000000048.pdf",
+    "text_sha256": "a208f0bc497a4b4eb9bf612b206183083aa493986829b26265a1b64c11844e81"
+  },
+  {
+    "sha256": "321a42833cde040a5e4525c5f84ca2e7df18ee57649c9b47a0e5472e1357abb6",
+    "path": "target/opendataloader-bench/pdfs/01030000000018.pdf",
+    "text_sha256": "e47f7ce1136a218613ed92a45810ffdaf132214f4d257d2402b2b47f25a62f71"
+  },
+  {
+    "sha256": "32398c8e13acf26f1de76c730eaf6f57742037357a0eb25338b1fd7a5b816bf1",
+    "path": "target/opendataloader-bench/pdfs/01030000000068.pdf",
+    "text_sha256": "ca95cf3828ed334a5e53bb543c396276fa9505ccff437890407f26e50d5a2370"
+  },
+  {
+    "sha256": "32b723d3d51157dd3e96717aff7efc3d13c5c6c942668b1fbce46bcbe8d94354",
+    "path": "target/opendataloader-bench/pdfs/01030000000131.pdf",
+    "text_sha256": "c40768795dbd1607d10cd242710bb5468ccf5f6c583793c7b4dc23aa28bdcda5"
+  },
+  {
+    "sha256": "34022e18e3dd073eb11b70a482c33837061d4b8e73c8e3d3867b7947248ead22",
+    "path": "target/independent-pdf-v2/pdfs/489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.pdf",
+    "text_sha256": "3a931e23c115d840160cf0d4bbf6d5715e09fc03bb840358756319e17fa179fe"
+  },
+  {
+    "sha256": "34844c72a756da9fdbe68905eefcb52a39970026ccf0a699295a99df337f5d8a",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_invisible_logical_words.pdf",
+    "text_sha256": "b276e198325601e8136dd1ecbfda5659a469e7a96bd1b2d3ef80c3bd42386d64"
+  },
+  {
+    "sha256": "348bff737da27234885d263b9983064513fc33b1ff2ce858171e58f88c954c1a",
+    "path": "target/opendataloader-bench/pdfs/01030000000022.pdf",
+    "text_sha256": "8f0b37d699d715559dc45cacfd6fd2e95e020134bb3b076f68b1158add5d9823"
+  },
+  {
+    "sha256": "35de7489051443f2c888286ce5790d39b27e6924e15851eaee603b0ca0fbc0af",
+    "path": "target/independent-pdf-v2/pdfs/1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.pdf",
+    "text_sha256": "dd30b789aa8126f45bc30a71d783e7ffc73805d484aeb211340b0fa31c984ea5"
+  },
+  {
+    "sha256": "35ef7b6f51f3e27584c634667ed5ad35178341354f170fae87822cfa291d4023",
+    "path": "target/independent-pdf-v2/pdfs/2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.pdf",
+    "text_sha256": "196fe730341c0c1ed72b215529a0033470fa17c658e5c753ca13a82bcdd154b5"
+  },
+  {
+    "sha256": "37b2674a918c0c0782194d45b011f7c9ffca19ccc245545fb5e35027e7c67a9d",
+    "path": "target/opendataloader-bench/pdfs/01030000000169.pdf",
+    "text_sha256": "3514205092fef0190f23e6ff25a669dfe6c5016355ca6f7a714bae45c3a8588f"
+  },
+  {
+    "sha256": "3820767f7b9c8a80d20916daa8664afee49421c4bc6d6efb70bb21ae5f9a7195",
+    "path": "target/independent-inputs/external/tests/pdfs/nics-background-checks-2015-11-rotated.pdf",
+    "text_sha256": "8ed537d360a81a491eb0a83c978d8c12683abd5c7633adb9e6b5ec02b1a4ae48"
+  },
+  {
+    "sha256": "39a0d95abd6dc977dfc7986b57fbbd9a8331af6b5b603e023f41dfcbc67003c7",
+    "path": "target/opendataloader-bench/pdfs/01030000000084.pdf",
+    "text_sha256": "620e8bacef5d39556c35f291bd715b2f4a4851c6b6b4b144966a17132625facd"
+  },
+  {
+    "sha256": "39aec6caead187513fa9e2a26a3bbb54ba0a3a4ae8e879642ca1584330b0c285",
+    "path": "target/opendataloader-bench/pdfs/01030000000118.pdf",
+    "text_sha256": "239fd2c610d7c94ed9f2414184c1b26694fd8ccf77e6475b8c9558428b40fb83"
+  },
+  {
+    "sha256": "39d7fab939f52c2e88a0f51d6ae7ae5e83ece0576f6ec00860fef325ca6e6c5e",
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_90.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "39e9d5e5876c0fc833fdc01e84019a0f5d2f74a203cf99070d359ac20603de45",
+    "path": "target/independent-inputs/external/tests/pdfs/issue-1147-example.pdf",
+    "text_sha256": "a7157d1724ce25eeeb34ced304b45e0c1293ff09d2c1c0ddce2ddf9e49d02d46"
+  },
+  {
+    "sha256": "39f32d6a01b8e434ad2fb16ff3896931153cdf4f85bca09194b71e1514711355",
+    "path": "pdf-inspector-main/tests/fixtures/wireless_dense_no_rects.pdf",
+    "text_sha256": "b16134fd7d47047d91b4ebd433586dfdd80238f0ab1cd831c883b48b28007ee2"
+  },
+  {
+    "sha256": "3a19bde1363cf76dcb81d9800d28ead0e7085a340eed161a8942c901e10b1793",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_mixed_direction.pdf",
+    "text_sha256": "c60f8f6fff222e1c39fdccb2aa3094f9d462598f8bd6d5a0cf2920c4306bca1e"
+  },
+  {
+    "sha256": "3b10e813590fb9c9f54883151a2dd4b4ccb407becc54fd516a82972dc261630b",
+    "path": "target/opendataloader-bench/pdfs/01030000000176.pdf",
+    "text_sha256": "f7e24f0c3fc250f898d2420bbc1ea8fe46c890f40b41918874a2b664a5cf92fa"
+  },
+  {
+    "sha256": "3cb1bd59a1c2b323d3f30ea9b1d8587ef9d36924b710a612ed2bd0560a94224a",
+    "path": "docling-main/tests/data/odf/sources/text_document_03.odt.pdf",
+    "text_sha256": "45d624721508961c42e02eb5924a473b20771d5b697f99029e00d94890404063"
+  },
+  {
+    "sha256": "3cc8da158da98e9b4e7b3c8ba7d1a74afc558fb6afc7ac8eadbe74afb4e7b14c",
+    "path": "target/opendataloader-bench/pdfs/01030000000156.pdf",
+    "text_sha256": "fe0a2b83f08d9ca19b86dcda98cf6b6922d7728fc604ed8ddf7ebf4d8fee0415"
+  },
+  {
+    "sha256": "3e05f55f70f41c95c742f19bdc731f072194d5d2f52a355630eb4930686e3dfe",
+    "path": "pdf-inspector-main/tests/fixtures/td9264.pdf",
+    "text_sha256": "d666338f39a59df8dbea77b4f2955d7bbaca4427c3df2721fcf76ca01ec353f7"
+  },
+  {
+    "sha256": "3e5b086e7392fbe139a3c42dbcf1442d95c4d0d97a5671e15cbeee2191e59747",
+    "path": "target/opendataloader-bench/pdfs/01030000000108.pdf",
+    "text_sha256": "46c9ab032402b6099f327f83a7dd1625e66937655a1278119fe440e767b44829"
+  },
+  {
+    "sha256": "41a3c7e12fd2bb3d61903e526debde1b01fcdb29103577bb6a97ffbb5b74e68e",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/basic_arch.pdf",
+    "text_sha256": "5ee269afedd32727848d31c81d5a6fef02f9fdda217a6ac58d11370dc3cb128a"
+  },
+  {
+    "sha256": "42a416ed4de970abf9cc8ed74dbc543df8d7cc6ed24547189c0e8c77e5fed1d5",
+    "path": "target/opendataloader-bench/pdfs/01030000000069.pdf",
+    "text_sha256": "3ca0148235d804e95a30a0316e36af5d301207168b373619f08f23ee043a9688"
+  },
+  {
+    "sha256": "43725982fe76bf6e308a001ad81cab4781e803e1d8574e9896be7cfdf2fa8732",
+    "path": "target/opendataloader-bench/pdfs/01030000000019.pdf",
+    "text_sha256": "877a29e15da83b713b09ccf5e66966dbc77c601a7e3617402349de4e65f78f62"
+  },
+  {
+    "sha256": "4533259d2f0e05bbbe5893d62af639c578d6e16c5077759a4645fae829a55d89",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/making_more_difficult5_new.pdf",
+    "text_sha256": "f15c8a8e2d644e86f7fd3a4612aea17e488a37a08f08bee95115957d88c5c162"
+  },
+  {
+    "sha256": "4590c7c046c2ffe1fe0bd6fa848390a3a604516f523b2bd40eaec7c3b32dbe8e",
+    "path": "pdf-inspector-main/tests/fixtures/encrypted-secret123.pdf",
+    "text_sha256": "f9796f10051646d52c962c89fde70b27fbcf561d9a8bdf45a5661cc7ba111833"
+  },
+  {
+    "sha256": "459d4e6b66040151165a65adf9848f2a0626358c1b58352fc82988f10e495357",
+    "path": "target/independent-pdf-v2/pdfs/e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "462529434b77fc469f72c781c14663f8a787e4785af189268f5aeac71e823aba",
+    "path": "target/opendataloader-bench/pdfs/01030000000109.pdf",
+    "text_sha256": "af1c6ae4d1ca7200ae5b32b6f2fab3a4e6a1669133ddbdf2105ef455c5de0021"
+  },
+  {
+    "sha256": "4682941b1a9a3ec96599d8188b673e8c6d1c4f2a555b5dc0d739c6c706815553",
+    "path": "pdf-inspector-main/tests/fixtures/government_positions_women.pdf",
+    "text_sha256": "553708dcc97d51cb4780e423569e0088a2197cd55ff28b0cecd2739e7c70ef2f"
+  },
+  {
+    "sha256": "46ffbb251fbefd6f0b0e7410f504a3b0370f7f5c98f374b10cd1907fb400ee65",
+    "path": "target/independent-inputs/external/tests/pdfs/figure_structure.pdf",
+    "text_sha256": "d2e2ac475a490b2b91339ffc1de421732d41c510314541268052cd43d73e4a16"
+  },
+  {
+    "sha256": "475c037beeba4ba75b3e749b51f3781a67e8e8f9db6a31772f7bf2ed2bd05d00",
+    "path": "target/opendataloader-bench/pdfs/01030000000091.pdf",
+    "text_sha256": "6962284c368588a8631c6b08042e7dde078a2fceb58aa1968ad1bd407d05df93"
+  },
+  {
+    "sha256": "47647ae29b930dfd2d20c537d34746d1df23df3603e90654cd24fa5df74fe4a6",
+    "path": "target/independent-pdf-v2/pdfs/4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.pdf",
+    "text_sha256": "dfac56a2963012436630fd7458351d44bfc2d05f7a7b870191666b6e5a034383"
+  },
+  {
+    "sha256": "492b01ecb194ab3d6d23d40ecf66b20ef7e49afe2b51c584b73e011c9932968c",
+    "path": "fixtures/pdf-tables/two-separated-tables.pdf",
+    "text_sha256": "8e071013190b13495eb942333c6248503918537e74868b9b73aabab6b33eedab"
+  },
+  {
+    "sha256": "4936e1fb227b0ce75a334084052c7f5d895f9fca954e9b2b80a0bae5d3711f29",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi.pdf",
+    "text_sha256": "8c9cdf080843dc8d354f15cf0a936578b49362b27ad31df3765c43ec181a1a4e"
+  },
+  {
+    "sha256": "49dd8a75806506ff55d57b20d8d39e801caf71e56ed52a09eb1729055c5f0d2a",
+    "path": "target/independent-pdf-v2/pdfs/b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.pdf",
+    "text_sha256": "bf6405271137a7fac0cebb0e9832c50cf0db56af2283e1d1865e99cf40d01522"
+  },
+  {
+    "sha256": "4a23b09904c5fbb871fcf792e30b87c4b7cae0cdd0079b5ee0e3e34a353638b7",
+    "path": "target/opendataloader-bench/pdfs/01030000000172.pdf",
+    "text_sha256": "62d1922ab1b260e46b98896db354e409ffe96c62d45f76256a5f28ab01b47ef3"
+  },
+  {
+    "sha256": "4a6baa0f883743ec25b853bae06a49d230ec010c973501945d46a16f9bb75aa9",
+    "path": "target/opendataloader-bench/pdfs/01030000000134.pdf",
+    "text_sha256": "631cb015f2641e6702c6c95e6c5e90554e8fdbd5afc498838b541d79c0ea614b"
+  },
+  {
+    "sha256": "4ab90294f8afa67e460ad84b7292de7b2c3a9d02bc4b67f1ede07a5e5df6d94a",
+    "path": "docling-main/tests/data/pdf/text_with_vector_rule.pdf",
+    "text_sha256": "e95f3ce3e96cd83edd9b9c48b2312acad32b1901501fa310f9cc54bf63548268"
+  },
+  {
+    "sha256": "4b2666400d10ffed958b17ba6fc8b72a0526f1f346d130198afc2ba142537502",
+    "path": "target/opendataloader-bench/pdfs/01030000000020.pdf",
+    "text_sha256": "3cd45a95ced0458f1656d2c1f6a8d572747c3fc6f789001d892872fd5f20a7f2"
+  },
+  {
+    "sha256": "4b2b8c7cd1fb0f55cad529cd4f0c50eac1b918710cb896aaf30033810bf7a080",
+    "path": "target/independent-pdf-v2/pdfs/1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.pdf",
+    "text_sha256": "69a22fa1148a98e2fc4a4c299266964fbfa1c5d110e73567aa0b408272a44293"
+  },
+  {
+    "sha256": "4b5f23f97fd273cacb8de95fc1799ed4dc4d5c15e9ed86d707cdf4be53eb7c7c",
+    "path": "target/opendataloader-bench/pdfs/01030000000180.pdf",
+    "text_sha256": "20ebc4de3dbbcfffe7fccd9e4f58bb1e2a3acadfc7661d6e7efb2643c04fe748"
+  },
+  {
+    "sha256": "4b667a2eb374a8566044a6c90f5641fb0aa4a7f2127350296f2a038b59c00208",
+    "path": "target/opendataloader-bench/pdfs/01030000000107.pdf",
+    "text_sha256": "fe971837816b5dcfba4070997f45901d7934d3eb51d34befbda46eaed479df05"
+  },
+  {
+    "sha256": "4ba951e3da05a42523676d164548037c97a09984433bd37bf71b1f2a7acfd598",
+    "path": "target/opendataloader-bench/pdfs/01030000000153.pdf",
+    "text_sha256": "d0905c4126105b6fda5df0dcae644ece5490f24c3e5b0316526c1a88e301e686"
+  },
+  {
+    "sha256": "4c8f779a89fd348e058a875f9182d6b3070199531adaa187bc3a602b5f746df3",
+    "path": "target/opendataloader-bench/pdfs/01030000000057.pdf",
+    "text_sha256": "5bf6472d792d209e838fc46fe2a7bc78bb0ce9a79c782836ca482d4f75d27859"
+  },
+  {
+    "sha256": "4d4bf58bf1563cdfb71b2e1272e95c33d01625a9627694fafdf0c69b50816ea5",
+    "path": "target/opendataloader-bench/pdfs/01030000000010.pdf",
+    "text_sha256": "84128a64377d3595ac841bff768a8b3a531f97fca68855062b51b648f892056e"
+  },
+  {
+    "sha256": "4d5b682effaf9580928a7073980e3916687d168238bc96b6c17222f747eacde6",
+    "path": "target/opendataloader-bench/pdfs/01030000000170.pdf",
+    "text_sha256": "f0cc8ef19b2c0907e5d0e3f870cd24221970bf7f84a24534f4113fb16854b385"
+  },
+  {
+    "sha256": "4f0ae6e017b0e97de211da8fd97316e55bd927af5740d6ce95e1b7b1539f9407",
+    "path": "target/independent-inputs/external/tests/pdfs/nics-background-checks-2015-11.pdf",
+    "text_sha256": "8ed537d360a81a491eb0a83c978d8c12683abd5c7633adb9e6b5ec02b1a4ae48"
+  },
+  {
+    "sha256": "4f6d9c52848acf2346013388db8ef25c40e6e2fd1232c49f2abfa7a21f65c82c",
+    "path": "target/opendataloader-bench/pdfs/01030000000086.pdf",
+    "text_sha256": "e249636108e1ca75b5995e731a4736a4d8fabc19a6419f080ff1f751532573f6"
+  },
+  {
+    "sha256": "4fa78681d827d49459f4d8aacc864a7c98af50a0cff272fc50e5076f28c53488",
+    "path": "docling-main/tests/data/odf/sources/odf_presentation_02.odp.pdf",
+    "text_sha256": "c33c1ac8acb0936c7804334fd026ee16ef2376ff6433653ca6b5b2bcd8babbc7"
+  },
+  {
+    "sha256": "4fa8dff93d74a84069210c84a38d14d62a39ec8f4e4c90bf955fdebdebcf6636",
+    "path": "docling-main/tests/data/pdf/sources/2203.01017v2.pdf",
+    "text_sha256": "138e871fbf17e9d5c035e3f8c45676f018dc42246978a31f11effbcd8bf6ad7a"
+  },
+  {
+    "sha256": "4fe68010b0a2de9456b6bd490eb12df6a0d72c1037a052943e2162a011b5a049",
+    "path": "docling-main/tests/data/odf/sources/text_document_02.odt.pdf",
+    "text_sha256": "d9c3c73a574d4c9f17ead7c40d0054aaffdb1b4bdc5c9abda45ae1848a44f8c9"
+  },
+  {
+    "sha256": "505f450a4b19e333c3ed58f96e65a2a0fcd259f740fe4cdc992f35290a24b041",
+    "path": "pdf-inspector-main/tests/fixtures/vector_outlined_text_with_caption.pdf",
+    "text_sha256": "82ffb4c193c382e76df4707fad555f733dd5d908537de80e6766601737bd77f4"
+  },
+  {
+    "sha256": "50781b42a3992817e5270c0d34d94a7dc5ea3f6e86e2f43fcbbcb8b1499a4a77",
+    "path": "pdf-inspector-main/tests/fixtures/symbol_builtin_encoding.pdf",
+    "text_sha256": "e4bb4da9fae4c208f23d139b1205f62c609787fc32a3c47c0a72730f7625baff"
+  },
+  {
+    "sha256": "512a6e53e0a6661cb6bb77da54c354496ca75723048e2411ac5d1796a18cda8f",
+    "path": "target/opendataloader-bench/pdfs/01030000000154.pdf",
+    "text_sha256": "9674e1914b557d9f0bde4ee574d0f14effeec121b0adbf7b753e14665b220ae5"
+  },
+  {
+    "sha256": "5179e446711cbe5535f394ec85fb83d4f25c56b7d180d0c3ce97878843afe59e",
+    "path": "target/opendataloader-bench/pdfs/01030000000060.pdf",
+    "text_sha256": "0593ded506e51b9f9ce779f736aacd9fabd58cfd100baf5dae080c0cc9bed482"
+  },
+  {
+    "sha256": "5181fc444ebb1a605a26b8a2912c2c2677e9dd2a8561a365e555ed802863c323",
+    "path": "fixtures/ocr-stress/english-low-resolution.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "519d4e8d7dde865ea5a9bfb7328c23b286299c1752365f0ce7c724a0ebb8a491",
+    "path": "docling-main/tests/data/pdf/sources/elsevier-00.pdf",
+    "text_sha256": "ca5e8ce28a10dfd6e141bb5304a96bf96035852f6f83390afddb14ba91a958ec"
+  },
+  {
+    "sha256": "522d157e2958889f7d6392348059499bdcb1fca172fcb3b4807e48880304a922",
+    "path": "target/independent-pdf-v2/pdfs/f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.pdf",
+    "text_sha256": "7bb398a1268aa4909f94d7e6366fb9279d8e6db4360d807200232993187ba8ac"
+  },
+  {
+    "sha256": "538ec7e4dc3e62dd3a2920a5d81bfd6547d3d21381b546010530c986698ae960",
+    "path": "target/independent-pdf-v2/pdfs/7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.pdf",
+    "text_sha256": "cea8a905294af4832b5f4906d2d6ebadbe35237c57c3ddd243bb47cd16f7718a"
+  },
+  {
+    "sha256": "539f2bad10bc9de31293cb787cc87a9af4bca11c9040c1b62324db997e8a1e11",
+    "path": "target/ocr/stress-generation/swedish-a.pdf",
+    "text_sha256": "f31ca6d896e30d4cb9a27274a518c81450365cae9c16c4719948bae713fe72d5"
+  },
+  {
+    "sha256": "5400452918f7a4fc4cdf895084c5f419ff5c80dd0d591cc8d3dd01b4794af1fb",
+    "path": "docling-main/tests/data/odf/sources/odf_presentation_01.odp.pdf",
+    "text_sha256": "6b129cc1b3743ef648bce862efd157c653c7dd92de82562f4d56a3283a2653be"
+  },
+  {
+    "sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e",
+    "path": "fixtures/ocr-stress/swedish-a-noise.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "548470c2f0cf279f23beba96ad8c3c3d6b990ab85388486fc9ebd22cddff1a86",
+    "path": "target/independent-pdf-v2/pdfs/08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.pdf",
+    "text_sha256": "4575c2fc83a5a69694426db18a007c27f71820c5f41fd09d76df171afb1cacc5"
+  },
+  {
+    "sha256": "54f70eba37eddc8a529fcb090d690185698ea98d3bd6a9a55ebace7ffb0042e8",
+    "path": "target/opendataloader-bench/pdfs/01030000000129.pdf",
+    "text_sha256": "db9aafbd926455a433d220c43cd4d1bcd6c0e73bf4879f8358ddda46dab07db0"
+  },
+  {
+    "sha256": "5699486e354a93df094404bae0cd17381bfab180f9ab2b5c9f55428c07a106c5",
+    "path": "target/opendataloader-bench/pdfs/01030000000056.pdf",
+    "text_sha256": "44ee5a02472ac0c07ac5a25cad55ce35117d9ca2727bfc61f3e022d385f49c80"
+  },
+  {
+    "sha256": "5720994bd81f002a6f1ec75529410237641ad027465febfeb4e027e7660e23e0",
+    "path": "target/ocr/stress-generation/spanish.pdf",
+    "text_sha256": "3218479476a7b9b10dca0c4c6435c69406b9224e47904a6e4df06c3a13f79cb5"
+  },
+  {
+    "sha256": "577bcdea27883ade22eee16363ed1ab41fe13caa0ca7bedf3e3741f1362ba24d",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_1-6.pdf",
+    "text_sha256": "6169691d64778f8b0af0eb3ad773d655bad98fc48a764bab593bc50bac99347b"
+  },
+  {
+    "sha256": "59fdaf39878586b3156fac274e073d07ec8f2307ceaab729483238dd08f8b495",
+    "path": "target/independent-pdf-v2/pdfs/72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.pdf",
+    "text_sha256": "82450e06a1f108af84e31dd3303448602743b04cb1a68fee50407dc99a6072b9"
+  },
+  {
+    "sha256": "5affc079426150227c247f8f45db8e207c64a15a4024e6f66bad67a95c43443f",
+    "path": "target/independent-pdf-v2/pdfs/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.pdf",
+    "text_sha256": "2e4b275d9d904ba0557b5f67cad7387f246fb48f6e47dca15ab0fedbbff94c77"
+  },
+  {
+    "sha256": "5b3e6b76f9bfebff088b3d6ddbb69233b411d8e789ffc827be0718a9a11a8738",
+    "path": "pdf-inspector-main/tests/fixtures/thermo-freon12.pdf",
+    "text_sha256": "c2d72040a1a0d4c7cc78d65c61c84b4437d2c0cf6dd392c8eaf8fcf99a2b6caf"
+  },
+  {
+    "sha256": "5c8fbb9a3eb7a645e2db3cef2ad2c59c301b23c5e32bb069d1eefe2fa046b8fd",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/equations.pdf",
+    "text_sha256": "c772cb895b70dc19dcec94c6446b7d4fdd06637ecbbcce30210481922e07f63b"
+  },
+  {
+    "sha256": "5cba8e49a880e4f6d1c1fba64f03b3d638fe26cfc00d77fddeb450334c8e0667",
+    "path": "target/opendataloader-bench/pdfs/01030000000035.pdf",
+    "text_sha256": "c9638abbf14dc66f2d864a98c0e904efed7348d1fb6eec5bbf789c124baca81b"
+  },
+  {
+    "sha256": "5d089e42c7c614828adb0ec78abd0c87d078aa01b79789d79aecea6411ff53e8",
+    "path": "target/opendataloader-bench/pdfs/01030000000002.pdf",
+    "text_sha256": "9a98c8e255f8010eba8a35c30191f49ffdec22d5e19eea5e99aeb1996a5285e5"
+  },
+  {
+    "sha256": "5dfbd8c115a15fd3396b68409124cfee29fc8efac7b5c846634ff924e635e0dc",
+    "path": "docling-main/tests/data/pdf/sources/2206.01062.pdf",
+    "text_sha256": "6edc8feb47dcfa9f0bf9932ef3f2fa8621a762c4c97a8a3a5bf8abfff2486e0e"
+  },
+  {
+    "sha256": "5e612719cff9ea5ab877d0ce6c1fae44f0b70ee15d4157e9231e6a5d5d7de906",
+    "path": "docling-main/tests/data/ocr/sources/ocr_test_rotated_180.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "603d71e12f52d9801a9d82995babf69681d923f493b8d49abfbab8662a88b376",
+    "path": "pdf-inspector-main/tests/fixtures/wireless_two_col_no_rects.pdf",
+    "text_sha256": "d35dcb84009299c336b58a76d5527dff8614cf9d4e5f3f7ca1fe5c1d74b3ceb2"
+  },
+  {
+    "sha256": "60f73a051b7ca35bfec44734b2eed7736cb5c0b7f728beb7b97ade6c5e44849b",
+    "path": "target/competitors/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/zlib-rs-0.6.8/src/deflate/test-data/paper-100k.pdf",
+    "error": "PDFKit exit -5"
+  },
+  {
+    "sha256": "61070c2fe64a690c7c9cc97d12b76380e7a134feda3c5315f779306699a89a1b",
+    "path": "target/opendataloader-bench/pdfs/01030000000188.pdf",
+    "text_sha256": "4598b522d84e1c15d75803e9b58088cf1026746ba1fedf10596bd25e8466a4af"
+  },
+  {
+    "sha256": "6182c54724e702a8ed0936580d2096ab8b372a599589e731c66bd40ba5c252c0",
+    "path": "target/opendataloader-bench/pdfs/01030000000097.pdf",
+    "text_sha256": "dece5d4747e84fb8601b8d4811db269e0522e2bd6ac12e646f53bb88da855c87"
+  },
+  {
+    "sha256": "6191582bbb5f531e0fdb3f128b32360160e7bb8d66f2f198c29689cb2bfd4d3e",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-128accumulatorv4.pdf",
+    "text_sha256": "74d3fdef2e78330ad2f5e7935e81b5990d24bf4b5d6581b03875c843dae0e7cd"
+  },
+  {
+    "sha256": "624181d79946ac7f00883213e7dcb5c8b64b248db4283a3e41d7519cc1f199e9",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/17-bpt_scatter_examples_3x3.pdf",
+    "text_sha256": "db847dc40f780cb3bae655ce92327be78d1d729bbef7b2adca929f711c81f9ba"
+  },
+  {
+    "sha256": "62c4b0340519f5963a37534d3abeb0546766cb53bc90504f663eb7cc321a6a6d",
+    "path": "target/opendataloader-bench/pdfs/01030000000178.pdf",
+    "text_sha256": "34269a0d9a21b7051725f85184251e67d1fe4911c5630ef2ce51ca52dcf77adc"
+  },
+  {
+    "sha256": "62f2a2163d768d5b125a207967797aefa6c9cc113de8bb5c725c582595dd0c1d",
+    "path": "docling-main/tests/data/pdf/sources/2305.03393v1.pdf",
+    "text_sha256": "38613237ca60987d6c1e9995745bcfa031d77389094d0748585a0262b9d4a1fd"
+  },
+  {
+    "sha256": "63111d8ed6b32c2b3473840ace01896244527d3dc306d81410a3cc7d87a45226",
+    "path": "target/opendataloader-bench/pdfs/01030000000079.pdf",
+    "text_sha256": "6cba136ea1d8d63e10d4fa49fec87eb8a9d7cbc764f19d34d687e8b7fbf500b1"
+  },
+  {
+    "sha256": "63c849bc5a6a3e452e4ff06b823288c4b138cde24e7dc5ca57eb19b3c00635e9",
+    "path": "docling-main/tests/data/pdf/sources/skipped_2pages.pdf",
+    "text_sha256": "78baae53c2661a2b1790caa5b69737ded15a83f7b68db132d88c7e721fe3b940"
+  },
+  {
+    "sha256": "63f6e14af97ad11ea0642b79a5250ee03ca2773da03b03264669d224c00c876e",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/m_q.pdf",
+    "text_sha256": "8ef95ecd187c6c0482d6a8a282ee65633e9a9864633578efa900eae15a5710ce"
+  },
+  {
+    "sha256": "646f014ab615ac22266a43be2691010032d9fd62368737d488ffcb912cd68fd2",
+    "path": "pdf-inspector-main/tests/fixtures/upstage_key_functions.pdf",
+    "text_sha256": "b4807081fc1a69b37d3ecb251109385d186f6d6b90de84771e8b69f28f431e54"
+  },
+  {
+    "sha256": "64f31210764923368012a82e8741b32b217654d91f54fc9e0a13be613d63bbc1",
+    "path": "target/opendataloader-bench/pdfs/01030000000144.pdf",
+    "text_sha256": "7b094a6661fec18c9dcd1b43992241e2653d1248db1bcd4d4af57ca9aa9d2f5d"
+  },
+  {
+    "sha256": "65257441224f50d7c89dcc311c6f6b3b5bdef3cd18d96f7813062afce81b0867",
+    "path": "fixtures/ocr-stress/english-skew.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "6572d153a938b50167baca0e724b25a02adb927d3c6adb9f1985484b7b1791b6",
+    "path": "target/opendataloader-bench/pdfs/01030000000148.pdf",
+    "text_sha256": "d3036ecdf400570bf2a6613fb394fa10e7b77e4dcd37b09110b3b044394555dd"
+  },
+  {
+    "sha256": "658d30fe83391cb1b763b29121a7314ad14b73ebb71bf02d72e1d7336b01a30d",
+    "path": "fixtures/pdf-tables/border-only-ambiguous.pdf",
+    "text_sha256": "f7b6131d776a2905ad28626ece3970910be98d953c2856fef42944b97fc0ed4f"
+  },
+  {
+    "sha256": "65be3f78649d4ee59fa39b9d2b94a44570e52ddbf31cb7213f92853bc23ceb16",
+    "path": "target/opendataloader-bench/pdfs/01030000000032.pdf",
+    "text_sha256": "00b5b523c23af330783f1ef9df80893eab4639ce2739ca808c1a03884844b4f2"
+  },
+  {
+    "sha256": "664180ef6c4941409b241f63473ae917e0333d4a48a903329b13b389be4b919b",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_hebrew_glyph_by_glyph.pdf",
+    "text_sha256": "2a12227fbced0e12c78db53622d306e88c6a24b617aba4936a6f358894630a78"
+  },
+  {
+    "sha256": "66c1d3c3d52df005397d2b458d43a0c2a5c1a2ba8ab8db4ed5a20ee07d7fe090",
+    "path": "target/opendataloader-bench/pdfs/01030000000161.pdf",
+    "text_sha256": "699fd7aba6525c48ee110dc26215d3a296595c3f39116919542de55b3163001b"
+  },
+  {
+    "sha256": "67e83141e7a6f992bf72f2bd2564a717be5479080e698e063ce1b78a17064577",
+    "path": "target/independent-inputs/synthetic/narrow-gutter.pdf",
+    "text_sha256": "8f8db134db713b4d88e145590e67d2e8d465441f855d7a537bb1d1c4773cf88b"
+  },
+  {
+    "sha256": "6916893bac49ba4fefa0a83eaf039b73c4adf00ed81ef97d4aad8f1a5cb90994",
+    "path": "target/opendataloader-bench/pdfs/01030000000120.pdf",
+    "text_sha256": "14ef5e5c24f65e3f6a8a476735e58f1e3669cbf37c08ea2227e5dbc5f9fa6dd7"
+  },
+  {
+    "sha256": "692b47134c24297615391375c448924b984caa015d99ab5d240321c2747e04d2",
+    "path": "target/independent-pdf-v2/pdfs/1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.pdf",
+    "text_sha256": "9e55f1786592b8c2184032b42fd1648ed06ebb66f1ab0759dc261024f26bd255"
+  },
+  {
+    "sha256": "6b773e8a3c72b64364ad3e93359caf716d8a371975649020bd74b6c443313227",
+    "path": "target/independent-pdf-v2/pdfs/4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.pdf",
+    "text_sha256": "8590e68081ebb646d83d437000cd2de8e81ae288d3251e9c53ae601752add103"
+  },
+  {
+    "sha256": "6cb63fba2ad42dd0e0afe6a26dcf3b3bff5a86919c4c06157c71c65ebc0fc9e6",
+    "path": "docling-main/tests/data/pdf/sources/code_and_formula.pdf",
+    "text_sha256": "6a9431e579564c005ebcf6c8e9109f1cb7f6822edf27aad728c1e494d0a63a7b"
+  },
+  {
+    "sha256": "6d5a00597cdd1d363b56eb0fdc9f239a462b44fcb0be53a93d62f0d6e35d428f",
+    "path": "target/opendataloader-bench/pdfs/01030000000076.pdf",
+    "text_sha256": "6ecb033a47a7128a1422abeffdc00edb344e0d6c3d8a0be36ad65d9512d05259"
+  },
+  {
+    "sha256": "6d75205fad1b58b6d6273ec1b4631e725e8459148fd8a0ec5e133270177bdf61",
+    "path": "target/independent-pdf-v2/pdfs/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.pdf",
+    "text_sha256": "7380450ec4bc0924cbcd031b7c2e0bfac01f9d431fa4c763c7841b7d8328dbe2"
+  },
+  {
+    "sha256": "6dd9646dbde7863e0a303ad007a0b39d919a7cdef3fcacf5ac446cd6afffd01e",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/overlap.pdf",
+    "text_sha256": "21ab11df0856c225d65b86a96ef2990354a237f68cb4b281c77cf1d792fb220c"
+  },
+  {
+    "sha256": "6e577f740c297ec25387de530e6b58400d24fcd4392571e939720966067409fb",
+    "path": "target/independent-pdf-v2/pdfs/6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.pdf",
+    "text_sha256": "8be4c2b399f2d6e00d5398674ef55d30e0672bf554d48311b68ce049caf98348"
+  },
+  {
+    "sha256": "6ee817c5af9c3f84aea0c920d01dd096efa31eef3fec8fc6628447793ef92d1c",
+    "path": "pdf-inspector-main/tests/fixtures/cropbox_offset_origin.pdf",
+    "text_sha256": "833f80d3d1489e6c2b5d77e9e10b503f179e96447aa81569b200301dd68cc438"
+  },
+  {
+    "sha256": "7026e92d1ea428e71c7ad0ca0d0c0271eb1ee3c4fd03497df752d254306adba6",
+    "path": "docling-main/tests/data/pdf/text_with_vector_glyphs.pdf",
+    "text_sha256": "1e9ba76f333cf4c5ce6a50f4d0848cb38a1d7947641b15b70225cd983104bfe2"
+  },
+  {
+    "sha256": "7087e0df66ae179d61334648a23395d0421f65da620bfafe74faf899ecea7205",
+    "path": "pdf-inspector-main/tests/fixtures/multiline_indent_cell_rect_grid.pdf",
+    "text_sha256": "f0400222d2049f9409366defd430f4089e24b747d7f9680d4427e89976892ca8"
+  },
+  {
+    "sha256": "7099fe05ade36067cf66e72b23277972a1a2b7d2da1cb82c8d690efd70143fe0",
+    "path": "docling-main/tests/data/pdf/sources/amt_handbook_sample.pdf",
+    "text_sha256": "db9432e8b6e3e0b6fd31a92e1c782bb7500136850660dfb06fc56caea0d4cbfa"
+  },
+  {
+    "sha256": "70e5f99d3dea638e1974c29f91a8fc394fa1d7862e9205044f339f911c69d6b3",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/attending_to_head2_new.pdf",
+    "text_sha256": "a2290063bc93888763e4699fd96f84049028c06f0f863e85edaec68440f531ae"
+  },
+  {
+    "sha256": "729585d45aa9bd9aa36b542303f91653102e94fad7fcfef9f0908ae9400fe30c",
+    "path": "pdf-inspector-main/tests/fixtures/bits_pilani_feedback.pdf",
+    "text_sha256": "d5842f283378c19fee86d0d2e816d727f3a485e6fc6c96e74676486bbcb6a0ba"
+  },
+  {
+    "sha256": "72b0cd8b21b5193771565923034cd67319ff67d005ea9c99f34fca0cdaff55a3",
+    "path": "target/independent-pdf-v2/pdfs/d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.pdf",
+    "text_sha256": "6d104205513d906531d5b4faf8ccd64a9c530eda98ce85b5f689c33765b96700"
+  },
+  {
+    "sha256": "7337e4267970818c55692f371d1fbaeb18a6dbc2d2d58739a07df94a4e3b7999",
+    "path": "target/independent-inputs/external/tests/pdfs/issue-463-example.pdf",
+    "text_sha256": "2f982e97acba29af36faa5b54bedae6392e86409da2ea261134de56af740ab06"
+  },
+  {
+    "sha256": "733825a2a8367b6d61ceccd19b6781c3520730c0fff34ab4c2e8411f625f34be",
+    "path": "target/opendataloader-bench/pdfs/01030000000133.pdf",
+    "text_sha256": "ab0d1c8b6f7e09e77d94c237e0635718242408dd5e247ce929526510df78dcdd"
+  },
+  {
+    "sha256": "73f23122e9edbdb0a115b448e03c8064a0ea8bdc21d02917ce220cf032454f31",
+    "path": "docling-main/tests/data/ocr/sources/ocr_test.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "747e0d37d78ca840e89dd820e032b90a350809453bdf96c7359204b4a324e933",
+    "path": "target/opendataloader-bench/pdfs/01030000000139.pdf",
+    "text_sha256": "0a56c4e1cf4372191e4c6958e1b23b955dfdf79d232d284bca97be84c8be826c"
+  },
+  {
+    "sha256": "749c2d0aeabc30c749d813201e05dcb01c4d01b2585101b7445a9bca2f4cb238",
+    "path": "target/independent-pdf-v2/pdfs/88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.pdf",
+    "text_sha256": "e0153e43236cc567d3d03333ef1805f7c3871e5c54d331b95d7da93c74851037"
+  },
+  {
+    "sha256": "74ff96ffe2a7979d9ca8188eeb0017b4707ef7d7fd44c32e97780e6dcab3f38c",
+    "path": "target/independent-inputs/synthetic/quarter-turn.pdf",
+    "text_sha256": "64ef6e81e59cae6811eb989214ea4ef3b020296fd47754d1e1706380b6abce17"
+  },
+  {
+    "sha256": "750091cec2c31ca61ffaa40c282148258f40bf5db7356a7ed3f918a07c81ef0f",
+    "path": "target/opendataloader-bench/pdfs/01030000000149.pdf",
+    "text_sha256": "816a2c98c28a61c73090c781d78ecb144e25f43baf46e526754859eade16748d"
+  },
+  {
+    "sha256": "75924095655ced91b940738a6d05ef2c12d4901e15375a59f2aac2f02f3b3f3e",
+    "path": "pdf-inspector-main/tests/fixtures/hebrew_visual_order.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "75f8797e8dd3c4ac15710b8fd08b99b1ab89f5fbd55ee95df9e167c1c2aa7562",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_13-18.pdf",
+    "text_sha256": "ba9b542dd905efeb4de3613961a1be80f4d12d887c6405f2db74095cb0fd9ff2"
+  },
+  {
+    "sha256": "76313f269e897aba02f0191f2e4582fe5080925e2bcc9a93f974496d5dff3f4b",
+    "path": "docling-main/tests/data/odf/sources/odf_table_with_title_01.ods.pdf",
+    "text_sha256": "b42317a310443b62a1f17aee6def1d129386b8397c32d776a2a0ab5e8472da51"
+  },
+  {
+    "sha256": "764990d134c06378c3f496bfae33215c8ff57a0d306cc984e6429a6ed48257df",
+    "path": "target/opendataloader-bench/pdfs/01030000000145.pdf",
+    "text_sha256": "fc38bd5eb0b664bf62bc28721388300db2413a5adee4310d463138a3f1c95eac"
+  },
+  {
+    "sha256": "7675bb9557d6e1e663237098f37aaecb61ab411b71034c2d397487ed0deb2ecd",
+    "path": "target/opendataloader-bench/pdfs/01030000000100.pdf",
+    "text_sha256": "fd3f4fe178eebfd69b18d5b5b185463ce1ade42af08ea6f52f7a4c6aaebd5246"
+  },
+  {
+    "sha256": "770c9434a3530bfb67ef32510b63e1da347dfd6c51e5db9e0b13e90c8b287895",
+    "path": "target/opendataloader-bench/pdfs/01030000000122.pdf",
+    "text_sha256": "08c578aff152d0730cded4baf23f1a6cea516851742a1acd7dff7bbf1ff766b6"
+  },
+  {
+    "sha256": "771caa3e8ec1bce887caac49940cab3c5b06a8a42ce120daa1999c30204aab33",
+    "path": "target/opendataloader-bench/pdfs/01030000000040.pdf",
+    "text_sha256": "3832089dd354285fc07887ad5cce9d8e045381d32b012bf9233c28c4dea79583"
+  },
+  {
+    "sha256": "78698056c30504beba802bc806711c307553d8b8aa39a6d8ff8388aafdc3953a",
+    "path": "target/opendataloader-bench/pdfs/01030000000138.pdf",
+    "text_sha256": "82dadebe453929b330f0ec36ce90c3bdf5eeb48134afd460c1336332287cd91c"
+  },
+  {
+    "sha256": "78d2b3e7ba14f3d506340ed6c37abe1e1db8a916d1487c1d8322f07b41080b81",
+    "path": "docling-main/tests/data/odf/sources/text_document_01.odt.pdf",
+    "text_sha256": "7a9979de8af49dd5961e9f1e2c204934c218505fc79c1a96095dc10110f865b8"
+  },
+  {
+    "sha256": "7a0dc2cafa8fc77f28d78c90092a4cd31670dcf0ccfe8474a2765148448f44d7",
+    "path": "target/opendataloader-bench/pdfs/01030000000171.pdf",
+    "text_sha256": "224679c0000216d78fe77b9d41004b9fcf67e14ff3f4b1df92e4a6ce8c3455d4"
+  },
+  {
+    "sha256": "7abbca82ea23276bbd534ca90a667ede80429690d2f06ae0e83459f75c42670f",
+    "path": "target/opendataloader-bench/pdfs/01030000000112.pdf",
+    "text_sha256": "6870f9e1aad609316c854ee925f9d6c663d60b00f7f0aa014df0fb54a8376ad3"
+  },
+  {
+    "sha256": "7b5eed13e646f8f24a12c4b78c9cdfc60749d2a9e262350882f8647ccc1d6742",
+    "path": "docling-main/tests/data/latex/sources/2310.06825/images/chunking.pdf",
+    "text_sha256": "db30f81d0244d98c04f3a3ea92786167eeff09171e36aefa88e90d0df75fb76a"
+  },
+  {
+    "sha256": "7d1fd0932634cffa80bf9fb1bd73a6871f82a2cb29b4d7bcfb689927bc5d84e7",
+    "path": "anydoc-main/tests/fixtures/pdf/text.pdf",
+    "text_sha256": "c9eda0c5e0aae2c37ef14220f3afbfac958ad51d92839e1b90ee6891958eec75"
+  },
+  {
+    "sha256": "7da69da6235222ed65e243be3fc092f20454bab557f6fcfdd8380564c2f42b28",
+    "path": "target/ocr/stress-generation/turkish.pdf",
+    "text_sha256": "fb07cf26838f844ae23a17042fe3c4f8f0cd9ff31b7886f7f03584376d8bd61e"
+  },
+  {
+    "sha256": "7e8e895d8b1d97676bbddf4274fe83b0c17ce1f3238078d0d705392ef81256ff",
+    "path": "docling-main/tests/data/pdf/sources/table_misidentified_as_form.pdf",
+    "text_sha256": "c43bb8e8d0b19717ab741e46824f642e54bcad03cdefd390e582d1fee342f60c"
+  },
+  {
+    "sha256": "7f652a1a002514731d0d5d8f57c5763e2ff7db07b9aac8677ca0c98363133a19",
+    "path": "target/independent-inputs/synthetic/columns-2.pdf",
+    "text_sha256": "2603c5ec70e7b7159c075ee3274c994c64271f751380557dd66a6cd9d48907b9"
+  },
+  {
+    "sha256": "80a7fb1875a554896a870cc1c7d1d8ac12a533213b4936df009458d8eb4474ce",
+    "path": "fixtures/ocr-stress/danish-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "80dbf54cb4d189d55dbaee6dbfceff9419da666a473e91c57476871e6e01f155",
+    "path": "fixtures/ocr-stress/turkish-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "827288488d4497fc02adc18313c6bffe9d43c2e73256b0330ce4d33da9ba57dc",
+    "path": "docling-main/tests/data/pdf/sources/skipped_1page.pdf",
+    "text_sha256": "2c5433e972725a8c36faedeed378e6deb7158a736465ef86d86c39a0a13ffd76"
+  },
+  {
+    "sha256": "827d21de372a2c26237ee1db526460851ae71c1867761776583535f532432e32",
+    "path": "target/opendataloader-bench/pdfs/01030000000141.pdf",
+    "text_sha256": "bcbb334534a54302f1a56aac39685582d4059cd47a13bddfd7fa5a7ff7456a7d"
+  },
+  {
+    "sha256": "82fa4b019a46d0220975080ff19d24df09728a1efc8781bee3bfa5621e72fa7b",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_q.pdf",
+    "text_sha256": "e621a653dbb061fc475f1348e9997efd261f371dccc954ccf6751c987d47d63b"
+  },
+  {
+    "sha256": "832c7a0e6e9d710e9eeb1a06e3fd5303aa473b8a63104fe65edaa35cc3db29f9",
+    "path": "target/independent-pdf-v2/pdfs/ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.pdf",
+    "text_sha256": "262ca332014bd22fbfd97d1c88a4a8efbb838298521a88fe8d5ec652e80e4b18"
+  },
+  {
+    "sha256": "8389346761d247e60e5a35a2372604ec24cd92a0464d912355468e694bf11f78",
+    "path": "fixtures/ocr-stress/english-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "84b3637f6a175acc3cbdac9a3dd41d853ec53083cb4c74138d3de8a5f52c103f",
+    "path": "target/independent-inputs/synthetic/columns-3.pdf",
+    "text_sha256": "223e972deb095a5b138f55651ed6e600bbbc3242121b7dcd9ae469f3ec95dd9b"
+  },
+  {
+    "sha256": "851f660c7df487d97f3f2b485176421ae43ff1b36a5dc5161327a185f8619383",
+    "path": "docling-main/tests/data/pdf/script_position.pdf",
+    "text_sha256": "e6b2b0dc9bbc31de68c6fac42296c5c331f5017845608345c49ded94ffd27631"
+  },
+  {
+    "sha256": "85ba04ef261067df3c133342bf5b39b8af2f42f52ad82799021c454863c61535",
+    "path": "pdf-inspector-main/tests/fixtures/shinagawa_identity_h.pdf",
+    "text_sha256": "894410e472817f5754e9335f2e6cd4a7a91e8af6f7f1f19539f33e9b14ac3fc0"
+  },
+  {
+    "sha256": "85c42ba0cc882f8a11215a56c9c7ddb388d8a02df48fe5956422a3851ff10afb",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_19-24.pdf",
+    "text_sha256": "e6738ee18057e64bb64e8ed25444a48c2aa7cde99952aae14512901e3ca0da35"
+  },
+  {
+    "sha256": "85ce99d1f5e9e0661f3cda228e68c36ac7b735b3c78caef8165c906074c6e7ab",
+    "path": "target/opendataloader-bench/pdfs/01030000000173.pdf",
+    "text_sha256": "594869223406084c1259c73edc4beddd6c936c48959d871e984f0335b6e8d257"
+  },
+  {
+    "sha256": "867027fae5c24f41e557636fd42ac34225f1ba3ff9d55480da9b8de0c5f89d20",
+    "path": "target/independent-pdf-v2/pdfs/507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.pdf",
+    "text_sha256": "a64b45e55fac9718415e1b70f57389665ceb2cb90c90670f5c3ea9a451738548"
+  },
+  {
+    "sha256": "872d56afecf02a9a4ff4ec021e4347ead2b7f227e9299ff85fee4e3c4993788e",
+    "path": "target/opendataloader-bench/pdfs/01030000000102.pdf",
+    "text_sha256": "a67b9c300bc3665ee41e1d66b6fa87f2fbf2c4b5faefa96d40d4fe5b22ef8c16"
+  },
+  {
+    "sha256": "87375ede8cdaa0219a3f0428316536acf65d75270aef1b563cb464f49bbb445f",
+    "path": "pdf-inspector-main/tests/fixtures/rotated_margin_stamp.pdf",
+    "text_sha256": "83afb05b9ef9fda578b2ffbac426bf578473005db4ca5f2cd6b842d25b91b75a"
+  },
+  {
+    "sha256": "87c424c0833734a4d2dff996a20b686c0cc252f3231fe067fbcffaf2d90723de",
+    "path": "target/independent-inputs/external/tests/pdfs/issue-1054-example.pdf",
+    "text_sha256": "be94d51e4ec9c9bf35a4a07870d5bb1321ba0b36fe953a04df530ae4127e5529"
+  },
+  {
+    "sha256": "884649d2f7322be8f2bb39c4f4ad1151b6363f8e418893247946d85f82ec2084",
+    "path": "target/independent-pdf-v2/pdfs/5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.pdf",
+    "text_sha256": "93b9176dd754d712e80cec17bae4ae91a70152b285db0e64fc3fa5f86cd9360a"
+  },
+  {
+    "sha256": "8880db860d4de8c99dd9656efa0cbaa45cf56bbb5c7cdbb90754f547ddab3ccf",
+    "path": "target/independent-pdf-v2/pdfs/095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.pdf",
+    "text_sha256": "6a390f305c4d04414349832ec7b9b5a185dedc47473e24a80ff96283c7cee9d2"
+  },
+  {
+    "sha256": "88d3bb74216b48c0a84e2a703ecccbdc185d0aa7abec2306e8f3ef3a3973c2d0",
+    "path": "fixtures/ocr-stress/english-noise.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "89dd2bd8e3520fc8500504aaffb48287ec19e77357066e5423470fb51988a99b",
+    "path": "pdf-inspector-main/tests/fixtures/rtl_arabic_presentation_forms.pdf",
+    "text_sha256": "f3aed9d7e588835787dacadb50e5588d2e849bdd07d8971cd1f54975ec9f0ec3"
+  },
+  {
+    "sha256": "8a34a64068cf98ef4d15ae79ed3d441c43fe3b0ded361c4521737b788586bf60",
+    "path": "docling-main/tests/data/pdf/vector_glyphs_merged_fill.pdf",
+    "text_sha256": "38f314f5d9900fe7ef40ef7ddc88bc3825ee1e59ac1a277bb34e58be74e38c4c"
+  },
+  {
+    "sha256": "8a87099365535d996d3167c933ff78e2890f96e70d4a8e2291d0c420fe7093ba",
+    "path": "target/opendataloader-bench/pdfs/01030000000071.pdf",
+    "text_sha256": "2c71603cdd04f0da09c6d8c6121f1bb25757f08e5f68c461c584f4223f12f898"
+  },
+  {
+    "sha256": "8b58c2400d1fb74907227e26a8b5eadd44e13f7c600e21cb0e84e003bfbca2c6",
+    "path": "target/independent-pdf-v2/pdfs/17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.pdf",
+    "text_sha256": "93636f2c5ffcca8a2687d65ca6873edac626d00d3355d7270e5498185c959ec7"
+  },
+  {
+    "sha256": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b",
+    "path": "pdf-inspector-main/tests/fixtures/shifted_cipher_tounicode.pdf",
+    "text_sha256": "33c9957a25f9916e3c3a5cfa1fe1c553c6acedb14a2683e3afa1413923384c62"
+  },
+  {
+    "sha256": "8ba56d03ae8c2ee3d2cb7922a2c274858970024a093594dd216513af1c4dc568",
+    "path": "pdf-inspector-main/tests/fixtures/accessory_building_permit_prose_frame.pdf",
+    "text_sha256": "6e887b305be614a43b1a3d5fc8d13ed2af8ce1e989b0ed4ebf0a71adf5e26e90"
+  },
+  {
+    "sha256": "8bfb767df3506b4bd76b31e8823f59714c7abfc2a34ab11018e66fa2d9b5ed29",
+    "path": "target/opendataloader-bench/pdfs/01030000000199.pdf",
+    "text_sha256": "b8986721f8d2ef2bc87986fd04d3d6f4f92f976212e20377fe63d7a77d3cd37b"
+  },
+  {
+    "sha256": "8cfcbba6c953185e59b1edf5dfab0d36df31ef74a32548308deca21a8a96e615",
+    "path": "target/opendataloader-bench/pdfs/01030000000021.pdf",
+    "text_sha256": "a4c8070566283bb55c53eeb34ad93c53a9881271667488c288f2b0f2889a103a"
+  },
+  {
+    "sha256": "8d09961d139152e2bbe65e06bd7237b707dad351bd2ebc6fcbc3123f9ecd5086",
+    "path": "target/opendataloader-bench/pdfs/01030000000198.pdf",
+    "text_sha256": "ed6907254b5f600c0bd6012a6ac9acb4270a41ffcba9355a7159466a9e8bba7b"
+  },
+  {
+    "sha256": "8d672deb624199c462e83e1ba087febfdcde696253298d18f4291ecc673ec0d4",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/D-BQSC-0004-1003.pdf",
+    "text_sha256": "aafaf1104485f3ce6f35fae41e006fce75091d4034fb837c85313dc85d958075"
+  },
+  {
+    "sha256": "8d94411be8080289a9cde89a79564cb536c26472bebd7c6289d115c5339c9cda",
+    "path": "target/independent-inputs/synthetic/font-subsets.pdf",
+    "text_sha256": "a93d8b1fcbe1a08ae7197772a541f6f8d7f2375ec056a924e38eed623c3ea904"
+  },
+  {
+    "sha256": "906d54a21ef3c7bfac03f4bb613b0c79ef32fdf81b362450c79e98a96f88708a",
+    "path": "target/opendataloader-bench/pdfs/01030000000008.pdf",
+    "text_sha256": "537a24056201c920ce2bcdeac7de4d1e9b7f85d389b19422e5e69aef16f88791"
+  },
+  {
+    "sha256": "921fa863a5a4aba7b3de2be031cf32d5e03ce80c562d5aed6987a72f80091dfe",
+    "path": "pdf-inspector-main/tests/fixtures/p1244-1996.pdf",
+    "text_sha256": "63eba9c88401341164ec6a7e596d1f6874a1fcdf78a3917851bf709f67e9c825"
+  },
+  {
+    "sha256": "9252e971c090520f02fb3577d6467d72a9e494b672a689b592728f80f7dbfdb6",
+    "path": "target/independent-pdf-v2/pdfs/ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.pdf",
+    "text_sha256": "b9ba126a42bdec33494ce55736807fcc5753565dee0afa146daa1a95789ec0c6"
+  },
+  {
+    "sha256": "92ba5d5f6f6e627a3e9ddc00bcdd31b9c2c047e0461fff6c8fa08894a68b72da",
+    "path": "target/opendataloader-bench/pdfs/01030000000181.pdf",
+    "text_sha256": "41dd7d35478aa41b1a5cff07b059395af03b102a4e5a869e05c25e9e104897c8"
+  },
+  {
+    "sha256": "934fbf534914863f6431eef38f5bf66fa91afd439ddf20fb1af0cf3225159ac1",
+    "path": "target/opendataloader-bench/pdfs/01030000000047.pdf",
+    "text_sha256": "016764bbd0aea93ebab179787fce45f8601c7b2b189f93607f73fff9b6019489"
+  },
+  {
+    "sha256": "93bc667fb64454b9df1688b9873ed8fbf3f548d58c81ec0ca3d9cc50e79fb667",
+    "path": "target/opendataloader-bench/pdfs/01030000000015.pdf",
+    "text_sha256": "808041aa7442cccb2df130ffd2ab29b038fbf3d7a2498c7256027dfbf1bd8f09"
+  },
+  {
+    "sha256": "93ce1e59ab01c6352a98eca26b4a356b1e46e923cd60ea7145a458a3fbb5fd41",
+    "path": "target/opendataloader-bench/pdfs/01030000000027.pdf",
+    "text_sha256": "097cb634799ed9d1bec6a87c5013a0814dcb043fb911e9840f34fb38cf02e3da"
+  },
+  {
+    "sha256": "9426018280fc486f7ba7f30be3ad67907365b3f5f54e5291b75f60f5145a4d67",
+    "path": "target/independent-pdf-v2/pdfs/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.pdf",
+    "text_sha256": "b7b49576f5014fbd9e5cb89952f0a2d480aa4129b0c6766e74bdeda7a4fcd4b5"
+  },
+  {
+    "sha256": "94a4c4ffc473fbd6666be05528ffd5472feffea597a3dc7058b4f4082409d631",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/138-bpt_scatter_examples_3x3.pdf",
+    "text_sha256": "eaddbddffc148e55ff2a42e1923d36a48082d5026a5e11ae0212590a27b87a79"
+  },
+  {
+    "sha256": "94ba5468fcb6277721947697048846dc0d0551296be3b45f5918ab857d21dcc7",
+    "path": "target/opendataloader-bench/pdfs/01030000000175.pdf",
+    "text_sha256": "56e4183571779cb0853212f09ca1de9a72d7b1c9af3b5c48f1d074d6cc879170"
+  },
+  {
+    "sha256": "956846c28f9ed9d3b5cbe071865c082bd415f56e3e299c479aeea1f615eefa61",
+    "path": "docling-main/tests/data/pdf/sources/multi_page.pdf",
+    "text_sha256": "f0cc7c6948330c802c469eded6776da570611fb11e7fbc8015049f63583b31e2"
+  },
+  {
+    "sha256": "95f808815969717e4ef6390b2b789a8ea552a000a2b936c3c9371f695a71bd9e",
+    "path": "target/opendataloader-bench/pdfs/01030000000130.pdf",
+    "text_sha256": "13ff1a408ac95adf12447688bc0cd224effe24899cdff1fdf33e1065c81e4843"
+  },
+  {
+    "sha256": "970804c04c81dd9cc3ba80f0063b9551d290e83934c4e2c258e376845b3d180f",
+    "path": "target/opendataloader-bench/pdfs/01030000000083.pdf",
+    "text_sha256": "eca3061e7252717d446689bb2b64e9c2c16902131716a171f893499ffbccacfe"
+  },
+  {
+    "sha256": "9713894c940f2ad16f015d857757b003e4ecaaa1602afa72799c08526806f533",
+    "path": "target/opendataloader-bench/pdfs/01030000000006.pdf",
+    "text_sha256": "1da72799a77e0f2e62baf7885fa513d79171a228cc8bc5f1712ebc625cc87a29"
+  },
+  {
+    "sha256": "9720f5990852942d3d2e0c84e6dfb1db5c528f3811b1fce9d320e8fe55219b78",
+    "path": "target/opendataloader-bench/pdfs/01030000000026.pdf",
+    "text_sha256": "c79a953a61b5dc91c447b91d32b98b5ac3319ae512ea7a030cd0f998ce50d7db"
+  },
+  {
+    "sha256": "97d60e0c292030da220648b4ce7e8971adbe29731b7077d9c3c8d7c6dd778e42",
+    "path": "target/opendataloader-bench/pdfs/01030000000050.pdf",
+    "text_sha256": "9bd89f930487ce68fc357e4dae1a374eb9e9cfebcea65a6b8ac6582d2955e779"
+  },
+  {
+    "sha256": "9877e33f447b370ad098531c25e340b9e786d1e84f4ac7365bab9c6746b57247",
+    "path": "target/opendataloader-bench/pdfs/01030000000093.pdf",
+    "text_sha256": "84e0c663d1093b9fcb2b3f5a00ca094546a3da19aef958b49823013101316fcd"
+  },
+  {
+    "sha256": "9899a637992e35363176c7b7aca0633879da307327f5c434122856c639a6e9f1",
+    "path": "target/opendataloader-bench/pdfs/01030000000070.pdf",
+    "text_sha256": "8d983013e2829d62aa59a38861c20beec6e26fc2386e085ebf00698668ebc0a3"
+  },
+  {
+    "sha256": "99199a6ab7aff04e417c953ce0b87f56b1d9fc6a91d891b2c74720778ac3a95a",
+    "path": "target/opendataloader-bench/pdfs/01030000000043.pdf",
+    "text_sha256": "967464bc56dbc7e88ef5e59339ff05b6fa14d6dc6845fa70d376c213e326cf7f"
+  },
+  {
+    "sha256": "99e0024b1019aee2c012d5ce1b75d4499a9ea8acf0d5ab22675f21f046cdc085",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/making_more_difficult_new.pdf",
+    "text_sha256": "d07d2e0b8fd475d7de162ffde7c421e52c8fcb71fdb868541c5cb8b08a296969"
+  },
+  {
+    "sha256": "9aae5aa80d0ada0a9a0c1306993e96dcbdbec4cdf48766f56955cf8d3d8c46a4",
+    "path": "target/opendataloader-bench/pdfs/01030000000063.pdf",
+    "text_sha256": "ff9cf88214edddab2488c0f781c3f76eb5380aa72a40023812a32b519051acd8"
+  },
+  {
+    "sha256": "9c897807c023cf6c34295d03cccb262ed0cbef83bef63d4908ab6d3775b15597",
+    "path": "target/opendataloader-bench/pdfs/01030000000030.pdf",
+    "text_sha256": "4df70da1c5abdc68dbf32e4b92e1f3f38779bfd57bd2d2d0182d623111daf9bc"
+  },
+  {
+    "sha256": "9cc7cd4da5baa9273bbbf489bcf17675740267e34f8d90ed970f290468ccdf81",
+    "path": "reports/independent-pdf-v2-2026-11-11/reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/holdout/scan-only.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "9cf8b251ade155b16a934f21613da51198d8b59fb13baf1e6c19c11b43f4077a",
+    "path": "pdf-inspector-main/tests/fixtures/firecrawl_docs_tagged.pdf",
+    "text_sha256": "bad181966e6b9cad5ca80032c1ff99d06484ec9788210fdacbcb88b99d141a78"
+  },
+  {
+    "sha256": "9e22636736c43765307cbc5e876b0a18e340b52c909fc36043cefb38a7a11638",
+    "path": "target/opendataloader-bench/pdfs/01030000000009.pdf",
+    "text_sha256": "a9ede4c1d4a8f29f03c36f857a616b6d66324b2ec0fd8895377f0bf4b5a111e1"
+  },
+  {
+    "sha256": "9e2573f33a46a8bec5f9e38224fea96d18b59edfbb83e212d6e09ded76351ec8",
+    "path": "target/ocr/stress-generation/chinese.pdf",
+    "text_sha256": "f439aaeaeb9e90750e2ecdbccf35988c98499a831f68f221582d09f48ccc73c0"
+  },
+  {
+    "sha256": "9e4530afe0c906bb5bcecf5ce621feb0b933c44523e89ed334671f844ac97698",
+    "path": "fixtures/ocr-stress/polish-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "9e7f871e7ba17980e66ca233bd892b1940670fec6441cda9416ad80b747228f7",
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v2/broken.pdf",
+    "error": "PDFKit exit -5"
+  },
+  {
+    "sha256": "a012af9597cad209a43dc6a6a4543994e857a56fac9fdd3eed92a5e1b93f79b2",
+    "path": "target/opendataloader-bench/pdfs/01030000000077.pdf",
+    "text_sha256": "28d94aaee566001595c060faff7cf1439887995c3ad358fa38988de80dffceb7"
+  },
+  {
+    "sha256": "a07f5c34601ba2c234d898cbfaa9e29a7045996ccd82ccab3012516220a1f3a4",
+    "path": "docling-main/tests/data/pdf/sources/2305.03393v1-pg9.pdf",
+    "text_sha256": "af4d1195ffb622154edc4615d495a26577d6e39bef5580cb6c770e8e0ca10609"
+  },
+  {
+    "sha256": "a0d1ed0063db208ccad7ebd54cf549987deaf8f53948d95c3755f6b515925ce7",
+    "path": "docling-main/tests/data/pdf/sources/table_mislabeled_as_picture.pdf",
+    "text_sha256": "f330a390c6896bcfdae46f300c8a1e57d16c6ab9aca25f223cd40295c30e2cc7"
+  },
+  {
+    "sha256": "a0edae1fa147c7bb78ebc493743a68ba4372b5ead31f2a2b146c35119462379e",
+    "path": "pdf-inspector-main/tests/fixtures/forecast_table_chart.pdf",
+    "text_sha256": "df87a934a58fb789664e65dca2ad325344fe5d5b47432072dffe36ac5f822173"
+  },
+  {
+    "sha256": "a14ebf0077dbbb76dd91f3d7d0b66b66b4ab62260846cc75fb466b85a4a762b4",
+    "path": "target/opendataloader-bench/pdfs/01030000000042.pdf",
+    "text_sha256": "651017a468c4c6f4bd733d65a319b69c29840f62effd134c3ef8ea36259c8e7e"
+  },
+  {
+    "sha256": "a24a2d4ed5bc5e9aa585d4d29ea5b66737ea96bcaa84756d1b183e7c0ad77e91",
+    "path": "target/opendataloader-bench/pdfs/01030000000075.pdf",
+    "text_sha256": "27922dfea55a2f6c37390f19b5bc59068811d6bfb8a224b1bb11543da5123101"
+  },
+  {
+    "sha256": "a266dd4ddaff135dc5b1ce3d960d4b29cfc96bee5f30f3fb879a0b730c57e6f7",
+    "path": "target/opendataloader-bench/pdfs/01030000000013.pdf",
+    "text_sha256": "bea56ad6dafe84a222ec1361ecae649584eac4cd37146bfc2142338960fd389a"
+  },
+  {
+    "sha256": "a2c3eb98f92be8ad5a0173fdfe2166e3a2d7e6168d6d31ea77e7251c2beb287d",
+    "path": "target/ocr/stress-generation/english.pdf",
+    "text_sha256": "749d35699ea18bf78e0badb723fa6d543f700529a778df5fd10f1cb1aa6fda9c"
+  },
+  {
+    "sha256": "a46e40b2b04dc83e4014fca656dae6df20af1fe7a420df306406409ea8c0db31",
+    "path": "target/opendataloader-bench/pdfs/01030000000150.pdf",
+    "text_sha256": "9ca37118758b581598211acb3c3d0306ed7d1d5f63c469202511f8a6cb41daba"
+  },
+  {
+    "sha256": "a4c3afbd5f7bf5d9ba7c13b84772e072f451b275bf4a7f05f6750b9a46548ddc",
+    "path": "docling-main/tests/data/pdf/sources/acroform_sample.pdf",
+    "text_sha256": "ddd11729575a5234a4e0d9c041f1d65b350d1c65ed4c670b5c4e2db82c8c5948"
+  },
+  {
+    "sha256": "a4c43b5106e32e70862ab72f87ee766e16c3326f2e3a47ae88d1a53f4d1e8d43",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/nextn.pdf",
+    "text_sha256": "41ff6df4bd1232de221363147331cfd5441c954a598b793507e0d5028f041533"
+  },
+  {
+    "sha256": "a546d4f7375892bde50a7ceb4e665e565000286a1c007c51105a3ca3fba87bf4",
+    "path": "target/opendataloader-bench/pdfs/01030000000094.pdf",
+    "text_sha256": "4a59c1e0ad5f0a43364dafb0008db92a8de500ebd3cbf4dd5cccddbb9bbca000"
+  },
+  {
+    "sha256": "a5528f4dd6f5ba0d52e6bf97a0aae99ede782fe97f4a0b4f96029e5ed7fe18b5",
+    "path": "target/opendataloader-bench/pdfs/01030000000116.pdf",
+    "text_sha256": "7a4f252c58796284f479926adc4bdcb7d0a507911c5a17ade54aae150e925b15"
+  },
+  {
+    "sha256": "a56a4c96fa9cd90c1c7fdc79ebd65bf57488ddaf646f94d6bf1166fbee80955e",
+    "path": "target/independent-pdf-v2/pdfs/5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.pdf",
+    "text_sha256": "4803cc32f0d3eec1d19a7a8e149cd4a51df407874cc58cff0b1a7dcb6b349e6f"
+  },
+  {
+    "sha256": "a59c54dbc6c578c176e9c6627245740637da434d62a4460d865528ac3a2eecd4",
+    "path": "target/opendataloader-bench/pdfs/01030000000099.pdf",
+    "text_sha256": "042d642e1d9684afe052996a17bdf8c47a83e3eb730d9441b27f90204ecb163d"
+  },
+  {
+    "sha256": "a5b975710668800f4d4712155bc597a028f0ffbfe162efef92ded23cb2c23b9f",
+    "path": "target/opendataloader-bench/pdfs/01030000000031.pdf",
+    "text_sha256": "4ad92c32b8bab454ca751ff234133df3c142329fd2b7883a89d361e851642394"
+  },
+  {
+    "sha256": "a7914baa31ab36088e7d4199120e23630c800e99d8f96aa5a21091d7a67ff1cf",
+    "path": "target/opendataloader-bench/pdfs/01030000000184.pdf",
+    "text_sha256": "69164ce42a8b3a35ebf48f916fd6219823e741ad33766bb7d4fcd91338b4fd3a"
+  },
+  {
+    "sha256": "a7f0764fac3ab64711acc91fa88e2632f3e0d27b6d57ab58ee3b709b0889adba",
+    "path": "target/opendataloader-bench/pdfs/01030000000137.pdf",
+    "text_sha256": "7eea7c9c650aa364ad382c1c4499a60e8c1f9a549b48a0d50c7065168c949701"
+  },
+  {
+    "sha256": "a8258557e2f08dbff895b7bf7200afb3c8d52b14900006ad708306390f43f59c",
+    "path": "docling-main/tests/data/pdf/vector_glyph_edge_cases.pdf",
+    "text_sha256": "4df851accfd884fe99ee9539d85e3e3fa144560934faf374aceec86969128745"
+  },
+  {
+    "sha256": "a8f4a2159bee39babc2507df06f637b0557eaf4ccd47471bdc7fc817ec57c2bb",
+    "path": "target/independent-pdf-v2/pdfs/a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.pdf",
+    "text_sha256": "7d05b37b5594cb6084d7b503c9fc8fb0acdc482c8890c9eda17d4f02778ab103"
+  },
+  {
+    "sha256": "a95eb7970e7406a5938142243ccc38e8f6838c1f753ec68c577498b9ef33a500",
+    "path": "target/ocr/stress-generation/french.pdf",
+    "text_sha256": "2c561ec686ce27652891a670b9793a6fb700b6144859edcb822cd78cf1491e29"
+  },
+  {
+    "sha256": "a9cb6c013e195fac06178c934c1c9e86835c5beb50d8710ac39828e3ce35377b",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-v.s.-bf16.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "aa00d01e639cf879439b5f4c9313f1647bba27070a833569dee0b3eeb3476731",
+    "path": "target/opendataloader-bench/pdfs/01030000000140.pdf",
+    "text_sha256": "4d029410725409c0b3933eefd7157ca3ddefe375444ee3f1972269b622c08f99"
+  },
+  {
+    "sha256": "aa183ae3431b41ccc6443caf7ee1b78eebc04390a21b11b300deaad47ee3d305",
+    "path": "pdf-inspector-main/tests/fixtures/base_encoding_without_differences.pdf",
+    "text_sha256": "7e0c4c2e0a0970e45a9541c00757c20a1b604d105bc1f51a0e911505b49dbe68"
+  },
+  {
+    "sha256": "aa69c2d43fa5cb5f8b18f2893310e6bd7c458b982678ecc7d336a98f6c938751",
+    "path": "target/independent-pdf-v2/pdfs/9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.pdf",
+    "text_sha256": "c3593b674362711d383712472f4557d930f0ef90fffd52a4875733fc54e5be98"
+  },
+  {
+    "sha256": "aab1cf4c89f343bdf335ff1f06d8d9eb7f9cda69c69eca4f5d65e83e0ccaff7a",
+    "path": "target/independent-pdf-v2/pdfs/5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.pdf",
+    "text_sha256": "b0f546d3b2176f9ef7a6f982eddaa285a6dfa6a13c2740858ba59a03d33bef88"
+  },
+  {
+    "sha256": "ab0f3ac6ce114304cc331404f20a780f57fcb060b5c96c54c69478d474997d1f",
+    "path": "target/opendataloader-bench/pdfs/01030000000151.pdf",
+    "text_sha256": "960a278e01a6f8b9d7e37f64c37d1d7ac1661a7a4ad4b908593dbce05e9f51e9"
+  },
+  {
+    "sha256": "abd998fb743bca6bf29dfbc9be90a689c311538625dd7659dd7c650bd9637808",
+    "path": "target/independent-pdf-v2/pdfs/8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.pdf",
+    "text_sha256": "10ef119031d0217e74972dbcf51781f157a5f2b007df51e8a1b8be0d814c4fd5"
+  },
+  {
+    "sha256": "ac419e4e084ea7a7a33a7be3f129dd07bc705b1a9e45ad751e33357f17d60f5c",
+    "path": "target/independent-inputs/external/tests/pdfs/federal-register-2020-17221.pdf",
+    "text_sha256": "6fce6b356f148f17d4aca9e7b7b09bf461887899675a22f3307845f24b818ff6"
+  },
+  {
+    "sha256": "ace262c34d2a1ad90acd6fce0e75610f64e96a8c35e03cd11505efd130953264",
+    "path": "target/opendataloader-bench/pdfs/01030000000028.pdf",
+    "text_sha256": "bfd27a6afba338efcfdacf59bfb8810cc0116ce160fe94499aadb4e80ff765ca"
+  },
+  {
+    "sha256": "adbd1c70e65ad463b8f405f805349144bef0aaa7efd9cb8da9874d2880fef348",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/anaphora_resolution_new.pdf",
+    "text_sha256": "a2290063bc93888763e4699fd96f84049028c06f0f863e85edaec68440f531ae"
+  },
+  {
+    "sha256": "addadf04ef5b2937a5bbbbbca4e341362b2acf7dafadf714ba3a9736c4d1962d",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/tablemodel_overview_otsl.pdf",
+    "text_sha256": "47750831289dcee3010e983e4ab06f91ffed027c12d942f2182166b84fd0329a"
+  },
+  {
+    "sha256": "ae2f8d45f42a39bc8674ead7cc3d6e7da3f241cf67dfbb78f0217520e4ffa0ac",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/llncsdoc.pdf",
+    "text_sha256": "d0c2ec7a48199e32d9a8b452166ffa578a22f8952a2aae5be220026700cc8447"
+  },
+  {
+    "sha256": "ae3e21a22f26be24026846147fe49ffd0407e15f0c90b0421fe8d595af52faf9",
+    "path": "target/pool-exercises/worker-pool-2026-11-10-v2/hundred-pages.pdf",
+    "text_sha256": "3271620dea4b2743bac2e7ffd624b0ed8f3e335e7e1305340c8c3a86fa2ab284"
+  },
+  {
+    "sha256": "aeb757c71f01957a5bf93ee8e0129a2f092c4e5d133cf731e326caae28a230b9",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/fp8-frameworkv3.pdf",
+    "text_sha256": "db5d8b5a4c880aea36f0ff220855f256f034d7100ee2f24637b1c351c7a11776"
+  },
+  {
+    "sha256": "b1ec47979a302195a6c3387cd48045585180d8c01851d2cdc32a04c500433de6",
+    "path": "target/independent-pdf-v2/pdfs/d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.pdf",
+    "text_sha256": "f57cecc643cdb582db9ffbbb2e745ab2873170acc70d010d2b4011fca65531dd"
+  },
+  {
+    "sha256": "b249d1d6d2230f9ea91b0f1dea668e563746cfa85b274787a1e2676b8520e48d",
+    "path": "fixtures/ocr/ocr-blank.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "b26be4ea3236d65a024efba0d45ed11016c540faf124b23c9aaab58bff961407",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_B.pdf",
+    "text_sha256": "62d7f19753f4302a40a3f46738141c962c2d7332cd01ffbc3b7b726a0a3cdb95"
+  },
+  {
+    "sha256": "b26fc288a09744dbe8704b93636b88d67e0c15c2d411eed6b8c4e64ff012b084",
+    "path": "target/independent-pdf-v2/pdfs/b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.pdf",
+    "text_sha256": "1d46d52fe480c9bdd5e6bbe5ff5c007143dc68df1a1d3125e436ffda4eabe769"
+  },
+  {
+    "sha256": "b2b68a3ff4d49b5869d07cd85a0cafe67736b63f080688003abefe8d7bd04e8d",
+    "path": "fixtures/ocr/ocr-numbers.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "b2c11e30c537ecc6ac4d39ea937e512500882bc479ac6e5c3b380cf1627dc189",
+    "path": "target/opendataloader-bench/pdfs/01030000000155.pdf",
+    "text_sha256": "7124b73880390084fa0edc85d60aa39c6a32622411b4636670aa2c5b2e16ebb5"
+  },
+  {
+    "sha256": "b2cd33ed246c6dca7d94b8937a8abbc44eb870a5007e5c07fcfbd2845e9b1d07",
+    "path": "target/opendataloader-bench/pdfs/01030000000029.pdf",
+    "text_sha256": "6b8d86e53c22d5e2a042e4f53e08747044fd87338fc324e23555ecd2ab4e421f"
+  },
+  {
+    "sha256": "b4d90b6cc2d96d952b49dd227148c08018baffbfebd8d204705384f0a4a0c8a3",
+    "path": "target/opendataloader-bench/pdfs/01030000000143.pdf",
+    "text_sha256": "2bc59e9fb40a23e32dd916c9db6ebf0269f640869741ca34388c48493b7f4f21"
+  },
+  {
+    "sha256": "b4f6d15c517b5d6b0d674e1b4a04219903528c3601fd026f98eadc62c814f568",
+    "path": "docling-main/tests/data/ocr/sources/nemotron_multipage.pdf",
+    "text_sha256": "d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6"
+  },
+  {
+    "sha256": "b639c25ab157f6f4ecbdb7cd31724bf4c8869f03134f5e606c49dd5fbee2bb54",
+    "path": "target/opendataloader-bench/pdfs/01030000000185.pdf",
+    "text_sha256": "67a0d48cbfe6a391bd95c60a57b1bd79907cd0bc10713ef4d033f993750d0e06"
+  },
+  {
+    "sha256": "b6659fad1188ec83d7a9bed548b06d7998804e4f69cbcbadd44e5aa94588bc2f",
+    "path": "fixtures/ocr-stress/chinese-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "b8193714a49731d09c6a09ee41a0472199962818ca6e658d0c15cfb470f206f4",
+    "path": "docling-main/tests/data/latex/sources/2501.00089/SFNet_ResNet18-TopK.pdf",
+    "text_sha256": "6dc179a98c1f3d1b80b4bce3df4771f2fc298c5747bb1a7570f406a77ff48ee0"
+  },
+  {
+    "sha256": "b862cd0d6f06c06ee5ab7729ed4e8ce58e6964eb0f1ab98b3865b57a4808216f",
+    "path": "target/opendataloader-bench/pdfs/01030000000147.pdf",
+    "text_sha256": "240aea2a1ce7093daf306c84c18f496140ca1d7a58825e6897e86543d545f00f"
+  },
+  {
+    "sha256": "b8910d64033eeb7560e11a1bbc397751261597f8bc781ba79ca1a77362386ceb",
+    "path": "target/independent-inputs/external/tests/pdfs/annotations-rotated-180.pdf",
+    "text_sha256": "41417fb420a737c8064205cf4b7fac3fc7ce6bad26417be5b4f6f6012d92c951"
+  },
+  {
+    "sha256": "b93089737d9c4aebf269fa6852025c413c7c7c474bee8183cdc4a50bda3ab154",
+    "path": "fixtures/pdf-tables/offset-small-font.pdf",
+    "text_sha256": "f7b6131d776a2905ad28626ece3970910be98d953c2856fef42944b97fc0ed4f"
+  },
+  {
+    "sha256": "b966d5aee5a17b377107ade67238d7215faef6303ac980080fd68534ab3ce5ae",
+    "path": "target/opendataloader-bench/pdfs/01030000000096.pdf",
+    "text_sha256": "fa0eea7b3a79ec880547391510725290536916a3ab2bb2a56635b615eba2689a"
+  },
+  {
+    "sha256": "b9ce00cf103e789860d438f272905072fbaa19b6c8fcd181f15a9e1e7ebdb11e",
+    "path": "fixtures/inspection/header-over-scan.pdf",
+    "text_sha256": "ece098a67f113099c1180f55c46e68889a999a18cfb7f8b5c885e58e0bc0b5be"
+  },
+  {
+    "sha256": "b9e5879b4dcd812e854cc06c6c3cb4f54231af28c919be63e27bef4c639551c9",
+    "path": "target/opendataloader-bench/pdfs/01030000000119.pdf",
+    "text_sha256": "498cb073c7cc0583d35bc53b4ce23588bd3580ce9edf90d7e69258ca759883f6"
+  },
+  {
+    "sha256": "ba0e025d53c091e8d4bb87499ff69ed3428dcee325c8895ecdb40e973b4c835c",
+    "path": "pdf-inspector-main/tests/fixtures/greencomp_competence.pdf",
+    "text_sha256": "d4462e5387ee61ec8dc461366b33722c067d4dae645b956058329a67bae5662f"
+  },
+  {
+    "sha256": "ba3087c726d5c30b0008e5d298da2dbf61b08993cf1a316353be6b42011e54a3",
+    "path": "target/independent-pdf-v2/pdfs/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.pdf",
+    "text_sha256": "af6fc5273d673d284956d6eeacf95c6372b39e067e3e53aae3275695aa1d000c"
+  },
+  {
+    "sha256": "ba5f7a78792369ea36dbf2a554aa1635fa9f25983664ff17b406dca326279019",
+    "path": "docling-main/tests/data/pdf/sources/newspaper-00.pdf",
+    "text_sha256": "d4578c2a35c6842fb087f41dd45dc4f5ccafc3149f3c25b8650b169d59087f20"
+  },
+  {
+    "sha256": "bcb3dafc35b5e7476fd1b9cd6eccf5eeef936cd5b13ad846a4943f1e7797f4e9",
+    "path": "target/opendataloader-bench/pdfs/01030000000124.pdf",
+    "text_sha256": "08fbece9f568b1ac50e7b13fb00a062f2fee3f2cf926ef6577cf933e6ac862bd"
+  },
+  {
+    "sha256": "bd9864ec2efa8a86de3b4e246340b58dea4e359dc814e9bba9ecd33d69e7faf6",
+    "path": "pdf-inspector-main/tests/fixtures/scan_with_native_header_text.pdf",
+    "text_sha256": "a4f8e905710c1556026b3352524fd36c46ce78d3ccf4a9387b9cebb9100db78a"
+  },
+  {
+    "sha256": "bdf0e09acee7a07f7e60c6055128967b36b44564842983ad3b0f273f1c1c5914",
+    "path": "target/opendataloader-bench/pdfs/01030000000064.pdf",
+    "text_sha256": "72bc1dda36dcbd3b1d8730a9c57065fa8176a3d4d864bbb5a075eb6e9ec6bea7"
+  },
+  {
+    "sha256": "be866d1b599b669a33acbc07b07847d6c72011cf4d221b20d889ad5a90ab30f5",
+    "path": "target/opendataloader-bench/pdfs/01030000000114.pdf",
+    "text_sha256": "1997f86e424a48a4e6df5849896b5d058effd9b7417f8acec4bfa39ab580f044"
+  },
+  {
+    "sha256": "bf208052805fbfa772909036f4305c41ab8043157f8bb6bbbac626976bc43bb7",
+    "path": "pdf-inspector-main/tests/fixtures/glyph_names_in_embedded_fonts.pdf",
+    "text_sha256": "e12e115acf4552b2568b55e93cbd39394c4ef81c82447fafc997882a02d23677"
+  },
+  {
+    "sha256": "bf6d213e26e578efdcdbe9e70fe7fb3389114bbd02b86d63f1865afd5bf87e5c",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/relative_expert_load_multi_25-26.pdf",
+    "text_sha256": "8312b4ee5766c817ecb62d814711f8b2c7730be6734a000c5aadeb2109cc0b62"
+  },
+  {
+    "sha256": "c00f679ff2c9acbd9ae3904fd350d0f24bea93fb90f44128c7c29a00483b6611",
+    "path": "target/opendataloader-bench/pdfs/01030000000025.pdf",
+    "text_sha256": "45e870f4712121f3249f90f87848c644b06b3cbde0e8b402417e37fdcf644428"
+  },
+  {
+    "sha256": "c04c230b8dfa00d0fabbe9730c078c840ccaa27f5f270d5899f35405784a535d",
+    "path": "target/opendataloader-bench/pdfs/01030000000095.pdf",
+    "text_sha256": "2e1b99a48e344bd229b079b852d4cdfdddc762e36cc21b43f76370f6688dee42"
+  },
+  {
+    "sha256": "c0ae1f58eaeeb7638d35c81de72937385bc3646a6bf0107f51426c2544b860cd",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/anaphora_resolution2_new.pdf",
+    "text_sha256": "a2290063bc93888763e4699fd96f84049028c06f0f863e85edaec68440f531ae"
+  },
+  {
+    "sha256": "c1381b5a2db9ca221ea4d47f1e037d837679114eb70cafb1b7bb1d681d355d75",
+    "path": "target/opendataloader-bench/pdfs/01030000000087.pdf",
+    "text_sha256": "ac06207d4c2b3f58badffcda3c6d86dd11e5c0ea3c86f5fede74c38c082e6d7d"
+  },
+  {
+    "sha256": "c189d92e8c3a0ae7521360bad3bead15c2eec9132a19e4045f616d56b0e2aa7f",
+    "path": "pdf-inspector-main/tests/fixtures/font_metadata_faces.pdf",
+    "text_sha256": "4bd2787775b57ea56020fee91ae46decd317e2fd1460faa15cd83b3c6f70337f"
+  },
+  {
+    "sha256": "c1d74a7973ecd0d9b39df1c0dae6573337f5977c8baa94f5abb9d7cef33af9a9",
+    "path": "target/independent-pdf-v2/pdfs/c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.pdf",
+    "text_sha256": "ceb9c872822d0631010e941337cfd9ba534c40a7e9382833445efdad2e2bdc7e"
+  },
+  {
+    "sha256": "c2b60a018b0503378c804fbf3f75b8ff956d30b3fcecdc30c37781b7dbe0c1c4",
+    "path": "target/opendataloader-bench/pdfs/01030000000080.pdf",
+    "text_sha256": "8fb1e6b76f0cea0d342c4e20a3c6775b9df189d8f0e92fd6d208311b4a29acff"
+  },
+  {
+    "sha256": "c2ccc4a79d89f245f95d9b70e373b5cdb70255969279a31f1cd3ecf90ae1dece",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/HTMLvOTSLv7.pdf",
+    "text_sha256": "33b5fa70d1013c57fb11c978218898adbd74140107f5bbfb04220f6f7d217d7c"
+  },
+  {
+    "sha256": "c2d48411795cb07a4ab8975326ff02fa14d20bf12cfdd72536227694289f1098",
+    "path": "pdf-inspector-main/tests/fixtures/text_page_with_watermark_image.pdf",
+    "text_sha256": "1d44a6cb863f466636df4649e8193eecc02a00ee36ab6644925277694180f4c9"
+  },
+  {
+    "sha256": "c31d842c665085cb1379d441ef0b65869f29537b9252956d6105e6b4cc972311",
+    "path": "target/opendataloader-bench/pdfs/01030000000182.pdf",
+    "text_sha256": "97cb4014e9fc6ad76516e3ca9a69e980125f5d7016aa6a0e5e4965192eff8c2d"
+  },
+  {
+    "sha256": "c33c2993fe1e5c2945bb894f1a8e54c756753c344bd66f11024715e6375f07d1",
+    "path": "target/opendataloader-bench/pdfs/01030000000049.pdf",
+    "text_sha256": "1bfc4a06294b437db5c75892876be2f80f5f00d32358599e012fd6fcd30a869c"
+  },
+  {
+    "sha256": "c39c1bf1cc3b23700c7b1a1f7690af229f68a945fb9f2161ee8b8ae676544677",
+    "path": "pdf-inspector-main/tests/fixtures/real-estate-pricing.pdf",
+    "text_sha256": "79221d17627aaf8bf7ad1b397090ddf76e982a9baac1f6a5cf1b83b9eb481589"
+  },
+  {
+    "sha256": "c3fb4140578e507bcb3015547f23306afb9694e125ff2189de9f0c98324b20da",
+    "path": "fixtures/ocr-stress/spanish-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "c4416f86c1db7fee5dccc1a10e85b1aade1cd77803f4ee626a090e8bc26aa9a9",
+    "path": "target/opendataloader-bench/pdfs/01030000000078.pdf",
+    "text_sha256": "2e5100467fcd890b871ecb24dd4734d39385714b5aeb727b85dad3cbca1d641c"
+  },
+  {
+    "sha256": "c48f0e513e5052533031c2b68d5b2208092269a6f1dd7e827761d6785d81ac46",
+    "path": "target/independent-pdf-v2/pdfs/25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.pdf",
+    "text_sha256": "18c349ea8b67da15dc80d6fa5f00d1c8bdef56ef5053eb5db31e36d35e5a165f"
+  },
+  {
+    "sha256": "c4b649824ce6675eceac3b7bcc95bc055d47803d88801ce4f523e9c034b5409b",
+    "path": "fixtures/pdf-tables/four-columns-empty-cell.pdf",
+    "text_sha256": "84da458ee576522a4e41876f73dabe5a404e886b6d35a09ad6fe3b3795e471e2"
+  },
+  {
+    "sha256": "c63508c7b195e6b6c398311fb1f3a36de31f604e3ae94b486a6776f1f144b379",
+    "path": "target/independent-inputs/external/tests/pdfs/scotus-transcript-p1.pdf",
+    "text_sha256": "77a9c875b58c6adead06652e8adf1b5d1c9d6ca3c8265d56686731ed40a7e9f1"
+  },
+  {
+    "sha256": "c69326bfda071cc386a0c6b9995b31aa2d452c0380ae4e9854f5054e399b0194",
+    "path": "target/independent-pdf-v2/pdfs/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.pdf",
+    "text_sha256": "5af7b10dc3ab7992903ff3df401382ed7f4560850f72233fb0e6b2de48ce5e1d"
+  },
+  {
+    "sha256": "c729e02ec012d0b50ae88debe4c8e3688e45e4154561a312c3dbef20d7ee8f08",
+    "path": "fixtures/pdf-tables/spanning-cell-ambiguous.pdf",
+    "text_sha256": "5881f41dfc61a536935f0b66ac8c3ee4f0a8e5fc67dd51d366d156305307b713"
+  },
+  {
+    "sha256": "c75d25277c58e07bf91528ae08deccc80715b6f7f13b5ed571cf226463b364e8",
+    "path": "target/opendataloader-bench/pdfs/01030000000101.pdf",
+    "text_sha256": "6167176b6911ec7a7c8cb33df1f834effdc7ef22232efe082cfcba8c5dc6a968"
+  },
+  {
+    "sha256": "c75d3a229da32cc4ec5f9d5c1e84d672774d6e06fef382809239c6f067f8dcd2",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/otsl_vs_html_ex3_v2.pdf",
+    "text_sha256": "f363448f547bfcd67c138ea32f2803f0a01d2df891f6e69b3f8581e4e8f65bad"
+  },
+  {
+    "sha256": "c8f35048844313b77c8c6d6a059b9f91a3b5e34f30e7a774a0f2d8fca82101eb",
+    "path": "target/opendataloader-bench/pdfs/01030000000105.pdf",
+    "text_sha256": "9dd3832c0991cb7724a223e8694da00ec595e22b1dc1585a4b59f41a7316f0d8"
+  },
+  {
+    "sha256": "c933dd94a1667b485da9eb125a2ce38e142c897e6d772345fe119f5cf90f5af7",
+    "path": "fixtures/ocr/ocr-two-pages.pdf",
+    "text_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "sha256": "c98bfca166e04c05a1aa04e801e44dfc9282b1b112d230785873d1fb6930d4a4",
+    "path": "target/opendataloader-bench/pdfs/01030000000098.pdf",
+    "text_sha256": "e12a2898f2c37c789688bfd19d8993170773dac240ed34a712b42eb8b9071c8d"
+  },
+  {
+    "sha256": "c9c49f563c6f47d9c28f9caf13455ef61345a0c9be4bba251d064958f546c6f5",
+    "path": "target/opendataloader-bench/pdfs/01030000000066.pdf",
+    "text_sha256": "56deadcea9306e339ae39c8d27e2ee3bba9f53462aebffbebef71d48307a509f"
+  },
+  {
+    "sha256": "c9ca85d416d191ba802cdbd438bd1d3195e263d8b815d5cc4304f972c5e38400",
+    "path": "pdf-inspector-main/tests/fixtures/nexo-price-en.pdf",
+    "text_sha256": "eb6f22af6f8d61262c52e3f9d6cce3085f0389bd27395118c23e5e22c38678ae"
+  },
+  {
+    "sha256": "ca9c83b1653221a66b30cdb543c1ef7b116827762ae65fca36b87b332532b51e",
+    "path": "docling-main/tests/data/pdf/sources/normal_4pages.pdf",
+    "text_sha256": "e3e52e30eedd971e62c3dc1c5dd20f1531d85ff869072831e600d2d9d562d300"
+  },
+  {
+    "sha256": "caa98180e7cec3f27dfa28e4d67a66748ba4921bd3e2cc6d3cf5ceab4e765ec1",
+    "path": "target/opendataloader-bench/pdfs/01030000000174.pdf",
+    "text_sha256": "7cb7bfd01f8e6bf170b52b12a0372a50ec343d8bafd89d5f71f9108299ac4b22"
+  },
+  {
+    "sha256": "cbb4a13ffd01d9f777fdb939451d6a21cea1b869ee50d79581451e3601df9ec8",
+    "path": "target/opendataloader-bench/pdfs/01030000000183.pdf",
+    "text_sha256": "83c4b79bc6b082635d06c16361065b68495add322994f10354a6fe0c5684c81f"
+  },
+  {
+    "sha256": "cc82e63accef70136d6a745c0996cddf4e56f0d2386b9c1e2d3cea14783bd1d9",
+    "path": "target/independent-pdf-v2/pdfs/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.pdf",
+    "text_sha256": "222d11d52e71a69e21cb8823da90e76280ce41b779ece7422e332c84eb114dbe"
+  },
+  {
+    "sha256": "ccce499f535dc9b909fb1314c3b84aec5fb67be87e3bd675fb14bb89e563ce6e",
+    "path": "target/independent-pdf-v2/pdfs/fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.pdf",
+    "text_sha256": "5cc48d4ca15f0d999e47c2cc7be2f424b6ca86b0423c65d257af72bed147dd8e"
+  },
+  {
+    "sha256": "cd160a4e2296bd7c23f19c26af5bb6ed772f766ee1eacfe9998703c38146b494",
+    "path": "target/opendataloader-bench/pdfs/01030000000110.pdf",
+    "text_sha256": "62025e3c86ef304751ad4a6f19b61408bf921d5e4a13fc6ceec0b7a4fd9f380d"
+  },
+  {
+    "sha256": "cd34bf0452e0bc9b7f26515c7426f9a197480478f52f464e67a0a5912221da69",
+    "path": "target/opendataloader-bench/pdfs/01030000000001.pdf",
+    "text_sha256": "7cad25be7f2140794d920c2d1d51902ebf8c0f1028ce2e40d8dae2f4ed8f206e"
+  },
+  {
+    "sha256": "cd903068d9028bf5dd4d939d7998c1e951b742662c108d264292765df63e6d41",
+    "path": "reports/independent-pdf-v2-2026-11-11/reports/opendataloader-remaining-headings-2026-11-11/source-snapshot/fixtures/native-and-empty.pdf",
+    "text_sha256": "ad7c24c3c538445e227c2d115be0a95b06fa73a3a72fe03a3a639cf670d13d4a"
+  },
+  {
+    "sha256": "cd9c10c20b4c324273f98a3f63018eea07592e3e3103092ee1f9499f7a38cede",
+    "path": "anydoc-main/tests/fixtures/pdf/handmade-mixed.pdf",
+    "text_sha256": "8dd2cc8d66d6d33bdbf9a26bbf92c93e1600ac239c502b924c49c7d8a2cff032"
+  },
+  {
+    "sha256": "ce664b97ca3f765ad6a82352c2555cbfcd687d554722341413d633178164fad4",
+    "path": "target/independent-inputs/external/tests/pdfs/image_structure.pdf",
+    "text_sha256": "52c830405ce6a6d0ef79d7c9f88a3984a3e400235c09653f881c231537478ec9"
+  },
+  {
+    "sha256": "ce6853fb0ca94a72685ef90aa5ece8a180f95cd4a11386b2cf5fb8f29c35fe09",
+    "path": "target/opendataloader-bench/pdfs/01030000000072.pdf",
+    "text_sha256": "a47b158fb0c688c2919fc42599d5540aad6d5a1ef6a7711e14eee3742e104094"
+  },
+  {
+    "sha256": "ceaa5e8218ca60ff366117a66bd1b6084e02fea903223a69eb63b479c2752757",
+    "path": "docling-main/tests/data/ocr/sources/sample_with_rotation_mismatch.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "cf2aa089674e4fd36e67bd8a2d223ec3271bc04bfeda3243aff1c5921aefcc80",
+    "path": "target/ocr/stress-generation/polish.pdf",
+    "text_sha256": "2186ab0311e5633eb83eaab57a61b40b56aff87acaad93f3ec83c9f001fbb367"
+  },
+  {
+    "sha256": "cf416ed31e99d030ab44eb550168b34fbc1351ba76b1a758130c1e1489e3277d",
+    "path": "fixtures/pdf-tables/ruled-single-column-prose.pdf",
+    "text_sha256": "17e9275264f638ef67e32fc70fd9aebdb340be863535be373288632b6235d1d9"
+  },
+  {
+    "sha256": "cffa50020d709b0eb4d0b6d7c94e02002a7f80b8700b6b9e7f82eaf3f7ca8a28",
+    "path": "docling-main/tests/data/pdf/invisible_text_layer.pdf",
+    "text_sha256": "81a3ccf0e30e63abce2e5cf2165bcc0c8410dcb76b54a0ca437d33de0d03085b"
+  },
+  {
+    "sha256": "d09e9a559e05904e7a73e547f179ed617b016a94065e045b9f46bbe0e2ae8528",
+    "path": "target/opendataloader-bench/pdfs/01030000000054.pdf",
+    "text_sha256": "32f8d2bdaf32635047314e92dd2b4c31e5a1d90e2bab6ab9a62b357009cdc48d"
+  },
+  {
+    "sha256": "d1437ae1c6bedfa2bbf72e4d04dee3a01896dd045024438ee7c4e775e0ab6e9c",
+    "path": "target/opendataloader-bench/pdfs/01030000000090.pdf",
+    "text_sha256": "124bc080af0994959c9bdbf9f276a9c6a5b3d51ae4571df108c709e49926f5d2"
+  },
+  {
+    "sha256": "d1e46e331d1d22829c6b76f4826117013b9faa1271edbcbc7a18bd2047dcc4e1",
+    "path": "target/independent-inputs/synthetic/arabic-mixed.pdf",
+    "text_sha256": "994ec9c12b8000a964c766c8dec42f6d5be44f62448d100eea56426f7130256b"
+  },
+  {
+    "sha256": "d276ca9a5ecb8d6d11359f515e50c8f78395548de4e3e2c49e38f5500ee40ebe",
+    "path": "target/opendataloader-bench/pdfs/01030000000046.pdf",
+    "text_sha256": "57d8a03996c034adc698a1644466af6051192d97d25b0a8f3c681f702f1a7058"
+  },
+  {
+    "sha256": "d2773d8fcd2f2b18b6bd0b2952ba8dd56702e1f738a4f8a7b1e0e03c9cad9dba",
+    "path": "target/opendataloader-bench/pdfs/01030000000012.pdf",
+    "text_sha256": "74e72db6b377c72d116847a3bb0293e76109a2e1ecbdcd1cf58f7a1b646c0cc9"
+  },
+  {
+    "sha256": "d3589f156ba31c1684c5163bab061b43ea1498779a0a878e86b1fa5ad2f2a6cf",
+    "path": "fixtures/pdf-tables/wrapped-cells.pdf",
+    "text_sha256": "2fe133adb2bf060ce85266499a8d4aa32d2e57cc43c7082f216f77bbac2164a7"
+  },
+  {
+    "sha256": "d3942cc1322bb60599e082e230eff8cd820f1b1a1e6aa726d0bcec7eaed51a9c",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/logo/DeepSeek.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "d6612de0987496c11003e3acc3632cc1a34f17c6b3473cafc2f736be9ba40308",
+    "path": "target/opendataloader-bench/pdfs/01030000000163.pdf",
+    "text_sha256": "e625a00c7312b04efd0fbac55a59abbdd261a27395e09812e673b8d002cf2c7b"
+  },
+  {
+    "sha256": "d6ce9ae24c7a15aa55e9a8c232c913cb8bcc1dc2d5d7f129258f4cbf6f46719d",
+    "path": "target/opendataloader-bench/pdfs/01030000000168.pdf",
+    "text_sha256": "715baae9a2ea23c22c553b72b5a119ad4c48be041a7826a3c4693c14a29109d7"
+  },
+  {
+    "sha256": "d713d08e56fd65e29d2232e0a8f23ede3afe1981cd707039f79dae444ae71b03",
+    "path": "pdf-inspector-main/tests/fixtures/stacked_header_glyph_runs.pdf",
+    "text_sha256": "ef51718f61a5ce7786364dbf150f9bbba982f738b64675ac96c9b461d706a0ba"
+  },
+  {
+    "sha256": "d7f2535a168ba996bb0caccbcc719373580d555909bd5d46ed1748e8f3c17807",
+    "path": "target/opendataloader-bench/pdfs/01030000000160.pdf",
+    "text_sha256": "2447580fb98c553bdb19b531663c604e6d57da0e78c790d4cc97bb44cf429a1c"
+  },
+  {
+    "sha256": "da3f562f120acab3005c9735a195e3c57322c6b1439f22c72d7951eaa2544985",
+    "path": "target/opendataloader-bench/pdfs/01030000000024.pdf",
+    "text_sha256": "af450227d1725ce31182168e770ea56c93d1d4d19484d9b6e891044520aaed3e"
+  },
+  {
+    "sha256": "daa5167329cda28a8a3841b6d5b8a37ee30273285f174af98ce5c0e5c76c0976",
+    "path": "target/opendataloader-bench/pdfs/01030000000005.pdf",
+    "text_sha256": "81ca0a5abc81fb8cdbd4cef005f8bfd96e1f6022cb804daa6337d2393ebd4b1f"
+  },
+  {
+    "sha256": "db276f2a829fdd25786edebba2410a493046bab4621f51bc4a6d550d0e475cc6",
+    "path": "target/independent-pdf-v2/pdfs/fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.pdf",
+    "text_sha256": "156b17584caea88cc734384ea7b4d9eed93c590bb3a41e549a774ae8cfdda6a8"
+  },
+  {
+    "sha256": "dc38947ee802b7bcf82915804ccb8d04c4611e1b17491c415972821a329352fb",
+    "path": "docling-main/tests/data/pdf/sources/picture_classification.pdf",
+    "text_sha256": "e14b4f65294014be302f2f2a102123833e10f5661b444b9594438213b85cdae5"
+  },
+  {
+    "sha256": "dc9dc787ca9f7713fc2617477147f62614c92cdf5fe5b299fe455f8abe49ad8c",
+    "path": "target/independent-pdf-v2/pdfs/1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.pdf",
+    "text_sha256": "685be782de685170822b0991038ecc294a88845b0edf838b95324582f9a3dfcb"
+  },
+  {
+    "sha256": "de5a7b39fc09f8e5d3f28ad2a385a63f4fb6d2d37c0d518e430eb05b6ed44b99",
+    "path": "target/independent-pdf-v2/pdfs/99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "decb7e4dfc1378ad2e461f1dedcbc19658200a4d68f85d9ba0c6761fef90e858",
+    "path": "target/independent-inputs/synthetic/spanning-title.pdf",
+    "text_sha256": "3593f464e589d63b9a4eb2b79d7b985f5d2a212c094423c61b440b4af25ddce5"
+  },
+  {
+    "sha256": "df678b583abe6afa6971fac9efa23189bd235105d697ae1b2b12d25e3b9fb8b4",
+    "path": "target/opendataloader-bench/pdfs/01030000000085.pdf",
+    "text_sha256": "c0fff84563558186df4f74512d00f7aae10e6f74c6b420f52795339e7a88ea23"
+  },
+  {
+    "sha256": "e07ad420c06de44d0f833237dc03d64749d3293dbb510be963816857e4fe2011",
+    "path": "fixtures/ocr/ocr-columns.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "e1434ed34da5861c423f65807c5c480532d8eb4ae4b196c652cded390ba65974",
+    "path": "pdf-inspector-main/tests/fixtures/broken_startxref_pointer.pdf",
+    "text_sha256": "087e3f3201a1206b9f7a308999e34c9092e04f8dd73b0e46f03c2462910509c0"
+  },
+  {
+    "sha256": "e1a31e05b65ada20646a1136bdc3293f68e3641893a48674c791bc2b8fadffa9",
+    "path": "target/opendataloader-bench/pdfs/01030000000034.pdf",
+    "text_sha256": "4b694deccb0064c38895154ccddaf746476833290649895229f9bf79a6aaea46"
+  },
+  {
+    "sha256": "e220fcbada9b68cd93c8ecfdc64324f87de1c63bbd9f23e47116b3a8efb2b1bb",
+    "path": "pdf-inspector-main/tests/fixtures/2013-app2.pdf",
+    "text_sha256": "c06016b83bf5f4643b30224c781f64bc39b4e45e50d6259dedcdc31b17e4abeb"
+  },
+  {
+    "sha256": "e2b604a3fb1541b82b6af8caca05682dff0c7735e0a3a4fa7c6a68246fb60e57",
+    "path": "target/opendataloader-bench/pdfs/01030000000126.pdf",
+    "text_sha256": "cd75cd21380aa932ff73f45eeb1674a0505c1d080f9b9136464bf63827091c0a"
+  },
+  {
+    "sha256": "e30779548a80ff14228753ece493dbce0b4329e426b5dbe61b19d8721fec6dee",
+    "path": "target/opendataloader-bench/pdfs/01030000000142.pdf",
+    "text_sha256": "910d49378b9053a1243e794ba62ad238aebefb7da5c378e43c8a8a97146a4b9b"
+  },
+  {
+    "sha256": "e457761cc160cb2daf479e78b2b440170a22c3cca59914302593466bf6934370",
+    "path": "target/independent-inputs/synthetic/two-pages.pdf",
+    "text_sha256": "7b8dbcdc207a3c541e498398dbb37d0812e43dce8b2782762b8971a40ca312ab"
+  },
+  {
+    "sha256": "e5cd36c1ca7a2c476b14a19497ea75921899a21c6b510f63ef571abf0c000d5b",
+    "path": "target/opendataloader-bench/pdfs/01030000000157.pdf",
+    "text_sha256": "4a2ff9a2222c48ad5cdba9888061fb0dad02db89a39a18f4d6bae2967c9990d7"
+  },
+  {
+    "sha256": "e6023c1836d06942e984ed27b47b9de1677a107476544793a17058699a123435",
+    "path": "target/opendataloader-bench/pdfs/01030000000062.pdf",
+    "text_sha256": "08fd703c6e4be5a98957f9297d5c09673a19cb3d40e08f5df8f3dd6ac275071b"
+  },
+  {
+    "sha256": "e786231794e24874e66321d9a2ce9d80050a73cd0e02fa358c88a1e87a183735",
+    "path": "target/opendataloader-bench/pdfs/01030000000041.pdf",
+    "text_sha256": "a19696e9bff9747ad678d32b65066a3d9ecc5423dccb5367f729376ce4a56e2f"
+  },
+  {
+    "sha256": "e7fcb54b575828e5017025769cd92684689d0d98dc7bfe90d30b1553ebf36ee7",
+    "path": "docling-main/tests/data/latex/sources/2412.19437/figures/needle_in_a_haystack.pdf",
+    "text_sha256": "da9bfe1c02ad8edfcc0ac9276e6c983cd553adc13961bc7116d229c1439dac4d"
+  },
+  {
+    "sha256": "e89bdff8e96408cd79b8d22cde589bc8a91f2c9c50a872fc43a4cf58e94926c1",
+    "path": "target/independent-pdf-v2/pdfs/566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.pdf",
+    "text_sha256": "cc0ea41b4aa44d45e691a5f964b6605e849fc8fed74e0a9ea4c10bf834f28acc"
+  },
+  {
+    "sha256": "e986e70f98d9f255508d9f8861128a0b7c0e17cb235af35daba45186925c384b",
+    "path": "fixtures/ocr-stress/german-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103",
+    "path": "fixtures/ocr/ocr-swedish.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "eaafa071048c2ec1309751325280ea3d354317cf67ebda400cdf4fd39503392b",
+    "path": "target/opendataloader-bench/pdfs/01030000000192.pdf",
+    "text_sha256": "98c0f80a9629e73372608eddf99f21452519d03989add1426b6369269920d129"
+  },
+  {
+    "sha256": "eac01901729786f15ba498716c592370d50f00658c291495086ff49a8538c5c6",
+    "path": "target/opendataloader-bench/pdfs/01030000000190.pdf",
+    "text_sha256": "2b8a0528cfab060050d866f46ebab7c3a5c022e24438ec2f5d4836b22f45f956"
+  },
+  {
+    "sha256": "eac5de8bf44007d0da9285d1ebb353ec55e9e12eaa58189b9197105b7832de69",
+    "path": "docling-main/docs/examples/data/chart_document.pdf",
+    "text_sha256": "2717b358ba53d5dedec1e08e1b7990d8801ca71b6ab15eca8a21dbcfeb94edfa"
+  },
+  {
+    "sha256": "eafaff9490f74acbea297d3144d817aa48b4d60405705f0e8ce0fefaafeed13f",
+    "path": "docling-main/tests/data/latex/sources/arXiv-2501.01300v2/P_M.pdf",
+    "text_sha256": "c11e641eec8a97e6c0f2c68463042c31e64bc0906cd562e14d1e256c79ecc362"
+  },
+  {
+    "sha256": "ecd48018e92d4fc8c3e44c8d30521dafe1daadfbc2d4d1bd4f76cf924b069bf9",
+    "path": "target/ocr/stress-generation/danish.pdf",
+    "text_sha256": "60eca20fd2654ebe2b983057b2cfaac7342e1d3e4b728237090e9449fee4af28"
+  },
+  {
+    "sha256": "ecfb67cbdbd082308765c070ba692033d6e92fc33d03e9448f4d7ad2b398440c",
+    "path": "docling-main/tests/data/pdf/sources/right_to_left_03.pdf",
+    "text_sha256": "ed77229611db71954cd018d7058f58f63da54b50e7ffb5a73ba7b2bc9018e7e1"
+  },
+  {
+    "sha256": "ed046862e68a27a7260da60f3984484577f83500dea61020d043c7af8b76731f",
+    "path": "target/opendataloader-bench/pdfs/01030000000165.pdf",
+    "text_sha256": "938f94491ba8f4e40e1d45270eddd59645d028b947c71a0a053df3df30ac80c2"
+  },
+  {
+    "sha256": "ed7581b32eed93bdfb23aecdc1e2c864651ce5d996927d17872660dbf35f4920",
+    "path": "target/independent-pdf-v2/pdfs/167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.pdf",
+    "text_sha256": "34d5246c5409f9a1bad3b119669e202e6c7c7f65f95b6dec767d84b83f8274cb"
+  },
+  {
+    "sha256": "ed941b5cde32cfc778c225dcfa90c334d9995d70c46e7f508635073a3227784b",
+    "path": "target/opendataloader-bench/pdfs/01030000000135.pdf",
+    "text_sha256": "3ef8ec85bd52249ba0128718f843aa0dfe93b35e39e5b7dd045035fbf247537d"
+  },
+  {
+    "sha256": "edafb0db61c16517e87d60ab4d1216bbabb43bcb39779d21707ab4b8ccf1e81c",
+    "path": "target/opendataloader-bench/pdfs/01030000000065.pdf",
+    "text_sha256": "c4d95ed535b53d41d7769c8162dfcd842065fc5e300f3658d75fa3f08e228bc1"
+  },
+  {
+    "sha256": "eded7804127acce26e4b9e7138aa8c95d0d8886280a21148efb0ae9519941ede",
+    "path": "target/opendataloader-bench/pdfs/01030000000132.pdf",
+    "text_sha256": "c7c90355e033ae6b8fe149d7b59864f12d026452b908c87b92929a8308c659c8"
+  },
+  {
+    "sha256": "ee0a6175753e8cfc2f35fcbb1c5f7666f56969fb8111e326757835f062c65bb0",
+    "path": "target/opendataloader-bench/pdfs/01030000000136.pdf",
+    "text_sha256": "0ce72bf1c1680d2d108bb5b92e582bc279f60584a13a34e46df36f6e9c6cf9a2"
+  },
+  {
+    "sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8",
+    "path": "fixtures/ocr-stress/swedish-a-low-resolution.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "ee9af89ec8d82b15d0fdff8908560e597e71cd4662d28472bc1a4d485d6c6712",
+    "path": "target/opendataloader-bench/pdfs/01030000000179.pdf",
+    "text_sha256": "474272db8376344ab14d4d3aea5fcf0259b150463a4725fc514576f74cab5485"
+  },
+  {
+    "sha256": "f01f786e76db9a4e8e321342660e2a539d4b060e123b42a58ec84df128455d59",
+    "path": "target/opendataloader-bench/pdfs/01030000000104.pdf",
+    "text_sha256": "849a5ce3861e8d152e998978347e8d24f44746d89d7733389d47db95ce4aac43"
+  },
+  {
+    "sha256": "f0ab823f66709631e6226a937a8d68b52bde1e7ff6ef28086563c0646867c769",
+    "path": "target/opendataloader-bench/pdfs/01030000000058.pdf",
+    "text_sha256": "86f300a3762da29c77797037914d79d9593f94f1b59e22fafe7272c2e995f352"
+  },
+  {
+    "sha256": "f13ef445e473dea387bc42bce2f77a96d4c18cb3c62e98f29a2a63abf000be6f",
+    "path": "target/ocr/stress-generation/german.pdf",
+    "text_sha256": "7dc0777cdc669b26d69e8017c83ef992e420c5236d3edf3fb3e473fd6757e0a1"
+  },
+  {
+    "sha256": "f151ca1888000160dc6ce2e46c3438bc13f9a034200b1ec5d81b03c77606eed6",
+    "path": "target/opendataloader-bench/pdfs/01030000000121.pdf",
+    "text_sha256": "84f3e354913a00c4d5fe96f6a07b7f689447f9a96c4f4e759780f9a9a83eda2f"
+  },
+  {
+    "sha256": "f17954b5fdd9abdb6b4ec921c26ef9949f8c3f34b35b4efae11d57f49efa8283",
+    "path": "target/opendataloader-bench/pdfs/01030000000113.pdf",
+    "text_sha256": "c073ae53a972bc5fa6aecb11619f2f4ae0b1084ef0704d160094f1fab06c011e"
+  },
+  {
+    "sha256": "f22201616ee0c6fd3630c41a6a073bc7e691a77d8d643a35b222790b551110f0",
+    "path": "target/independent-pdf-v2/pdfs/c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.pdf",
+    "text_sha256": "d4e7d6163c64a831c29034a9c242b868c0992bc6c6b306b08706e3881168f67d"
+  },
+  {
+    "sha256": "f23d48a7427bb9747681758df25281d6da6606363d6891058af006389747ee68",
+    "path": "target/opendataloader-bench/pdfs/01030000000003.pdf",
+    "text_sha256": "af912263e1b191bc321b302406564803174b30b99764650dd239b8f04fb7301c"
+  },
+  {
+    "sha256": "f298b75294aa55400691fb88abb7c30e88fbde4ad04a9a43d809c12b214545c4",
+    "path": "anydoc-main/tests/fixtures/pdf/handmade-scanned.pdf",
+    "text_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "sha256": "f3e3d62292122d9be48e262e7d8e1f9363bab000e26437ffb6f2f94afc3c2294",
+    "path": "target/opendataloader-bench/pdfs/01030000000011.pdf",
+    "text_sha256": "de322eecdc55fc6af4dad5978539459d0508b999e1db2be522149eae08b87568"
+  },
+  {
+    "sha256": "f3f0c201f2a3d9dca9851933a1cd312f53b884c1c47479c94c475dcfe51fb0b2",
+    "path": "docling-main/tests/data/latex/sources/2305.03393/figs/otsl_proof_v3.pdf",
+    "text_sha256": "6f8e257cdb76460afc89698f7e43bac1605774cffb2c94900a7f349eebe48664"
+  },
+  {
+    "sha256": "f4dea73d2b75fbc7d590e2085b14e9bee7e766da73e14f723a2580fb0f36c707",
+    "path": "target/opendataloader-bench/pdfs/01030000000052.pdf",
+    "text_sha256": "7d0704232ff6b13ff259a6e5f5ced895cd8a96a2882615790a9e39efc17fb40b"
+  },
+  {
+    "sha256": "f50fd5a06dc040b9301588707dcd764a050414621f5a99255ff716a88a281220",
+    "path": "pdf-inspector-main/tests/fixtures/wired_header_data_misalign.pdf",
+    "text_sha256": "5da1889e5f99c287d6ba1c99428afb444aeee63c29f936573aac8fa72cd71b49"
+  },
+  {
+    "sha256": "f6f9fa350f70329b140858ab926f10c047abae84e9ea20f59338f33378b6aec0",
+    "path": "target/independent-inputs/synthetic/ruled-table.pdf",
+    "text_sha256": "1331ccbb3c68a3c3e35fdecf1ae83cce1b8be316f0a08a2ffa449939b10361f8"
+  },
+  {
+    "sha256": "f7e2a6931e8735af0fdd2ed71c219f769d7866edaf28ab19d3aebe9a0d032722",
+    "path": "docling-main/tests/data/latex/sources/1706.03762/vis/attending_to_head_new.pdf",
+    "text_sha256": "a2290063bc93888763e4699fd96f84049028c06f0f863e85edaec68440f531ae"
+  },
+  {
+    "sha256": "f81cbaef6c20bdadec11a3e9622d381850f6f7d3ab059e3949a9a6a877fd144e",
+    "path": "target/opendataloader-bench/pdfs/01030000000033.pdf",
+    "text_sha256": "6fb2087840a5b88d9b417cd2ae7ef0b478c19c5ce9e577940d4438937ca6bc5e"
+  },
+  {
+    "sha256": "f8d1fe465f4c0e3fc62dff5d48a3b5db55d94f1848178dc943518fc8b7194212",
+    "path": "target/independent-pdf-v2/pdfs/36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.pdf",
+    "text_sha256": "6440b0d039a987f3eae7e3cfcf782b91256fd13a9ddf3cf29a3f3f848c702538"
+  },
+  {
+    "sha256": "f974132511fc3655d9602cf317b6ae2ed040787671bb21e387322961b5ac30f1",
+    "path": "target/opendataloader-bench/pdfs/01030000000074.pdf",
+    "text_sha256": "db0fd171cd94afd571e6fbb37479c49e451199c54366027627b7a132f5c9da2d"
+  },
+  {
+    "sha256": "f99de206dc21ba8ea57548b1c0c007eb736da5f26c925dc99a4027806297bd8f",
+    "path": "target/opendataloader-bench/pdfs/01030000000073.pdf",
+    "text_sha256": "cdbece3b5c2b53c080f31cedba7d8e90edbc4c45485a13fb0fd4ec44edd6a3eb"
+  },
+  {
+    "sha256": "f9c94e21d3e6e2128cd7efb6614ae879e748cb311e1add46d4a272ec1c243cbb",
+    "path": "fixtures/ocr-stress/french-clean.pdf",
+    "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "sha256": "fad8cdcee7f7884bddedf0ee485bf259f815315699f35ef82b2afca5fb28f68a",
+    "path": "target/opendataloader-bench/pdfs/01030000000111.pdf",
+    "text_sha256": "400dc84f738d80ac6dd8b3ba883c1ebbf0066710be1566bc1c0f79440ac2c55f"
+  },
+  {
+    "sha256": "faf136eac0146df5ae658432afe032d8f69903b81c40528198b5cfc4c52864d2",
+    "path": "target/ocr/stress-generation/swedish-b.pdf",
+    "text_sha256": "c88daab34cff5418da72002d97a7cfd29497e6f33624324326cae0357e519c46"
+  },
+  {
+    "sha256": "fb768182ba4c8742d0298b8ad29a9e487292b54d0390ce9275971f147e7506fa",
+    "path": "target/independent-pdf-v2/pdfs/12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.pdf",
+    "text_sha256": "b25bc734a1bc3d37dbc76008b4f49c9c09ea0e69d6d711422fc31a90310bd58d"
+  },
+  {
+    "sha256": "fbee4ae063533d20dc7339a3ffa2412d58504af06420fe15054657c87ed81a79",
+    "path": "target/opendataloader-bench/pdfs/01030000000177.pdf",
+    "text_sha256": "7284187e1b1a046071a01e09f0d0a10cf96670dea9628ba11c76bb87651bc9dc"
+  },
+  {
+    "sha256": "fcaa8c3de4757ff51e604d84c983c59c421e31b9989df5b74c930e0e8720e5ae",
+    "path": "target/opendataloader-bench/pdfs/01030000000193.pdf",
+    "text_sha256": "7d046d81afd507df8f4cb0884df5f66bcb25b135571545f3aa144a39e99a176a"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.json",
+    "sha256": "6bb74e1e43f1967f60c37b6e0f41f6d4ce7b132fc22ffb1abc7635097f1acc09",
+    "text_sha256": "6bb74e1e43f1967f60c37b6e0f41f6d4ce7b132fc22ffb1abc7635097f1acc09"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.json",
+    "sha256": "4ef89227f4d720f1b859962c4f9746411b6c926f75d79925aebdaec65a5209ad",
+    "text_sha256": "4ef89227f4d720f1b859962c4f9746411b6c926f75d79925aebdaec65a5209ad"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.json",
+    "sha256": "3c3e982b05eec398b340479bf47f1a155610049eecdcf58f00f318c58436a66d",
+    "text_sha256": "3c3e982b05eec398b340479bf47f1a155610049eecdcf58f00f318c58436a66d"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.json",
+    "sha256": "f826ab34ab6760e60a82ed45e0aebebb6e98e82d9c59593de6699f645369faa7",
+    "text_sha256": "f826ab34ab6760e60a82ed45e0aebebb6e98e82d9c59593de6699f645369faa7"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.json",
+    "sha256": "251070f3ff29ac5cf10a5f8c207f5775165a41dbb9c1cc563f36c572eb5a952f",
+    "text_sha256": "251070f3ff29ac5cf10a5f8c207f5775165a41dbb9c1cc563f36c572eb5a952f"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.json",
+    "sha256": "9beacdd746e8d4bf83790a27569da6dc177f5a7278ac01c607695753945e3e11",
+    "text_sha256": "9beacdd746e8d4bf83790a27569da6dc177f5a7278ac01c607695753945e3e11"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.json",
+    "sha256": "b878c5614179df31afa3940496dbc2b836cd5efe2fa9132dcc931e3fcff89596",
+    "text_sha256": "b878c5614179df31afa3940496dbc2b836cd5efe2fa9132dcc931e3fcff89596"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.json",
+    "sha256": "e4174749633279fc5d01dc8915ad8a5827fb7cbd5640170df9c87b51a6ceea0e",
+    "text_sha256": "e4174749633279fc5d01dc8915ad8a5827fb7cbd5640170df9c87b51a6ceea0e"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.json",
+    "sha256": "9365a351525026cf583931eb81f32ee5244b3c0290d3bbd828e27fcd6b60e0f4",
+    "text_sha256": "9365a351525026cf583931eb81f32ee5244b3c0290d3bbd828e27fcd6b60e0f4"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.json",
+    "sha256": "b05abbd470d4586f2e17e1e026563797279623a4672ab8c8b7d9a72e2acf6783",
+    "text_sha256": "b05abbd470d4586f2e17e1e026563797279623a4672ab8c8b7d9a72e2acf6783"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.json",
+    "sha256": "470b86ecb65aa303653d22d0340807f5a05dd6f1dfb282fc7f2f9d0bba2acf50",
+    "text_sha256": "470b86ecb65aa303653d22d0340807f5a05dd6f1dfb282fc7f2f9d0bba2acf50"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.json",
+    "sha256": "0fedc6ec1569d57b55e3725903cef3e2f5943ff59242c3ba5567c0de34f83354",
+    "text_sha256": "0fedc6ec1569d57b55e3725903cef3e2f5943ff59242c3ba5567c0de34f83354"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.json",
+    "sha256": "7ecde7481986162b13f4aa508ef59f6519531a73bc658522a2074e6864d65f65",
+    "text_sha256": "7ecde7481986162b13f4aa508ef59f6519531a73bc658522a2074e6864d65f65"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.json",
+    "sha256": "4110f8dbcce5e17a33a1e5c1a34e86c1ca12d9472593ab72c44cb891f2190d9a",
+    "text_sha256": "4110f8dbcce5e17a33a1e5c1a34e86c1ca12d9472593ab72c44cb891f2190d9a"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.json",
+    "sha256": "2056c365b2e8451c08a554bd0cca9771ffd220bd6f399fb94b4f0b289b049bf5",
+    "text_sha256": "2056c365b2e8451c08a554bd0cca9771ffd220bd6f399fb94b4f0b289b049bf5"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.json",
+    "sha256": "c6a09e7b05dc2b165f30fbcb0e92df718aaded50996235268828164094edcc73",
+    "text_sha256": "c6a09e7b05dc2b165f30fbcb0e92df718aaded50996235268828164094edcc73"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.json",
+    "sha256": "6eaec9ca0b8bf3940d01065cb1c195dc77de32a2f753e51796b815e14a7d1fa0",
+    "text_sha256": "6eaec9ca0b8bf3940d01065cb1c195dc77de32a2f753e51796b815e14a7d1fa0"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.json",
+    "sha256": "92ad50b9bd7f2301a35564fa822a14bb55da237c9d5fcde5784dab4e70619c5b",
+    "text_sha256": "92ad50b9bd7f2301a35564fa822a14bb55da237c9d5fcde5784dab4e70619c5b"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.json",
+    "sha256": "624a012e0e684d791269b9fb362734edd21905dc04e7ac062e9c26d7ebe651d3",
+    "text_sha256": "624a012e0e684d791269b9fb362734edd21905dc04e7ac062e9c26d7ebe651d3"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.json",
+    "sha256": "bb04c1d1204b4dfcb1d89b9f41b26d70924bc492871ccef0af8d6de50a1a8c2c",
+    "text_sha256": "bb04c1d1204b4dfcb1d89b9f41b26d70924bc492871ccef0af8d6de50a1a8c2c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.json",
+    "sha256": "5e9b2d26ddff0a7507a317ac8b15f4bcd6fe289b016585760a039763a5d937b3",
+    "text_sha256": "5e9b2d26ddff0a7507a317ac8b15f4bcd6fe289b016585760a039763a5d937b3"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.json",
+    "sha256": "9840a53439725e1dd92aaf5af33ad5b32ccf8e3390426ea607046a42fde5f3d7",
+    "text_sha256": "9840a53439725e1dd92aaf5af33ad5b32ccf8e3390426ea607046a42fde5f3d7"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.json",
+    "sha256": "f20372efb809c92cbbb3005dff6a19d360e5630ff11ca881a1f47c11d938b05a",
+    "text_sha256": "f20372efb809c92cbbb3005dff6a19d360e5630ff11ca881a1f47c11d938b05a"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.json",
+    "sha256": "f8ad4bc63c4aca6a90c04a8f8d54ad71e4ef0fee5bbfd0ada2c104b4c9044e10",
+    "text_sha256": "f8ad4bc63c4aca6a90c04a8f8d54ad71e4ef0fee5bbfd0ada2c104b4c9044e10"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.json",
+    "sha256": "a78e83e7411d0c4344df3ae9f57aec27b45f73f8d0e3b1f09353e4b86c10bb12",
+    "text_sha256": "a78e83e7411d0c4344df3ae9f57aec27b45f73f8d0e3b1f09353e4b86c10bb12"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.json",
+    "sha256": "e7acfedce6d74b7d6aa0a5c6998ed6940897f0292f498b14ee30f0b103e16895",
+    "text_sha256": "e7acfedce6d74b7d6aa0a5c6998ed6940897f0292f498b14ee30f0b103e16895"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.json",
+    "sha256": "83bff10e0a81fe696199e0a22378db1acc12a5cc059f0806969b35b8e3f6a95a",
+    "text_sha256": "83bff10e0a81fe696199e0a22378db1acc12a5cc059f0806969b35b8e3f6a95a"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.json",
+    "sha256": "1771a7bebe2fefce82110862e13a613580aa02486e52ab773fd1d39b46d52f4c",
+    "text_sha256": "1771a7bebe2fefce82110862e13a613580aa02486e52ab773fd1d39b46d52f4c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.json",
+    "sha256": "d9fc4470cbd2027945c0285b3a7e240e47ae2b834ff3136d53c271030978f70f",
+    "text_sha256": "d9fc4470cbd2027945c0285b3a7e240e47ae2b834ff3136d53c271030978f70f"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.json",
+    "sha256": "b94abac765a0b4d90aee1c875f41e7736fe744502b8c95bcae9eea265b4b2661",
+    "text_sha256": "b94abac765a0b4d90aee1c875f41e7736fe744502b8c95bcae9eea265b4b2661"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.json",
+    "sha256": "8c4eba26b14d812ac58d63ad6684691daaecf13189e35e8d6c90a777f36b129c",
+    "text_sha256": "8c4eba26b14d812ac58d63ad6684691daaecf13189e35e8d6c90a777f36b129c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.json",
+    "sha256": "7948b961a1e54b4075ccc9b1e3314fde64ab88650b34767a3c9a291a2803fc0e",
+    "text_sha256": "7948b961a1e54b4075ccc9b1e3314fde64ab88650b34767a3c9a291a2803fc0e"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.json",
+    "sha256": "634cf489fa4b88a60ea9873c4b6db6e31e03edd885c95162775c7bce252ff758",
+    "text_sha256": "634cf489fa4b88a60ea9873c4b6db6e31e03edd885c95162775c7bce252ff758"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.json",
+    "sha256": "e53b6f4f63cfb32adc37c663f69fc67afa3adb2b640c0ae1afaab6ccbb93a253",
+    "text_sha256": "e53b6f4f63cfb32adc37c663f69fc67afa3adb2b640c0ae1afaab6ccbb93a253"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.json",
+    "sha256": "0c4956e903f502eee8e0d3f77990b50d0e483ddc7e1bc184437a58b3b3f06bfb",
+    "text_sha256": "0c4956e903f502eee8e0d3f77990b50d0e483ddc7e1bc184437a58b3b3f06bfb"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.json",
+    "sha256": "e2480b8b101c18b3f4b3cfa0e7a0afa49170b7764ee27ba4f549872f56f1ea1d",
+    "text_sha256": "e2480b8b101c18b3f4b3cfa0e7a0afa49170b7764ee27ba4f549872f56f1ea1d"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.json",
+    "sha256": "19854ea7bdb459fb0568db1816c36efcc4fd7799be0f33e38732d8654955eb97",
+    "text_sha256": "19854ea7bdb459fb0568db1816c36efcc4fd7799be0f33e38732d8654955eb97"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.json",
+    "sha256": "d2ae3868addc5c3b9a2a5a92e4ee4b0721d14bd045951c7252d35837b36c609c",
+    "text_sha256": "d2ae3868addc5c3b9a2a5a92e4ee4b0721d14bd045951c7252d35837b36c609c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.json",
+    "sha256": "edf161ba4a94baf95d81f2525b3a42f11331bcaeb8082ba3d1c674434948a703",
+    "text_sha256": "edf161ba4a94baf95d81f2525b3a42f11331bcaeb8082ba3d1c674434948a703"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.json",
+    "sha256": "587613eed9fc148f3c9b13823653c0d5593f5bc3f835e4701bb4522817c0e949",
+    "text_sha256": "587613eed9fc148f3c9b13823653c0d5593f5bc3f835e4701bb4522817c0e949"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.json",
+    "sha256": "680508a75677c7ed021b9ddee5eff157873d8ce5ab15a4b66b83a59f810e888c",
+    "text_sha256": "680508a75677c7ed021b9ddee5eff157873d8ce5ab15a4b66b83a59f810e888c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.json",
+    "sha256": "c6ea5a87e842f317b724319e303d1bb96fbc37175b5f8d0fd5f88efb53db7562",
+    "text_sha256": "c6ea5a87e842f317b724319e303d1bb96fbc37175b5f8d0fd5f88efb53db7562"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.json",
+    "sha256": "66ef4d6689a7750832c9e88717bc6e6eec7babee9d13f722f8182a96b3c85381",
+    "text_sha256": "66ef4d6689a7750832c9e88717bc6e6eec7babee9d13f722f8182a96b3c85381"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.json",
+    "sha256": "886b8b8eea22338d24b8dbb4292da0bb332113a6c012170cd975b2cf339d3618",
+    "text_sha256": "886b8b8eea22338d24b8dbb4292da0bb332113a6c012170cd975b2cf339d3618"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.json",
+    "sha256": "d1b0375f43f0f0afad85014f814522b977301f5d84ab1a05935397acf8884152",
+    "text_sha256": "d1b0375f43f0f0afad85014f814522b977301f5d84ab1a05935397acf8884152"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.json",
+    "sha256": "f28d1fc65c19dae527d92803a1631f5b485f574dfa3ff0a8f5f4234cea942ac0",
+    "text_sha256": "f28d1fc65c19dae527d92803a1631f5b485f574dfa3ff0a8f5f4234cea942ac0"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.json",
+    "sha256": "48e53fb3446d41f7c4c887d91b39954b2b14f8d46b2c2fc43c9716460b91a2c4",
+    "text_sha256": "48e53fb3446d41f7c4c887d91b39954b2b14f8d46b2c2fc43c9716460b91a2c4"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.json",
+    "sha256": "d4bdc5f6e3dceae7f8e82976bca1e96a66ced84fd25ea2645d3c95539cc5e93e",
+    "text_sha256": "d4bdc5f6e3dceae7f8e82976bca1e96a66ced84fd25ea2645d3c95539cc5e93e"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.json",
+    "sha256": "057c16c266f0ffa0c8c00b0ec755415b531764a9735719007f53711a5ba4a60c",
+    "text_sha256": "057c16c266f0ffa0c8c00b0ec755415b531764a9735719007f53711a5ba4a60c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.json",
+    "sha256": "955fecbf00c730ed7436acf3651f9b6b8519c6f8c0a47a2d2d7b7e07c3c3d774",
+    "text_sha256": "955fecbf00c730ed7436acf3651f9b6b8519c6f8c0a47a2d2d7b7e07c3c3d774"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.json",
+    "sha256": "5ee6526fbb82149f333503fe5984b33310689140158bdc8f168fe85fa49424ad",
+    "text_sha256": "5ee6526fbb82149f333503fe5984b33310689140158bdc8f168fe85fa49424ad"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.json",
+    "sha256": "c3200646f679110040252c406189947ba13bc7e5c7fd79d47069f4f90b74413e",
+    "text_sha256": "c3200646f679110040252c406189947ba13bc7e5c7fd79d47069f4f90b74413e"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.json",
+    "sha256": "8ffaaa0be5eef293c239560fbfbc06cc89ad1732a1b4ed6265824cf5d766d27c",
+    "text_sha256": "8ffaaa0be5eef293c239560fbfbc06cc89ad1732a1b4ed6265824cf5d766d27c"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.json",
+    "sha256": "b631c3d5a0fc890d0c0c93b8b4dd00730038072a428becd44276b4f181422d27",
+    "text_sha256": "b631c3d5a0fc890d0c0c93b8b4dd00730038072a428becd44276b4f181422d27"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.json",
+    "sha256": "397ffedb24a9817966556061fcbf3d1b568201b304cff6ca03856140edfb9bb0",
+    "text_sha256": "397ffedb24a9817966556061fcbf3d1b568201b304cff6ca03856140edfb9bb0"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.json",
+    "sha256": "7f744fa73528e311a262cfb2fa2d0ee4cc3a80660af700cdda0c19ffcae10108",
+    "text_sha256": "7f744fa73528e311a262cfb2fa2d0ee4cc3a80660af700cdda0c19ffcae10108"
+  },
+  {
+    "path": "target/independent-pdf-v2/cells/206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.json",
+    "sha256": "a4a305d06d9413d010f7a04a7e8d16c6d3feb0432651b080d6d50d8dadc77c60",
+    "text_sha256": "a4a305d06d9413d010f7a04a7e8d16c6d3feb0432651b080d6d50d8dadc77c60"
+  }
+]

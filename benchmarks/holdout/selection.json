@@ -1,0 +1,22 @@
+{
+  "repository": "jsvine/pdfplumber",
+  "revision": "4c64b92d5caccd71c645e98e0fabb0c4dba7ff45",
+  "seed": "bulkparse-independent-v1-2026-11-10",
+  "selection": "Four preselected transcript/table/rotation/columns cases plus eight seeded path-hash selections from PDFs <=2 MB, excluding known malformed/password/empty/fuzz paths.",
+  "paths": [
+    "tests/pdfs/scotus-transcript-p1.pdf",
+    "tests/pdfs/nics-background-checks-2015-11.pdf",
+    "tests/pdfs/nics-background-checks-2015-11-rotated.pdf",
+    "tests/pdfs/federal-register-2020-17221.pdf",
+    "tests/pdfs/figure_structure.pdf",
+    "tests/pdfs/issue-1054-example.pdf",
+    "tests/pdfs/issue-463-example.pdf",
+    "tests/pdfs/issue-598-example.pdf",
+    "tests/pdfs/image_structure.pdf",
+    "tests/pdfs/issue-1147-example.pdf",
+    "tests/pdfs/annotations-rotated-180.pdf",
+    "tests/pdfs/issue-912.pdf"
+  ],
+  "tree_sha256": "7b9ed95ab709e99ff98472a86e66161e7afe2e2478f5423d90529fb733c43e6e",
+  "reference_policy": "Upstream saved full-page text for transcript; Apple PDFKit differential references for others. PDFKit text is silver, not human gold. No output-derived reference from evaluated engines."
+}

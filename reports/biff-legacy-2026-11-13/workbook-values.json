@@ -1,0 +1,30 @@
+{
+  "input": "target/realworld/corpus/xls-98c4582ee4ac67ec.xls",
+  "reference": "xlrd 2.0.2",
+  "biff_version": 70,
+  "codepage": 1252,
+  "visible_sheets": [
+    "ICT",
+    "PROPERTY",
+    "RECRUITMENT",
+    "ADVERTISING & MARKETING",
+    "CONSULTANCY"
+  ],
+  "nonempty_source_cells": 466,
+  "checked_by_type": {
+    "1": 194,
+    "2": 242,
+    "3": 30
+  },
+  "number_formats": {
+    "General": 123,
+    "m/d/yy": 79,
+    "m/d/yyyy": 31,
+    "#,##0": 34,
+    "0.00": 103,
+    "0": 96
+  },
+  "mismatches": [],
+  "extra_output_cells": [],
+  "scope": "Visible sheets, original coordinates; text normalizes outer whitespace and CRLF only. Dates checked as ISO dates; numeric values checked exactly after removing currency/grouping notation. No visual-layout or image quality claim."
+}

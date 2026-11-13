@@ -1,0 +1,511 @@
+{
+  "profiles": {
+    "before": {
+      "returned": 199,
+      "attempted": 200,
+      "seconds": 16.298842126,
+      "cpu_seconds": 16.26510799999997,
+      "peak_rss_bytes": 2135834624,
+      "per_format": {
+        "csv": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 149.673668,
+          "samples_ms": [
+            149.673668
+          ]
+        },
+        "doc": {
+          "attempted": 8,
+          "returned": 8,
+          "median_ms": 21.650335,
+          "samples_ms": [
+            21.650335
+          ]
+        },
+        "docm": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.970833,
+          "samples_ms": [
+            1.970833
+          ]
+        },
+        "docx": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 136.944584,
+          "samples_ms": [
+            136.944584
+          ]
+        },
+        "epub": {
+          "attempted": 16,
+          "returned": 16,
+          "median_ms": 195.158628,
+          "samples_ms": [
+            195.158628
+          ]
+        },
+        "ipynb": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 0.794917,
+          "samples_ms": [
+            0.794917
+          ]
+        },
+        "md": {
+          "attempted": 5,
+          "returned": 5,
+          "median_ms": 0.760417,
+          "samples_ms": [
+            0.760417
+          ]
+        },
+        "odp": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 40.713876,
+          "samples_ms": [
+            40.713876
+          ]
+        },
+        "ods": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 8856.022373,
+          "samples_ms": [
+            8856.022373
+          ]
+        },
+        "odt": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 36.57175,
+          "samples_ms": [
+            36.57175
+          ]
+        },
+        "pdf": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 561.130999,
+          "samples_ms": [
+            561.130999
+          ]
+        },
+        "ppt": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 0.721417,
+          "samples_ms": [
+            0.721417
+          ]
+        },
+        "pptx": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 32.254291,
+          "samples_ms": [
+            32.254291
+          ]
+        },
+        "rtf": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 147.093872,
+          "samples_ms": [
+            147.093872
+          ]
+        },
+        "tsv": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.334541,
+          "samples_ms": [
+            1.334541
+          ]
+        },
+        "txt": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.723542,
+          "samples_ms": [
+            1.723542
+          ]
+        },
+        "xls": {
+          "attempted": 18,
+          "returned": 17,
+          "median_ms": 560.715624,
+          "samples_ms": [
+            560.715624
+          ]
+        },
+        "xlsm": {
+          "attempted": 6,
+          "returned": 6,
+          "median_ms": 3453.073,
+          "samples_ms": [
+            3453.073
+          ]
+        },
+        "xlsx": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 2100.533459,
+          "samples_ms": [
+            2100.533459
+          ]
+        }
+      }
+    },
+    "after": {
+      "returned": 200,
+      "attempted": 200,
+      "seconds": 16.359189828,
+      "cpu_seconds": 16.325546000000035,
+      "peak_rss_bytes": 1975091200,
+      "per_format": {
+        "csv": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 158.133541,
+          "samples_ms": [
+            158.133541
+          ]
+        },
+        "doc": {
+          "attempted": 8,
+          "returned": 8,
+          "median_ms": 22.111917,
+          "samples_ms": [
+            22.111917
+          ]
+        },
+        "docm": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.970375,
+          "samples_ms": [
+            1.970375
+          ]
+        },
+        "docx": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 137.957497,
+          "samples_ms": [
+            137.957497
+          ]
+        },
+        "epub": {
+          "attempted": 16,
+          "returned": 16,
+          "median_ms": 196.546331,
+          "samples_ms": [
+            196.546331
+          ]
+        },
+        "ipynb": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 0.736957,
+          "samples_ms": [
+            0.736957
+          ]
+        },
+        "md": {
+          "attempted": 5,
+          "returned": 5,
+          "median_ms": 0.828709,
+          "samples_ms": [
+            0.828709
+          ]
+        },
+        "odp": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 43.279333,
+          "samples_ms": [
+            43.279333
+          ]
+        },
+        "ods": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 8907.629543,
+          "samples_ms": [
+            8907.629543
+          ]
+        },
+        "odt": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 37.144209,
+          "samples_ms": [
+            37.144209
+          ]
+        },
+        "pdf": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 540.228669,
+          "samples_ms": [
+            540.228669
+          ]
+        },
+        "ppt": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 0.779,
+          "samples_ms": [
+            0.779
+          ]
+        },
+        "pptx": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 33.665001,
+          "samples_ms": [
+            33.665001
+          ]
+        },
+        "rtf": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 149.187207,
+          "samples_ms": [
+            149.187207
+          ]
+        },
+        "tsv": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.339291,
+          "samples_ms": [
+            1.339291
+          ]
+        },
+        "txt": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 1.636792,
+          "samples_ms": [
+            1.636792
+          ]
+        },
+        "xls": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 561.789208,
+          "samples_ms": [
+            561.789208
+          ]
+        },
+        "xlsm": {
+          "attempted": 6,
+          "returned": 6,
+          "median_ms": 3463.419542,
+          "samples_ms": [
+            3463.419542
+          ]
+        },
+        "xlsx": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 2100.806706,
+          "samples_ms": [
+            2100.806706
+          ]
+        }
+      }
+    },
+    "anydoc": {
+      "returned": 185,
+      "attempted": 200,
+      "seconds": 13.408168082,
+      "cpu_seconds": 13.376064000000014,
+      "peak_rss_bytes": 3040968704,
+      "per_format": {
+        "csv": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 617.709083,
+          "samples_ms": [
+            617.709083
+          ]
+        },
+        "doc": {
+          "attempted": 8,
+          "returned": 8,
+          "median_ms": 21.506539,
+          "samples_ms": [
+            21.506539
+          ]
+        },
+        "docm": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 3.287417,
+          "samples_ms": [
+            3.287417
+          ]
+        },
+        "docx": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 140.213585,
+          "samples_ms": [
+            140.213585
+          ]
+        },
+        "epub": {
+          "attempted": 16,
+          "returned": 16,
+          "median_ms": 330.939002,
+          "samples_ms": [
+            330.939002
+          ]
+        },
+        "ipynb": {
+          "attempted": 4,
+          "returned": 0,
+          "median_ms": 0.084123,
+          "samples_ms": [
+            0.084123
+          ]
+        },
+        "md": {
+          "attempted": 5,
+          "returned": 0,
+          "median_ms": 0.176918,
+          "samples_ms": [
+            0.176918
+          ]
+        },
+        "odp": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 66.12925,
+          "samples_ms": [
+            66.12925
+          ]
+        },
+        "ods": {
+          "attempted": 19,
+          "returned": 16,
+          "median_ms": 5063.704956,
+          "samples_ms": [
+            5063.704956
+          ]
+        },
+        "odt": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 61.517666,
+          "samples_ms": [
+            61.517666
+          ]
+        },
+        "pdf": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 3291.708501,
+          "samples_ms": [
+            3291.708501
+          ]
+        },
+        "ppt": {
+          "attempted": 1,
+          "returned": 1,
+          "median_ms": 0.562667,
+          "samples_ms": [
+            0.562667
+          ]
+        },
+        "pptx": {
+          "attempted": 4,
+          "returned": 4,
+          "median_ms": 36.106583,
+          "samples_ms": [
+            36.106583
+          ]
+        },
+        "rtf": {
+          "attempted": 19,
+          "returned": 19,
+          "median_ms": 302.321082,
+          "samples_ms": [
+            302.321082
+          ]
+        },
+        "tsv": {
+          "attempted": 1,
+          "returned": 0,
+          "median_ms": 0.029458,
+          "samples_ms": [
+            0.029458
+          ]
+        },
+        "txt": {
+          "attempted": 1,
+          "returned": 0,
+          "median_ms": 0.046833,
+          "samples_ms": [
+            0.046833
+          ]
+        },
+        "xls": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 343.060002,
+          "samples_ms": [
+            343.060002
+          ]
+        },
+        "xlsm": {
+          "attempted": 6,
+          "returned": 5,
+          "median_ms": 1234.367293,
+          "samples_ms": [
+            1234.367293
+          ]
+        },
+        "xlsx": {
+          "attempted": 18,
+          "returned": 18,
+          "median_ms": 1894.697124,
+          "samples_ms": [
+            1894.697124
+          ]
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "changed": [
+      {
+        "id": "xls-98c4582ee4ac67ec",
+        "fields": [
+          "diagnostics",
+          "error_code",
+          "image_count",
+          "error",
+          "render_diagnostics",
+          "markdown_sha256",
+          "image_assets",
+          "ok",
+          "status",
+          "image_bytes"
+        ]
+      }
+    ],
+    "within_profile_changes": {
+      "before": [],
+      "after": [],
+      "anydoc": []
+    }
+  }
+}

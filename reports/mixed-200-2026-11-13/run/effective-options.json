@@ -1,0 +1,360 @@
+{
+  "docling": {
+    "ready": true,
+    "engine": "docling",
+    "versions": {
+      "docling": "2.150.0"
+    },
+    "options": {
+      "formats": [
+        "docx",
+        "doc",
+        "rtf",
+        "pptx",
+        "ppt",
+        "xlsx",
+        "xls",
+        "odt",
+        "ods",
+        "odp",
+        "epub",
+        "html",
+        "csv",
+        "md",
+        "pdf"
+      ],
+      "API": "convert_all; successful default Markdown exports joined",
+      "failed_subdocuments": "status and error details retained in raw per-document records; usable outputs joined",
+      "backend_options": "installed defaults except PDF; PDF pipeline initialized before ready",
+      "pdf": {
+        "document_timeout": null,
+        "accelerator_options": {
+          "num_threads": 1,
+          "device": "cpu",
+          "cuda_use_flash_attention2": false
+        },
+        "enable_remote_services": false,
+        "allow_external_plugins": false,
+        "artifacts_path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/competitors/models",
+        "do_picture_classification": false,
+        "picture_classification_options": {
+          "engine_options": {
+            "engine_type": "transformers",
+            "top_k": null,
+            "torch_dtype": null,
+            "compile_model": false
+          },
+          "model_spec": {
+            "name": "document_figure_classifier_v2",
+            "repo_id": "docling-project/DocumentFigureClassifier-v2.5",
+            "revision": "main",
+            "engine_overrides": {}
+          }
+        },
+        "do_picture_description": false,
+        "picture_description_options": {
+          "batch_size": 8,
+          "scale": 2.0,
+          "picture_area_threshold": 0.05,
+          "classification_allow": null,
+          "classification_deny": null,
+          "classification_min_confidence": 0.0,
+          "engine_options": {
+            "engine_type": "auto_inline",
+            "prefer_vllm": false,
+            "trust_remote_code": false
+          },
+          "model_spec": {
+            "name": "SmolVLM-256M-Instruct",
+            "default_repo_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+            "revision": "main",
+            "prompt": "Describe this image in a few sentences.",
+            "response_format": "plaintext",
+            "supported_engines": null,
+            "engine_overrides": {
+              "mlx": {
+                "repo_id": "moot20/SmolVLM-256M-Instruct-MLX",
+                "revision": null,
+                "torch_dtype": null,
+                "min_engine_version": null,
+                "extra_config": {}
+              },
+              "transformers": {
+                "repo_id": null,
+                "revision": null,
+                "torch_dtype": "bfloat16",
+                "min_engine_version": null,
+                "extra_config": {
+                  "transformers_model_type": "automodel-imagetexttotext"
+                }
+              }
+            },
+            "api_overrides": {
+              "api_lmstudio": {
+                "params": {
+                  "model": "smolvlm-256m-instruct"
+                }
+              }
+            },
+            "trust_remote_code": false,
+            "stop_strings": [],
+            "temperature": 0.0,
+            "max_new_tokens": 4096,
+            "extra_generation_config": {}
+          },
+          "prompt": "Describe this image in a few sentences.",
+          "generation_config": {
+            "max_new_tokens": 200,
+            "do_sample": false
+          }
+        },
+        "do_chart_extraction": false,
+        "chart_extraction_options": {
+          "engine_options": {
+            "engine_type": "auto_inline",
+            "prefer_vllm": false,
+            "trust_remote_code": false
+          },
+          "model_spec": {
+            "name": "Granite-Vision-4.1-4B",
+            "default_repo_id": "ibm-granite/granite-vision-4.1-4b",
+            "revision": "dd48e97503de471803850df70843cf9eb5da8712",
+            "prompt": "<chart2csv>",
+            "response_format": "plaintext",
+            "supported_engines": [
+              "transformers",
+              "api_ollama",
+              "api_lmstudio",
+              "api_openai",
+              "mlx"
+            ],
+            "engine_overrides": {
+              "transformers": {
+                "repo_id": null,
+                "revision": null,
+                "torch_dtype": "bfloat16",
+                "min_engine_version": null,
+                "extra_config": {
+                  "transformers_model_type": "automodel-imagetexttotext"
+                }
+              },
+              "mlx": {
+                "repo_id": null,
+                "revision": null,
+                "torch_dtype": null,
+                "min_engine_version": "0.7.0",
+                "extra_config": {}
+              }
+            },
+            "api_overrides": {
+              "api_lmstudio": {
+                "params": {
+                  "model": "granite-vision-4.1-4b"
+                }
+              },
+              "api_ollama": {
+                "params": {
+                  "model": "granite-vision-4.1-4b"
+                }
+              },
+              "api_openai": {
+                "params": {
+                  "model": "granite-vision-4.1-4b"
+                }
+              }
+            },
+            "trust_remote_code": true,
+            "stop_strings": [],
+            "temperature": 0.0,
+            "max_new_tokens": 4096,
+            "extra_generation_config": {}
+          },
+          "chart2csv": true,
+          "chart2summary": false,
+          "chart2code": false,
+          "output_format": "granite_vision_charts",
+          "use_natural_language_prompts": false
+        },
+        "images_scale": 1.0,
+        "generate_page_images": false,
+        "generate_picture_images": false,
+        "do_table_structure": true,
+        "extract_form_fields": false,
+        "do_ocr": false,
+        "do_code_enrichment": false,
+        "do_formula_enrichment": false,
+        "force_backend_text": false,
+        "table_structure_options": {
+          "do_cell_matching": true,
+          "mode": "accurate"
+        },
+        "ocr_options": {
+          "mode": "default",
+          "lang": [],
+          "scale": 3.0,
+          "replace_broken_text_layer": false,
+          "force_full_page_ocr": false
+        },
+        "layout_options": {
+          "keep_empty_clusters": false,
+          "skip_cell_assignment": false,
+          "create_orphan_clusters": true,
+          "engine_options": {
+            "engine_type": "transformers",
+            "score_threshold": 0.3,
+            "torch_dtype": null,
+            "compile_model": false
+          },
+          "model_spec": {
+            "name": "layout_heron",
+            "repo_id": "docling-project/docling-layout-heron",
+            "revision": "main",
+            "engine_overrides": {
+              "onnxruntime": {
+                "repo_id": "docling-project/docling-layout-heron-onnx",
+                "revision": null,
+                "torch_dtype": null,
+                "min_engine_version": null,
+                "extra_config": {
+                  "model_filename": "model.onnx"
+                }
+              }
+            }
+          }
+        },
+        "code_formula_options": {
+          "engine_options": {
+            "engine_type": "auto_inline",
+            "prefer_vllm": false,
+            "trust_remote_code": false
+          },
+          "model_spec": {
+            "name": "CodeFormulaV2",
+            "default_repo_id": "docling-project/CodeFormulaV2",
+            "revision": "main",
+            "prompt": "",
+            "response_format": "plaintext",
+            "supported_engines": null,
+            "engine_overrides": {
+              "transformers": {
+                "repo_id": null,
+                "revision": null,
+                "torch_dtype": null,
+                "min_engine_version": null,
+                "extra_config": {
+                  "transformers_model_type": "automodel-imagetexttotext",
+                  "extra_generation_config": {
+                    "skip_special_tokens": false
+                  },
+                  "torch_dtype": "bfloat16"
+                }
+              }
+            },
+            "api_overrides": {},
+            "trust_remote_code": false,
+            "stop_strings": [
+              "</doctag>",
+              "<end_of_utterance>"
+            ],
+            "temperature": 0.0,
+            "max_new_tokens": 4096,
+            "extra_generation_config": {}
+          },
+          "scale": 2.0,
+          "max_size": null,
+          "extract_code": true,
+          "extract_formulas": true,
+          "expansion_factor": 0.18,
+          "stop_on_repetition": true
+        },
+        "use_embedded_picture_images": false,
+        "generate_table_images": false,
+        "generate_parsed_pages": false,
+        "use_reading_order_separators": true,
+        "heading_hierarchy_options": {
+          "enabled": false,
+          "use_bookmarks": true,
+          "use_numbering": true,
+          "use_style": true,
+          "use_font_style": true,
+          "style_size_tolerance": 0.05,
+          "numbering_schemes": null,
+          "max_level": 6,
+          "bookmark_match_threshold": 0.8
+        },
+        "script_position_options": {
+          "enabled": false
+        },
+        "ocr_batch_size": 4,
+        "layout_batch_size": 4,
+        "table_batch_size": 4,
+        "batch_polling_interval_seconds": 0.5,
+        "queue_max_size": 100,
+        "stage_shutdown_timeout_seconds": 15.0
+      }
+    }
+  },
+  "markitdown": {
+    "ready": true,
+    "engine": "markitdown",
+    "versions": {
+      "markitdown": "0.1.9"
+    },
+    "options": {
+      "plugins": false,
+      "llm_client": null
+    }
+  },
+  "pandoc": {
+    "ready": true,
+    "engine": "pandoc",
+    "versions": {
+      "pandoc": "pandoc 3.9"
+    },
+    "options": {
+      "format": "gfm",
+      "wrap": "none",
+      "CLI_launch": "included"
+    }
+  },
+  "mammoth": {
+    "ready": true,
+    "engine": "mammoth",
+    "versions": {
+      "mammoth": "1.13.0",
+      "markdownify": "1.2.3"
+    },
+    "options": {
+      "pipeline": "Mammoth default HTML -> markdownify ATX Markdown"
+    }
+  },
+  "libreoffice": {
+    "ready": true,
+    "engine": "libreoffice",
+    "versions": {
+      "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+      "pandoc": "pandoc 3.9"
+    },
+    "options": {
+      "pipeline": "headless HTML export -> Pandoc GFM",
+      "subprocess_startup": "included",
+      "macro_execution": "MacroSecurityLevel 3 in isolated profile"
+    }
+  },
+  "unstructured": {
+    "ready": true,
+    "engine": "unstructured",
+    "versions": {
+      "unstructured": "0.27.37",
+      "markdownify": "1.2.3"
+    },
+    "options": {
+      "dispatch": "declared per-format partition functions",
+      "tables": "metadata.text_as_html -> markdownify",
+      "titles": "ATX level 2",
+      "list_items": "Markdown bullets",
+      "remote_services": false,
+      "pdf_strategy": "fast (text only, OCR disabled)"
+    }
+  }
+}

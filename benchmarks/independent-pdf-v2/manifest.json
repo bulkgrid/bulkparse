@@ -1,0 +1,1330 @@
+{
+  "archives": {
+    "core": {
+      "url": "https://codait-cos-dax.s3.us.cloud-object-storage.appdomain.cloud/dax-doclaynet/1.0.0/DocLayNet_core.zip",
+      "size": 30012083650,
+      "etag": "\"52242220284e12538949c5b06eb2777c-448\""
+    },
+    "extra": {
+      "url": "https://codait-cos-dax.s3.us.cloud-object-storage.appdomain.cloud/dax-doclaynet/1.0.0/DocLayNet_extra.zip",
+      "size": 8008878198,
+      "etag": "\"56a63e0408a7076bceaac038ab9842ca-120\""
+    }
+  },
+  "rows": [
+    {
+      "image": {
+        "id": 5477,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.png",
+        "collection": "sec_filings",
+        "doc_name": "0000006951-20-000048_20201211x10k.pdf",
+        "page_no": 58,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "59fdaf39878586b3156fac274e073d07ec8f2307ceaab729483238dd08f8b495",
+        "cells": "6bb74e1e43f1967f60c37b6e0f41f6d4ce7b132fc22ffb1abc7635097f1acc09",
+        "images": "f17cf443b94c6e2230494c7cb282d7cfd2a2d558ff59c3cfd4db05db96c45a91"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.pdf",
+        "cells": "target/independent-pdf-v2/cells/72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.json",
+        "images": "target/independent-pdf-v2/images/72a3678464d1274664324bc62f52de84211d3fdad844ad98f9f70b6bd89badc2.png"
+      }
+    },
+    {
+      "image": {
+        "id": 263,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.png",
+        "collection": "ann_reports_00_04_fancy",
+        "doc_name": "NYSE_HNI_2003.pdf",
+        "page_no": 41,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "a56a4c96fa9cd90c1c7fdc79ebd65bf57488ddaf646f94d6bf1166fbee80955e",
+        "cells": "4ef89227f4d720f1b859962c4f9746411b6c926f75d79925aebdaec65a5209ad",
+        "images": "26ba4fe03e688ff73290fa7387a26b152064761a45a8b352c9640549687cdc52"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.pdf",
+        "cells": "target/independent-pdf-v2/cells/5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.json",
+        "images": "target/independent-pdf-v2/images/5db647c776f2dfeacc102ac967ce7172baa28dafcdb16162ba7016999f6e8b84.png"
+      }
+    },
+    {
+      "image": {
+        "id": 361,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.png",
+        "collection": "ann_reports_00_04_fancy",
+        "doc_name": "NYSE_MGM_2004.pdf",
+        "page_no": 1,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "459d4e6b66040151165a65adf9848f2a0626358c1b58352fc82988f10e495357",
+        "cells": "3c3e982b05eec398b340479bf47f1a155610049eecdcf58f00f318c58436a66d",
+        "images": "f3ddf79bbc6df7be45218766d2593630e7fa94aeeadcc403a2295a2f7a0dcafb"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.pdf",
+        "cells": "target/independent-pdf-v2/cells/e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.json",
+        "images": "target/independent-pdf-v2/images/e6293956bbfd10cc1cdb4643e290c077af9a999d69dd41ddf56b02275ea453e6.png"
+      }
+    },
+    {
+      "image": {
+        "id": 389,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.png",
+        "collection": "ann_reports_00_04_fancy",
+        "doc_name": "OTC_NSANY_2004.pdf",
+        "page_no": 31,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "6d75205fad1b58b6d6273ec1b4631e725e8459148fd8a0ec5e133270177bdf61",
+        "cells": "f826ab34ab6760e60a82ed45e0aebebb6e98e82d9c59593de6699f645369faa7",
+        "images": "d1f965feee2bf946a50dafc2c9a23583fb0a85bebc42d35ba2628a54998be9e3"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.pdf",
+        "cells": "target/independent-pdf-v2/cells/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.json",
+        "images": "target/independent-pdf-v2/images/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5485,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.png",
+        "collection": "sec_filings",
+        "doc_name": "0000016875-21-000008_20210218x10k.pdf",
+        "page_no": 79,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "c69326bfda071cc386a0c6b9995b31aa2d452c0380ae4e9854f5054e399b0194",
+        "cells": "251070f3ff29ac5cf10a5f8c207f5775165a41dbb9c1cc563f36c572eb5a952f",
+        "images": "4053d3cb4337c41184a1751d46fd5a352dbe9190e08655a308361baddcd03ca7"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.pdf",
+        "cells": "target/independent-pdf-v2/cells/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.json",
+        "images": "target/independent-pdf-v2/images/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.png"
+      }
+    },
+    {
+      "image": {
+        "id": 969,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.png",
+        "collection": "ann_reports_10_14_fancy",
+        "doc_name": "NYSE_RCI_2013.pdf",
+        "page_no": 106,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "fb768182ba4c8742d0298b8ad29a9e487292b54d0390ce9275971f147e7506fa",
+        "cells": "9beacdd746e8d4bf83790a27569da6dc177f5a7278ac01c607695753945e3e11",
+        "images": "64127b19880d973eb6455c692520a521ab50c69c5bba6fba16a38cd617f964bf"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.pdf",
+        "cells": "target/independent-pdf-v2/cells/12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.json",
+        "images": "target/independent-pdf-v2/images/12ac66d3b5f0b78d71859d637d86084c3f80a2c64cb34179d43a7a7fe1fec7e3.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5505,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.png",
+        "collection": "sec_filings",
+        "doc_name": "0000006201-21-000014_20210217x10k.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "132ada8f2242385b34d477765e4d1f9c852899ab4095386a3d8cc44a8b79988e",
+        "cells": "b878c5614179df31afa3940496dbc2b836cd5efe2fa9132dcc931e3fcff89596",
+        "images": "0bdb8a62fcbb0aa51bf1cc4a7195b0309fc352b17f41f76c84235b016283a7cb"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.pdf",
+        "cells": "target/independent-pdf-v2/cells/c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.json",
+        "images": "target/independent-pdf-v2/images/c53580c6b960b06e63d9b619b4b67397bd8eb6a5d231d22cc7e78d580927564f.png"
+      }
+    },
+    {
+      "image": {
+        "id": 821,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.png",
+        "collection": "ann_reports_00_04_fancy",
+        "doc_name": "ASX_STO_2004.pdf",
+        "page_no": 60,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "47647ae29b930dfd2d20c537d34746d1df23df3603e90654cd24fa5df74fe4a6",
+        "cells": "e4174749633279fc5d01dc8915ad8a5827fb7cbd5640170df9c87b51a6ceea0e",
+        "images": "7e882a754681f5e9609496d971ade0960a4ba930142701d06551ee9d9ea6c170"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.pdf",
+        "cells": "target/independent-pdf-v2/cells/4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.json",
+        "images": "target/independent-pdf-v2/images/4cd636088760b5b04a8b4f03798423573a01b67c60d33f0c382474a024428aa8.png"
+      }
+    },
+    {
+      "image": {
+        "id": 1659,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.png",
+        "collection": "ann_reports_10_14_fancy",
+        "doc_name": "ASX_SEA_2014.pdf",
+        "page_no": 73,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "0f82b7a77edd28c4eedc79b9aed6b2bc7b0ad7776506f269b25211b26f30f03f",
+        "cells": "9365a351525026cf583931eb81f32ee5244b3c0290d3bbd828e27fcd6b60e0f4",
+        "images": "b0c9ea6683f77fa4b25a99eedbf6bf484a663d2180a345aa8cd99286288eb875"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.pdf",
+        "cells": "target/independent-pdf-v2/cells/a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.json",
+        "images": "target/independent-pdf-v2/images/a04f6653cda424c146ac89d421591121eed16d3dea1bc99295659549af4f3b4e.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.png",
+        "collection": "ann_reports_00_04_fancy",
+        "doc_name": "NASDAQ_EEFT_2000.pdf",
+        "page_no": 12,
+        "precedence": 0,
+        "doc_category": "financial_reports"
+      },
+      "sha256": {
+        "pdfs": "1d9e41b0dc596b8d2785788d4a71a5abc04dc434a51e458a2a5dedc8e5d39d89",
+        "cells": "b05abbd470d4586f2e17e1e026563797279623a4672ab8c8b7d9a72e2acf6783",
+        "images": "3127138270085c85ec658b008ce54fb96b439cd706e15abf5cc26574fdfa77f0"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.pdf",
+        "cells": "target/independent-pdf-v2/cells/61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.json",
+        "images": "target/independent-pdf-v2/images/61d269cb1f2c976191469b891aa87b7cb40eb65eee4483725c1a85c4dc72d141.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3154,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Draft contract.pdf",
+        "page_no": 1,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "15b8e9be5abbd5e650dc12d768ad2d0490e88f2765dd51539c5380c229f4e970",
+        "cells": "470b86ecb65aa303653d22d0340807f5a05dd6f1dfb282fc7f2f9d0bba2acf50",
+        "images": "f8f15d208b17f45346bf85d7fa4f2f6238e760bac6b4617b9fb4103837888323"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.pdf",
+        "cells": "target/independent-pdf-v2/cells/8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.json",
+        "images": "target/independent-pdf-v2/images/8105a9bba531e5bc9364204dd389146cf0a086e92a783f97ce203436ffcfc159.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3050,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Draft FWC for services 0142.pdf",
+        "page_no": 10,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "832c7a0e6e9d710e9eeb1a06e3fd5303aa473b8a63104fe65edaa35cc3db29f9",
+        "cells": "0fedc6ec1569d57b55e3725903cef3e2f5943ff59242c3ba5567c0de34f83354",
+        "images": "287e35e16314018551705b40186b49244d8690dda6de451323decb733b08b1b2"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.pdf",
+        "cells": "target/independent-pdf-v2/cells/ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.json",
+        "images": "target/independent-pdf-v2/images/ed79e2896d9d4abecf304edc4090c1d02dadd44635d8c3570eb4afcae453a5e1.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3129,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.png",
+        "collection": "eu_tenders",
+        "doc_name": "FR-Projet de contrat-cadre 18-05-21.pdf",
+        "page_no": 24,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "ccce499f535dc9b909fb1314c3b84aec5fb67be87e3bd675fb14bb89e563ce6e",
+        "cells": "7ecde7481986162b13f4aa508ef59f6519531a73bc658522a2074e6864d65f65",
+        "images": "7843a7d3e7836df04ae819b4fcadacaf3b43b21a61af16a76220a4061e344726"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.pdf",
+        "cells": "target/independent-pdf-v2/cells/fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.json",
+        "images": "target/independent-pdf-v2/images/fce1a12f9a7537fa9175baefab657e081021e96a3ad5968db3ff786f498216f4.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3082,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-ECHA2020_666_Tender Specifications_002.pdf",
+        "page_no": 18,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "35de7489051443f2c888286ce5790d39b27e6924e15851eaee603b0ca0fbc0af",
+        "cells": "4110f8dbcce5e17a33a1e5c1a34e86c1ca12d9472593ab72c44cb891f2190d9a",
+        "images": "f9bfe3ca795c2b61f2c13807572357a553c983d9b32ec9f0d2eb91efe75b3b59"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.pdf",
+        "cells": "target/independent-pdf-v2/cells/1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.json",
+        "images": "target/independent-pdf-v2/images/1ff34092517480d69281d57c5c0f40ce63723cad0b6fb31d8b22860d8cc1460a.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3157,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-c4l tenderform en.pdf",
+        "page_no": 3,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "548470c2f0cf279f23beba96ad8c3c3d6b990ab85388486fc9ebd22cddff1a86",
+        "cells": "2056c365b2e8451c08a554bd0cca9771ffd220bd6f399fb94b4f0b289b049bf5",
+        "images": "4672a56bd49fe4f1eab9a4b0ac1887f763b1270ac2a5de247bb793993a4a323a"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.pdf",
+        "cells": "target/independent-pdf-v2/cells/08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.json",
+        "images": "target/independent-pdf-v2/images/08727be8d421044d8f1345e79853a231baa211931b23b3128d2c232f9ccd707f.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3144,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Procurement Document 3 - General Administrative And Submission Clauses (GASC).pdf",
+        "page_no": 7,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "8b58c2400d1fb74907227e26a8b5eadd44e13f7c600e21cb0e84e003bfbca2c6",
+        "cells": "c6a09e7b05dc2b165f30fbcb0e92df718aaded50996235268828164094edcc73",
+        "images": "ef572bca0915ba7e634cd1e47884dce4bc02279a52daeccbfe707f77503ac372"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.pdf",
+        "cells": "target/independent-pdf-v2/cells/17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.json",
+        "images": "target/independent-pdf-v2/images/17292a4a3fff554d4e9b850eded86372af9b0c3f9c471fbe9fa4fb1bf279bb92.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3049,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Technical Annex A_DPR_12924-Lot 1, Tasks and DL table.pdf",
+        "page_no": 11,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "9252e971c090520f02fb3577d6467d72a9e494b672a689b592728f80f7dbfdb6",
+        "cells": "6eaec9ca0b8bf3940d01065cb1c195dc77de32a2f753e51796b815e14a7d1fa0",
+        "images": "802ff51de980d5932c3ecbaf3b194d9b74e2b6da4969fb3a06bbd9c4bb705619"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.pdf",
+        "cells": "target/independent-pdf-v2/cells/ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.json",
+        "images": "target/independent-pdf-v2/images/ef58dd96bb7e796e96f6fa5b5026cd6615b3950552e67d63ffd952f7668f8bd3.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3126,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-AA-000799-002-D-01_TACONT draft.pdf",
+        "page_no": 4,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "5affc079426150227c247f8f45db8e207c64a15a4024e6f66bad67a95c43443f",
+        "cells": "92ad50b9bd7f2301a35564fa822a14bb55da237c9d5fcde5784dab4e70619c5b",
+        "images": "d7533f1bb92c687f8e0d6becbfc50527e679fd91901521f88d8f814469a87f4f"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.pdf",
+        "cells": "target/independent-pdf-v2/cells/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.json",
+        "images": "target/independent-pdf-v2/images/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2972,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Changes No 1 to TD.pdf",
+        "page_no": 1,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "185718be7bae73c13b4676b2221a66fce8861302773386059079508331a8c57f",
+        "cells": "624a012e0e684d791269b9fb362734edd21905dc04e7ac062e9c26d7ebe651d3",
+        "images": "8a46baad4d5225d1680fc5c118293d514bec2295c2b7e2af6ee5d729d89fed61"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.pdf",
+        "cells": "target/independent-pdf-v2/cells/640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.json",
+        "images": "target/independent-pdf-v2/images/640947997c30fc0a448c5917c8eeb5a3cbe5370efc4982f2533e1b105d7ccc6f.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3010,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.png",
+        "collection": "eu_tenders",
+        "doc_name": "EN-Lot1 Lot2 Vol1 Sec5 d4l admingrid en.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "government_tenders"
+      },
+      "sha256": {
+        "pdfs": "db276f2a829fdd25786edebba2410a493046bab4621f51bc4a6d550d0e475cc6",
+        "cells": "bb04c1d1204b4dfcb1d89b9f41b26d70924bc492871ccef0af8d6de50a1a8c2c",
+        "images": "4c054ed1e671cc1f101c748169ed1f1e8eda0d1f8c9735bb62fbe3fcbc36ba1e"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.pdf",
+        "cells": "target/independent-pdf-v2/cells/fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.json",
+        "images": "target/independent-pdf-v2/images/fcff4bd12bd0f21b4501ce6015dfe8b6f42f5b6a100f950d801f0aaf16071b00.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3893,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.png",
+        "collection": "japanese_laws",
+        "doc_name": "s24Bc003781002en13.0_r01C168.pdf",
+        "page_no": 72,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "9426018280fc486f7ba7f30be3ad67907365b3f5f54e5291b75f60f5145a4d67",
+        "cells": "5e9b2d26ddff0a7507a317ac8b15f4bcd6fe289b016585760a039763a5d937b3",
+        "images": "06e5eb19dd4e8649bee6c6d5a50e7b6040c0ae0a9e1315ecf5bba313355a4d55"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.pdf",
+        "cells": "target/independent-pdf-v2/cells/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.json",
+        "images": "target/independent-pdf-v2/images/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3199,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.png",
+        "collection": "faa_regulations",
+        "doc_name": "00-80T-80.pdf",
+        "page_no": 315,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "1e59c57f65b3dafdcf87c4996214eff213b498d76dc32801da3c1b2217a5f1f7",
+        "cells": "9840a53439725e1dd92aaf5af33ad5b32ccf8e3390426ea607046a42fde5f3d7",
+        "images": "60cb39df43a1f2d64c486ebe235e06b654dd5975925ab212c5feee4cffded2c6"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.pdf",
+        "cells": "target/independent-pdf-v2/cells/63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.json",
+        "images": "target/independent-pdf-v2/images/63f4a0f1a19ed2e64b02cfa31a51e1f79116dd66c4ad3ac571c00d67b091b6ad.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2785,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.png",
+        "collection": "botswana_laws",
+        "doc_name": "Botswana-constitution.pdf",
+        "page_no": 42,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "522d157e2958889f7d6392348059499bdcb1fca172fcb3b4807e48880304a922",
+        "cells": "f20372efb809c92cbbb3005dff6a19d360e5630ff11ca881a1f47c11d938b05a",
+        "images": "a718c4a2abebab772e85a9ab7372973f2bea00406f9e823cf7d970ac5eaef00d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.pdf",
+        "cells": "target/independent-pdf-v2/cells/f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.json",
+        "images": "target/independent-pdf-v2/images/f6bed3c65da7fb8630292cff661032398914811bcb9e322f48aa0a3737b391dd.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3323,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.png",
+        "collection": "faa_regulations",
+        "doc_name": "cug-complete.pdf",
+        "page_no": 82,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "c1d74a7973ecd0d9b39df1c0dae6573337f5977c8baa94f5abb9d7cef33af9a9",
+        "cells": "f8ad4bc63c4aca6a90c04a8f8d54ad71e4ef0fee5bbfd0ada2c104b4c9044e10",
+        "images": "79c6579ec6f403ac281563e42cc974e824645961d5c7b5741b2625f5890c6d3b"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.pdf",
+        "cells": "target/independent-pdf-v2/cells/c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.json",
+        "images": "target/independent-pdf-v2/images/c1cc3f27c9ef643cedb3c539c593fdbdc41110320e2e77a5191302ed980a9837.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5039,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.png",
+        "collection": "philippine_laws",
+        "doc_name": "Presidential Decree No. 1067, s. 1976 | Official Gazette of the Republic of the Philippines.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "6e577f740c297ec25387de530e6b58400d24fcd4392571e939720966067409fb",
+        "cells": "a78e83e7411d0c4344df3ae9f57aec27b45f73f8d0e3b1f09353e4b86c10bb12",
+        "images": "8dbe430c88ddb6fbdb632c56ccb4fbf917804367415e442c5cdd1b69c5896f6f"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.pdf",
+        "cells": "target/independent-pdf-v2/cells/6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.json",
+        "images": "target/independent-pdf-v2/images/6f7835a75cea4571fc1c9cd409ae8d0c09ea4f8d13bf011c65fee6845bee6857.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5343,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.png",
+        "collection": "russian_laws",
+        "doc_name": "0001202012210122.pdf",
+        "page_no": 35,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "de5a7b39fc09f8e5d3f28ad2a385a63f4fb6d2d37c0d518e430eb05b6ed44b99",
+        "cells": "e7acfedce6d74b7d6aa0a5c6998ed6940897f0292f498b14ee30f0b103e16895",
+        "images": "faca65895b3d83876eef98b837bd30e6a91f108a7c5c645086a1aeb2d2888e32"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.pdf",
+        "cells": "target/independent-pdf-v2/cells/99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.json",
+        "images": "target/independent-pdf-v2/images/99c991140b4dd010bdbd4bf482669f00b6a39b12ef7521ab7e7980bfbad444f5.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3799,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.png",
+        "collection": "german_laws",
+        "doc_name": "FSBeitrV.pdf",
+        "page_no": 48,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "a8f4a2159bee39babc2507df06f637b0557eaf4ccd47471bdc7fc817ec57c2bb",
+        "cells": "83bff10e0a81fe696199e0a22378db1acc12a5cc059f0806969b35b8e3f6a95a",
+        "images": "d289e7a7614c1643ead79ca487bab42e3228aec4b462e2e1d12ea0863245aa0d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.pdf",
+        "cells": "target/independent-pdf-v2/cells/a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.json",
+        "images": "target/independent-pdf-v2/images/a3f6fabd5809275f8c70b90b6b7ae2de0ba294d906db1e0b0dd48c672f61c437.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3840,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.png",
+        "collection": "german_laws",
+        "doc_name": "FABaumPflPrV.pdf",
+        "page_no": 9,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "49dd8a75806506ff55d57b20d8d39e801caf71e56ed52a09eb1729055c5f0d2a",
+        "cells": "1771a7bebe2fefce82110862e13a613580aa02486e52ab773fd1d39b46d52f4c",
+        "images": "f3dd0be438d474d54cbd8d64d76fb086c6bab2a3a0fa76019c4cee9ee101fefe"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.pdf",
+        "cells": "target/independent-pdf-v2/cells/b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.json",
+        "images": "target/independent-pdf-v2/images/b444f908080662032801155b5a1e923121cb4adbf263f33ec06859e2b92c83f2.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3714,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.png",
+        "collection": "gb_laws",
+        "doc_name": "uksi_20200433_en.pdf",
+        "page_no": 1,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "011089f3fee63e4307703752fe581cb078484124aa4756c71f14f84439fc77c2",
+        "cells": "d9fc4470cbd2027945c0285b3a7e240e47ae2b834ff3136d53c271030978f70f",
+        "images": "08e436434a8d083486864f11ba22bdea357e2b8af13d7e15ea29358f8d3b5f00"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.pdf",
+        "cells": "target/independent-pdf-v2/cells/7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.json",
+        "images": "target/independent-pdf-v2/images/7272f2319fdabbd80dd0251d85dec8f3369fbc19ec6ccfd44909f3e35368d8e8.png"
+      }
+    },
+    {
+      "image": {
+        "id": 3738,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.png",
+        "collection": "gb_laws",
+        "doc_name": "uksi_20210538_en.pdf",
+        "page_no": 1,
+        "precedence": 0,
+        "doc_category": "laws_and_regulations"
+      },
+      "sha256": {
+        "pdfs": "ba3087c726d5c30b0008e5d298da2dbf61b08993cf1a316353be6b42011e54a3",
+        "cells": "b94abac765a0b4d90aee1c875f41e7736fe744502b8c95bcae9eea265b4b2661",
+        "images": "05cc0d613ff10d9defac075e98c289392a91f0f171657099c5969120ac92629b"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.pdf",
+        "cells": "target/independent-pdf-v2/cells/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.json",
+        "images": "target/independent-pdf-v2/images/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4029,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.png",
+        "collection": "manuals",
+        "doc_name": "IBM-i-s5445349.pdf",
+        "page_no": 385,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "8880db860d4de8c99dd9656efa0cbaa45cf56bbb5c7cdbb90754f547ddab3ccf",
+        "cells": "8c4eba26b14d812ac58d63ad6684691daaecf13189e35e8d6c90a777f36b129c",
+        "images": "0960dba782c468fad87c9325127c3b5206853292b5143a9ba40c5c50a88bc822"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.pdf",
+        "cells": "target/independent-pdf-v2/cells/095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.json",
+        "images": "target/independent-pdf-v2/images/095430d125c8783eb91a722556d97e050933ed155bfb69e0b8c8fb9bcd8c7750.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5172,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.png",
+        "collection": "redbooks",
+        "doc_name": "sg247938.pdf",
+        "page_no": 347,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "abd998fb743bca6bf29dfbc9be90a689c311538625dd7659dd7c650bd9637808",
+        "cells": "7948b961a1e54b4075ccc9b1e3314fde64ab88650b34767a3c9a291a2803fc0e",
+        "images": "99f8e66dae752942e500c08631a4a46f474d36dddb82949e651635216ae11e2d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.pdf",
+        "cells": "target/independent-pdf-v2/cells/8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.json",
+        "images": "target/independent-pdf-v2/images/8368d039be24370e1fa83b51b4216dc2570abec6b1b1d87da2515db1485dd59c.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4410,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.png",
+        "collection": "manuals",
+        "doc_name": "basic-english-language-skills.PDF",
+        "page_no": 30,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "b26fc288a09744dbe8704b93636b88d67e0c15c2d411eed6b8c4e64ff012b084",
+        "cells": "634cf489fa4b88a60ea9873c4b6db6e31e03edd885c95162775c7bce252ff758",
+        "images": "84f230b2b030d688c3bfbdb05e0f81d40255898cc198635e6ab279f495554879"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.pdf",
+        "cells": "target/independent-pdf-v2/cells/b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.json",
+        "images": "target/independent-pdf-v2/images/b57821527520864bbbf181ed3fab05b5047a895271063d53717012e967cbea9a.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5064,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.png",
+        "collection": "redbooks",
+        "doc_name": "sg248459.pdf",
+        "page_no": 74,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "34022e18e3dd073eb11b70a482c33837061d4b8e73c8e3d3867b7947248ead22",
+        "cells": "e53b6f4f63cfb32adc37c663f69fc67afa3adb2b640c0ae1afaab6ccbb93a253",
+        "images": "9a82780bd6af5ca512cdd65b96763f05e6286e62d16a16d12e4cff030f970efe"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.pdf",
+        "cells": "target/independent-pdf-v2/cells/489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.json",
+        "images": "target/independent-pdf-v2/images/489925327596e3a91abdd48af1a015ee92d34e29cfa417e63275b73c26783243.png"
+      }
+    },
+    {
+      "image": {
+        "id": 5211,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.png",
+        "collection": "redbooks",
+        "doc_name": "sg246915.pdf",
+        "page_no": 134,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "2e349d8616b9ab74860a0a679d2d7b958cb8c1728e6dfa7e267c6f1ee73ef8ec",
+        "cells": "0c4956e903f502eee8e0d3f77990b50d0e483ddc7e1bc184437a58b3b3f06bfb",
+        "images": "71a3c7e299f4fe84a9732cca5dfec1d6cbb9c0ddc4d403c72a6f1062ad7dc096"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.pdf",
+        "cells": "target/independent-pdf-v2/cells/783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.json",
+        "images": "target/independent-pdf-v2/images/783fe4d42c176b96d9ca4f965e8aa47c1298f2ef7ebc214acb6954841a599cd8.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4045,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.png",
+        "collection": "manuals",
+        "doc_name": "Microscope_Manual.pdf",
+        "page_no": 4,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "538ec7e4dc3e62dd3a2920a5d81bfd6547d3d21381b546010530c986698ae960",
+        "cells": "e2480b8b101c18b3f4b3cfa0e7a0afa49170b7764ee27ba4f549872f56f1ea1d",
+        "images": "18ace65af03c9784e0d682fc0c3ab6dd225d3764817799819fdfe1ffe4e9d11e"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.pdf",
+        "cells": "target/independent-pdf-v2/cells/7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.json",
+        "images": "target/independent-pdf-v2/images/7a0cf07387c2935833f674199cef4f0be27cc0d43953198c09b47ed2d363d292.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4407,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.png",
+        "collection": "manuals",
+        "doc_name": "Excel Training Manual 1.pdf",
+        "page_no": 7,
+        "precedence": 0,
+        "doc_category": "manuals"
+      },
+      "sha256": {
+        "pdfs": "cc82e63accef70136d6a745c0996cddf4e56f0d2386b9c1e2d3cea14783bd1d9",
+        "cells": "19854ea7bdb459fb0568db1816c36efcc4fd7799be0f33e38732d8654955eb97",
+        "images": "23254f77967a83d5e60837c8c1637e900b755baf9d4cb3f7e82f27c57406c12f"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.pdf",
+        "cells": "target/independent-pdf-v2/cells/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.json",
+        "images": "target/independent-pdf-v2/images/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4858,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.png",
+        "collection": "patents_superacid_pags",
+        "doc_name": "9840656_AdobeOCR.pdf",
+        "page_no": 3,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "0876138981f988e63d7d99b4363c17585f4f5372f8a6ca507828109f4644f9a0",
+        "cells": "d2ae3868addc5c3b9a2a5a92e4ee4b0721d14bd045951c7252d35837b36c609c",
+        "images": "7aa2ba9254340262fa53c8f99b9b102340144551c8da0eaa6d52ec736714058a"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.pdf",
+        "cells": "target/independent-pdf-v2/cells/c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.json",
+        "images": "target/independent-pdf-v2/images/c4497cefec45ce9e89de802606b7010260bf4e402a8d6e6e7cb5af987ba66669.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4735,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.png",
+        "collection": "patents_euv_sensitivity",
+        "doc_name": "6482565_AdobeOCR.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "ed7581b32eed93bdfb23aecdc1e2c864651ce5d996927d17872660dbf35f4920",
+        "cells": "edf161ba4a94baf95d81f2525b3a42f11331bcaeb8082ba3d1c674434948a703",
+        "images": "ab8e2c028379e5d1d756dd7041d1a0d20fe6787990019442a213c40052fc8504"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.pdf",
+        "cells": "target/independent-pdf-v2/cells/167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.json",
+        "images": "target/independent-pdf-v2/images/167f6658cd410df8d4d14acc53e8c8f509e94c44b8005e6b76de8d17329363a7.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4986,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.png",
+        "collection": "patents_wp",
+        "doc_name": "WO2020081008A1.pdf",
+        "page_no": 28,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "f22201616ee0c6fd3630c41a6a073bc7e691a77d8d643a35b222790b551110f0",
+        "cells": "587613eed9fc148f3c9b13823653c0d5593f5bc3f835e4701bb4522817c0e949",
+        "images": "03b2ae1445ae8fffd842fa3dfeb0b2ad8e0fa64c98c4993f44c3b5a5764252dc"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.pdf",
+        "cells": "target/independent-pdf-v2/cells/c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.json",
+        "images": "target/independent-pdf-v2/images/c547147c274ef4d91478e2818854eb873afb8de57a30c080d05ea7a4d6bcc002.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4872,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.png",
+        "collection": "patents_superacid_pags",
+        "doc_name": "5648520_AdobeOCR.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "b1ec47979a302195a6c3387cd48045585180d8c01851d2cdc32a04c500433de6",
+        "cells": "680508a75677c7ed021b9ddee5eff157873d8ce5ab15a4b66b83a59f810e888c",
+        "images": "3d994e5e0183f2c68439865df4c286a08d94f6ddc2a094c4310a6d743317d4f1"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.pdf",
+        "cells": "target/independent-pdf-v2/cells/d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.json",
+        "images": "target/independent-pdf-v2/images/d6c4d0d5bc372bb13e485ce68f9ac5e0b1b86b5e212f5e8b05a6dd29006a238a.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4903,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.png",
+        "collection": "patents_superacid_pags",
+        "doc_name": "7335411_AdobeOCR.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "35ef7b6f51f3e27584c634667ed5ad35178341354f170fae87822cfa291d4023",
+        "cells": "c6ea5a87e842f317b724319e303d1bb96fbc37175b5f8d0fd5f88efb53db7562",
+        "images": "58a408669145835ae474dd10523988162559a3de723b6695dbee2da3d00b482d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.pdf",
+        "cells": "target/independent-pdf-v2/cells/2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.json",
+        "images": "target/independent-pdf-v2/images/2cc367a84acd69867a68777fff6c4f36aab9632021a60f194dd1dc89788dba0d.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4607,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.png",
+        "collection": "patents_ep",
+        "doc_name": "EP2000008B1.pdf",
+        "page_no": 9,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "749c2d0aeabc30c749d813201e05dcb01c4d01b2585101b7445a9bca2f4cb238",
+        "cells": "66ef4d6689a7750832c9e88717bc6e6eec7babee9d13f722f8182a96b3c85381",
+        "images": "6c0b838a87e3d44f7929e888791375be7bafae06f6d6424c2ce239a39ddc23e5"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.pdf",
+        "cells": "target/independent-pdf-v2/cells/88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.json",
+        "images": "target/independent-pdf-v2/images/88e6333ba86fc664529a27c5b801b9447b1ec9aacd6a83244f42d995eeb038fc.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4826,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.png",
+        "collection": "patents_kr",
+        "doc_name": "KR100680003B1.pdf",
+        "page_no": 2,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "4b2b8c7cd1fb0f55cad529cd4f0c50eac1b918710cb896aaf30033810bf7a080",
+        "cells": "886b8b8eea22338d24b8dbb4292da0bb332113a6c012170cd975b2cf339d3618",
+        "images": "5ab6a6bd07a9e8583d8cafe5ac7662894ffe0240fe141cf91e63ed017e923523"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.pdf",
+        "cells": "target/independent-pdf-v2/cells/1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.json",
+        "images": "target/independent-pdf-v2/images/1c34a160d1522dd43db7b4ef528b1020224ecbaf1f8c4feca5455c914094c27a.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4678,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.png",
+        "collection": "patents_euv_sensitivity",
+        "doc_name": "7851130_AdobeOCR.pdf",
+        "page_no": 46,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "c48f0e513e5052533031c2b68d5b2208092269a6f1dd7e827761d6785d81ac46",
+        "cells": "d1b0375f43f0f0afad85014f814522b977301f5d84ab1a05935397acf8884152",
+        "images": "5b6ed605c5690df2b60347c380a20014f6686c1ca86acffdbcbb332f4df5948c"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.pdf",
+        "cells": "target/independent-pdf-v2/cells/25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.json",
+        "images": "target/independent-pdf-v2/images/25730c7dac012f2c70d50eccf457402d05fcc5355155d8e7a25ed5261e22585e.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4882,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.png",
+        "collection": "patents_superacid_pags",
+        "doc_name": "7144993_AdobeOCR.pdf",
+        "page_no": 10,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "aa69c2d43fa5cb5f8b18f2893310e6bd7c458b982678ecc7d336a98f6c938751",
+        "cells": "f28d1fc65c19dae527d92803a1631f5b485f574dfa3ff0a8f5f4234cea942ac0",
+        "images": "15e38d325b7c971688a64df6ede04896adc4a4cced2cf03b1b47fb77f79c9e5d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.pdf",
+        "cells": "target/independent-pdf-v2/cells/9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.json",
+        "images": "target/independent-pdf-v2/images/9e0b359594b0948810df5dc8318a3298b5ca5d5d4bda31908bdb8d5fc6af3f2c.png"
+      }
+    },
+    {
+      "image": {
+        "id": 4647,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.png",
+        "collection": "patents_euv_sensitivity",
+        "doc_name": "20210033970_AdobeOCR.pdf",
+        "page_no": 101,
+        "precedence": 0,
+        "doc_category": "patents"
+      },
+      "sha256": {
+        "pdfs": "6b773e8a3c72b64364ad3e93359caf716d8a371975649020bd74b6c443313227",
+        "cells": "48e53fb3446d41f7c4c887d91b39954b2b14f8d46b2c2fc43c9716460b91a2c4",
+        "images": "6050743cdf38c00bfc5c5bc2133871891ed5df548ee4c4355805ba15ffadc5ff"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.pdf",
+        "cells": "target/independent-pdf-v2/cells/4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.json",
+        "images": "target/independent-pdf-v2/images/4ba808405bff7fde4eae6a19519b6b8b09a966e288c77c4a1dfcaea07b42f032.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2202,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.png",
+        "collection": "arxiv_mediumspaced",
+        "doc_name": "1001.2716.pdf",
+        "page_no": 19,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "692b47134c24297615391375c448924b984caa015d99ab5d240321c2747e04d2",
+        "cells": "d4bdc5f6e3dceae7f8e82976bca1e96a66ced84fd25ea2645d3c95539cc5e93e",
+        "images": "9cb2a159e7efed6c3cf3757205d56348533cc18297d849999bbc29f74592eb92"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.pdf",
+        "cells": "target/independent-pdf-v2/cells/1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.json",
+        "images": "target/independent-pdf-v2/images/1a40fc845186453e312c8181035b19493025b739fb8e39bac4f7387f1dd92366.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2675,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.png",
+        "collection": "arxiv_two_columns",
+        "doc_name": "1001.1154.pdf",
+        "page_no": 2,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "867027fae5c24f41e557636fd42ac34225f1ba3ff9d55480da9b8de0c5f89d20",
+        "cells": "057c16c266f0ffa0c8c00b0ec755415b531764a9735719007f53711a5ba4a60c",
+        "images": "00a658d5fa7ed7acf6044c2be8a347a14367e5fb941ffa27b8c46a5ba84ded05"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.pdf",
+        "cells": "target/independent-pdf-v2/cells/507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.json",
+        "images": "target/independent-pdf-v2/images/507c9c2e684a0b40f9bda970274e72a5eb1dd38cd52e5894f39fb5069b0ba10d.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2148,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.png",
+        "collection": "arxiv_mediumspaced",
+        "doc_name": "1001.2669.pdf",
+        "page_no": 16,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "aab1cf4c89f343bdf335ff1f06d8d9eb7f9cda69c69eca4f5d65e83e0ccaff7a",
+        "cells": "955fecbf00c730ed7436acf3651f9b6b8519c6f8c0a47a2d2d7b7e07c3c3d774",
+        "images": "1a11308aa1ec2d8e9f246c03d89ff6334eb7eb2e959a81f735c21645a8d5efda"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.pdf",
+        "cells": "target/independent-pdf-v2/cells/5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.json",
+        "images": "target/independent-pdf-v2/images/5d1b777fd2d9f3919f43bab31c60cbcd228c19996c21f906c456ab2343f6cc5b.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2738,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.png",
+        "collection": "arxiv_two_columns",
+        "doc_name": "1001.1732.pdf",
+        "page_no": 14,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "1719a37daecdab2814720c1d9bdd48d1cca4f6c49b0e95525e67f881dec9feb1",
+        "cells": "5ee6526fbb82149f333503fe5984b33310689140158bdc8f168fe85fa49424ad",
+        "images": "510b397889c891cefbf439d6ece61be296759119bda9b6d2fc081465f2ec7a21"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.pdf",
+        "cells": "target/independent-pdf-v2/cells/96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.json",
+        "images": "target/independent-pdf-v2/images/96ce8d5146864f307eb0545484164276763d198b5cdccd0ca2fa878705fd2e4d.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2333,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.png",
+        "collection": "arxiv_mediumspaced",
+        "doc_name": "1002.2169.pdf",
+        "page_no": 2,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "72b0cd8b21b5193771565923034cd67319ff67d005ea9c99f34fca0cdaff55a3",
+        "cells": "c3200646f679110040252c406189947ba13bc7e5c7fd79d47069f4f90b74413e",
+        "images": "52dff1ba8fe5f93aae677944ce77ffa4e7301ab7fc2ca3fa195c3718a8353c2a"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.pdf",
+        "cells": "target/independent-pdf-v2/cells/d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.json",
+        "images": "target/independent-pdf-v2/images/d3f423b6a353d37c149f1c35ea19d64734b2a25309fe68a5d300d9c27b6871d0.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2419,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.png",
+        "collection": "arxiv_mediumspaced",
+        "doc_name": "1002.0896.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "dc9dc787ca9f7713fc2617477147f62614c92cdf5fe5b299fe455f8abe49ad8c",
+        "cells": "8ffaaa0be5eef293c239560fbfbc06cc89ad1732a1b4ed6265824cf5d766d27c",
+        "images": "f97ab3a1e268932d6c23e0714806e53d9b132e0644069a3d19fe15a41ab179fb"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.pdf",
+        "cells": "target/independent-pdf-v2/cells/1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.json",
+        "images": "target/independent-pdf-v2/images/1b166859d3fae3c18f92b8a18e82db74dc559cfa48cb4fd01226add8ac58689b.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2575,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.png",
+        "collection": "arxiv_two_columns",
+        "doc_name": "1001.2670.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "f8d1fe465f4c0e3fc62dff5d48a3b5db55d94f1848178dc943518fc8b7194212",
+        "cells": "b631c3d5a0fc890d0c0c93b8b4dd00730038072a428becd44276b4f181422d27",
+        "images": "d50969bd1f5cfb50af07c2742c0b62eba194d0034bbaf1ee58d97dce9083e25e"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.pdf",
+        "cells": "target/independent-pdf-v2/cells/36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.json",
+        "images": "target/independent-pdf-v2/images/36940de5f23a2a096c6a73e20c9a38097849e29af6f22f2c31b8c03a7e0c0193.png"
+      }
+    },
+    {
+      "image": {
+        "id": 1832,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.png",
+        "collection": "arxiv_doublespaced",
+        "doc_name": "1503.05621.pdf",
+        "page_no": 15,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "884649d2f7322be8f2bb39c4f4ad1151b6363f8e418893247946d85f82ec2084",
+        "cells": "397ffedb24a9817966556061fcbf3d1b568201b304cff6ca03856140edfb9bb0",
+        "images": "1eba7d1fdbfd937f08f072e13bee109c4385927d348b16eccdee5d98dcbd8d19"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.pdf",
+        "cells": "target/independent-pdf-v2/cells/5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.json",
+        "images": "target/independent-pdf-v2/images/5c71aa2affcec690136a6466e9c70d18f292e3bcce4be29f6b64342ef330f769.png"
+      }
+    },
+    {
+      "image": {
+        "id": 2516,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.png",
+        "collection": "arxiv_two_columns",
+        "doc_name": "1001.3103.pdf",
+        "page_no": 0,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "e89bdff8e96408cd79b8d22cde589bc8a91f2c9c50a872fc43a4cf58e94926c1",
+        "cells": "7f744fa73528e311a262cfb2fa2d0ee4cc3a80660af700cdda0c19ffcae10108",
+        "images": "330377b4bec59054fcdb0906d57cfb5c3714fa68d01508ace74991975cc44717"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.pdf",
+        "cells": "target/independent-pdf-v2/cells/566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.json",
+        "images": "target/independent-pdf-v2/images/566e5dc0483ef15f75d52cc958692c89542450087a675f2bd7cfff8a6417b036.png"
+      }
+    },
+    {
+      "image": {
+        "id": 1818,
+        "width": 1025,
+        "height": 1025,
+        "file_name": "206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.png",
+        "collection": "arxiv_doublespaced",
+        "doc_name": "1410.5885.pdf",
+        "page_no": 13,
+        "precedence": 0,
+        "doc_category": "scientific_articles"
+      },
+      "sha256": {
+        "pdfs": "1d7a85872c1c789792589e849dba42113b96b3ab510ffa2f9f67a307dfef81bc",
+        "cells": "a4a305d06d9413d010f7a04a7e8d16c6d3feb0432651b080d6d50d8dadc77c60",
+        "images": "206cf09ddbfc807af5821c136701b2e6b39f2b7e8b81696ceaa91ca61ef1235d"
+      },
+      "paths": {
+        "pdfs": "target/independent-pdf-v2/pdfs/206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.pdf",
+        "cells": "target/independent-pdf-v2/cells/206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.json",
+        "images": "target/independent-pdf-v2/images/206410c399903f20b615764d0f8e6027100bbc97778e4e3ef40ac98597de5912.png"
+      }
+    }
+  ],
+  "selection_sha256": "7d46d0ca5deef1aa7910880a24ae51f17d2831cca866b34ed51f2dced24f480c",
+  "prior_inventory_sha256": "78b687adda6506e582a1dddaafa69f22e0d4a25d4956bf9387ff2a161766aa38",
+  "policy": "No replacements for overlap/failure exclusions after frozen metadata selection; all recorded."
+}

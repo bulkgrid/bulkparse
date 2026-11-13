@@ -1,0 +1,46 @@
+[package]
+name = "bulkparse"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Portable document conversion with structured output and explicit diagnostics"
+
+[features]
+default = ["docx", "pdf", "office"]
+docx = ["dep:zip", "dep:roxmltree"]
+office = ["dep:flate2", "dep:zip", "dep:roxmltree", "dep:cfb", "dep:encoding_rs", "dep:quick-xml"]
+pdf = ["dep:lopdf", "dep:unicode-bidi", "dep:unicode-normalization"]
+
+[dependencies]
+base64 = "0.22"
+sha2 = "0.11"
+flate2 = { version = "1", optional = true }
+serde.workspace = true
+serde_json.workspace = true
+itoa = "1"
+thiserror.workspace = true
+pulldown-cmark = { version = "0.13", default-features = false }
+csv = "1.4"
+schemars = "0.8"
+unicode-bidi = { version = "0.3.18", optional = true }
+unicode-normalization = { version = "0.1.26", optional = true }
+zip = { version = "8.6", default-features = false, features = ["deflate"], optional = true }
+roxmltree = { version = "0.21", optional = true }
+cfb = { version = "0.14", optional = true }
+encoding_rs = { version = "0.8", optional = true }
+quick-xml = { version = "0.41", default-features = false, optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tempfile = "3"
+lopdf = { version = "0.42", default-features = false, optional = true }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+lopdf = { version = "0.42", default-features = false, features = ["wasm_js"], optional = true }
+
+[target.'cfg(unix)'.dev-dependencies]
+# Benchmark CPU accounting only; never a parser runtime dependency.
+libc = "0.2"
+
+[dev-dependencies]
+# Streaming hashes of complete JSON in the regression/benchmark harness.
+sha2 = "0.11"

@@ -1,0 +1,19 @@
+{
+  "documents": 200,
+  "nonempty_outputs": 200,
+  "original_199_output_signatures_unchanged": true,
+  "streamed_and_structured_markdown_match": 200,
+  "existing_xls_json_unchanged": 17,
+  "recovered_xls_json_valid": true,
+  "recovered_workbook_nonempty_cells_verified": 466,
+  "tests_passed": 315,
+  "changed_source_files": [
+    "crates/bulkparse/src/diagnostics.rs",
+    "crates/bulkparse/src/formats/office/spreadsheet.rs",
+    "crates/bulkparse/tests/xls_legacy.rs"
+  ],
+  "source_snapshots_verified": true,
+  "current_source_matches_verified_build": true,
+  "input_hashes_unchanged": true,
+  "scope": "Output signatures cover Markdown, statuses, diagnostics and asset metadata. Full JSON comparison is limited to XLS. Quality judging on the full mixed corpus remains pending."
+}

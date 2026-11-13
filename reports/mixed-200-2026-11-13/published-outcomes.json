@@ -1,0 +1,315 @@
+{
+  "scope": "Current BulkParse diagnostic; original same-day comparator runs. Lists failed or empty attempted conversions; unsupported inputs are reported in published-results.json.",
+  "failures": {
+    "bulkparse": [],
+    "anydoc": [
+      {
+        "id": "ods-729c3707bbe50f51",
+        "format": "ods",
+        "title": "Asylum data tables immigration statistics July to September 2016 volume 4",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7f3b7140f0b6230268e3f9/asylum4-q3-2016-tables.ods",
+        "cohort": "retained-112",
+        "elapsed_ms": 614.921667,
+        "status": null,
+        "error": "resource limit exceeded (max_xml_nodes): part exceeds 2000000 xml nodes",
+        "empty": false
+      },
+      {
+        "id": "xlsm-1c382d45c18005cd",
+        "format": "xlsm",
+        "title": "MacKay carbon calculator (Excel version)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5fc7c336d3bf7f7f5db85ba8/Excel_MacKay_Carbon_Calculator_v198.xlsm",
+        "cohort": "retained-112",
+        "elapsed_ms": 577.782667,
+        "status": null,
+        "error": "resource limit exceeded (max_xml_nodes): part exceeds 2000000 xml nodes",
+        "empty": false
+      },
+      {
+        "id": "ods-b3185d3043cb268a",
+        "format": "ods",
+        "title": "Entry clearance visas granted outside the UK data tables immigration statistics October to December 2014 volume 2",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7f191b40f0b62305b850e7/entry-visas2-q4-2014-tabs.ods",
+        "cohort": "retained-112",
+        "elapsed_ms": 544.963875,
+        "status": null,
+        "error": "resource limit exceeded (max_xml_nodes): part exceeds 2000000 xml nodes",
+        "empty": false
+      },
+      {
+        "id": "ods-5c5d73b7fd1ce864",
+        "format": "ods",
+        "title": "Returns data tables immigration statistics July to September 2017 volume 5",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a822074ed915d74e3401dd8/returns5-jul-sep-2017-tables.ods",
+        "cohort": "added-88",
+        "elapsed_ms": 550.819417,
+        "status": null,
+        "error": "resource limit exceeded (max_xml_nodes): part exceeds 2000000 xml nodes",
+        "empty": false
+      }
+    ],
+    "docling": [
+      {
+        "id": "csv-694b7b75298efd2b",
+        "format": "csv",
+        "title": "DfT's spending over \u00a325,000 for April 2013",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7f207ae5274a2e8ab4a47c/dft-monthly-spend-201304.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 44.723375,
+        "status": "error",
+        "error": "RuntimeError: component_type=<DoclingComponentType.USER_INPUT: 'user_input'> module_name='' error_message='The document is not valid UTF-8, but 97% of its non-ASCII bytes still form well-formed UTF-8 sequences, so it reads as damaged UTF-8 rather than as another encoding. Decoding it as cp1252 would turn the damage into text that looks fine and is not. Set the `encoding` backend option (for example `MarkdownBackendOptions(encoding=\"shift_jis\")`) to decode it explicitly.' category=<FailureCategory.BACKEND_FAILURE: 'backend_failure'> page_no=None",
+        "empty": false
+      },
+      {
+        "id": "docm-0d0f68a17819e210",
+        "format": "docm",
+        "title": "Digital/Multimedia Information Form",
+        "source_url": "https://www.dps.texas.gov/internetforms/Forms/LAB-210.docm",
+        "cohort": "added-88",
+        "elapsed_ms": 3.251042,
+        "status": "error",
+        "error": "RuntimeError: component_type=<DoclingComponentType.USER_INPUT: 'user_input'> module_name='' error_message='MsWordDocumentBackend could not load document with hash bdfbd03a35391cc1659aa092b9889360514a662e721d8209e03dcb0bad10ce1b' category=<FailureCategory.BACKEND_FAILURE: 'backend_failure'> page_no=None",
+        "empty": false
+      },
+      {
+        "id": "ods-5c5d73b7fd1ce864",
+        "format": "ods",
+        "title": "Returns data tables immigration statistics July to September 2017 volume 5",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a822074ed915d74e3401dd8/returns5-jul-sep-2017-tables.ods",
+        "cohort": "added-88",
+        "elapsed_ms": 90002.18225,
+        "status": "timeout_or_worker_failure",
+        "error": "90-second conversion deadline exceeded",
+        "empty": false
+      }
+    ],
+    "markitdown": [
+      {
+        "id": "csv-fbeb7b5e9b4f3ed9",
+        "format": "csv",
+        "title": "County level planning application statistics (CPS2) - full dataset",
+        "source_url": "https://assets.publishing.service.gov.uk/media/6ab28113997a4b2950cced26/CPS2_data_-_open_data_table__202606_.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 7.816709,
+        "status": "error",
+        "error": "FileConversionException: File conversion failed after 2 attempts:\n - CsvConverter threw UnicodeDecodeError with message: 'ascii' codec can't decode byte 0xa4 in position 6685457: ordinal not in range(128)\nThe charset may have been automatically guessed incorrectly. If you didn't specify the charset, please retry with an explicitly defined one.\n - PlainTextConverter threw UnicodeDecodeError with message: 'ascii' codec can't decode byte 0xa4 in position 6685457: ordinal not in range(128)\nThe charset may have been automatically guessed incorrectly. If you didn't specify the charset, please retry with an explicitly defined one.\n",
+        "empty": false
+      },
+      {
+        "id": "csv-694b7b75298efd2b",
+        "format": "csv",
+        "title": "DfT's spending over \u00a325,000 for April 2013",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7f207ae5274a2e8ab4a47c/dft-monthly-spend-201304.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 4.6145,
+        "status": "error",
+        "error": "FileConversionException: File conversion failed after 2 attempts:\n - CsvConverter threw UnicodeDecodeError with message: 'ascii' codec can't decode byte 0x96 in position 700945: ordinal not in range(128)\nThe charset may have been automatically guessed incorrectly. If you didn't specify the charset, please retry with an explicitly defined one.\n - PlainTextConverter threw UnicodeDecodeError with message: 'ascii' codec can't decode byte 0x96 in position 700945: ordinal not in range(128)\nThe charset may have been automatically guessed incorrectly. If you didn't specify the charset, please retry with an explicitly defined one.\n",
+        "empty": false
+      }
+    ],
+    "pandoc": [],
+    "mammoth": [],
+    "libreoffice": [
+      {
+        "id": "xlsx-c6b7ed51f3c6eb9b",
+        "format": "xlsx",
+        "title": "Consumer survey data tables - technical use and behaviour (XLSX, 5.6MB)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/6880a5d476595a511a8a74fb/Consumer_survey_data_tables_-_technical_use_and_behaviour.xlsx",
+        "cohort": "retained-112",
+        "elapsed_ms": 90002.392666,
+        "status": "timeout_or_worker_failure",
+        "error": "90-second conversion deadline exceeded",
+        "empty": false
+      },
+      {
+        "id": "csv-fbeb7b5e9b4f3ed9",
+        "format": "csv",
+        "title": "County level planning application statistics (CPS2) - full dataset",
+        "source_url": "https://assets.publishing.service.gov.uk/media/6ab28113997a4b2950cced26/CPS2_data_-_open_data_table__202606_.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 90001.00275,
+        "status": "timeout_or_worker_failure",
+        "error": "90-second conversion deadline exceeded",
+        "empty": false
+      },
+      {
+        "id": "xlsm-1c382d45c18005cd",
+        "format": "xlsm",
+        "title": "MacKay carbon calculator (Excel version)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5fc7c336d3bf7f7f5db85ba8/Excel_MacKay_Carbon_Calculator_v198.xlsm",
+        "cohort": "retained-112",
+        "elapsed_ms": 90003.114417,
+        "status": "timeout_or_worker_failure",
+        "error": "90-second conversion deadline exceeded",
+        "empty": false
+      }
+    ],
+    "unstructured": [
+      {
+        "id": "csv-f556d7df1c5cc8c5",
+        "format": "csv",
+        "title": "Total DFID Bilateral and GPEX Expenditure by Broad Sector 2007/08 - 2011/121",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7c6f89ed915d696ccfcc2d/Table20-broad_sector.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.366209,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 14: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-fbeb7b5e9b4f3ed9",
+        "format": "csv",
+        "title": "County level planning application statistics (CPS2) - full dataset",
+        "source_url": "https://assets.publishing.service.gov.uk/media/6ab28113997a4b2950cced26/CPS2_data_-_open_data_table__202606_.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 59.585625,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 785: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-ed3a7edd76ea8313",
+        "format": "csv",
+        "title": "Table 11: DFID Gross Public Expenditure by Input Sector Code and Delivery Channel 2014/15",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a807f7e40f0b62302693dc2/Table11-DFID-Gross-Public-expenditure-Input-sector-code-delivery-channel-201415.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.441875,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 3: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-7d372f57f2ec54f0",
+        "format": "csv",
+        "title": "Landfill gas engines: annual dispersion factors",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a808335ed915d74e33fadb8/landfill_gas_engines_annual_dispersion_factors.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.427334,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 0: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "xlsm-1c382d45c18005cd",
+        "format": "xlsm",
+        "title": "MacKay carbon calculator (Excel version)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5fc7c336d3bf7f7f5db85ba8/Excel_MacKay_Carbon_Calculator_v198.xlsm",
+        "cohort": "retained-112",
+        "elapsed_ms": 90002.104042,
+        "status": "timeout_or_worker_failure",
+        "error": "90-second conversion deadline exceeded",
+        "empty": false
+      },
+      {
+        "id": "csv-7a2e611f4e059f98",
+        "format": "csv",
+        "title": "Equality and Human Rights Commission spend data March 2012 (CSV format) (Comma Separated Value file - 69kb)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a79c62fed915d07d35b8001/ehrc-spend-mar12.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.252,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 203: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-1b314698f52fbae4",
+        "format": "csv",
+        "title": "Table 4: Top Twenty Recipients UK Net Bilateral ODA 2010 - 2012",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7b8e4ced915d1311060033/Table4.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.162916,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 16: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-cfa227027af67347",
+        "format": "csv",
+        "title": "Table 6. DFID Bilateral Gross Public Expenditure by Broad Sector 2009/10 - 2013/141",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a801b11e5274a2e87db7e32/T6-Bilateral-Gross-Public-Expend-Broad-Sector-200910-201314.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.185,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 11: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-8d5e54393ec2c231",
+        "format": "csv",
+        "title": "Government Equalities Office spend data January 2012 (CSV format) (Comma Separated Value file - 2kb)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a79aad6e5274a684690b37e/geo-spend-jan12.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 0.182916,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 112: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-694b7b75298efd2b",
+        "format": "csv",
+        "title": "DfT's spending over \u00a325,000 for April 2013",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7f207ae5274a2e8ab4a47c/dft-monthly-spend-201304.csv",
+        "cohort": "retained-112",
+        "elapsed_ms": 6.533084,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x96 in position 45585: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "docm-0d0f68a17819e210",
+        "format": "docm",
+        "title": "Digital/Multimedia Information Form",
+        "source_url": "https://www.dps.texas.gov/internetforms/Forms/LAB-210.docm",
+        "cohort": "added-88",
+        "elapsed_ms": 2.278125,
+        "status": "error",
+        "error": "ValueError: file '/Users/erikhemberg/Code/bulkgrid/bulkparse/target/realworld/corpus/docm-0d0f68a17819e210.docm' is not a Word file, content type is 'application/vnd.ms-word.document.macroEnabled.main+xml'",
+        "empty": false
+      },
+      {
+        "id": "xls-98c4582ee4ac67ec",
+        "format": "xls",
+        "title": "DfT exceptions to the moratorium on discretionary spend data July to September 2013",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a7c7999ed915d48c240ffce/dft-exceptions-list-jul-sep-2013.xls",
+        "cohort": "added-88",
+        "elapsed_ms": 0.311042,
+        "status": "error",
+        "error": "UnprocessableEntityError: Not a valid XLSX file.",
+        "empty": false
+      },
+      {
+        "id": "csv-44e67b24c85fda40",
+        "format": "csv",
+        "title": "Government Equalities Office spend data March 2012 (CSV format) (Comma Separated Value file - 1kb)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a797264ed915d07d35b58f7/geo-spend-mar12.csv",
+        "cohort": "added-88",
+        "elapsed_ms": 0.116667,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 112: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-844be9860737650f",
+        "format": "csv",
+        "title": "Government Equalities Office spend data April 2012 (CSV format) (Comma Separated Value file - 2kb)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a78fd0ee5274a277e691047/geo-spend-apr12.csv",
+        "cohort": "added-88",
+        "elapsed_ms": 0.127583,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 112: invalid start byte",
+        "empty": false
+      },
+      {
+        "id": "csv-e7ddb49aaf400f4b",
+        "format": "csv",
+        "title": "Government Equalities Office spend data July 2012 (CSV format) (Comma Separated Value file - 1kb)",
+        "source_url": "https://assets.publishing.service.gov.uk/media/5a79de9b40f0b66d161aebd0/geo-spend-july12.csv",
+        "cohort": "added-88",
+        "elapsed_ms": 0.114708,
+        "status": "error",
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 112: invalid start byte",
+        "empty": false
+      }
+    ]
+  }
+}

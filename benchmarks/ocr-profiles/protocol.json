@@ -1,0 +1,23 @@
+{
+  "profiles": [
+    "multi-small",
+    "multi-medium",
+    "latin-mobile"
+  ],
+  "recognition_only": true,
+  "default_change_policy": "Retain multi-small. This small controlled corpus cannot establish a new universal default. Optional profiles must be explicit, never confidence-selected.",
+  "corpus": {
+    "prior_regression": 8,
+    "authored_stress": 16,
+    "authored_base_texts": 10,
+    "authored_languages": 9,
+    "external_smoke": 2
+  },
+  "metrics": "NFC and whitespace normalized, case/punctuation/accents retained. CER/WER and exactness; no output repair. Failed conversions score as empty; external scans unscored. Separate tiers and languages.",
+  "resources": "Two full-process repetitions per case/profile; rotate profile order. Sample aggregate CLI+registered direct OCR process RSS every 10ms, two GiB polling guard, 90s timeout. Includes benchmark-only PID-registration Python wrapper startup. No system process enumeration. No cold-host or steady-state inference claim.",
+  "model_selection_before_results": true,
+  "generator_sha256": "9a3e1f31169c9177381cef7372f2b1fba0614f2cd952acbcabb0ed00e3098f4f",
+  "plan_sha256": "f14be27e984e792025845b37c1ef9b52db448ac6073218486387cbd151e6658f",
+  "manifest_sha256": "443faad5202d32cae0ebc906157435b9f268ff0d6e9056753849fa839d5824f9",
+  "functional_preflight": "Before timing, convert the existing English prose fixture once per profile and require an OCR result without backend errors. No accuracy tuning or model substitution."
+}

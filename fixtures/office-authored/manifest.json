@@ -1,0 +1,127 @@
+[
+  {
+    "path": "fixtures/office-authored/ledger.xlsx",
+    "format": "xlsx",
+    "track": "authored",
+    "sha256": "94f7fee4bd3b233cff328121258b4a4d0c453f683bb830fce2fc5b91d8a3fb30",
+    "required_text": [
+      "Sales",
+      "東京",
+      "42"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/review.pptx",
+    "format": "pptx",
+    "track": "authored",
+    "sha256": "33bab8aa0012fe34338c7606f74124f50237b5698c8f04fc891c90f682167ffe",
+    "required_text": [
+      "Quarterly review",
+      "Revenue increased"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/document.odt",
+    "format": "odt",
+    "track": "authored",
+    "sha256": "095f568f8b6cc1826923b80f1fdf815d56468f8bfeb5b2c2d072d6b833d73492",
+    "required_text": [
+      "Project notes",
+      "Résumé français"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/document.ods",
+    "format": "ods",
+    "track": "authored",
+    "sha256": "fed76b197612dcfea850d9f448aaff97dbdcbd4270cb4bcfde75a036f2fdd67d",
+    "required_text": [
+      "Bolts",
+      "42"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/document.odp",
+    "format": "odp",
+    "track": "authored",
+    "sha256": "e66f262f64e2200b32a18378a76c710192c91ce46b5bb5959d72741566ba31f8",
+    "required_text": [
+      "Launch schedule"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/chapters.epub",
+    "format": "epub",
+    "track": "authored",
+    "sha256": "567b6eb500acf9f00a23fcfb2af46bf0ce7415426626440f8fd990a97f7fad1c",
+    "required_text": [
+      "First chapter",
+      "Second chapter",
+      "Καλημέρα"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/styled.rtf",
+    "format": "rtf",
+    "track": "authored",
+    "sha256": "0aa15c8fd19e1922e9f380fe0ead6fe1bc40a96d5ee6f3d775c82690a9069ad3",
+    "required_text": [
+      "Hello",
+      "world",
+      "α",
+      "end"
+    ],
+    "forbidden_text": [
+      "Hidden payload"
+    ]
+  },
+  {
+    "path": "fixtures/office-authored/report.doc",
+    "format": "doc",
+    "track": "authored",
+    "sha256": "6c01f16cc97c77c9fc9725fbffcb293fdce9012f639066b9c82cb6dc5cbcb63f",
+    "required_text": [
+      "Legacy report",
+      "Revenue 42"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/ledger.xls",
+    "format": "xls",
+    "track": "authored",
+    "sha256": "ae2f6827c8ff978158de37c17033118486296781486eeddfd79576aaacb23c9f",
+    "required_text": [
+      "Legacy",
+      "42"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/ledger.xlsb",
+    "format": "xlsb",
+    "track": "authored",
+    "sha256": "03771faa370ab339bb8e82a6d6cd87f6b0e3385bf489bc5ad22b8df6669d6d9e",
+    "required_text": [
+      "Binary values",
+      "42"
+    ],
+    "forbidden_text": []
+  },
+  {
+    "path": "fixtures/office-authored/review.ppt",
+    "format": "ppt",
+    "track": "authored",
+    "sha256": "2faae85d74c6531abe6000bab203a77afd041f2a8dc7f4f4a4acc3e5cbf36230",
+    "required_text": [
+      "Active slide"
+    ],
+    "forbidden_text": []
+  }
+]

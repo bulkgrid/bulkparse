@@ -1,0 +1,186 @@
+{
+  "profile": "tesseract-fast",
+  "startup": {
+    "ready": true,
+    "init_wall_seconds": 0.4544659999999112,
+    "usage": {
+      "cpu_seconds": 0.454958,
+      "peak_rss_bytes": 186523648
+    },
+    "options": {
+      "languages": "eng+swe+fra+deu+spa+dan+pol+tur+chi_sim",
+      "psm": "AUTO",
+      "oem": "LSTM_ONLY",
+      "version": "tesseract 5.5.3\n leptonica-1.87.0\n  libjpeg 6b (libjpeg-turbo 1.5.3) : libpng 1.6.34 : libtiff 4.0.9 : zlib 1.2.11 : libwebp 1.0.0"
+    },
+    "environment": {
+      "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+      "machine": "aarch64",
+      "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+      "packages": {
+        "pillow": "12.2.0",
+        "tesserocr": "2.12.0",
+        "pip": "25.0.1"
+      },
+      "cpu.max": "100000 100000",
+      "memory.max": "4294967296",
+      "pids.max": "256"
+    },
+    "container_launch_to_ready_seconds": 0.5732884588651359
+  },
+  "full_corpus_wall_seconds": [
+    5.493423711999981,
+    5.45064954399993,
+    5.4126614170002085,
+    5.522263627999905,
+    5.506721169999878
+  ],
+  "full_corpus_cpu_seconds": [
+    5.482447999999997,
+    5.442440000000003,
+    5.403836999999999,
+    5.513345000000015,
+    5.497668999999988
+  ],
+  "peak_rss_bytes": 271872000,
+  "quality": {
+    "character_errors": 147,
+    "reference_characters": 2787,
+    "word_errors": 75,
+    "reference_words": 422,
+    "cases": 24,
+    "exact": 11,
+    "blank_false_positives": 0,
+    "character_error_rate": 0.0527448869752422,
+    "word_error_rate": 0.17772511848341233
+  },
+  "by_track": {
+    "authored_stress": {
+      "character_errors": 60,
+      "reference_characters": 1940,
+      "word_errors": 57,
+      "reference_words": 298,
+      "cases": 16,
+      "exact": 5,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.030927835051546393,
+      "word_error_rate": 0.1912751677852349
+    },
+    "regression": {
+      "character_errors": 87,
+      "reference_characters": 847,
+      "word_errors": 18,
+      "reference_words": 124,
+      "cases": 8,
+      "exact": 6,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.10271546635182999,
+      "word_error_rate": 0.14516129032258066
+    }
+  },
+  "by_language": {
+    "da": {
+      "character_errors": 4,
+      "reference_characters": 115,
+      "word_errors": 3,
+      "reference_words": 19,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.034782608695652174,
+      "word_error_rate": 0.15789473684210525
+    },
+    "de": {
+      "character_errors": 3,
+      "reference_characters": 123,
+      "word_errors": 2,
+      "reference_words": 19,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.024390243902439025,
+      "word_error_rate": 0.10526315789473684
+    },
+    "en": {
+      "character_errors": 85,
+      "reference_characters": 1288,
+      "word_errors": 16,
+      "reference_words": 191,
+      "cases": 11,
+      "exact": 10,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.06599378881987578,
+      "word_error_rate": 0.08376963350785341
+    },
+    "es": {
+      "character_errors": 2,
+      "reference_characters": 129,
+      "word_errors": 2,
+      "reference_words": 18,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.015503875968992248,
+      "word_error_rate": 0.1111111111111111
+    },
+    "fr": {
+      "character_errors": 1,
+      "reference_characters": 131,
+      "word_errors": 1,
+      "reference_words": 22,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.007633587786259542,
+      "word_error_rate": 0.045454545454545456
+    },
+    "pl": {
+      "character_errors": 4,
+      "reference_characters": 123,
+      "word_errors": 2,
+      "reference_words": 17,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.032520325203252036,
+      "word_error_rate": 0.11764705882352941
+    },
+    "sv": {
+      "character_errors": 23,
+      "reference_characters": 702,
+      "word_errors": 21,
+      "reference_words": 113,
+      "cases": 6,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.03276353276353276,
+      "word_error_rate": 0.18584070796460178
+    },
+    "tr": {
+      "character_errors": 0,
+      "reference_characters": 129,
+      "word_errors": 0,
+      "reference_words": 19,
+      "cases": 1,
+      "exact": 1,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "zh": {
+      "character_errors": 25,
+      "reference_characters": 47,
+      "word_errors": 28,
+      "reference_words": 4,
+      "cases": 1,
+      "exact": 0,
+      "blank_false_positives": 0,
+      "character_error_rate": 0.5319148936170213,
+      "word_error_rate": 7.0
+    }
+  },
+  "error_documents_first_pass": 0,
+  "changed_text_across_runs": [],
+  "median_wall_seconds": 5.493423711999981,
+  "median_cpu_seconds": 5.482447999999997
+}

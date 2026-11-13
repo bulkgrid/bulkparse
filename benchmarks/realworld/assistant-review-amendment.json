@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "created_utc": "2026-11-12T14:35:22.966778+00:00",
+  "user_instruction": "Review them yourself in this chat",
+  "supersedes": "External API/fresh-agent blind judging route only; corpus, converter configuration and timing protocol remain unchanged.",
+  "reviewer": "The current Codex assistant in this conversation, with prior BulkParse project context. No subagents and no external paid API judging jobs.",
+  "independence": "Not an independent blind benchmark. Candidate identities may be concealed during inspection to reduce label bias, but the reviewer retains project context. Do not claim independent swapped-order verdicts.",
+  "quality_scope": "First six reference pages/slides or EPUB pages; first 60 CSV records. Full raw converter outputs remain available for source-scoped inspection.",
+  "quality_method": "Direct visual and textual assistant review, supported by reproducible text/structure comparisons as inspection aids. Four anchored 0–100 dimensions: completeness, structure, formatting, cleanliness. Accept semantic HTML tables for every converter. Cite concrete page/record evidence and limitations; mark unreviewable cases rather than invent scores.",
+  "aggregation": "One assessment per document/converter; average dimensions per document, documents within format, then formats equally. Include failures as zero for meaningful reference content; unsupported formats excluded with coverage reported.",
+  "paid_api_jobs": false,
+  "api_cost": "No separate API judging jobs will be submitted. Ordinary Codex session usage applies.",
+  "review_status": "42 documents / 249 candidate outputs assessed against original baseline. At user request, headline quality scope reduced to seeded 37-document sample (17 already assessed), then review deferred to prioritize parser fixes. No quality aggregation or identity unmasking performed.",
+  "sample_selection": "reports/realworld-2026-11-12/assistant-review/sample-selection.json",
+  "subsequent_fix_report": "reports/realworld-fixes-2026-11-12/README.md"
+}

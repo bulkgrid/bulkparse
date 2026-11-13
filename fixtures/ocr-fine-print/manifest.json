@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fine-6pt-60lines",
+    "track": "fine_print_holdout",
+    "path": "fixtures/ocr-fine-print/fine-6pt-60lines.pdf",
+    "reference": "fixtures/ocr-fine-print/fine-6pt-60lines.txt",
+    "sha256": "6f92e91e7e63cfd86be479c2e39edafd55d2c764f70872b358e13c73f740cdd7",
+    "reference_sha256": "ad9411d1e8d05bd2b7c65fb244a3ebb941b2a42307d3646534ed951efa3ea85b"
+  },
+  {
+    "id": "fine-8pt-60lines",
+    "track": "fine_print_holdout",
+    "path": "fixtures/ocr-fine-print/fine-8pt-60lines.pdf",
+    "reference": "fixtures/ocr-fine-print/fine-8pt-60lines.txt",
+    "sha256": "ab83bc32cedc92b644fca64022589a6ea5118ef4ad806746fb389146d7ea88e0",
+    "reference_sha256": "ad9411d1e8d05bd2b7c65fb244a3ebb941b2a42307d3646534ed951efa3ea85b"
+  },
+  {
+    "id": "fine-10pt-45lines",
+    "track": "fine_print_holdout",
+    "path": "fixtures/ocr-fine-print/fine-10pt-45lines.pdf",
+    "reference": "fixtures/ocr-fine-print/fine-10pt-45lines.txt",
+    "sha256": "c03c2584347930ab66357a9d4e4c3d89b62b452a9f51ea61f249cc8fee557e14",
+    "reference_sha256": "4daa8887b2c1f3592ee2cdb63566ad35000912ebd3755a69686a1c1f5faadd6d"
+  },
+  {
+    "id": "fine-6pt-4lines",
+    "track": "fine_print_holdout",
+    "path": "fixtures/ocr-fine-print/fine-6pt-4lines.pdf",
+    "reference": "fixtures/ocr-fine-print/fine-6pt-4lines.txt",
+    "sha256": "e50e5076a2a21e5a2a999b23b3ebc2592ef2f19e1a0454be7f7170f5df044455",
+    "reference_sha256": "2fc907241d204ec7753d2f34976cc20cee377ece52563599ecdb46dc2a210ed6"
+  }
+]

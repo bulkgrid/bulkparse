@@ -1,0 +1,322 @@
+[
+  {
+    "id": "english-clean",
+    "base_id": "english",
+    "language": "en",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "TimesNewRomanPSMT",
+    "expected_lines": [
+      "Maintenance report",
+      "Replace valve C-731 before Thursday.",
+      "Pressure: 18.75 bar. Quantity: 24.",
+      "Send the signed copy to the archive."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "english-low-resolution",
+    "base_id": "english",
+    "language": "en",
+    "variant": "low-resolution",
+    "source_dpi": 72,
+    "font": "TimesNewRomanPSMT",
+    "expected_lines": [
+      "Maintenance report",
+      "Replace valve C-731 before Thursday.",
+      "Pressure: 18.75 bar. Quantity: 24.",
+      "Send the signed copy to the archive."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "english-skew",
+    "base_id": "english",
+    "language": "en",
+    "variant": "skew",
+    "source_dpi": 144,
+    "font": "TimesNewRomanPSMT",
+    "expected_lines": [
+      "Maintenance report",
+      "Replace valve C-731 before Thursday.",
+      "Pressure: 18.75 bar. Quantity: 24.",
+      "Send the signed copy to the archive."
+    ],
+    "perturbation": {
+      "skew_degrees": 3,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "english-noise",
+    "base_id": "english",
+    "language": "en",
+    "variant": "noise",
+    "source_dpi": 144,
+    "font": "TimesNewRomanPSMT",
+    "expected_lines": [
+      "Maintenance report",
+      "Replace valve C-731 before Thursday.",
+      "Pressure: 18.75 bar. Quantity: 24.",
+      "Send the signed copy to the archive."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 10,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "swedish-a-clean",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Årets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blå och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "swedish-a-low-resolution",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "low-resolution",
+    "source_dpi": 72,
+    "font": "Arial",
+    "expected_lines": [
+      "Årets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blå och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "swedish-a-skew",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "skew",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Årets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blå och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "perturbation": {
+      "skew_degrees": 3,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "swedish-a-noise",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "noise",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Årets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blå och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 10,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "swedish-b-clean",
+    "base_id": "swedish-b",
+    "language": "sv",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "TimesNewRomanPSMT",
+    "expected_lines": [
+      "På måndag hämtar Åsa nyckeln.",
+      "Räksmörgåsen kostar 89 kronor.",
+      "Förrådet är låst efter sjutton.",
+      "Referens: SK-6038."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "french-clean",
+    "base_id": "french",
+    "language": "fr",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Compte rendu de réception",
+      "Élodie vérifie les pièces déjà reçues.",
+      "Le coût annoncé est de 248,75 euros.",
+      "La façade sera réparée jeudi."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "german-clean",
+    "base_id": "german",
+    "language": "de",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Prüfbericht für das Außengerät",
+      "Öffnen Sie die Tür erst nach zwölf Uhr.",
+      "Die Größe beträgt 48,5 Millimeter.",
+      "Auftrag: DE-5821."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "spanish-clean",
+    "base_id": "spanish",
+    "language": "es",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Informe de inspección",
+      "¿Cuándo llegará el próximo envío?",
+      "El técnico revisó dieciséis piezas.",
+      "Código: ES-7249. Total: 318,40 euros."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "danish-clean",
+    "base_id": "danish",
+    "language": "da",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Årsrapport fra værkstedet",
+      "Søren åbner døren klokken ni.",
+      "De grønne æsker står på bordet.",
+      "Antal: 32. Pris: 875,50 kr."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "polish-clean",
+    "base_id": "polish",
+    "language": "pl",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Protokół odbioru części",
+      "Łukasz sprawdził żółtą skrzynię.",
+      "Następna dostawa będzie w środę.",
+      "Numer: PL-3916. Liczba sztuk: 48."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "turkish-clean",
+    "base_id": "turkish",
+    "language": "tr",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "Arial",
+    "expected_lines": [
+      "Ürün kontrol raporu",
+      "İpek ışığı açtı ve ölçümü yaptı.",
+      "Yağmur başlamadan önce kapıyı kapatın.",
+      "Sipariş: TR-2864. Tutar: 735,25 lira."
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  },
+  {
+    "id": "chinese-clean",
+    "base_id": "chinese",
+    "language": "zh",
+    "variant": "clean",
+    "source_dpi": 144,
+    "font": "HiraginoSansGB-W3",
+    "expected_lines": [
+      "仓库检查记录",
+      "今天收到二十四个蓝色箱子。",
+      "请在星期五之前完成检查。",
+      "订单编号：CN-4826。"
+    ],
+    "perturbation": {
+      "skew_degrees": 0,
+      "noise_stddev": 0,
+      "seed": 20261110,
+      "jpeg_quality": 95
+    }
+  }
+]

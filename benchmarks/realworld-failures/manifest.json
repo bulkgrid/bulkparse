@@ -1,0 +1,1217 @@
+[
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/664b4bd3f34f9b5a56adcab0/AFPS___Consolidated_Factor_Spreadsheet_2023-04.xlsm",
+    "format": "xlsm",
+    "title": "AFPS – Consolidated Factor Spreadsheet 2023-04",
+    "publication_title": "Armed forces pensions",
+    "landing_url": "https://www.gov.uk/guidance/pensions-and-compensation-for-veterans",
+    "publisher": "Ministry of Defence; Veterans Advisory and Pensions Committees; Veterans UK",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 817988,
+    "id": "xlsm-2b0d18bd1e4b6a34",
+    "path": "target/realworld/corpus/xlsm-2b0d18bd1e4b6a34.xlsm",
+    "sha256": "2a1c89300bb5681777213a6460afdedb19b8a6ed142b0565f9061e61de86aad3",
+    "bytes": 817988,
+    "package_signature": "13fd4839217931cd869d6c83acd745c161da8e0cac0f66cb609c3e6036976ee9",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:28:58.240128+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c6f89ed915d696ccfcc2d/Table20-broad_sector.csv",
+    "format": "csv",
+    "title": "Total DFID Bilateral and GPEX Expenditure by Broad Sector 2007/08 - 2011/121",
+    "publication_title": "DFID Statistics on International Development 2012 - tables",
+    "landing_url": "https://www.gov.uk/government/statistics/dfid-statistics-on-international-development-tables",
+    "publisher": "Department for International Development",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 9490,
+    "id": "csv-f556d7df1c5cc8c5",
+    "path": "target/realworld/corpus/csv-f556d7df1c5cc8c5.csv",
+    "sha256": "080cf87a0324aa1e558906784066a3e414fb421f1723e536338cf4a234c5069d",
+    "bytes": 9490,
+    "package_signature": "080cf87a0324aa1e558906784066a3e414fb421f1723e536338cf4a234c5069d",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:28:59.752980+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7490f8ed915d0e8e3993a2/admissions-q4-2012-tabs.xls",
+    "format": "xls",
+    "title": "Admissions data tables Immigration Statistics October to December 2012",
+    "publication_title": "Tables for 'Immigration Statistics October to December 2012'",
+    "landing_url": "https://www.gov.uk/government/statistics/data-tables-immigration-statistics-october-to-december-2012",
+    "publisher": "UK Visas and Immigration; Immigration Enforcement; Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2416640,
+    "id": "xls-ad544845941ae38f",
+    "path": "target/realworld/corpus/xls-ad544845941ae38f.xls",
+    "sha256": "1b63d835a204090f1fd917d4ce050f0f05d01a1a2113d7b627b17f61512a0b57",
+    "bytes": 2416640,
+    "package_signature": "1b63d835a204090f1fd917d4ce050f0f05d01a1a2113d7b627b17f61512a0b57",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:01.479048+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79592640f0b642860d7521/DCMS_Beyond_2012_Legacy_Story.rtf",
+    "format": "rtf",
+    "title": "Beyond 2012 – The London 2012 Legacy Story",
+    "publication_title": "Beyond 2012: The London 2012 Legacy Story",
+    "landing_url": "https://www.gov.uk/government/publications/beyond-2012-the-london-2012-legacy-story",
+    "publisher": "Department for Culture, Media and Sport; Department for Digital, Culture, Media & Sport (2017 to 2023)",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2995141,
+    "id": "rtf-de53f4b43e40a995",
+    "path": "target/realworld/corpus/rtf-de53f4b43e40a995.rtf",
+    "sha256": "561fda2ffae07989abec81eb04a8f22025ea21823e8cae633911d8d4c81366ab",
+    "bytes": 2995141,
+    "package_signature": "561fda2ffae07989abec81eb04a8f22025ea21823e8cae633911d8d4c81366ab",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:06.803423+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7af09840f0b66a2fc03e38/extensions-q1-2012-tabs.xls",
+    "format": "xls",
+    "title": "Extensions data tables Immigration Statistics January - March 2012",
+    "publication_title": "Tables for 'Immigration statistics: January to March 2012'",
+    "landing_url": "https://www.gov.uk/government/statistics/immigration-statistics-january-to-march-2012",
+    "publisher": "UK Visas and Immigration; Immigration Enforcement",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 1530880,
+    "id": "xls-cad9314378e3f0a6",
+    "path": "target/realworld/corpus/xls-cad9314378e3f0a6.xls",
+    "sha256": "688788899515479bb811b0c9c2bc0afc3988bf86f86c71032b17d1796cb83f85",
+    "bytes": 1530880,
+    "package_signature": "688788899515479bb811b0c9c2bc0afc3988bf86f86c71032b17d1796cb83f85",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:07.889605+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6880a5d476595a511a8a74fb/Consumer_survey_data_tables_-_technical_use_and_behaviour.xlsx",
+    "format": "xlsx",
+    "title": "Consumer survey data tables - technical use and behaviour (XLSX, 5.6MB)",
+    "publication_title": "Apple’s mobile platform",
+    "landing_url": "https://www.gov.uk/cma-cases/apples-mobile-platform",
+    "publisher": "Competition and Markets Authority",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": null,
+    "id": "xlsx-c6b7ed51f3c6eb9b",
+    "path": "target/realworld/corpus/xlsx-c6b7ed51f3c6eb9b.xlsx",
+    "sha256": "6ce2c7a0e1b1b05d0a2089d183d30d625fe5fc553af19fe290dc5f8cfcb69d25",
+    "bytes": 5722678,
+    "package_signature": "e67b07937fd54ddc43b448d9f2e287c28c8ddfb986dba1427a69dfe684038865",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:08.546617+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7da3bee5274a5eb14e64b5/detention-q1-2014-tabs.ods",
+    "format": "ods",
+    "title": "Detention data tables immigration statistics January to March 2014",
+    "publication_title": "Tables for ‘Immigration Statistics, January to March 2014’",
+    "landing_url": "https://www.gov.uk/government/statistics/tables-for-immigration-statistics-january-to-march-2014",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2041818,
+    "id": "ods-5cefbfc9f77dafdd",
+    "path": "target/realworld/corpus/ods-5cefbfc9f77dafdd.ods",
+    "sha256": "c4199b18edeaf795926f1c402098f8b3d712cfba7c6a23ee7bc9a07fa85c9f68",
+    "bytes": 2041818,
+    "package_signature": "d7065db4b8d49851e5ec036ad18617a0ce3d1ee1808b69af719fa4e70bf8ac69",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:08.991242+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6ab28113997a4b2950cced26/CPS2_data_-_open_data_table__202606_.csv",
+    "format": "csv",
+    "title": "County level planning application statistics (CPS2) - full dataset",
+    "publication_title": "Live tables on planning application statistics",
+    "landing_url": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-planning-application-statistics",
+    "publisher": "Ministry of Housing, Communities and Local Government; Ministry of Housing, Communities & Local Government (2018 to 2021); Department for Levelling Up, Housing and Communities ",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 7850459,
+    "id": "csv-fbeb7b5e9b4f3ed9",
+    "path": "target/realworld/corpus/csv-fbeb7b5e9b4f3ed9.csv",
+    "sha256": "fe7ae78331d6dfa583e3b5ccd68b573c1e8a5d9e21c7288a97c87685a0fe739d",
+    "bytes": 7850459,
+    "package_signature": "fe7ae78331d6dfa583e3b5ccd68b573c1e8a5d9e21c7288a97c87685a0fe739d",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:13.833519+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7ea499ed915d74e62258ca/entry-visas3-q2-2014-tabs.ods",
+    "format": "ods",
+    "title": "Entry clearance visas granted outside the UK data tables immigration statistics April to June 2014 volume 3",
+    "publication_title": "Tables for ‘Immigration Statistics: April to June 2014’",
+    "landing_url": "https://www.gov.uk/government/statistics/immigration-statistics-april-to-june-2014-data-tables",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2216976,
+    "id": "ods-39a8edec753b433a",
+    "path": "target/realworld/corpus/ods-39a8edec753b433a.ods",
+    "sha256": "94dfe8998f4a939541468c974b834f27200864f5a5327c557ce0ff6838e59792",
+    "bytes": 2216976,
+    "package_signature": "f21328d3e55b99cfdcbaf87358fed26497fb99d153bba3849b1d305cb66e53d5",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:15.331037+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/69a1836201cc32678a5bd6e4/Provider_Bulkload_Spreadsheet_v1.40_Provider_release.xlsm",
+    "format": "xlsm",
+    "title": "Bulkload spreadsheet",
+    "publication_title": "Submit a Bulk Claim (SaBC)",
+    "landing_url": "https://www.gov.uk/guidance/submit-a-bulk-claim-sabc",
+    "publisher": "Legal Aid Agency",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 3375849,
+    "id": "xlsm-3c742899d69127d3",
+    "path": "target/realworld/corpus/xlsm-3c742899d69127d3.xlsm",
+    "sha256": "38d2fd7862a82ad94d838baf9e5a697115ce7df34db10feecbd26183f15d4c95",
+    "bytes": 3375849,
+    "package_signature": "a2a04d297e661e73e71ed79e0bb76e0cddf0b95476e8e439d1b71946a9c2dbe3",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:18.655255+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a807f7e40f0b62302693dc2/Table11-DFID-Gross-Public-expenditure-Input-sector-code-delivery-channel-201415.csv",
+    "format": "csv",
+    "title": "Table 11: DFID Gross Public Expenditure by Input Sector Code and Delivery Channel 2014/15",
+    "publication_title": "Statistics on International Development 2014 to 2015: GPEX tables",
+    "landing_url": "https://www.gov.uk/government/statistics/statistics-on-international-development-2014-to-2015-gpex-tables",
+    "publisher": "Department for International Development",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 12487,
+    "id": "csv-ed3a7edd76ea8313",
+    "path": "target/realworld/corpus/csv-ed3a7edd76ea8313.csv",
+    "sha256": "e527a06e464cffd50a542033e62640b3bcd637b8a5d0123d23eb715458d768ec",
+    "bytes": 12487,
+    "package_signature": "e527a06e464cffd50a542033e62640b3bcd637b8a5d0123d23eb715458d768ec",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:19.321402+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7980c640f0b63d72fc65dc/C1ii_REPI.xls",
+    "format": "xls",
+    "title": "Table C(1)(ii) - Gross Domestic Expenditure on Research and Development as a percentage of GVA",
+    "publication_title": "REPI innovation",
+    "landing_url": "https://www.gov.uk/government/statistics/repi-innovation",
+    "publisher": "Department for Business, Innovation & Skills",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 38400,
+    "id": "xls-85accb68a8a2daac",
+    "path": "target/realworld/corpus/xls-85accb68a8a2daac.xls",
+    "sha256": "c6b2a389ae09b7e3d3e78e8b430f5273522d66e5e973ba300871df4ece2941a9",
+    "bytes": 38400,
+    "package_signature": "c6b2a389ae09b7e3d3e78e8b430f5273522d66e5e973ba300871df4ece2941a9",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:20.028764+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: duplicate spreadsheet cell",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: duplicate spreadsheet cell",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: duplicate spreadsheet cell",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: duplicate spreadsheet cell",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f3b7140f0b6230268e3f9/asylum4-q3-2016-tables.ods",
+    "format": "ods",
+    "title": "Asylum data tables immigration statistics July to September 2016 volume 4",
+    "publication_title": "Immigration statistics, July to September 2016: data tables",
+    "landing_url": "https://www.gov.uk/government/statistics/immigration-statistics-july-to-september-2016-data-tables",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 3069549,
+    "id": "ods-729c3707bbe50f51",
+    "path": "target/realworld/corpus/ods-729c3707bbe50f51.ods",
+    "sha256": "7c19095943158e3e13a1da8caf7ebb33d2e47ffece1a8b081208e55950923d4b",
+    "bytes": 3069549,
+    "package_signature": "9d37c41d8d12f158054faf3c6ec63909665348e826dc04ae263858360f2c989e",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:21.157111+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a808335ed915d74e33fadb8/landfill_gas_engines_annual_dispersion_factors.csv",
+    "format": "csv",
+    "title": "Landfill gas engines: annual dispersion factors",
+    "publication_title": "Air emissions risk assessment for your environmental permit",
+    "landing_url": "https://www.gov.uk/guidance/air-emissions-risk-assessment-for-your-environmental-permit",
+    "publisher": "Environment Agency; Department for Environment, Food & Rural Affairs",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 863,
+    "id": "csv-7d372f57f2ec54f0",
+    "path": "target/realworld/corpus/csv-7d372f57f2ec54f0.csv",
+    "sha256": "aee3c38af31f29d236604dcfad46f59588b790fac4afb8cc01af0a0136152c7d",
+    "bytes": 863,
+    "package_signature": "aee3c38af31f29d236604dcfad46f59588b790fac4afb8cc01af0a0136152c7d",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:24.961577+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5fc7c336d3bf7f7f5db85ba8/Excel_MacKay_Carbon_Calculator_v198.xlsm",
+    "format": "xlsm",
+    "title": "MacKay carbon calculator (Excel version)",
+    "publication_title": "Carbon calculator",
+    "landing_url": "https://www.gov.uk/guidance/carbon-calculator",
+    "publisher": "Department for Energy Security and Net Zero",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 14094159,
+    "id": "xlsm-1c382d45c18005cd",
+    "path": "target/realworld/corpus/xlsm-1c382d45c18005cd.xlsm",
+    "sha256": "2c1a80ee23b510bde9edcea94599a420fc3e7a6e7633ef87e8048daf741cb0c3",
+    "bytes": 14094159,
+    "package_signature": "ce1271cd62cfc9ef3b7e9125d0cb0ad3183f36d44af691f13cb36aee4aa4044e",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:29.182554+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79c62fed915d07d35b8001/ehrc-spend-mar12.csv",
+    "format": "csv",
+    "title": "Equality and Human Rights Commission spend data March 2012 (CSV format) (Comma Separated Value file - 69kb)",
+    "publication_title": "Equality and Human Rights Commission spend data March 2012 (CSV format)",
+    "landing_url": "https://www.gov.uk/government/publications/equality-and-human-rights-commission-spend-data-march-2012-csv-format",
+    "publisher": "Government Equalities Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 69531,
+    "id": "csv-7a2e611f4e059f98",
+    "path": "target/realworld/corpus/csv-7a2e611f4e059f98.csv",
+    "sha256": "c83df228db21715677d2a0efd8f0c33838257036052d20761b55f2e72f0d78d7",
+    "bytes": 69531,
+    "package_signature": "c83df228db21715677d2a0efd8f0c33838257036052d20761b55f2e72f0d78d7",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:30.437287+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b8e4ced915d1311060033/Table4.csv",
+    "format": "csv",
+    "title": "Table 4: Top Twenty Recipients UK Net Bilateral ODA 2010 - 2012",
+    "publication_title": "Statistics on International Development 2013 - Tables",
+    "landing_url": "https://www.gov.uk/government/statistics/statistics-on-international-development-2013-tables",
+    "publisher": "Department for International Development",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 1555,
+    "id": "csv-1b314698f52fbae4",
+    "path": "target/realworld/corpus/csv-1b314698f52fbae4.csv",
+    "sha256": "1e9689b63a4f4f456ad1778f2c15f77d3203f43aefac354df0155e8d1cd98596",
+    "bytes": 1555,
+    "package_signature": "1e9689b63a4f4f456ad1778f2c15f77d3203f43aefac354df0155e8d1cd98596",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:34.115971+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5db018cded915d095c89f0ff/6._Support_for_Aquaculture__Processing_and_Marketing_-_MFF_FBER_V_0.2.rtf",
+    "format": "rtf",
+    "title": "6. Support for Aquaculture Processing and Marketing",
+    "publication_title": "Maritime and Fisheries Fund (MFF): before you apply",
+    "landing_url": "https://www.gov.uk/guidance/maritime-and-fisheries-fund-mff-before-you-apply",
+    "publisher": "Marine Management Organisation",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2361271,
+    "id": "rtf-dcd6e1663bf622fc",
+    "path": "target/realworld/corpus/rtf-dcd6e1663bf622fc.rtf",
+    "sha256": "1c21897354d8dc974fd77ee99e31fa06c4ba2d0a2749e7e27707bc134be4e7d0",
+    "bytes": 2361271,
+    "package_signature": "1c21897354d8dc974fd77ee99e31fa06c4ba2d0a2749e7e27707bc134be4e7d0",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:35.582465+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a801b11e5274a2e87db7e32/T6-Bilateral-Gross-Public-Expend-Broad-Sector-200910-201314.csv",
+    "format": "csv",
+    "title": "Table 6. DFID Bilateral Gross Public Expenditure by Broad Sector 2009/10 - 2013/141",
+    "publication_title": "Statistics on International Development 2013 to 2014: GPEX tables",
+    "landing_url": "https://www.gov.uk/government/statistics/statistics-on-international-development-2013-to-2014-gpex-tables",
+    "publisher": "Department for International Development",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 6319,
+    "id": "csv-cfa227027af67347",
+    "path": "target/realworld/corpus/csv-cfa227027af67347.csv",
+    "sha256": "b101306c5172d9486b4e6f6f7842de0c8fdfc78874e805b4575016554d71164b",
+    "bytes": 6319,
+    "package_signature": "b101306c5172d9486b4e6f6f7842de0c8fdfc78874e805b4575016554d71164b",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:35.724690+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b1591e5274a319e77ce82/asylum3-q2-11-tabs.xls",
+    "format": "xls",
+    "title": "Asylum data tables Immigration Statistics April - June 2011 Volume 3",
+    "publication_title": "Tables: Immigration Statistics April to June 2011",
+    "landing_url": "https://www.gov.uk/government/statistics/tables-immigration-statistics-april-to-june-2011",
+    "publisher": "UK Visas and Immigration; Immigration Enforcement",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 4365824,
+    "id": "xls-9e13fd1af7af5a9f",
+    "path": "target/realworld/corpus/xls-9e13fd1af7af5a9f.xls",
+    "sha256": "f7ef0393fa5ac2cbb5c1ace17935b452000d71f962a826e78f2f1dc911a12b0b",
+    "bytes": 4365824,
+    "package_signature": "f7ef0393fa5ac2cbb5c1ace17935b452000d71f962a826e78f2f1dc911a12b0b",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:36.769281+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a815075ed915d74e33fd86e/extensions-q2-2016-tabs.ods",
+    "format": "ods",
+    "title": "Extensions of stay data tables immigration statistics April to June 2016",
+    "publication_title": "Immigration statistics, April to June 2016: data tables",
+    "landing_url": "https://www.gov.uk/government/statistics/immigration-statistics-april-to-june-2016-data-tables",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 1150769,
+    "id": "ods-c197f40e846f9d2b",
+    "path": "target/realworld/corpus/ods-c197f40e846f9d2b.ods",
+    "sha256": "3e44e92888df3db18d9e0abf1d47aa8775a07bd4520307ef37d868a0cf0a21a8",
+    "bytes": 1150769,
+    "package_signature": "206a0b969e9944dc2c200e76ec981ba106e6e620e9a9f9fbde21023e4b81e9a2",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:37.564836+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/6a85c4ddc9205b515d421eef/resettlement-scheme-datasets-jun-2026.xlsx",
+    "format": "xlsx",
+    "title": "Resettlement detailed datasets, year ending June 2026",
+    "publication_title": "Immigration system statistics data tables",
+    "landing_url": "https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 5029295,
+    "id": "xlsx-3d7484ae52ab377f",
+    "path": "target/realworld/corpus/xlsx-3d7484ae52ab377f.xlsx",
+    "sha256": "84b9a4c8d0d52ed418491b33186247fdec37a5067a3ad2508100b82aa6be2790",
+    "bytes": 5029295,
+    "package_signature": "8931d595e49aea08e3cd95d68fe6a927bea6b5afd7a969b4b5b9192b06c6921e",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:40.186538+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f191b40f0b62305b850e7/entry-visas2-q4-2014-tabs.ods",
+    "format": "ods",
+    "title": "Entry clearance visas granted outside the UK data tables immigration statistics October to December 2014 volume 2",
+    "publication_title": "Immigration statistics, October to December 2014: data tables",
+    "landing_url": "https://www.gov.uk/government/statistics/immigration-statistics-october-to-december-2014-data-tables",
+    "publisher": "Home Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2803837,
+    "id": "ods-b3185d3043cb268a",
+    "path": "target/realworld/corpus/ods-b3185d3043cb268a.ods",
+    "sha256": "f033ac051258b9e26825771e67215b3af33b1d5a561deb1573d86ab9476740e2",
+    "bytes": 2803837,
+    "package_signature": "7aeec57baea93136f544f21ea038e3cdc3715de657344c3a74866b3ffc9e3572",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:41.010265+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_expanded_bytes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a79aad6e5274a684690b37e/geo-spend-jan12.csv",
+    "format": "csv",
+    "title": "Government Equalities Office spend data January 2012 (CSV format) (Comma Separated Value file - 2kb)",
+    "publication_title": "Government Equalities Office spend data January 2012 (CSV format)",
+    "landing_url": "https://www.gov.uk/government/publications/government-equalities-office-spend-data-january-2012-csv-format",
+    "publisher": "Government Equalities Office",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2386,
+    "id": "csv-8d5e54393ec2c231",
+    "path": "target/realworld/corpus/csv-8d5e54393ec2c231.csv",
+    "sha256": "9bbe5c33556a2b878a85310b5ae93873832e1a3db821d0b5d7e603c5e5f9b985",
+    "bytes": 2386,
+    "package_signature": "9bbe5c33556a2b878a85310b5ae93873832e1a3db821d0b5d7e603c5e5f9b985",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:41.663151+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a798dd0e5274a684690a6a6/DCMS_Wolfson_PP-Partnership-2002-10.rtf",
+    "format": "rtf",
+    "title": "DCMS/Wolfson Museums and Galleries Improvement Fund: A Public-Private Partnership (2002-2010)",
+    "publication_title": "DCMS/Wolfson Museums and Galleries Improvement Fund: A Public-Private Partnership (2002-2010)",
+    "landing_url": "https://www.gov.uk/government/publications/dcms-wolfson-museums-and-galleries-improvement-fund-a-public-private-partnership-2002-2010",
+    "publisher": "Department for Culture, Media and Sport; Department for Digital, Culture, Media & Sport (2017 to 2023)",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 1498597,
+    "id": "rtf-81ca11b11d4d10ee",
+    "path": "target/realworld/corpus/rtf-81ca11b11d4d10ee.rtf",
+    "sha256": "09759de93da54b26215a854cdbd812e906ea6149737808f5225388f8c6812de3",
+    "bytes": 1498597,
+    "package_signature": "09759de93da54b26215a854cdbd812e906ea6149737808f5225388f8c6812de3",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:43.579338+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_nodes",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f207ae5274a2e8ab4a47c/dft-monthly-spend-201304.csv",
+    "format": "csv",
+    "title": "DfT's spending over £25,000 for April 2013",
+    "publication_title": "DfT: spending over £25,000, 2009 to 2013",
+    "landing_url": "https://www.gov.uk/government/publications/monthly-spend-over-500-in-the-department-for-transport-and-over-25-000-in-its-arms-length-bodies",
+    "publisher": "Department for Transport; Driver and Vehicle Licensing Agency; Driving Standards Agency; Highways Agency; Maritime and Coastguard Agency; Vehicle and Operator Services Agency; Vehicle Certification Agency",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 1349188,
+    "id": "csv-694b7b75298efd2b",
+    "path": "target/realworld/corpus/csv-694b7b75298efd2b.csv",
+    "sha256": "ddf9b70360fb55a53bf4610b842867a663cf6e21966e7dc627f6eaeaa12f840c",
+    "bytes": 1349188,
+    "package_signature": "ddf9b70360fb55a53bf4610b842867a663cf6e21966e7dc627f6eaeaa12f840c",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:43.960194+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "malformed document: expected UTF-8 text",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/5a7b3a5740f0b66a2fc0602b/asylum1-q2-2012-tabs.xls",
+    "format": "xls",
+    "title": "Asylum data tables Immigration Statistics April - June 2012 Volume 1",
+    "publication_title": "Tables for ‘Immigration Statistics: April to June 2012’",
+    "landing_url": "https://www.gov.uk/government/statistics/data-tables-immigration-statistics-april-to-june-2012",
+    "publisher": "Home Office; UK Visas and Immigration; Immigration Enforcement",
+    "source_group": "uk-government",
+    "license": "Open Government Licence v3 except where otherwise stated; retain source notice",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "size_hint": 2207744,
+    "id": "xls-aed2154ce0e620bd",
+    "path": "target/realworld/corpus/xls-aed2154ce0e620bd.xls",
+    "sha256": "b6ba8ed3afbe89251656331f97514f7ffd11653a0943ce219fd3e26deba20678",
+    "bytes": 2207744,
+    "package_signature": "b6ba8ed3afbe89251656331f97514f7ffd11653a0943ce219fd3e26deba20678",
+    "prior_exact_matches": [],
+    "downloaded_utc": "2026-11-12T13:29:44.652021+00:00",
+    "original_failures": [
+      {
+        "round": 0,
+        "error": "resource limit exceeded: max_table_cells",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-0.json",
+        "record_sha256": "7a5cf34279c165365d500e2350c4dadfe14e07e3da461a167b7ad3a97d2660e6"
+      },
+      {
+        "round": 1,
+        "error": "resource limit exceeded: max_table_cells",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-1.json",
+        "record_sha256": "cffd92f6f74690a81ea11f18a71d7bc267f7dabd439301d128d0f4fe1295d7f8"
+      },
+      {
+        "round": 2,
+        "error": "resource limit exceeded: max_table_cells",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-2.json",
+        "record_sha256": "930c63791bde03ba212e7c6a17d91deacd7a6b1db5c9e4466c938909fb370a0c"
+      },
+      {
+        "round": 3,
+        "error": "resource limit exceeded: max_table_cells",
+        "record": "reports/realworld-2026-11-12/conversion/bulkparse-round-3.json",
+        "record_sha256": "46b2bc5e51054027482a91b88b4ff22fff8133476fbcbee8fc0b94f874f7f2cb"
+      }
+    ]
+  }
+]
