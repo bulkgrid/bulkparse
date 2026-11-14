@@ -14,7 +14,7 @@ CPU includes worker and completed child CPU. macOS high-water RSS includes initi
 
 ## Reproduce
 
-The current measurement harness requires macOS, Rust, Python, Java where required by a configured converter, and installed CLI tools. Inspect `scripts/benchmark_realworld.py` and `scripts/worker_mixed200.py` for the expected executable paths. Provision the benchmark-only converter checkout used by `benchmarks/multiformat/anydoc/Cargo.toml` at `legacy/anydoc-main/`; its source hashes and package version are recorded in the results. Reference checkouts are ignored by Git.
+The current measurement harness requires macOS, Rust, Python, Java where required by a configured converter, and installed CLI tools. Inspect `scripts/benchmark_support.py` and `scripts/worker_mixed200.py` for the expected executable paths. Provision the benchmark-only converter checkout used by `benchmarks/multiformat/anydoc/Cargo.toml` at `legacy/anydoc-main/`; its source hashes and package version are recorded in the results. Reference checkouts are ignored by Git.
 
 Create isolated Python environments at `target/competitors/broad-venv`, `target/competitors/docling-venv` and `target/competitors/realworld-venv`. Install the corresponding `*-requirements.txt` files from the [run directory](../../reports/mixed-200-2026-11-13/run/). Provision the recorded Docling models separately using their upstream instructions and licenses; model hashes are in [model-manifest.json](../../reports/mixed-200-2026-11-13/model-manifest.json). Install Pandoc and LibreOffice at the paths expected by the worker, or adjust and record those paths.
 
@@ -28,6 +28,8 @@ python3 scripts/benchmark_mixed200.py \
   --out reports/new-mixed-run
 ```
 
+Validate and summarize a new full run with `python3 scripts/check_mixed200.py reports/new-mixed-run` and `python3 scripts/report_mixed200.py reports/new-mixed-run --out reports/new-mixed-run/table.md`. The summary command never edits the README.
+
 Start with one pass. A repeated performance study can add `--final-validation --passes 5 --warmup`. Use a new output directory and do not run other benchmarks concurrently. The harness verifies input hashes and records source hashes and options. Source URLs may cease to serve identical bytes; changed downloads must fail rather than silently replace the corpus.
 
 ## Quality assessment: planned, not completed
@@ -38,4 +40,4 @@ This project's chosen review route is assistant review, not an independent blind
 
 Use equal per-format weights shared by every engine. Failed and unsupported inputs score zero when meaningful reference content is assessable; unjudgeable references must be reported separately. Also report supported-only quality and sample counts, so coverage and fidelity remain distinguishable. Never compare averages over different format subsets as an overall ranking.
 
-The judging tools remain available for future evaluation. External paid judging requires a separate cost estimate and approval; no such jobs are part of the published benchmark.
+The unfinished judging runners have been retired; this protocol records the intended future assessment. External paid judging requires a separate cost estimate and approval; no such jobs are part of the published benchmark.

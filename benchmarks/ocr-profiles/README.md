@@ -26,8 +26,7 @@ The original [expectations and perturbation plan](../../fixtures/ocr-stress/plan
 were written before rendering or OCR. The pages were visually reviewed for
 legibility and clipping. They are authored stress cases, not real scanner
 captures or a human-annotated production dataset. Do not regenerate them to
-evaluate a model change. The macOS-only generator is
-`scripts/prepare_ocr_stress.py`; use the committed bytes for repeatability.
+evaluate a model change. Use the committed bytes for repeatability; the one-time corpus generator has been retired.
 
 ## Run
 

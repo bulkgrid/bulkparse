@@ -4,8 +4,10 @@ import argparse,hashlib,json,os,re,shutil
 from pathlib import Path
 from markdown_it import MarkdownIt
 from bs4 import BeautifulSoup
-from benchmark_broad import ROOT,PDF,OFFICE,SUPPORT,commands
-from benchmark_same_machine import Worker
+from benchmark_broad import ROOT, PDF, commands as pdf_commands
+from benchmark_mixed200 import ENGINES as OFFICE, SUPPORT
+from benchmark_support import commands as mixed_commands
+from benchmark_support import CorpusWorker as Worker
 from benchmark_opendataloader import write_json,sha256
 
 HEADERS=['School','First grade','Second grade','Third grade','Fourth grade']
@@ -45,7 +47,7 @@ def main():
     env=dict(os.environ,RAYON_NUM_THREADS='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1')
     results=[]
     for mode,engines in [('pdf',PDF),('office',OFFICE)]:
-        cmds=commands(mode)
+        cmds=pdf_commands() if mode=='pdf' else mixed_commands()
         for e in engines:
             chosen=[r for r in rows if (r['format']=='pdf')==(mode=='pdf') and (mode=='pdf' or e not in SUPPORT or r['format'] in SUPPORT[e])]
             if not chosen:continue

@@ -47,8 +47,7 @@ OCR models as documented in their existing protocols, then build:
 ```sh
 cargo build --release --locked --manifest-path benchmarks/opendataloader/Cargo.toml --target-dir target/broad/bulkparse
 cargo build --release --locked --manifest-path benchmarks/broad/pdf-inspector/Cargo.toml --target-dir target/broad/pdf-inspector
-cargo build --release -p bulkparse --example office_bench
-# Existing AnyDoc workers: see ../same-machine and ../multiformat.
+cargo build --release --locked --manifest-path benchmarks/same-machine/anydoc/Cargo.toml --target-dir target/same-machine-benchmark/anydoc-build
 target/opendataloader-venv/bin/python scripts/benchmark_broad.py --mode pdf --out reports/new-pdf-run
 python3 scripts/benchmark_ocr_alternatives.py --profiles rapid-small lite-tiny paddle-tiny tesseract-fast --out reports/new-ocr-run
 ```
@@ -59,3 +58,5 @@ model weights and installed runtimes are not redistributed in the report. The
 authored OCR images and reference text are included under `ocr/data`; restore
 those to `target/ocr-alternatives/data` and provision the hash-pinned models
 using the OCR protocol.
+
+The superseded Office-only mode has been consolidated into the [200-document mixed runner](../realworld/README.md). `--smoke` checks two PDFs without publishing quality scores; the full run retains one warm-up and five measured passes.

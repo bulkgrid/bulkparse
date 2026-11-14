@@ -8,6 +8,8 @@ Only evidence supporting the current README comparisons is included:
 
 These directories contain input manifests, settings, versions, hashes, timing records and scored measurements. Authored OCR inputs are included. Downloaded documents, extracted third-party text, model weights, binaries, duplicate source snapshots and obsolete runs are excluded.
 
-## Historical tools
+## Reproduction and regression checks
 
-All benchmark and regression scripts remain available. Some historical scripts require regenerated inputs, reference checkouts or baseline runs that are not distributed. Their presence does not imply that their old result directories are included. Follow the current protocols linked above for the published comparisons. Fresh benchmark output belongs in a new ignored `reports/` directory.
+Follow the [maintained benchmark guide](../benchmarks/README.md) for the mixed-document, PDF and OCR runners and reusable before/after checks. Superseded experiment scripts have been retired; measurements and hashes in published reports remain unchanged. Paths inside historical evidence are provenance, not promises that old scripts or source snapshots are distributed.
+
+Current native OCR validation is retained in [migration](native-ocr-migration-2026-11-14/), [refinement](native-ocr-refinement-2026-11-14/) and [accent regression](native-ocr-accent-fix-2026-11-14/). Fresh results belong in a new ignored report directory.

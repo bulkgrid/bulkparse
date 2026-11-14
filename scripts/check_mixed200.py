@@ -1,34 +1,41 @@
 #!/usr/bin/env python3
-"""Verify the frozen corpus, raw outcomes and retained-document output regression."""
-import collections,hashlib,json
+"""Verify a new mixed-corpus run without requiring deleted historical reports."""
+import argparse
+import json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'reports/mixed-200-2026-11-13';RUN=BASE/'run'
-def read(p):return json.loads(p.read_text())
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def main():
- corpus=read(BASE/'corpus-manifest.json');old=read(ROOT/'reports/realworld-2026-11-12/corpus-manifest.json');hard=read(ROOT/'benchmarks/realworld-failures/manifest.json')
- assert len(corpus)==len({r['id'] for r in corpus})==len({r['sha256'] for r in corpus})==200
- byid={r['id']:r for r in corpus}
- assert all(all(byid[r['id']][k]==r[k] for k in ['sha256','path','format','bytes']) for r in old)
- assert all(r['id'] in byid for r in hard) and len(hard)==27
- assert all(sha(ROOT/r['path'])==r['sha256'] for r in corpus)
- freeze=read(BASE/'corpus-freeze.json');identity=read(RUN/'identity.json')
- assert sha(BASE/'corpus-manifest.json')==freeze['manifest_sha256']
- assert freeze['frozen_utc']<identity['started_utc']
- assert read(RUN/'verification.json')['complete']
- rows=read(RUN/'bulkparse-round-1.json')['documents'];current={r['id']:r for r in rows};before=read(ROOT/'reports/epub-speed-2026-11-13/full-regression/after-0.json')
- assert len(before)==112
- mismatch=[]
- for r in before:
-  now=current[r['id']];fields=[]
-  if r['markdown_sha256']!=now['output_sha256']:fields.append('Markdown bytes')
-  for key in ['ok','status','diagnostics','render_diagnostics','image_count','image_bytes','image_assets']:
-   if r.get(key)!=now.get(key):fields.append(key)
-  if fields:mismatch.append(dict(id=r['id'],fields=fields))
- diagnostics={category:sorted({r['id'] for r in rows for d in [*r.get('diagnostics',[]),*r.get('render_diagnostics',[])] if d.get('category')==category}) for category in ['missing_content','formatting_limitation','informational']}
- codes=collections.Counter(d['code'] for r in rows for d in [*r.get('diagnostics',[]),*r.get('render_diagnostics',[])])
- result=dict(unique_inputs=200,retained_unchanged_inputs=112,historical_failures_retained=27,frozen_before_run=True,all_input_hashes_verified=True,retained_output_regression=dict(compared=112,unchanged=112-len(mismatch),mismatches=mismatch,scope='Markdown bytes, parser/render diagnostics, status, image asset metadata; full structured JSON is not separately serialized in this run'),diagnostic_document_ids=diagnostics,diagnostic_code_counts=dict(codes),note='Diagnostics are parser-reported; they are not independently judged content loss or quality scores.')
- (BASE/'regression-check.json').write_text(json.dumps(result,indent=2)+'\n')
- assert not mismatch,f'Retained output regressions: {mismatch}'
- print('Verified 200 unique unchanged inputs, all 27 historical failures retained, and all 112 previous Markdown/diagnostic/asset results unchanged.')
-if __name__=='__main__':main()
+
+from benchmark_support import ROOT, REPORT, digest
+
+
+def check(run):
+    manifest = json.loads((run/'manifest.json').read_text())
+    published = json.loads((REPORT/'corpus-manifest.json').read_text())
+    assert [(r['id'], r['sha256']) for r in manifest] == [(r['id'], r['sha256']) for r in published], 'Not the frozen 200-document corpus'
+    assert len(manifest) == len({r['id'] for r in manifest}) == len({r['sha256'] for r in manifest}) == 200
+    assert all(digest(ROOT/r['path']) == r['sha256'] for r in manifest)
+    hard = json.loads((ROOT/'benchmarks/realworld-failures/manifest.json').read_text())
+    assert {r['id'] for r in hard} <= {r['id'] for r in manifest}
+    identity = json.loads((run/'identity.json').read_text())
+    assert not identity.get('smoke') and identity['measured_passes'] > 0
+    files = []
+    for engine in identity['commands']:
+        for index in range(0 if identity['warmup'] else 1, identity['measured_passes']+1):
+            path = run/f'{engine}-round-{index}.json'
+            rows = json.loads(path.read_text())['documents']
+            assert [r['id'] for r in rows] == [r['id'] for r in manifest], path
+            folder = run/'prediction'/engine/f'round-{index}'
+            assert {p.name for p in folder.glob('*.md')} == {r['id']+'.md' for r in manifest}
+            for row in rows:
+                output = folder/(row['id']+'.md')
+                assert output.stat().st_size == row['output_bytes'] and digest(output) == row['output_sha256'], output
+                assert row['elapsed_ns'] >= 0
+                assert row['ok'] or row['output_bytes'] == 0, 'Failure retained stale output'
+            files.append(path.name)
+    assert json.loads((run/'verification.json').read_text())['complete']
+    return {'documents':len(manifest), 'historical_cases':len(hard), 'round_files':len(files)}
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('run', type=Path)
+    print(json.dumps(check(parser.parse_args().run), indent=2))

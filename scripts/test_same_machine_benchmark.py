@@ -2,7 +2,7 @@
 from pathlib import Path
 import tempfile
 import unittest
-from benchmark_same_machine import validate_run
+from benchmark_support import validate_run
 
 
 class Accounting(unittest.TestCase):

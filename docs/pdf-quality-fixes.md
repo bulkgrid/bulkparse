@@ -61,13 +61,6 @@ Final evidence:
 
 Earlier trial reports remain historical; the final core-source digests in the regression and comparison reports match. External source documents and converted text remain under local fixture/target paths rather than being copied into reports.
 
-```sh
-python3 scripts/check_pdf_quality_fix.py \
-  --before-worker target/inspector-comparison/bulkparse-before-quality-fix \
-  --out reports/new-quality-regression.json
-BULKPARSE_CLI=target/debug/bulkparse node scripts/check_binding_parity.mjs --pdf-corpus
-python3 scripts/compare_pdf_inspectors.py --out reports/new-inspector-comparison
-python3 scripts/check_inspector_comparison.py reports/new-inspector-comparison
-```
+Current checks are documented in the [benchmark guide](../benchmarks/README.md#regression-checks). Use `benchmark_regressions.py` for before/after output comparison and `check_pdf_visible_text.py` for native character accounting. The old experiment-specific runners have been retired.
 
-These commands require the local source corpus and saved baseline artifacts. See the [benchmark build instructions](../benchmarks/inspector-comparison/README.md); use a new report path for each run.
+Before/after checks require explicit baseline and candidate executables; use a fresh report path for each run.

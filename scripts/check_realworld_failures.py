@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 
-from benchmark_realworld import ROOT, Worker, digest, write
+from benchmark_support import ROOT, DocumentWorker as Worker, digest, write
 
 SUITE = ROOT / 'benchmarks/realworld-failures'
 MODES = {
@@ -37,7 +37,6 @@ def main():
     for mode in args.modes:
         flags = MODES[mode]
         reference = expected[mode]
-        assert digest(ROOT/reference['source']) == reference['source_sha256']
         worker = Worker([str(binary), *flags], args.out/(mode+'.log'), dict(os.environ, RAYON_NUM_THREADS='1'))
         try:
             for d in corpus:

@@ -52,11 +52,10 @@ Implementation references: [PDF 1.7 specification](https://opensource.adobe.com/
 
 ```sh
 cargo test --offline --locked -p bulkparse
-python3 scripts/check_pdf_regressions.py reports/positioned-pdf-2026-11-10
-python3 scripts/check_fixture_regressions.py reports/positioned-pdf-2026-11-10
 node scripts/check_binding_parity.mjs --pdf-corpus
-python3 scripts/benchmark_parsers.py --out reports/pdf-benchmark-next
 ```
+
+For corpus checks and before/after measurements, follow the [current regression guide](../benchmarks/README.md#regression-checks). It accepts explicit executables and inputs rather than relying on archived experiment directories.
 
 The corpus checks require the original local fixture checkouts and raw evaluation outputs. The benchmark also requires the saved pre-change binary or a supplied pinned baseline. These artifacts are not redistributed in the source bundle. Input/reference hashes, source fingerprints, settings and results are retained in the corpus report (historical artifact; not distributed) and benchmark report (historical artifact; not distributed).
 

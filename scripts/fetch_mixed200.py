@@ -1,18 +1,34 @@
 #!/usr/bin/env python3
-"""Fetch exact frozen public inputs. Fail on changed bytes; never substitute files."""
-import hashlib,json,subprocess
+"""Restore hash-pinned public inputs. Changed downloads fail; nothing is substituted."""
+import argparse
+import json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
-for d in json.loads((ROOT/'reports/mixed-200-2026-11-13/corpus-manifest.json').read_text()):
- p=ROOT/d['path'];p.parent.mkdir(parents=True,exist_ok=True)
- if p.exists():
-  assert hashlib.sha256(p.read_bytes()).hexdigest()==d['sha256'],f'Changed existing input: {p}'
-  continue
- tmp=p.with_suffix('.download')
- try:
-  subprocess.run(['curl','-sS','-L','--fail','--max-time','90','--max-filesize','15728640',d['url'],'-o',str(tmp)],check=True)
-  assert hashlib.sha256(tmp.read_bytes()).hexdigest()==d['sha256'],f'Source changed: {d["url"]}'
-  tmp.rename(p)
- finally:tmp.unlink(missing_ok=True)
- print(d['id'],flush=True)
-print('All 200 input hashes verified')
+import subprocess
+
+from benchmark_support import ROOT, REPORT, digest
+
+
+def restore(manifest):
+    docs = json.loads(manifest.read_text())
+    for doc in docs:
+        path = ROOT/doc['path']
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if path.exists():
+            assert digest(path) == doc['sha256'], f'Changed existing input: {path}'
+            continue
+        temporary = path.with_suffix('.download')
+        try:
+            subprocess.run(['curl', '-sS', '-L', '--fail', '--max-time', '90',
+                            '--max-filesize', '15728640', doc['url'], '-o', str(temporary)], check=True)
+            assert digest(temporary) == doc['sha256'], f'Source changed: {doc["url"]}'
+            temporary.rename(path)
+        finally:
+            temporary.unlink(missing_ok=True)
+        print(doc['id'], flush=True)
+    print(f'All {len(docs)} input hashes verified')
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--manifest', type=Path, default=REPORT/'corpus-manifest.json')
+    restore(parser.parse_args().manifest)

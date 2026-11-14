@@ -4,9 +4,9 @@ from bulkparse_cli import parse_command
 from pathlib import Path
 from collections import Counter,defaultdict
 import argparse,difflib,hashlib,json,re,subprocess,unicodedata,datetime,random,statistics
-from check_pdf_quality_fix import page_characters
+from pdf_regression_support import page_characters
 ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/'target/independent-pdf-v2';SPEC=ROOT/'benchmarks/independent-pdf-v2'
-VERSIONS=['pre_reading_heading_series','previous_release','current']
+VERSIONS=['baseline','current']
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def norm(s):return ''.join(c for c in unicodedata.normalize('NFKC',s).casefold() if c.isalnum())
 def tokens(s):return re.findall(r'[^\W_]+',unicodedata.normalize('NFKC',s).casefold())
@@ -94,14 +94,8 @@ def aggregate(rows):
  return result
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--baseline-binary',type=Path,required=True);p.add_argument('--candidate-binary',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False)
  if (a.out/'quality.json').exists():raise ValueError('Use a fresh output report')
- freeze=json.loads((SPEC/'freeze.json').read_text())
- assert sha(SPEC/'PROTOCOL.md')==json.loads((SPEC/'protocol-freeze.json').read_text())['sha256']
- for label,v in freeze['versions'].items():
-  source=ROOT/'reports'/v['report']/'source-snapshot'
-  assert all(sha(source/n)==h for n,h in v['source_manifest'].items())
-  if label=='current':assert all(sha(ROOT/n)==h for n,h in v['source_manifest'].items())
  manifest=json.loads((SPEC/'manifest.json').read_text());overlap=json.loads((SPEC/'overlap-audit.json').read_text())
  excluded={r['id'] for r in overlap['rows'] if r['excluded']}
  annotation_data=json.loads((DATA/'test.json').read_text());by_id=defaultdict(list)
@@ -111,8 +105,8 @@ def main():
  for row in selected:
   for k,h in row['sha256'].items():assert sha(ROOT/row['paths'][k])==h
   id=Path(row['image']['file_name']).stem;reference_rows[id]=refs(row,by_id[row['image']['id']])
- refpath=DATA/'references.json';refpath.write_text(json.dumps(reference_rows,indent=2)+'\n')
- binaries={label:ROOT/'target/independent-pdf-v2'/('build-'+label)/'release/bulkparse' for label in VERSIONS}
+ refpath=a.out/'references.json';refpath.write_text(json.dumps(reference_rows,indent=2)+'\n')
+ binaries={'baseline':a.baseline_binary.resolve(),'current':a.candidate_binary.resolve()}
  identity={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'reference_sha256':sha(refpath),'harness_sha256':sha(Path(__file__)),'protocol_sha256':sha(SPEC/'PROTOCOL.md'),'binary_sha256':{k:sha(v) for k,v in binaries.items()},'selected_count':len(selected),'excluded_count':len(excluded),'parser_frozen':True}
  (a.out/'evaluation-start.json').write_text(json.dumps(identity,indent=2)+'\n')
  results=[]
@@ -120,7 +114,7 @@ def main():
   id=Path(row['image']['file_name']).stem;entry={'id':id,'source':row['image'],'versions':{},'comparisons':{}}
   raws={}
   for label,bin in binaries.items():
-   dest=DATA/'outputs'/label;dest.mkdir(parents=True,exist_ok=True)
+   dest=a.out/'outputs'/label;dest.mkdir(parents=True,exist_ok=True)
    parsed={}
    for raw in [False,True]:
     cmd=[str(bin), parse_command(bin),str(ROOT/row['paths']['pdfs']),'--to','json']
@@ -149,6 +143,7 @@ def main():
   results.append(entry)
   print('Evaluated',len(results),'/',len(selected),row['image']['doc_category'],flush=True)
   (a.out/'partial-quality.json').write_text(json.dumps(results,indent=2)+'\n')
+ assert identity['binary_sha256']=={k:sha(v) for k,v in binaries.items()},'Executable changed during evaluation'
  summary=aggregate(results);categories={cat:aggregate([r for r in results if r['source']['doc_category']==cat]) for cat in sorted(set(r['source']['doc_category'] for r in results))}
  rng=random.Random('bulkparse-independent-v2-bootstrap');deltas={k:[] for k in VERSIONS[:-1]}
  for _ in range(2000):

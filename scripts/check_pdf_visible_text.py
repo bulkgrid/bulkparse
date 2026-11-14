@@ -8,17 +8,17 @@ page-boundary tests and visual review. Inspection must remain identical.
 import argparse, hashlib, json, re
 from collections import Counter
 from pathlib import Path
-from check_pdf_quality_fix import convert, page_characters
+from pdf_regression_support import convert, page_characters
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  p=argparse.ArgumentParser(description=__doc__)
  for k in ['before','after','pdf_dir','out']:p.add_argument('--'+k.replace('_','-'),type=Path,required=True)
- p.add_argument('--include-regressions',action='store_true');a=p.parse_args()
+ p.add_argument('--manifest',type=Path,action='append',default=[],help='Additional JSONL input manifests');a=p.parse_args()
  if a.out.exists():raise ValueError('Use a fresh output path')
  paths=set(a.pdf_dir.glob('*.pdf'))
- if a.include_regressions:
-  for m in [ROOT/'reports/pdf-tables-corpus-2026-11-10-v2/manifest.jsonl',ROOT/'benchmarks/holdout/manifest.jsonl']:
+ if a.manifest:
+  for m in a.manifest:
    for r in map(json.loads,m.read_text().splitlines()):
     path=Path(r['source_path'])
     if path.suffix.lower()=='.pdf':

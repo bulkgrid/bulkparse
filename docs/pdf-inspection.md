@@ -78,19 +78,12 @@ Output schema is **0.3**. `ParseResult`/binding conversion JSON adds optional `p
 ## Validation
 
 - 17 new Rust integration tests cover routing, text corruption, mixed content, tiled/repeated images, Form transformations/clipping, hidden text, annotations, reversed bounds, limits, cancellation, failures and native fallback.
-- All 80 PDFs in the existing hash-pinned corpus pass: 79 retain identical native blocks and inspection/conversion route parity; the encrypted input retains its expected failure. This is a regression check, **not** a classifier accuracy benchmark. See `reports/pdf-inspection-2026-11-10/corpus.json` and `scripts/check_pdf_inspection.py`.
+- All 80 PDFs in the existing hash-pinned corpus pass: 79 retain identical native blocks and inspection/conversion route parity; the encrypted input retains its expected failure. This is a regression check, **not** a classifier accuracy benchmark. This historical check is recorded in the original experiment; use the [current regression guide](../benchmarks/README.md#regression-checks) for maintained commands.
 - 13 conversion cases and 3 inspection cases match across rebuilt Node, Python, release WASM and CLI. Node/Python/WASM smoke and inspection checks pass.
 - The existing eight authored real-OCR cases meet their previous quality gates. The Swedish recognition error remains. See `reports/pdf-inspection-ocr-final-2026-11-10`.
 - An additional authored scan with native header `Monthly archive` routes to OCR and recovers the header and scanned body exactly after whitespace normalization, with the header occurring once. The fixture generator is `crates/bulkparse/examples/make_inspection_fixture.rs`; the OCR result and check are in `reports/pdf-inspection-2026-11-10`.
 
-Reproduce the corpus regression with:
-
-```sh
-python3 scripts/check_pdf_inspection.py --binary target/debug/bulkparse \
-  --out reports/pdf-inspection-repeat/corpus.json
-```
-
-The corpus check requires the original locally available upstream inputs and baseline outputs. It saves hashes and comparisons, not upstream document text. Broader independent real-scan evaluation and server-resource benchmarks remain necessary.
+Run inspection unit tests with `cargo test --locked -p bulkparse` and cross-binding checks with `node scripts/check_binding_parity.mjs --pdf-corpus` after building the bindings. Current comparison and regression commands are in the [benchmark guide](../benchmarks/README.md).
 
 A direct local comparison is now available: [BulkParse vs Firecrawl PDF Inspector](pdf-inspector-comparison.md). Inspection speeds are similar; conversion throughput and quality tradeoffs are reported separately.
 

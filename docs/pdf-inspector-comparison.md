@@ -82,8 +82,4 @@ configuration and the inspection capability difference. The final report is
 - `per-case.json`: per-document timing, routing and reference-based diagnostics.
 - `summary.json` and `resources.json`: aggregates and owned-child resource usage.
 
-`scripts/check_inspector_comparison.py` independently recomputes accounting,
-medians, route matches, deterministic outputs and memory summaries. The initial
-run's memory collector was blocked by macOS; the v2 run uses `wait4` successfully.
-The benchmark workers are isolated from the main workspace and no parser code
-was changed to improve this comparison.
+The experiment-specific checker has been retired. Use the [current benchmark and regression guide](../benchmarks/README.md) for maintained commands.

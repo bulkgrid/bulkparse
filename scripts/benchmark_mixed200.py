@@ -13,7 +13,7 @@ import statistics
 import subprocess
 import time
 
-from benchmark_realworld import ROOT, REPORT, Worker, commands, digest, write
+from benchmark_support import ROOT, REPORT, DocumentWorker as Worker, commands, digest, write
 from benchmark_opendataloader import snapshot_sources
 
 ENGINES = ['bulkparse','anydoc','docling','markitdown','pandoc','mammoth','libreoffice','unstructured']
@@ -65,7 +65,7 @@ def main():
         assert hard_ids <= {d['id'] for d in corpus}
         if args.manifest.resolve() == (REPORT/'corpus-manifest.json').resolve():
             assert hard_ids <= {d['id'] for d in corpus}
-            assert len(corpus) == 112
+            assert len(corpus) == 200
     assert all(digest(ROOT/d['path']) == d['sha256'] for d in corpus)
     write(out/'manifest.json', corpus)
     cmds = {e: commands()[e] for e in args.engines}
@@ -77,7 +77,7 @@ def main():
         native = [str(args.bulkparse_binary.resolve())] if args.bulkparse_binary else commands()['bulkparse']
         cmds.update({e: [*native, *flags] for e,flags in EXTRA.items()})
     sources = snapshot_sources(out)
-    paths = [Path(__file__), ROOT/'scripts/benchmark_realworld.py', ROOT/'scripts/worker_realworld.py', ROOT/'scripts/worker_mixed200.py', ROOT/'scripts/assemble_mixed200.py',
+    paths = [Path(__file__), ROOT/'scripts/benchmark_support.py', ROOT/'scripts/worker_mixed200.py',
              ROOT/'scripts/check_realworld_failures.py', ROOT/'crates/bulkparse/examples/office_bench.rs',
              ROOT/'benchmarks/multiformat/anydoc.rs', ROOT/'benchmarks/realworld/cpu.rs',
              ROOT/'benchmarks/realworld/comparison-2026-11-13.json', ROOT/'benchmarks/realworld/development-policy.json',
@@ -94,6 +94,8 @@ def main():
     write(out/'source-manifest.json', sources)
     for name in ['broad','docling','realworld']:
         py=ROOT/f'target/competitors/{name}-venv/bin/python'
+        if str(py) not in {cmd[0] for cmd in cmds.values()}:
+            continue
         (out/f'{name}-requirements.txt').write_text(subprocess.check_output([str(py),'-m','pip','freeze'],text=True))
     env = dict(os.environ, RAYON_NUM_THREADS='1', OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
                MKL_NUM_THREADS='1', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', TOKENIZERS_PARALLELISM='false')

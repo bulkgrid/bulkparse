@@ -6,7 +6,7 @@ is mechanical, using the preserved original results; it is not based on which
 documents later improved. The manifest preserves download URLs, source notices,
 file hashes, original failure reasons and result-file hashes.
 
-These documents already belong to the 112-document real-world corpus. They are
+These documents already belong to the 200-document mixed corpus. They are
 not duplicated or given additional weight in full-corpus results. Report this
 27-document subset separately to make regressions visible. It contains nine CSV,
 five ODS, five XLS, three XLSM, three RTF and two XLSX inputs.
@@ -18,7 +18,7 @@ smaller budgets. Rejection is a tested limit, not successful conversion. Output
 equality is a regression check, not evidence of complete visual fidelity.
 
 ```sh
-python3 scripts/restore_realworld_corpus.py --manifest benchmarks/realworld-failures/manifest.json
+python3 scripts/fetch_mixed200.py --manifest benchmarks/realworld-failures/manifest.json
 cargo build --release --locked -p bulkparse --example office_bench
 python3 scripts/check_realworld_failures.py --out /tmp/bulkparse-realworld-failures
 ```
@@ -29,7 +29,7 @@ parser changes before updating expectations. The corpus files remain in ignored
 `target/realworld/corpus`; the manifest restores them without committing third-party
 documents. Preserve their individual license and attribution notices.
 
-The original [112-document study](../realworld/README.md) documents selection and
+The current [mixed-document study](../realworld/README.md) documents selection and
 limitations. These files are development/regression inputs, not an unseen holdout.
 
 ## Default complete output
@@ -44,3 +44,5 @@ The fidelity follow-up (historical artifact; not distributed) updates
 three RTF expectations after source review: two add footer sections and one
 clarifies its object-omission diagnostic. Their original body text remains intact;
 all other expectations and all 27 selected documents are preserved.
+
+The tracked expectations are self-contained; their historical source paths are provenance, not required run inputs. To compare two current builds without adopting old expectations, use the [before/after runner](../README.md#regression-checks).

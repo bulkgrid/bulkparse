@@ -63,6 +63,6 @@ def check(evaluation, baseline):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('evaluation', type=Path)
-    parser.add_argument('--baseline', type=Path, default=ROOT / 'reports/fixture-evaluation-2026-11-10-run2')
+    parser.add_argument('--baseline', type=Path, required=True)
     args = parser.parse_args()
     print(json.dumps(check(args.evaluation, args.baseline), indent=2))

@@ -15,7 +15,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 from markdown_it import MarkdownIt
-from benchmark_realworld import ROOT, digest, write
+from benchmark_support import ROOT, digest, write
 
 
 def normalize(value):

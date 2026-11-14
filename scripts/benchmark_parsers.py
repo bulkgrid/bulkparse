@@ -80,7 +80,7 @@ def run(argv, output, timeout=30):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--manifest', type=Path, default=ROOT / 'reports/fixture-fixes-2026-11-10-run2/manifest.jsonl')
+    parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--engines', type=Path, help='JSON list: name, argv with {input}, version, configuration, optional pin_files')
     parser.add_argument('--baseline', type=Path, default=ROOT / 'target/bulkparse-before-positioned-pdf')
     parser.add_argument('--repeats', type=int, default=7)
