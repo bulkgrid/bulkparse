@@ -41,8 +41,8 @@ def render(run):
         memory = f'{peak/2**20:.1f}' if peak is not None else '—'
         lines.append(f'| {engine} | {coverage} | {formats} | {times} | {total} | {memory} |')
     lines += ['', 'Coverage is not quality. Successful subsets differ. Document times are medians across measured passes, then across documents with nonempty output in every pass. Corpus time includes failed attempts; unsupported inputs take no conversion time. Memory is worker lifetime peak RSS, including initialization; terminated workers can leave incomplete accounting.', '',
-              'Each format lists its document count. Per-format cells: nonempty outputs (%) per pass · median successful conversion time (ms). Percentages measure coverage, not accuracy; — means unsupported or no successful timing.', '',
-              '| Format (documents) | ' + ' | '.join(engines) + ' |', '| --- | ' + ' | '.join('---:' for _ in engines) + ' |']
+              'Per-format cells: nonempty outputs (%) per pass · median successful conversion time (ms). Percentages measure coverage, not accuracy; — means unsupported or no successful timing.', '',
+              '| Format | ' + ' | '.join(engines) + ' |', '| --- | ' + ' | '.join('---:' for _ in engines) + ' |']
     for fmt, count in sorted(counts.items()):
         cells = []
         for engine in engines:
@@ -53,7 +53,7 @@ def render(run):
             coverage = ', '.join(f'{100*len(rs)/count:.1f}'.removesuffix('.0') + '%' for rs in samples)
             timing = median(document_medians(rows[engine], fmt))
             cells.append(f'{coverage} · {timing}' + (' ms' if timing != '—' else ''))
-        lines.append(f'| {fmt} ({count}) | ' + ' | '.join(cells) + ' |')
+        lines.append(f'| {fmt} | ' + ' | '.join(cells) + ' |')
     return '\n'.join(lines) + '\n'
 
 

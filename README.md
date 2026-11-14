@@ -140,29 +140,29 @@ The corpus includes 112 development documents and 88 selected before conversion,
 
 ### Results by format
 
-The same 200 documents and engine runs shown above underpin this breakdown. Each format lists its document count. Cells show **nonempty outputs (%) · median successful conversion time (ms)**; `—` means unsupported or no successful timing. Percentages measure output coverage, not extraction accuracy. Tiny samples and different successful subsets limit speed comparisons.
+The same 200 documents and engine runs shown above underpin this breakdown. Cells show **nonempty outputs (%) · median successful conversion time (ms)**; `—` means unsupported or no successful timing. Percentages measure output coverage, not extraction accuracy. Tiny samples and different successful subsets limit speed comparisons.
 
-| Format (documents) | BulkParse | AnyDoc | Docling | MarkItDown | Pandoc | Mammoth | LibreOffice | Unstructured |
+| Format | BulkParse | AnyDoc | Docling | MarkItDown | Pandoc | Mammoth | LibreOffice | Unstructured |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| csv (19) | 100% · 0.30 ms | 100% · 0.81 ms | 94.7% · 11.49 ms | 89.5% · 5.15 ms | 100% · 54.74 ms | — | 94.7% · 647.37 ms | 36.8% · 58.08 ms |
-| doc (8) | 100% · 0.90 ms | 100% · 1.00 ms | 100% · 2,984.76 ms | — | — | — | 100% · 792.97 ms | 100% · 727.35 ms |
-| docm (1) | 100% · 1.97 ms | 100% · 3.20 ms | 0% · — | 100% · 73.62 ms | — | 100% · 36.04 ms | 100% · 707.77 ms | 0% · — |
-| docx (19) | 100% · 2.48 ms | 100% · 2.67 ms | 100% · 151.28 ms | 100% · 117.17 ms | 100% · 89.49 ms | 100% · 36.89 ms | 100% · 783.20 ms | 100% · 46.38 ms |
-| epub (16) | 100% · 9.10 ms | 100% · 16.12 ms | 100% · 723.73 ms | 100% · 131.81 ms | 100% · 1,328.67 ms | — | — | 100% · 7,143.06 ms |
-| ipynb (4) | 100% · 0.20 ms | — | — | 100% · 3.60 ms | 100% · 77.10 ms | — | — | — |
-| md (5) | 100% · 0.12 ms | — | 100% · 11.41 ms | 100% · 3.95 ms | 100% · 68.74 ms | — | — | 100% · 23.85 ms |
-| odp (4) | 100% · 8.37 ms | 100% · 12.63 ms | 100% · 174.90 ms | — | — | — | 100% · 1,511.46 ms | — |
-| ods (19) | 100% · 52.02 ms | 84.2% · 15.30 ms | 94.7% · 2,322.19 ms | — | — | — | 100% · 2,047.78 ms | — |
-| odt (19) | 100% · 1.02 ms | 100% · 1.83 ms | 100% · 66.49 ms | — | 100% · 69.59 ms | — | 100% · 704.17 ms | 100% · 242.39 ms |
-| pdf (18) | 100% · 7.52 ms | 100% · 14.55 ms | 100% · 1,421.60 ms | 100% · 199.58 ms | — | — | — | 100% · 231.64 ms |
-| ppt (1) | 100% · 0.78 ms | 100% · 0.57 ms | 100% · 901.47 ms | — | — | — | 100% · 1,352.87 ms | 100% · 816.31 ms |
-| pptx (4) | 100% · 8.28 ms | 100% · 9.16 ms | 100% · 2,517.39 ms | 100% · 46.74 ms | — | — | 100% · 5,809.23 ms | 100% · 127.74 ms |
-| rtf (19) | 100% · 5.62 ms | 100% · 12.14 ms | 100% · 1,642.36 ms | — | 100% · 252.28 ms | — | 100% · 939.77 ms | 100% · 429.80 ms |
-| tsv (1) | 100% · 1.34 ms | — | — | 100% · 5.08 ms | 100% · 188.32 ms | — | 100% · 1,106.93 ms | 100% · 333.08 ms |
-| txt (1) | 100% · 1.64 ms | — | — | 100% · 10.89 ms | — | — | 100% · 929.16 ms | 100% · 3,793.67 ms |
-| xls (18) | 100% · 0.76 ms | 100% · 1.73 ms | 100% · 784.82 ms | 100% · 39.43 ms | — | — | 100% · 843.45 ms | 94.4% · 74.63 ms |
-| xlsm (6) | 100% · 73.60 ms | 83.3% · 39.02 ms | 100% · 1,872.60 ms | 100% · 3,006.90 ms | — | — | 83.3% · 6,245.45 ms | 83.3% · 1,924.59 ms |
-| xlsx (18) | 100% · 3.99 ms | 100% · 7.39 ms | 100% · 80.82 ms | 100% · 139.09 ms | — | — | 94.4% · 1,146.64 ms | 100% · 216.88 ms |
+| csv | 100% · 0.30 ms | 100% · 0.81 ms | 94.7% · 11.49 ms | 89.5% · 5.15 ms | 100% · 54.74 ms | — | 94.7% · 647.37 ms | 36.8% · 58.08 ms |
+| doc | 100% · 0.90 ms | 100% · 1.00 ms | 100% · 2,984.76 ms | — | — | — | 100% · 792.97 ms | 100% · 727.35 ms |
+| docm | 100% · 1.97 ms | 100% · 3.20 ms | 0% · — | 100% · 73.62 ms | — | 100% · 36.04 ms | 100% · 707.77 ms | 0% · — |
+| docx | 100% · 2.48 ms | 100% · 2.67 ms | 100% · 151.28 ms | 100% · 117.17 ms | 100% · 89.49 ms | 100% · 36.89 ms | 100% · 783.20 ms | 100% · 46.38 ms |
+| epub | 100% · 9.10 ms | 100% · 16.12 ms | 100% · 723.73 ms | 100% · 131.81 ms | 100% · 1,328.67 ms | — | — | 100% · 7,143.06 ms |
+| ipynb | 100% · 0.20 ms | — | — | 100% · 3.60 ms | 100% · 77.10 ms | — | — | — |
+| md | 100% · 0.12 ms | — | 100% · 11.41 ms | 100% · 3.95 ms | 100% · 68.74 ms | — | — | 100% · 23.85 ms |
+| odp | 100% · 8.37 ms | 100% · 12.63 ms | 100% · 174.90 ms | — | — | — | 100% · 1,511.46 ms | — |
+| ods | 100% · 52.02 ms | 84.2% · 15.30 ms | 94.7% · 2,322.19 ms | — | — | — | 100% · 2,047.78 ms | — |
+| odt | 100% · 1.02 ms | 100% · 1.83 ms | 100% · 66.49 ms | — | 100% · 69.59 ms | — | 100% · 704.17 ms | 100% · 242.39 ms |
+| pdf | 100% · 7.52 ms | 100% · 14.55 ms | 100% · 1,421.60 ms | 100% · 199.58 ms | — | — | — | 100% · 231.64 ms |
+| ppt | 100% · 0.78 ms | 100% · 0.57 ms | 100% · 901.47 ms | — | — | — | 100% · 1,352.87 ms | 100% · 816.31 ms |
+| pptx | 100% · 8.28 ms | 100% · 9.16 ms | 100% · 2,517.39 ms | 100% · 46.74 ms | — | — | 100% · 5,809.23 ms | 100% · 127.74 ms |
+| rtf | 100% · 5.62 ms | 100% · 12.14 ms | 100% · 1,642.36 ms | — | 100% · 252.28 ms | — | 100% · 939.77 ms | 100% · 429.80 ms |
+| tsv | 100% · 1.34 ms | — | — | 100% · 5.08 ms | 100% · 188.32 ms | — | 100% · 1,106.93 ms | 100% · 333.08 ms |
+| txt | 100% · 1.64 ms | — | — | 100% · 10.89 ms | — | — | 100% · 929.16 ms | 100% · 3,793.67 ms |
+| xls | 100% · 0.76 ms | 100% · 1.73 ms | 100% · 784.82 ms | 100% · 39.43 ms | — | — | 100% · 843.45 ms | 94.4% · 74.63 ms |
+| xlsm | 100% · 73.60 ms | 83.3% · 39.02 ms | 100% · 1,872.60 ms | 100% · 3,006.90 ms | — | — | 83.3% · 6,245.45 ms | 83.3% · 1,924.59 ms |
+| xlsx | 100% · 3.99 ms | 100% · 7.39 ms | 100% · 80.82 ms | 100% · 139.09 ms | — | — | 94.4% · 1,146.64 ms | 100% · 216.88 ms |
 
 [Identical-input comparisons and exact document IDs](reports/mixed-200-2026-11-13/README.md#identical-input-comparison) · [Detailed conversion outcomes](reports/mixed-200-2026-11-13/published-outcomes.json)
 

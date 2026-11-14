@@ -49,7 +49,7 @@ class MaintenanceTests(unittest.TestCase):
                 self.assertEqual(check_mixed200.check(run)['documents'], 200)
                 report = render(run)
                 self.assertIn('199/200', report)
-                self.assertIn('| txt (200) | 99.5% · 1.00 ms |', report)
+                self.assertIn('| txt | 99.5% · 1.00 ms |', report)
                 self.assertIn('Coverage is not quality', report)
 
     def test_reordered_rows_and_changed_prediction_are_rejected(self):
