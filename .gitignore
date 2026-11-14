@@ -31,5 +31,8 @@
 !/reports/mixed-200-2026-11-13/
 !/reports/broad-benchmark-2026-11-12/
 !/reports/biff-legacy-2026-11-13/
+!/reports/native-ocr-migration-2026-11-14/
+!/reports/native-ocr-refinement-2026-11-14/
+!/reports/native-ocr-accent-fix-2026-11-14/
 /reports/**/source-snapshot/
 /reports/**/prediction/**/*.md

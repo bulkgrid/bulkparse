@@ -1,13 +1,27 @@
 # BulkParse for Node.js
 
-Requires Node 20+ and Rust. This package is not published yet. From this folder:
+Requires Node 20+. Public releases are prepared by the
+[release pipeline](../../docs/releases.md); the first registry publication is
+still pending. After publication, install with:
+
+```sh
+npm install @bulkgrid/bulkparse
+npx @bulkgrid/bulkparse parse report.docx -o report.md
+```
+
+Published packages select a prebuilt native addon and CLI for Linux (glibc 2.35+
+on x64/ARM64), macOS 11+ (Intel/Apple Silicon), or Windows x64. Rust is not needed
+to install them. Keep npm optional dependencies enabled. Alpine/musl and Windows
+ARM64 require a source build or the separate WASM package.
+
+For development from this folder, Rust is required:
 
 ```sh
 npm run build
 npm test
 ```
 
-The build script compiles the native addon for the current host and copies it to `bulkparse.node`. Prebuilt cross-platform distribution is planned; the current package is local-source-only. Do not set a cross-compilation target when using this host build script.
+The build script compiles the native addon for the current host and copies it to `bulkparse.node`. Do not set a cross-compilation target when using this host build script. Maintainers should use the release workflow rather than publish this source folder directly.
 
 Save the example as an `.mjs` file in `bindings/node`, or use a `.js` file in a package with `"type": "module"`:
 
@@ -45,3 +59,15 @@ See [streaming Markdown](../../docs/streaming-markdown.md) for examples, tempora
 storage requirements and failure semantics.
 
 Embedded image bytes are available in `document.assets` (base64 JSON). See [image retention, export and limitations](../../docs/images.md).
+
+## OCR and standalone images
+
+See [OCR across language bindings](../../docs/ocr-bindings.md) for the shared evidence API, the reusable native OCR parser, image/frame support, scanned-table limits, and examples.
+
+The npm release includes `bulkparse-setup-ocr --output DIRECTORY`. Run it explicitly
+to install the pinned models and native OCR libraries; installation and ordinary
+parsing do not download them. Pass the resulting configuration to `OcrParser`, or
+use `bulkparse parse scan.pdf --ocr-config DIRECTORY/config.json`.
+Automatic provisioning currently supports Linux x64/ARM64 and macOS ARM64.
+Windows and Intel macOS require manual compatible OCR-library configuration.
+Browser/WASM builds accept OCR evidence but do not run native inference.

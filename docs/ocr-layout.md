@@ -66,7 +66,8 @@ or persistent inference process has been introduced.
 The old text-only provider method remains supported. The new `recognize_page`
 method supplies structured evidence; the parser invokes it through the same
 provider boundary. Node/Python/WASM types and serialized results use schema 0.2;
-OCR invocation remains limited to the Rust API and opt-in CLI. See
+The current [OCR binding APIs](ocr-bindings.md) also support Node/Python workers
+and WASM evidence assembly. See
 [provider and migration details](pdf-ocr.md) and [setup](../backends/rapidocr/README.md).
 
 ## Verification and limitations

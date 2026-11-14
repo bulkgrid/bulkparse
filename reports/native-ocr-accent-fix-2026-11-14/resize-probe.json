@@ -1,0 +1,107 @@
+[
+  {
+    "case": "ocr-swedish",
+    "crop": "0.png",
+    "baseline": "Leveransrapport",
+    "bilinear": "Leveransrapport",
+    "changed": false
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "1.png",
+    "baseline": "Atta lådor anlände på måndagen.",
+    "bilinear": "Atta lådor anlände på måndagen.",
+    "changed": false
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "2.png",
+    "baseline": "Kontrollen är klar.",
+    "bilinear": "Kontrollen är klar.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "0.png",
+    "baseline": "Arets leverans går till Västerås.",
+    "bilinear": "Arets leverans går till Västerås.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "1.png",
+    "baseline": "Öppna dörren före klockan åtta.",
+    "bilinear": "Öppna dörren före klockan åtta.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "2.png",
+    "baseline": "Ärendet gäller blå och gröna lådor.",
+    "bilinear": "Ärendet gäller blå och gröna lådor.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "3.png",
+    "baseline": "Pris: 1 249,50 kr. Antal: 27.",
+    "bilinear": "Pris: 1 249,50 kr. Antal: 27.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "0.png",
+    "baseline": "Arets leverans går till Västerås.",
+    "bilinear": "Arets leverans går till Västerås.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "1.png",
+    "baseline": "Öppna dörren före klockan åtta.",
+    "bilinear": "Öppna dörren före klockan åtta.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "2.png",
+    "baseline": "Ärendet gäller blà och gröna lådor.",
+    "bilinear": "Ärendet gäller blà och gröna lådor.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "3.png",
+    "baseline": "Pris: 1 249,50 kr. Antal: 27.",
+    "bilinear": "Pris: 1 249,50 kr. Antal: 27.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-clean",
+    "crop": "0.png",
+    "baseline": "Årets leverans går till Västerås.",
+    "bilinear": "Årets leverans går till Västerås.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-clean",
+    "crop": "1.png",
+    "baseline": "Öppna dörren före klockan åtta.",
+    "bilinear": "Öppna dörren före klockan åtta.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-clean",
+    "crop": "2.png",
+    "baseline": "Ärendet gäller blå och gröna lådor.",
+    "bilinear": "Ärendet gäller blå och gröna lådor.",
+    "changed": false
+  },
+  {
+    "case": "swedish-a-clean",
+    "crop": "3.png",
+    "baseline": "Pris: 1 249,50 kr. Antal: 27.",
+    "bilinear": "Pris: 1 249,50 kr. Antal: 27.",
+    "changed": false
+  }
+]

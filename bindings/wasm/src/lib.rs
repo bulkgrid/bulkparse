@@ -21,3 +21,22 @@ pub fn inspect_pdf_json(bytes: &[u8], options: Option<String>) -> Result<String,
     bulkparse::inspect_pdf_json(bytes, options.as_deref())
         .map_err(|e| JsValue::from_str(&bulkparse::error_json(&e)))
 }
+
+/// OCR inference is supplied by the browser host; Rust validates and assembles it.
+#[wasm_bindgen(js_name = parseWithOcrJson)]
+pub fn parse_with_ocr_json(
+    bytes: &[u8],
+    evidence: String,
+    filename: Option<String>,
+    options: Option<String>,
+    budget: Option<String>,
+) -> Result<String, JsValue> {
+    bulkparse::parse_with_ocr_json(
+        bytes,
+        filename.as_deref(),
+        options.as_deref(),
+        &evidence,
+        budget.as_deref(),
+    )
+    .map_err(|e| JsValue::from_str(&bulkparse::error_json(&e)))
+}

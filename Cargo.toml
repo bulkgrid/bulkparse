@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/bulkparse", "crates/bulkparse-cli", "crates/bulkparse-pool", "crates/bulkparse-ocr", "bindings/node", "bindings/python", "bindings/wasm"]
+members = ["crates/bulkparse", "crates/bulkparse-cli", "crates/bulkparse-pool", "crates/bulkparse-ocr", "crates/bulkparse-ocr-native", "bindings/node", "bindings/python", "bindings/wasm"]
 default-members = ["crates/bulkparse", "crates/bulkparse-cli"]
 resolver = "2"
 
@@ -7,6 +7,7 @@ resolver = "2"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+repository = "https://github.com/bulkgrid/bulkparse"
 
 [workspace.dependencies]
 bulkparse = { path = "crates/bulkparse", version = "0.1.0", default-features = false }

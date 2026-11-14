@@ -7,10 +7,12 @@ mod error;
 mod formats;
 mod model;
 mod ocr;
+mod ocr_api;
 pub use ocr::{
     PdfOcrBudget, PdfOcrCell, PdfOcrLine, PdfOcrOutput, PdfOcrProvider, PdfOcrRegion,
     PdfOcrRegionContent, PdfOcrRequest,
 };
+pub use ocr_api::*;
 mod render;
 #[cfg(not(target_arch = "wasm32"))]
 mod streaming;
@@ -117,6 +119,8 @@ pub struct Options {
     /// Expand PDF Arabic presentation forms and alphabetic ligatures. Raw mapped
     /// Enabled by default; set false for raw forms. ActualText is authoritative.
     pub pdf_normalize_unicode: bool,
+    /// With a provider, retry all pages through OCR while retaining native text on failure.
+    pub pdf_force_ocr: bool,
     pub limits: Limits,
 }
 
@@ -132,6 +136,7 @@ impl Default for Options {
             csv_encoding: None,
             partial_on_limit: false,
             pdf_normalize_unicode: true,
+            pdf_force_ocr: false,
             limits: Limits::default(),
         }
     }
@@ -438,6 +443,7 @@ pub fn capabilities() -> Vec<Capability> {
         Capability { format: Format::Rtf, enabled: cfg!(feature="office"), level: "experimental", notes: "RTF text, formatting and tables" },
         Capability { format: Format::Doc, enabled: cfg!(feature="office"), level: "experimental", notes: "Legacy Word text extraction; formatting is partial" },
         Capability { format: Format::Ppt, enabled: cfg!(feature="office"), level: "experimental", notes: "Legacy PowerPoint text extraction; advanced content is partial" },
+        Capability { format: Format::Image, enabled: cfg!(feature = "pdf"), level: "ocr_required", notes: "PNG, JPEG, GIF, WebP and TIFF through an explicit OCR provider; all frames are budgeted" },
         Capability {
             format: Format::Pdf,
             enabled: cfg!(feature = "pdf"),

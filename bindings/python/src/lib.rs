@@ -21,6 +21,8 @@ fn capabilities_json() -> String {
 #[pymodule]
 fn _native(module: &Bound<'_, PyModule>) -> PyResult<()> {
     module.add_function(wrap_pyfunction!(parse_json, module)?)?;
+    module.add_function(wrap_pyfunction!(parse_with_ocr_json, module)?)?;
+    module.add_class::<NativeOcrParser>()?;
     module.add_function(wrap_pyfunction!(parse_file_to_markdown_json, module)?)?;
     module.add_function(wrap_pyfunction!(inspect_pdf_json, module)?)?;
     module.add_function(wrap_pyfunction!(capabilities_json, module)?)?;
@@ -53,4 +55,78 @@ fn parse_file_to_markdown_json(
         serde_json::to_string(&summary).map_err(|e| bulkparse::Error::Malformed(e.to_string()))
     })
     .map_err(|e| PyValueError::new_err(bulkparse::error_json(&e)))
+}
+
+#[pyfunction]
+#[pyo3(signature = (bytes, evidence, filename=None, options=None, budget=None))]
+fn parse_with_ocr_json(
+    py: Python<'_>,
+    bytes: Vec<u8>,
+    evidence: String,
+    filename: Option<String>,
+    options: Option<String>,
+    budget: Option<String>,
+) -> PyResult<String> {
+    py.detach(move || {
+        bulkparse::parse_with_ocr_json(
+            &bytes,
+            filename.as_deref(),
+            options.as_deref(),
+            &evidence,
+            budget.as_deref(),
+        )
+    })
+    .map_err(|e| PyValueError::new_err(bulkparse::error_json(&e)))
+}
+
+#[pyclass]
+struct NativeOcrParser {
+    provider: std::sync::Mutex<Option<std::sync::Arc<bulkparse_ocr_native::NativeOcr>>>,
+}
+#[pymethods]
+impl NativeOcrParser {
+    #[new]
+    fn new(config: String) -> PyResult<Self> {
+        let provider = bulkparse_ocr_native::NativeOcr::from_json(config.as_bytes())
+            .map_err(|e| PyValueError::new_err(bulkparse::error_json(&e)))?;
+        Ok(Self {
+            provider: std::sync::Mutex::new(Some(std::sync::Arc::new(provider))),
+        })
+    }
+    #[pyo3(signature = (bytes, filename=None, options=None, budget=None))]
+    fn parse_json(
+        &self,
+        py: Python<'_>,
+        bytes: Vec<u8>,
+        filename: Option<String>,
+        options: Option<String>,
+        budget: Option<String>,
+    ) -> PyResult<String> {
+        let provider = self
+            .provider
+            .lock()
+            .map_err(|_| PyValueError::new_err("OCR parser lock poisoned"))?
+            .clone()
+            .ok_or_else(|| {
+                PyValueError::new_err(bulkparse::error_json(&bulkparse::Error::Malformed(
+                    "OCR parser is closed".into(),
+                )))
+            })?;
+        py.detach(move || {
+            provider.parse_json(
+                &bytes,
+                filename.as_deref(),
+                options.as_deref(),
+                budget.as_deref(),
+            )
+        })
+        .map_err(|e| PyValueError::new_err(bulkparse::error_json(&e)))
+    }
+    fn close(&self) -> PyResult<()> {
+        *self
+            .provider
+            .lock()
+            .map_err(|_| PyValueError::new_err("OCR parser lock poisoned"))? = None;
+        Ok(())
+    }
 }

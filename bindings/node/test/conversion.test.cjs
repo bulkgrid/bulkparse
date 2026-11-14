@@ -11,7 +11,7 @@ test('native conversion and file API share the contract', async () => {
   const file = await parseFile(path.resolve(__dirname, '../../../fixtures/hello.docx'));
   assert.equal(file.document.format, 'docx');
   assert.match(file.markdown, /# Hello BulkParse/);
-  assert.equal(capabilities().length, 18);
+  assert.equal(capabilities().length, 19);
 });
 
 test('errors and resource limits cross the binding', async () => {

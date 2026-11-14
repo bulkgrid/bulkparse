@@ -1,9 +1,8 @@
 'use strict';
 const fs = require('node:fs');
 const path = require('node:path');
-const filename = fs.readdirSync(__dirname).find(name => name === 'bulkparse.node');
-if (!filename) throw new Error('BulkParse native addon missing. Run npm run build in bindings/node.');
-const native = require(path.join(__dirname, filename));
+const localAddon = path.join(__dirname, 'bulkparse.node');
+const native = require(fs.existsSync(localAddon) ? localAddon : require('./platform.cjs').nativePath('bulkparse.node'));
 
 function normalizeError(error) {
   try {
@@ -51,3 +50,44 @@ async function parseFileToMarkdown(input, output, options = {}) {
 }
 
 module.exports = { parse, parseFile, parseFileToMarkdown, inspectPdf, capabilities: () => JSON.parse(native.capabilitiesJson()) };
+
+function ocrInput(bytes, options) {
+  if (!(bytes instanceof Uint8Array)) throw new TypeError('bytes must be a Buffer or Uint8Array');
+  const cap = options.limits?.max_input_bytes ?? 33554432;
+  if (!Number.isSafeInteger(cap) || cap < 0) throw new TypeError('max_input_bytes must be a nonnegative safe integer');
+  if (bytes.byteLength > cap) {
+    const error = new Error('resource limit exceeded: max_input_bytes');
+    error.code = 'resource_limit';
+    throw error;
+  }
+  return Buffer.from(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+}
+async function parseWithOcr(bytes, evidence, options = {}, budget = {}) {
+  const data = ocrInput(bytes, options);
+  const {filename, ...config} = options;
+  try { return JSON.parse(await native.parseWithOcrJson(data, JSON.stringify(evidence), filename, JSON.stringify(config), JSON.stringify(budget))); }
+  catch (error) { throw normalizeError(error); }
+}
+class OcrParser {
+  #native;
+  constructor(config) {
+    try { this.#native = new native.NativeOcrParser(JSON.stringify(config)); }
+    catch (error) { throw normalizeError(error); }
+  }
+  async parse(bytes, options = {}, budget = {}) {
+    const data = ocrInput(bytes, options);
+    const {filename, ...config} = options;
+    try { return JSON.parse(await this.#native.parseJson(data, filename, JSON.stringify(config), JSON.stringify(budget))); }
+    catch (error) { throw normalizeError(error); }
+  }
+  async parseFile(file, options = {}, budget = {}) {
+    const cap = options.limits?.max_input_bytes ?? 33554432;
+    if (!Number.isSafeInteger(cap) || cap < 0) throw new TypeError('max_input_bytes must be a nonnegative safe integer');
+    const chunks = [];
+    for await (const chunk of fs.createReadStream(file, {start: 0, end: cap})) chunks.push(chunk);
+    return this.parse(Buffer.concat(chunks), {...options, filename: options.filename ?? path.basename(file)}, budget);
+  }
+  close() { this.#native.close(); }
+}
+module.exports.parseWithOcr = parseWithOcr;
+module.exports.OcrParser = OcrParser;

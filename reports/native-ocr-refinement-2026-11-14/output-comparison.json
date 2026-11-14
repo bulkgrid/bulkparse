@@ -1,0 +1,7 @@
+{
+  "baseline": "reports/native-ocr-migration-2026-11-14/service-mixed-200.json",
+  "documents": 200,
+  "nonempty": 200,
+  "identical_markdown_sha256": 200,
+  "changed": []
+}

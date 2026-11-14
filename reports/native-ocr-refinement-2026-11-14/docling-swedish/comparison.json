@@ -1,0 +1,275 @@
+{
+  "scope": "Targeted check of the three remaining Swedish failures on the same original PDF files; Docling CPU/RapidOCR with the same PP-OCRv6 small detection and recognition weights as the native migration comparison. Default Docling rendering/preprocessing; orientation/layout models differ. Not a claim about every Docling OCR configuration. No performance comparison.",
+  "models": {
+    "det": {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/ocr/venv/lib/python3.12/site-packages/rapidocr/models/PP-OCRv6_det_small.onnx",
+      "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+    },
+    "cls": {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/ocr/venv/lib/python3.12/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+    },
+    "rec": {
+      "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/ocr/venv/lib/python3.12/site-packages/rapidocr/models/PP-OCRv6_rec_small.onnx",
+      "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+    }
+  },
+  "settings": {
+    "document_timeout": 120.0,
+    "accelerator_options": {
+      "num_threads": 1,
+      "device": "cpu",
+      "cuda_use_flash_attention2": false
+    },
+    "enable_remote_services": false,
+    "allow_external_plugins": false,
+    "artifacts_path": null,
+    "do_picture_classification": false,
+    "picture_classification_options": {
+      "engine_options": {
+        "engine_type": "transformers",
+        "top_k": null
+      },
+      "model_spec": {
+        "name": "document_figure_classifier_v2",
+        "repo_id": "docling-project/DocumentFigureClassifier-v2.5",
+        "revision": "main",
+        "engine_overrides": {}
+      }
+    },
+    "do_picture_description": false,
+    "picture_description_options": {
+      "batch_size": 8,
+      "scale": 2.0,
+      "picture_area_threshold": 0.05,
+      "classification_allow": null,
+      "classification_deny": null,
+      "classification_min_confidence": 0.0
+    },
+    "do_chart_extraction": false,
+    "chart_extraction_options": {
+      "engine_options": {
+        "engine_type": "auto_inline",
+        "prefer_vllm": false,
+        "trust_remote_code": false
+      },
+      "model_spec": {
+        "name": "Granite-Vision-4.1-4B",
+        "default_repo_id": "ibm-granite/granite-vision-4.1-4b",
+        "revision": "dd48e97503de471803850df70843cf9eb5da8712",
+        "prompt": "<chart2csv>",
+        "response_format": "plaintext",
+        "supported_engines": [
+          "api_lmstudio",
+          "mlx",
+          "transformers",
+          "api_openai",
+          "api_ollama"
+        ],
+        "engine_overrides": {
+          "transformers": {
+            "repo_id": null,
+            "revision": null,
+            "torch_dtype": "bfloat16",
+            "min_engine_version": null,
+            "extra_config": {
+              "transformers_model_type": "automodel-imagetexttotext"
+            }
+          },
+          "mlx": {
+            "repo_id": null,
+            "revision": null,
+            "torch_dtype": null,
+            "min_engine_version": "0.7.0",
+            "extra_config": {}
+          }
+        },
+        "api_overrides": {
+          "api_lmstudio": {
+            "params": {
+              "model": "granite-vision-4.1-4b"
+            }
+          },
+          "api_ollama": {
+            "params": {
+              "model": "granite-vision-4.1-4b"
+            }
+          },
+          "api_openai": {
+            "params": {
+              "model": "granite-vision-4.1-4b"
+            }
+          }
+        },
+        "trust_remote_code": true,
+        "stop_strings": [],
+        "temperature": 0.0,
+        "max_new_tokens": 4096,
+        "extra_generation_config": {}
+      },
+      "chart2csv": true,
+      "chart2summary": false,
+      "chart2code": false,
+      "output_format": "granite_vision_charts",
+      "use_natural_language_prompts": false
+    },
+    "images_scale": 1.0,
+    "generate_page_images": false,
+    "generate_picture_images": false,
+    "do_table_structure": true,
+    "extract_form_fields": false,
+    "do_ocr": true,
+    "do_code_enrichment": false,
+    "do_formula_enrichment": false,
+    "force_backend_text": false,
+    "table_structure_options": {},
+    "ocr_options": {
+      "mode": "default",
+      "lang": [
+        "ch"
+      ],
+      "scale": 3.0,
+      "replace_broken_text_layer": false,
+      "force_full_page_ocr": false
+    },
+    "layout_options": {
+      "keep_empty_clusters": false,
+      "skip_cell_assignment": false,
+      "create_orphan_clusters": true
+    },
+    "code_formula_options": {
+      "engine_options": {
+        "engine_type": "auto_inline",
+        "prefer_vllm": false,
+        "trust_remote_code": false
+      },
+      "model_spec": {
+        "name": "CodeFormulaV2",
+        "default_repo_id": "docling-project/CodeFormulaV2",
+        "revision": "main",
+        "prompt": "",
+        "response_format": "plaintext",
+        "supported_engines": null,
+        "engine_overrides": {
+          "transformers": {
+            "repo_id": null,
+            "revision": null,
+            "torch_dtype": null,
+            "min_engine_version": null,
+            "extra_config": {
+              "transformers_model_type": "automodel-imagetexttotext",
+              "extra_generation_config": {
+                "skip_special_tokens": false
+              },
+              "torch_dtype": "bfloat16"
+            }
+          }
+        },
+        "api_overrides": {},
+        "trust_remote_code": false,
+        "stop_strings": [
+          "</doctag>",
+          "<end_of_utterance>"
+        ],
+        "temperature": 0.0,
+        "max_new_tokens": 4096,
+        "extra_generation_config": {}
+      },
+      "scale": 2.0,
+      "max_size": null,
+      "extract_code": true,
+      "extract_formulas": true,
+      "expansion_factor": 0.18,
+      "stop_on_repetition": true
+    },
+    "use_embedded_picture_images": false,
+    "generate_table_images": false,
+    "generate_parsed_pages": false,
+    "use_reading_order_separators": true,
+    "heading_hierarchy_options": {
+      "enabled": false,
+      "use_bookmarks": true,
+      "use_numbering": true,
+      "use_style": true,
+      "use_font_style": true,
+      "style_size_tolerance": 0.05,
+      "numbering_schemes": null,
+      "max_level": 6,
+      "bookmark_match_threshold": 0.8
+    },
+    "script_position_options": {
+      "enabled": false
+    },
+    "ocr_batch_size": 4,
+    "layout_batch_size": 4,
+    "table_batch_size": 4,
+    "batch_polling_interval_seconds": 0.5,
+    "queue_max_size": 100,
+    "stage_shutdown_timeout_seconds": 15.0
+  },
+  "documents": [
+    {
+      "id": "ocr-swedish",
+      "source_sha256": "eaa5ac5bf66de4c9b9226c5e27c5a880e196f10c04f8c747e51ddc6951b31103",
+      "status": "ConversionStatus.SUCCESS",
+      "reference": "Leveransrapport\nÅtta lådor anlände på måndagen.\nKontrollen är klar.\n",
+      "docling_text": "Leveransrapport Atta lådor anlände på måndagen. Kontrollen är klar.",
+      "bulkparse_text": "Leveransrapport\nAtta lådor anlände på måndagen.\nKontrollen är klar.",
+      "docling_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.1111111111111111,
+        "character_error_rate": 0.014925373134328358,
+        "exact_line_pair_order": 0.3333333333333333
+      },
+      "bulkparse_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.1111111111111111,
+        "character_error_rate": 0.014925373134328358,
+        "exact_line_pair_order": 0.3333333333333333
+      },
+      "same_text_after_whitespace": true
+    },
+    {
+      "id": "swedish-a-low-resolution",
+      "source_sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8",
+      "status": "ConversionStatus.SUCCESS",
+      "reference": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n",
+      "docling_text": "Arets leverans går till Västerås. Öppna dörren före klockan åtta. Ärendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "docling_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.045454545454545456,
+        "character_error_rate": 0.007633587786259542,
+        "exact_line_pair_order": 0.5
+      },
+      "bulkparse_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.045454545454545456,
+        "character_error_rate": 0.007633587786259542,
+        "exact_line_pair_order": 0.5
+      },
+      "same_text_after_whitespace": true
+    },
+    {
+      "id": "swedish-a-noise",
+      "source_sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e",
+      "status": "ConversionStatus.SUCCESS",
+      "reference": "Årets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.\n",
+      "docling_text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blà och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "docling_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.045454545454545456,
+        "character_error_rate": 0.007633587786259542,
+        "exact_line_pair_order": 0.5
+      },
+      "bulkparse_quality": {
+        "exact_after_whitespace": false,
+        "word_error_rate": 0.09090909090909091,
+        "character_error_rate": 0.015267175572519083,
+        "exact_line_pair_order": 0.16666666666666666
+      },
+      "same_text_after_whitespace": false
+    }
+  ]
+}

@@ -19,5 +19,13 @@
     "prepack": "node scripts/prepare-package.mjs",
     "test:package": "node test/package.mjs"
   },
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bulkgrid/bulkparse.git",
+    "directory": "bindings/wasm"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

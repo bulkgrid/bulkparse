@@ -1,0 +1,356 @@
+[
+  {
+    "dpi": 144,
+    "result": {
+      "pdf_inspection": {
+        "schema_version": "0.8",
+        "kind": "image",
+        "page_count": 1,
+        "pages": [
+          {
+            "page": 1,
+            "kind": "image",
+            "route": "ocr",
+            "reasons": [
+              "no_native_text"
+            ],
+            "native_characters": 0,
+            "suspicious_characters": 0,
+            "text_operations": 0,
+            "invisible_text_operations": 0,
+            "image_count": 1,
+            "image_coverage": 1.0,
+            "painted_paths": 0,
+            "ocr_status": "applied"
+          }
+        ],
+        "pages_needing_ocr": [
+          1
+        ]
+      },
+      "document": {
+        "schema_version": "0.8",
+        "format": "pdf",
+        "blocks": [
+          {
+            "id": "b1",
+            "source": {
+              "pdf_region": {
+                "image_size": [
+                  1224,
+                  1584
+                ],
+                "bbox": [
+                  88.0,
+                  87.0,
+                  620.0,
+                  349.0
+                ],
+                "order": 0,
+                "label": "text",
+                "confidence": 0.8259570598602295
+              },
+              "page": 1
+            },
+            "type": "paragraph",
+            "inlines": [
+              {
+                "type": "text",
+                "text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27."
+              }
+            ]
+          }
+        ],
+        "assets": []
+      },
+      "status": "partial",
+      "diagnostics": [
+        {
+          "code": "pdf_text_only",
+          "message": "Experimental positioned native text and geometric table extraction. Images and complex layouts are not fully reconstructed; complete visual-content coverage cannot be verified.",
+          "source": {},
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_recommended",
+          "message": "Page inspection recommends OCR: [NoNativeText].",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_structure_inferred",
+          "message": "Semantic regions, reading order, tables and formulas supplied by the configured provider; recognition and completeness remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_applied",
+          "message": "Text supplied by the configured OCR provider; accuracy and layout remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        }
+      ],
+      "coverage": [
+        {
+          "source": {
+            "page": 1
+          },
+          "status": "partial"
+        }
+      ],
+      "parser_version": "0.1.0",
+      "markdown": "Arets leverans går till Västerås\\.\nÖppna dörren före klockan åtta\\.\nÄrendet gäller blå och gröna lådor\\.\nPris: 1 249,50 kr\\. Antal: 27\\.\n",
+      "render_diagnostics": []
+    }
+  },
+  {
+    "dpi": 192,
+    "result": {
+      "pdf_inspection": {
+        "schema_version": "0.8",
+        "kind": "image",
+        "page_count": 1,
+        "pages": [
+          {
+            "page": 1,
+            "kind": "image",
+            "route": "ocr",
+            "reasons": [
+              "no_native_text"
+            ],
+            "native_characters": 0,
+            "suspicious_characters": 0,
+            "text_operations": 0,
+            "invisible_text_operations": 0,
+            "image_count": 1,
+            "image_coverage": 1.0,
+            "painted_paths": 0,
+            "ocr_status": "applied"
+          }
+        ],
+        "pages_needing_ocr": [
+          1
+        ]
+      },
+      "document": {
+        "schema_version": "0.8",
+        "format": "pdf",
+        "blocks": [
+          {
+            "id": "b1",
+            "source": {
+              "pdf_region": {
+                "image_size": [
+                  1632,
+                  2112
+                ],
+                "bbox": [
+                  117.0,
+                  116.0,
+                  826.0,
+                  464.0
+                ],
+                "order": 0,
+                "label": "text",
+                "confidence": 0.8238180875778198
+              },
+              "page": 1
+            },
+            "type": "paragraph",
+            "inlines": [
+              {
+                "type": "text",
+                "text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27."
+              }
+            ]
+          }
+        ],
+        "assets": []
+      },
+      "status": "partial",
+      "diagnostics": [
+        {
+          "code": "pdf_text_only",
+          "message": "Experimental positioned native text and geometric table extraction. Images and complex layouts are not fully reconstructed; complete visual-content coverage cannot be verified.",
+          "source": {},
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_recommended",
+          "message": "Page inspection recommends OCR: [NoNativeText].",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_structure_inferred",
+          "message": "Semantic regions, reading order, tables and formulas supplied by the configured provider; recognition and completeness remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_applied",
+          "message": "Text supplied by the configured OCR provider; accuracy and layout remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        }
+      ],
+      "coverage": [
+        {
+          "source": {
+            "page": 1
+          },
+          "status": "partial"
+        }
+      ],
+      "parser_version": "0.1.0",
+      "markdown": "Arets leverans går till Västerås\\.\nÖppna dörren före klockan åtta\\.\nÄrendet gäller blå och gröna lådor\\.\nPris: 1 249,50 kr\\. Antal: 27\\.\n",
+      "render_diagnostics": []
+    }
+  },
+  {
+    "dpi": 216,
+    "result": {
+      "pdf_inspection": {
+        "schema_version": "0.8",
+        "kind": "image",
+        "page_count": 1,
+        "pages": [
+          {
+            "page": 1,
+            "kind": "image",
+            "route": "ocr",
+            "reasons": [
+              "no_native_text"
+            ],
+            "native_characters": 0,
+            "suspicious_characters": 0,
+            "text_operations": 0,
+            "invisible_text_operations": 0,
+            "image_count": 1,
+            "image_coverage": 1.0,
+            "painted_paths": 0,
+            "ocr_status": "applied"
+          }
+        ],
+        "pages_needing_ocr": [
+          1
+        ]
+      },
+      "document": {
+        "schema_version": "0.8",
+        "format": "pdf",
+        "blocks": [
+          {
+            "id": "b1",
+            "source": {
+              "pdf_region": {
+                "image_size": [
+                  1836,
+                  2376
+                ],
+                "bbox": [
+                  131.0,
+                  130.0,
+                  929.0,
+                  520.0
+                ],
+                "order": 0,
+                "label": "text",
+                "confidence": 0.8238614797592163
+              },
+              "page": 1
+            },
+            "type": "paragraph",
+            "inlines": [
+              {
+                "type": "text",
+                "text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blà och gröna lådor.\nPris: 1 249,50 kr. Antal: 27."
+              }
+            ]
+          }
+        ],
+        "assets": []
+      },
+      "status": "partial",
+      "diagnostics": [
+        {
+          "code": "pdf_text_only",
+          "message": "Experimental positioned native text and geometric table extraction. Images and complex layouts are not fully reconstructed; complete visual-content coverage cannot be verified.",
+          "source": {},
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_recommended",
+          "message": "Page inspection recommends OCR: [NoNativeText].",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_structure_inferred",
+          "message": "Semantic regions, reading order, tables and formulas supplied by the configured provider; recognition and completeness remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        },
+        {
+          "code": "pdf_ocr_applied",
+          "message": "Text supplied by the configured OCR provider; accuracy and layout remain unverified.",
+          "source": {
+            "page": 1
+          },
+          "content_loss": true,
+          "category": "missing_content",
+          "evidence": "unverified"
+        }
+      ],
+      "coverage": [
+        {
+          "source": {
+            "page": 1
+          },
+          "status": "partial"
+        }
+      ],
+      "parser_version": "0.1.0",
+      "markdown": "Arets leverans går till Västerås\\.\nÖppna dörren före klockan åtta\\.\nÄrendet gäller blà och gröna lådor\\.\nPris: 1 249,50 kr\\. Antal: 27\\.\n",
+      "render_diagnostics": []
+    }
+  }
+]

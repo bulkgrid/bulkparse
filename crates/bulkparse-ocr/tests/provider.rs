@@ -8,6 +8,7 @@ fn setup(mode: &str, timeout: u64) -> (tempfile::TempDir, ProcessOcr) {
     let manifest = dir.path().join("models.json");
     std::fs::write(&manifest, "{}").unwrap();
     let config = Config {
+        document_timeout_ms: 120_000,
         executable: "python3".into(),
         args: vec![
             Path::new(env!("CARGO_MANIFEST_DIR"))

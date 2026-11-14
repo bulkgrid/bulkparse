@@ -99,3 +99,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+## Native OCR runtime and models
+
+The optional native OCR provider uses `oar-ocr` and `oar-ocr-core`, distributed
+under Apache-2.0. A copy is retained in
+[`crates/bulkparse-ocr-native/licenses/Apache-2.0.txt`](crates/bulkparse-ocr-native/licenses/Apache-2.0.txt).
+Upstream: https://github.com/GreatV/oar-ocr.
+
+The model provisioning manifest records the exact PaddleOCR model exports,
+SHA-256 identities and distribution URLs. PaddleOCR is distributed under
+Apache-2.0: https://github.com/PaddlePaddle/PaddleOCR/blob/main/LICENSE.
+The ONNX Runtime and PDFium runtime archives retain their upstream LICENSE and
+third-party notices in the provisioned runtime directory. These notices must
+accompany distributions of those artifacts.

@@ -115,10 +115,7 @@ class Runtime:
                 trim(0)
 
 
-def recognize(args, runtime=None):
-    runtime = runtime or Runtime(args.models, args.enable_cpu_mem_arena, args.detector_max_side, args.adaptive_detector)
-    if args.input.stat().st_size > args.max_input_bytes:
-        raise BudgetError('input byte limit')
+def pdf_pixels(args, runtime):
     pdfium, np = runtime.pdfium, runtime.np
     document = pdfium.PdfDocument(str(args.input))
     try:
@@ -143,6 +140,55 @@ def recognize(args, runtime=None):
             page.close()
     finally:
         document.close()
+    return pixels
+
+
+def image_pixels(args, np):
+    from PIL import Image, ImageOps
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter('error', Image.DecompressionBombWarning)
+        with Image.open(args.input) as image:
+            if image.format not in {'PNG', 'JPEG', 'GIF', 'WEBP', 'TIFF'}:
+                raise ValueError('unsupported image format')
+            # Inspect headers without retaining decoded frames. Bound even frame
+            # counting before Pillow's TIFF/GIF n_frames can scan an unbounded chain.
+            count = 0
+            while True:
+                try:
+                    image.seek(count)
+                except EOFError:
+                    break
+                count += 1
+                if count > 2000:
+                    raise BudgetError('image frame limit')
+                if image.width * image.height > args.max_pixels:
+                    raise BudgetError('image pixel limit')
+            if not 1 <= args.page <= count:
+                raise ValueError('frame outside image')
+            image.seek(args.page - 1)
+            frame = ImageOps.exif_transpose(image)
+            if frame.mode in ('RGBA', 'LA', 'P'):
+                rgba = frame.convert('RGBA')
+                white = Image.new('RGBA', rgba.size, 'white')
+                white.alpha_composite(rgba)
+                frame = white.convert('RGB')
+            else:
+                frame = frame.convert('RGB')
+            return np.asarray(frame)[:, :, ::-1].copy(), count
+
+
+def recognize(args, runtime=None):
+    runtime = runtime or Runtime(args.models, args.enable_cpu_mem_arena, args.detector_max_side, args.adaptive_detector)
+    if args.input.stat().st_size > args.max_input_bytes:
+        raise BudgetError('input byte limit')
+    with args.input.open('rb') as stream:
+        is_pdf = stream.read(5) == b'%PDF-'
+    page_count = None
+    if is_pdf:
+        pixels = pdf_pixels(args, runtime)
+    else:
+        pixels, page_count = image_pixels(args, runtime.np)
     result = runtime.engine(pixels)
     texts = result.txts or ()
     if len(texts) > 4096: raise BudgetError('OCR line limit')
@@ -156,7 +202,13 @@ def recognize(args, runtime=None):
                       'confidence': float(result.scores[index])})
     text_bytes = sum(len(line['text'].encode('utf-8')) for line in lines) + max(0, len(lines)-1)
     if text_bytes > args.max_output_bytes: raise BudgetError('OCR output byte limit')
-    return {'image_size': [pixels.shape[1], pixels.shape[0]], 'lines': lines}
+    from tables import regions_from_grid
+    regions = regions_from_grid(pixels, lines)
+    result = {'image_size': [pixels.shape[1], pixels.shape[0]]}
+    result.update({'regions': regions} if regions is not None else {'lines': lines})
+    if page_count is not None:
+        result['page_count'] = page_count
+    return result
 
 
 def validate(args):
@@ -180,6 +232,8 @@ def response(args, runtime=None):
         validate(args)
         with contextlib.redirect_stdout(sys.stderr):
             reply.update(recognize(args, runtime))
+            if 'regions' in reply:
+                reply['version'] = 3
     except Exception as error:
         reply['error'] = {'code': 'resource_limit' if isinstance(error, BudgetError) else 'backend_error',
                           'message': str(error)[:512]}

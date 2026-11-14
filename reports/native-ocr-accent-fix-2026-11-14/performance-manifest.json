@@ -1,0 +1,189 @@
+[
+  {
+    "id": "us-011a-3",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-us/us-011a.pdf",
+    "page": 3,
+    "tables": 1,
+    "reference": "Program Contact Center Services Printed Publications Services and Citizen Outreach Web Management and Content (USA.gov & GobiernoUSA.gov) Center for Excellence in Digital Government (CEDG) Information Technology Services Solutions (ITSS) Total Budget $8.6M $3.9M $6.1M $4.6M $10.8M $34M",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "ff0ae1d4c2094cebe523b2d2b31d1934dfa2bd6f6c0373bb5537258deb1a9677",
+    "scan_sha256": "3000d6fabe52af977606bfac39fc0ef16e765027258d2a42a16e00bd36c7114e"
+  },
+  {
+    "id": "us-037-1",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-us/us-037.pdf",
+    "page": 1,
+    "tables": 1,
+    "reference": "Concentration\n(ppm) Postnatal Day 1 Postnatal Day 4 Postnatal Day 7 Postnatal Day 14 Postnatal Day 20 No. Body\nWeight\n(g) Weight\nRelative\nto\nControls\n(%) No. Body\nWeight\n(g) Weight\nRelative\nto\nControls\n(%) Body\nWeight\n(g) Weight\nRelative\nto\nControls\n(%) Body\nWeight\n(g) Weight\nRelative\nto\nControls\n(%) Body\nWeight\n(g) Weight\nRelative\nto\nt Controls\n(%) Male 0 39 5.8 10 8.8 13.5 25.7 35.0 250 30 5.9 102 10 9.0 102 13.6 101 26.2 102 35.8 102 500 33 6.0 103 10 8.6 98 13.0 96 25.1 98 34.7 99 1,000 31 5.8 100 10 8.4 96 13.0 96 24.9 97 34.5 99 2,000 38 5.8 100 10 8.8 100 12.9 96 24.6 96 31.6** 90 4,000 27 5.3** 91 10 7.5** 85 10.4** 77 16.8** 65 19.8** 57 Female 0 23 5.4 10 8.2 12.7 24.7 33.6 250 34 5.6 104 10 8.5 104 12.9 102 24.7 100 33.9 101 500 32 5.4 100 10 8.2 100 12.7 100 25.0 101 33.6 100 1,000 40 5.5 102 10 8.0 98 12.4 98 24.2 98 32.7 97 2,000 49 5.3 98 10 8.2 100 12.4 98 23.7 96 30.3** 90 4,000 31 5.0** 93 10 7.3* 89 9.9** 78 16.1** 65 18.8** 56",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "d13c727079a1526cd5a82976f3d8b05d85db5433783433c9548ae2f9705d6860",
+    "scan_sha256": "ec86dbc44b0ddda225cdb03d376624509a305a3eab982783bd3b74866a7f89f3"
+  },
+  {
+    "id": "us-004-2",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-us/us-004.pdf",
+    "page": 2,
+    "tables": 1,
+    "reference": "Loan type 12/31/2009 12/31/2010 6/30/2011 $000's % $000's % $000's % Real estate loans 1-4 family residential mortgage 4,151,000 25.0 4,090,000 27.5 3,925,000 24.9 Commercial Mortgage 361,000 2.2 331,000 2.2 284,000 1.8 Multifamily residential (5 or more) 380,000 2.3 327,000 2.2 327,000 2.1 Construction Loans 173,000 1.0 148,000 1.0 170,000 1.1 Commercial & Industrial 555,000 3.3 497,000 3.3 438,000 2.8 Consumer Loans 63,000 0.4 69,000 0.5 66,000 0.4 Lease financing receivables 3,508,000 21.1 3,147,000 21.2 2,780,000 17.7 Other loans Loans to purchase securities 1,844,000 11.1 1,148,000 7.7 2,754,000 17.5 Loans to nondepository Fin.Inst. 4,958,000 29.9 4,512,000 30.3 4,207,000 26.7 All other Loans 611,000 3.7 602,000 4.0 799,000 5.1 Total Gross Loans 16,604,000 100.0 14,871,000 100.0 15,750,000 100.0",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "da6c30b2fde0104dc6cd22c0b8eab37d022d4d32faebd4f7e106c4df90fa5e70",
+    "scan_sha256": "e85eac931578bfc21c420c09697223657dd81d6c7c388d5ff86ad3d8d445936e"
+  },
+  {
+    "id": "eu-007-3",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-eu/eu-007.pdf",
+    "page": 3,
+    "tables": 2,
+    "reference": "Product Roast coffee Instant Coffee Turnover in FFr. millions 7,581 2,517 Brands Market shares in\nvolume (1996) Market shares in\nvolume (1997) Maison du Caf\u00e9\n(Douwe Egberts) 14.9% 16.5% Carte Noire\n(K-J-S) 17.0% 16.5% Jacques Vabre\n(K-J-S) 14.2% 13.8% Grand M\u00e8re\n(K-J-S) 13.2% 13.2% Lavazza 7.0% 6.2% Segafredo 5.8% 5.4% Legal 5.6% 4.5% Malongo 3.0% 3.1% Own Brands and First Price Products 15.9% 17.3% Other Brands 3.3% 3.4%",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "643d49e88d3a03dc7c360ab1af4d53ecfd0a409cd818aa835e84da38c55c2bef",
+    "scan_sha256": "e4f94c4deee30a75a0548fea147d8df5e664448d677eaf34483a0829d8f589fa"
+  },
+  {
+    "id": "eu-013-8",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-eu/eu-013.pdf",
+    "page": 8,
+    "tables": 1,
+    "reference": "Roles and tasks Teachers Trainers Curriculum development x Supporting students in preparing their individual study plans x x Evaluation of education x Student assessment x x Cooperation between school and enterprise x x",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "2bfff226fcc80eacc55181643466e8ed24df0b794ceabdfe8dc60423efbdfb9a",
+    "scan_sha256": "51bce3f92533b06b4748dd4d5201303b3b7dbee1473df34d1e9e118c255d51ea"
+  },
+  {
+    "id": "eu-001-3",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-eu/eu-001.pdf",
+    "page": 3,
+    "tables": 2,
+    "reference": "THRESHOLD FOR RELEASES to air\nkg/year to water\nkg/year to land\nkg/year Anthracene 50 1 1 Benzene 1 000 200 (as\nBTEX) 200 (as\nBTEX) Benzo(g,h,i)perylene - 1 - Di-(2-ethyl hexyl) phthalate (DEHP) 10 1 1 Ethyl benzene - 200 (as\nBTEX) 200 (as\nBTEX) Ethylene oxide 1 000 10 10 Fluoranthene - 1 - Naphthalene 100 10 10 Nonylphenol and Nonylphenol ethoxylates\n(NP/NPEs) - 1 1 Octylphenols and octylphenol ethoxylates - 1 - Organotin compounds (as total Sn) - 50 50 Phenols (as total C) - 20 20 Polycyclic Aromatic hydrocarbons (PAHs) 50 5 5 Toluene - 200 (as\nBTEX) 200 (as\nBTEX) Total Organic Carbon (TOC) (as total C or\nCOD/3) - 50 000 - Xylenes - 200 (as\nBTEX) 200 (as\nBTEX) THRESHOLD FOR RELEASES to air\nkg/year to water\nkg/year to land\nkg/year Asbestos 1 1 1 Chlorides (as total Cl) - 2 million 2 million Cyanides (as total CN) - 50 50 Fluorides (as total F) - 2 000 2 000 Particulate matter (PM10) 50 000 - - Total Nitrogen - 50 000 50 000 Total Phosphorus - 5 000 5 000",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "ef7a64967276181a563e781bab46ea52dd376155ad2287c4e1303781203f91d8",
+    "scan_sha256": "f411b70eff996b8b9dec13960b20cfcbbededb75deaef494f72280661f68416d"
+  },
+  {
+    "id": "eu-018-1",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-eu/eu-018.pdf",
+    "page": 1,
+    "tables": 2,
+    "reference": "Country Sample\nunit Sample\nsize 2007 2006 2005 2004 2003 n %Pos n %Pos n %Pos n %Pos n %Pos Austria Single 25g 109 0.9 93 1.1 89 1.1 - - - - Germany Single 25g 123 0.8 290 0.7 391 0.5 454 2.0 188 2.7 netherlands Single 25g 269 1.1 397 0.3 389 0 287 1.1 227 0 Spain Single 25g 36 0 40 0 107 0 - - - - Total(4MSs) 537 0.9 820 0.5 976 0.3 741 1.7 415 1.2 Country Sample\nunit Sample\nsize 2007 2006 2005 2004 2003 n %Pos n %Pos n %Pos n %Pos n %Pos Estonia Single 25g - - 42 0 - - - - - - Germany Single 25g 35 0 43 0 47 2.1 - - - - hungary Single 25g - - 202 2.5 - - - - - - italy Single 25g 334 2.4 241 0.4 394 0.5 196 0 161 0.6 Luxembourg Single 10g 62 0 37 0 - - - - - - netherlands Single 25g 264 0 936 0.4 463 1.1 847 0.8 678 0.2 Romania Single - - - 37 0 - - - - - - Total(7MSs) 695 1.2 1,538 0.7 904 0.9 1,043 0.6 839 0.3",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "002ba9ad55f8daed8631b4529cfa07fb983745cf8f52b55094dc7de2dc6f9e5a",
+    "scan_sha256": "021010a1ec47dee4e6ffc194b6bcde39b4bdd6982603a7c0f92cd44bf9afbc72"
+  },
+  {
+    "id": "us-031a-2",
+    "source": "target/inspector-generalization/icdar/ICDAR-2013-Table-Competition-Corrected/competition-dataset-us/us-031a.pdf",
+    "page": 2,
+    "tables": 1,
+    "reference": "Accel/decel\nreduction and\nsmoothing Speed reduction/\noptimization Idle time reduction Per cycle fuel savings potential Med-low 5% 8% 0.5% Med-high 15% 15% 2% Very high 30% 35% 10% Frequency of opportunity\noccurrence ingeneral population Med-low 30% 20% 30% Med-high 15% 15% 15% Very high 8% 10% 5% Combined savings opportunity\n(per cycle magnitude *frequency\nof occurrence) Med-low 1.5% 1.6% 0.2% Med-high 2.3% 2.3% 0.3% Very high 2.4% 3.5% 0.5% Total 6% 7% 1%",
+    "reference_scope": "table cells",
+    "kind": "ICDAR",
+    "source_sha256": "9b844240ebefcefe01895096ae34ae8e20b8e9520f988ae2d9229d0b18fb3594",
+    "scan_sha256": "39bebc636ec3dc18336b5a5f9dbdc50831e051ddabb95088c6397e217e2d173f"
+  },
+  {
+    "id": "1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5",
+    "source": "target/independent-pdf-v2/pdfs/1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "73  (ii), (v) or (vi), or row 13 (v) of Appended Table 1, which are specified by the  Minister of Economy, Trade and Industry by public notice, or goods listed in  the middle column of row 15 of the same table  Appended Table 4 (Re: Article 4)  Iran, Iraq, North Korea  Appended Table 4-2 (Re: Article 4)  Deleted.  Appended Table 5 (Re: Article 4)  (i) relief supplies provided without charge  (ii) product samples or advertising materials provided without charge, the total  value of which is not more than two million yen (in the case of goods listed in  the middle column of Appended Table 2 as specified by the Minister of  Economy, Trade and Industry by public notice, which are exported to the  regions listed in the right-hand column of the same table as specified by the  Minister of Economy, Trade and Industry by public notice, limited to those  having total value of not more than the amount designated by the Minister of  Economy, Trade and Industry by public notice, not exceeding two million  yen);  (iii) small packages or small parcels containing personal belongings, household  articles, occupational tools or commercial tools that are sent by international  mail and are to be used by the receivers for private purposes, or similar  parcels sent by other means;  (iv) supplies for vessels or aircraft to be used for foreign vessels or aircrafts;  (v) aircraft parts as well as machines and apparatus mounted on aircrafts to be  used for the safe arrival and departure or navigation of aircrafts and parts  thereof, which need repair and are exported without charge;  (vi) publications to be used by the National Diet Library for the purpose of  international exchange;  (vii) goods which belong to the heads of foreign countries visiting Japan and  their families and attendants thereof;  (viii) goods to be used for private purposes by ambassadors, ministers or other  equivalent delegates of foreign countries dispatched to Japan and staff of  diplomatic establishments of foreign countries located in Japan (which  means embassies, legations, consulates and other equivalent facilities; the  same applies hereinafter), and goods sent from diplomatic establishments of  foreign countries;  (ix) medals, prize cups and trophies, badges and other equivalent objects to be  awarded to residents in foreign countries; ",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "9426018280fc486f7ba7f30be3ad67907365b3f5f54e5291b75f60f5145a4d67",
+    "scan_sha256": "6d9cf5d07c71a8c25e90f4addd8165482b936016a2e1d4ac9e9c656c5a1f75a3"
+  },
+  {
+    "id": "a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5",
+    "source": "target/independent-pdf-v2/pdfs/a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "AA-000799-002_TACONT  Page 5 of 7  (c) Civil liability in the event of accidents caused to third parties or to the Contracting  Authority and any employee of that Authority, arising out of the performance of the  Contract by the Consultant, its agents or employees;  (d)  Accidental death or permanent disability resulting from bodily injury incurred by any  person in connection with the performance of the Contract by the Consultant, its  agents or employees.\u201d  11.3.7 In relation to Article 19.1 of the General Conditions, the \u201cimplementation period\u201d shall  be read as referring to any specific period of time mentioned in the Contract within which  certain tasks / activities have to be performed and/or certain outputs have to be  produced.  11.3.8 In relation to Article 19 of the General Conditions, paragraph 19.2 shall be amended to:  \u201cThe daily rate for liquidated damages will be 0.05% of the Maximum Contract Value\u201d.  11.3.9 Within the framework of Article 24.2 of the General Conditions, the person authorised  by the Contracting Authority to approve the Consultant\u2019s timesheets on a monthly basis  is the Promoter. For the services delivered off-site, the timesheets must be counter- signed by the Consultant\u2019s designated Project Director / TA Coordinator.  11.3.10 The following paragraph shall be added to Article 28 of the General Conditions: \u201c 28.5 If  the expenditure verification report submitted by the external auditor does not comply  with the model provided in Annex VII to the Contract in terms of verifications to be  performed and level of assurance to be provided, the Contracting Authority reserves the  right to refuse the payment of the expenditure covered by that report until a full  verification of the supporting documents is carried out by the Contracting Authority itself.  In any and all such cases, the Contracting Authority shall not make any payments for  the costs of the expenditure verification. \u201d 11.3.11 In relation Article 34 of the General Conditions, the Contracting Authority\u2019s liability will  be limited to wilful misconduct or gross negligence.  11.3.12 Article 35 of the General Conditions shall read as follows: \u201c 35.1  Without prejudice to the right of the Contracting Authority to terminate the  Contract under Article 36, the Contracting Authority may at any time suspend the  Contract or any part thereof (including the payments), in particular where it considers  such suspension in the interest of the project or where there are suspected or  established errors, irregularities or fraud committed by the Consultant in the  performance of another contract funded by the general budget of the European Union,  by EDF or by the Contracting Authority which are likely to affect the performance of the  present Contract. Suspension shall take effect on the day that the Consultant receives  written notice from the Contracting Authority, or at a later date when the notice so  provides. 35.2  The Contracting Authority shall suspend the payments and/or the execution of  the Contract:  (a) where the award procedure or the performance of the Contract is vitiated by  substantial errors or irregularities, or by suspected or proven fraud. In addition, where  such errors, irregularities or fraud are attributable to the Consultant, the Contracting  Authority may refuse to make further payments or may proceed to recover amounts  already paid, in proportion to the seriousness of the errors, irregularities or fraud;  (b) where the Contracting Authority is obliged to do so pursuant to (i) a request by the  providers of the funding for the Contract, or (ii) the provisions of the contracting  arrangements between the Contracting Authority and the providers of the funding or the  Contract, as these are identified in the Special Conditions or the Terms of Reference;  (c) a Sanction Event.  35.3  During the period of suspension, the Consultant shall take such protective  measures as may be necessary to mitigate any loss and submit, for the written approval ",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "5affc079426150227c247f8f45db8e207c64a15a4024e6f66bad67a95c43443f",
+    "scan_sha256": "a51f3e5f0e0f3bfbeab7b90df7d460b39794281584ca159f23878dc3688ecf82"
+  },
+  {
+    "id": "4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280",
+    "source": "target/independent-pdf-v2/pdfs/4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "CP 2020 ANNUAL REPORT 78 Report of Independent Registered Public Accounting Firm To the Shareholders and the Board of Directors of Canadian Pacific Railway Limited Opinion on the Financial Statements We have audited the accompanying consolidated balance sheets of Canadian Pacific Railway Limited and subsidiaries (the \"Company\") as of December 31, 2020 and 2019, the related consolidated statements of income, comprehensive income, cash flows, and changes in shareholders\u2019 equity, for each of the three years in the period ended December 31, 2020, and the related notes and the financial statement schedule listed in the Index at Item 8 (collectively referred to as the \"financial statements\"). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2020 and 2019, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2020, in conformity with accounting principles generally accepted in the United States of America (\u201cUS GAAP\u201d). We have also audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the Company's internal control over financial reporting as of December 31, 2020, based on criteria established in  Internal Control \u2014 Integrated Framework (2013) issued by the Committee of Sponsoring Organizations of the Treadway Commission and our report d ated February 18, 2021, exp ressed an unqualified opinion on the Company's internal control over financial reporting. Basis for Opinion These financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB. We conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion. Critical Audit Matters The critical audit matters communicated below are matters arising from the current period audit of the financial statements that were communicated or required to be communicated to the audit committee and that (1) relate to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matters below, providing separate opinions on the critical audit matters or on the accounts or disclosures to which they relate. Properties \u2013 Direct Costs that are Capitalized to Self-constructed Assets \u2013 Refer to Notes 1, 12 and 19 to the Financial Statements Critical Audit Matter Description The Company recognizes direct costs as capitalized additions to self-constructed assets, within properties, based on expenditures necessary to make an asset ready for its intended use. The capitalization of self-constructed assets requires management to make significant estimates and assumptions related to the capitalization of direct cost additions to self-constructed assets based on whether the expenditures meet capitalization criteria under US GAAP. We identified the capitalization of direct cost additions to self-constructed assets as a critical audit matter because the judgments and assumptions management makes could have a significant impact on the capitalization of direct cost additions. As such auditing the capitalization of direct cost additions involves a high degree of auditor judgment. How the Critical Audit Matter was Addressed in the Audit Our audit procedures related to the capitalization of direct cost additions to self-constructed assets included the following, among others: \u2022 Evaluated the effectiveness of controls over self-constructed assets, including those over the capitalization of direct cost additions to self-constructed assets. \u2022 Selected a sample of direct costs and obtained evidence to support the capitalized additions to self-constructed assets and assessed whether these expenditures met the capitalization criteria under US GAAP.",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "c69326bfda071cc386a0c6b9995b31aa2d452c0380ae4e9854f5054e399b0194",
+    "scan_sha256": "438f600349a65466869ce19cb76950ecc97c6a6e155d65d1c808b93c71e70b7a"
+  },
+  {
+    "id": "b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c",
+    "source": "target/independent-pdf-v2/pdfs/b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "Nissan Annual Report 2004 30 WHO WE ARE INDUSTRIAL MACHINERY AND MARINE BUSINESS \u201cWe are the only forklift manufacturer directly owned by an automotive company, and that has created a number of synergies for our division. There\u2019s a natural link with the core business, for instance, given the powertrain of a forklift. However, we also benefit from other assets within Nissan, such as brand, quality, cost management, and marketing activities. The bottom line is that we contribute to the Company\u2019s total profitability. We had our highest sales and profit in fiscal 2004. We now lead the industry in profitability, in fact, which I believe reflects the market\u2019s awareness of our superior quality. In this business, quality is everything, because our customers are investing in tools for their business.  As we upgrade our customer service, I think we will be in a position to become the market leader. Producing forklifts is the heart of our business, although we also build marine products, mostly fiberglass boats and outboard motors. During the year a major issue for our forklift division was the rising price of steel, which seriously affects forklift production. We increased our selling price in response, as did the rest of the industry. Fortunately, we met or surpassed our targets in Japan and in Europe, where we have a plant in Spain. We were slightly below our target for the U.S., however, the result of a slight delay in the start of production on a new model, which reduced volume for the year. We have since recovered our strength in that market, which we see as key to our continued growth. A major contributor to our expansion was the release of a new forklift in Japan two years ago. At the time we had not released a new model in over seven years. Over the coming years we plan to introduce a new battery-powered model in major markets and enhance our service network. Since forklifts are production equipment, their sales are highly influenced by business cycles. To help maintain our profitability, we need to ramp up our parts and service businesses, which can be a significant source of income.  We have made a tough commitment for the NISSAN Value-Up period, and that is to increase our profitability until it is in line with Nissan\u2019s other operations. This will require some bold steps, but doing so will make us the industry leader. We are currently expanding into producing other material handling and warehousing equipment. We also see opportunities for quality forklifts in China, despite the competitive market there. Used forklifts can also be a profitable business as well, and we are looking to increase our involvement in that area.  Our marine-related business has been profitable since 2000, when we restructured the business by expanding the marine product line-up and strengthening marina operations.  Now we are focusing on larger boats and investigating the possibility of manufacturing in China. We are also researching the recycling of plastic and fiberglass boats, which is a major environmental concern.\u201d TOSHIO AOKI Vice President Building on the Core",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "6d75205fad1b58b6d6273ec1b4631e725e8459148fd8a0ec5e133270177bdf61",
+    "scan_sha256": "6571211a45e355b6609e115701f90ce31c58055b4a64409a6b76453228e8ed56"
+  },
+  {
+    "id": "65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355",
+    "source": "target/independent-pdf-v2/pdfs/65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "2 (a) indicates the descriptions of information required by each of sub-paragraphs (a) to (h) of  regulation 3(2) in relation to the marriage, and  (b) provides corresponding spaces for recording information required by each of those sub- paragraphs in relation to the marriage.  (6) A register of marriage services provided under paragraph (1) by a parochial church council  belongs to that parochial church council.  Duty to record information about marriages solemnized according to the rites of the Church  of England or Church in Wales  3. \u2014(1) Paragraphs (2), (3) and (4) apply where a marriage has been solemnized according to the  rites of the Church of England in a church or chapel in which banns of matrimony may be  published.  (2) As soon as practicable after the marriage has been solemnized, the clergyman by whom the  marriage was solemnized must make a record of the following information in relation to that  marriage in a register of marriage services provided to the church or chapel under regulation  2(1)\u2014  (a) the date and place of the marriage;  (b) the name and surname of each party;  (c) the date of birth of each party;  (d) the occupation (if any) of each party;  (e) the address of each party at the time of the marriage;  (f) the names and surnames of each party\u2019s parents, so far as those names and surnames are  known to the clergyman who solemnized the marriage;  (g) the name and surname of each of the witnesses in whose presence the marriage was  solemnized;  (h) the name and surname of the clergyman by whom the marriage was solemnized.  (3) The clergyman must record the information required by paragraph (2) in English, and may  also record information required by that paragraph in Welsh where the church or chapel is situated  in Wales.  (4) After making a record under paragraph (2) the clergyman must sign it.  (5) This regulation does not apply in relation to a marriage solemnized before 4th May 2021.  Requirements about the keeping of registers of marriage services  4. \u2014(1) The rector, vicar or curate in charge of a church or chapel to which a register of marriage  services has been provided under regulation 2(1) must\u2014  (a) ensure that the register is kept in that church or chapel, and  (b) do everything that is reasonably practicable to ensure that the register is protected against  theft, loss or damage.  (2) Where there is no rector, vicar or curate in charge of a church or chapel to which a register of  marriage services has been provided under regulation 2(1), the obligations under paragraph (1) in  respect of that register fall on the churchwardens of the parish in which the church or chapel is  situated.  Given under my hand on 29th April 2021  Abi Tierney  Registrar General ",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "ba3087c726d5c30b0008e5d298da2dbf61b08993cf1a316353be6b42011e54a3",
+    "scan_sha256": "907212e118d149755e0ef2bcc4bf5c4c65066434574997324b2a71582843358c"
+  },
+  {
+    "id": "c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3",
+    "source": "target/independent-pdf-v2/pdfs/c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3.pdf",
+    "page": 1,
+    "tables": null,
+    "reference": "Page 7 GLYPH<g3> EXCEL TRAINING MANUAL 1.3.4 ENJOY POWERFUL AND IMPROVED TABLE FEATURES  Create, filter, format and expand multiple tables with a set of formulas since Microsoft  excel has improved features for tables. For instance, if you want to view data in an  extended table, Office Excel keeps table headers in view as you scroll.  1.3.5 SHARE SPREADSHEETS  Use Microsoft Excel to share multiple spreadsheets with co-workers. Other parties may  also access the data online as it renders the spreadsheets as HTML. Additionally, you  can navigate, filter, sort and input parameters, all within the Web browser.  Besides its numerous benefits, Microsoft Excel also has its share of shortcoming as well.  Many users claim that Office Excel is not easily shared compared to other office  applications.  2. ERROR MESSAGES (CELL REFERENCE)  If you get an error message in Excel you might not get much help from the program in finding  out the cause. The articles listed here cover the cause and cures for a number of common error  messages in Excel, such as #REF!, #NULL!, and #####.  2.1 INVALID CELL REFERENCE  An invalid cell reference error message occurs when a spreadsheet formula contains  incorrect cell references.  In above example, if you click on the cell that contains the #REF! error, you will see that the  cell reference within the cell has been replaced with #REF!. Therefore, in order to fix this  error, you need to re-enter the correct cell references into your formula.",
+    "reference_scope": "page cells",
+    "kind": "DocLayNet",
+    "source_sha256": "cc82e63accef70136d6a745c0996cddf4e56f0d2386b9c1e2d3cea14783bd1d9",
+    "scan_sha256": "6b41f58761d148d85a5328335d49925cd45d6a80882102963d4f544aac2cd897"
+  },
+  {
+    "id": "english-noise",
+    "base_id": "english",
+    "language": "en",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/english-noise.pdf",
+    "sha256": "88d3bb74216b48c0a84e2a703ecccbdc185d0aa7abec2306e8f3ef3a3973c2d0",
+    "reference": "fixtures/ocr-stress/english-noise.txt",
+    "reference_sha256": "02002b29a289ffd79c7cffc2d89ed53e910417316d8341463d77a65621c327a4"
+  },
+  {
+    "id": "swedish-a-low-resolution",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "low-resolution",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-low-resolution.pdf",
+    "sha256": "ee897b6930fe1136710430454987a56b7e09652a40a4a08cc2c2a9b213bac9d8",
+    "reference": "fixtures/ocr-stress/swedish-a-low-resolution.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  },
+  {
+    "id": "swedish-a-noise",
+    "base_id": "swedish-a",
+    "language": "sv",
+    "variant": "noise",
+    "track": "authored_stress",
+    "path": "fixtures/ocr-stress/swedish-a-noise.pdf",
+    "sha256": "545af3c6bea30b355f19bb5301594738750cd796886281dc33574252ca31f72e",
+    "reference": "fixtures/ocr-stress/swedish-a-noise.txt",
+    "reference_sha256": "739acab206b3c58cbde6bcc6205ed8ce47759af727c87033a819c3949c7b1387"
+  }
+]

@@ -9,6 +9,7 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
+bulkparse-ocr-native = { path = "../../crates/bulkparse-ocr-native" }
 bulkparse = { workspace = true, features = ["docx", "pdf", "office"] }
 serde_json.workspace = true
 napi = { version = "3", default-features = false, features = ["napi4"] }

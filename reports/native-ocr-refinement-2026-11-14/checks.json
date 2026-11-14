@@ -1,0 +1,11 @@
+{
+  "workspace_rust_tests": 336,
+  "native_ocr_tests": 16,
+  "node_tests": 10,
+  "python_tests": 8,
+  "rust_clippy": "pass --workspace --all-targets --all-features -D warnings",
+  "rust_fmt": "pass",
+  "scope": "336 tests passed in the full workspace suite; 16 native OCR tests passed in the final targeted rerun, including the additional combined header/body regression test. Final release Node/Python variants, 200 mixed documents, and 14 scan quality/performance checks passed.",
+  "service_compatibility_tests": 16,
+  "service_typecheck": "pass"
+}

@@ -29,6 +29,9 @@ pub struct Config {
     pub max_pixels: u64,
     #[serde(default = "default_timeout")]
     pub page_timeout_ms: u64,
+    /// Whole conversion deadline used by native binding parse calls.
+    #[serde(default = "default_document_timeout")]
+    pub document_timeout_ms: u64,
     #[serde(default = "default_input")]
     pub max_input_bytes: usize,
     /// Opt into the bundled backend's framed, persistent worker protocol.
@@ -48,6 +51,9 @@ fn default_dpi() -> u32 {
 fn default_pixels() -> u64 {
     8_000_000
 }
+fn default_document_timeout() -> u64 {
+    120_000
+}
 fn default_timeout() -> u64 {
     30_000
 }
@@ -64,6 +70,8 @@ pub struct ProcessOcr {
 #[serde(deny_unknown_fields)]
 struct Response {
     version: u32,
+    #[serde(default)]
+    page_count: Option<u32>,
     page: u32,
     #[serde(default)]
     text: Option<String>,
@@ -90,6 +98,8 @@ impl ProcessOcr {
             || config.max_pixels > 100_000_000
             || config.page_timeout_ms == 0
             || config.page_timeout_ms > 300_000
+            || config.document_timeout_ms == 0
+            || config.document_timeout_ms > 3_600_000
             || config.max_input_bytes == 0
             || config.max_input_bytes > 256 * 1024 * 1024
             || config.max_pages_per_worker == 0
@@ -133,6 +143,60 @@ impl PdfOcrProvider for ProcessOcr {
     }
 
     fn recognize_page(&self, request: PdfOcrRequest<'_>) -> Result<PdfOcrOutput, Error> {
+        self.recognize_output(request).map(|(output, _)| output)
+    }
+}
+
+impl bulkparse::ImageOcrProvider for ProcessOcr {
+    fn recognize_image_page(
+        &self,
+        request: PdfOcrRequest<'_>,
+    ) -> Result<bulkparse::ImageOcrPage, Error> {
+        let (output, count) = self.recognize_output(request)?;
+        let page_count = count.filter(|n| *n > 0).ok_or_else(|| {
+            Error::Unsupported("OCR backend did not report image frame count".into())
+        })?;
+        Ok(bulkparse::ImageOcrPage { output, page_count })
+    }
+}
+
+impl ProcessOcr {
+    pub fn parse_json(
+        &self,
+        bytes: &[u8],
+        filename: Option<&str>,
+        options: Option<&str>,
+        budget: Option<&str>,
+    ) -> Result<String, Error> {
+        let options: bulkparse::Options = options
+            .map(serde_json::from_str)
+            .transpose()
+            .map_err(|e| Error::Malformed(format!("options: {e}")))?
+            .unwrap_or_default();
+        let budget: bulkparse::PdfOcrBudget = budget
+            .map(serde_json::from_str)
+            .transpose()
+            .map_err(|e| Error::Malformed(format!("OCR budget: {e}")))?
+            .unwrap_or_default();
+        let parser = bulkparse::Parser::new(options);
+        let token = bulkparse::CancellationToken::default();
+        let _deadline = Deadline::start(token.clone(), self.config.document_timeout_ms)?;
+        let result = if bulkparse::is_image(bytes) {
+            parser.parse_image_with_ocr(bytes, &token, self, budget)?
+        } else {
+            parser.parse_with_pdf_ocr(bytes, filename, &token, self, budget)?
+        };
+        let json = bulkparse::conversion_json(result, parser.options.strict)?;
+        if token.is_cancelled() {
+            return Err(Error::Cancelled);
+        }
+        Ok(json)
+    }
+
+    fn recognize_output(
+        &self,
+        request: PdfOcrRequest<'_>,
+    ) -> Result<(PdfOcrOutput, Option<u32>), Error> {
         if request.cancellation.is_cancelled() {
             return Err(Error::Cancelled);
         }
@@ -246,13 +310,17 @@ impl PdfOcrProvider for ProcessOcr {
     }
 }
 
-fn decode(bytes: &[u8], page: u32, limit: usize) -> Result<PdfOcrOutput, Error> {
+fn decode(bytes: &[u8], page: u32, limit: usize) -> Result<(PdfOcrOutput, Option<u32>), Error> {
     let reply: Response = serde_json::from_slice(bytes)
         .map_err(|e| Error::Malformed(format!("OCR response: {e}")))?;
     decode_response(reply, page, limit)
 }
 
-fn decode_response(reply: Response, page: u32, limit: usize) -> Result<PdfOcrOutput, Error> {
+fn decode_response(
+    reply: Response,
+    page: u32,
+    limit: usize,
+) -> Result<(PdfOcrOutput, Option<u32>), Error> {
     if ![1, 2, 3].contains(&reply.version) || reply.page != page {
         return Err(Error::Malformed("invalid OCR response envelope".into()));
     }
@@ -289,5 +357,43 @@ fn decode_response(reply: Response, page: u32, limit: usize) -> Result<PdfOcrOut
         _ => return Err(Error::Malformed("invalid OCR response envelope".into())),
     };
     output.validate(limit)?;
-    Ok(output)
+    if reply
+        .page_count
+        .is_some_and(|count| count == 0 || page > count)
+    {
+        return Err(Error::Malformed("invalid OCR image frame count".into()));
+    }
+    Ok((output, reply.page_count))
+}
+
+struct Deadline {
+    stop: Option<mpsc::Sender<()>>,
+    thread: Option<thread::JoinHandle<()>>,
+}
+impl Deadline {
+    fn start(token: bulkparse::CancellationToken, millis: u64) -> Result<Self, Error> {
+        let (stop, stopped) = mpsc::channel();
+        let thread = thread::Builder::new()
+            .name("bulkparse-ocr-deadline".into())
+            .spawn(move || {
+                if matches!(
+                    stopped.recv_timeout(Duration::from_millis(millis)),
+                    Err(mpsc::RecvTimeoutError::Timeout)
+                ) {
+                    token.cancel();
+                }
+            })?;
+        Ok(Self {
+            stop: Some(stop),
+            thread: Some(thread),
+        })
+    }
+}
+impl Drop for Deadline {
+    fn drop(&mut self) {
+        drop(self.stop.take());
+        if let Some(thread) = self.thread.take() {
+            let _ = thread.join();
+        }
+    }
 }

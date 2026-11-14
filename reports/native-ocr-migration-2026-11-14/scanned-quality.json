@@ -1,0 +1,562 @@
+{
+  "scope": "14 development scans, including 8 ICDAR pages with 11 annotated tables",
+  "predictions": "target/native-ocr/scans-complete.jsonl",
+  "nonempty": 14,
+  "mean_reference_token_recall": 0.9910428926824901,
+  "tables": {
+    "rust": {
+      "pages": 8,
+      "gold_regions": 11,
+      "predicted_regions": 11,
+      "matched_regions": 11,
+      "detection_precision": 1.0,
+      "detection_recall": 1.0,
+      "end_to_end": {
+        "teds": 0.9115582854948119,
+        "teds_s": 0.9943932719263114
+      },
+      "macro_page": {
+        "teds": 0.9124492637513891,
+        "teds_s": 0.9922907488986784
+      },
+      "matched_only": {
+        "teds": 0.9115582854948119,
+        "teds_s": 0.9943932719263114
+      }
+    },
+    "docling": {
+      "pages": 8,
+      "gold_regions": 11,
+      "predicted_regions": 11,
+      "matched_regions": 11,
+      "detection_precision": 1.0,
+      "detection_recall": 1.0,
+      "end_to_end": {
+        "teds": 0.9045424254915488,
+        "teds_s": 0.9924965961663209
+      },
+      "macro_page": {
+        "teds": 0.9089083688114579,
+        "teds_s": 0.9917661530620246
+      },
+      "matched_only": {
+        "teds": 0.9045424254915488,
+        "teds_s": 0.9924965961663209
+      }
+    },
+    "previous_worker": {
+      "pages": 8,
+      "gold_regions": 11,
+      "predicted_regions": 1,
+      "matched_regions": 1,
+      "detection_precision": 1.0,
+      "detection_recall": 0.09090909090909091,
+      "end_to_end": {
+        "teds": 0.09090909090909091,
+        "teds_s": 0.09090909090909091
+      },
+      "macro_page": {
+        "teds": 0.0625,
+        "teds_s": 0.0625
+      },
+      "matched_only": {
+        "teds": 1.0,
+        "teds_s": 1.0
+      }
+    }
+  },
+  "documents": [
+    {
+      "id": "us-011a-3",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 5.217475374927744,
+      "reference_token_recall": 1.0,
+      "rust": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 1.0,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 1,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 1,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 1.0,
+        "teds_s": 1.0
+      }
+    },
+    {
+      "id": "us-037-1",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 9.340487125096843,
+      "reference_token_recall": 0.9888475836431226,
+      "rust": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9851301115241635,
+            "teds": 0.9173950345045983,
+            "teds_s": 0.9383259911894273
+          }
+        ],
+        "teds": 0.9173950345045983,
+        "teds_s": 0.9383259911894273
+      },
+      "previous_worker": {
+        "gold": 1,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 1,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9832402234636871,
+            "teds": 0.9432919245570139,
+            "teds_s": 0.9678899082568807
+          }
+        ],
+        "teds": 0.9432919245570139,
+        "teds_s": 0.9678899082568807
+      }
+    },
+    {
+      "id": "us-004-2",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 8.139369041193277,
+      "reference_token_recall": 1.0,
+      "rust": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 0.9885057471264368,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.9885057471264368,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 1,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 1,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 0.9829059829059829,
+            "teds_s": 0.9829059829059829
+          }
+        ],
+        "teds": 0.9829059829059829,
+        "teds_s": 0.9829059829059829
+      }
+    },
+    {
+      "id": "eu-007-3",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 6.0034955001901835,
+      "reference_token_recall": 1.0,
+      "rust": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 1.0,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 2,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.5,
+        "teds_s": 0.5
+      },
+      "docling": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 1.0,
+            "teds": 1.0,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 1.0,
+        "teds_s": 1.0
+      }
+    },
+    {
+      "id": "eu-013-8",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 6.354350541951135,
+      "reference_token_recall": 1.0,
+      "rust": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 0.6666666666666667,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.6666666666666667,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 1,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 1,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 0.6666666666666667,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.6666666666666667,
+        "teds_s": 1.0
+      }
+    },
+    {
+      "id": "eu-001-3",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 6.323561333119869,
+      "reference_token_recall": 0.9611111111111111,
+      "rust": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9876543209876543,
+            "teds": 0.8611268939393939,
+            "teds_s": 1.0
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 0.9298245614035088,
+            "teds": 0.8268958543983822,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.844011374168888,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 2,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 2,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 1.0,
+            "teds": 0.8409090909090909,
+            "teds_s": 1.0
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 0.9739130434782609,
+            "teds": 0.8325581395348838,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.8367336152219873,
+        "teds_s": 1.0
+      }
+    },
+    {
+      "id": "eu-018-1",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 9.95084529207088,
+      "reference_token_recall": 0.9898477157360406,
+      "rust": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9837837837837838,
+            "teds": 0.9306138306138306,
+            "teds_s": 1.0
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 0.985781990521327,
+            "teds": 0.8364574819120274,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.8835356562629291,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 2,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 2,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 2,
+        "predicted": 2,
+        "matched": 2,
+        "denominator": 2,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9837837837837838,
+            "teds": 0.8323232323232324,
+            "teds_s": 0.9666666666666667
+          },
+          {
+            "gold": 1,
+            "prediction": 1,
+            "text_f1": 0.9760765550239234,
+            "teds": 0.8516089970635425,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.8419661146933874,
+        "teds_s": 0.9833333333333334
+      }
+    },
+    {
+      "id": "us-031a-2",
+      "kind": "ICDAR",
+      "nonempty": true,
+      "seconds": 7.575354334199801,
+      "reference_token_recall": 0.9888888888888889,
+      "rust": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9834254143646409,
+            "teds": 0.9994796312815938,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.9994796312815938,
+        "teds_s": 1.0
+      },
+      "previous_worker": {
+        "gold": 1,
+        "predicted": 0,
+        "matched": 0,
+        "denominator": 1,
+        "pairs": [],
+        "teds": 0.0,
+        "teds_s": 0.0
+      },
+      "docling": {
+        "gold": 1,
+        "predicted": 1,
+        "matched": 1,
+        "denominator": 1,
+        "pairs": [
+          {
+            "gold": 0,
+            "prediction": 0,
+            "text_f1": 0.9834254143646409,
+            "teds": 0.999702646446625,
+            "teds_s": 1.0
+          }
+        ],
+        "teds": 0.999702646446625,
+        "teds_s": 1.0
+      }
+    },
+    {
+      "id": "1f6e480d63b1e59e3957aba9177e2335cece5a7aaea7999359fa9d3101117df5",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 6.722065083915368,
+      "reference_token_recall": 0.9973262032085561
+    },
+    {
+      "id": "a890da053fe1a97c39c4c434e65f4939233ca0d76f125e280f9aab8847d5d7a5",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 8.961443583015352,
+      "reference_token_recall": 0.9938744257274119
+    },
+    {
+      "id": "4c09e06d70b7656e06ac3d199204ccecd41af7e07ec2237edc994136d8d77280",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 11.018933958839625,
+      "reference_token_recall": 0.9948652118100129
+    },
+    {
+      "id": "b2f43639ab6628fc2e15aae8421efbc98860681183b7cc1b632f9ede3d24545c",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 7.514809416141361,
+      "reference_token_recall": 1.0
+    },
+    {
+      "id": "65ded3992b6b8ebf694e9d6e411c3ae38bd6f2afc4d0bf4ddb2580414db3c355",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 7.161592582939193,
+      "reference_token_recall": 1.0
+    },
+    {
+      "id": "c2494382d4b41cda9c8edacaf2fa28b10637a1f3afbbfbbb762edd69718f33d3",
+      "kind": "DocLayNet",
+      "nonempty": true,
+      "seconds": 5.84923008386977,
+      "reference_token_recall": 0.9598393574297188
+    }
+  ]
+}

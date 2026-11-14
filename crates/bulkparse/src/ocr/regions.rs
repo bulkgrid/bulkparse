@@ -251,7 +251,7 @@ pub(super) fn blocks(
         blocks.push(ctx.block(content, located)?);
     }
     if !blocks.is_empty() {
-        ctx.diagnostic("pdf_ocr_structure_inferred", "Semantic regions, reading order, tables and formulas supplied by the configured model; recognition and completeness remain unverified.", source, true);
+        ctx.diagnostic("pdf_ocr_structure_inferred", "Semantic regions, reading order, tables and formulas supplied by the configured provider; recognition and completeness remain unverified.", source, true);
     }
     Ok(blocks)
 }

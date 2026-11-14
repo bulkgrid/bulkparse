@@ -28,7 +28,7 @@ class ConversionTests(unittest.TestCase):
         self.assertEqual(result["status"], "complete")
         root = Path(__file__).resolve().parents[3]
         self.assertIn("# Hello BulkParse", parse_file(root / "fixtures/hello.docx")["markdown"])
-        self.assertEqual(len(capabilities()), 18)
+        self.assertEqual(len(capabilities()), 19)
 
     def test_csv_options(self):
         result = parse("name;value\n名称;😀\n".encode("utf-16-le"), filename="x.csv", csv_encoding="utf16_le", csv_delimiter=";")

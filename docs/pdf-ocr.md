@@ -1,3 +1,7 @@
+# Native PDF OCR
+
+The supported CLI and Node/Python OCR path now uses [the Rust native provider](../crates/bulkparse-ocr-native/README.md), without Python. See [binding setup](ocr-bindings.md) and [validation](ocr-bindings-validation.md). The process-adapter details below document historical benchmark adapters, not the current service runtime.
+
 # Optional PDF OCR
 
 Current structured extension: [semantic-region OCR](../backends/glmocr/README.md)
@@ -9,7 +13,7 @@ The text/line interfaces below remain supported; their table and paragraph
 limitations describe the RapidOCR path. No Firecrawl account is required. Live
 GLM recognition quality remains unverified.
 
-BulkParse's default PDF path stays local and uses native text. It does not install OCR engines, render page bitmaps, download models or contact a service. The Rust API accepts a caller-supplied `PdfOcrProvider`. A real optional [ProcessOcr backend](../backends/rapidocr/README.md) now connects PDFium, RapidOCR and ONNX Runtime through a supervised process; an OCR-enabled CLI can use it with `--ocr-config`. Node, Python and WASM expose page-level `pdf_ocr_needed` diagnostics; provider registration is currently a Rust API capability, not a JSON option or a binding callback.
+BulkParse's default PDF path uses native text. It does not install OCR engines, render page bitmaps, download models or contact a service. The Rust API accepts a caller-supplied `PdfOcrProvider`. A real optional [ProcessOcr backend](../backends/rapidocr/README.md) now connects PDFium, RapidOCR and ONNX Runtime through a supervised process; an OCR-enabled CLI can use it with `--ocr-config`. Node and Python expose reusable supervised OCR parsers. All three bindings also accept validated host-supplied OCR evidence; WASM does not run the native worker. See [binding APIs and limits](ocr-bindings.md).
 
 ```rust
 use bulkparse::{CancellationToken, Error, Parser, PdfOcrBudget,
@@ -64,8 +68,8 @@ implement `Eq` because evidence contains floating-point numbers.
 
 The geometry milestone introduced document schema version `0.2`; the current inspection milestone uses `0.3`. Non-OCR fields and
 content remain unchanged. Clients that require an exact schema version should
-accept the new version before updating. Node/Python/WASM OCR invocation APIs are
-still outside this milestone. Geometry-capable results remain `partial` and emit
+accept the new version before updating. Subsequent [OCR binding APIs](ocr-bindings.md)
+extend invocation to Node/Python and evidence assembly to WASM. Geometry-capable results remain `partial` and emit
 `pdf_ocr_layout_inferred`; strict mode still rejects them.
 
 ## Reusing supervised model sessions

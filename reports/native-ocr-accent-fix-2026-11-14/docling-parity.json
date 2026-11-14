@@ -1,0 +1,26 @@
+{
+  "scope": "Docling texts from the preceding pinned-model comparison; BulkParse texts from this final profile rerun. All three texts now match after whitespace normalization. Uppercase Å errors remain.",
+  "documents": [
+    {
+      "id": "ocr-swedish",
+      "docling_text": "Leveransrapport Atta lådor anlände på måndagen. Kontrollen är klar.",
+      "bulkparse_before": "Leveransrapport\nAtta lådor anlände på måndagen.\nKontrollen är klar.",
+      "bulkparse_after": "Leveransrapport\nAtta lådor anlände på måndagen.\nKontrollen är klar.",
+      "same_as_docling_after_whitespace": true
+    },
+    {
+      "id": "swedish-a-low-resolution",
+      "docling_text": "Arets leverans går till Västerås. Öppna dörren före klockan åtta. Ärendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_before": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_after": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "same_as_docling_after_whitespace": true
+    },
+    {
+      "id": "swedish-a-noise",
+      "docling_text": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_before": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blà och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "bulkparse_after": "Arets leverans går till Västerås.\nÖppna dörren före klockan åtta.\nÄrendet gäller blå och gröna lådor.\nPris: 1 249,50 kr. Antal: 27.",
+      "same_as_docling_after_whitespace": true
+    }
+  ]
+}

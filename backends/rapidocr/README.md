@@ -1,3 +1,7 @@
+# Historical benchmark backend
+
+This Python adapter is retained for reproducing earlier benchmarks. It is not used by the CLI, Node/Python native bindings, or the migrated file-converter service. For new integrations use [Rust OCR](../../crates/bulkparse-ocr-native/README.md).
+
 # Optional RapidOCR backend
 
 The Rust `bulkparse-ocr` crate supervises this explicitly installed Python helper.
@@ -147,3 +151,7 @@ Upstream implementation references: [RapidOCR](https://github.com/RapidAI/RapidO
 [PDFium wrapper](https://pypdfium2.readthedocs.io/en/stable/), and
 [ONNX Runtime](https://onnxruntime.ai/). These dependencies and their model assets
 retain their upstream licenses; BulkParse's MIT license does not replace them.
+
+## Image inputs and ruled tables
+
+The backend also accepts PNG, JPEG, GIF, WebP and TIFF. Each response for an image includes its frame count; recognition remains one frame per request. Pixel and input budgets still apply. Conservative visible-grid recovery can return protocol-v3 table regions with rectangular merged cells. Ambiguous and borderless layouts retain line output. See [binding APIs and limitations](../../docs/ocr-bindings.md).

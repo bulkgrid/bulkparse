@@ -1,0 +1,1 @@
+{"page_count":1,"pages":[{"page":1,"output":{"type":"regions","value":{"image_size":[400,300],"regions":[{"order":0,"bbox":[10,10,390,290],"label":"ruled_table","content":{"type":"table","header_rows":0,"rows":[[{"text":"Sales report","col_span":2,"row_span":1}],[{"text":"Apples","col_span":1,"row_span":1},{"text":"125","col_span":1,"row_span":1}]]}}]}}}]}

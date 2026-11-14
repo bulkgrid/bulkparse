@@ -1,0 +1,9 @@
+{
+  "sha256": "0fa94ee52bc4fa106b9fcc9820781e8e70473b900917147bb61d5ba03433950d",
+  "service_package": {
+    "repository": "https://github.com/bulkgrid/bulkparse",
+    "base_commit": "ec0df97ae2301c2c35204fb7d62463bd850ba6fa",
+    "includes_uncommitted_changes": true,
+    "sha256": "ff99cdb497d1fc5048ee1ba8f0d9de403ac83067b97e001a9e572ea850f5ae79"
+  }
+}

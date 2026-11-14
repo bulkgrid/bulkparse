@@ -159,3 +159,22 @@ fn pre_cancelled_request_does_not_load_models() {
     ));
     assert!(pids(dir.path()).is_empty());
 }
+
+#[test]
+fn binding_document_deadline_cancels_a_longer_page_deadline() {
+    let dir = tempfile::tempdir().unwrap();
+    let manifest = dir.path().join("models.json");
+    std::fs::write(&manifest, "{}").unwrap();
+    let config = serde_json::json!({"executable":"python3", "args":[
+        Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fake_worker.py"), "--mode", "hang"],
+        "models":manifest,"page_timeout_ms":5000,"document_timeout_ms":100,"reuse_process":true});
+    let provider = ProcessOcr::from_json(&serde_json::to_vec(&config).unwrap()).unwrap();
+    let started = Instant::now();
+    assert!(matches!(
+        provider.parse_json(b"II\x2a\0image", Some("input.tiff"), None, None),
+        Err(Error::Cancelled)
+    ));
+    assert!(started.elapsed() < Duration::from_secs(2));
+    drop(provider);
+    cleaned(dir.path());
+}

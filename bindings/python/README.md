@@ -37,3 +37,7 @@ The standard build enables BulkParse-owned Office/EPUB readers. See [format supp
 For resource-limited spreadsheets and CSV files, opt in to `partial_on_limit` (Python: `partial_on_limit=True`). Successful normal conversions are unchanged; supported limit failures can return an explicitly partial prefix within the original per-attempt budgets. This is not complete extraction and strict mode never accepts the recovery result. Inspect `status` and `resource_limit_partial` diagnostics. See [bounded large-document handling](../../docs/large-documents.md). Rebuild the binding to use this option.
 
 Embedded image bytes are available in `document.assets` (base64 JSON). See [image retention, export and limitations](../../docs/images.md).
+
+## OCR and standalone images
+
+See [OCR across language bindings](../../docs/ocr-bindings.md) for the shared evidence API, the reusable native OCR parser, image/frame support, scanned-table limits, and examples.

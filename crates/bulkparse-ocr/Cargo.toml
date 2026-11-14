@@ -3,6 +3,7 @@ name = "bulkparse-ocr"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
 description = "Optional supervised OCR provider for BulkParse"
 
 [dependencies]

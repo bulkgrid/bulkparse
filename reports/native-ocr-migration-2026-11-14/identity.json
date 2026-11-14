@@ -1,0 +1,55 @@
+{
+  "source_sha256": {
+    "Cargo.lock": "9da411e0fe954fd6406515570084883d7934a24967a35bf73fdef8be9872fc70",
+    "crates/bulkparse-ocr-native/Cargo.toml": "ac80f1bb195e07937d73164a33e892eb11b317f812bf7f3df740364bbe19eab6",
+    "crates/bulkparse-ocr-native/src/layout.rs": "579b5e78b377e821fd9c7376fe924e4e36c5f3614a9e9a4c2bfff9daf2d066c6",
+    "crates/bulkparse-ocr-native/src/lib.rs": "fb6d608cad3366dd563a956d020667c8ba9b60138168bc60d3a81119729eb774",
+    "crates/bulkparse-ocr-native/src/recognition.rs": "3c3bcf91648238a63b405b1cddcd2f1418b5d908c21340c4e53302cdc0505598",
+    "crates/bulkparse-ocr-native/src/tests.rs": "9c43f996ed03d4e12dba96be388a1d11d8b7f7d9c406b449e137edae3788b0ba",
+    "crates/bulkparse-ocr-native/src/images.rs": "5035ba243ad9b74ac795e92bb1af8eb37fa79659500f9c8d52df3d2ac698284d",
+    "crates/bulkparse-ocr-native/src/tables.rs": "fd5d4e4972711b13d310f72f20050b37b8f647fe6c18aa7de41bc754ac39972c",
+    "scripts/provision_native_ocr.mjs": "7ff704c3619238dee0fe3e42b06a7a371e360c84c4aa3f17627c287dceac533f",
+    "scripts/validate_native_ocr.py": "ca7bda6854d2da197d1fb6b9caa694d2949308b51bf9bff74b45afb2a57f6a1a",
+    "scripts/validate_native_profiles.py": "7dde29fefbfe7558c275dfe90ed2690050fd644e6fcce40e8201c0599db06b33",
+    "bindings/node/src/lib.rs": "6e9474fb36bdd469c5f9dd3d36845c5226b76f4f6ceef06253265bf07854d565",
+    "bindings/python/src/lib.rs": "36e476c707f0b0b626d4e59dcd56c4f92404d741783420127f68d98bec0b98a3",
+    "bindings/wasm/src/lib.rs": "96ed118f9812423e41e426f517763a9c8b3990cd5403e0d4b34e58d0e2673277"
+  },
+  "models": {
+    "models": {
+      "det": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/PP-OCRv6_det_small.onnx",
+        "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+      },
+      "rec": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/PP-OCRv6_rec_small.onnx",
+        "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+      },
+      "cls": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/pp-lcnet_x0_25_textline_ori.onnx",
+        "sha256": "fb402220f39b183d64a68cd48d4bd53267a21354b6fc39370c2a83fbdad85b10"
+      }
+    },
+    "layout": {
+      "detector": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/pp-doclayout_plus-l.onnx",
+        "sha256": "b06cedc7ab3cca7da4ed66cf16024732149d2c29e6adcbfc69b9bb6ef94b4a48"
+      },
+      "table": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/slanet_plus.onnx",
+        "sha256": "3a96a71719247c5d94992fca31266b598c54740388de371f0c75077e2a9e0b55"
+      },
+      "dictionary": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/table_structure_dict_ch.txt",
+        "sha256": "68d344a84b726e043f390122240ff2b2ced2949b2a80ce9b61ae955054d190ef"
+      }
+    }
+  },
+  "service_native_package": {
+    "repository": "https://github.com/bulkgrid/bulkparse",
+    "base_commit": "ec0df97ae2301c2c35204fb7d62463bd850ba6fa",
+    "includes_uncommitted_changes": true,
+    "sha256": "ff99cdb497d1fc5048ee1ba8f0d9de403ac83067b97e001a9e572ea850f5ae79"
+  },
+  "scope": "Development validation, not an unseen quality benchmark. Quality-run wall times were collected during other verification jobs and must not be used for speed comparison."
+}

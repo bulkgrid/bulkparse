@@ -1,0 +1,58 @@
+[
+  {
+    "id": "us-011a-3",
+    "before_teds": 1.0,
+    "after_teds": 1.0,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "us-037-1",
+    "before_teds": 0.9173950345045983,
+    "after_teds": 0.9985608775931356,
+    "before_teds_s": 0.9383259911894273,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "us-004-2",
+    "before_teds": 0.9885057471264368,
+    "after_teds": 0.9885057471264368,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "eu-007-3",
+    "before_teds": 1.0,
+    "after_teds": 1.0,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "eu-013-8",
+    "before_teds": 0.6666666666666667,
+    "after_teds": 0.6666666666666667,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "eu-001-3",
+    "before_teds": 0.844011374168888,
+    "after_teds": 0.9935885411879155,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "eu-018-1",
+    "before_teds": 0.8835356562629291,
+    "after_teds": 0.8835356562629291,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  },
+  {
+    "id": "us-031a-2",
+    "before_teds": 0.9994796312815938,
+    "after_teds": 0.9994796312815938,
+    "before_teds_s": 1.0,
+    "after_teds_s": 1.0
+  }
+]

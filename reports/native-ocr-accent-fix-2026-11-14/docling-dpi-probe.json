@@ -1,0 +1,30 @@
+{
+  "200": {
+    "texts": [
+      "Arets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blà och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "scores": [
+      0.96512,
+      0.98703,
+      0.95523,
+      0.99806
+    ]
+  },
+  "216": {
+    "texts": [
+      "Arets leverans går till Västerås.",
+      "Öppna dörren före klockan åtta.",
+      "Ärendet gäller blå och gröna lådor.",
+      "Pris: 1 249,50 kr. Antal: 27."
+    ],
+    "scores": [
+      0.97041,
+      0.98303,
+      0.98567,
+      0.9874
+    ]
+  }
+}

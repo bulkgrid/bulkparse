@@ -234,7 +234,9 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
                         Vec::new()
                     }
                 };
-                if inspected.route == PdfRoute::Ocr {
+                if inspected.route == PdfRoute::Ocr
+                    || (ctx.options.pdf_force_ocr && ctx.ocr.is_some())
+                {
                     ctx.diagnostic(
                         "pdf_ocr_recommended",
                         &format!("Page inspection recommends OCR: {:?}.", inspected.reasons),

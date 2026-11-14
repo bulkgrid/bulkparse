@@ -3,6 +3,7 @@ name = "bulkparse-cli"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
 description = "Command line interface for BulkParse"
 
 [[bin]]
@@ -11,11 +12,11 @@ path = "src/main.rs"
 
 [features]
 default = []
-ocr = ["dep:bulkparse-ocr"]
+ocr = ["dep:bulkparse-ocr-native"]
 
 [dependencies]
 bulkparse = { workspace = true, features = ["docx", "pdf", "office"] }
 serde_json.workspace = true
 clap = { version = "4", features = ["derive"] }
 tempfile = "3"
-bulkparse-ocr = { path = "../bulkparse-ocr", version = "0.1.0", optional = true }
+bulkparse-ocr-native = { path = "../bulkparse-ocr-native", version = "0.1.0", optional = true }

@@ -48,6 +48,8 @@ Built in **Rust** by [Bulkgrid](https://bulkgrid.com). Use it from **Node.js, Py
 
 > **Developer preview:** build from source today. Package-registry releases and prebuilt binaries are not available yet. See [current scope](#current-scope) for extraction and platform coverage.
 
+Maintainers: [release pipelines and registry setup](docs/releases.md) cover npm, PyPI, crates.io, WebAssembly and CLI downloads.
+
 From a source checkout, with Rust installed:
 
 ```sh
@@ -324,14 +326,14 @@ Configurable limits cover input size, extracted text, nodes, depth, table cells,
 
 **Turn scanned pages into text your application can use, wherever you deploy it.** BulkParse integrates OCR into its PDF conversion pipeline, combining native extraction with OCR for pages the inspector identifies as candidates. Run the OCR-enabled Rust or CLI pipeline in your server environment or desktop workflow. Once configured, conversion invokes the backend for eligible pages and retains source-page information in the result.
 
-- 🔒 **Keep OCR in your deployment.** The RapidOCR / ONNX Runtime backend runs on CPU with explicitly installed models. You control where scans are processed; no hosted OCR API or API key is required.
+- 🔒 **Keep OCR in your deployment.** Rust OCR uses native ONNX Runtime on CPU with explicitly installed models. You control where scans are processed; no hosted OCR API or API key is required.
 - 🔍 **Route pages with built-in inspection.** Inspect native text, blank pages and OCR candidates, with reasons available to your application. Inspection also works independently of OCR through the CLI and language bindings.
-- ⚡ **Reuse models across requests.** Persistent workers retain loaded model sessions while the provider remains alive, avoiding repeated model loading. A new CLI invocation still pays the startup cost.
+- ⚡ **Reuse models across requests.** Reusable Rust providers retain loaded model sessions while the provider remains alive, avoiding repeated model loading. A new CLI invocation still pays the startup cost.
 - 🧭 **Keep the extraction evidence.** OCR results carry page references and line-level evidence in structured JSON, alongside coverage and diagnostics for downstream decisions.
 
-**Enable OCR:** [install the backend, provision its models and build with OCR support](backends/rapidocr/README.md). OCR is available through Rust and the OCR-enabled CLI `parse` command. It requires separate setup and is not bundled into the default build. CLI batch OCR, Node/Python/WASM OCR entry points and standalone image input are not implemented. RapidOCR extracts text lines; it does not reconstruct scanned tables.
+**Enable OCR:** [provision the native libraries and models](crates/bulkparse-ocr-native/README.md). Rust, Node and Python reuse native model sessions without a Python worker. The OCR-enabled CLI and native bindings accept scanned PDFs, PNG, JPEG, GIF, WebP and TIFF, including multiple frames. Layout and table models support headings, columns and scanned tables alongside conservative merged-cell rules. Recognition and complex cell assignments remain imperfect. WASM accepts OCR evidence from a browser or host engine; it does not bundle inference. CLI batch OCR is not implemented. See [binding APIs, setup and limits](docs/ocr-bindings.md).
 
-**Experimental structured OCR:** an optional [GLM-OCR layout-service adapter](backends/glmocr/README.md) accepts semantic regions, scanned tables with merged cells and LaTeX formulas through the same Rust/CLI pipeline. It requires a separately provisioned full GLM-OCR SDK server. Protocol, rendering and model-assembly tests are available; live GLM recognition quality remains unverified. [Reference evaluation](backends/glmocr/README.md#reference-evaluation).
+**Historical experimental adapter (not part of the native pipeline):** an optional [GLM-OCR layout-service adapter](backends/glmocr/README.md) demonstrates semantic regions, scanned tables with merged cells and LaTeX formulas through the historical process-provider crate. The native CLI does not accept its process configuration. It requires a separately provisioned full GLM-OCR SDK server. Protocol, rendering and model-assembly tests are available; live GLM recognition quality remains unverified. [Reference evaluation](backends/glmocr/README.md#reference-evaluation).
 
 [Inspection API](docs/pdf-inspection.md) · [OCR provider interface](docs/pdf-ocr.md) · [OCR engine benchmarks](#ocr-engine-comparison)
 

@@ -1,0 +1,513 @@
+[
+  {
+    "id": "ocr-blank",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.5918360829818994,
+    "status": "partial",
+    "nonempty": false,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_empty",
+      "pdf_no_text"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": null
+    }
+  },
+  {
+    "id": "ocr-columns",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.3311122499872,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "ocr-numbers",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.2562219998799264,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "ocr-prose",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.2469010839704424,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "ocr-swedish",
+    "track": "regression",
+    "language": "sv",
+    "seconds": 3.1525338338688016,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": false,
+      "word_error_rate": 0.1111111111111111,
+      "character_error_rate": 0.014925373134328358,
+      "exact_line_pair_order": 0.3333333333333333
+    }
+  },
+  {
+    "id": "ocr-two-pages",
+    "track": "regression",
+    "language": "en",
+    "seconds": 6.411403042031452,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "scan-only",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.1750013751443475,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "native-and-scan",
+    "track": "regression",
+    "language": "en",
+    "seconds": 3.168216499965638,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "english-clean",
+    "track": "authored_stress",
+    "language": "en",
+    "seconds": 3.2170599580276757,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "english-low-resolution",
+    "track": "authored_stress",
+    "language": "en",
+    "seconds": 3.2157809170894325,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "english-skew",
+    "track": "authored_stress",
+    "language": "en",
+    "seconds": 3.2190115831326693,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "english-noise",
+    "track": "authored_stress",
+    "language": "en",
+    "seconds": 3.232954709092155,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "swedish-a-clean",
+    "track": "authored_stress",
+    "language": "sv",
+    "seconds": 3.2293967499863356,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "swedish-a-low-resolution",
+    "track": "authored_stress",
+    "language": "sv",
+    "seconds": 3.212967083789408,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": false,
+      "word_error_rate": 0.045454545454545456,
+      "character_error_rate": 0.007633587786259542,
+      "exact_line_pair_order": 0.5
+    }
+  },
+  {
+    "id": "swedish-a-skew",
+    "track": "authored_stress",
+    "language": "sv",
+    "seconds": 3.266039207810536,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "swedish-a-noise",
+    "track": "authored_stress",
+    "language": "sv",
+    "seconds": 3.4704715830739588,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": false,
+      "word_error_rate": 0.045454545454545456,
+      "character_error_rate": 0.007633587786259542,
+      "exact_line_pair_order": 0.5
+    }
+  },
+  {
+    "id": "swedish-b-clean",
+    "track": "authored_stress",
+    "language": "sv",
+    "seconds": 3.3922552498988807,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "french-clean",
+    "track": "authored_stress",
+    "language": "fr",
+    "seconds": 3.347921999869868,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "german-clean",
+    "track": "authored_stress",
+    "language": "de",
+    "seconds": 3.3014259589836,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "spanish-clean",
+    "track": "authored_stress",
+    "language": "es",
+    "seconds": 3.321688750060275,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "danish-clean",
+    "track": "authored_stress",
+    "language": "da",
+    "seconds": 3.278997207991779,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "polish-clean",
+    "track": "authored_stress",
+    "language": "pl",
+    "seconds": 3.3090265840291977,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "turkish-clean",
+    "track": "authored_stress",
+    "language": "tr",
+    "seconds": 3.3003558330237865,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "chinese-clean",
+    "track": "authored_stress",
+    "language": "zh",
+    "seconds": 3.2671739161014557,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ],
+    "quality": {
+      "exact_after_whitespace": true,
+      "word_error_rate": 0.0,
+      "character_error_rate": 0.0,
+      "exact_line_pair_order": 1.0
+    }
+  },
+  {
+    "id": "ocr-test",
+    "track": "external_smoke",
+    "language": "unscored",
+    "seconds": 3.3735548339318484,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ]
+  },
+  {
+    "id": "sample-with-rotation-mismatch",
+    "track": "external_smoke",
+    "language": "unscored",
+    "seconds": 5.398270749952644,
+    "status": "partial",
+    "nonempty": true,
+    "diagnostics": [
+      "pdf_text_only",
+      "pdf_ocr_recommended",
+      "pdf_ocr_structure_inferred",
+      "pdf_ocr_applied"
+    ]
+  }
+]

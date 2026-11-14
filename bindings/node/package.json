@@ -8,14 +8,33 @@
   "files": [
     "index.cjs",
     "index.d.ts",
-    "*.node",
-    "README.md"
+    "platform.cjs",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses"
   ],
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "build": "node scripts/build.cjs",
-    "test": "node --test test/*.test.cjs"
+    "test": "node --test test/*.test.cjs",
+    "release:pack": "node ../../scripts/release/pack.mjs",
+    "release:test": "node ../../scripts/release/test-node-package.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bulkgrid/bulkparse.git",
+    "directory": "bindings/node"
+  },
+  "homepage": "https://github.com/bulkgrid/bulkparse",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "bulkparse": "bin/bulkparse.cjs",
+    "bulkparse-setup-ocr": "bin/setup-ocr.mjs"
   }
 }

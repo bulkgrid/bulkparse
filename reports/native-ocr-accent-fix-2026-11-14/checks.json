@@ -1,0 +1,16 @@
+{
+  "native_ocr_unit_tests": 18,
+  "node_tests": 10,
+  "python_tests": 8,
+  "binding_image_variants": 7,
+  "rust_clippy": "pass --workspace --all-targets --all-features -D warnings",
+  "models_changed": false,
+  "rendering_dpi_changed": false,
+  "additional_inference_passes": 0,
+  "cli_noisy_swedish": "pass",
+  "service_tests": 16,
+  "service_typecheck": "pass",
+  "service_lint": "pass",
+  "service_bundle_matches_tested_build": true,
+  "deployed": false
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "case": "swedish-a-noise",
+    "crop": "0.png",
+    "mode": "original",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Arets leverans går till Västerås."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "0.png",
+    "mode": "contrast",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Arets leverans går till Västerås."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "1.png",
+    "mode": "original",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Öppna dörren före klockan åtta."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "1.png",
+    "mode": "contrast",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Öppna dörren före klockan åtta."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "2.png",
+    "mode": "original",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Ärendet gäller blà och gröna lådor."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "2.png",
+    "mode": "contrast",
+    "range": [
+      68.0,
+      227.0
+    ],
+    "text": "Ärendet gäller blå och gröna lådor."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "3.png",
+    "mode": "original",
+    "range": [
+      67.0,
+      227.0
+    ],
+    "text": "Pris: 1 249,50 kr. Antal: 27."
+  },
+  {
+    "case": "swedish-a-noise",
+    "crop": "3.png",
+    "mode": "contrast",
+    "range": [
+      67.0,
+      227.0
+    ],
+    "text": "Pris: 1 249,50 kr. Antal: 27."
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "0.png",
+    "mode": "original",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Leveransrapport"
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "0.png",
+    "mode": "contrast",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Leveransrapport"
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "1.png",
+    "mode": "original",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Atta lådor anlände på måndagen."
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "1.png",
+    "mode": "contrast",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Atta lådor anlände på måndagen."
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "2.png",
+    "mode": "original",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Kontrollen är klar."
+  },
+  {
+    "case": "ocr-swedish",
+    "crop": "2.png",
+    "mode": "contrast",
+    "range": [
+      0.0,
+      255.0
+    ],
+    "text": "Kontrollen är klar."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "0.png",
+    "mode": "original",
+    "range": [
+      28.0,
+      255.0
+    ],
+    "text": "Arets leverans går till Västerås."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "0.png",
+    "mode": "contrast",
+    "range": [
+      28.0,
+      255.0
+    ],
+    "text": "Arets leverans går till Västerås."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "1.png",
+    "mode": "original",
+    "range": [
+      26.0,
+      255.0
+    ],
+    "text": "Öppna dörren före klockan åtta."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "1.png",
+    "mode": "contrast",
+    "range": [
+      26.0,
+      255.0
+    ],
+    "text": "Öppna dörren före klockan åtta."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "2.png",
+    "mode": "original",
+    "range": [
+      30.0,
+      255.0
+    ],
+    "text": "Ärendet gäller blå och gröna lådor."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "2.png",
+    "mode": "contrast",
+    "range": [
+      30.0,
+      255.0
+    ],
+    "text": "Ärendet gäller blå och gröna lådor."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "3.png",
+    "mode": "original",
+    "range": [
+      26.0,
+      255.0
+    ],
+    "text": "Pris: 1 249,50 kr. Antal: 27."
+  },
+  {
+    "case": "swedish-a-low-resolution",
+    "crop": "3.png",
+    "mode": "contrast",
+    "range": [
+      26.0,
+      255.0
+    ],
+    "text": "Pris: 1 249,50 kr. Antal: 27."
+  }
+]

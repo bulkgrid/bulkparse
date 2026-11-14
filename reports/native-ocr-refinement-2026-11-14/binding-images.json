@@ -1,0 +1,62 @@
+{
+  "note": "Synthetic smoke cases, not a quality or performance benchmark; first call includes initialization.",
+  "model_manifest_sha256": "3ea2c2700aac3907ab8496860007e16f1d430cde6cb941757cf6c82c1949ba19",
+  "results": [
+    {
+      "file": "table.png",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 717.362625,
+      "python_ms": 723.02370890975
+    },
+    {
+      "file": "table.jpg",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 352.79504199999997,
+      "python_ms": 357.3376671411097
+    },
+    {
+      "file": "table.gif",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 347.2116249999999,
+      "python_ms": 350.39633396081626
+    },
+    {
+      "file": "table.webp",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 345.49470900000006,
+      "python_ms": 358.56529185548425
+    },
+    {
+      "file": "table.tiff",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 344.45937500000014,
+      "python_ms": 351.8478339537978
+    },
+    {
+      "file": "two-frames.tiff",
+      "tables": 2,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 689.288583,
+      "python_ms": 692.3507081810385
+    },
+    {
+      "file": "table.pdf",
+      "tables": 1,
+      "all_expected_values": true,
+      "identical_node_python": true,
+      "node_ms": 732.145959,
+      "python_ms": 731.2712499406189
+    }
+  ]
+}

@@ -16,7 +16,13 @@ pub struct PdfOcrLine {
     pub confidence: f64,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(
+    tag = "type",
+    content = "value",
+    rename_all = "snake_case",
+    deny_unknown_fields
+)]
 pub enum PdfOcrOutput {
     Text(String),
     /// Semantic regions in provider reading order, validated before assembly.
@@ -147,7 +153,8 @@ pub(crate) fn blocks(
     }
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
+#[serde(default, deny_unknown_fields)]
 pub struct PdfOcrBudget {
     /// Maximum inspector-routed pages submitted, including failed calls.
     pub max_pages: usize,

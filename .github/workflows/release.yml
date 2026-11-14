@@ -1,0 +1,305 @@
+name: Release packages
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish this version (select its vX.Y.Z tag as the ref)'
+        type: boolean
+        default: false
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-22.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      publish: ${{ steps.version.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - id: version
+        run: python scripts/release/check.py
+        env:
+          RELEASE_PUBLISH: ${{ github.event_name == 'push' || inputs.publish }}
+      - run: python -m unittest discover -s scripts/release -p 'test_*.py'
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --all --check
+      - run: cargo test --locked -p bulkparse -p bulkparse-ocr -p bulkparse-ocr-native -p bulkparse-pool
+      - run: cargo clippy --locked --workspace --all-targets --all-features -- -D warnings
+      - run: cargo package --locked -p bulkparse
+
+  shared:
+    needs: validate
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - run: cargo install wasm-pack --locked
+      - run: npm run build --prefix bindings/wasm
+      - run: npm test --prefix bindings/wasm
+      - run: npm run test:package --prefix bindings/wasm
+      - run: npm run release:pack --prefix bindings/node -- shared
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npm-shared
+          path: dist/release/*.tgz
+          if-no-files-found: error
+
+  native:
+    needs: [validate, shared]
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            key: linux-x64-gnu
+          - os: ubuntu-22.04-arm
+            key: linux-arm64-gnu
+          - os: macos-15-intel
+            key: darwin-x64
+          - os: macos-14
+            key: darwin-arm64
+          - os: windows-2022
+            key: win32-x64-msvc
+    runs-on: ${{ matrix.os }}
+    env:
+      MACOSX_DEPLOYMENT_TARGET: '11.0'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - uses: dtolnay/rust-toolchain@stable
+      - run: npm run build --prefix bindings/node
+      - run: npm test --prefix bindings/node
+      - run: cargo build --locked --release -p bulkparse-cli --features ocr
+      - run: npm run release:pack --prefix bindings/node -- native
+      - uses: actions/download-artifact@v4
+        with:
+          name: npm-shared
+          path: dist/shared
+      - run: npm run release:test --prefix bindings/node -- ../../dist/release ../../dist/shared
+      - uses: actions/upload-artifact@v4
+        with:
+          name: native-${{ matrix.key }}
+          path: dist/release/*
+          if-no-files-found: error
+
+  wheels:
+    needs: validate
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            manylinux: '2_28'
+          - os: ubuntu-22.04-arm
+            target: aarch64-unknown-linux-gnu
+            manylinux: '2_28'
+          - os: macos-15-intel
+            target: x86_64-apple-darwin
+            manylinux: 'off'
+          - os: macos-14
+            target: aarch64-apple-darwin
+            manylinux: 'off'
+          - os: windows-2022
+            target: x86_64-pc-windows-msvc
+            manylinux: 'off'
+    runs-on: ${{ matrix.os }}
+    env:
+      MACOSX_DEPLOYMENT_TARGET: '11.0'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: PyO3/maturin-action@v1
+        with:
+          maturin-version: v1.11.5
+          target: ${{ matrix.target }}
+          manylinux: ${{ matrix.manylinux }}
+          args: --release --locked --manifest-path bindings/python/Cargo.toml --out dist/wheels
+      - name: Install wheel without building from source
+        shell: bash
+        run: |
+          python -m pip install --no-index --find-links dist/wheels --only-binary=:all: bulkparse
+      - run: python -m unittest discover -s bindings/python/tests
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wheel-${{ matrix.target }}
+          path: dist/wheels/*.whl
+          if-no-files-found: error
+
+  sdist:
+    needs: validate
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: dtolnay/rust-toolchain@stable
+      - run: python -m pip install maturin==1.11.5
+      - run: maturin sdist --manifest-path bindings/python/Cargo.toml --out dist/sdist
+      - name: Build and test the source archive, not the checkout
+        run: |
+          python -m pip install --no-deps dist/sdist/*.tar.gz
+          python -m unittest discover -s bindings/python/tests
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-sdist
+          path: dist/sdist/*.tar.gz
+          if-no-files-found: error
+
+  artifacts:
+    needs: [validate, shared, native, wheels, sdist]
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: npm-*
+          path: dist/release
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: native-*
+          path: dist/release
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wheel-*
+          path: dist/release
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: python-sdist
+          path: dist/release
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install twine
+      - run: python -m twine check dist/release/*.whl "dist/release/bulkparse-${VERSION}.tar.gz"
+        env:
+          VERSION: ${{ needs.validate.outputs.version }}
+      - run: python scripts/release/check-artifacts.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release
+          path: dist/release/*
+          if-no-files-found: error
+
+  npm:
+    needs: [artifacts, validate]
+    if: needs.validate.outputs.publish == 'true'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - run: npm install -g npm@11.12.1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+          path: dist/release
+      - name: Publish npm packages using trusted publishing
+        run: python scripts/release/publish.py npm
+
+  pypi:
+    needs: [artifacts, validate]
+    if: needs.validate.outputs.publish == 'true'
+    environment:
+      name: pypi
+      url: https://pypi.org/p/bulkparse
+    runs-on: ubuntu-22.04
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+          path: dist/release
+      - name: Select Python distributions
+        env:
+          VERSION: ${{ needs.validate.outputs.version }}
+        run: |
+          mkdir -p dist/python
+          cp dist/release/*.whl dist/python/
+          cp "dist/release/bulkparse-${VERSION}.tar.gz" dist/python/
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/python
+          skip-existing: true
+
+  crates:
+    needs: [artifacts, validate]
+    if: needs.validate.outputs.publish == 'true'
+    environment: crates
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      BOOTSTRAP_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: rust-lang/crates-io-auth-action@v1
+        id: auth
+        if: env.BOOTSTRAP_TOKEN == ''
+      - run: python scripts/release/publish.py crates
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token || secrets.CARGO_REGISTRY_TOKEN }}
+
+  github-release:
+    needs: [artifacts, validate, npm, pypi, crates]
+    if: needs.validate.outputs.publish == 'true'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+          path: dist/release
+      - name: Create release and attach checksummed downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --verify-tag --generate-notes
+          fi
+          gh release upload "$RELEASE_TAG" dist/release/* --clobber

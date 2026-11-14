@@ -1,0 +1,54 @@
+{
+  "files": {
+    "crates/bulkparse-ocr-native/src/headers.rs": "d8712d29a1863ef13db3838ae6fa00a24c9d403d770700bff9dfe67b7da1139c",
+    "crates/bulkparse-ocr-native/src/marks.rs": "6a53b230e904b059bf38be34025331d1952c82521c6da2403a231f3d7162a4b0",
+    "crates/bulkparse-ocr-native/src/layout.rs": "27a07d69d2a1d3e7b4455e8d33ad0834cf7d7d66dd21392c6feb1ebe8c09d207",
+    "crates/bulkparse-ocr-native/src/recognition.rs": "3c3bcf91648238a63b405b1cddcd2f1418b5d908c21340c4e53302cdc0505598",
+    "bindings/node/bulkparse.node": "a2beda1960b8036333f2747778e81ccb62cb773727540d7fb0e3f2607c6698a5",
+    "target/native-ocr/refinement/baseline/bulkparse.node": "0fa94ee52bc4fa106b9fcc9820781e8e70473b900917147bb61d5ba03433950d",
+    "target/native-ocr/provisioned/config.json": "7992bcc33a71f97ced70a6011a8eb332f4ca62d061e42b1450adc1d75cb7fd02",
+    "target/native-ocr/provisioned/models.json": "3ea2c2700aac3907ab8496860007e16f1d430cde6cb941757cf6c82c1949ba19",
+    "target/scan-parity/manifest.json": "a826693cdbadc519238d9e9a08b3613d81d805c1c20d555b665640ef5fb6261f",
+    "benchmarks/ocr-profiles/manifest.json": "443faad5202d32cae0ebc906157435b9f268ff0d6e9056753849fa839d5824f9",
+    "scripts/benchmark_native_migration.py": "56897305d5fa863a180315026df2880f85b0dad18a61c71af1bd516c9f281ae0",
+    "scripts/native_service_bench_worker.mjs": "b079e6aba2e074ccde1fc213831b430fbce95933e3d08469ef621c4e67f6c6a2",
+    "scripts/check_native_scans.py": "446d1a214a3d5458eebf3fbb6f607e8e1b5470696d0a7807dd38c047be734b2e"
+  },
+  "service_source_archive": {
+    "repository": "https://github.com/bulkgrid/bulkparse",
+    "base_commit": "ec0df97ae2301c2c35204fb7d62463bd850ba6fa",
+    "includes_uncommitted_changes": true,
+    "sha256": "8dee8ffe0962383bdc8a6518dc9ce541234b62ffd1e8f706f2d5d2946e4f7b90"
+  },
+  "models": {
+    "models": {
+      "det": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/PP-OCRv6_det_small.onnx",
+        "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+      },
+      "rec": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/PP-OCRv6_rec_small.onnx",
+        "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+      },
+      "cls": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/pp-lcnet_x0_25_textline_ori.onnx",
+        "sha256": "fb402220f39b183d64a68cd48d4bd53267a21354b6fc39370c2a83fbdad85b10"
+      }
+    },
+    "layout": {
+      "detector": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/pp-doclayout_plus-l.onnx",
+        "sha256": "b06cedc7ab3cca7da4ed66cf16024732149d2c29e6adcbfc69b9bb6ef94b4a48"
+      },
+      "table": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/slanet_plus.onnx",
+        "sha256": "3a96a71719247c5d94992fca31266b598c54740388de371f0c75077e2a9e0b55"
+      },
+      "dictionary": {
+        "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/native-ocr/provisioned/models/table_structure_dict_ch.txt",
+        "sha256": "68d344a84b726e043f390122240ff2b2ced2949b2a80ce9b61ae955054d190ef"
+      }
+    }
+  },
+  "worker_sha256": "2af2545fe3c0b054da6ce06b46393aecec7b109c76a148990fbb91f7605e5fb0"
+}

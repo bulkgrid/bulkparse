@@ -63,6 +63,8 @@ pub fn detect(
     };
     let signature = if bytes.starts_with(b"%PDF-") {
         Some(Format::Pdf)
+    } else if crate::is_image(bytes) {
+        Some(Format::Image)
     } else if office_signature.is_some() {
         office_signature
     } else if bytes.starts_with(b"PK\x03\x04") || bytes.starts_with(b"PK\x05\x06") {
@@ -97,6 +99,7 @@ pub fn detect(
     match selected {
         Some(
             Format::Pdf
+            | Format::Image
             | Format::Docx
             | Format::Xlsx
             | Format::Xlsb
@@ -138,6 +141,9 @@ pub fn recover(format: Format, bytes: &[u8], ctx: &mut Context<'_>) -> Result<Ve
 
 pub fn parse(format: Format, bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
     match format {
+        Format::Image => Err(Error::Unsupported(
+            "image input requires an OCR provider".into(),
+        )),
         Format::Text => text::parse(utf8(bytes)?, ctx, Default::default()),
         Format::Markdown => markdown::parse(utf8(bytes)?, ctx, Default::default()),
         Format::Csv | Format::Tsv => tabular::parse(bytes, format, ctx),

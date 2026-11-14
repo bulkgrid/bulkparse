@@ -99,7 +99,7 @@ pub(super) fn recognize(
     output_limit: usize,
     wire_limit: usize,
     deadline: Instant,
-) -> Result<PdfOcrOutput, Error> {
+) -> Result<(PdfOcrOutput, Option<u32>), Error> {
     let check = || {
         if request.cancellation.is_cancelled() {
             return Err(Error::Cancelled);

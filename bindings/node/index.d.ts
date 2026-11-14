@@ -11,7 +11,7 @@ export interface PdfInspection {
   schema_version: string; kind: PdfPageKind; page_count: number;
   pages: PdfPageInspection[]; pages_needing_ocr: number[];
 }
-export type Format = 'text' | 'markdown' | 'csv' | 'tsv' | 'notebook' | 'docx' | 'pdf' | 'xlsx' | 'xls' | 'xlsb' | 'pptx' | 'ppt' | 'odt' | 'ods' | 'odp' | 'epub' | 'rtf' | 'doc';
+export type Format = 'image' | 'text' | 'markdown' | 'csv' | 'tsv' | 'notebook' | 'docx' | 'pdf' | 'xlsx' | 'xls' | 'xlsb' | 'pptx' | 'ppt' | 'odt' | 'ods' | 'odp' | 'epub' | 'rtf' | 'doc';
 export interface OcrSource { image_size: [number, number]; quad: [[number, number], [number, number], [number, number], [number, number]]; confidence: number }
 export interface PdfRegionSource { image_size: [number, number]; bbox: [number, number, number, number]; order: number; label: string; confidence?: number }
 export interface Source { pdf_region?: PdfRegionSource; ocr?: OcrSource; page?: number; part?: string; cell?: number; row?: number; byte_range?: [number, number] }
@@ -26,7 +26,7 @@ export interface Limits {
   /** Native Markdown writer only; includes markup and empty cells. */
   max_markdown_bytes?: number;
 }
-export interface Options { extract_images?: boolean; export_images?: boolean; filename?: string; format?: Format; strict?: boolean; partial_on_limit?: boolean; pdf_normalize_unicode?: boolean; csv_has_headers?: boolean; csv_delimiter?: string; csv_encoding?: 'utf8' | 'utf16_le' | 'utf16_be' | 'windows1252'; limits?: Limits }
+export interface Options { extract_images?: boolean; export_images?: boolean; filename?: string; format?: Format; strict?: boolean; partial_on_limit?: boolean; pdf_normalize_unicode?: boolean; pdf_force_ocr?: boolean; csv_has_headers?: boolean; csv_delimiter?: string; csv_encoding?: 'utf8' | 'utf16_le' | 'utf16_be' | 'windows1252'; limits?: Limits }
 export type Inline = {type: 'text' | 'code'; text: string}
   | {type: 'math'; tex: string; display: boolean} | {type: 'anchor'; id: string}
   | {type: 'strong' | 'emphasis' | 'strike'; children: Inline[]}
@@ -60,3 +60,30 @@ export function parseFileToMarkdown(input: string, output: string, options?: Omi
 export function capabilities(): {format: Format; enabled: boolean; level: string; notes: string}[];
 
 export function inspectPdf(bytes: Uint8Array, options?: Options): Promise<PdfInspection>;
+
+export interface OcrBudget { max_pages?: number; max_output_bytes?: number }
+export interface OcrLine { text: string; quad: OcrSource['quad']; confidence: number }
+export interface OcrRegion {
+  order: number; bbox: [number, number, number, number]; label: string; confidence?: number;
+  content: {type: 'text'; text: string} | {type: 'heading'; level: number; text: string}
+    | {type: 'formula'; tex: string} | {type: 'figure'; description: string}
+    | {type: 'table'; rows: {text: string; col_span: number; row_span: number}[][]; header_rows: number};
+}
+export type OcrOutput = {type: 'text'; value: string}
+  | {type: 'lines'; value: {image_size: [number, number]; lines: OcrLine[]}}
+  | {type: 'regions'; value: {image_size: [number, number]; regions: OcrRegion[]}};
+export interface OcrPages { page_count: number; pages: {page: number; output: OcrOutput}[] }
+export function parseWithOcr(bytes: Uint8Array, evidence: OcrPages, options?: Options, budget?: OcrBudget): Promise<Conversion>;
+
+/** Trusted host configuration, never accepted from document/job input. */
+export interface OcrConfig {
+  models: string; onnxruntime_library: string; pdfium_library?: string; dpi?: number; max_pixels?: number;
+  page_timeout_ms?: number; document_timeout_ms?: number; max_input_bytes?: number; max_frames?: number; threads?: number;
+}
+export class OcrParser {
+  constructor(config: OcrConfig);
+  parse(bytes: Uint8Array, options?: Options, budget?: OcrBudget): Promise<Conversion>;
+  parseFile(path: string, options?: Options, budget?: OcrBudget): Promise<Conversion>;
+  /** Prevent new jobs; running jobs finish before native models are released. */
+  close(): void;
+}

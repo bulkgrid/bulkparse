@@ -3,6 +3,7 @@ name = "bulkparse"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
 description = "Portable document conversion with structured output and explicit diagnostics"
 
 [features]

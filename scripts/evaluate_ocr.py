@@ -60,9 +60,9 @@ def main():
     metadata={'created_utc':datetime.now(timezone.utc).isoformat(),'manifest_sha256':sha(manifest),
               'binary_sha256':sha(args.binary),'config':config,'models':models,
               'source_sha256':{str(p.relative_to(ROOT)):sha(p) for p in [
-                  ROOT/'Cargo.lock',ROOT/'crates/bulkparse-ocr/Cargo.toml',ROOT/'backends/rapidocr/rapidocr_backend.py',Path(__file__).resolve(),
-                  ROOT/'backends/rapidocr/environment-macos-arm64.txt',
-                  *sorted((ROOT/'crates/bulkparse-ocr').rglob('*.rs')),
+                  ROOT/'Cargo.lock',ROOT/'crates/bulkparse-ocr-native/Cargo.toml',Path(__file__).resolve(),
+                  ROOT/'scripts/provision_native_ocr.mjs',
+                  *sorted((ROOT/'crates/bulkparse-ocr-native').rglob('*.rs')),
                   ROOT/'crates/bulkparse/src/formats/pdf.rs',ROOT/'crates/bulkparse/src/ocr.rs',
                   ROOT/'crates/bulkparse/src/ocr/layout.rs',ROOT/'crates/bulkparse/src/model.rs',
                   ROOT/'scripts/check_ocr_results.py',ROOT/'crates/bulkparse-cli/src/main.rs']},
@@ -86,11 +86,15 @@ def main():
                     if case['id']=='native-and-scan' and block['source'].get('page')==1:
                         assert 'ocr' not in block['source']
                         continue
-                    evidence=block['source']['ocr']
-                    width,height=evidence['image_size']
-                    assert width>0 and height>0 and 0<=evidence['confidence']<=1
-                    assert len(evidence['quad'])==4
-                    assert all(0<=x<=width and 0<=y<=height for x,y in evidence['quad'])
+                    evidence=block['source'].get('ocr')
+                    if evidence:
+                        width,height=evidence['image_size']
+                        assert width>0 and height>0 and 0<=evidence['confidence']<=1
+                        assert len(evidence['quad'])==4
+                        assert all(0<=x<=width and 0<=y<=height for x,y in evidence['quad'])
+                    else:
+                        region=block['source']['pdf_region']
+                        assert region['bbox'][2]>region['bbox'][0] and region['bbox'][3]>region['bbox'][1]
             value=text(output)
             record={'id':case['id'],'profile':profile,'wall_seconds':elapsed,'status':output['status'],
                     'output_sha256':hashlib.sha256(value.encode()).hexdigest(),

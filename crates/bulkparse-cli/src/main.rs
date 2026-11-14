@@ -514,7 +514,7 @@ fn parse_with_ocr(
     std::fs::File::open(config)?
         .take(16 * 1024 + 1)
         .read_to_end(&mut settings)?;
-    let provider = bulkparse_ocr::ProcessOcr::from_json(&settings)?;
+    let provider = bulkparse_ocr_native::NativeOcr::from_json(&settings)?;
     let reader: Box<dyn Read> = if input == Path::new("-") {
         Box::new(io::stdin())
     } else {
@@ -524,11 +524,10 @@ fn parse_with_ocr(
     reader
         .take((parser.options.limits.max_input_bytes as u64).saturating_add(1))
         .read_to_end(&mut bytes)?;
-    parser.parse_with_pdf_ocr(
+    provider.parse_document(
+        parser,
         &bytes,
         input.file_name().and_then(|p| p.to_str()),
-        &bulkparse::CancellationToken::default(),
-        &provider,
         budget,
     )
 }

@@ -70,3 +70,67 @@ def parse_file_to_markdown(input: str | Path, output: str | Path, **options: Any
 
 
 __all__ = ["parse_file_to_markdown", "inspect_pdf", "parse", "parse_file", "capabilities", "BulkParseError"]
+
+
+def _ocr_call(call):
+    try:
+        return json.loads(call())
+    except ValueError as error:
+        try:
+            detail = json.loads(str(error))
+        except (ValueError, TypeError):
+            raise error
+        raise BulkParseError(detail["code"], detail["message"]) from error
+
+
+def _ocr_input(data, options):
+    if not isinstance(data, (bytes, bytearray)):
+        raise TypeError("data must be bytes or bytearray")
+    cap = options.get("limits", {}).get("max_input_bytes", 33554432)
+    if not isinstance(cap, int) or isinstance(cap, bool) or cap < 0:
+        raise ValueError("max_input_bytes must be a nonnegative integer")
+    if len(data) > cap:
+        raise BulkParseError("resource_limit", "resource limit exceeded: max_input_bytes")
+    return bytes(data)
+
+
+def parse_with_ocr(data: bytes, evidence: dict[str, Any], *, filename: str | None = None,
+                   budget: dict[str, int] | None = None, **options: Any) -> dict[str, Any]:
+    """Validate and assemble host-provided OCR evidence without loading an OCR engine."""
+    data = _ocr_input(data, options)
+    return _ocr_call(lambda: _native.parse_with_ocr_json(data, json.dumps(evidence), filename, json.dumps(options), json.dumps(budget or {})))
+
+
+class OcrParser:
+    """Own reusable Rust OCR models. Configuration must come from the trusted host."""
+    def __init__(self, config: dict[str, Any]):
+        try:
+            self._parser = _native.NativeOcrParser(json.dumps(config))
+        except ValueError as error:
+            detail = json.loads(str(error))
+            raise BulkParseError(detail["code"], detail["message"]) from error
+
+    def parse(self, data: bytes, *, filename: str | None = None,
+              budget: dict[str, int] | None = None, **options: Any) -> dict[str, Any]:
+        data = _ocr_input(data, options)
+        return _ocr_call(lambda: self._parser.parse_json(data, filename, json.dumps(options), json.dumps(budget or {})))
+
+    def parse_file(self, path: str | Path, *, budget: dict[str, int] | None = None, **options: Any) -> dict[str, Any]:
+        path = Path(path)
+        _ocr_input(b"", options)
+        with path.open("rb") as stream:
+            data = stream.read(options.get("limits", {}).get("max_input_bytes", 33554432) + 1)
+        filename = options.pop("filename", path.name)
+        return self.parse(data, filename=filename, budget=budget, **options)
+
+    def close(self) -> None:
+        self._parser.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_args):
+        self.close()
+
+
+__all__ += ["parse_with_ocr", "OcrParser"]
