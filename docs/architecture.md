@@ -1,44 +1,71 @@
 # BulkParse architecture
 
-The goal is high conversion quality at low operating cost. “10x better” is a benchmark target for defined workloads, not a property guaranteed by Rust or format count.
+BulkParse separates document parsing, output rendering, OCR and process supervision. Format readers and the shared document model live in Rust. The CLI and language bindings expose that implementation without maintaining separate parsers.
 
-## Present implementation
+## Workspace components
 
-The workspace contains a portable core, native CLI, three thin adapters, and an optional native process host. The core detects input, applies format-specific parsing, builds one typed document model, and renders Markdown or serializes JSON. Parsing logic stays in Rust; bindings move bytes, options, results, and errors.
+| Component | Responsibility |
+| --- | --- |
+| [`bulkparse`](../crates/bulkparse/src/lib.rs) | Format detection, readers, document model, PDF inspection, limits, diagnostics and Markdown rendering |
+| [`bulkparse-cli`](../crates/bulkparse-cli/) | File and directory commands, output files and OCR configuration |
+| [`bulkparse-ocr-native`](../crates/bulkparse-ocr-native/) | Native OCR orchestration, PDF rendering, image decoding, model-session reuse and scanned-table reconstruction |
+| [`bulkparse-ocr`](../crates/bulkparse-ocr/) | Optional supervised process provider implementing the core OCR contract |
+| [`bulkparse-pool`](../crates/bulkparse-pool/) | Optional bounded queue and persistent worker-process supervision |
+| [`bindings/node`](../bindings/node/) | Node.js API through N-API |
+| [`bindings/python`](../bindings/python/) | Python API through PyO3 |
+| [`bindings/wasm`](../bindings/wasm/) | Byte-based browser/WASM API and supplied OCR evidence |
 
-Detection prefers PDF/ZIP content signatures over a filename. Ambiguous text requires a filename or explicit format. Binary formats must match their signature. DOCX uses archive metadata and XML relationships without extracting files to disk. XML DTDs are disabled; package paths cannot escape the logical package root.
+The portable core does not depend on the CLI, process pool or native inference runtime. Its default features enable PDF, DOCX and Office readers; Rust callers can select a smaller feature set.
 
-The canonical model represents blocks, nested lists/quotes, inline formatting, tables, source locations, diagnostics and coverage. A generated JSON Schema comes from Rust types. TypeScript declarations currently mirror the model manually; generated declarations and cross-language golden tests are required before a stable release.
+## Parsing and output flow
 
-The native bindings enable DOCX/PDF. Node schedules work through N-API AsyncTask; Python detaches from the GIL. WASM uses the same core and exports byte-based conversion. No filesystem APIs are exported in WASM. Browser calls are synchronous inside the worker; transferring the input ArrayBuffer avoids one host-side copy, but the WASM boundary and output JSON still allocate.
+```mermaid
+flowchart TD
+    Input[Document bytes or file] --> Detect[Detect format and enforce limits]
+    Detect --> Readers[Format-specific Rust readers]
+    Detect --> Inspect[PDF page inspection]
+    Inspect --> Native[Native PDF text and layout]
+    Inspect --> OCR[Configured OCR provider for selected pages]
+    Native --> Model[Shared document model]
+    OCR --> Model
+    Readers --> Model
+    Model --> JSON[Structured JSON]
+    Model --> Markdown[Markdown renderer]
+    Readers --> Writer[Native Markdown writer path]
+    Writer --> Spool[Bounded output spool]
+    Spool --> File[Markdown output]
+```
 
-The CLI converts one file or processes a directory sequentially. It never starts a hidden process pool. Temporary output files are persisted without replacing existing files. Batch output includes original extensions to prevent collisions between `report.pdf` and `report.docx`.
+Content signatures and package metadata guide detection; filenames or explicit format options resolve ambiguous inputs. Readers interpret each format's structure and produce common blocks, inline formatting, lists, tables and source locations. Package readers validate paths and enforce limits on expanded content. The [format contracts](office-formats.md) describe what each reader preserves and where fidelity is limited.
 
-The separately selected [bulkparse-pool host](worker-pool.md) bounds waiting and active work, supervises persistent worker processes, and enforces deadlines/cancellation by terminating a child when necessary. Jobs receive a single terminal report; crashed work is not replayed automatically. Bulkgrid still owns upload authorization, durable queueing, retry policy, storage and deployment resource limits.
+Structured parsing retains the document model in memory. The convenience APIs can return that model together with rendered Markdown, diagnostics and PDF inspection results. JSON Schema is generated from the Rust types; the language wrappers expose the same serialized result contract.
 
-## Engine choices and competition
+## Markdown writing and memory
 
-| Project | Approach observed in reviewed source | Implication for BulkParse |
-| --- | --- | --- |
-| AnyDoc | Rust with format-specific extraction, ZIP/XML/CFB libraries, PDF path using pdf-inspector/lopdf; native and WASM adapters | Rust and bindings alone are not a differentiator |
-| Docling | Python orchestration; format backends such as python-docx, python-pptx, openpyxl; docling-parse PDF engine; optional layout/OCR pipelines | Mature document understanding is the quality baseline, especially for difficult PDFs |
-| BulkParse prototype | Rust semantic mapping over pulldown-cmark, csv, serde_json, zip/roxmltree and lopdf | Reuse low-level engines, own the common model, limits, diagnostics and host contract |
+The native [writer path](../crates/bulkparse/src/streaming.rs) avoids returning both a complete document model and a complete Markdown string when the caller only needs Markdown. CSV/TSV output releases records as they are processed. Spreadsheet readers release worksheets, and large worksheet XML uses bounded fragment storage. Other formats can still build a document model before rendering it.
 
-These observations describe the source reviewed, not a maintained current feature comparison. Links: [AnyDoc](https://github.com/firecrawl/anydoc), [Docling](https://github.com/docling-project/docling), [docling-parse](https://github.com/docling-project/docling-parse). Recheck specific versions before publishing comparative claims. License and distribution audits are required before distributing dependency bundles or models.
+Output first goes to a small memory spool that can spill to a temporary file. Parse errors, strict-mode rejection and recovery therefore do not publish stale output prefixes. Copying to an arbitrary caller-owned writer can still leave partial bytes if that final copy fails or is cancelled.
 
-## Design to develop next
+This is not constant-memory parsing: input bytes, an individual worksheet, structured API results, image assets and binding serialization can still require substantial memory. Complete in-memory JSON and streamed Markdown have different memory costs. Input, expanded data, page, node, cell and output limits remain explicit. Caller-supplied limits are honored; optional partial recovery reports incomplete coverage rather than silently claiming success.
 
-1. **Format-specific fidelity.** Resolve Office structure directly where available. Preserve headings, lists, formulas, tables and source references rather than flattening everything into text.
-2. **Selective expensive processing.** Add page-level PDF quality signals and optional OCR/layout backends. Process only pages needing them, with an explicit budget. Confidence thresholds require calibration against labeled data.
-3. **Bounded work.** Introduce streaming/event APIs where the format supports them, cancellation checkpoints, page limits and backpressure. Do not advertise streaming solely because input accepts a reader.
-4. **Small deployment profiles.** Keep expensive models, rendering engines and legacy format dependencies optional. Measure compressed WASM, installed package size, cold starts and peak RSS separately.
-5. **Visible conversion gaps.** Keep missing text, unsupported objects and renderer loss machine-readable. Distinguish extraction quality from presentation fidelity.
-6. **Host independence.** Bulkgrid handles storage, queues, retries, tenants and billing. The community library remains usable without a Bulkgrid account or network access.
+## PDF inspection and OCR
 
-## Measurement plan
+PDF inspection exposes page-level routing information before OCR. Native text and layout are parsed by the core. When OCR is configured, selected pages are passed through the OCR provider contract and their evidence is incorporated into the common document model. See [PDF inspection](pdf-inspection.md) for routing and classification limits.
 
-Use an openly licensed corpus with representative sizes and difficulty levels. Keep native-text PDFs, scans, tables, multi-column layouts, Office files and text formats separate. Pin all tool versions and settings. Compare equivalent output and quality, not a text extractor against an OCR pipeline under different requirements.
+The native provider handles scanned PDFs and standalone images. Rust code coordinates rendering, recognition and table reconstruction using PDFium and ONNX Runtime with configured model files. Long-lived OCR parser instances reuse model sessions across documents. This path does not require a Python worker.
 
-Record wall time (cold/warm p50/p95), CPU seconds, peak RSS, throughput at fixed concurrency, package size, extracted text accuracy, reading order, table structure and reported failures. Count partial and failed conversions in the results. Publish hardware, corpus hashes, raw measurements, commands and quality annotations. A 10x claim needs a named workload and equal or better measured quality. GPU-backed quality profiles must be compared and costed separately.
+WASM shares the core's parsing and OCR-evidence validation, but does not load the native inference libraries. A browser host must supply OCR evidence through the supported API. OCR does not automatically describe pictures or infer formulas as LaTeX. Configuration, validation and remaining limitations are documented in [OCR bindings validation](ocr-bindings-validation.md).
 
-Local [quality evaluations](holdout-evaluation.md), [persistent-worker comparisons](worker-benchmarks.md), and a [host lifecycle exercise](worker-pool.md) are available. Capability differences and workload limitations are recorded alongside the measurements; they do not establish general superiority or production readiness.
+## Bindings and execution
+
+Node.js schedules native parsing through N-API asynchronous tasks. Python releases the GIL during native work. WASM exposes synchronous byte-based operations, which a browser application can run in a Web Worker; it does not expose filesystem APIs. Crossing a binding boundary and serializing results can allocate additional memory.
+
+The CLI processes individual files or directories without starting a hidden process pool. Applications choose their own concurrency. The optional Rust [process pool](worker-pool.md) bounds queued and active work, reuses worker processes and enforces hard deadlines by terminating workers. A crashed or timed-out job is not automatically replayed. In-process cancellation remains cooperative.
+
+Storage, authentication, durable queues, retries and deployment resource limits belong to the host application. BulkParse can run in server applications, command-line workflows or browser workers without a Bulkgrid account.
+
+## Diagnostics and validation
+
+Results carry status, coverage and diagnostics alongside extracted content. Diagnostic categories distinguish missing-content evidence, formatting limitations and informational notices. Markdown rendering can add its own diagnostics. A nonempty result or a `complete` status is not an independent guarantee of visual fidelity.
+
+Rust tests cover format readers and parser behavior; binding checks compare serialized results across languages. Benchmark tooling is separate from the runtime. The [benchmark guide](../benchmarks/README.md) documents mixed-document coverage, PDF quality metrics, OCR measurements and before/after output, speed and memory checks. Performance claims belong with their measured workload and configuration, rather than in the architecture contract.
