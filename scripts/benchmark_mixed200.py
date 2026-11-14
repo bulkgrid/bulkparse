@@ -82,7 +82,7 @@ def main():
              ROOT/'benchmarks/multiformat/anydoc.rs', ROOT/'benchmarks/realworld/cpu.rs',
              ROOT/'benchmarks/realworld/comparison-2026-11-13.json', ROOT/'benchmarks/realworld/development-policy.json',
              ROOT/'benchmarks/realworld-failures/manifest.json', ROOT/'benchmarks/realworld-failures/expected.json']
-    paths += list((ROOT/'anydoc-main/src').rglob('*.rs')) + list((ROOT/'anydoc-main').glob('Cargo.*'))
+    paths += list((ROOT/'legacy/anydoc-main/src').rglob('*.rs')) + list((ROOT/'legacy/anydoc-main').glob('Cargo.*'))
     paths += list((ROOT/'benchmarks/multiformat/anydoc').glob('Cargo.*'))
     for p in paths:
         p = p.resolve()

@@ -12,3 +12,9 @@ reports/** -text
 *.docx binary
 *.xlsx binary
 *.pptx binary
+
+# Show implementation languages; keep development tooling and data out of the language bar.
+scripts/** -linguist-detectable
+benchmarks/** -linguist-detectable
+fixtures/** -linguist-detectable
+reports/** -linguist-detectable

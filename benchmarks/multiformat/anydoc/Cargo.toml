@@ -11,7 +11,7 @@ name = "anydoc-bench-worker"
 path = "../anydoc.rs"
 
 [dependencies]
-anydoc = { path = "../../../anydoc-main" }
+anydoc = { path = "../../../legacy/anydoc-main" }
 serde_json = "1"
 libc = "0.2"
 

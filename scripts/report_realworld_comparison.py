@@ -134,7 +134,7 @@ def main():
     assert checks['binary_sha256']==identity['binary_sha256']['bulkparse']
     assert read(RUN/'effective-options.json')['docling']['ready']
     docling_version = read(RUN/'effective-options.json')['docling']['versions']['docling']
-    anydoc_version = re.search(r'^version\s*=\s*"([^"]+)"',(ROOT/'anydoc-main/Cargo.toml').read_text(),re.M)[1]
+    anydoc_version = re.search(r'^version\s*=\s*"([^"]+)"',(ROOT/'legacy/anydoc-main/Cargo.toml').read_text(),re.M)[1]
     power_before = re.search(r'(\d+)%;',identity['power_before'])[1]
     power_after = re.search(r'(\d+)%;',verification['power_after'])[1]
     power_samples = [identity['power_before'], verification['power_after']]

@@ -14,7 +14,7 @@ name = "anydoc-bench-worker"
 path = "../native.rs"
 
 [dependencies]
-anydoc = { path = "../../../anydoc-main" }
+anydoc = { path = "../../../legacy/anydoc-main" }
 serde_json = "1"
 
 [profile.release]

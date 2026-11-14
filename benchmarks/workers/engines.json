@@ -33,8 +33,8 @@
       "benchmarks/workers/native.rs",
       "benchmarks/workers/anydoc/Cargo.toml",
       "benchmarks/workers/anydoc/Cargo.lock",
-      "anydoc-main/Cargo.toml",
-      "anydoc-main/Cargo.lock"
+      "legacy/anydoc-main/Cargo.toml",
+      "legacy/anydoc-main/Cargo.lock"
     ]
   },
   {

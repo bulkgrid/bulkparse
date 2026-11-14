@@ -11,7 +11,7 @@ const cases = ['hello.docx','hello.md','table.csv','notebook.ipynb','native-and-
 cases.push(['x.txt',Buffer.from('Plain text'),{}], ['x.tsv',Buffer.from('a\tb\nx\ty'),{}], ['x.csv',Buffer.from('a;b\n名称;😀','utf16le'),{csv_encoding:'utf16_le',csv_delimiter:';'}]);
 if (process.argv.includes('--pdf-corpus')) {
  for (const name of ['newspaper-00.pdf', 'elsevier-00.pdf', 'right_to_left_01.pdf']) {
-  cases.push([name, readFileSync(root + '/docling-main/tests/data/pdf/sources/' + name), {}]);
+  cases.push([name, readFileSync(root + '/legacy/docling-main/tests/data/pdf/sources/' + name), {}]);
  }
  cases.push(['ruled-table.pdf',readFileSync(root+'/fixtures/holdout/ruled-table.pdf'),{}]);
  cases.push(['arabic-mixed.pdf',readFileSync(root+'/fixtures/holdout/arabic-mixed.pdf'),{}]);
@@ -25,26 +25,26 @@ if (process.argv.includes('--office-corpus')) {
 }
 if (process.argv.includes('--table-layout-corpus')) {
  for (const name of [
-  'anydoc-main/tests/fixtures/rtf/handmade-bin.rtf',
-  'anydoc-main/tests/fixtures/rtf/handmade-merge.rtf',
-  'anydoc-main/tests/fixtures/rtf/text.rtf',
-  'anydoc-main/tests/fixtures/xlsb/handmade-sheet.xlsb',
-  'docling-main/tests/data/odf/sources/odf_presentation_01.odp',
-  'docling-main/tests/data/odf/sources/text_document_03.odt',
-  'docling-main/tests/data/pptx/sources/powerpoint_sample.pptx',
-  'docling-main/tests/data/pptx/sources/powerpoint_with_image.pptx',
+  'legacy/anydoc-main/tests/fixtures/rtf/handmade-bin.rtf',
+  'legacy/anydoc-main/tests/fixtures/rtf/handmade-merge.rtf',
+  'legacy/anydoc-main/tests/fixtures/rtf/text.rtf',
+  'legacy/anydoc-main/tests/fixtures/xlsb/handmade-sheet.xlsb',
+  'legacy/docling-main/tests/data/odf/sources/odf_presentation_01.odp',
+  'legacy/docling-main/tests/data/odf/sources/text_document_03.odt',
+  'legacy/docling-main/tests/data/pptx/sources/powerpoint_sample.pptx',
+  'legacy/docling-main/tests/data/pptx/sources/powerpoint_with_image.pptx',
  ]) cases.push([name,readFileSync(root+'/'+name),{}]);
 }
 if (process.argv.includes('--legacy-layout-corpus')) {
  for (const name of [
-  'anydoc-main/tests/fixtures/doc/text.doc',
-  'docling-main/tests/data/doc/sources/greek_heading_styles.doc',
-  'docling-main/tests/data/doc/sources/legacy_sample.doc',
-  'anydoc-main/tests/fixtures/ppt/handmade-multimaster.ppt',
-  'anydoc-main/tests/fixtures/ppt/pres.ppt',
-  'docling-main/tests/data/ppt/sources/legacy_sample.ppt',
-  'anydoc-main/tests/fixtures/rtf/handmade-cocoa.rtf',
-  'anydoc-main/tests/fixtures/rtf/text.rtf',
+  'legacy/anydoc-main/tests/fixtures/doc/text.doc',
+  'legacy/docling-main/tests/data/doc/sources/greek_heading_styles.doc',
+  'legacy/docling-main/tests/data/doc/sources/legacy_sample.doc',
+  'legacy/anydoc-main/tests/fixtures/ppt/handmade-multimaster.ppt',
+  'legacy/anydoc-main/tests/fixtures/ppt/pres.ppt',
+  'legacy/docling-main/tests/data/ppt/sources/legacy_sample.ppt',
+  'legacy/anydoc-main/tests/fixtures/rtf/handmade-cocoa.rtf',
+  'legacy/anydoc-main/tests/fixtures/rtf/text.rtf',
  ]) {
   if (!cases.some(([filename]) => filename === name)) cases.push([name,readFileSync(root+'/'+name),{}]);
  }

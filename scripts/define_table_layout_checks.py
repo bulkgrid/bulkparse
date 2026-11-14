@@ -8,7 +8,7 @@ def digest(b):return hashlib.sha256(b).hexdigest()
 def main():
  spec=json.loads((ROOT/'reports/multiformat-legacy-quality-2026-11-12/quality-checks.json').read_text())
  spec['scope']='The previous 54 selected checks are unchanged. Added table-content/layout and explicit-structure checks are development expectations derived from source records, not an independent holdout or whole-document score. Structure checks separately require retained nested-table/merge semantics; expanded flat Markdown can preserve content while failing those checks.'
- odt='docling-main/tests/data/odf/sources/text_document_03.odt';odp='docling-main/tests/data/odf/sources/odf_presentation_01.odp';ppt='docling-main/tests/data/pptx/sources/powerpoint_sample.pptx';pic='docling-main/tests/data/pptx/sources/powerpoint_with_image.pptx';rtf='anydoc-main/tests/fixtures/rtf/handmade-merge.rtf';xlsb='anydoc-main/tests/fixtures/xlsb/handmade-sheet.xlsb'
+ odt='legacy/docling-main/tests/data/odf/sources/text_document_03.odt';odp='legacy/docling-main/tests/data/odf/sources/odf_presentation_01.odp';ppt='legacy/docling-main/tests/data/pptx/sources/powerpoint_sample.pptx';pic='legacy/docling-main/tests/data/pptx/sources/powerpoint_with_image.pptx';rtf='legacy/anydoc-main/tests/fixtures/rtf/handmade-merge.rtf';xlsb='legacy/anydoc-main/tests/fixtures/xlsb/handmade-sheet.xlsb'
  def add(path,desc,patterns,parts=(),struct=False,evidence=''):
   source={'sha256':digest((ROOT/path).read_bytes()),'parts':list(parts),'evidence':evidence}
   if parts:

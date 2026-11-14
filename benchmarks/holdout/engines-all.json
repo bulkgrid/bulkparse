@@ -36,8 +36,8 @@
       0
     ],
     "pin_files": [
-      "anydoc-main/Cargo.toml",
-      "anydoc-main/Cargo.lock"
+      "legacy/anydoc-main/Cargo.toml",
+      "legacy/anydoc-main/Cargo.lock"
     ]
   },
   {

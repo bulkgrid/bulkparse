@@ -12,7 +12,7 @@
     "version": "0.2.4",
     "configuration": {"pipeline": "default pdf-inspector native extraction", "ocr": false},
     "success_exit_codes": [0],
-    "pin_files": ["anydoc-main/Cargo.toml", "anydoc-main/Cargo.lock"]
+    "pin_files": ["legacy/anydoc-main/Cargo.toml", "legacy/anydoc-main/Cargo.lock"]
   },
   {
     "name": "docling_native_layout",
@@ -20,7 +20,7 @@
     "version": "2.150.0 / docling-parse 7.23.0",
     "configuration": {"pipeline": "standard native PDF with learned layout", "ocr": false, "tables": false, "network": false},
     "success_exit_codes": [0],
-    "pin_files": ["scripts/benchmark_docling.py", "docling-main/uv.lock"],
+    "pin_files": ["scripts/benchmark_docling.py", "legacy/docling-main/uv.lock"],
     "pin_dirs": ["models/docling"]
   }
 ]

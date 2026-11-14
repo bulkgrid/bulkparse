@@ -33,7 +33,7 @@ def office_corpus():
     rows=json.loads((ROOT/'reports/multiformat-legacy-layout-2026-11-12/benchmark-final/manifest.json').read_text())
     rows=[r for r in rows if r['track']!='robustness']
     known={r['path'] for r in rows}
-    for p in sorted((ROOT/'anydoc-main/tests/fixtures/docx').glob('*.docx')):
+    for p in sorted((ROOT/'legacy/anydoc-main/tests/fixtures/docx').glob('*.docx')):
         name=str(p.relative_to(ROOT))
         if name not in known: rows.append(dict(path=name,sha256=sha256(p),format='docx',track='added-docx'))
     for i,r in enumerate(rows): r['id']=f'{i:03d}';assert sha256(ROOT/r['path'])==r['sha256']
@@ -42,9 +42,9 @@ def office_corpus():
 def freeze(out,cmds):
     sources=snapshot_sources(out)
     paths=list((ROOT/'benchmarks/broad').rglob('*'))
-    paths+=list((ROOT/'anydoc-main/src').rglob('*.rs'))+list((ROOT/'pdf-inspector-main/src').rglob('*.rs'))
-    paths+=list((ROOT/'pdf-inspector-main/external').rglob('*'))
-    for base in ['anydoc-main','pdf-inspector-main','benchmarks/multiformat/anydoc','benchmarks/same-machine/anydoc']:
+    paths+=list((ROOT/'legacy/anydoc-main/src').rglob('*.rs'))+list((ROOT/'legacy/pdf-inspector-main/src').rglob('*.rs'))
+    paths+=list((ROOT/'legacy/pdf-inspector-main/external').rglob('*'))
+    for base in ['legacy/anydoc-main','legacy/pdf-inspector-main','benchmarks/multiformat/anydoc','benchmarks/same-machine/anydoc']:
         paths+=list((ROOT/base).glob('Cargo.*'))+list((ROOT/base).glob('LICENSE*'))
     paths += [ROOT/'scripts'/n for n in ['benchmark_broad.py','worker_broad.py','worker_docling_broad_office.py','worker_docling_corpus.py','benchmark_same_machine.py']]
     paths += [ROOT/'benchmarks/same-machine/anydoc.rs',ROOT/'benchmarks/multiformat/anydoc.rs',ROOT/'crates/bulkparse/examples/office_bench.rs']

@@ -14,7 +14,7 @@ CPU includes worker and completed child CPU. macOS high-water RSS includes initi
 
 ## Reproduce
 
-The current measurement harness requires macOS, Rust, Python, Java where required by a configured converter, and installed CLI tools. Inspect `scripts/benchmark_realworld.py` and `scripts/worker_mixed200.py` for the expected executable paths. Provision the benchmark-only converter checkout used by `benchmarks/multiformat/anydoc/Cargo.toml` at `anydoc-main/`; its source hashes and package version are recorded in the results. Reference checkouts are ignored by Git.
+The current measurement harness requires macOS, Rust, Python, Java where required by a configured converter, and installed CLI tools. Inspect `scripts/benchmark_realworld.py` and `scripts/worker_mixed200.py` for the expected executable paths. Provision the benchmark-only converter checkout used by `benchmarks/multiformat/anydoc/Cargo.toml` at `legacy/anydoc-main/`; its source hashes and package version are recorded in the results. Reference checkouts are ignored by Git.
 
 Create isolated Python environments at `target/competitors/broad-venv`, `target/competitors/docling-venv` and `target/competitors/realworld-venv`. Install the corresponding `*-requirements.txt` files from the [run directory](../../reports/mixed-200-2026-11-13/run/). Provision the recorded Docling models separately using their upstream instructions and licenses; model hashes are in [model-manifest.json](../../reports/mixed-200-2026-11-13/model-manifest.json). Install Pandoc and LibreOffice at the paths expected by the worker, or adjust and record those paths.
 

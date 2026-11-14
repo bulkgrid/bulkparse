@@ -2,7 +2,7 @@
 
 BulkParse inspects every PDF page using its native Rust content walker. Conversion loads the PDF once and uses the same decoded page evidence for inspection, layout reconstruction and selective OCR routing. The inspection-only API skips layout reconstruction, rendering and inference. It still parses the PDF and decodes native text; it is not a constant-time file-header check.
 
-The design was informed by the supplied `pdf-inspector-main` source, particularly its separation of native extraction, page evidence, text quality and OCR routing. This is a BulkParse implementation on the existing `lopdf` dependency; it does not depend on the downloaded repository or copy its classifier, English-frequency heuristics or OCR runtime. No new dependencies or models were added.
+The design was informed by the supplied `legacy/pdf-inspector-main` source, particularly its separation of native extraction, page evidence, text quality and OCR routing. This is a BulkParse implementation on the existing `lopdf` dependency; it does not depend on the downloaded repository or copy its classifier, English-frequency heuristics or OCR runtime. No new dependencies or models were added.
 
 ## Use it
 

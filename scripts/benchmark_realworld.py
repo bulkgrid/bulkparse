@@ -54,7 +54,7 @@ def main():
  assert all(digest(ROOT/r['path'])==r['sha256'] for r in corpus)
  write(out/'manifest.json',corpus);cmds=commands();sources=snapshot_sources(out)
  paths=[ROOT/'scripts/benchmark_realworld.py',ROOT/'scripts/worker_realworld.py',ROOT/'crates/bulkparse/examples/office_bench.rs',ROOT/'benchmarks/multiformat/anydoc.rs',ROOT/'benchmarks/realworld/protocol.json']
- paths+=list((ROOT/'anydoc-main/src').rglob('*.rs'))+list((ROOT/'anydoc-main').glob('Cargo.*'))+list((ROOT/'benchmarks/multiformat/anydoc').glob('Cargo.*'))
+ paths+=list((ROOT/'legacy/anydoc-main/src').rglob('*.rs'))+list((ROOT/'legacy/anydoc-main').glob('Cargo.*'))+list((ROOT/'benchmarks/multiformat/anydoc').glob('Cargo.*'))
  for p in paths:
   name=str(p.relative_to(ROOT));sources[name]=digest(p);dest=out/'source-snapshot'/name;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)
  write(out/'source-manifest.json',sources)

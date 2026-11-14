@@ -32,7 +32,7 @@ python3 scripts/restore_holdout.py
 
 # Provision the pinned AnyDoc checkout separately, then build in isolation:
 CARGO_HOME="$PWD/target/competitors/cargo-home" cargo build --locked \
-  --manifest-path anydoc-main/Cargo.toml --release --example convert \
+  --manifest-path legacy/anydoc-main/Cargo.toml --release --example convert \
   --target-dir target/competitors/anydoc
 
 # Python 3.12 was used for the measured Docling environment.

@@ -1,7 +1,7 @@
 # BulkParse vs Firecrawl PDF Inspector — 10 November 2026
 
 We compared the local BulkParse implementation with the supplied Firecrawl
-`pdf-inspector-main` snapshot, package version 1.25.2. Inspection speed is similar.
+`legacy/pdf-inspector-main` snapshot, package version 1.25.2. Inspection speed is similar.
 BulkParse's native Markdown conversion is faster and uses less memory on this
 particular corpus. That is not evidence of universally better conversion quality.
 

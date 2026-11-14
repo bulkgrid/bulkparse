@@ -1,6 +1,6 @@
 # BulkParse vs Firecrawl PDF Inspector
 
-This benchmark uses the supplied `pdf-inspector-main` snapshot (package version
+This benchmark uses the supplied `legacy/pdf-inspector-main` snapshot (package version
 1.25.2) and BulkParse's current PDF-only core. It does not modify either engine.
 The benchmark adapters are separate workspaces; their lockfiles and source and
 binary hashes pin the experiment. The downloaded competitor source has no

@@ -12,14 +12,14 @@ def main():
  base=ROOT/'reports/multiformat-tables-layout-2026-11-12/benchmark-final'
  old={r['path']:r for r in json.loads((base/'bulkparse-pass-1.json').read_text())['documents']};new=json.loads((a.run/'bulkparse-pass-1.json').read_text())['documents']
  notes={
- 'anydoc-main/tests/fixtures/doc/text.doc':'Character-style NotBold override clears inherited bold; physical table edges/merge flags now produce one structured multirow table.',
- 'docling-main/tests/data/doc/sources/greek_heading_styles.doc':'Ignoring non-character table-style payloads restores legitimate paragraph heading properties.',
- 'docling-main/tests/data/doc/sources/legacy_sample.doc':'Recovered style metadata restores headings, italic caption, quote and bold table cells; table rows retain declared header/boundary information.',
- 'anydoc-main/tests/fixtures/ppt/handmade-multimaster.ppt':'Resolves each slide to its active master, preserving distinct bold/bullet and italic/unbulleted defaults.',
- 'anydoc-main/tests/fixtures/ppt/pres.ppt':'Paragraph style depths and bullet flags recover nested bullets.',
- 'docling-main/tests/data/ppt/sources/legacy_sample.ppt':'Local text-run emphasis and bullet structure recovered; original table cells still flatten to paragraphs.',
- 'anydoc-main/tests/fixtures/rtf/handmade-cocoa.rtf':'Escaped physical line endings create paragraphs; raw newlines stay insignificant.',
- 'anydoc-main/tests/fixtures/rtf/text.rtf':'Label-local pard/plain controls no longer replace the parent heading role.'}
+ 'legacy/anydoc-main/tests/fixtures/doc/text.doc':'Character-style NotBold override clears inherited bold; physical table edges/merge flags now produce one structured multirow table.',
+ 'legacy/docling-main/tests/data/doc/sources/greek_heading_styles.doc':'Ignoring non-character table-style payloads restores legitimate paragraph heading properties.',
+ 'legacy/docling-main/tests/data/doc/sources/legacy_sample.doc':'Recovered style metadata restores headings, italic caption, quote and bold table cells; table rows retain declared header/boundary information.',
+ 'legacy/anydoc-main/tests/fixtures/ppt/handmade-multimaster.ppt':'Resolves each slide to its active master, preserving distinct bold/bullet and italic/unbulleted defaults.',
+ 'legacy/anydoc-main/tests/fixtures/ppt/pres.ppt':'Paragraph style depths and bullet flags recover nested bullets.',
+ 'legacy/docling-main/tests/data/ppt/sources/legacy_sample.ppt':'Local text-run emphasis and bullet structure recovered; original table cells still flatten to paragraphs.',
+ 'legacy/anydoc-main/tests/fixtures/rtf/handmade-cocoa.rtf':'Escaped physical line endings create paragraphs; raw newlines stay insignificant.',
+ 'legacy/anydoc-main/tests/fixtures/rtf/text.rtf':'Label-local pard/plain controls no longer replace the parent heading role.'}
  reviews=[];tables=[];patch=[]
  for n in new:
   o=old[n['path']];p=parse(n['markdown']);tables.extend({'path':n['path'],**t} for t in p.tables)

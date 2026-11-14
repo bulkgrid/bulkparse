@@ -99,9 +99,9 @@ def snapshot(out, bulk_report, bulk_worker):
     assert sha256(bulk_worker) == read(bulk_report/'environment.json')['binary_sha256']
     paths = {ROOT/name for name in manifest}
     paths.update((ROOT/'bindings').rglob('*.d.ts'))
-    paths.update((ROOT/'anydoc-main/src').rglob('*.rs'))
-    paths.update((ROOT/'anydoc-main').glob('Cargo.*'))
-    paths.update((ROOT/'anydoc-main').glob('LICENSE*'))
+    paths.update((ROOT/'legacy/anydoc-main/src').rglob('*.rs'))
+    paths.update((ROOT/'legacy/anydoc-main').glob('Cargo.*'))
+    paths.update((ROOT/'legacy/anydoc-main').glob('LICENSE*'))
     paths.update((ROOT/'benchmarks/same-machine').rglob('*'))
     paths.update(ROOT/'scripts'/name for name in ['worker_docling_corpus.py', 'benchmark_same_machine.py',
                                                 'check_same_machine_results.py', 'test_same_machine_benchmark.py'])

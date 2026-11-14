@@ -12,7 +12,7 @@ are observed development cases, not an independent holdout.
 
 ## Reproduce in the BulkParse checkout
 
-1. Restore matching `anydoc-main` and `docling-main` reference trees. Verify the
+1. Restore matching `legacy/anydoc-main` and `legacy/docling-main` reference trees. Verify the
    paths and SHA-256 hashes in the final corpus manifest. The upstream fixtures
    are not bundled in the evidence archive. The original source hash snapshot
    and final source snapshot distinguish the implementation under test.

@@ -101,7 +101,7 @@ def main():
         'logical_cpus':os.cpu_count(),'repeats':args.repeats,'warmups_per_case_per_mode':1,
         'rayon_num_threads':1,'firecrawl_version':'1.25.2 supplied main snapshot; source digest, not verified Git revision',
         'bulkparse_source_sha256':source_hash(ROOT/'crates/bulkparse/src'),
-        'firecrawl_source_sha256':source_hash(ROOT/'pdf-inspector-main/src'),
+        'firecrawl_source_sha256':source_hash(ROOT/'legacy/pdf-inspector-main/src'),
         'harness_sha256':sha(__file__),'worker_source_sha256':sha(ROOT/'benchmarks/inspector-comparison/worker.rs'),
         'executables':{n:{'sha256':sha(p),'bytes':p.stat().st_size} for n,p in engines.items()},
         'locks':{n:sha(ROOT/f'benchmarks/inspector-comparison/{n}/Cargo.lock') for n in engines},

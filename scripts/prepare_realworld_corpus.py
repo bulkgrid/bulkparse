@@ -23,7 +23,7 @@ def main():
   if REPORT in p.parents or 'source-snapshot' in p.parts:continue
   if 'manifest' not in p.name and 'corpus' not in p.name:continue
   for h in re.findall(r'\b[a-f0-9]{64}\b',p.read_text(errors='replace')):prior.setdefault(h,str(p.relative_to(ROOT)))
- for folder in ['fixtures','anydoc-main/tests/fixtures','docling-main/tests/data']:
+ for folder in ['fixtures','legacy/anydoc-main/tests/fixtures','legacy/docling-main/tests/data']:
   for p in (ROOT/folder).rglob('*'):
    if p.is_file() and p.stat().st_size<16*1024*1024:prior.setdefault(sha(p.read_bytes()),str(p.relative_to(ROOT)))
  selected=[];excluded=[];used_pages=set();used_hash=set();used_packages=set();publishers=collections.Counter()

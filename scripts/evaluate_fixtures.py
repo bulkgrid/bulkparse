@@ -232,8 +232,8 @@ def summarize(results):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--anydoc', type=Path, default=ROOT / 'anydoc-main')
-    parser.add_argument('--docling', type=Path, default=ROOT / 'docling-main')
+    parser.add_argument('--anydoc', type=Path, default=ROOT / 'legacy/anydoc-main')
+    parser.add_argument('--docling', type=Path, default=ROOT / 'legacy/docling-main')
     parser.add_argument('--binary', type=Path, default=ROOT / 'target/release/bulkparse')
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--timeout', type=float, default=10)
