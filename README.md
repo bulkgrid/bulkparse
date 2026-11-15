@@ -111,13 +111,13 @@ Support means extraction is implemented, not that every feature of a format is r
 
 ### Overall engine comparison
 
-**Tested on 200 real-world documents across 19 formats and eight engines.** One measured pass per engine on an Apple M3 Max with 36 GiB RAM. BulkParse was measured November 14, 2026; the other engines November 13. OCR was disabled.
+**Tested on 200 real-world documents across 19 formats and eight engines.** One measured pass per engine on an Apple M3 Max with 36 GiB RAM. BulkParse was measured November 15, 2026; the other engines November 13. OCR was disabled.
 
-BulkParse’s row and per-format results use the ordinary-output pass from its [latest 200-document validation](reports/spreadsheet-speed-2026-11-14/README.md), following one excluded full-corpus warm-up. The other engines use the [eight-engine comparison run](reports/mixed-200-2026-11-13/README.md), which had no full-corpus warm-up. These were separate runs on the identical corpus, with different warm-up settings; they are not a simultaneous retest or a controlled speed ranking.
+BulkParse’s row and per-format results use its [latest 200-document run](reports/spreadsheet-speed-2026-11-14/no-warmup-2026-11-15/README.md). The other engines use the [eight-engine comparison run](reports/mixed-200-2026-11-13/README.md). Each row uses one sequential pass in a fresh worker without a full-corpus warm-up, measured on AC power. These are separate runs on the identical corpus.
 
 | Engine | Nonempty outputs | Formats with output | Median ms¹ | Attempt time s¹ | CPU s² | Peak RSS MiB³ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| BulkParse | 200/200 | 19/19 | 3.19 | 14.08 | 13.94 | 2,142.4 |
+| BulkParse | 200/200 | 19/19 | 3.05 | 13.89 | 13.71 | 1,976.4 |
 | AnyDoc | 185/200 | 15/19 | 5.27 | 13.72 | 13.67 | 2,615.8 |
 | Docling | 191/200 | 15/19 | 722.35 | 800.28 | ≥ 724.97 | ≥ 3,278.8 |
 | MarkItDown | 128/200 | 13/19 | 73.69 | 140.33 | 147.93 | 3,075.5 |
@@ -128,11 +128,11 @@ BulkParse’s row and per-format results use the ordinary-output pass from its [
 
 Nonempty output counts use all 200 documents as the denominator. Formats with output counts extensions with at least one nonempty result.
 
-¹ Unsupported means outside the configured adapter’s format profile, not the engine’s complete capability list. Failed attempts include unsupported variants within an attempted extension. Median is across nonempty outputs from one conversion per document. Attempt time includes failed attempts and excludes unsupported inputs. Each engine has a different successful subset: these totals and medians are **not an equal-workload ranking**. BulkParse excludes one full-corpus warm-up from timing; the other engines include first-use work after a small adapter preflight. No repeated measured passes were run. Worker startup is excluded, and required CLI launches are included. Engine order and OS cache effects are not averaged out in one pass.
+¹ Unsupported means outside the configured adapter’s format profile, not the engine’s complete capability list. Failed attempts include unsupported variants within an attempted extension. Median is across nonempty outputs from one conversion per document. Attempt time includes failed attempts and excludes unsupported inputs. Each engine has a different successful subset: these totals and medians are **not an equal-workload ranking**. Each displayed result uses one measured pass without a full-corpus warm-up. Worker startup is excluded, first-use work remains included, and required CLI launches are included. Engine order and OS cache effects are not averaged out in one pass.
 
 ² CPU includes the worker and completed child processes. “≥” means a killed worker prevented complete CPU accounting.
 
-³ macOS `/usr/bin/time -l` reports high-water RSS, including initialization, output transport, any warm-up and waited-for child-process peaks. It is **not the simultaneous sum of the process tree**. “≥” means killed workers may lack memory samples. Different workloads and model imports affect these values; no whole-system memory winner is claimed.
+³ macOS `/usr/bin/time -l` reports high-water RSS, including initialization, output transport and waited-for child-process peaks. It is **not the simultaneous sum of the process tree**. “≥” means killed workers may lack memory samples. Different workloads and model imports affect these values; no whole-system memory winner is claimed.
 
 **Quality review is pending.** Nonempty output measures coverage, not extraction accuracy. The planned assessment compares completeness, structure, formatting and cleanliness against source references on the same 40-document sample across engines. Overall scores will use equal format weights, with failed and unsupported inputs counted as zero; supported-only quality will be reported separately. This will be labelled assistant-reviewed, not independent blind judging. [Quality review protocol](benchmarks/realworld/README.md).
 
@@ -144,25 +144,25 @@ The same 200 documents and engine runs shown above underpin this breakdown. Cell
 
 | Format | BulkParse | AnyDoc | Docling | MarkItDown | Pandoc | Mammoth | LibreOffice | Unstructured |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| csv | 100%<br>0.49 ms | 100%<br>0.81 ms | 94.7%<br>11.49 ms | 89.5%<br>5.15 ms | 100%<br>54.74 ms | — | 94.7%<br>647.37 ms | 36.8%<br>58.08 ms |
-| doc | 100%<br>1.31 ms | 100%<br>1.00 ms | 100%<br>2,984.76 ms | — | — | — | 100%<br>792.97 ms | 100%<br>727.35 ms |
-| docm | 100%<br>2.25 ms | 100%<br>3.20 ms | 0%<br>— | 100%<br>73.62 ms | — | 100%<br>36.04 ms | 100%<br>707.77 ms | 0%<br>— |
-| docx | 100%<br>2.86 ms | 100%<br>2.67 ms | 100%<br>151.28 ms | 100%<br>117.17 ms | 100%<br>89.49 ms | 100%<br>36.89 ms | 100%<br>783.20 ms | 100%<br>46.38 ms |
-| epub | 100%<br>9.49 ms | 100%<br>16.12 ms | 100%<br>723.73 ms | 100%<br>131.81 ms | 100%<br>1,328.67 ms | — | — | 100%<br>7,143.06 ms |
+| csv | 100%<br>0.60 ms | 100%<br>0.81 ms | 94.7%<br>11.49 ms | 89.5%<br>5.15 ms | 100%<br>54.74 ms | — | 94.7%<br>647.37 ms | 36.8%<br>58.08 ms |
+| doc | 100%<br>1.37 ms | 100%<br>1.00 ms | 100%<br>2,984.76 ms | — | — | — | 100%<br>792.97 ms | 100%<br>727.35 ms |
+| docm | 100%<br>2.29 ms | 100%<br>3.20 ms | 0%<br>— | 100%<br>73.62 ms | — | 100%<br>36.04 ms | 100%<br>707.77 ms | 0%<br>— |
+| docx | 100%<br>2.74 ms | 100%<br>2.67 ms | 100%<br>151.28 ms | 100%<br>117.17 ms | 100%<br>89.49 ms | 100%<br>36.89 ms | 100%<br>783.20 ms | 100%<br>46.38 ms |
+| epub | 100%<br>8.83 ms | 100%<br>16.12 ms | 100%<br>723.73 ms | 100%<br>131.81 ms | 100%<br>1,328.67 ms | — | — | 100%<br>7,143.06 ms |
 | ipynb | 100%<br>0.37 ms | — | — | 100%<br>3.60 ms | 100%<br>77.10 ms | — | — | — |
-| md | 100%<br>0.34 ms | — | 100%<br>11.41 ms | 100%<br>3.95 ms | 100%<br>68.74 ms | — | — | 100%<br>23.85 ms |
-| odp | 100%<br>8.75 ms | 100%<br>12.63 ms | 100%<br>174.90 ms | — | — | — | 100%<br>1,511.46 ms | — |
-| ods | 100%<br>40.83 ms | 84.2%<br>15.30 ms | 94.7%<br>2,322.19 ms | — | — | — | 100%<br>2,047.78 ms | — |
-| odt | 100%<br>1.45 ms | 100%<br>1.83 ms | 100%<br>66.49 ms | — | 100%<br>69.59 ms | — | 100%<br>704.17 ms | 100%<br>242.39 ms |
-| pdf | 100%<br>8.51 ms | 100%<br>14.55 ms | 100%<br>1,421.60 ms | 100%<br>199.58 ms | — | — | — | 100%<br>231.64 ms |
-| ppt | 100%<br>1.23 ms | 100%<br>0.57 ms | 100%<br>901.47 ms | — | — | — | 100%<br>1,352.87 ms | 100%<br>816.31 ms |
-| pptx | 100%<br>9.15 ms | 100%<br>9.16 ms | 100%<br>2,517.39 ms | 100%<br>46.74 ms | — | — | 100%<br>5,809.23 ms | 100%<br>127.74 ms |
-| rtf | 100%<br>6.15 ms | 100%<br>12.14 ms | 100%<br>1,642.36 ms | — | 100%<br>252.28 ms | — | 100%<br>939.77 ms | 100%<br>429.80 ms |
-| tsv | 100%<br>1.61 ms | — | — | 100%<br>5.08 ms | 100%<br>188.32 ms | — | 100%<br>1,106.93 ms | 100%<br>333.08 ms |
-| txt | 100%<br>2.26 ms | — | — | 100%<br>10.89 ms | — | — | 100%<br>929.16 ms | 100%<br>3,793.67 ms |
-| xls | 100%<br>1.05 ms | 100%<br>1.73 ms | 100%<br>784.82 ms | 100%<br>39.43 ms | — | — | 100%<br>843.45 ms | 94.4%<br>74.63 ms |
-| xlsm | 100%<br>66.47 ms | 83.3%<br>39.02 ms | 100%<br>1,872.60 ms | 100%<br>3,006.90 ms | — | — | 83.3%<br>6,245.45 ms | 83.3%<br>1,924.59 ms |
-| xlsx | 100%<br>3.99 ms | 100%<br>7.39 ms | 100%<br>80.82 ms | 100%<br>139.09 ms | — | — | 94.4%<br>1,146.64 ms | 100%<br>216.88 ms |
+| md | 100%<br>0.35 ms | — | 100%<br>11.41 ms | 100%<br>3.95 ms | 100%<br>68.74 ms | — | — | 100%<br>23.85 ms |
+| odp | 100%<br>8.32 ms | 100%<br>12.63 ms | 100%<br>174.90 ms | — | — | — | 100%<br>1,511.46 ms | — |
+| ods | 100%<br>37.11 ms | 84.2%<br>15.30 ms | 94.7%<br>2,322.19 ms | — | — | — | 100%<br>2,047.78 ms | — |
+| odt | 100%<br>1.39 ms | 100%<br>1.83 ms | 100%<br>66.49 ms | — | 100%<br>69.59 ms | — | 100%<br>704.17 ms | 100%<br>242.39 ms |
+| pdf | 100%<br>8.92 ms | 100%<br>14.55 ms | 100%<br>1,421.60 ms | 100%<br>199.58 ms | — | — | — | 100%<br>231.64 ms |
+| ppt | 100%<br>1.13 ms | 100%<br>0.57 ms | 100%<br>901.47 ms | — | — | — | 100%<br>1,352.87 ms | 100%<br>816.31 ms |
+| pptx | 100%<br>9.10 ms | 100%<br>9.16 ms | 100%<br>2,517.39 ms | 100%<br>46.74 ms | — | — | 100%<br>5,809.23 ms | 100%<br>127.74 ms |
+| rtf | 100%<br>5.69 ms | 100%<br>12.14 ms | 100%<br>1,642.36 ms | — | 100%<br>252.28 ms | — | 100%<br>939.77 ms | 100%<br>429.80 ms |
+| tsv | 100%<br>1.56 ms | — | — | 100%<br>5.08 ms | 100%<br>188.32 ms | — | 100%<br>1,106.93 ms | 100%<br>333.08 ms |
+| txt | 100%<br>2.13 ms | — | — | 100%<br>10.89 ms | — | — | 100%<br>929.16 ms | 100%<br>3,793.67 ms |
+| xls | 100%<br>0.95 ms | 100%<br>1.73 ms | 100%<br>784.82 ms | 100%<br>39.43 ms | — | — | 100%<br>843.45 ms | 94.4%<br>74.63 ms |
+| xlsm | 100%<br>63.45 ms | 83.3%<br>39.02 ms | 100%<br>1,872.60 ms | 100%<br>3,006.90 ms | — | — | 83.3%<br>6,245.45 ms | 83.3%<br>1,924.59 ms |
+| xlsx | 100%<br>4.01 ms | 100%<br>7.39 ms | 100%<br>80.82 ms | 100%<br>139.09 ms | — | — | 94.4%<br>1,146.64 ms | 100%<br>216.88 ms |
 
 [Latest spreadsheet checks and identical-input timings](reports/spreadsheet-speed-2026-11-14/README.md) · [November 13 identical-input comparisons](reports/mixed-200-2026-11-13/README.md#identical-input-comparison) · [Detailed conversion outcomes](reports/mixed-200-2026-11-13/published-outcomes.json)
 

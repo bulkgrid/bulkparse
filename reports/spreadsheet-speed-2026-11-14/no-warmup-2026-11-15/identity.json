@@ -1,0 +1,47 @@
+{
+  "binary_sha256": {
+    "baseline": "8d569fbeab9ecd6ee71f4bb48c8ce9197c2851d32c48f43716410c273837c3a9",
+    "candidate": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b"
+  },
+  "binaries": {
+    "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/baseline-office-bench",
+    "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/candidate-office-bench"
+  },
+  "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+  "modes": [
+    "default"
+  ],
+  "passes": 1,
+  "warmup": 0,
+  "reverse_order": true,
+  "environment": {
+    "RAYON_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "memory": "macOS worker lifetime peak RSS, includes transport and warmup",
+  "client_date": "2026-11-15",
+  "timezone": "Europe/Stockholm",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "hardware": [
+    "Apple M3 Max",
+    "38654705664",
+    "14"
+  ],
+  "hardware_verified_in_session": true,
+  "build_order": [
+    "baseline",
+    "candidate"
+  ],
+  "baseline_revision": "1f758df54b9664d89844c4b2e6308591f55290eb",
+  "candidate_revision": "4ae29b0be7e1dbe8d58ac1b1ee6c06ee6548514b",
+  "original_harness_sha256": "33c47db1c500bf39c224afd9d700e7dd0881d2387ed3c044cf09e3390e0669c5",
+  "original_harness_settings_verified": true,
+  "original_historical_binary_available": false,
+  "harness_sha256": "f4a8d4357697d84a7715e02e1a83ee36396f2c49c83efdfd0844c66072697ec1",
+  "transport_sha256": "2ddd6c38c218cb636f87eda797410e538fdb7e1da57429683aa6d883eaf86049",
+  "ac_power_all_samples": true,
+  "source_and_binary_identity_reference": "../identity.json",
+  "publication_reason": "First completed final comparison after AC power was restored and monitored throughout; selected by power/configuration eligibility, not by memory outcome."
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "run": "no-warmup-2026-11-15",
+    "order": [
+      "candidate",
+      "baseline"
+    ],
+    "identity": {
+      "binary_sha256": {
+        "baseline": "8d569fbeab9ecd6ee71f4bb48c8ce9197c2851d32c48f43716410c273837c3a9",
+        "candidate": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/candidate-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "summary": {
+      "profiles": {
+        "default": {
+          "baseline": {
+            "median_corpus_seconds": 17.343707338,
+            "peak_rss_bytes": 2035089408,
+            "returned_each_pass": [
+              200
+            ]
+          },
+          "candidate": {
+            "median_corpus_seconds": 14.212880552,
+            "peak_rss_bytes": 2070151168,
+            "returned_each_pass": [
+              200
+            ]
+          }
+        }
+      },
+      "differences": [],
+      "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+    },
+    "resource_logs": {
+      "baseline": "       33.65 real        16.85 user         1.06 sys\n          2035089408  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              149273  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                5107  voluntary context switches\n                3324  involuntary context switches\n        312725946644  instructions retired\n         66527740267  cycles elapsed\n          1078118200  peak memory footprint\n",
+      "candidate": "       33.70 real        13.74 user         1.01 sys\n          2070151168  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              151342  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                5043  voluntary context switches\n                4874  involuntary context switches\n        254007458633  instructions retired\n         56253288730  cycles elapsed\n          1243760488  peak memory footprint\n"
+    },
+    "eligible_for_readme": false,
+    "reason": "Power switched between AC and battery during the preliminary checks; continuous AC power was not verified. Retained for transparency, excluded from published timing/memory claims."
+  },
+  {
+    "run": "no-warmup-original-order-2026-11-15",
+    "order": [
+      "baseline",
+      "candidate"
+    ],
+    "identity": {
+      "binary_sha256": {
+        "baseline": "8d569fbeab9ecd6ee71f4bb48c8ce9197c2851d32c48f43716410c273837c3a9",
+        "candidate": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/candidate-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": true,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "summary": {
+      "profiles": {
+        "default": {
+          "baseline": {
+            "median_corpus_seconds": 16.43836196,
+            "peak_rss_bytes": 2125234176,
+            "returned_each_pass": [
+              200
+            ]
+          },
+          "candidate": {
+            "median_corpus_seconds": 13.93188034,
+            "peak_rss_bytes": 2033926144,
+            "returned_each_pass": [
+              200
+            ]
+          }
+        }
+      },
+      "differences": [],
+      "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+    },
+    "resource_logs": {
+      "baseline": "       32.23 real        16.19 user         0.78 sys\n          2125234176  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              156023  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                4954  voluntary context switches\n                1971  involuntary context switches\n        312336787002  instructions retired\n         64874273492  cycles elapsed\n          1181255552  peak memory footprint\n",
+      "candidate": "       32.29 real        13.68 user         0.82 sys\n          2033926144  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              154262  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                4881  voluntary context switches\n                1204  involuntary context switches\n        253725252331  instructions retired\n         54588048698  cycles elapsed\n          1274021736  peak memory footprint\n"
+    },
+    "eligible_for_readme": false,
+    "reason": "Power switched between AC and battery during the preliminary checks; continuous AC power was not verified. Retained for transparency, excluded from published timing/memory claims."
+  }
+]

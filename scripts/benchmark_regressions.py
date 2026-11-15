@@ -38,6 +38,7 @@ def main():
     parser.add_argument('--modes', nargs='+', choices=MODES, default=list(MODES))
     parser.add_argument('--passes', type=int, default=1)
     parser.add_argument('--warmup', action='store_true')
+    parser.add_argument('--reverse-order', action='store_true', help='Reverse the alternating build order; without warm-up this runs the baseline first')
     args = parser.parse_args()
     if args.passes < 1:
         parser.error('--passes must be positive')
@@ -51,17 +52,20 @@ def main():
     write(out/'manifest.json', corpus)
     write(out/'identity.json', dict(binary_sha256=hashes, binaries={k:str(v) for k,v in binaries.items()},
           manifest_sha256=digest(args.manifest), modes=args.modes, passes=args.passes,
-          warmup=int(args.warmup), memory='macOS worker lifetime peak RSS, includes transport and warmup'))
+          warmup=int(args.warmup), reverse_order=args.reverse_order,
+          environment={key: '1' for key in ('RAYON_NUM_THREADS', 'OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS')},
+          memory='macOS worker lifetime peak RSS, includes transport and warmup'))
     changed, summaries = [], {}
     for mode in args.modes:
         samples = {name: [] for name in binaries}
         workers = {name: DocumentWorker([str(binary), *MODES[mode]], out/f'{mode}-{name}.log',
-                   dict(os.environ, RAYON_NUM_THREADS='1')) for name, binary in binaries.items()}
+                   dict(os.environ, RAYON_NUM_THREADS='1', OMP_NUM_THREADS='1',
+                        OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')) for name, binary in binaries.items()}
         try:
             for index in range(0 if args.warmup else 1, args.passes+1):
                 runs = {}
                 order = list(workers)
-                if index % 2:
+                if bool(index % 2) != args.reverse_order:
                     order.reverse()
                 for name in order:
                     rows = []

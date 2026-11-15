@@ -1,0 +1,37 @@
+{
+  "profiles": {
+    "default": {
+      "baseline": {
+        "median_corpus_seconds": 16.38024491,
+        "peak_rss_bytes": 2246819840,
+        "returned_each_pass": [
+          200
+        ],
+        "cpu_seconds": 16.213253000000012,
+        "median_document_ms": 3.041,
+        "nonempty_outputs": 200,
+        "formats_with_output": 19
+      },
+      "candidate": {
+        "median_corpus_seconds": 13.891990079,
+        "peak_rss_bytes": 2072363008,
+        "returned_each_pass": [
+          200
+        ],
+        "cpu_seconds": 13.713463000000038,
+        "median_document_ms": 3.046354,
+        "nonempty_outputs": 200,
+        "formats_with_output": 19
+      }
+    }
+  },
+  "differences": [],
+  "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes.",
+  "memory_comparison": {
+    "historical_peak_rss_bytes": 1975091200,
+    "candidate_vs_paired_baseline_percent": -7.764611514201336,
+    "candidate_vs_historical_percent": 4.924927416009961,
+    "interpretation": "The accepted AC-powered pair measured lower peak RSS after optimization. The current peak remains higher than the historical published run. These single-pass observations do not establish a persistent regression or isolate the cause of the historical difference."
+  },
+  "historical_outputs_unchanged": 200
+}

@@ -1,0 +1,55 @@
+{
+  "command": [
+    "python3",
+    "scripts/benchmark_regressions.py",
+    "--baseline-binary",
+    "target/spreadsheet-speed/baseline-office-bench",
+    "--candidate-binary",
+    "target/spreadsheet-speed/candidate-office-bench",
+    "--out",
+    "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/spreadsheet-speed/no-warmup-ac-2026-11-15",
+    "--modes",
+    "default",
+    "--reverse-order"
+  ],
+  "returncode": 0,
+  "samples": [
+    {
+      "elapsed_seconds": 0.01,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 5.026,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 10.039,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 15.055,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 20.069,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 25.085,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 30.1,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 35.122,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    },
+    {
+      "elapsed_seconds": 35.137,
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; finishing charge; (no estimate) present: true\n"
+    }
+  ],
+  "ac_power_all_samples": true
+}
