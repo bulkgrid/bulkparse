@@ -1,0 +1,26 @@
+{
+  "binary_sha256": {
+    "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+    "candidate": "4a33e911d476408a03df1af3e4e08e4f6b3836f1372df55f3ad65ce1fcb0138d"
+  },
+  "binaries": {
+    "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+    "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-office-bench"
+  },
+  "manifest_sha256": "477656bb212d9c87e5af54f4581d00dd74e3ed393060a75a0a72643b751a8aab",
+  "modes": [
+    "default",
+    "stream",
+    "json"
+  ],
+  "passes": 1,
+  "warmup": 0,
+  "reverse_order": false,
+  "environment": {
+    "RAYON_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+}

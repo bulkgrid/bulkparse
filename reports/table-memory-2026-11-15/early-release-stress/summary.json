@@ -1,0 +1,54 @@
+{
+  "profiles": {
+    "default": {
+      "baseline": {
+        "median_corpus_seconds": 0.112106124,
+        "peak_rss_bytes": 21987328,
+        "returned_each_pass": [
+          3
+        ]
+      },
+      "candidate": {
+        "median_corpus_seconds": 0.111952333,
+        "peak_rss_bytes": 25870336,
+        "returned_each_pass": [
+          3
+        ]
+      }
+    },
+    "stream": {
+      "baseline": {
+        "median_corpus_seconds": 0.111314333,
+        "peak_rss_bytes": 14286848,
+        "returned_each_pass": [
+          3
+        ]
+      },
+      "candidate": {
+        "median_corpus_seconds": 0.113910459,
+        "peak_rss_bytes": 14876672,
+        "returned_each_pass": [
+          3
+        ]
+      }
+    },
+    "json": {
+      "baseline": {
+        "median_corpus_seconds": 0.115997791,
+        "peak_rss_bytes": 24100864,
+        "returned_each_pass": [
+          3
+        ]
+      },
+      "candidate": {
+        "median_corpus_seconds": 0.110444874,
+        "peak_rss_bytes": 26542080,
+        "returned_each_pass": [
+          3
+        ]
+      }
+    }
+  },
+  "differences": [],
+  "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+}

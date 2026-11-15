@@ -4,7 +4,7 @@ Evidence supports the published comparisons and current parser regression checks
 
 - [Mixed documents](mixed-200-2026-11-13/README.md): 200 inputs, 19 formats, eight engines; coverage, speed and memory. Quality review is pending.
 - [PDF and OCR](broad-benchmark-2026-11-12/README.md): annotated PDF extraction and a separate multilingual OCR comparison.
-- [Current BulkParse validation](spreadsheet-speed-2026-11-14/no-warmup-2026-11-15/README.md): the native row used in the README, measured without warm-up on AC power, with 200/200 unchanged outputs.
+- [Current BulkParse validation](table-memory-2026-11-15/README.md): table allocation profiles and three fresh-worker checks without warm-up on AC power, with 200/200 unchanged Markdown and JSON outputs. The README displays the best of the three ordinary-output runs.
 
 These directories contain input manifests, settings, versions, hashes, timing records and scored measurements. Authored OCR inputs are included. Downloaded documents, extracted third-party text, model weights, binaries, duplicate source snapshots and obsolete runs are excluded.
 

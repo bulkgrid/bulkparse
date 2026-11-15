@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="#quick-start">Quick start</a> ·
+  <a href="#agent-skill">Agent skill</a> ·
   <a href="#supported-formats">Formats</a> ·
   <a href="#benchmarks">Benchmarks</a> ·
   <a href="#use-your-language">APIs</a> ·
@@ -87,6 +88,28 @@ resolved image references and the export summary lists saved files. PDF image
 export is not supported. Images are not interpreted automatically. See
 [image support and limits](docs/images.md).
 
+## Agent skill
+
+Use the [`bulkparse-markdown`](skills/bulkparse-markdown/SKILL.md) skill to let a
+coding agent convert documents or entire folders to Markdown with BulkParse.
+It covers CLI setup, partial-result diagnostics, PDF inspection, optional OCR,
+and output verification.
+
+From this source checkout, install it with the
+[Skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add ./skills/bulkparse-markdown
+```
+
+Choose your coding agent when prompted. The skill supplies instructions; build
+the BulkParse CLI separately using the [quick start](#quick-start).
+
+Example request:
+
+> Use bulkparse-markdown to convert ./documents to Markdown in ./converted and
+> report any files with incomplete extraction.
+
 ## Supported formats
 
 The default build enables the native PDF, DOCX and Office readers.
@@ -111,13 +134,13 @@ Support means extraction is implemented, not that every feature of a format is r
 
 ### Overall engine comparison
 
-**Tested on 200 real-world documents across 19 formats and eight engines.** One measured pass per engine on an Apple M3 Max with 36 GiB RAM. BulkParse was measured November 15, 2026; the other engines November 13. OCR was disabled.
+**Tested on 200 real-world documents across 19 formats and eight engines.** One full-corpus pass displayed per engine on an Apple M3 Max with 36 GiB RAM. BulkParse was measured November 15, 2026; the other engines November 13. OCR was disabled.
 
-BulkParse’s row and per-format results use its [latest 200-document run](reports/spreadsheet-speed-2026-11-14/no-warmup-2026-11-15/README.md). The other engines use the [eight-engine comparison run](reports/mixed-200-2026-11-13/README.md). Each row uses one sequential pass in a fresh worker without a full-corpus warm-up, measured on AC power. These are separate runs on the identical corpus.
+BulkParse’s row and per-format results use its [latest 200-document run](reports/table-memory-2026-11-15/README.md). The other engines use the [eight-engine comparison run](reports/mixed-200-2026-11-13/README.md). Each displayed row uses one sequential pass in a fresh worker without a full-corpus warm-up, measured on AC power. BulkParse shows the best of three checks—the same run had the lowest peak memory and fastest corpus time; all three are in the linked report. Other engines use one measured pass. These are separate runs on the identical corpus.
 
 | Engine | Nonempty outputs | Formats with output | Median ms¹ | Attempt time s¹ | CPU s² | Peak RSS MiB³ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| BulkParse | 200/200 | 19/19 | 3.05 | 13.89 | 13.71 | 1,976.4 |
+| BulkParse | 200/200 | 19/19 | 3.26 | 13.84 | 13.74 | 1,693.5 |
 | AnyDoc | 185/200 | 15/19 | 5.27 | 13.72 | 13.67 | 2,615.8 |
 | Docling | 191/200 | 15/19 | 722.35 | 800.28 | ≥ 724.97 | ≥ 3,278.8 |
 | MarkItDown | 128/200 | 13/19 | 73.69 | 140.33 | 147.93 | 3,075.5 |
@@ -144,25 +167,25 @@ The same 200 documents and engine runs shown above underpin this breakdown. Cell
 
 | Format | BulkParse | AnyDoc | Docling | MarkItDown | Pandoc | Mammoth | LibreOffice | Unstructured |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| csv | 100%<br>0.60 ms | 100%<br>0.81 ms | 94.7%<br>11.49 ms | 89.5%<br>5.15 ms | 100%<br>54.74 ms | — | 94.7%<br>647.37 ms | 36.8%<br>58.08 ms |
-| doc | 100%<br>1.37 ms | 100%<br>1.00 ms | 100%<br>2,984.76 ms | — | — | — | 100%<br>792.97 ms | 100%<br>727.35 ms |
-| docm | 100%<br>2.29 ms | 100%<br>3.20 ms | 0%<br>— | 100%<br>73.62 ms | — | 100%<br>36.04 ms | 100%<br>707.77 ms | 0%<br>— |
-| docx | 100%<br>2.74 ms | 100%<br>2.67 ms | 100%<br>151.28 ms | 100%<br>117.17 ms | 100%<br>89.49 ms | 100%<br>36.89 ms | 100%<br>783.20 ms | 100%<br>46.38 ms |
-| epub | 100%<br>8.83 ms | 100%<br>16.12 ms | 100%<br>723.73 ms | 100%<br>131.81 ms | 100%<br>1,328.67 ms | — | — | 100%<br>7,143.06 ms |
-| ipynb | 100%<br>0.37 ms | — | — | 100%<br>3.60 ms | 100%<br>77.10 ms | — | — | — |
-| md | 100%<br>0.35 ms | — | 100%<br>11.41 ms | 100%<br>3.95 ms | 100%<br>68.74 ms | — | — | 100%<br>23.85 ms |
-| odp | 100%<br>8.32 ms | 100%<br>12.63 ms | 100%<br>174.90 ms | — | — | — | 100%<br>1,511.46 ms | — |
-| ods | 100%<br>37.11 ms | 84.2%<br>15.30 ms | 94.7%<br>2,322.19 ms | — | — | — | 100%<br>2,047.78 ms | — |
-| odt | 100%<br>1.39 ms | 100%<br>1.83 ms | 100%<br>66.49 ms | — | 100%<br>69.59 ms | — | 100%<br>704.17 ms | 100%<br>242.39 ms |
-| pdf | 100%<br>8.92 ms | 100%<br>14.55 ms | 100%<br>1,421.60 ms | 100%<br>199.58 ms | — | — | — | 100%<br>231.64 ms |
-| ppt | 100%<br>1.13 ms | 100%<br>0.57 ms | 100%<br>901.47 ms | — | — | — | 100%<br>1,352.87 ms | 100%<br>816.31 ms |
-| pptx | 100%<br>9.10 ms | 100%<br>9.16 ms | 100%<br>2,517.39 ms | 100%<br>46.74 ms | — | — | 100%<br>5,809.23 ms | 100%<br>127.74 ms |
-| rtf | 100%<br>5.69 ms | 100%<br>12.14 ms | 100%<br>1,642.36 ms | — | 100%<br>252.28 ms | — | 100%<br>939.77 ms | 100%<br>429.80 ms |
-| tsv | 100%<br>1.56 ms | — | — | 100%<br>5.08 ms | 100%<br>188.32 ms | — | 100%<br>1,106.93 ms | 100%<br>333.08 ms |
-| txt | 100%<br>2.13 ms | — | — | 100%<br>10.89 ms | — | — | 100%<br>929.16 ms | 100%<br>3,793.67 ms |
-| xls | 100%<br>0.95 ms | 100%<br>1.73 ms | 100%<br>784.82 ms | 100%<br>39.43 ms | — | — | 100%<br>843.45 ms | 94.4%<br>74.63 ms |
-| xlsm | 100%<br>63.45 ms | 83.3%<br>39.02 ms | 100%<br>1,872.60 ms | 100%<br>3,006.90 ms | — | — | 83.3%<br>6,245.45 ms | 83.3%<br>1,924.59 ms |
-| xlsx | 100%<br>4.01 ms | 100%<br>7.39 ms | 100%<br>80.82 ms | 100%<br>139.09 ms | — | — | 94.4%<br>1,146.64 ms | 100%<br>216.88 ms |
+| csv | 100%<br>0.49 ms | 100%<br>0.81 ms | 94.7%<br>11.49 ms | 89.5%<br>5.15 ms | 100%<br>54.74 ms | — | 94.7%<br>647.37 ms | 36.8%<br>58.08 ms |
+| doc | 100%<br>1.43 ms | 100%<br>1.00 ms | 100%<br>2,984.76 ms | — | — | — | 100%<br>792.97 ms | 100%<br>727.35 ms |
+| docm | 100%<br>2.55 ms | 100%<br>3.20 ms | 0%<br>— | 100%<br>73.62 ms | — | 100%<br>36.04 ms | 100%<br>707.77 ms | 0%<br>— |
+| docx | 100%<br>2.91 ms | 100%<br>2.67 ms | 100%<br>151.28 ms | 100%<br>117.17 ms | 100%<br>89.49 ms | 100%<br>36.89 ms | 100%<br>783.20 ms | 100%<br>46.38 ms |
+| epub | 100%<br>9.53 ms | 100%<br>16.12 ms | 100%<br>723.73 ms | 100%<br>131.81 ms | 100%<br>1,328.67 ms | — | — | 100%<br>7,143.06 ms |
+| ipynb | 100%<br>0.46 ms | — | — | 100%<br>3.60 ms | 100%<br>77.10 ms | — | — | — |
+| md | 100%<br>0.39 ms | — | 100%<br>11.41 ms | 100%<br>3.95 ms | 100%<br>68.74 ms | — | — | 100%<br>23.85 ms |
+| odp | 100%<br>8.44 ms | 100%<br>12.63 ms | 100%<br>174.90 ms | — | — | — | 100%<br>1,511.46 ms | — |
+| ods | 100%<br>39.18 ms | 84.2%<br>15.30 ms | 94.7%<br>2,322.19 ms | — | — | — | 100%<br>2,047.78 ms | — |
+| odt | 100%<br>1.44 ms | 100%<br>1.83 ms | 100%<br>66.49 ms | — | 100%<br>69.59 ms | — | 100%<br>704.17 ms | 100%<br>242.39 ms |
+| pdf | 100%<br>8.70 ms | 100%<br>14.55 ms | 100%<br>1,421.60 ms | 100%<br>199.58 ms | — | — | — | 100%<br>231.64 ms |
+| ppt | 100%<br>0.87 ms | 100%<br>0.57 ms | 100%<br>901.47 ms | — | — | — | 100%<br>1,352.87 ms | 100%<br>816.31 ms |
+| pptx | 100%<br>8.73 ms | 100%<br>9.16 ms | 100%<br>2,517.39 ms | 100%<br>46.74 ms | — | — | 100%<br>5,809.23 ms | 100%<br>127.74 ms |
+| rtf | 100%<br>5.91 ms | 100%<br>12.14 ms | 100%<br>1,642.36 ms | — | 100%<br>252.28 ms | — | 100%<br>939.77 ms | 100%<br>429.80 ms |
+| tsv | 100%<br>1.93 ms | — | — | 100%<br>5.08 ms | 100%<br>188.32 ms | — | 100%<br>1,106.93 ms | 100%<br>333.08 ms |
+| txt | 100%<br>2.33 ms | — | — | 100%<br>10.89 ms | — | — | 100%<br>929.16 ms | 100%<br>3,793.67 ms |
+| xls | 100%<br>1.05 ms | 100%<br>1.73 ms | 100%<br>784.82 ms | 100%<br>39.43 ms | — | — | 100%<br>843.45 ms | 94.4%<br>74.63 ms |
+| xlsm | 100%<br>67.69 ms | 83.3%<br>39.02 ms | 100%<br>1,872.60 ms | 100%<br>3,006.90 ms | — | — | 83.3%<br>6,245.45 ms | 83.3%<br>1,924.59 ms |
+| xlsx | 100%<br>3.97 ms | 100%<br>7.39 ms | 100%<br>80.82 ms | 100%<br>139.09 ms | — | — | 94.4%<br>1,146.64 ms | 100%<br>216.88 ms |
 
 [Latest spreadsheet checks and identical-input timings](reports/spreadsheet-speed-2026-11-14/README.md) · [November 13 identical-input comparisons](reports/mixed-200-2026-11-13/README.md#identical-input-comparison) · [Detailed conversion outcomes](reports/mixed-200-2026-11-13/published-outcomes.json)
 
@@ -350,6 +373,7 @@ BulkParse is ready to evaluate and build against, with these boundaries:
 | Start here | Details |
 | --- | --- |
 | [Architecture](docs/architecture.md) | Core, document model and language bindings |
+| [Agent skill](skills/bulkparse-markdown/SKILL.md) | Document-to-Markdown workflow for coding agents |
 | [Format contracts](docs/office-formats.md) | Office/EPUB capabilities and remaining gaps |
 | [Implementation notes](docs/implementation-notes.md) | Detailed scope, options and limits |
 | [PDF inspection](docs/pdf-inspection.md) | Page classification and OCR routing |

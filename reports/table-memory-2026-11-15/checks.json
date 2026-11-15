@@ -1,0 +1,47 @@
+{
+  "tests": {
+    "passed": true,
+    "test_count": 291,
+    "tail": [
+      "",
+      "   Doc-tests bulkparse",
+      "",
+      "running 0 tests",
+      "",
+      "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      ""
+    ]
+  },
+  "clippy": {
+    "passed": true,
+    "test_count": 0,
+    "tail": [
+      "    Checking bulkparse v0.1.0 (/Users/erikhemberg/Code/bulkgrid/bulkparse/crates/bulkparse)",
+      "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6.67s"
+    ]
+  },
+  "wasm": {
+    "passed": true,
+    "test_count": 0,
+    "tail": [
+      "   |            ^^^^^^^^^",
+      "...",
+      "84 |     pub fn table_end(&mut self, native: bool) -> io::Result<()> {",
+      "   |            ^^^^^^^^^",
+      "",
+      "warning: `bulkparse` (lib) generated 5 warnings",
+      "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.08s"
+    ]
+  },
+  "harness-tests": {
+    "passed": true,
+    "test_count": 0,
+    "tail": [
+      "......",
+      "----------------------------------------------------------------------",
+      "Ran 6 tests in 0.167s",
+      "",
+      "OK"
+    ]
+  }
+}

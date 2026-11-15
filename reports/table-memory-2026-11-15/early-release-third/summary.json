@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "default": {
+      "baseline": {
+        "median_corpus_seconds": 13.940906798,
+        "peak_rss_bytes": 2035482624,
+        "returned_each_pass": [
+          200
+        ]
+      },
+      "candidate": {
+        "median_corpus_seconds": 13.842851668,
+        "peak_rss_bytes": 1775730688,
+        "returned_each_pass": [
+          200
+        ]
+      }
+    }
+  },
+  "differences": [],
+  "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+}

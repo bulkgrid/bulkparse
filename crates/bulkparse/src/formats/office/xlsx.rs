@@ -862,6 +862,31 @@ pub(super) fn parse_output(
                 );
             }
         }
+        #[allow(unused_mut)]
+        let mut fragment_formatting = false;
+        #[allow(unused_mut)]
+        let mut fragment_visual = false;
+        #[cfg(not(target_arch = "wasm32"))]
+        if let Some(parts) = &row_parts {
+            fragment_formatting = parts.formatting;
+            fragment_visual = parts.visual;
+        }
+        let formatting = doc.descendants().any(|n| {
+            matches!(n.tag_name().name(), "hyperlinks" | "conditionalFormatting") || named(n, "r")
+        }) || !formats.is_empty()
+            || fragment_formatting;
+        let visual = doc.descendants().any(|n| {
+            matches!(
+                n.tag_name().name(),
+                "drawing" | "legacyDrawing" | "oleObjects" | "extLst"
+            )
+        }) || fragment_visual;
+        // Row fragments and the metadata DOM are no longer needed. Release
+        // them before allocating the returned table, including on the DOM path.
+        drop(doc);
+        drop(source);
+        #[cfg(not(target_arch = "wasm32"))]
+        drop(row_parts);
         let table = table_output_with(
             grid,
             merges,
@@ -903,29 +928,10 @@ pub(super) fn parse_output(
         for block in extras(&mut pkg, &path, &src, ctx)? {
             super::emit(&mut out, block, &mut output)?;
         }
-        #[allow(unused_mut)]
-        let mut fragment_formatting = false;
-        #[allow(unused_mut)]
-        let mut fragment_visual = false;
-        #[cfg(not(target_arch = "wasm32"))]
-        if let Some(parts) = &row_parts {
-            fragment_formatting = parts.formatting;
-            fragment_visual = parts.visual;
-        }
-        if doc.descendants().any(|n| {
-            matches!(n.tag_name().name(), "hyperlinks" | "conditionalFormatting") || named(n, "r")
-        }) || !formats.is_empty()
-            || fragment_formatting
-        {
+        if formatting {
             warn(ctx,"xlsx_formatting","Cell values, emphasis and hyperlinks retained; visual styles and conditional display rules remain incomplete.",&src);
         }
-        if doc.descendants().any(|n| {
-            matches!(
-                n.tag_name().name(),
-                "drawing" | "legacyDrawing" | "oleObjects" | "extLst"
-            )
-        }) || fragment_visual
-        {
+        if visual {
             warn(
                 ctx,
                 "xlsx_visual_content",

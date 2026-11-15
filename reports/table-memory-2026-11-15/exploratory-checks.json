@@ -1,0 +1,358 @@
+{
+  "direct-rows-check": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "6ee2f884b7c5b56943008087adfb28eb8ca13c8873c37129ad454f53af63c21b"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/direct-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": true,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.066335793,
+          "peak_rss_bytes": 2135949312,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.072623086,
+          "peak_rss_bytes": 1750990848,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "direct-confirmation-a": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "6ee2f884b7c5b56943008087adfb28eb8ca13c8873c37129ad454f53af63c21b"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/direct-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": false,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.041260246,
+          "peak_rss_bytes": 1705361408,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 13.713343586,
+          "peak_rss_bytes": 2073231360,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "direct-confirmation-b": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "6ee2f884b7c5b56943008087adfb28eb8ca13c8873c37129ad454f53af63c21b"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/direct-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": true,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 13.831062088,
+          "peak_rss_bytes": 2041577472,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 13.688880712,
+          "peak_rss_bytes": 1864744960,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "validation": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "4dc8dc4feaf04a6fa3b17c6c66d167f91edfaac71a0fa10ac530d0fb42f4625d"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/candidate-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default",
+        "stream",
+        "json"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": true,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.017246009,
+          "peak_rss_bytes": 2015576064,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 13.874485206,
+          "peak_rss_bytes": 2207973376,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      },
+      "stream": {
+        "baseline": {
+          "median_corpus_seconds": 14.49081321,
+          "peak_rss_bytes": 572555264,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.696146365,
+          "peak_rss_bytes": 603619328,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      },
+      "json": {
+        "baseline": {
+          "median_corpus_seconds": 14.227235749,
+          "peak_rss_bytes": 2050408448,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.281274742,
+          "peak_rss_bytes": 2019508224,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "confirmation": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "4dc8dc4feaf04a6fa3b17c6c66d167f91edfaac71a0fa10ac530d0fb42f4625d"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/candidate-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": false,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.210378614,
+          "peak_rss_bytes": 2032156672,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.088263876,
+          "peak_rss_bytes": 2284896256,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "reuse-first": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "276f77ebbecc22dfbc743a4be0c6bc38331a20ac5e3bcccb82dde8fd7d39c13a"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/reuse-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": true,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.261735449,
+          "peak_rss_bytes": 2043592704,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 13.673026663,
+          "peak_rss_bytes": 2076852224,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "reuse-reverse": {
+    "identity": {
+      "binary_sha256": {
+        "baseline": "bf796bcd22b7308ab831ac78dbe4d956547f4255ced0e4b46299e782b0492c0b",
+        "candidate": "276f77ebbecc22dfbc743a4be0c6bc38331a20ac5e3bcccb82dde8fd7d39c13a"
+      },
+      "binaries": {
+        "baseline": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "candidate": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/reuse-office-bench"
+      },
+      "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+      "modes": [
+        "default"
+      ],
+      "passes": 1,
+      "warmup": 0,
+      "reverse_order": false,
+      "environment": {
+        "RAYON_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "memory": "macOS worker lifetime peak RSS, includes transport and warmup"
+    },
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 14.162357376,
+          "peak_rss_bytes": 1977450496,
+          "returned_each_pass": [
+            200
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 13.572720291,
+          "peak_rss_bytes": 2125299712,
+          "returned_each_pass": [
+            200
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  }
+}

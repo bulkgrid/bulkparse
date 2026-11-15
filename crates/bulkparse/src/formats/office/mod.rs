@@ -391,6 +391,9 @@ pub(super) fn table_output_with(
         }
     }
     if output.is_none() {
+        if merges.is_empty() {
+            return build_unmerged_values(grid, src, ctx, decorate);
+        }
         let mut cells = BTreeMap::new();
         for (position, text) in grid {
             let source = Source {
@@ -447,6 +450,91 @@ pub(super) fn table_output_with(
         TableOutput { output, prefix },
         decorate,
     )
+}
+
+/// Build the final rows directly from ordered values. An intermediate tree of
+/// allocated paragraphs otherwise overlaps the table and leaves many small
+/// allocations for the system allocator to retain between documents.
+fn build_unmerged_values(
+    grid: BTreeMap<(u32, u32), String>,
+    src: &Source,
+    ctx: &mut Context<'_>,
+    mut decorate: impl FnMut(&mut [Cell], &mut Context<'_>) -> Result<(), Error>,
+) -> Result<Option<Block>, Error> {
+    let Some((&(minr, _), _)) = grid.first_key_value() else {
+        return Ok(None);
+    };
+    let maxr = grid.last_key_value().unwrap().0 .0;
+    let (mut minc, mut maxc) = (u32::MAX, 0);
+    let mut first_id = None;
+    // Preserve paragraph IDs and text/node error order before charging cells.
+    // Materialization below uses these reserved IDs without charging twice.
+    for (&(_, c), text) in &grid {
+        minc = minc.min(c);
+        maxc = maxc.max(c);
+        if !text.is_empty() {
+            ctx.text(text)?;
+            let id = ctx.reserve_block()?;
+            first_id.get_or_insert(id);
+        }
+    }
+    let height = (maxr - minr + 1) as usize;
+    let width = (maxc - minc + 1) as usize;
+    ctx.account_cells(height * width)?;
+    let mut values = grid.into_iter().peekable();
+    let mut next_id = first_id.unwrap_or(0);
+    let mut rows = Vec::with_capacity(height);
+    for r in minr..=maxr {
+        ctx.check()?;
+        let mut row = Vec::with_capacity(width);
+        for c in minc..=maxc {
+            ctx.check()?;
+            let source = Source {
+                row: Some(r),
+                cell: Some(c),
+                ..src.clone()
+            };
+            let text = if values.peek().is_some_and(|(p, _)| *p == (r, c)) {
+                values.next().unwrap().1
+            } else {
+                String::new()
+            };
+            let blocks = if text.is_empty() {
+                Vec::new()
+            } else {
+                let block = Block {
+                    id: crate::block_id(next_id),
+                    source: source.clone(),
+                    content: BlockContent::Paragraph {
+                        inlines: vec![Inline::text(text)],
+                    },
+                };
+                next_id += 1;
+                vec![block]
+            };
+            row.push(Cell {
+                blocks,
+                row_span: 1,
+                col_span: 1,
+                source,
+            });
+        }
+        rows.push(row);
+    }
+    drop(values);
+    let mut table = ctx.block(
+        BlockContent::Table {
+            rows,
+            header_rows: 0,
+        },
+        src.clone(),
+    )?;
+    if let BlockContent::Table { rows, .. } = &mut table.content {
+        for row in rows {
+            decorate(row, ctx)?;
+        }
+    }
+    Ok(Some(table))
 }
 
 /// Consume ordered unmerged values directly. No second tree of pending cells is
@@ -998,6 +1086,81 @@ pub fn parse(format: Format, bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<
 mod table_budget_tests {
     use super::*;
     use crate::{CancellationToken, Options};
+
+    #[test]
+    fn direct_rows_preserve_sparse_cells_ids_and_decoration_order() {
+        let source = Source {
+            part: Some("sheet".into()),
+            ..Default::default()
+        };
+        for grid in [
+            BTreeMap::new(),
+            BTreeMap::from([((2, 3), String::new())]),
+            BTreeMap::from([
+                ((2, 3), "Å 東京".into()),
+                ((2, 5), String::new()),
+                ((4, 4), "tail".into()),
+            ]),
+        ] {
+            let options = Options::default();
+            let cancel = CancellationToken::default();
+            let mut direct = Context::new(&options, &cancel);
+            let mut reference = Context::new(&options, &cancel);
+            for ctx in [&mut direct, &mut reference] {
+                para("before".into(), &source, ctx).unwrap();
+            }
+            let decorate = |row: &mut [Cell], ctx: &mut Context<'_>| {
+                let cell = row.last_mut().unwrap();
+                cell.blocks.push(para("note".into(), &cell.source, ctx)?);
+                Ok(())
+            };
+            let actual = table_output_with(
+                grid.clone(),
+                vec![],
+                &source,
+                &mut direct,
+                None,
+                None,
+                decorate,
+            )
+            .unwrap();
+            let mut cells = BTreeMap::new();
+            for (position, text) in grid {
+                let src = Source {
+                    row: Some(position.0),
+                    cell: Some(position.1),
+                    ..source.clone()
+                };
+                let blocks = if text.is_empty() {
+                    vec![]
+                } else {
+                    vec![para(text, &src, &mut reference).unwrap()]
+                };
+                cells.insert(position, blocks);
+            }
+            let expected = structured_table_output_with(
+                cells,
+                vec![],
+                &source,
+                &mut reference,
+                0,
+                TableOutput {
+                    output: None,
+                    prefix: None,
+                },
+                decorate,
+            )
+            .unwrap();
+            assert_eq!(
+                serde_json::to_value(actual).unwrap(),
+                serde_json::to_value(expected).unwrap()
+            );
+            assert_eq!(
+                direct.reserve_block().unwrap(),
+                reference.reserve_block().unwrap()
+            );
+        }
+    }
 
     #[test]
     fn merged_grid_limits_include_both_cells_and_merge_extent() {

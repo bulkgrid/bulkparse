@@ -1,0 +1,11 @@
+{
+  "baseline_revision": "d433537a86a9701a41f741bcc553edf5cb9e402c",
+  "candidate_source_sha256": {
+    "crates/bulkparse/src/formats/office/mod.rs": "ca73b5f92a804912a23d697c2cef5b7e964ba7387987a8d733664a92ed7e6d00",
+    "crates/bulkparse/src/formats/office/xlsx.rs": "0eaf8ee0cc8cdd7644325391af79df84f42c0ddf942a6228af5c4827ce81a5a2"
+  },
+  "manifest_sha256": "ee87f05406f23ee97ada53276e8e055cf8e8cc4f2ff490aa47318737b6ace87e",
+  "platform": "Apple M3 Max, 36 GiB RAM, macOS",
+  "candidate_features": "release office_bench, default features; OCR disabled",
+  "profile_note": "Counted System allocator is diagnostic, not the benchmark binary. RSS is lifetime worker high-water memory including transport. Cumulative allocated bytes are not live memory."
+}

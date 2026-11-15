@@ -1,0 +1,250 @@
+{
+  "steps": [
+    {
+      "command": [
+        "python3",
+        "scripts/benchmark_regressions.py",
+        "--baseline-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "--candidate-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-office-bench",
+        "--out",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-validation",
+        "--modes",
+        "default",
+        "stream",
+        "json",
+        "--reverse-order"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/benchmark_regressions.py",
+        "--baseline-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "--candidate-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-office-bench",
+        "--out",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-reverse",
+        "--modes",
+        "default"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/benchmark_regressions.py",
+        "--baseline-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "--candidate-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-office-bench",
+        "--out",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-third",
+        "--modes",
+        "default",
+        "--reverse-order"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/benchmark_regressions.py",
+        "--baseline-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/baseline-office-bench",
+        "--candidate-binary",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-office-bench",
+        "--out",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/early-release-stress",
+        "--manifest",
+        "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/stress/stress-manifest.json"
+      ],
+      "returncode": 0
+    }
+  ],
+  "samples": [
+    {
+      "seconds": 0.002378499833866954,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 5.016609916929156,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 10.032641624798998,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 15.044274542015046,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 20.058661624789238,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 25.073775791795924,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 30.089507999829948,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 35.10382462479174,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 40.116501207929105,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 45.129006541799754,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 50.14417270780541,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 55.159200166817755,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 60.17377858282998,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 65.18864624993876,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 70.19953341688961,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 75.21180395781994,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 80.22584054199979,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 85.24007204198278,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 90.25398233300075,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 95.26474166684784,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 100.27903854195029,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 105.29238345799968,
+      "stage": "early-release-validation",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 106.24941291683353,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 111.26463308301754,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 116.27989291679114,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 121.29125058301724,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 126.3049436667934,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 131.31927862484008,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 136.33390983287245,
+      "stage": "early-release-reverse",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 136.80656241695397,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 141.82181120780297,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 146.83638008288108,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 151.85055779200047,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 156.8653361669276,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 161.88050954183564,
+      "stage": "early-release-third",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    },
+    {
+      "seconds": 166.87322091683745,
+      "stage": "early-release-stress",
+      "state": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22675555)\t100%; charged; 0:00 remaining present: true\n"
+    }
+  ]
+}

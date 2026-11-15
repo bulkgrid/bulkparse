@@ -1,0 +1,23 @@
+[
+  {
+    "id": "plain",
+    "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/stress/stress-inputs/plain.xlsx",
+    "sha256": "3ac19b09e32eb99195d5a38cb7fff325ecbf9b3be7e1ef5aad3daaf27eb5f7d9",
+    "rows": 3000,
+    "cells": 24000
+  },
+  {
+    "id": "rich",
+    "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/stress/stress-inputs/rich.xlsx",
+    "sha256": "d414c6d85029eaca396ce133ed3ea276b9714439e33f1f2c1775a072594eecec",
+    "rows": 1500,
+    "cells": 12000
+  },
+  {
+    "id": "merged",
+    "path": "/Users/erikhemberg/Code/bulkgrid/bulkparse/target/memory-followup-2026-11-15/stress/stress-inputs/merged.xlsx",
+    "sha256": "f7b73e6aab5ee4d323bf992faea218825cc0cf8953e30865858e9ccd02b56d48",
+    "rows": 1500,
+    "cells": 12000
+  }
+]

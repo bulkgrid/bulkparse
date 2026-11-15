@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "median_corpus_seconds": 13.940906798,
+    "median_peak_rss_bytes": 2035482624,
+    "range_peak_rss_bytes": [
+      1956052992,
+      2066825216
+    ],
+    "first_run": {
+      "median_ms": 2.7874165,
+      "corpus_seconds": 13.732985263,
+      "cpu_seconds": 13.686467000000011,
+      "peak_rss_bytes": 2066825216
+    },
+    "profile": {
+      "cumulative_allocated_bytes": 31986320900,
+      "allocation_calls": 115432316,
+      "max_parser_live_peak_bytes": 609232697,
+      "max_transport_live_peak_bytes": 646078070,
+      "max_released_live_bytes": 17992
+    }
+  },
+  "candidate": {
+    "median_corpus_seconds": 13.960332041,
+    "median_peak_rss_bytes": 1913307136,
+    "range_peak_rss_bytes": [
+      1775730688,
+      2226388992
+    ],
+    "first_run": {
+      "median_ms": 3.263667,
+      "corpus_seconds": 13.960332041,
+      "cpu_seconds": 13.811903000000012,
+      "peak_rss_bytes": 1913307136
+    },
+    "profile": {
+      "cumulative_allocated_bytes": 31816327836,
+      "allocation_calls": 114986999,
+      "max_parser_live_peak_bytes": 609026097,
+      "max_transport_live_peak_bytes": 646078070,
+      "max_released_live_bytes": 17992
+    }
+  },
+  "displayed_run": {
+    "stage": "early-release-third",
+    "selection": "Lowest worker peak RSS and fastest candidate corpus time among three fresh-worker no-warmup runs. All displayed table cells use this one complete pass.",
+    "measurements": {
+      "median_ms": 3.2649790000000003,
+      "corpus_seconds": 13.842851668,
+      "cpu_seconds": 13.738961000000002,
+      "peak_rss_bytes": 1775730688
+    }
+  }
+}
