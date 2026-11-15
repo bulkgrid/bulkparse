@@ -25,7 +25,7 @@ python3 scripts/check_mixed200.py reports/new-mixed-run
 python3 scripts/report_mixed200.py reports/new-mixed-run --out reports/new-mixed-run/table.md
 ```
 
-The default manifest is the frozen 200-document corpus, including all 27 original failure cases. Start with one pass. Add `--warmup --passes 5 --final-validation` only for a repeated timing study. `--engines bulkparse` needs no competitor environment; `--smoke` exercises the smallest file in each format and is not a full benchmark. The report writer accepts fresh runs and never edits the README.
+The default manifest is the frozen 200-document corpus, including all 27 original failure cases. Start with one pass. Add `--warmup --passes 5 --final-validation` only for a repeated timing study. `--engines bulkparse` needs no competitor environment; `--smoke` exercises the smallest file in each format and is not a full benchmark. Use `--formats ods xlsm` for a targeted performance check; it keeps every document in those formats and labels the selected subset. The report writer accepts fresh runs and never edits the README.
 
 ### PDF and OCR
 
@@ -61,7 +61,7 @@ python3 scripts/benchmark_regressions.py \
   --out reports/new-regression-run
 ```
 
-This defaults to the same 200 documents and checks default Markdown, streamed Markdown and full structured JSON serialization. It compares Markdown hashes, status, diagnostics and image metadata; successful JSON outputs must validate. It records conversion time and worker lifetime peak RSS separately for each build/mode. Timing excludes JSON verification; its memory is included. JSON validation is not a byte-for-byte structured-model comparison. Expected failures remain failures, and equality is not proof of fidelity. Intentional output changes need review; the script never refreshes expected results automatically.
+This defaults to the same 200 documents and checks default Markdown, streamed Markdown and full structured JSON serialization. It compares Markdown hashes, status, diagnostics and image metadata; successful JSON outputs must validate and match in complete serialized size and SHA-256 hash. It records conversion time and worker lifetime peak RSS separately for each build/mode. Timing excludes JSON verification; its memory is included. JSON mode compares the complete serialized model through its hash; serialization timing is not part of equality. Expected failures remain failures, and equality is not proof of fidelity. Intentional output changes need review; the script never refreshes expected results automatically.
 
 Use `--passes 5 --warmup` for steadier timing, or `--modes stream` for a targeted check. Arbitrary frozen JSON manifests with `id`, `path`, `sha256` and `format` can be supplied through `--manifest`, including `benchmarks/realworld-failures/manifest.json`. Retained historical expectations can also be checked with `check_realworld_failures.py`; they may flag intentional later improvements.
 

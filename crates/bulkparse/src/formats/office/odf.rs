@@ -298,13 +298,16 @@ fn duration(s: &str) -> Option<String> {
     ))
 }
 fn value(n: Node<'_, '_>, limit: usize) -> Result<String, Error> {
-    let paragraphs: Vec<_> = n
-        .children()
-        .filter(|n| named(*n, "p") || named(*n, "h"))
-        .map(|n| plain(n, limit))
-        .collect::<Result<_, _>>()?;
-    if !paragraphs.is_empty() {
-        return Ok(paragraphs.join("\n"));
+    let mut paragraphs = n.children().filter(|n| named(*n, "p") || named(*n, "h"));
+    if let Some(first) = paragraphs.next() {
+        // Most cells contain one paragraph. Reuse its buffer instead of
+        // collecting paragraphs and copying them into another joined string.
+        let mut text = plain(first, limit)?;
+        for paragraph in paragraphs {
+            text.push('\n');
+            text.push_str(&plain(paragraph, limit)?);
+        }
+        return Ok(text);
     }
     for key in [
         "string-value",
@@ -350,6 +353,8 @@ struct CellPlan {
     formula: Option<String>,
     #[serde(rename = "x")]
     complex: bool,
+    #[serde(rename = "p")]
+    plain_paragraph: bool,
 }
 #[derive(serde::Serialize, serde::Deserialize)]
 enum PlannedValue {
@@ -386,6 +391,15 @@ impl RowPlan {
                         n.is_element()
                             && matches!(n.tag_name().name(), "list" | "table" | "frame" | "section")
                     }),
+                    plain_paragraph: {
+                        let mut children = c.children().filter(Node::is_element);
+                        children.next().is_some_and(|p| {
+                            named(p, "p")
+                                && p.attributes().len() == 0
+                                && p.first_child()
+                                    .is_some_and(|t| t.is_text() && t.next_sibling().is_none())
+                        }) && children.next().is_none()
+                    },
                 })
                 .collect(),
         }
@@ -488,17 +502,18 @@ fn odf_table_rows(
                         rs as u32,
                         cs as u32,
                         roxmltree::NodeId::new(c.node),
+                        c.plain_paragraph,
                     ));
                 }
                 column += copies as u32;
             }
             for i in 0..if columns.is_empty() { 0 } else { repeat } {
                 ctx.check()?;
-                for (col, copies, text, rs, cs, node) in &columns {
+                for (col, copies, text, rs, cs, node, plain) in &columns {
                     for j in 0..*copies {
                         let (r, c) = (row + i as u32, col + j as u32);
                         grid.insert((r, c), text.clone());
-                        templates.insert((r, c), (fragment, *node));
+                        templates.insert((r, c), (fragment, *node, *plain));
                         if *rs > 1 || *cs > 1 {
                             merges.push((r, c, r + rs - 1, c + cs - 1));
                         }
@@ -540,16 +555,52 @@ fn odf_table_rows(
     let mut compact = BTreeMap::new();
     {
         let mut build =
-            |position: (u32, u32), text: String, node: Node<'_, '_>| -> Result<(), Error> {
+            |position: (u32, u32), text: String, node: Option<Node<'_, '_>>| -> Result<(), Error> {
                 let source = Source {
                     row: Some(position.0),
                     cell: Some(position.1),
                     ..src.clone()
                 };
-                let mut contents = blocks(node, &source, ctx, depth + 1, styles)?;
-                if contents.is_empty() && !text.is_empty() {
-                    contents.push(para(text, &source, ctx)?);
-                }
+                let contents = if let Some(node) = node {
+                    let mut contents = blocks(node, &source, ctx, depth + 1, styles)?;
+                    if contents.is_empty() && !text.is_empty() {
+                        contents.push(para(text, &source, ctx)?);
+                    }
+                    contents
+                } else {
+                    // The validated plan already contains this paragraph's exact
+                    // text. Avoid reparsing its row XML just to copy that text.
+                    // Default paragraph styles and normal budgets still apply.
+                    ctx.depth(depth + 1)?;
+                    let resolved = styles.resolve("", "paragraph", ctx)?;
+                    ctx.text(&text)?;
+                    let content = if resolved.kind == Some("code") {
+                        BlockContent::Code {
+                            language: String::new(),
+                            text,
+                        }
+                    } else if let Some(level) = resolved.outline {
+                        BlockContent::Heading {
+                            level,
+                            inlines: vec![resolved.text.text(text)],
+                        }
+                    } else if resolved.kind == Some("quote") {
+                        let block = ctx.block(
+                            BlockContent::Paragraph {
+                                inlines: vec![resolved.text.text(text)],
+                            },
+                            source.clone(),
+                        )?;
+                        BlockContent::Quote {
+                            blocks: vec![block],
+                        }
+                    } else {
+                        BlockContent::Paragraph {
+                            inlines: vec![resolved.text.text(text)],
+                        }
+                    };
+                    vec![ctx.block(content, source.clone())?]
+                };
                 if output.is_some() {
                     compact.insert(position, super::PendingBlocks::new(contents, position, src));
                 } else {
@@ -559,19 +610,30 @@ fn odf_table_rows(
             };
         let mut entries = grid.into_iter().peekable();
         while let Some((position, _)) = entries.peek() {
-            let (fragment, node_id) = templates[position];
+            let (fragment, node_id, plain) = templates[position];
+            if plain {
+                let (position, text) = entries.next().unwrap();
+                build(position, text, None)?;
+                continue;
+            }
             #[cfg(not(target_arch = "wasm32"))]
             if let Some(index) = fragment {
                 let source = parts.as_deref_mut().unwrap().get(index)?;
                 let doc = Document::parse(&source).map_err(bad)?;
                 while entries
                     .peek()
-                    .is_some_and(|(p, _)| templates[p].0 == Some(index))
+                    .is_some_and(|(position, _)| templates[position].0 == Some(index))
                 {
                     let (position, text) = entries.next().unwrap();
-                    let node = doc
-                        .get_node(templates[&position].1)
-                        .ok_or_else(|| bad("missing row fragment cell"))?;
+                    let (_, node_id, plain) = templates[&position];
+                    let node = if plain {
+                        None
+                    } else {
+                        Some(
+                            doc.get_node(node_id)
+                                .ok_or_else(|| bad("missing row fragment cell"))?,
+                        )
+                    };
                     build(position, text, node)?;
                 }
                 continue;
@@ -581,14 +643,14 @@ fn odf_table_rows(
             build(
                 position,
                 text,
-                n.document()
-                    .get_node(node_id)
-                    .ok_or_else(|| bad("missing table cell"))?,
+                Some(
+                    n.document()
+                        .get_node(node_id)
+                        .ok_or_else(|| bad("missing table cell"))?,
+                ),
             )?;
         }
     }
-    // Extraction is complete; template coordinates are no longer needed while
-    // constructing or rendering the final table.
     drop(templates);
     if output.is_some() {
         super::structured_table_output_with(

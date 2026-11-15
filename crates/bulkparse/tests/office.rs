@@ -579,6 +579,60 @@ fn odf_family_defaults_and_same_name_styles_do_not_collide() {
 }
 
 #[test]
+fn ods_plain_paragraph_plan_matches_styled_path_and_budgets() {
+    // An explicitly named empty style forces the general cell-body path while
+    // inheriting exactly the same default style as an unstyled paragraph.
+    // Check both direct XML and streamed XML, including a mixed rich/plain row.
+    for padding in ["".to_owned(), format!("<!--{}-->", "x".repeat(270_000))] {
+        for (attributes, defaults) in [
+            ("", "<text-properties font-weight=\"bold\"/>"),
+            ("", "<text-properties font-style=\"italic\"/>"),
+            ("display-name=\"Preformatted Text\"", ""),
+            ("display-name=\"Quotation\"", ""),
+            ("default-outline-level=\"3\"", ""),
+        ] {
+            let make = |style: &str| {
+                odf(
+                    "application/vnd.oasis.opendocument.spreadsheet",
+                    &format!(
+                        r#"<document-content>{padding}<styles><default-style family="paragraph" {attributes}>{defaults}</default-style><style family="paragraph" name="plain"/></styles><body><spreadsheet><table name="Values"><table-row number-rows-repeated="2"><table-cell number-columns-repeated="2"><p{style}>  Å &amp; 東京  </p></table-cell><table-cell><p>Rich <span>label</span></p></table-cell><table-cell><p{style}>Tail</p></table-cell></table-row></table></spreadsheet></body></document-content>"#
+                    ),
+                )
+            };
+            let fast = make("");
+            let general = make(" style-name=\"plain\"");
+            let parser = Parser::default();
+            let expected = parser.parse_bytes(&general, Some("sheet.ods")).unwrap();
+            let result = parser.parse_bytes(&fast, Some("sheet.ods")).unwrap();
+            assert_eq!(
+                serde_json::to_value(&result).unwrap(),
+                serde_json::to_value(&expected).unwrap()
+            );
+            let mut output = Vec::new();
+            parser
+                .parse_to_markdown(&fast, Some("sheet.ods"), &mut output)
+                .unwrap();
+            assert_eq!(
+                String::from_utf8(output).unwrap(),
+                expected.to_markdown().text
+            );
+            for max_text in [1, 8, 20, 100] {
+                let mut options = Options::default();
+                options.limits.max_text_bytes = max_text;
+                let parser = Parser::new(options);
+                let signature = |bytes: &[u8]| {
+                    parser
+                        .parse_bytes(bytes, Some("sheet.ods"))
+                        .map(|r| serde_json::to_value(r).unwrap())
+                        .map_err(|e| e.code().to_owned())
+                };
+                assert_eq!(signature(&fast), signature(&general));
+            }
+        }
+    }
+}
+
+#[test]
 fn odf_style_cycles_and_css_work_limits_are_bounded() {
     let b = odf(
         "application/vnd.oasis.opendocument.text",

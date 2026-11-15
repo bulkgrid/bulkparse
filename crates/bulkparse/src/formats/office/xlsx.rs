@@ -1,5 +1,6 @@
 use super::style::TextStyle;
 use super::*;
+use std::borrow::Cow;
 #[derive(Default)]
 struct CellStyle {
     format: String,
@@ -15,47 +16,60 @@ mod shared_strings;
 // Decode a row once while its XML is being validated. The on-disk representation
 // retains extraction inputs, so replay does not reparse XML or namespace scopes.
 #[derive(serde::Serialize, serde::Deserialize)]
-struct RowInput {
+struct RowInput<'a> {
     #[serde(rename = "r")]
-    index: Option<String>,
+    index: Option<Cow<'a, str>>,
     #[serde(rename = "h")]
     hidden: bool,
     #[serde(rename = "c")]
-    cells: Vec<CellInput>,
+    cells: Vec<CellInput<'a>>,
 }
 #[derive(serde::Serialize, serde::Deserialize)]
-struct CellInput {
+struct CellInput<'a> {
     #[serde(rename = "r", default, skip_serializing_if = "Option::is_none")]
-    address: Option<String>,
+    address: Option<Cow<'a, str>>,
     #[serde(rename = "s", default, skip_serializing_if = "Option::is_none")]
-    style: Option<String>,
-    #[serde(rename = "t", default, skip_serializing_if = "String::is_empty")]
-    kind: String,
-    #[serde(rename = "v", default, skip_serializing_if = "String::is_empty")]
-    value: String,
+    style: Option<Cow<'a, str>>,
+    #[serde(rename = "t", default, skip_serializing_if = "str::is_empty")]
+    kind: Cow<'a, str>,
+    #[serde(rename = "v", default, skip_serializing_if = "str::is_empty")]
+    value: Cow<'a, str>,
     #[serde(rename = "f", default, skip_serializing_if = "Option::is_none")]
-    formula: Option<String>,
+    formula: Option<Cow<'a, str>>,
     #[serde(rename = "i", default, skip_serializing_if = "Option::is_none")]
     rich: Option<Vec<Run>>,
 }
-impl RowInput {
-    fn from_node(row: Node<'_, '_>) -> Self {
+impl<'a> RowInput<'a> {
+    fn from_node(row: Node<'a, '_>) -> Self {
         Self {
-            index: row.attribute("r").map(str::to_owned),
+            index: row.attribute("r").map(Cow::Borrowed),
             hidden: matches!(row.attribute("hidden"), Some("1" | "true")),
             cells: row
                 .children()
                 .filter(|n| named(*n, "c"))
                 .map(|c| CellInput {
-                    address: c.attribute("r").map(str::to_owned),
-                    style: c.attribute("s").map(str::to_owned),
-                    kind: c.attribute("t").unwrap_or("").to_owned(),
-                    value: child(c, "v").map(content).unwrap_or_default(),
-                    formula: child(c, "f").map(content),
+                    address: c.attribute("r").map(Cow::Borrowed),
+                    style: c.attribute("s").map(Cow::Borrowed),
+                    kind: Cow::Borrowed(c.attribute("t").unwrap_or("")),
+                    value: child(c, "v").map(input_text).unwrap_or_default(),
+                    formula: child(c, "f").map(input_text),
                     rich: child(c, "is").map(runs),
                 })
                 .collect(),
         }
+    }
+}
+
+// Borrow the common single text node while encoding a validated row. Mixed
+// content retains the general descendant-text extraction behavior.
+fn input_text<'a>(n: Node<'a, '_>) -> Cow<'a, str> {
+    if let Some(text) = n
+        .first_child()
+        .filter(|t| t.is_text() && t.next_sibling().is_none())
+    {
+        Cow::Borrowed(text.text().unwrap_or(""))
+    } else {
+        Cow::Owned(content(n))
     }
 }
 
@@ -92,7 +106,11 @@ fn runs(n: Node<'_, '_>) -> Vec<Run> {
 }
 
 pub(super) fn address(s: &str) -> Result<(u32, u32), Error> {
-    let s = s.trim_matches('$').replace('$', "");
+    let s = if s.contains('$') {
+        Cow::Owned(s.replace('$', ""))
+    } else {
+        Cow::Borrowed(s)
+    };
     let mut col = 0u32;
     let mut split = 0;
     for b in s.bytes() {
@@ -647,12 +665,10 @@ pub(super) fn parse_output(
                     if grid.len() >= ctx.options.limits.max_table_cells {
                         return Err(Error::Limit("max_table_cells"));
                     }
-                    let cellstyle = formats
-                        .get(count(c.style.as_deref(), 0)?)
-                        .map(|s| s.text)
-                        .unwrap_or_default();
-                    let value = c.value;
-                    let kind = c.kind.as_str();
+                    let style = count(c.style.as_deref(), 0)?;
+                    let cellstyle = formats.get(style).map(|s| s.text).unwrap_or_default();
+                    let value = c.value.into_owned();
+                    let kind = c.kind.as_ref();
                     let shared = if kind == "s" {
                         Some(
                             strings.get(
@@ -696,7 +712,6 @@ pub(super) fn parse_output(
                         }
                         "str" | "d" => value,
                         _ => {
-                            let style = count(c.style.as_deref(), 0)?;
                             let fmt = formats
                                 .get(style)
                                 .map(|s| s.format.as_str())
@@ -1023,4 +1038,32 @@ fn extras(
         }
     }
     Ok(out)
+}
+
+#[cfg(test)]
+mod input_tests {
+    use super::*;
+
+    #[test]
+    fn row_spool_preserves_entities_mixed_text_formulas_and_rich_runs() {
+        let xml = r#"<row r="2"><c r="$A$2" s="3" t="str"><v> Å &amp; 東京 </v><f>A1&amp;B1</f></c><c r="B2"><v>one<x>two</x>three</v></c><c r="C2" t="inlineStr"><is><r><rPr><b/></rPr><t>rich</t></r><t> tail</t></is></c><c/></row>"#;
+        let doc = Document::parse(xml).unwrap();
+        let row = RowInput::from_node(doc.root_element());
+        assert_eq!(row.cells[0].value, " Å & 東京 ");
+        assert_eq!(row.cells[1].value, "onetwothree");
+        let record = serde_json::to_vec(&row).unwrap();
+        let replay: RowInput<'static> = serde_json::from_slice(&record).unwrap();
+        drop(doc);
+        drop(record);
+        assert_eq!(replay.cells[0].formula.as_deref(), Some("A1&B1"));
+        assert_eq!(
+            replay.cells[2].rich.as_ref().unwrap()[0].style.bold,
+            Some(true)
+        );
+        assert_eq!(replay.cells[2].rich.as_ref().unwrap()[1].text, " tail");
+        assert!(replay.cells[3].value.is_empty());
+        assert_eq!(address("$A$2").unwrap(), address("A2").unwrap());
+        assert_eq!(address("XFD1048576").unwrap(), (1_048_576, 16_384));
+        assert!(address("東京1").is_err());
+    }
 }

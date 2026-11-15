@@ -1,0 +1,143 @@
+{
+  "mixed": {
+    "profiles": {
+      "default": {
+        "baseline": {
+          "median_corpus_seconds": 17.309357079,
+          "peak_rss_bytes": 2331688960,
+          "returned_each_pass": [
+            200
+          ],
+          "cpu_seconds": 17.07059200000002
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.079044742,
+          "peak_rss_bytes": 2246443008,
+          "returned_each_pass": [
+            200
+          ],
+          "cpu_seconds": 13.94360500000003
+        }
+      },
+      "stream": {
+        "baseline": {
+          "median_corpus_seconds": 17.038137004,
+          "peak_rss_bytes": 745832448,
+          "returned_each_pass": [
+            200
+          ],
+          "cpu_seconds": 16.96122800000001
+        },
+        "candidate": {
+          "median_corpus_seconds": 14.321282004,
+          "peak_rss_bytes": 741507072,
+          "returned_each_pass": [
+            200
+          ],
+          "cpu_seconds": 14.260722000000051
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "structured": {
+    "profiles": {
+      "json": {
+        "baseline": {
+          "median_corpus_seconds": 15.172900747,
+          "peak_rss_bytes": 1755398144,
+          "returned_each_pass": [
+            69
+          ]
+        },
+        "candidate": {
+          "median_corpus_seconds": 12.235267582,
+          "peak_rss_bytes": 1541570560,
+          "returned_each_pass": [
+            69
+          ]
+        }
+      }
+    },
+    "differences": [],
+    "note": "Equality checks detect changes, not correctness. Expected failures remain failures. Review intentional changes."
+  },
+  "comparison": {
+    "ods": {
+      "documents": 19,
+      "common_documents": [
+        "ods-20234a4bf0a85cd1",
+        "ods-20f58e9c6ef54e2c",
+        "ods-21d4c1846feb99a9",
+        "ods-37673dc956a05d28",
+        "ods-39a8edec753b433a",
+        "ods-5cefbfc9f77dafdd",
+        "ods-6df1f9c102f8d1a4",
+        "ods-6e5aadc6326a5376",
+        "ods-9d9a12a7de860893",
+        "ods-9e715a03fce43bec",
+        "ods-b3d2ced785e1482e",
+        "ods-b56a6a8313ac59d8",
+        "ods-c14b342a8f148642",
+        "ods-c197f40e846f9d2b",
+        "ods-d6e65678b01a9986",
+        "ods-eb7143958f9f65f4"
+      ],
+      "engines": {
+        "bulkparse": {
+          "nonempty": 19,
+          "median_success_ms": 40.127291,
+          "median_common_ms": 16.2347505,
+          "common_seconds": 3.132205085,
+          "common_cpu_seconds": 3.120036999999991
+        },
+        "anydoc": {
+          "nonempty": 16,
+          "median_success_ms": 14.785688,
+          "median_common_ms": 14.785688,
+          "common_seconds": 3.460676878,
+          "common_cpu_seconds": 3.4602229999999965
+        }
+      }
+    },
+    "xlsm": {
+      "documents": 6,
+      "common_documents": [
+        "xlsm-1d715c8cac42f89c",
+        "xlsm-2b0d18bd1e4b6a34",
+        "xlsm-3c742899d69127d3",
+        "xlsm-c6ee0b16ff832902",
+        "xlsm-d735ed10fae7b3dd"
+      ],
+      "engines": {
+        "bulkparse": {
+          "nonempty": 6,
+          "median_success_ms": 66.135292,
+          "median_common_ms": 39.066459,
+          "common_seconds": 0.801168626,
+          "common_cpu_seconds": 0.7979500000000037
+        },
+        "anydoc": {
+          "nonempty": 5,
+          "median_success_ms": 39.102333,
+          "median_common_ms": 39.102333,
+          "common_seconds": 0.643870375,
+          "common_cpu_seconds": 0.643821
+        }
+      }
+    }
+  },
+  "comparison_resources": {
+    "bulkparse": {
+      "worker_starts": 1,
+      "lifetime_peak_rss_bytes": 1595392000,
+      "scope": "macOS time -l high-water RSS, including initialization, transport and waited-for child process peaks; not the simultaneous process-tree sum. Killed workers can lack an OS sample."
+    },
+    "anydoc": {
+      "worker_starts": 1,
+      "lifetime_peak_rss_bytes": 2495234048,
+      "scope": "macOS time -l high-water RSS, including initialization, transport and waited-for child process peaks; not the simultaneous process-tree sum. Killed workers can lack an OS sample."
+    }
+  }
+}

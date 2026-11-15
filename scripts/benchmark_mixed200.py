@@ -45,6 +45,7 @@ def main():
     ap.add_argument('--warmup', action='store_true')
     ap.add_argument('--final-validation', action='store_true', help='Explicitly enable repeated timing after capability/performance targets are met')
     ap.add_argument('--engines', nargs='+', choices=ENGINES, default=ENGINES)
+    ap.add_argument('--formats', nargs='+', help='Measure selected formats after validating the source corpus')
     ap.add_argument('--bulkparse-modes', action='store_true')
     ap.add_argument('--manifest', type=Path, default=REPORT/'corpus-manifest.json')
     ap.add_argument('--bulkparse-binary', type=Path, help='Use a preserved executable instead of the shared build output')
@@ -67,6 +68,11 @@ def main():
             assert hard_ids <= {d['id'] for d in corpus}
             assert len(corpus) == 200
     assert all(digest(ROOT/d['path']) == d['sha256'] for d in corpus)
+    if args.formats:
+        missing = set(args.formats) - {d['format'] for d in corpus}
+        if missing:
+            ap.error(f'Formats absent from corpus: {sorted(missing)}')
+        corpus = [d for d in corpus if d['format'] in args.formats]
     write(out/'manifest.json', corpus)
     cmds = {e: commands()[e] for e in args.engines}
     for e,cmd in cmds.items():
@@ -102,7 +108,7 @@ def main():
     binary_hashes = {e: digest(Path(cmd[0])) for e,cmd in cmds.items()}
     write(out/'identity.json', dict(method=__doc__, commands=cmds, binary_sha256=binary_hashes,
         hardware=subprocess.check_output(['sysctl','-n','machdep.cpu.brand_string','hw.memsize','hw.logicalcpu'],text=True).splitlines(),
-        support={e:sorted(SUPPORT[e]) for e in args.engines}, platform=platform.platform(), warmup=int(args.warmup), measured_passes=0 if args.smoke else args.passes, deadline_seconds=90,
+        support={e:sorted(SUPPORT[e]) for e in args.engines}, selected_formats=args.formats, platform=platform.platform(), warmup=int(args.warmup), measured_passes=0 if args.smoke else args.passes, deadline_seconds=90,
         purpose='final validation' if args.final_validation else 'one-pass diagnostic',
         environment={k:env[k] for k in ['RAYON_NUM_THREADS','OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','HF_HUB_OFFLINE','TRANSFORMERS_OFFLINE']},
         started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(), power_before=power(),

@@ -75,6 +75,38 @@ class MaintenanceTests(unittest.TestCase):
         after.update(output_sha256='different', diagnostics=[{'code':'missing'}])
         self.assertEqual(differences(before, after), ['output_sha256', 'diagnostics'])
 
+    def test_structured_hash_changes_fail_but_serialization_timing_does_not(self):
+        before = {'json_check': dict(bytes=10, sha256='a', valid=True, serialization_and_validation_ns=1)}
+        after = {'json_check': dict(before['json_check'], serialization_and_validation_ns=2)}
+        self.assertEqual(differences(before, after), [])
+        after['json_check']['sha256'] = 'b'
+        self.assertEqual(differences(before, after), ['json_check.sha256'])
+
+    def test_format_selection_cannot_silently_omit_documents(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            run, published = self.fixture(root)
+            path = published/'corpus-manifest.json'
+            manifest = json.loads(path.read_text())
+            for row in manifest[100:]:
+                row['format'] = 'md'
+            path.write_text(json.dumps(manifest))
+            (run/'manifest.json').write_text(json.dumps(manifest[:100]))
+            path = run/'bulkparse-round-1.json'
+            rows = json.loads(path.read_text())['documents'][:100]
+            path.write_text(json.dumps({'documents': rows}))
+            for i in range(100, 200):
+                (run/f'prediction/bulkparse/round-1/{i}.md').unlink()
+            path = run/'identity.json'
+            identity = json.loads(path.read_text())
+            identity['selected_formats'] = ['txt']
+            path.write_text(json.dumps(identity))
+            with patch.object(check_mixed200, 'ROOT', root), patch.object(check_mixed200, 'REPORT', published):
+                self.assertEqual(check_mixed200.check(run)['documents'], 100)
+                (run/'manifest.json').write_text(json.dumps(manifest[:99]))
+                with self.assertRaises(AssertionError):
+                    check_mixed200.check(run)
+
     def test_comparator_commands_use_current_adapter(self):
         for name, command in commands().items():
             if name not in ('bulkparse', 'anydoc'):

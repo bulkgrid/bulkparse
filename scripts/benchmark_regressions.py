@@ -20,7 +20,13 @@ FIELDS = ('ok', 'status', 'output_sha256', 'diagnostics', 'render_diagnostics',
 
 
 def differences(before, after):
-    return [key for key in FIELDS if before.get(key) != after.get(key)]
+    changed = [key for key in FIELDS if before.get(key) != after.get(key)]
+    # JSON mode verifies the complete structured document, not only Markdown
+    # and diagnostics. Serialization time is deliberately excluded.
+    for key in ('bytes', 'sha256', 'valid'):
+        if before.get('json_check', {}).get(key) != after.get('json_check', {}).get(key):
+            changed.append(f'json_check.{key}')
+    return changed
 
 
 def main():

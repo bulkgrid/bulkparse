@@ -34,5 +34,6 @@
 !/reports/native-ocr-migration-2026-11-14/
 !/reports/native-ocr-refinement-2026-11-14/
 !/reports/native-ocr-accent-fix-2026-11-14/
+!/reports/spreadsheet-speed-2026-11-14/
 /reports/**/source-snapshot/
 /reports/**/prediction/**/*.md
