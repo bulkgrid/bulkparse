@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://github.com/bulkgrid/bulkgrid"><img src="https://img.shields.io/github/stars/bulkgrid/bulkgrid?style=social&amp;label=Star%20Bulkgrid" alt="Star Bulkgrid on GitHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-4f8968" alt="MIT license"></a>
-  <a href="#agent-skill"><img src="https://img.shields.io/badge/Agent_Skill-Install-111111" alt="Install the BulkParse agent skill"></a>
+  <a href="https://skills.sh/bulkgrid/bulkparse/parse-documents-to-markdown"><img src="https://img.shields.io/badge/Agent_Skill-Install-111111" alt="Install Parse documents to Markdown on skills.sh"></a>
 </p>
 
 <p align="center">
