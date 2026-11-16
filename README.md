@@ -105,9 +105,9 @@ Install it directly from GitHub with the
 npx skills add bulkgrid/bulkparse --skill parse-documents-to-markdown
 ```
 
-Choose your coding agent when prompted. The skill supplies instructions; it guides
-your agent through installing the BulkParse CLI separately using the
-[quick start](#quick-start). OCR models and native libraries require an additional
+Choose your coding agent when prompted. The skill runs the BulkParse CLI through
+`npx`, which fetches the prebuilt package on first use; no source checkout is
+needed. OCR models and native libraries require an additional
 [setup step](#integrated-ocr).
 
 Previously installed `bulkparse-markdown`? Install `parse-documents-to-markdown`
