@@ -76,7 +76,7 @@ jobs:
             key: linux-arm64-gnu
           - os: macos-15-intel
             key: darwin-x64
-          - os: macos-14
+          - os: macos-15
             key: darwin-arm64
           - os: windows-2022
             key: win32-x64-msvc
@@ -119,7 +119,7 @@ jobs:
           - os: macos-15-intel
             target: x86_64-apple-darwin
             manylinux: 'off'
-          - os: macos-14
+          - os: macos-15
             target: aarch64-apple-darwin
             manylinux: 'off'
           - os: windows-2022
