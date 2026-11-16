@@ -1,6 +1,13 @@
 # BulkParse for Python
 
-Requires Python 3.10+ and Rust. This package is not published yet. From this folder:
+Requires Python 3.10+. Install a prebuilt wheel with:
+
+```sh
+python -m pip install bulkparse
+```
+
+Wheels cover Linux x64/ARM64 (glibc 2.28+), macOS 11+ (Intel/Apple Silicon), and
+Windows x64. Rust is needed only for a source build. For development from this folder:
 
 ```sh
 python3 -m venv .venv
@@ -17,13 +24,13 @@ from bulkparse import parse, parse_file, BulkParseError
 
 result = parse(b"# Hello", filename="hello.md")
 print(result["markdown"])
-document = parse_file("../../fixtures/hello.docx", strict=True)
+document = parse_file("document.docx", strict=True)
 print(document["document"]["blocks"])
 ```
 
 Calls are synchronous and release the GIL during Rust conversion. Thread pools and queue limits belong to the application. Inputs are copied into Rust memory. `BulkParseError.code` carries stable error categories (`resource_limit`, `unsupported`, `malformed`, `incomplete`, etc.). The result is a dictionary with the same schema used by Node/WASM.
 
-`capabilities()` reports enabled formats. Options mirror the Rust core; see the root README for extraction limitations and budgets. Native wheels and installation from PyPI are planned, not currently available.
+`capabilities()` reports enabled formats. Options mirror the Rust core; see the root README for extraction limitations and budgets. The release pipeline tests installation from built wheels and the source archive.
 
 
 CSV supports automatic comma/semicolon/tab/pipe detection and BOM-aware UTF-8/UTF-16 decoding. Without a BOM or explicit encoding, valid UTF-8 is preserved; otherwise legacy Windows-1252 decoding is attempted and reported with a `csv_encoding_inferred` diagnostic. Encoding inference is ambiguous, particularly for mixed-encoding files. Set `csv_encoding` to `utf8` for strict UTF-8, `windows1252` for a known legacy export, or `utf16_le` / `utf16_be` for BOM-less UTF-16. Explicit encodings must agree with any BOM. Undefined Windows-1252 bytes and binary controls are rejected. For delimiter ambiguity, pass `csv_delimiter` (one ASCII character); headers remain explicit through `csv_has_headers`.

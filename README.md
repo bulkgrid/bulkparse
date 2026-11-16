@@ -47,30 +47,32 @@ Built in **Rust** by [Bulkgrid](https://bulkgrid.com). Use it from **Node.js, Py
 
 ## Quick start
 
-> **Developer preview:** build from source today. Package-registry releases and prebuilt binaries are not available yet. See [current scope](#current-scope) for extraction and platform coverage.
+> **Early release:** see [current scope](#current-scope) for extraction and platform coverage.
 
 Maintainers: [release pipelines and registry setup](docs/releases.md) cover npm, PyPI, crates.io, WebAssembly and CLI downloads.
 
-From a source checkout, with Rust installed:
+With Node.js 20 or newer, run the prebuilt CLI:
 
 ```sh
-cargo build --release -p bulkparse-cli --locked
-
 # Convert a document to Markdown
-./target/release/bulkparse parse fixtures/hello.docx
+npx @bulkgrid/bulkparse parse document.docx
 
 # Export structured JSON
-./target/release/bulkparse parse fixtures/table.csv --to json
+npx @bulkgrid/bulkparse parse table.csv --to json
 
 # Inspect a PDF and its OCR-routing recommendations
-./target/release/bulkparse inspect fixtures/native-and-empty.pdf
+npx @bulkgrid/bulkparse inspect document.pdf
 ```
 
-Convert a directory with `./target/release/bulkparse batch ./documents --output ./parsed`. Batch processing is sequential, writes per-file results, and continues after individual errors. Choose an output directory outside the input directory; existing output files are not overwritten.
+For a global CLI installation, use `npm install -g @bulkgrid/bulkparse`, then run
+`bulkparse` directly. Rust users can run `cargo install bulkparse-cli --features ocr`.
+To build from this checkout, use `cargo build --release -p bulkparse-cli --locked`.
+
+Convert a directory with `npx @bulkgrid/bulkparse batch ./documents --output ./parsed`. Batch processing is sequential, writes per-file results, and continues after individual errors. Choose an output directory outside the input directory; existing output files are not overwritten.
 
 CLI exit codes: **`0` complete · `2` partial · `1` failure**. Partial results can contain useful extracted content; inspect their diagnostics. Native PDF conversion currently reports partial coverage by design.
 
-Run `./target/release/bulkparse capabilities` for build-specific format support and `./target/release/bulkparse schema` for the structured output schema.
+Run `npx @bulkgrid/bulkparse capabilities` for build-specific format support and `npx @bulkgrid/bulkparse schema` for the structured output schema.
 
 ### Embedded images
 
@@ -254,14 +256,18 @@ These profiles use different model sizes and settings. This is a synthetic OCR-s
 
 ## Use your language
 
-All bindings use the same Rust conversion path. Build instructions are linked below; package names are not currently installable from public registries.
+All bindings use the same Rust conversion path. Native packages include prebuilt binaries for supported platforms; source-build instructions are linked below.
 
 ### Node.js
 
-[Build the native Node binding](bindings/node/README.md), then run from the repository root. Save the example as an `.mjs` file, or use a `.js` file in a package with `"type": "module"`:
+```sh
+npm install @bulkgrid/bulkparse
+```
+
+Save the example as an `.mjs` file, or use a `.js` file in a package with `"type": "module"`. See the [Node binding guide](bindings/node/README.md) for source builds and supported platforms:
 
 ```js
-import { parse } from './bindings/node/index.cjs';
+import { parse } from '@bulkgrid/bulkparse';
 
 async function main() {
   const result = await parse(Buffer.from('# Hello from BulkParse'), {
@@ -288,7 +294,11 @@ complete model in JavaScript. It stages output and refuses to overwrite an exist
 
 ### Python
 
-[Build and install the Python binding](bindings/python/README.md):
+```sh
+python -m pip install bulkparse
+```
+
+See the [Python binding guide](bindings/python/README.md) for source builds:
 
 ```python
 from bulkparse import parse
@@ -303,7 +313,9 @@ Native conversion releases the GIL. File-based conversion is also available.
 
 ### Rust API
 
-Use the `crates/bulkparse` crate from this checkout as a path dependency:
+```sh
+cargo add bulkparse
+```
 
 ```rust
 use bulkparse::{parse, Options};
@@ -321,10 +333,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ### Browser / WebAssembly
 
-[Build the WASM binding](bindings/wasm/README.md) and serve its directory over HTTP. From a module alongside `index.js`:
+```sh
+npm install @bulkgrid/bulkparse-wasm
+```
+
+Import the package in your browser application. Serve the generated WASM asset with the application; see the [WASM guide](bindings/wasm/README.md) for bundling and source builds:
 
 ```js
-import { init, parse } from './index.js';
+import { init, parse } from '@bulkgrid/bulkparse-wasm';
 
 await init();
 const result = parse(new TextEncoder().encode('# Hello from BulkParse'), {
@@ -337,7 +353,7 @@ The included [browser example](bindings/wasm/example/index.html) runs conversion
 
 ## Output and limits
 
-**JSON is the canonical document model; Markdown is its readable projection.** Results include document blocks, status, diagnostics and coverage, with source page, row, cell or package-part information where available. Conversion bindings also return Markdown and rendering diagnostics. The current schema is **0.7**.
+**JSON is the canonical document model; Markdown is its readable projection.** Results include document blocks, status, diagnostics and coverage, with source page, row, cell or package-part information where available. Conversion bindings also return Markdown and rendering diagnostics. The current schema is **0.8**.
 
 Each diagnostic identifies **missing content**, a **formatting limitation**, or an **informational notice**, with evidence marked `detected` or `unverified`. Use these fields to distinguish confirmed omissions from broad capability warnings. The legacy `content_loss` flag, `partial` status and strict-mode behavior remain conservative: they also cover formatting and uncertainty. `complete` does not prove perfect extraction. See [diagnostic categories and interpretation](docs/diagnostics.md).
 
@@ -366,7 +382,7 @@ BulkParse is ready to evaluate and build against, with these boundaries:
 
 - **Extraction fidelity varies by format.** Legacy numbering, notes, links, complex layouts, images and some table structures remain incomplete. Markdown consumers need HTML-table support for merged and nested tables.
 - **Validation covers parser behavior, resource limits and language bindings.** See the [validation commands and platform limits](docs/validation.md).
-- **Platform testing is still expanding.** Native bindings have been exercised on Apple Silicon macOS. Broader native Linux/Windows validation and prebuilt distribution remain outstanding. Extended Node/WASM PDF parity uses `--liftoff-only` because of a known optimizing-compiler memory issue.
+- **Platform testing is still expanding.** The release pipeline builds and tests native packages for Linux x64/ARM64, macOS Intel/Apple Silicon and Windows x64. Other platforms require a source build or WASM. Extended Node/WASM PDF parity uses `--liftoff-only` because of a known optimizing-compiler memory issue.
 
 ## Documentation
 

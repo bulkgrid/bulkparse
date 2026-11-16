@@ -1,8 +1,6 @@
 # BulkParse for Node.js
 
-Requires Node 20+. Public releases are prepared by the
-[release pipeline](../../docs/releases.md); the first registry publication is
-still pending. After publication, install with:
+Requires Node 20+. Install the native binding and CLI with:
 
 ```sh
 npm install @bulkgrid/bulkparse
@@ -23,13 +21,13 @@ npm test
 
 The build script compiles the native addon for the current host and copies it to `bulkparse.node`. Do not set a cross-compilation target when using this host build script. Maintainers should use the release workflow rather than publish this source folder directly.
 
-Save the example as an `.mjs` file in `bindings/node`, or use a `.js` file in a package with `"type": "module"`:
+Save the example as an `.mjs` file, or use a `.js` file in a package with `"type": "module"`:
 
 ```js
-import {parse, parseFile} from './index.cjs';
+import {parse, parseFile} from '@bulkgrid/bulkparse';
 const result = await parse(Buffer.from('# Hello'), {filename: 'hello.md'});
 console.log(result.markdown);
-const document = await parseFile('../../fixtures/hello.docx', {strict: true});
+const document = await parseFile('document.docx', {strict: true});
 console.log(document.document.blocks);
 ```
 

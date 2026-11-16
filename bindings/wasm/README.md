@@ -1,6 +1,12 @@
 # BulkParse for browsers
 
-Requires Rust and wasm-pack to build. This package is not published yet. From this folder:
+Install the browser package with:
+
+```sh
+npm install @bulkgrid/bulkparse-wasm
+```
+
+Rust and wasm-pack are only needed to build from source. From this folder:
 
 ```sh
 rustup target add wasm32-unknown-unknown
@@ -14,7 +20,7 @@ python3 -m http.server 8080
 Open `http://localhost:8080/example/` for local file conversion in a Web Worker. The sample refuses files over 32 MiB, transfers input bytes to the worker, and displays output as text. It never uploads the chosen file. The main conversion API is synchronous; use a worker for larger inputs and terminate/recreate it to enforce a host timeout.
 
 ```js
-import {init, parse} from './index.js';
+import {init, parse} from '@bulkgrid/bulkparse-wasm';
 await init();
 const result = parse(new TextEncoder().encode('# Hello'), {filename: 'hello.md'});
 console.log(result.markdown);
