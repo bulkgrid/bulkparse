@@ -4,13 +4,13 @@ default-members = ["crates/bulkparse", "crates/bulkparse-cli"]
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 repository = "https://github.com/bulkgrid/bulkparse"
 
 [workspace.dependencies]
-bulkparse = { path = "crates/bulkparse", version = "0.1.0", default-features = false }
+bulkparse = { path = "crates/bulkparse", version = "0.1.1", default-features = false }
 serde = { version = "1", features = ["derive", "rc"] }
 serde_json = "1"
 thiserror = "2"

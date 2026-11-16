@@ -10,6 +10,10 @@ on:
         type: boolean
         default: false
         required: true
+      verify_npm_permissions:
+        description: 'Check GitHub-to-npm authentication only; do not build or publish'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -19,7 +23,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  npm-permissions:
+    if: github.event_name == 'workflow_dispatch' && inputs.verify_npm_permissions
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python scripts/release/check-npm-auth.py
+
   validate:
+    if: ${{ !inputs.verify_npm_permissions }}
     runs-on: ubuntu-22.04
     outputs:
       version: ${{ steps.version.outputs.version }}
@@ -226,6 +244,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Verify npm trusted publishing for every package
+        run: python scripts/release/check-npm-auth.py
       - uses: actions/download-artifact@v4
         with:
           name: release

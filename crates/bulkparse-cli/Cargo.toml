@@ -19,4 +19,4 @@ bulkparse = { workspace = true, features = ["docx", "pdf", "office"] }
 serde_json.workspace = true
 clap = { version = "4", features = ["derive"] }
 tempfile = "3"
-bulkparse-ocr-native = { path = "../bulkparse-ocr-native", version = "0.1.0", optional = true }
+bulkparse-ocr-native = { path = "../bulkparse-ocr-native", version = "0.1.1", optional = true }

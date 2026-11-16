@@ -65,8 +65,14 @@ forks. The npm job has no GitHub environment, matching the SDK and CLI workflows
    Each package needs its own trusted publisher: the SDK and CLI's configuration
    does not authorize a different package/repository automatically. If npm
    requires the first version to exist before configuring trust, publish the
-   tested npm tarballs from a dry run once with your authenticated npm account,
-   then configure trusted publishing. The pipeline does not accept `NPM_TOKEN`
+   exact tested npm tarballs from the tagged release run once with your authenticated
+   npm account, then configure trusted publishing. Grant **direct publishing**,
+   not only staged publishing. New trusted publishers must complete a successful
+   publish within two days or npm expires them. An authentication check or a
+   rerun that skips an existing version does not prove that activation occurred.
+   Do not use disposable staged placeholders to establish trust: rejecting the
+   last staged upload can remove the package registration and its publisher settings.
+   The pipeline does not accept `NPM_TOKEN`
    or copy credentials from the monorepo. npm generates provenance automatically
    when supported for the trusted publication.
 2. **PyPI:** register a pending publisher for project `bulkparse` (or configure its
@@ -124,6 +130,20 @@ gh workflow run release.yml --repo bulkgrid/bulkparse --ref v0.1.0 -f publish=tr
 ```
 
 For a manual build without publishing, select a branch and leave the input false.
+
+To check GitHub-to-npm authentication for all seven packages without building or
+publishing, run:
+
+```sh
+gh workflow run release.yml --repo bulkgrid/bulkparse --ref main \
+  -f publish=false -f verify_npm_permissions=true
+```
+
+This mode takes precedence over the `publish` input and skips all build and
+publication jobs. It requests short-lived package credentials through npm's OIDC
+exchange, discards them without logging, and fails if any package rejects the
+workflow. The same check runs before every normal npm publication. This verifies
+authentication, not a real upload or the initial two-day publisher activation.
 
 The main npm package is published after its platform dependencies. A registry
 failure cannot undo a successful publication to another registry; fix the account
