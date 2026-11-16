@@ -27,11 +27,17 @@ try {
     stdio: 'inherit', env: { ...process.env, npm_config_cache: path.join(temporary, 'cache') },
   });
   const installed = path.join(temporary, 'node_modules/@bulkgrid/bulkparse');
-  const api = require(installed);
-  const result = await api.parse(Buffer.from('# Release check\n\nHello.'), { filename: 'check.md' });
-  assert.match(result.markdown, /Release check/);
-  const docx = await api.parse(readFileSync(path.join(root, 'fixtures/hello.docx')), { filename: 'hello.docx' });
-  assert.match(docx.markdown, /Hello BulkParse/);
+  // Exit the addon process before cleanup: Windows locks loaded native libraries.
+  execFileSync(process.execPath, ['--input-type=module', '-e', `
+    import assert from 'node:assert/strict';
+    import { readFileSync } from 'node:fs';
+    import { createRequire } from 'node:module';
+    const api = createRequire(import.meta.url)(process.argv[1]);
+    const result = await api.parse(Buffer.from('# Release check\\n\\nHello.'), { filename: 'check.md' });
+    assert.match(result.markdown, /Release check/);
+    const docx = await api.parse(readFileSync(process.argv[2]), { filename: 'hello.docx' });
+    assert.match(docx.markdown, /Hello BulkParse/);
+  `, installed, path.join(root, 'fixtures/hello.docx')], { stdio: 'inherit' });
   const cli = path.join(installed, 'bin/bulkparse.cjs');
   assert.match(execFileSync(process.execPath, [cli, '--version'], { encoding: 'utf8' }), new RegExp(version.replaceAll('.', '\\.')));
   const stdin = spawnSync(process.execPath, [cli, 'parse', '-', '--format', 'md'], { input: '# From stdin', encoding: 'utf8' });
