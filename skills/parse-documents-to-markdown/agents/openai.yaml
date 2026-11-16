@@ -1,0 +1,4 @@
+interface:
+  display_name: "Parse documents to Markdown"
+  short_description: "Parse documents and folders into Markdown"
+  default_prompt: "Use $parse-documents-to-markdown to parse these documents into Markdown and report any incomplete extraction."

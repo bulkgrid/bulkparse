@@ -12,6 +12,7 @@
 <p align="center">
   <a href="https://github.com/bulkgrid/bulkgrid"><img src="https://img.shields.io/github/stars/bulkgrid/bulkgrid?style=social&amp;label=Star%20Bulkgrid" alt="Star Bulkgrid on GitHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-4f8968" alt="MIT license"></a>
+  <a href="#agent-skill"><img src="https://img.shields.io/badge/Agent_Skill-Install-111111" alt="Install the BulkParse agent skill"></a>
 </p>
 
 <p align="center">
@@ -92,8 +93,8 @@ export is not supported. Images are not interpreted automatically. See
 
 ## Agent skill
 
-Use the [`bulkparse-markdown`](skills/bulkparse-markdown/SKILL.md) skill to let a
-coding agent convert documents or entire folders to Markdown with BulkParse.
+Use the [Parse documents to Markdown](skills/parse-documents-to-markdown/SKILL.md)
+skill to let a coding agent parse documents or entire folders into Markdown with BulkParse.
 It covers CLI setup, partial-result diagnostics, PDF inspection, local OCR for
 scanned PDFs and images, and output verification.
 
@@ -101,7 +102,7 @@ Install it directly from GitHub with the
 [Skills CLI](https://github.com/vercel-labs/skills), without cloning this repository:
 
 ```sh
-npx skills add bulkgrid/bulkparse --skill bulkparse-markdown
+npx skills add bulkgrid/bulkparse --skill parse-documents-to-markdown
 ```
 
 Choose your coding agent when prompted. The skill supplies instructions; it guides
@@ -109,15 +110,23 @@ your agent through installing the BulkParse CLI separately using the
 [quick start](#quick-start). OCR models and native libraries require an additional
 [setup step](#integrated-ocr).
 
+Previously installed `bulkparse-markdown`? Install `parse-documents-to-markdown`
+in the same scope, then remove the old skill. For a global installation:
+
+```sh
+npx skills add bulkgrid/bulkparse --skill parse-documents-to-markdown -g
+npx skills remove bulkparse-markdown -g
+```
+
 To try local changes from this source checkout:
 
 ```sh
-npx skills add ./skills/bulkparse-markdown
+npx skills add ./skills/parse-documents-to-markdown
 ```
 
 Example request:
 
-> Use bulkparse-markdown to convert ./documents to Markdown in ./converted and
+> Use parse-documents-to-markdown to parse ./documents into Markdown in ./converted and
 > report any files with incomplete extraction.
 
 ## Supported formats
@@ -397,7 +406,7 @@ BulkParse is ready to evaluate and build against, with these boundaries:
 | Start here | Details |
 | --- | --- |
 | [Architecture](docs/architecture.md) | Core, document model and language bindings |
-| [Agent skill](skills/bulkparse-markdown/SKILL.md) | Document-to-Markdown workflow for coding agents |
+| [Agent skill](skills/parse-documents-to-markdown/SKILL.md) | Document-to-Markdown workflow for coding agents |
 | [Format contracts](docs/office-formats.md) | Office/EPUB capabilities and remaining gaps |
 | [Implementation notes](docs/implementation-notes.md) | Detailed scope, options and limits |
 | [PDF inspection](docs/pdf-inspection.md) | Page classification and OCR routing |

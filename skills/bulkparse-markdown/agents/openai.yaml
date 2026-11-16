@@ -1,4 +1,0 @@
-interface:
-  display_name: "BulkParse to Markdown"
-  short_description: "Convert documents and folders to Markdown"
-  default_prompt: "Use $bulkparse-markdown to convert these documents to Markdown and report any incomplete extraction."

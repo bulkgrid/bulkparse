@@ -1,9 +1,9 @@
 ---
-name: bulkparse-markdown
-description: Convert documents to Markdown with BulkParse. Use when asked to extract Markdown from PDFs, Word documents, spreadsheets, presentations, OpenDocument files, EPUB, RTF, CSV/TSV, text, or notebooks, including bulk conversion of a folder. Handle partial extraction, diagnostics, and optional local OCR for scanned PDFs and PNG, JPEG, GIF, WebP, or TIFF images.
+name: parse-documents-to-markdown
+description: Parse documents locally into Markdown with BulkParse. Use when asked to extract Markdown from PDFs, Word documents, spreadsheets, presentations, OpenDocument files, EPUB, RTF, CSV/TSV, text, or notebooks, including bulk conversion of a folder. Handle partial extraction, diagnostics, and optional local OCR for scanned PDFs and PNG, JPEG, GIF, WebP, or TIFF images.
 ---
 
-# BulkParse to Markdown
+# Parse documents to Markdown
 
 Use BulkParse's CLI to produce Markdown files from the user's documents. Preserve
 the extracted content; do not summarize, rewrite, or invent missing text unless
