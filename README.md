@@ -94,18 +94,26 @@ export is not supported. Images are not interpreted automatically. See
 
 Use the [`bulkparse-markdown`](skills/bulkparse-markdown/SKILL.md) skill to let a
 coding agent convert documents or entire folders to Markdown with BulkParse.
-It covers CLI setup, partial-result diagnostics, PDF inspection, optional OCR,
-and output verification.
+It covers CLI setup, partial-result diagnostics, PDF inspection, local OCR for
+scanned PDFs and images, and output verification.
 
-From this source checkout, install it with the
-[Skills CLI](https://github.com/vercel-labs/skills):
+Install it directly from GitHub with the
+[Skills CLI](https://github.com/vercel-labs/skills), without cloning this repository:
+
+```sh
+npx skills add bulkgrid/bulkparse --skill bulkparse-markdown
+```
+
+Choose your coding agent when prompted. The skill supplies instructions; it guides
+your agent through installing the BulkParse CLI separately using the
+[quick start](#quick-start). OCR models and native libraries require an additional
+[setup step](#integrated-ocr).
+
+To try local changes from this source checkout:
 
 ```sh
 npx skills add ./skills/bulkparse-markdown
 ```
-
-Choose your coding agent when prompted. The skill supplies instructions; build
-the BulkParse CLI separately using the [quick start](#quick-start).
 
 Example request:
 
