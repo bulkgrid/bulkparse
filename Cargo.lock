@@ -290,7 +290,7 @@ checksum = "5c0e531d93d39c34eef561e929e8a7f86d77a5af08aac4f6d6e39976c51858e9"
 
 [[package]]
 name = "bulkparse"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "base64 0.22.1",
  "cfb",
@@ -316,7 +316,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-cli"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "bulkparse-ocr-native",
@@ -327,7 +327,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-node"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "bulkparse-ocr-native",
@@ -339,7 +339,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-ocr"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "serde",
@@ -349,7 +349,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-ocr-native"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "firecrawl-pdfium",
@@ -365,7 +365,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-pool"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "serde",
@@ -377,7 +377,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-python"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "bulkparse-ocr-native",
@@ -388,7 +388,7 @@ dependencies = [
 
 [[package]]
 name = "bulkparse-wasm"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "bulkparse",
  "serde_json",

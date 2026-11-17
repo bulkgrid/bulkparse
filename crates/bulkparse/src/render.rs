@@ -309,8 +309,7 @@ fn destination(url: &str) -> String {
     out
 }
 
-fn marked(children: &[Inline], marker: &str) -> String {
-    let value = inlines(children);
+fn marked(value: String, marker: &str) -> String {
     let trimmed = value.trim();
     if trimmed.is_empty() {
         return value;
@@ -324,14 +323,62 @@ fn marked(children: &[Inline], marker: &str) -> String {
     )
 }
 
+fn formatting(item: &Inline) -> Option<(&'static str, &[Inline])> {
+    match item {
+        Inline::Strong { children } => Some(("**", children)),
+        Inline::Emphasis { children } => Some(("*", children)),
+        Inline::Strike { children } => Some(("~~", children)),
+        _ => None,
+    }
+}
+
 fn inlines(items: &[Inline]) -> String {
+    inline_iter(items.iter())
+}
+
+fn inline_iter<'a>(items: impl Iterator<Item = &'a Inline>) -> String {
     let mut out = String::new();
-    for item in items {
+    let mut items = items.peekable();
+    while let Some(item) = items.next() {
+        if let Some((marker, children)) = formatting(item) {
+            // Word runs can split even a single word. Share delimiters across
+            // matching spans before rendering, including recursively nested styles.
+            let mut merged: Option<Vec<&Inline>> = None;
+            let mut spaces = Vec::new();
+            while let Some(next) = items.peek() {
+                if let Some((next_marker, next_children)) = formatting(next) {
+                    if next_marker != marker {
+                        break;
+                    }
+                    let merged = merged.get_or_insert_with(|| children.iter().collect());
+                    merged.append(&mut spaces);
+                    merged.extend(next_children);
+                } else if matches!(next, Inline::Text { text } if text.chars().all(|c| matches!(c, ' ' | '\t')))
+                {
+                    spaces.push(*next);
+                } else {
+                    break;
+                }
+                items.next();
+            }
+            let value = match merged {
+                Some(children) => inline_iter(children.into_iter()),
+                None => inlines(children),
+            };
+            out.push_str(&marked(value, marker));
+            // Whitespace followed by different content belongs outside the span.
+            for space in spaces {
+                if let Inline::Text { text } = space {
+                    escape_into(text, &mut out);
+                }
+            }
+            continue;
+        }
         match item {
             Inline::Text { text } => escape_into(text, &mut out),
-            Inline::Strong { children } => out.push_str(&marked(children, "**")),
-            Inline::Emphasis { children } => out.push_str(&marked(children, "*")),
-            Inline::Strike { children } => out.push_str(&marked(children, "~~")),
+            Inline::Strong { .. } | Inline::Emphasis { .. } | Inline::Strike { .. } => {
+                unreachable!("formatting spans handled above")
+            }
             Inline::Code { text } => {
                 let n = text.split(|c| c != '`').map(str::len).max().unwrap_or(0) + 1;
                 let fence = "`".repeat(n);
@@ -679,6 +726,85 @@ fn blocks(items: &[Block], diagnostics: &mut Vec<Diagnostic>) -> String {
 #[cfg(test)]
 mod escape_tests {
     use super::*;
+
+    #[test]
+    fn adjacent_matching_styles_share_delimiters() {
+        for (wrap, marker) in [
+            (strong as fn(Vec<Inline>) -> Inline, "**"),
+            (emphasis, "*"),
+            (strike, "~~"),
+        ] {
+            let items = [
+                wrap(vec![Inline::text("P")]),
+                wrap(vec![Inline::text("rotokoll & Diskussionsunderlag")]),
+            ];
+            assert_eq!(
+                inlines(&items),
+                format!("{marker}Protokoll & Diskussionsunderlag{marker}")
+            );
+        }
+        assert_eq!(
+            inlines(&[
+                strong(vec![Inline::text("On-")]),
+                strong(vec![Inline::text("boarding")]),
+            ]),
+            r"**On\-boarding**"
+        );
+    }
+
+    #[test]
+    fn matching_styles_bridge_spaces_and_preserve_outer_whitespace() {
+        assert_eq!(
+            inlines(&[
+                strong(vec![Inline::text("  Avsnitt ")]),
+                Inline::text(" "),
+                strong(vec![Inline::text("Vinum")]),
+                strong(vec![Inline::text(" Veritas  ")]),
+                Inline::text("\t"),
+                Inline::text("plain"),
+            ]),
+            "  **Avsnitt  Vinum Veritas**  \tplain"
+        );
+        assert_eq!(
+            inlines(&[strong(vec![Inline::text("title")]), Inline::text("  ")]),
+            "**title**  "
+        );
+    }
+
+    #[test]
+    fn matching_nested_styles_merge_without_consuming_plain_text_or_breaks() {
+        assert_eq!(
+            inlines(&[
+                strong(vec![emphasis(vec![Inline::text("Pro")])]),
+                strong(vec![emphasis(vec![Inline::text("tokoll")])]),
+                Inline::text(" plain "),
+                strong(vec![Inline::text("bold")]),
+                Inline::Break,
+                strong(vec![Inline::text("next")]),
+            ]),
+            "***Protokoll*** plain **bold**  \n**next**"
+        );
+        assert_eq!(
+            inlines(&[
+                strong(vec![Inline::text("bold")]),
+                Inline::text(" "),
+                emphasis(vec![Inline::text("italic")]),
+            ]),
+            "**bold** *italic*"
+        );
+    }
+
+    fn strong(children: Vec<Inline>) -> Inline {
+        Inline::Strong { children }
+    }
+
+    fn emphasis(children: Vec<Inline>) -> Inline {
+        Inline::Emphasis { children }
+    }
+
+    fn strike(children: Vec<Inline>) -> Inline {
+        Inline::Strike { children }
+    }
 
     #[test]
     fn span_escaping_preserves_all_ascii_pairs_and_unicode() {

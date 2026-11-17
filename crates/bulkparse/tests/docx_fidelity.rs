@@ -21,6 +21,39 @@ fn cell(props: &str, text: &str) -> String {
 }
 
 #[test]
+fn split_bold_word_runs_render_as_one_span() {
+    let body = r#"<w:p><w:r><w:rPr><w:b/><w:sz w:val="32"/></w:rPr><w:t>P</w:t></w:r><w:proofErr w:type="spellStart"/><w:r><w:rPr><w:b/></w:rPr><w:t>rotokoll &amp; Diskussionsunderlag</w:t></w:r><w:proofErr w:type="spellEnd"/></w:p><w:p><w:r><w:rPr><w:b/></w:rPr><w:t>On-</w:t></w:r><w:r><w:rPr><w:b/></w:rPr><w:t>boarding</w:t></w:r><w:r><w:t xml:space="preserve"> process</w:t></w:r></w:p>"#;
+    let result = Parser::default()
+        .parse_bytes(&package(body, &[]), Some("minutes.docx"))
+        .unwrap();
+    let md = result.to_markdown().text;
+    assert_eq!(
+        md,
+        "**Protokoll & Diskussionsunderlag**\n\n**On\\-boarding** process\n"
+    );
+    // Validate what a Markdown consumer sees, not just the emitted delimiters.
+    let mut depth = 0;
+    let mut bold = Vec::new();
+    let mut plain = String::new();
+    for event in pulldown_cmark::Parser::new(&md) {
+        match event {
+            pulldown_cmark::Event::Start(pulldown_cmark::Tag::Strong) => {
+                depth += 1;
+                bold.push(String::new());
+            }
+            pulldown_cmark::Event::End(pulldown_cmark::TagEnd::Strong) => depth -= 1,
+            pulldown_cmark::Event::Text(text) if depth > 0 => {
+                bold.last_mut().unwrap().push_str(&text);
+            }
+            pulldown_cmark::Event::Text(text) => plain.push_str(&text),
+            _ => {}
+        }
+    }
+    assert_eq!(bold, ["Protokoll & Diskussionsunderlag", "On-boarding"]);
+    assert_eq!(plain, " process");
+}
+
+#[test]
 fn merges_follow_grid_boundaries_and_retain_covered_content() {
     let body = format!(
         r#"<w:tbl><w:tr><w:trPr><w:tblHeader w:val="false"/><w:gridBefore w:val="1"/></w:trPr>{}{}</w:tr><w:tr><w:trPr><w:gridBefore w:val="1"/></w:trPr>{}{}</w:tr></w:tbl>"#,
