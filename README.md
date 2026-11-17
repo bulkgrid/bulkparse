@@ -16,6 +16,7 @@
 </p>
 
 <p align="center">
+  <a href="#installation">Installation</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#agent-skill">Agent skill</a> ·
   <a href="#supported-formats">Formats</a> ·
@@ -32,27 +33,27 @@ Built in **Rust** by [Bulkgrid](https://bulkgrid.com). Use it from **Node.js, Py
 
 > **200 PDFs in 0.440 seconds.** BulkParse used **40% less conversion time than the next-fastest tested configuration** in our same-machine PDF development benchmark, with OCR off and startup excluded. Compare eight engines across speed, extraction scores and memory. [See the full results and trade-offs ↓](#benchmarks)
 
-## Why BulkParse?
-
-- ⚡ **Spend less time parsing.** Native Rust conversion keeps document ingestion moving. Our 200-PDF benchmark finished in under half a second, with OCR off and startup excluded. The configurations and raw results are available to reproduce it.
-- 📚 **Bring your mix of files.** PDFs, modern and legacy Office documents, OpenDocument, EPUB, RTF, CSV and more feed into a shared document model. Build one integration for the formats your users send.
-- 🧩 **Keep the structure that makes content useful.** Extract headings, lists, rich text and supported tables, including merged cells. Use Markdown for search and prompts, and structured JSON when your application needs rows, cells and document blocks.
-- 🔒 **Run where your application runs.** Embed the conversion engine in server pipelines, desktop applications or browser experiences with WebAssembly. You choose where document bytes are processed; the native conversion core needs no external parsing service or API key.
-- 🪶 **Choose an efficient ingestion path.** A native conversion core keeps the deployment focused on document processing. Compare measured memory alongside speed in our [benchmark results](#benchmarks); the best fit depends on your workload.
-- 🔍 **Know which PDF pages need OCR.** Built-in inspection identifies native text, blank pages and OCR candidates before you invoke a separately provisioned OCR backend. Page-level reasons help your pipeline choose its next step.
-- 📖 **Unlock scanned PDFs with integrated OCR.** Extract text from scanned pages in your deployment and bring it into the same document output. Enable the OCR build and provision the models once; no hosted OCR API is required. [OCR setup and capabilities](#integrated-ocr).
-- 🔌 **Fit into the stack you already use.** Node.js, Python, Rust and WebAssembly share the same conversion core. Node conversion is asynchronous; Python releases the GIL while native conversion runs.
-- 🧭 **Make extraction decisions with evidence.** Coverage, diagnostics and source references travel with the result. Accept useful content, route partial results for more processing, or flag a document for review.
-
-**From file uploads to searchable knowledge.** Use BulkParse to prepare documents for retrieval, give agents readable source material, normalize an Office archive, or embed document conversion in your application. [Build your first conversion ↓](#quick-start)
-
-## Quick start
+## Installation
 
 > **Early release:** see [current scope](#current-scope) for extraction and platform coverage.
 
-Maintainers: [release pipelines and registry setup](docs/releases.md) cover npm, PyPI, crates.io, WebAssembly and CLI downloads.
+Choose the package for your workflow:
 
-With Node.js 20 or newer, run the prebuilt CLI:
+| Use | Install | Examples |
+| --- | --- | --- |
+| CLI (Node.js 20+) | `npm install -g @bulkgrid/bulkparse` | [Quick start](#quick-start) |
+| Node.js / TypeScript (Node.js 20+) | `npm install @bulkgrid/bulkparse` | [Node.js API](#nodejs) |
+| Python (3.10+) | `python -m pip install bulkparse` | [Python API](#python) |
+| Rust | `cargo add bulkparse` | [Rust API](#rust-api) |
+| Browser / WebAssembly | `npm install @bulkgrid/bulkparse-wasm` | [Browser API](#browser--webassembly) |
+| Coding agent skill | `npx skills add bulkgrid/bulkparse --skill parse-documents-to-markdown` | [Agent setup](#agent-skill) |
+
+You can also install the CLI with `cargo install bulkparse-cli --features ocr`.
+OCR requires additional [model and runtime setup](#integrated-ocr).
+
+## Quick start
+
+With Node.js 20 or newer, run the prebuilt CLI without a global installation:
 
 ```sh
 # Convert a document to Markdown
@@ -65,8 +66,8 @@ npx @bulkgrid/bulkparse parse table.csv --to json
 npx @bulkgrid/bulkparse inspect document.pdf
 ```
 
-For a global CLI installation, use `npm install -g @bulkgrid/bulkparse`, then run
-`bulkparse` directly. Rust users can run `cargo install bulkparse-cli --features ocr`.
+After a global CLI installation, run `bulkparse` directly in place of
+`npx @bulkgrid/bulkparse`.
 To build from this checkout, use `cargo build --release -p bulkparse-cli --locked`.
 
 Convert a directory with `npx @bulkgrid/bulkparse batch ./documents --output ./parsed`. Batch processing is sequential, writes per-file results, and continues after individual errors. Choose an output directory outside the input directory; existing output files are not overwritten.
@@ -128,6 +129,20 @@ Example request:
 
 > Use parse-documents-to-markdown to parse ./documents into Markdown in ./converted and
 > report any files with incomplete extraction.
+
+## Why BulkParse?
+
+- ⚡ **Spend less time parsing.** Native Rust conversion keeps document ingestion moving. Our 200-PDF benchmark finished in under half a second, with OCR off and startup excluded. The configurations and raw results are available to reproduce it.
+- 📚 **Bring your mix of files.** PDFs, modern and legacy Office documents, OpenDocument, EPUB, RTF, CSV and more feed into a shared document model. Build one integration for the formats your users send.
+- 🧩 **Keep the structure that makes content useful.** Extract headings, lists, rich text and supported tables, including merged cells. Use Markdown for search and prompts, and structured JSON when your application needs rows, cells and document blocks.
+- 🔒 **Run where your application runs.** Embed the conversion engine in server pipelines, desktop applications or browser experiences with WebAssembly. You choose where document bytes are processed; the native conversion core needs no external parsing service or API key.
+- 🪶 **Choose an efficient ingestion path.** A native conversion core keeps the deployment focused on document processing. Compare measured memory alongside speed in our [benchmark results](#benchmarks); the best fit depends on your workload.
+- 🔍 **Know which PDF pages need OCR.** Built-in inspection identifies native text, blank pages and OCR candidates before you invoke a separately provisioned OCR backend. Page-level reasons help your pipeline choose its next step.
+- 📖 **Unlock scanned PDFs with integrated OCR.** Extract text from scanned pages in your deployment and bring it into the same document output. Enable the OCR build and provision the models once; no hosted OCR API is required. [OCR setup and capabilities](#integrated-ocr).
+- 🔌 **Fit into the stack you already use.** Node.js, Python, Rust and WebAssembly share the same conversion core. Node conversion is asynchronous; Python releases the GIL while native conversion runs.
+- 🧭 **Make extraction decisions with evidence.** Coverage, diagnostics and source references travel with the result. Accept useful content, route partial results for more processing, or flag a document for review.
+
+**From file uploads to searchable knowledge.** Use BulkParse to prepare documents for retrieval, give agents readable source material, normalize an Office archive, or embed document conversion in your application. [Build your first conversion](#quick-start)
 
 ## Supported formats
 
@@ -416,6 +431,8 @@ BulkParse is ready to evaluate and build against, with these boundaries:
 | [Contributing](CONTRIBUTING.md) | Development workflow |
 
 ## Development
+
+Maintainers: [release pipelines and registry setup](docs/releases.md) cover npm, PyPI, crates.io, WebAssembly and CLI downloads.
 
 ```sh
 cargo fmt --all --check
