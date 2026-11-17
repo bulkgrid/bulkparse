@@ -10,9 +10,10 @@
 <p align="center">Turn PDFs, spreadsheets, slides and documents into Markdown and structured JSON.<br>Native Rust speed. Your infrastructure. Your rules.</p>
 
 <p align="center">
-  <a href="https://github.com/bulkgrid/bulkgrid"><img src="https://img.shields.io/github/stars/bulkgrid/bulkgrid?style=social&amp;label=Star%20Bulkgrid" alt="Star Bulkgrid on GitHub"></a>
+  <a href="https://github.com/bulkgrid/bulkparse"><img src="https://img.shields.io/github/stars/bulkgrid/bulkparse?style=social&amp;label=Star%20BulkParse" alt="Star BulkParse on GitHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-4f8968" alt="MIT license"></a>
   <a href="https://skills.sh/bulkgrid/bulkparse/parse-documents-to-markdown"><img src="https://img.shields.io/badge/Agent_Skill-Install-111111" alt="Install Parse documents to Markdown on skills.sh"></a>
+  <a href="https://github.com/bulkgrid/bulkgrid"><img src="https://img.shields.io/github/stars/bulkgrid/bulkgrid?style=social&amp;label=Star%20Bulkgrid" alt="Star Bulkgrid on GitHub"></a>
 </p>
 
 <p align="center">
