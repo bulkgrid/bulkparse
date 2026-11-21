@@ -29,7 +29,7 @@ fn split_bold_word_runs_render_as_one_span() {
     let md = result.to_markdown().text;
     assert_eq!(
         md,
-        "**Protokoll & Diskussionsunderlag**\n\n**On\\-boarding** process\n"
+        "**Protokoll & Diskussionsunderlag**\n\n**On-boarding** process\n"
     );
     // Validate what a Markdown consumer sees, not just the emitted delimiters.
     let mut depth = 0;

@@ -135,10 +135,7 @@ fn workbook_date_epochs_are_honored() {
                 "<styleSheet><cellXfs><xf numFmtId=\"14\"/></cellXfs></styleSheet>",
             ),
         ]);
-        assert!(parse(&b, "a.xlsx")
-            .to_markdown()
-            .text
-            .contains(&want.replace('-', "\\-")));
+        assert!(parse(&b, "a.xlsx").to_markdown().text.contains(want));
     }
 }
 #[test]
@@ -450,10 +447,10 @@ fn epub_numbered_lists_preserve_reversed_signed_and_restarts() {
     for value in [
         "2\\. North",
         "1\\. South",
-        "\\-1\\. Debt",
+        "-1. Debt",
         "0\\. Zero",
-        "A\\. First",
-        "D\\. Fourth",
+        "A. First",
+        "D. Fourth",
     ] {
         assert!(m.contains(value), "{value}: {m}");
     }
@@ -521,7 +518,7 @@ fn pptx_nested_mixed_lists_and_roman_numbering() {
     ]);
     let m = parse(&b, "nested.pptx").to_markdown().text;
     assert!(
-        m.contains("iii\\. Third") && m.contains("iv\\. Fourth") && m.contains("- Nested"),
+        m.contains("iii. Third") && m.contains("iv. Fourth") && m.contains("- Nested"),
         "{m}"
     );
     assert!(
@@ -824,7 +821,7 @@ fn ods_durations_retain_calendar_ambiguity_and_handle_elapsed_values() {
         r#"<document-content><body><spreadsheet><table><table-row><table-cell time-value="P2DT3H"/><table-cell time-value="-PT0.5M"/><table-cell time-value="P1M"/><table-cell time-value="PT99999999999999999999H"/></table-row></table></spreadsheet></body></document-content>"#,
     );
     let m = parse(&b, "durations.ods").to_markdown().text;
-    for value in ["51:00:00", "\\-0:00:30", "P1M", "PT99999999999999999999H"] {
+    for value in ["51:00:00", "-0:00:30", "P1M", "PT99999999999999999999H"] {
         assert!(m.contains(value), "{value}: {m}");
     }
 }

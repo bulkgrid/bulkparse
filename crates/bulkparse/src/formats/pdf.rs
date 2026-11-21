@@ -2,6 +2,7 @@ use crate::{Block, BlockContent, Cell, Context, Coverage, Error, Source, Status}
 mod aligned_table;
 mod cmap;
 mod content;
+mod field_table;
 mod fonts;
 mod grid;
 mod hierarchical;
@@ -65,7 +66,7 @@ fn page_blocks(
             }
         }
         if changed {
-            ctx.diagnostic("pdf_unicode_normalized", "Expanded Arabic presentation forms and alphabetic ligatures. ActualText and other characters are preserved; disable pdf_normalize_unicode for original mapped glyph forms.",source.clone(),false);
+            ctx.diagnostic("pdf_unicode_normalized", "Expanded Arabic presentation forms and alphabetic ligatures; converted zero-width word breaks to spaces. ActualText containing visible text and other characters are preserved; disable pdf_normalize_unicode for original mapped glyph forms.",source.clone(),false);
         }
     }
     if page.approximate {

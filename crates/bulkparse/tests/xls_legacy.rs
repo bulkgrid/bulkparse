@@ -68,7 +68,7 @@ fn legacy_codepages_apply_to_sheet_names_cells_and_formats() {
             markdown.contains("Résumé") && markdown.contains("Price € / café"),
             "{markdown}"
         );
-        assert!(markdown.contains("£12\\.50"), "{markdown}");
+        assert!(markdown.contains("£12.50"), "{markdown}");
         let mut output = Vec::new();
         let streamed = Parser::default()
             .parse_to_markdown(&bytes, Some("ledger.xls"), &mut output)

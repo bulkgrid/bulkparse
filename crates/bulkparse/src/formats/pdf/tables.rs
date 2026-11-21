@@ -224,7 +224,7 @@ fn borderless(
     let mut start = 0;
     while start < rows.len() {
         ctx.node()?;
-        if counts[start] < 3 || counts[start] * 2 < parts[start].len() {
+        if used[rows[start][0]] || counts[start] < 3 || counts[start] * 2 < parts[start].len() {
             start += 1;
             continue;
         }
@@ -237,6 +237,7 @@ fn borderless(
             .collect();
         let mut aligned_header = false;
         if start > 0
+            && !used[rows[start - 1][0]]
             && counts[start - 1] == 0
             && glyphs[rows[start - 1][0]].y - glyphs[rows[start][0]].y <= em * 2.
         {
@@ -299,12 +300,14 @@ fn borderless(
         };
         let has_header = aligned_header
             || start > 0
+                && !used[rows[start - 1][0]]
                 && counts[start - 1] * 2 < parts[start - 1].len()
                 && parts[start - 1].len() == ncols
                 && glyphs[rows[start - 1][0]].y - glyphs[rows[start][0]].y <= em * 3.
                 && fits(start - 1);
         let mut end = start + 1;
         while end < rows.len()
+            && !used[rows[end][0]]
             && counts[end] >= 2
             && fits(end)
             && glyphs[rows[end - 1][0]].y - glyphs[rows[end][0]].y <= em * 2.8
@@ -359,6 +362,9 @@ fn borderless(
         }
         start = end + 1;
     }
+    tables.extend(super::field_table::extract(
+        glyphs, &rows, &parts, used, ctx,
+    )?);
     Ok(tables)
 }
 

@@ -13,7 +13,12 @@ fn text_is_not_interpreted_as_markdown() {
         BlockContent::Paragraph { .. }
     ));
     assert!(result.to_markdown().text.contains("\\# literal"));
-    assert!(!result.to_markdown().text.contains("<script>"));
+    let markdown = result.to_markdown().text;
+    assert!(markdown.contains("\\<script>"));
+    assert!(!pulldown_cmark::Parser::new(&markdown).any(|e| matches!(
+        e,
+        pulldown_cmark::Event::Html(_) | pulldown_cmark::Event::InlineHtml(_)
+    )));
 }
 
 #[test]

@@ -116,8 +116,9 @@ pub struct Options {
     /// Opt in to bounded, explicitly partial spreadsheet/CSV recovery after a
     /// resource limit. Strict mode never returns this reduced-fidelity output.
     pub partial_on_limit: bool,
-    /// Expand PDF Arabic presentation forms and alphabetic ligatures. Raw mapped
-    /// Enabled by default; set false for raw forms. ActualText is authoritative.
+    /// Expand PDF presentation forms/ligatures and turn zero-width word breaks
+    /// into spaces. Enabled by default; set false for raw mapped forms.
+    /// ActualText with visible content is preserved, including shaping controls.
     pub pdf_normalize_unicode: bool,
     /// With a provider, retry all pages through OCR while retaining native text on failure.
     pub pdf_force_ocr: bool,

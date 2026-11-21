@@ -4,7 +4,16 @@ use crate::Error;
 use unicode_normalization::UnicodeNormalization;
 
 pub(super) fn normalize(glyph: &mut Glyph, limit: usize) -> Result<bool, Error> {
-    if glyph.actual_text || !glyph.text.chars().any(presentation) {
+    let layout_only = glyph
+        .text
+        .chars()
+        .all(|c| c.is_whitespace() || c == '\u{200b}');
+    if (glyph.actual_text && !layout_only)
+        || !glyph
+            .text
+            .chars()
+            .any(|c| presentation(c) || c == '\u{200b}')
+    {
         return Ok(false);
     }
     let mut out = String::new();
@@ -17,6 +26,10 @@ pub(super) fn normalize(glyph: &mut Glyph, limit: usize) -> Result<bool, Error> 
                 out.push(expanded);
             }
         } else {
+            // U+200B is a word-break opportunity, not visible ink. Preserve its
+            // boundary as a space so it cannot bridge column gutters. ZWJ and
+            // ZWNJ remain untouched because they affect script shaping.
+            let c = if c == '\u{200b}' { ' ' } else { c };
             if out.len() + c.len_utf8() > limit {
                 return Err(Error::Limit("max_text_bytes"));
             }

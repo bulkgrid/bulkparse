@@ -1041,7 +1041,7 @@ fn styled_prose_rows_retain_wrapped_text_and_bottom_aligned_group_labels() {
 fn same_size_bold_headings_survive_but_captions_and_sentence_leads_do_not() {
     let s="BT /F2 10 Tf 1 0 0 1 40 750 Tm (2.) Tj 1 0 0 1 65 750 Tm (Methods) Tj /F1 10 Tf 1 0 0 1 40 720 Tm (Ordinary body prose provides plenty of evidence for the body size.) Tj 1 0 0 1 40 705 Tm (Another sentence explains the example in enough detail.) Tj /F2 10 Tf 1 0 0 1 40 670 Tm (Table 2. Counts) Tj 1 0 0 1 40 640 Tm (Comparison to other methods.) Tj /F1 10 Tf 1 0 0 1 40 625 Tm (This sentence continues that paragraph after its bold lead.) Tj ET";
     let out = text(&styled(s));
-    assert!(out.starts_with("# 2\\. Methods"), "{out}");
+    assert!(out.starts_with("# 2. Methods"), "{out}");
     assert_eq!(
         out.lines().filter(|l| l.starts_with('#')).count(),
         1,
@@ -1355,7 +1355,7 @@ fn contents_entries_and_indented_caption_continuations_are_not_headings() {
 fn differently_sized_section_marker_keeps_all_wrapped_title_lines() {
     let s="BT /F2 24 Tf 1 0 0 1 40 750 Tm (III.) Tj /F2 22 Tf 1 0 0 1 40 720 Tm (Regulatory) Tj 1 0 0 1 40 690 Tm (requirements) Tj /F1 10 Tf 1 0 0 1 40 640 Tm (Ordinary body prose supplies enough text to establish its size.) Tj 1 0 0 1 40 625 Tm (Another explanatory line follows in the regular body font.) Tj ET";
     let out = text(&styled(s));
-    assert!(out.contains("III\\. Regulatory requirements"), "{out}");
+    assert!(out.contains("III. Regulatory requirements"), "{out}");
     assert_eq!(
         out.lines().filter(|l| l.starts_with('#')).count(),
         1,
@@ -1554,9 +1554,9 @@ fn continued_outline_joins_page_references_without_matching_topic_words() {
         let out = text(&styled(&s));
         if increasing {
             assert!(!out.lines().any(|l| l.starts_with('#')), "{out}");
-            assert!(out.contains("Unit 1\\.1: An introduction 12"), "{out}");
+            assert!(out.contains("Unit 1.1: An introduction 12"), "{out}");
             assert!(
-                out.contains("Unit 2\\.4: Further exercises and applications 51"),
+                out.contains("Unit 2.4: Further exercises and applications 51"),
                 "{out}"
             );
         } else {
@@ -1945,4 +1945,278 @@ fn a_painted_group_divider_keeps_numeric_whitespace_subcolumns() {
     assert_eq!(values.len(), 1);
     assert_eq!(values[0][0], vec!["Kind", "Before", "After"]);
     assert_eq!(values[0][3], vec!["Gamma", "12", "34"]);
+}
+
+#[test]
+fn borderless_catalogue_preserves_tables_annotations_and_reading_order() {
+    // An original generated catalogue, safe to redistribute. Paint by column
+    // rather than row so extraction must reconstruct the geometric reading order.
+    let rows = [
+        (
+            740,
+            vec![
+                (40, "Copper spool"),
+                (220, "$18.75"),
+                (320, "includes assembly"),
+            ],
+        ),
+        (
+            720,
+            vec![
+                (40, "Steel bracket"),
+                (220, "$4.25"),
+                (320, "includes fittings"),
+            ],
+        ),
+        (640, vec![(40, "Room hire"), (360, "Morning")]),
+        (
+            620,
+            vec![(40, "Horizon"), (220, "EUR 180"), (360, "EUR 120")],
+        ),
+        (600, vec![(40, "Meadow"), (220, "EUR 90"), (360, "EUR 60")]),
+        (
+            520,
+            vec![
+                (40, "Storage"),
+                (200, "Capacity"),
+                (330, "Personal"),
+                (450, "Business"),
+            ],
+        ),
+        (
+            500,
+            vec![
+                (40, "Large crate"),
+                (200, "~40 units"),
+                (330, "$145"),
+                (450, "$230"),
+            ],
+        ),
+        (
+            480,
+            vec![
+                (40, "Small crate"),
+                (200, "~20 units"),
+                (330, "$85"),
+                (450, "$150"),
+            ],
+        ),
+    ];
+    let mut positions: Vec<_> = rows
+        .iter()
+        .flat_map(|(y, cells)| cells.iter().map(move |(x, text)| (*x, *y, *text)))
+        .collect();
+    positions.extend([
+        (40, 780, "Catalogue v3.14 + extras."),
+        (40, 680, "Orders require advance notice by 13.30."),
+        (40, 440, "Adjustment +15%. Payment is due on receipt."),
+    ]);
+    positions.sort_by_key(|(x, y, _)| (*x, *y));
+    let mut content = String::from("BT /F1 10 Tf ");
+    for (x, y, text) in positions {
+        content += &format!("1 0 0 1 {x} {y} Tm ({text}) Tj ");
+    }
+    content += "ET";
+    let result = parse(&simple(&content));
+    assert_eq!(
+        table_values(&result),
+        vec![
+            vec![
+                vec!["Copper spool", "$18.75 includes assembly"],
+                vec!["Steel bracket", "$4.25 includes fittings"]
+            ],
+            vec![
+                vec!["Room hire", "", "Morning"],
+                vec!["Horizon", "EUR 180", "EUR 120"],
+                vec!["Meadow", "EUR 90", "EUR 60"]
+            ],
+            vec![
+                vec!["Storage", "Capacity", "Personal", "Business"],
+                vec!["Large crate", "~40 units", "$145", "$230"],
+                vec!["Small crate", "~20 units", "$85", "$150"]
+            ],
+        ]
+    );
+    let md = result.to_markdown().text;
+    assert!(!md.contains('\\'), "unnecessary punctuation escapes: {md}");
+    for pair in [
+        "Catalogue",
+        "Copper spool",
+        "Orders require",
+        "Room hire",
+        "Storage",
+        "Adjustment",
+    ]
+    .windows(2)
+    {
+        assert!(
+            md.find(pair[0]).unwrap() < md.find(pair[1]).unwrap(),
+            "{md}"
+        );
+    }
+    for block in &result.document.blocks {
+        if let BlockContent::Table { rows, header_rows } = &block.content {
+            assert_eq!(*header_rows, 0);
+            for (r, row) in rows.iter().enumerate() {
+                for (c, cell) in row.iter().enumerate() {
+                    assert_eq!(cell.source.row, Some(r as u32 + 1));
+                    assert_eq!(cell.source.cell, Some(c as u32 + 1));
+                }
+            }
+        }
+    }
+}
+
+#[test]
+fn borderless_fields_are_scale_and_paint_order_independent() {
+    for scale in [0.65, 1.0, 1.3] {
+        for reversed in [false, true] {
+            let mut ops = Vec::new();
+            for (r, label) in ["Copper coil", "Valve", "Pump"].iter().enumerate() {
+                let y = 520 - r * 20;
+                ops.push(format!("1 0 0 1 40 {y} Tm ({label}) Tj "));
+                let price = ["$9.50", "$120.00", "$7.00"][r];
+                let x = 280.0 - price.len() as f64 * 6.0;
+                ops.push(format!("1 0 0 1 {x} {y} Tm ({price}) Tj "));
+                ops.push(format!("1 0 0 1 320 {y} Tm (\\(includes fitting\\)) Tj "));
+            }
+            if reversed {
+                ops.reverse();
+            }
+            let content = format!(
+                "q {scale} 0 0 {scale} 5 7 cm BT /F1 10 Tf {} ET Q",
+                ops.join("")
+            );
+            let tables = table_values(&parse(&simple(&content)));
+            assert_eq!(tables.len(), 1, "{tables:?}");
+            assert_eq!(tables[0][1], ["Valve", "$120.00 (includes fitting)"]);
+            assert_eq!(tables[0][2][0], "Pump");
+        }
+    }
+}
+
+#[test]
+fn borderless_fields_support_units_headers_and_separate_sections() {
+    let mut content = String::from("BT /F1 10 Tf ");
+    for (x, y, t) in [
+        (40, 700, "Material"),
+        (200, 700, "Mass"),
+        (40, 680, "Copper"),
+        (200, 680, "12 kg"),
+        (40, 660, "Steel"),
+        (200, 660, "25 kg"),
+        (40, 610, "A prose paragraph separates these tables."),
+        (40, 550, "North"),
+        (200, 550, "17 m/s"),
+        (40, 530, "South"),
+        (200, 530, "23 m/s"),
+    ] {
+        content += &format!("1 0 0 1 {x} {y} Tm ({t}) Tj ");
+    }
+    content += "ET";
+    let result = parse(&simple(&content));
+    let tables = table_values(&result);
+    assert_eq!(tables.len(), 2);
+    assert_eq!(
+        tables[0],
+        vec![
+            vec!["Material", "Mass"],
+            vec!["Copper", "12 kg"],
+            vec!["Steel", "25 kg"]
+        ]
+    );
+    assert_eq!(tables[1][1], vec!["South", "23 m/s"]);
+    let md = result.to_markdown().text;
+    assert!(md.find("Steel").unwrap() < md.find("A prose").unwrap());
+    assert!(md.find("A prose").unwrap() < md.find("North").unwrap());
+}
+
+#[test]
+fn borderless_field_candidates_reject_prose_isolated_values_and_crossing_gutters() {
+    for values in [
+        [
+            "12 people arrived",
+            "15 people departed",
+            "18 people stayed",
+        ],
+        ["100", "200", "300"],
+    ] {
+        let mut content = String::from("BT /F1 10 Tf ");
+        for (r, value) in values.iter().enumerate() {
+            let y = 700 - r * 20;
+            content += &format!(
+                "1 0 0 1 40 {y} Tm (Left paragraph {r}) Tj 1 0 0 1 320 {y} Tm ({value}) Tj "
+            );
+        }
+        content += "ET";
+        let result = parse(&simple(&content));
+        assert!(table_values(&result).is_empty());
+        let md = result.to_markdown().text;
+        assert!(
+            md.find("Left paragraph 2").unwrap() < md.find(values[0]).unwrap(),
+            "{md}"
+        );
+    }
+    assert!(table_values(&parse(&simple(
+        "BT /F1 10 Tf 40 700 Td (Widget) Tj 1 0 0 1 200 700 Tm ($10) Tj ET"
+    )))
+    .is_empty());
+    // Labels and values have overlapping column envelopes despite each row
+    // having a local gap; no global separator can establish the same schema.
+    let crossing="BT /F1 10 Tf 40 700 Td (Short) Tj 1 0 0 1 120 700 Tm ($12) Tj 1 0 0 1 40 680 Tm (A much longer label) Tj 1 0 0 1 200 680 Tm ($123) Tj ET";
+    assert!(table_values(&parse(&simple(crossing))).is_empty());
+}
+
+#[test]
+fn borderless_fields_obey_cell_limits() {
+    let bytes=simple("BT /F1 10 Tf 40 700 Td (Alpha) Tj 1 0 0 1 200 700 Tm (12 kg) Tj 1 0 0 1 40 680 Tm (Beta) Tj 1 0 0 1 200 680 Tm (25 kg) Tj ET");
+    let mut options = Options::default();
+    options.limits.max_table_cells = 3;
+    assert!(matches!(
+        Parser::new(options).parse_bytes(&bytes, Some("x.pdf")),
+        Err(Error::Limit("max_table_cells"))
+    ));
+}
+
+#[test]
+fn zero_width_word_breaks_are_spaces_without_rewriting_actualtext() {
+    let cmap="1 begincodespacerange<0000><FFFF>endcodespacerange 3 beginbfchar<0001><0041><0002><200B><0003><0042>endbfchar";
+    let bytes = mapped("BT /F1 12 Tf 40 700 Td <000100020003> Tj ET", cmap);
+    assert_eq!(text(&bytes).trim(), "A B");
+    let options = Options {
+        pdf_normalize_unicode: false,
+        ..Default::default()
+    };
+    assert!(Parser::new(options)
+        .parse_bytes(&bytes, Some("x.pdf"))
+        .unwrap()
+        .to_markdown()
+        .text
+        .contains('\u{200b}'));
+    let actual=simple("BT /F1 12 Tf 40 700 Td /Span <</ActualText <FEFF0041200B0042>>> BDC (placeholder) Tj EMC ET");
+    assert_eq!(text(&actual).trim(), "A\u{200b}B");
+}
+
+#[test]
+fn borderless_fields_attach_right_aligned_headers_and_currency_codes() {
+    let mut s =
+        String::from("BT /F1 10 Tf 1 0 0 1 40 700 Tm (Product) Tj 1 0 0 1 250 700 Tm (Price) Tj ");
+    for (r, (name, price)) in [
+        ("Adapter", "USD 9.50"),
+        ("Cable", "USD 120.00"),
+        ("Socket", "USD 7.00"),
+    ]
+    .into_iter()
+    .enumerate()
+    {
+        let y = 680 - r * 20;
+        let x = 280.0 - price.len() as f64 * 6.0;
+        s += &format!("1 0 0 1 40 {y} Tm ({name}) Tj 1 0 0 1 {x} {y} Tm ({price}) Tj ");
+    }
+    s += "ET";
+    let tables = table_values(&parse(&simple(&s)));
+    assert_eq!(tables.len(), 1);
+    assert_eq!(tables[0].len(), 4);
+    assert_eq!(tables[0][0], ["Product", "Price"]);
+    assert_eq!(tables[0][2], ["Cable", "USD 120.00"]);
 }

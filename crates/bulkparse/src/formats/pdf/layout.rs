@@ -11,7 +11,7 @@ fn direction(text: &str) -> Option<bool> {
         _ => None,
     })
 }
-fn rtl(glyphs: &[Glyph]) -> bool {
+fn rtl<'a>(glyphs: impl Iterator<Item = &'a Glyph>) -> bool {
     let (mut r, mut l) = (0, 0);
     for g in glyphs {
         match direction(&g.text) {
@@ -22,8 +22,8 @@ fn rtl(glyphs: &[Glyph]) -> bool {
     }
     r > l
 }
-fn ordered_text(glyphs: &[Glyph]) -> String {
-    let base = rtl(glyphs);
+pub(super) fn ordered_text<'a>(glyphs: impl Iterator<Item = &'a Glyph> + Clone) -> String {
+    let base = rtl(glyphs.clone());
     let mut units: Vec<(String, Option<bool>)> = Vec::new();
     let mut previous: Option<&Glyph> = None;
     for g in glyphs {
@@ -116,7 +116,7 @@ fn line(glyphs: &[Glyph]) -> Line {
         .map(|g| g.em)
         .collect();
     sizes.sort_by(f64::total_cmp);
-    let text = ordered_text(glyphs);
+    let text = ordered_text(glyphs.iter());
     let em = glyphs.iter().map(|g| g.em).fold(0., f64::max);
     let mut heading_em = sizes.get(sizes.len() / 2).copied().unwrap_or(0.);
     // Small-cap fonts encode initial capitals slightly larger than the other
@@ -158,7 +158,7 @@ fn line(glyphs: &[Glyph]) -> Line {
             .fold(f64::NEG_INFINITY, f64::max),
         y: glyphs.iter().map(|g| g.y).sum::<f64>() / glyphs.len() as f64,
         em: glyphs.iter().map(|g| g.em).fold(0., f64::max),
-        rtl: rtl(glyphs),
+        rtl: rtl(glyphs.iter()),
         bottom: glyphs.iter().map(|g| g.y).sum::<f64>() / glyphs.len() as f64,
         table: None,
         complete_field: false,
