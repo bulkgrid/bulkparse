@@ -71,6 +71,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: wasm32-unknown-unknown
+      - run: node --test scripts/test_provision_native_ocr.mjs
       - run: cargo install wasm-pack --locked
       - run: npm run build --prefix bindings/wasm
       - run: npm test --prefix bindings/wasm

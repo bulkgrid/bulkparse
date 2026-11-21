@@ -159,7 +159,11 @@ configuration and rerun failed jobs using the original tag/artifacts.
   explicitly with `bulkparse-setup-ocr --output DIRECTORY` (npm) or
   `node setup-ocr.mjs --output DIRECTORY` from a CLI archive. Standard parsing
   needs none of those downloads. Setup currently pins Linux x64/ARM64 and macOS
-  ARM64; Windows and Intel macOS require manual OCR library provisioning. Python
+  ARM64; Windows and Intel macOS require manual OCR library provisioning. If the
+  pinned ONNX Runtime GitHub archive returns 404, setup uses Microsoft's npm
+  archive for the same runtime version, verifies archive and library checksums,
+  and extracts only the native library without running package install scripts.
+  A checksum mismatch fails instead of switching sources. Python
   users can run the same setup utility from a CLI archive or provide their own
   matching native configuration. See [OCR configuration](ocr-bindings.md).
 - WASM has a separate package and does not include native OCR model inference.

@@ -42,6 +42,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - run: node --test scripts/test_provision_native_ocr.mjs
       - run: node scripts/provision_native_ocr.mjs --output target/ocr/settings
       - run: cargo build --locked --release -p bulkparse-cli --features ocr
       - run: python scripts/evaluate_ocr.py --binary "$PWD/target/release/bulkparse" --config "$PWD/target/ocr/settings/config.json" --out reports/ocr-ci
