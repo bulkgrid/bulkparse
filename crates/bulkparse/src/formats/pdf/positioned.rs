@@ -85,6 +85,31 @@ pub(super) struct Glyph {
     pub actual_text: bool,
     pub bold: bool,
 }
+// A producer can simulate a heavier face by painting the same text twice.
+// Compare complete show operations before geometry sorting interleaves them.
+fn overprint(first: &[Glyph], second: &[Glyph]) -> bool {
+    if first.len() != second.len() || first.is_empty() {
+        return false;
+    }
+    let dx = second[0].x - first[0].x;
+    let dy = second[0].y - first[0].y;
+    if dx.abs() > first[0].em * 0.1 || dy.abs() > first[0].em * 0.1 {
+        return false;
+    }
+    first.iter().zip(second).all(|(a, b)| {
+        let tolerance = a.em * 0.002;
+        let width = a.end - a.x;
+        width > tolerance
+            && dx.abs() < width * 0.4
+            && a.text == b.text
+            && a.rotation == b.rotation
+            && a.bold == b.bold
+            && (a.em - b.em).abs() <= tolerance
+            && (b.x - a.x - dx).abs() <= tolerance
+            && (b.end - a.end - dx).abs() <= tolerance
+            && (b.y - a.y - dy).abs() <= tolerance
+    })
+}
 #[derive(Default)]
 pub(super) struct Page {
     pub glyphs: Vec<Glyph>,
@@ -206,6 +231,7 @@ impl Walker<'_, '_, '_> {
         let mut marked: Vec<(usize, Option<String>)> = Vec::new();
         let mut path = super::rules::Path::default();
         let mut path_present = false;
+        let mut previous_show = None;
         for op in &content.operations {
             self.ctx.node()?;
             path.operation(
@@ -233,6 +259,7 @@ impl Walker<'_, '_, '_> {
                 // image coverage uncertain; never call such a page blank.
                 "W" | "W*" | "gs" | "sh" | "scn" | "SCN" => self.page.uncertain_graphics = true,
                 "Tr" => {
+                    previous_show = None;
                     let mode = value(0)?;
                     if !(0.0..=7.0).contains(&mode) || mode.fract() != 0.0 {
                         return Err(malformed("invalid PDF text rendering mode"));
@@ -240,6 +267,7 @@ impl Walker<'_, '_, '_> {
                     state.render_mode = mode as u8;
                 }
                 "BMC" | "BDC" => {
+                    previous_show = None;
                     self.ctx.depth(depth + marked.len() + 1)?;
                     let property = op.operands.get(1).and_then(|value| {
                         if let Object::Name(name) = value {
@@ -267,6 +295,7 @@ impl Walker<'_, '_, '_> {
                     marked.push((self.page.glyphs.len(), actual));
                 }
                 "EMC" => {
+                    previous_show = None;
                     let (start, actual) = marked
                         .pop()
                         .ok_or_else(|| malformed("unbalanced PDF marked content"))?;
@@ -300,6 +329,7 @@ impl Walker<'_, '_, '_> {
                     stack.push(state.clone());
                 }
                 "Q" => {
+                    previous_show = None;
                     let saved = stack
                         .pop()
                         .ok_or_else(|| malformed("unbalanced PDF graphics state"))?;
@@ -314,6 +344,7 @@ impl Walker<'_, '_, '_> {
                     state.line = Matrix::default();
                 }
                 "Tf" => {
+                    previous_show = None;
                     state.font = op
                         .operands
                         .first()
@@ -369,6 +400,7 @@ impl Walker<'_, '_, '_> {
                     if font.recovered_codespace {
                         self.ctx.diagnostic("pdf_cmap_codespace_recovery", "ToUnicode codespace disagrees with a single-byte font; recovery uses the font's one-byte character codes.", self.source.clone(), true);
                     }
+                    let start = self.page.glyphs.len();
                     let items = if let Object::Array(items) = operand {
                         items.as_slice()
                     } else {
@@ -453,8 +485,16 @@ impl Walker<'_, '_, '_> {
                             _ => return Err(malformed("invalid PDF text operand")),
                         }
                     }
+                    if previous_show.is_some_and(|last| {
+                        overprint(&self.page.glyphs[last..start], &self.page.glyphs[start..])
+                    }) {
+                        self.page.glyphs.truncate(start);
+                    } else {
+                        previous_show = Some(start);
+                    }
                 }
                 "Do" => {
+                    previous_show = None;
                     let name = op
                         .operands
                         .first()

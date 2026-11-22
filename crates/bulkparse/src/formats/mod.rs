@@ -44,7 +44,7 @@ pub(crate) fn write(
     if matches!(format, Format::Xlsx | Format::Xlsb | Format::Ods) {
         return office::write(format, bytes, ctx, output);
     }
-    output.blocks(&parse(format, bytes, ctx)?)?;
+    output.document_blocks(format, &parse(format, bytes, ctx)?)?;
     Ok(())
 }
 

@@ -1168,7 +1168,76 @@ fn reading_order(lines: &[Line], ctx: &mut Context<'_>) -> Result<Vec<usize>, Er
     Ok(out)
 }
 
+// A bottom callout can have its own narrow display column beside a wider
+// caption spanning the body gutter. Keep its boundary until the next page
+// establishes whether the preceding prose actually continues.
+fn bottom_callout(lines: &[Line], order: &[usize], page_box: [f64; 4]) -> Option<usize> {
+    let last = &lines[*order.last()?];
+    let bottom_band = page_box[1] + (page_box[3] - page_box[1]) * 0.35;
+    if last.y > bottom_band {
+        return None;
+    }
+    let split = order.windows(2).rposition(|pair| {
+        let (body, display) = (&lines[pair[0]], &lines[pair[1]]);
+        display.y < bottom_band
+            && display.y < body.y
+            && display.em >= body.em * 1.6
+            && display.end < body.x
+            && body.text.ends_with(char::is_alphanumeric)
+            && body.text.split_whitespace().take(3).count() == 3
+    })? + 1;
+    let body = &lines[order[split - 1]];
+    let display = &lines[order[split]];
+    let mut caption_lines = 0;
+    let mut caption_x: Option<f64> = None;
+    for &i in &order[split..] {
+        let line = &lines[i];
+        if line.y >= body.y || line.table.is_some() {
+            return None;
+        }
+        if line.end < body.x && (line.x - display.x).abs() <= display.em {
+            continue;
+        }
+        if line.x <= display.end || (line.x - *caption_x.get_or_insert(line.x)).abs() > line.em {
+            return None;
+        }
+        if line.x < body.x
+            && line.end > body.x + body.em * 3.
+            && line.end - line.x > (body.end - body.x) * 1.2
+        {
+            caption_lines += 1;
+        }
+    }
+    (caption_lines >= 2).then_some(split)
+}
+
+fn continues_column(lines: &[Line], order: &[usize], pos: usize) -> bool {
+    if pos < 2 || pos + 1 >= order.len() {
+        return false;
+    }
+    let (a, b) = (&lines[order[pos - 1]], &lines[order[pos]]);
+    let aligned = |line: &Line, neighbor: &Line| {
+        (line.x - neighbor.x).abs() < line.em
+            && (line.em - neighbor.em).abs() < line.em * 0.1
+            && line.table.is_none()
+            && neighbor.table.is_none()
+    };
+    (if a.rtl && b.rtl {
+        b.end < a.x
+    } else {
+        a.end < b.x
+    }) && (a.em - b.em).abs() < a.em * 0.1
+        && b.y > a.y + a.em * 1.5
+        && b.text.starts_with(char::is_lowercase)
+        && (a.text.ends_with(char::is_alphanumeric) || a.text.ends_with([',', '-', '/']))
+        && a.text.contains(' ')
+        && b.text.contains(' ')
+        && aligned(a, &lines[order[pos - 2]])
+        && aligned(b, &lines[order[pos + 1]])
+}
+
 pub(super) enum Piece {
+    CalloutStart,
     Text(String),
     Heading(u8, String),
     Table(usize),
@@ -1483,8 +1552,19 @@ fn arrange_impl(
     let mut pieces = Vec::new();
     let mut previous: Option<&Line> = None;
     let mut previous_heading: Option<&Line> = None;
-    for i in order {
+    let callout = page
+        .and_then(|p| p.page_box)
+        .and_then(|bbox| bottom_callout(&lines, &order, bbox));
+    for (pos, &i) in order.iter().enumerate() {
         let l = &lines[i];
+        if callout == Some(pos) {
+            if !out.is_empty() {
+                pieces.push(Piece::Text(std::mem::take(&mut out)));
+            }
+            pieces.push(Piece::CalloutStart);
+            previous = None;
+            previous_heading = None;
+        }
         if levels[i] > 0 {
             if !out.is_empty() {
                 pieces.push(Piece::Text(std::mem::take(&mut out)));
@@ -1521,9 +1601,19 @@ fn arrange_impl(
             continue;
         }
         if let Some(p) = previous {
-            out.push('\n');
-            if p.y - l.y > 1.7 * p.em.max(l.em) || l.y > p.y + p.em * 0.5 {
+            if l.y > p.y + p.em * 0.5 && infer_headings && continues_column(&lines, &order, pos) {
+                if !p
+                    .text
+                    .strip_suffix(['-', '/'])
+                    .is_some_and(|prefix| prefix.ends_with(char::is_alphanumeric))
+                {
+                    out.push(' ');
+                }
+            } else {
                 out.push('\n');
+                if p.y - l.y > 1.7 * p.em.max(l.em) || l.y > p.y + p.em * 0.5 {
+                    out.push('\n');
+                }
             }
         }
         out.push_str(&l.text);

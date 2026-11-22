@@ -22,7 +22,7 @@ fn page_blocks(
     mut page: positioned::Page,
     source: Source,
     ctx: &mut Context<'_>,
-) -> Result<Vec<Block>, Error> {
+) -> Result<(Vec<Block>, Option<usize>), Error> {
     // Single-page exports can retain entire neighbouring pages outside the
     // inherited CropBox/MediaBox. They are not visible reading-order content.
     // Keep overlapping and rotated glyphs conservatively; inspection still
@@ -102,8 +102,10 @@ fn page_blocks(
         .collect();
     let pieces = layout::arrange(glyphs, &tables, &page.image_coverage, ctx)?;
     let mut blocks = Vec::new();
+    let mut callout = None;
     for piece in pieces {
         match piece {
+            layout::Piece::CalloutStart => callout = Some(blocks.len()),
             layout::Piece::Heading(level, text) => {
                 ctx.text(&text)?;
                 blocks.push(ctx.block(
@@ -148,7 +150,7 @@ fn page_blocks(
             }
         }
     }
-    Ok(blocks)
+    Ok((blocks, callout))
 }
 
 fn load(
@@ -212,6 +214,7 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
     ctx.diagnostic("pdf_text_only", "Experimental positioned native text and geometric table extraction. Images and complex layouts are not fully reconstructed; complete visual-content coverage cannot be verified.", Source::default(), true);
     let mut blocks = Vec::new();
     let mut inspections = Vec::with_capacity(pages.len());
+    let mut pending_callout = None;
     let (mut ocr_pages, mut ocr_bytes) = (0usize, 0usize);
     for (number, id) in pages {
         ctx.check()?;
@@ -222,7 +225,7 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
         match positioned::extract(&document, id, source.clone(), ctx) {
             Ok(page) => {
                 let mut inspected = inspection::classify(&page, number, ctx)?;
-                let mut native = match page_blocks(page, source.clone(), ctx) {
+                let (mut native, mut callout) = match page_blocks(page, source.clone(), ctx) {
                     Ok(blocks) => blocks,
                     Err(error @ (Error::Limit(_) | Error::Cancelled)) => return Err(error),
                     Err(error) => {
@@ -232,7 +235,7 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
                             source.clone(),
                             true,
                         );
-                        Vec::new()
+                        (Vec::new(), None)
                     }
                 };
                 if inspected.route == PdfRoute::Ocr
@@ -298,6 +301,7 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
                                         inspected.ocr_status = OcrStatus::Applied;
                                         // Replace the whole page, never append duplicated native text.
                                         native = recognized;
+                                        callout = None;
                                         ctx.diagnostic("pdf_ocr_applied", "Text supplied by the configured OCR provider; accuracy and layout remain unverified.", source.clone(), true);
                                     }
                                 }
@@ -335,11 +339,25 @@ pub fn parse(bytes: &[u8], ctx: &mut Context<'_>) -> Result<Vec<Block>, Error> {
                         true,
                     );
                 }
+                if let Some(start) = pending_callout.take() {
+                    let before: &Block = &blocks[start - 1];
+                    if inspected.ocr_status != OcrStatus::Applied
+                        && native.first().is_some_and(|next| {
+                            crate::render::pdf_continuation(before, next).is_some()
+                        })
+                    {
+                        blocks[start - 1..].rotate_left(1);
+                    }
+                }
+                pending_callout = callout
+                    .filter(|&i| i > 0 && i < native.len())
+                    .map(|i| blocks.len() + i);
                 blocks.extend(native);
                 inspections.push(inspected);
             }
             Err(error @ (Error::Limit(_) | Error::Cancelled)) => return Err(error),
             Err(error) => {
+                pending_callout = None;
                 ctx.diagnostic("pdf_page_error", &error.to_string(), source.clone(), true);
                 inspections.push(inspection::failed(number));
             }

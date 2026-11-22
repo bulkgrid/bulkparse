@@ -83,6 +83,95 @@ fn columns_read_down_before_across_despite_interleaved_stream() {
     assert!(a < b && b < c && c < d, "{out}");
 }
 #[test]
+fn overprinted_runs_preserve_legitimate_repeated_letters_and_nearby_labels() {
+    let bytes = simple(
+        "BT /F1 14 Tf 50 640 Td (Bookkeeper) Tj 0.3 -0.2 Td (Bookkeeper) Tj
+        100 0 Td (Bookkeeper) Tj 0 -18 Td (D) Tj 0.3 0 Td (D) Tj ET",
+    );
+    let md = text(&bytes);
+    assert_eq!(md.matches("Bookkeeper").count(), 2, "{md}");
+    assert!(md.contains('D') && !md.contains("DD"), "{md}");
+}
+
+#[test]
+fn body_columns_join_continuations_and_separate_independent_paragraphs() {
+    let columns = |left: &str, right: &str| {
+        simple(
+            &format!(
+        "BT /F1 11 Tf 45 650 Td (A report on the collection) Tj 0 -14 Td (describes its history) Tj
+         0 -14 Td ({left}) Tj 1 0 0 1 310 650 Tm ({right}) Tj 0 -14 Td (and the inventory.) Tj ET"),
+        )
+    };
+    assert!(
+        text(&columns("and the additions to", "the archive catalogue"))
+            .contains("additions to the archive catalogue")
+    );
+    assert!(
+        text(&columns("and the additions.", "the archive catalogue"))
+            .contains("additions.\n\nthe archive")
+    );
+}
+
+#[test]
+fn a_bottom_callout_moves_only_for_continued_prose_on_the_next_page() {
+    let mut doc = Document::with_version("1.5");
+    let font =
+        doc.add_object(dictionary! {"Type"=>"Font","Subtype"=>"Type1","BaseFont"=>"Courier"});
+    let resources: Object = dictionary! {"Font"=>dictionary!{"F1"=>font}}.into();
+    let first = b"BT /F1 11 Tf 45 250 Td (The annual report has two parts.) Tj
+        0 -15 Td (This is the end of the first.) Tj
+        1 0 0 1 310 250 Tm (Members of the committee include) Tj
+        0 -15 Td (Lena West, Sam Black, Erica) Tj ET
+        BT /F1 31 Tf 45 173 Td (72) Tj ET
+        BT /F1 12 Tf 45 148 Td (Visits) Tj ET
+        BT /F1 10 Tf 125 177 Td (An independent caption stretches across both newspaper columns.) Tj
+        0 -15 Td (It records site visits and several additional inspection details.) Tj ET"
+        .to_vec();
+    for (opening, continues) in [
+        ("Jones, Pat Brown and Jo", true),
+        ("Another topic starts here.", false),
+    ] {
+        let next = format!(
+            "BT /F1 11 Tf 45 710 Td ({opening}) Tj 0 -15 Td (followed by more text.) Tj ET"
+        );
+        let bytes = finish(
+            doc.clone(),
+            resources.clone(),
+            vec![first.clone(), next.into_bytes()],
+        );
+        let result = parse(&bytes);
+        let md = result.to_markdown().text;
+        assert_eq!(
+            md.find("72").unwrap() < md.find("Members").unwrap(),
+            continues,
+            "{md}"
+        );
+        if continues {
+            assert!(md.contains("Erica Jones,"), "{md}");
+            assert!(result.document.blocks.iter().any(|b| b.source.page == Some(2)
+                && matches!(&b.content, BlockContent::Paragraph { inlines } if matches!(&inlines[..], [Inline::Text {text}] if text.starts_with("Jones,")))));
+        }
+        let mut streamed = Vec::new();
+        Parser::default()
+            .parse_to_markdown(&bytes, Some("report.pdf"), &mut streamed)
+            .unwrap();
+        assert_eq!(md.as_bytes(), streamed);
+    }
+}
+
+#[test]
+fn a_page_number_at_the_end_of_prose_cannot_join_the_next_page() {
+    let mut doc = Document::with_version("1.5");
+    let font =
+        doc.add_object(dictionary! {"Type"=>"Font","Subtype"=>"Type1","BaseFont"=>"Courier"});
+    let bytes = finish(doc, dictionary! {"Font"=>dictionary!{"F1"=>font}}.into(), vec![
+        b"BT /F1 11 Tf 50 80 Td (The source includes a page number) Tj 0 -15 Td (277) Tj ET".to_vec(),
+        b"BT /F1 11 Tf 50 710 Td (for example these words) Tj 0 -15 Td (begin the next page.) Tj ET".to_vec(),
+    ]);
+    assert!(text(&bytes).contains("277\n\nfor example"));
+}
+
+#[test]
 fn compact_cmaps_ranges_ligatures_and_supplementary_characters() {
     let cmap="/CIDInit/ProcSet findresource begin 1 begincodespacerange<0000><FFFF>endcodespacerange 2 beginbfchar<0001><00660069><0002><D83DDE00>endbfchar 1 beginbfrange<0003><0005><0041>endbfrange end";
     assert_eq!(

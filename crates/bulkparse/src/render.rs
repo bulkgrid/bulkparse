@@ -12,11 +12,59 @@ pub fn render(document: &Document) -> MarkdownOutput {
     let mut bytes = Vec::new();
     let mut writer = Writer::new(&mut bytes);
     writer
-        .blocks(&document.blocks)
+        .document_blocks(document.format, &document.blocks)
         .expect("Vec writes cannot fail");
     let diagnostics = writer.diagnostics;
     let text = String::from_utf8(bytes).expect("renderer writes UTF-8");
     MarkdownOutput { text, diagnostics }
+}
+
+// Keep each PDF block's physical page in the model. A soft page transition
+// only affects the Markdown separator between two prose paragraphs.
+pub(crate) fn pdf_continuation(first: &Block, next: &Block) -> Option<&'static str> {
+    if next.source.page? != first.source.page?.checked_add(1)?
+        || first.source.ocr.is_some()
+        || next.source.ocr.is_some()
+        || first.source.pdf_region.is_some()
+        || next.source.pdf_region.is_some()
+    {
+        return None;
+    }
+    fn prose(block: &Block) -> Option<&str> {
+        let BlockContent::Paragraph { inlines } = &block.content else {
+            return None;
+        };
+        let [Inline::Text { text }] = inlines.as_slice() else {
+            return None;
+        };
+        text.contains('\n').then_some(text.trim())
+    }
+    let a = prose(first)?;
+    let b = prose(next)?;
+    let last = a.lines().next_back()?;
+    if !last.contains(' ') || !last.chars().any(char::is_alphabetic) {
+        return None;
+    }
+    if a.strip_suffix(['/', '-'])
+        .is_some_and(|prefix| prefix.ends_with(char::is_alphanumeric))
+        && b.starts_with(char::is_alphabetic)
+    {
+        return Some("");
+    }
+    let comma_list = last.contains(',')
+        && last
+            .split_whitespace()
+            .next_back()?
+            .starts_with(char::is_uppercase)
+        && b.split_whitespace()
+            .next()?
+            .strip_suffix(',')
+            .is_some_and(|word| {
+                word.starts_with(char::is_uppercase) && word.chars().all(char::is_alphabetic)
+            });
+    ((a.ends_with(char::is_alphanumeric) || a.ends_with(','))
+        && (b.starts_with(char::is_lowercase) || comma_list))
+        .then_some(" ")
 }
 
 /// Incremental top-level Markdown rendering. Tables allocate at most one row's
@@ -39,6 +87,30 @@ impl<'a> Writer<'a> {
             self.output.write_all(b"\n")?;
         }
         self.emitted = true;
+        Ok(())
+    }
+    pub fn document_blocks(&mut self, format: crate::Format, items: &[Block]) -> io::Result<()> {
+        if format != crate::Format::Pdf {
+            return self.blocks(items);
+        }
+        let mut joining = false;
+        for (i, block) in items.iter().enumerate() {
+            let separator = items
+                .get(i + 1)
+                .and_then(|next| pdf_continuation(block, next));
+            if joining || separator.is_some() {
+                if !joining {
+                    self.begin()?;
+                }
+                let text = blocks(std::slice::from_ref(block), &mut self.diagnostics);
+                self.output.write_all(text.trim_end().as_bytes())?;
+                self.output
+                    .write_all(separator.unwrap_or("\n").as_bytes())?;
+            } else {
+                self.block(block)?;
+            }
+            joining = separator.is_some();
+        }
         Ok(())
     }
     pub fn blocks(&mut self, items: &[Block]) -> io::Result<()> {
@@ -250,6 +322,7 @@ fn table_diagnostics(
 #[derive(Clone, Copy, PartialEq)]
 enum TextContext {
     Block,
+    LinkFallback,
     Inline,
     Heading,
     Cell,
@@ -271,7 +344,9 @@ fn line_prefix(out: &str, pending: &str, context: TextContext) -> Option<u8> {
             Some(b'0'..=b'9') if spaces == 0 && digits < 9 => digits += 1,
             Some(b' ') if spaces < 3 => spaces += 1,
             Some(b'\n' | b'\r') => return Some(digits),
-            None if context == TextContext::Block => return Some(digits),
+            None if matches!(context, TextContext::Block | TextContext::LinkFallback) => {
+                return Some(digits)
+            }
             _ => return None,
         }
     }
@@ -388,6 +463,21 @@ fn needs_escape(
         // supplies their matching delimiter. Braces and ordinary ! are literal.
         b'~' if matches!(context, TextContext::Cell | TextContext::CellFragment) => {
             after.clone().any(|b| b == b'~')
+        }
+        // The renderer emits inline links and escapes literal reference
+        // definitions. In prose a plain [label] therefore stays literal.
+        // Protect extension markers and ambiguous boundaries such as a
+        // following generated link or a formatting span that may be empty.
+        b'[' if context == TextContext::Block => {
+            let mut next = after;
+            match next.next() {
+                Some(b'^' | b'!' | b'[' | 0 | 1) => true,
+                Some(b'x' | b'X' | b' ' | b'\t') => matches!(next.next(), Some(b']' | 0)),
+                _ => false,
+            }
+        }
+        b']' if context == TextContext::Block => {
+            matches!(after.clone().next(), Some(b'(' | b'[' | b':' | 0 | 1))
         }
         b'`' | b'*' | b'[' | b']' | b'|' | b'~' => true,
         b'\\' => after
@@ -633,10 +723,6 @@ fn formatting(item: &Inline) -> Option<(&'static str, &[Inline])> {
     }
 }
 
-fn inlines(items: &[Inline]) -> String {
-    inline_iter(items.iter(), TextContext::Block)
-}
-
 fn inline_iter<'a>(
     items: impl Iterator<Item = &'a Inline> + Clone,
     context: TextContext,
@@ -709,7 +795,9 @@ fn inline_iter<'a>(
                         destination(url)
                     ));
                 } else {
-                    out.push_str(&inlines(children));
+                    // This label becomes ordinary text next to another inline.
+                    // Its final bracket cannot see the following destination.
+                    out.push_str(&inline_iter(children.iter(), TextContext::LinkFallback));
                 }
             }
             Inline::Image { url, alt } => {
@@ -946,6 +1034,10 @@ fn blocks_in(items: &[Block], diagnostics: &mut Vec<Diagnostic>, context: TextCo
 mod escape_tests {
     use super::*;
 
+    fn inlines(items: &[Inline]) -> String {
+        inline_iter(items.iter(), TextContext::Block)
+    }
+
     #[test]
     fn adjacent_matching_styles_share_delimiters() {
         for (wrap, marker) in [
@@ -1085,6 +1177,9 @@ mod escape_tests {
             "my_file.txt",
             r"C:\Users\Erik",
             "a < b",
+            "[Editorial note.]",
+            "[A note wrapped\nacross two lines.]",
+            "See [appendix B] and [12].",
         ] {
             assert_eq!(inlines(&[Inline::text(text)]), text);
             let split: Vec<_> = text.chars().map(|c| Inline::text(c.to_string())).collect();
@@ -1123,6 +1218,10 @@ mod escape_tests {
             "1.",
             "[link](https://example.com)",
             "![image](https://example.com/x.png)",
+            "[literal][reference]",
+            "[literal][]",
+            "[reference]: /destination",
+            "[reference]\n[reference]: /destination",
             "<b>literal</b>",
             "&copy; &#169; &#xA9;",
             "**bold** _italic_ ~~strike~~ `code`",
@@ -1137,6 +1236,39 @@ mod escape_tests {
             let split: Vec<_> = text.chars().map(|c| Inline::text(c.to_string())).collect();
             assert_eq!(plain_text(&inlines(&split)), expected, "split: {text}");
         }
+    }
+
+    #[test]
+    fn literal_brackets_preserve_task_markers_and_footnotes() {
+        use pulldown_cmark::{Event, Options, Parser, Tag};
+        for marker in ["[ ]", "[x]", "[X]"] {
+            let md = format!("- {} task", inlines(&[Inline::text(marker)]));
+            assert!(
+                !Parser::new_ext(&md, Options::ENABLE_TASKLISTS)
+                    .any(|e| matches!(e, Event::TaskListMarker(_))),
+                "{md}"
+            );
+        }
+        let md = inlines(&[Inline::text("[^1]: note\nsee [^1]")]);
+        assert!(
+            !Parser::new_ext(&md, Options::ENABLE_FOOTNOTES).any(|e| matches!(
+                e,
+                Event::FootnoteReference(_) | Event::Start(Tag::FootnoteDefinition(_))
+            )),
+            "{md}"
+        );
+    }
+
+    #[test]
+    fn flattened_link_label_cannot_link_to_following_text() {
+        let md = inlines(&[
+            Inline::Link {
+                url: "unhandled:target".into(),
+                children: vec![Inline::text("[caption]")],
+            },
+            Inline::text("(destination)"),
+        ]);
+        assert_eq!(plain_text(&md), "[caption](destination)");
     }
 
     #[test]
