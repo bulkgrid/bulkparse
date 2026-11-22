@@ -190,7 +190,19 @@ fn queue_full_queued_deadline_and_cancellation_do_not_wait_for_active_job() {
 #[test]
 fn active_deadline_kills_worker_and_next_job_gets_replacement() {
     let scratch = Scratch::new();
-    let pool = Pool::new(fake_config()).unwrap();
+    let mut config = fake_config();
+    // Starting Python on a loaded runner can exceed the active-job deadline.
+    // Deliberately exercise slow startup, then test an already-running worker.
+    config.worker_args.push("--slow-ready".into());
+    let pool = Pool::new(config).unwrap();
+    let warmup = pool
+        .try_submit(scratch.path("ok"), Options::default(), WAIT)
+        .unwrap()
+        .wait()
+        .unwrap();
+    assert!(
+        matches!(warmup.error, Some(JobError::Conversion { code, .. }) if code == "fixture_ok")
+    );
     let hang = pool
         .try_submit(
             scratch.path("hang"),

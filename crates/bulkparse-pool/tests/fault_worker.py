@@ -13,6 +13,8 @@ def send(value):
     sys.stdout.buffer.flush()
 
 
+if '--slow-ready' in sys.argv:
+    time.sleep(0.5)
 if '--no-ready' in sys.argv:
     time.sleep(60)
 if '--bad-ready' in sys.argv:
