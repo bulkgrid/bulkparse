@@ -144,7 +144,7 @@ fn legacy_dates_numbers_and_merges_use_existing_sheet_semantics() {
         .unwrap();
     let markdown = result.to_markdown().text;
     assert!(
-        markdown.contains("1904-01-02") && markdown.contains("colspan=\"2\""),
+        markdown.contains("1904-01-02") && markdown.contains("| Spanning |  |"),
         "{markdown}"
     );
 }

@@ -32,9 +32,7 @@ report that they have not calculated them. Hidden XLSX sheets/slides and cell
 values follow a visible-content policy; hidden rows/columns leave blank positions
 so provenance continues to identify original cells.
 
-Rich cell emphasis, safe links, lists, multiple paragraphs and nested tables survive HTML table rendering. Explicit headers retain `th` semantics. Covered-cell content is retained inside its merged anchor with original block provenance and a diagnostic, preventing overlapping output cells. Whitespace sits outside Markdown emphasis delimiters. Tables without semantic headers use escaped HTML when needed to retain merged
-cells. JSON retains row/column spans. Other simple tables use the existing GFM
-renderer. The shared schema remains 0.5.
+All tables render as GFM pipe tables. Rich inline emphasis and safe links are retained; lists, multiple paragraphs and nested tables become inline cell text separated with `<br>`. Nested rows retain column order with ` / ` separators. The first explicit header row becomes the GFM header; additional header rows remain visible data with a rendering diagnostic. Headerless tables get an empty header. Merged cells keep their anchor text with blank covered positions, and JSON retains row/column spans and full block structure. Covered-cell content remains inside its merged anchor with its original provenance. Whitespace sits outside Markdown emphasis delimiters. Rendering remains incremental and only active row-span positions require layout storage.
 
 Equations use a bounded MathML/OMML subset translated into generated TeX; annotations and macros are not executed. Unsupported structures retain available expression content with a partial diagnostic. Legacy DOC formatting metadata failures retain main-story text with a warning; malformed required text/persistence still fails. EPUB targets are validated against emitted anchors, preserve case, and report missing/hidden or duplicate targets.
 

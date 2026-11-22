@@ -413,7 +413,7 @@ Configurable limits cover input size, extracted text, nodes, depth, table cells,
 
 BulkParse is ready to evaluate and build against, with these boundaries:
 
-- **Extraction fidelity varies by format.** Legacy numbering, notes, links, complex layouts, images and some table structures remain incomplete. Markdown consumers need HTML-table support for merged and nested tables.
+- **Extraction fidelity varies by format.** Legacy numbering, notes, links, complex layouts, images and some table structures remain incomplete. Tables always render as GFM pipe tables. Merged cells leave blank covered positions; nested tables and block content are flattened inside cells. Use JSON to retain spans and full structure.
 - **Validation covers parser behavior, resource limits and language bindings.** See the [validation commands and platform limits](docs/validation.md).
 - **Platform testing is still expanding.** The release pipeline builds and tests native packages for Linux x64/ARM64, macOS Intel/Apple Silicon and Windows x64. Other platforms require a source build or WASM. Extended Node/WASM PDF parity uses `--liftoff-only` because of a known optimizing-compiler memory issue.
 

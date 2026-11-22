@@ -97,8 +97,13 @@ fn semantic_ocr_preserves_tables_math_order_and_unknown_confidence() {
     assert_eq!(rows[2][0].source.cell, Some(2));
     assert_eq!(rows[2][0].source.row, Some(3));
     let md = result.to_markdown().text;
-    assert!(md.contains("colspan=\"2\""));
-    assert!(md.contains("rowspan=\"2\""));
+    assert!(
+        md.contains(
+            "| Quarter | Revenue |  |\n| --- | --- | --- |\n| Q1 | 10 | 20 |\n|  | 30 | 40 |"
+        ),
+        "{md}"
+    );
+    assert!(!md.contains("<table>"));
     assert!(md.contains("$$E=mc^2$$"));
     assert!(md.find("Scanned report").unwrap() < md.find("Quarter").unwrap());
     let roundtrip: ParseResult = serde_json::from_str(&result.to_json().unwrap()).unwrap();

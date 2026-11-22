@@ -589,7 +589,11 @@ fn borderless_numeric_tables_include_aligned_headers_and_keep_sparse_cells() {
     assert_eq!(tables[0].len(), 6);
     assert_eq!(tables[0][5], vec!["Zone 5", "22", "", "24"]);
     assert!(
-        result.to_markdown().text.find("</table>").unwrap()
+        result
+            .to_markdown()
+            .text
+            .find("| Zone 5 | 22 |  | 24 |")
+            .unwrap()
             < result
                 .to_markdown()
                 .text
@@ -605,16 +609,15 @@ fn borderless_numeric_tables_include_aligned_headers_and_keep_sparse_cells() {
 }
 
 #[test]
-fn native_tables_emit_exact_rows_and_escape_source_html() {
+fn native_tables_emit_pipe_rows_and_escape_source_html() {
     let result = parse(&simple(
         &table_content("S", 1., false).replace("Metal", "<x>&"),
     ));
     let markdown = result.to_markdown().text;
-    assert_eq!(markdown.matches("<tr>").count(), 3);
-    assert_eq!(markdown.matches("<td>").count(), 9);
-    assert!(markdown.contains("<td>&lt;x&gt;&amp;</td>"), "{markdown}");
-    assert!(!markdown.contains("<x>"));
-    assert!(!markdown.contains("| ---"));
+    assert_eq!(markdown.lines().filter(|l| l.starts_with("| ")).count(), 5);
+    assert!(markdown.contains("| \\<x>& |"), "{markdown}");
+    assert!(markdown.contains("| --- | --- | --- |"));
+    assert!(!markdown.contains("<table>"));
 }
 
 #[test]
@@ -774,7 +777,8 @@ fn repeated_numeric_rows_form_a_headerless_table_but_prose_stays_column_ordered(
     assert_eq!(tables[0].len(), 4);
     assert_eq!(tables[0][0], vec!["Orchard", "101", "102", "103"]);
     assert_eq!(tables[0][1], vec!["Meadow", "111", "112", "113"]);
-    assert_eq!(out.matches("<tr>").count(), 4);
+    assert_eq!(out.lines().filter(|l| l.starts_with("| ")).count(), 6);
+    assert!(out.contains("| Meadow | 111 | 112 | 113 |"));
     // A short aligned numeric list is not enough evidence without a header.
     let short = content
         .replace("1 0 0 1 40 655 Tm (Valley) Tj ", "")
@@ -864,8 +868,13 @@ fn explicit_grid_recovers_row_and_column_spans_with_logical_provenance() {
     assert_eq!(rows[1][1].source.cell, Some(3));
     assert_eq!(rows[1][0].source.row, Some(2));
     let md = result.to_markdown().text;
-    assert!(md.contains("<td rowspan=\"2\">Group</td>"), "{md}");
-    assert!(md.contains("<td colspan=\"2\">Shared heading</td>"), "{md}");
+    assert!(md.contains("| Group | Shared heading |  |"), "{md}");
+    assert!(
+        md.lines()
+            .any(|l| l.starts_with("|  |") && l != "|  |  |  |"),
+        "{md}"
+    );
+    assert!(!md.contains("<table>"));
     let json = serde_json::to_value(result).unwrap();
     assert!(json.to_string().contains("\"row_span\":2"));
     let mut options = Options::default();
@@ -1256,7 +1265,7 @@ fn sparse_rules_keep_spanning_headers_and_short_text_rows() {
     let result = parse(&simple(&s));
     let md = result.to_markdown().text;
     assert!(
-        md.contains("<td colspan=\"2\">One heading across both columns</td>"),
+        md.contains("| One heading across both columns |  |"),
         "{md}"
     );
     let table = table_values(&result);

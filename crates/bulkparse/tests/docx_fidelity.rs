@@ -78,7 +78,11 @@ fn merges_follow_grid_boundaries_and_retain_covered_content() {
     assert_eq!((rows[0][1].col_span, rows[0][1].row_span), (2, 2));
     assert_eq!(rows[1].len(), 2); // one grid-before gap, one ordinary cell
     let md = result.to_markdown().text;
-    assert!(md.contains("rowspan=\"2\""));
+    assert!(
+        md.contains("|  | Group<br>Continuation detail |  | First |"),
+        "{md}"
+    );
+    assert!(md.contains("|  |  |  | Second |"), "{md}");
     assert!(md.contains("Continuation detail"));
     assert!(!result.diagnostics.iter().any(|d| d.code.contains("merge")));
 }

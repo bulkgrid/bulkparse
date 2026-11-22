@@ -579,8 +579,7 @@ fn write_unmerged_values(
             writer.block(&block)?;
         }
     }
-    let native = src.page.is_some();
-    writer.table_start(native)?;
+    let mut table = crate::render::TableState::new(width, 0, false, src);
     let mut values = grid.into_iter().peekable();
     let mut next_id = next_id.unwrap_or(0);
     let mut row = Vec::with_capacity(width);
@@ -622,16 +621,8 @@ fn write_unmerged_values(
             });
         }
         decorate(&mut row, ctx)?;
-        writer.table_row(
-            &row,
-            (r - minr) as usize,
-            0,
-            width,
-            native,
-            src.part.is_none(),
-        )?;
+        writer.table_row(&row, (r - minr) as usize, &mut table)?;
     }
-    writer.table_end(native)?;
     Ok(None)
 }
 
@@ -665,21 +656,12 @@ pub(super) fn structured_table_output(
 
 trait TableContent: Default {
     fn is_empty(&self) -> bool;
-    fn needs_native(&self) -> bool;
     fn append(&mut self, anchor: (u32, u32), position: (u32, u32), other: Self, src: &Source);
     fn into_blocks(self, position: (u32, u32), src: &Source) -> Vec<Block>;
 }
 impl TableContent for Vec<Block> {
     fn is_empty(&self) -> bool {
         self.is_empty()
-    }
-    fn needs_native(&self) -> bool {
-        self.iter().any(|b| {
-            !matches!(
-                b.content,
-                BlockContent::Paragraph { .. } | BlockContent::Heading { .. }
-            )
-        })
     }
     fn append(&mut self, _: (u32, u32), _: (u32, u32), other: Self, _: &Source) {
         self.extend(other);
@@ -700,9 +682,6 @@ struct PendingText {
 impl TableContent for PendingText {
     fn is_empty(&self) -> bool {
         self.text.is_empty() && self.covered.is_empty()
-    }
-    fn needs_native(&self) -> bool {
-        false
     }
     fn append(&mut self, _: (u32, u32), position: (u32, u32), other: Self, _: &Source) {
         self.covered.push((position, other));
@@ -778,9 +757,6 @@ impl PendingBlocks {
 impl TableContent for PendingBlocks {
     fn is_empty(&self) -> bool {
         matches!(self, Self::Full(b) if b.is_empty())
-    }
-    fn needs_native(&self) -> bool {
-        matches!(self, Self::Full(b) if b.needs_native())
     }
     fn append(&mut self, anchor: (u32, u32), position: (u32, u32), other: Self, src: &Source) {
         let mut blocks = std::mem::take(self).into_blocks(anchor, src);
@@ -887,11 +863,8 @@ fn structured_table_output_with<T: TableContent>(
     let height = (maxr - minr + 1) as usize;
     let width = (maxc - minc + 1) as usize;
     let header_rows = header_rows.min(height);
-    let native = output.is_some()
-        && ((header_rows == 0 && src.page.is_some())
-            || header_rows > 1
-            || spans.values().any(|&(rs, cs)| rs > 1 || cs > 1)
-            || grid.values().any(TableContent::needs_native));
+    let has_spans = spans.values().any(|&(rs, cs)| rs > 1 || cs > 1);
+    let mut table = crate::render::TableState::new(width, header_rows, has_spans, src);
     if let Some(writer) = output.as_deref_mut() {
         // Charge the complete cell/table budget once, before decorations and
         // output, in the same order as the structured path. XLS recovery keeps
@@ -910,7 +883,7 @@ fn structured_table_output_with<T: TableContent>(
                 writer.block(&block)?;
             }
         }
-        writer.table_start(native)?;
+        writer.table_diagnostics(src, has_spans, header_rows);
     }
     let mut rows = if output.is_none() {
         Vec::with_capacity(height)
@@ -950,20 +923,12 @@ fn structured_table_output_with<T: TableContent>(
         }
         if let Some(writer) = output.as_deref_mut() {
             decorate(&mut row, ctx)?;
-            writer.table_row(
-                &row,
-                (r - minr) as usize,
-                header_rows,
-                width,
-                native,
-                src.page.is_some() && src.part.is_none(),
-            )?;
+            writer.table_row(&row, (r - minr) as usize, &mut table)?;
         } else {
             rows.push(row)
         }
     }
-    if let Some(writer) = output {
-        writer.table_end(native)?;
+    if output.is_some() {
         Ok(None)
     } else {
         let mut block = ctx.block(BlockContent::Table { rows, header_rows }, src.clone())?;

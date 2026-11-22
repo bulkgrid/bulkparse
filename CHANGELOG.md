@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4 — 2026-11-22
+
+- Always render tables as GFM pipe tables across document formats and streaming output. Add empty headers where needed, retain merged-cell positions as blank cells, and flatten nested/block content into readable inline cell text. Structured JSON preserves spans, headers, and original blocks.
+- Preserve literal pipes inside code spans and keep single quantity tildes readable without unnecessary backslashes. Keep authored line breaks and positioned PDF fragment spacing consistent.
+- Share table placement between structured and streaming rendering, retain the allocation-free plain-cell path, and bound merged-table layout storage by column count.
+
 ## 0.1.3 — 2026-11-21
 
 - Reconstruct borderless PDF label/value tables from repeated geometric alignment, explicit units or currencies, and shared column gaps. Preserve aligned headings, empty heading cells, annotations, cell positions, and surrounding reading order.

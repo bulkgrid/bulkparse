@@ -89,7 +89,7 @@ fn xlsx_plain_cell_dedup_preserves_rich_run_boundaries() {
     }
 }
 #[test]
-fn xlsx_blank_merge_anchor_and_html_preserves_spans() {
+fn xlsx_blank_merge_anchor_preserves_grid_positions() {
     let b = xlsx(
         r#"<worksheet><sheetData><row r="2"><c r="C2" t="inlineStr"><is><t>tail</t></is></c></row></sheetData><mergeCells><mergeCell ref="A1:B2"/></mergeCells></worksheet>"#,
         &[],
@@ -98,7 +98,8 @@ fn xlsx_blank_merge_anchor_and_html_preserves_spans() {
     assert_eq!(rows(&r)[0][0].row_span, 2);
     assert_eq!(rows(&r)[0][0].col_span, 2);
     let m = r.to_markdown().text;
-    assert!(m.contains("rowspan=\"2\"") && m.contains("colspan=\"2\""));
+    assert!(m.contains("|  |  | tail |"), "{m}");
+    assert!(!m.contains("<table>"));
 }
 #[test]
 fn formulas_without_cache_are_explicitly_partial() {
@@ -484,7 +485,7 @@ fn xlsx_rich_merged_cells_safe_links_comments_and_number_sections() {
     let r = parse(&b, "rich.xlsx");
     let m = r.to_markdown().text;
     for value in [
-        "<strong>Rich &amp; safe</strong>",
+        "**Rich & safe**",
         "(12.5)",
         "ZERO",
         "Verify amount",
@@ -1052,7 +1053,7 @@ fn rtf_boundaries_define_spans_and_vertical_chains_end_at_gaps() {
     assert!(r.diagnostics.iter().any(|d| d.code == "rtf_merge_orphan"));
     let m = r.to_markdown().text;
     assert!(
-        m.contains("<th rowspan=\"2\">A</th>") && m.contains("orphan"),
+        m.contains("| A | B |  |\n| --- | --- | --- |\n|  | C | D |") && m.contains("orphan"),
         "{m}"
     );
 }
@@ -1082,7 +1083,7 @@ fn covered_merge_content_keeps_its_styles_and_original_provenance() {
     assert_eq!(t[0].len(), 1);
     assert_eq!(t[0][0].col_span, 2);
     assert_eq!(t[0][0].blocks[1].source.cell, Some(2));
-    assert!(r.to_markdown().text.contains("<strong>covered</strong>"));
+    assert!(r.to_markdown().text.contains("**covered**"));
     assert!(r
         .diagnostics
         .iter()
@@ -1097,12 +1098,11 @@ fn odf_cells_keep_lists_nested_tables_headers_and_line_breaks() {
     let r = parse(&b, "a.odt");
     let m = r.to_markdown().text;
     assert!(
-        m.contains("<th colspan=\"2\">Heading</th>")
-            && m.contains("<ul><li>")
-            && m.contains("&lt;tag&gt;<br>Beta"),
+        m.contains("| Heading |  |") && m.contains("| • Alpha \\<tag><br>Beta | Nested |"),
         "{m}"
     );
-    assert_eq!(m.matches("<table>").count(), 2);
+    assert_eq!(m.matches("<table>").count(), 0);
+    assert_eq!(m.matches("| --- | --- |").count(), 1);
     assert_eq!(m.matches("Nested").count(), 1);
 }
 fn slide(body: &str) -> Vec<u8> {
@@ -1158,7 +1158,7 @@ fn pptx_merged_header_and_rich_cell_lists_remain_structured() {
     let m = r.to_markdown().text;
     assert_eq!(rows(&r)[0].len(), 1);
     assert!(
-        m.contains("<th colspan=\"2\"><strong>Heading</strong></th>") && m.contains("<ul><li>"),
+        m.contains("| **Heading** |  |") && m.contains("| • Item | Value |"),
         "{m}"
     );
 }
@@ -1191,7 +1191,7 @@ fn rtf_escaped_line_endings_are_paragraphs_and_raw_newlines_are_not() {
     let b = b"{\\rtf1 Before\\\n\\trowd\\cellx100\\cellx200 A\\\nB\\cell C\\cell\\row After\\par}";
     let m = parse(b, "table.rtf").to_markdown().text;
     assert!(
-        m.contains("Before\n\n") && m.contains("A  <br>B") && m.contains("After"),
+        m.contains("Before\n\n") && m.contains("A<br>B") && m.contains("After"),
         "{m}"
     );
 }
@@ -1279,7 +1279,7 @@ fn word_rows_use_explicit_edges_and_preserve_merged_cell_content() {
     assert_eq!(t[1][0].col_span, 2);
     let m = r.to_markdown().text;
     assert!(
-        m.contains("<th colspan=\"3\"><p>A</p><p>B</p></th>") && m.ends_with("after\n"),
+        m.contains("| A<br>B |  |  |") && m.ends_with("after\n"),
         "{m}"
     );
     assert!(!r

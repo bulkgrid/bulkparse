@@ -47,95 +47,54 @@ impl<'a> Writer<'a> {
         }
         Ok(())
     }
-    pub fn table_start(&mut self, native: bool) -> io::Result<()> {
-        if native {
-            self.begin()?;
-            self.output.write_all(b"<table>\n")?;
-        }
-        Ok(())
+    pub fn table_diagnostics(&mut self, source: &crate::Source, spans: bool, header_rows: usize) {
+        table_diagnostics(&mut self.diagnostics, source, spans, header_rows);
     }
     pub fn table_row(
         &mut self,
-        row: &Vec<crate::Cell>,
+        cells: &[crate::Cell],
         index: usize,
-        header_rows: usize,
-        width: usize,
-        native: bool,
-        positioned: bool,
+        table: &mut TableState,
     ) -> io::Result<()> {
-        if native {
-            let text = native_table(
-                std::slice::from_ref(row),
-                usize::from(index < header_rows),
-                positioned,
-                &mut self.diagnostics,
-            );
-            self.output.write_all(
-                text.strip_prefix("<table>\n")
-                    .unwrap()
-                    .strip_suffix("</table>")
-                    .unwrap()
-                    .as_bytes(),
-            )
-        } else {
-            self.record(row, index, header_rows > 0, width)
+        if table.width == 0 {
+            return Ok(());
         }
-    }
-    pub fn table_end(&mut self, native: bool) -> io::Result<()> {
-        if native {
-            self.output.write_all(b"</table>\n")?;
+        if index == 0 {
+            self.begin()?;
+            if table.header_rows == 0 {
+                self.row(&[], table.width)?;
+                self.delimiter(table.width)?;
+            }
+        }
+        if !table.spans && !table.positioned {
+            self.row(cells, table.width)?;
+        } else {
+            let width = table.width;
+            let positioned = table.positioned;
+            let mut positions = table.positions(cells, index).peekable();
+            self.output.write_all(b"| ")?;
+            for column in 0..width {
+                if column > 0 {
+                    self.output.write_all(b" | ")?;
+                }
+                if positions.peek().is_some_and(|(c, _)| *c == column) {
+                    let (_, cell) = positions.next().unwrap();
+                    self.cell(cell, positioned)?;
+                }
+            }
+            self.output.write_all(b" |\n")?;
+        }
+        if index == 0 && table.header_rows > 0 {
+            self.delimiter(table.width)?;
         }
         Ok(())
     }
     pub fn block(&mut self, block: &Block) -> io::Result<()> {
         if let BlockContent::Table { rows, header_rows } = &block.content {
-            let native = (*header_rows == 0 && block.source.page.is_some())
-                || *header_rows > 1
-                || rows.iter().flatten().any(|c| {
-                    c.row_span > 1
-                        || c.col_span > 1
-                        || c.blocks.iter().any(|b| {
-                            !matches!(
-                                b.content,
-                                BlockContent::Paragraph { .. } | BlockContent::Heading { .. }
-                            )
-                        })
-                });
-            if native {
-                self.begin()?;
-                self.output.write_all(b"<table>\n")?;
-                for (i, row) in rows.iter().enumerate() {
-                    let text = native_table(
-                        std::slice::from_ref(row),
-                        usize::from(i < *header_rows),
-                        block.source.page.is_some() && block.source.part.is_none(),
-                        &mut self.diagnostics,
-                    );
-                    self.output.write_all(
-                        text.strip_prefix("<table>\n")
-                            .unwrap()
-                            .strip_suffix("</table>")
-                            .unwrap()
-                            .as_bytes(),
-                    )?;
-                }
-                return self.output.write_all(b"</table>\n");
-            }
-            let width = rows.iter().map(Vec::len).max().unwrap_or(0);
-            if width == 0 {
-                return Ok(());
-            }
-            // Preserve the renderer's diagnostic for externally supplied models
-            // containing invalid zero spans. Parser-produced spans are positive.
-            if rows
-                .iter()
-                .flatten()
-                .any(|c| c.col_span != 1 || c.row_span != 1)
-            {
-                self.diagnostics.push(Diagnostic::new("markdown_table_spans", "Merged cells are flattened to one GFM cell per source cell; use JSON to preserve spans.", block.source.clone(), true));
-            }
+            let mut table = TableState::for_rows(rows, *header_rows, &block.source);
+            self.table_diagnostics(&block.source, table.spans, *header_rows);
             for (i, row) in rows.iter().enumerate() {
-                self.record(row, i, *header_rows > 0, width)?;
+                self.table_row(row, i, &mut table)?;
             }
         } else {
             let text = blocks(std::slice::from_ref(block), &mut self.diagnostics);
@@ -162,19 +121,22 @@ impl<'a> Writer<'a> {
             } else {
                 self.row(&[], width)?;
             }
-            self.output.write_all(b"| ")?;
-            for i in 0..width {
-                if i > 0 {
-                    self.output.write_all(b" | ")?;
-                }
-                self.output.write_all(b"---")?;
-            }
-            self.output.write_all(b" |\n")?;
+            self.delimiter(width)?;
             if header {
                 return Ok(());
             }
         }
         self.row(cells, width)
+    }
+    fn delimiter(&mut self, width: usize) -> io::Result<()> {
+        self.output.write_all(b"| ")?;
+        for i in 0..width {
+            if i > 0 {
+                self.output.write_all(b" | ")?;
+            }
+            self.output.write_all(b"---")?;
+        }
+        self.output.write_all(b" |\n")
     }
     fn row(&mut self, cells: &[crate::Cell], width: usize) -> io::Result<()> {
         self.output.write_all(b"| ")?;
@@ -183,29 +145,105 @@ impl<'a> Writer<'a> {
                 self.output.write_all(b" | ")?;
             }
             if let Some(cell) = cells.get(i) {
-                if let [Block {
-                    content: BlockContent::Paragraph { inlines },
-                    ..
-                }] = cell.blocks.as_slice()
-                {
-                    if let [Inline::Text { text }] = inlines.as_slice() {
-                        // Plain spreadsheet/CSV values need no intermediate
-                        // Markdown strings. Escape directly into the writer,
-                        // preserving the same trimming, pipe and newline rules.
-                        plain_cell(self.output, text.trim_end())?;
-                        continue;
-                    }
-                }
-                let text = blocks_in(&cell.blocks, &mut self.diagnostics, TextContext::Cell);
-                let text = text
-                    .trim_end()
-                    .replace("\\|", "&#124;")
-                    .replace('|', "&#124;")
-                    .replace('\n', "<br>");
-                self.output.write_all(text.as_bytes())?;
+                self.cell(cell, false)?;
             }
         }
         self.output.write_all(b" |\n")
+    }
+    fn cell(&mut self, cell: &crate::Cell, positioned: bool) -> io::Result<()> {
+        if let [Block {
+            content: BlockContent::Paragraph { inlines },
+            ..
+        }] = cell.blocks.as_slice()
+        {
+            if let [Inline::Text { text }] = inlines.as_slice() {
+                // Keep the allocation-free path for ordinary CSV/workbook cells.
+                return plain_cell(self.output, text.trim_end());
+            }
+        }
+        let text = cell_blocks(&cell.blocks, &mut self.diagnostics, positioned);
+        write_cell_text(self.output, text.trim_end())
+    }
+}
+
+/// Retain only active row spans, never a second table-sized grid. Unmerged
+/// tables allocate no layout storage. Both streaming and model rendering use
+/// the same placement rules, independent of optional source coordinates.
+pub(crate) struct TableState {
+    width: usize,
+    header_rows: usize,
+    positioned: bool,
+    spans: bool,
+    occupied: Vec<usize>,
+}
+impl TableState {
+    pub fn new(width: usize, header_rows: usize, spans: bool, source: &crate::Source) -> Self {
+        Self {
+            width,
+            header_rows,
+            spans,
+            positioned: source.page.is_some() && source.part.is_none(),
+            occupied: Vec::new(),
+        }
+    }
+    fn for_rows(rows: &[Vec<crate::Cell>], header_rows: usize, source: &crate::Source) -> Self {
+        let spans = rows
+            .iter()
+            .flatten()
+            .any(|c| c.col_span != 1 || c.row_span != 1);
+        let mut table = Self::new(
+            rows.iter().map(Vec::len).max().unwrap_or(0),
+            header_rows,
+            spans,
+            source,
+        );
+        if spans {
+            for (index, row) in rows.iter().enumerate() {
+                let mut width = table.width;
+                for (column, cell) in table.positions(row, index) {
+                    width = width.max(column + cell.col_span.max(1) as usize);
+                }
+                table.width = width;
+            }
+            table.occupied.fill(0);
+        }
+        table
+    }
+    fn positions<'a, 'b>(
+        &'a mut self,
+        cells: &'b [crate::Cell],
+        index: usize,
+    ) -> impl Iterator<Item = (usize, &'b crate::Cell)> + 'a
+    where
+        'b: 'a,
+    {
+        let mut column = 0;
+        cells.iter().map(move |cell| {
+            while self.occupied.get(column).is_some_and(|&end| end > index) {
+                column += 1;
+            }
+            let start = column;
+            column += cell.col_span.max(1) as usize;
+            if cell.row_span > 1 {
+                self.occupied.resize(self.occupied.len().max(column), 0);
+                self.occupied[start..column].fill(index.saturating_add(cell.row_span as usize));
+            }
+            (start, cell)
+        })
+    }
+}
+
+fn table_diagnostics(
+    diagnostics: &mut Vec<Diagnostic>,
+    source: &crate::Source,
+    spans: bool,
+    header_rows: usize,
+) {
+    if spans {
+        diagnostics.push(Diagnostic::new("markdown_table_spans", "Merged cells are flattened into a GFM grid with blank covered positions; use JSON to preserve spans.", source.clone(), true));
+    }
+    if header_rows > 1 {
+        diagnostics.push(Diagnostic::new("markdown_table_headers", "Only the first header row is marked as a GFM header; remaining rows retain their text.", source.clone(), true));
     }
 }
 
@@ -215,13 +253,14 @@ enum TextContext {
     Inline,
     Heading,
     Cell,
+    CellFragment,
 }
 
 // Only a short line prefix can introduce a list/heading/quote: at most three
 // spaces followed by at most nine ordered-list digits. Inspect the pending
 // span and already-written output without rescanning an entire paragraph.
 fn line_prefix(out: &str, pending: &str, context: TextContext) -> Option<u8> {
-    if context == TextContext::Cell {
+    if matches!(context, TextContext::Cell | TextContext::CellFragment) {
         return None;
     }
     let mut bytes = pending.bytes().rev().chain(out.bytes().rev());
@@ -347,6 +386,9 @@ fn needs_escape(
     match b {
         // Inline delimiters remain protected, including when another inline
         // supplies their matching delimiter. Braces and ordinary ! are literal.
+        b'~' if matches!(context, TextContext::Cell | TextContext::CellFragment) => {
+            after.clone().any(|b| b == b'~')
+        }
         b'`' | b'*' | b'[' | b']' | b'|' | b'~' => true,
         b'\\' => after
             .clone()
@@ -414,6 +456,44 @@ fn needs_escape(
         }
         _ => false,
     }
+}
+
+// Pipes are parsed before inline markup in GFM. Text can use an entity,
+// but code spans need a backslash escape because entities stay literal there.
+fn write_cell_text(output: &mut dyn Write, text: &str) -> io::Result<()> {
+    let bytes = text.as_bytes();
+    let (mut start, mut i, mut slashes, mut code_fence) = (0, 0, 0, 0);
+    while i < bytes.len() {
+        let b = bytes[i];
+        if b == b'`' && (code_fence > 0 || slashes % 2 == 0) {
+            let run = bytes[i..].iter().take_while(|&&b| b == b'`').count();
+            if code_fence == 0 {
+                code_fence = run;
+            } else if code_fence == run {
+                code_fence = 0;
+            }
+            i += run;
+            slashes = 0;
+            continue;
+        }
+        if b == b'|' {
+            let remove = if code_fence > 0 { 0 } else { slashes % 2 };
+            output.write_all(&bytes[start..i - remove])?;
+            if code_fence > 0 {
+                output.write_all(b"\\|")?;
+            } else {
+                output.write_all(b"&#124;")?;
+            }
+            start = i + 1;
+        } else if b == b'\n' {
+            output.write_all(&bytes[start..i])?;
+            output.write_all(b"<br>")?;
+            start = i + 1;
+        }
+        slashes = if b == b'\\' { slashes + 1 } else { 0 };
+        i += 1;
+    }
+    output.write_all(&bytes[start..])
 }
 
 fn plain_cell(output: &mut dyn Write, text: &str) -> io::Result<()> {
@@ -585,9 +665,15 @@ fn inline_iter<'a>(
                 }
                 items.next();
             }
+            let child_context = if matches!(context, TextContext::Cell | TextContext::CellFragment)
+            {
+                context
+            } else {
+                TextContext::Inline
+            };
             let value = match &merged {
-                Some(children) => inline_iter(children.iter().copied(), TextContext::Inline),
-                None => inline_iter(children.iter(), TextContext::Inline),
+                Some(children) => inline_iter(children.iter().copied(), child_context),
+                None => inline_iter(children.iter(), child_context),
             };
             out.push_str(&marked(value, marker));
             // Whitespace followed by different content belongs outside the span.
@@ -612,7 +698,14 @@ fn inline_iter<'a>(
                 if safe_url(url) {
                     out.push_str(&format!(
                         "[{}]({})",
-                        inline_iter(children.iter(), TextContext::Inline),
+                        inline_iter(
+                            children.iter(),
+                            if matches!(context, TextContext::Cell | TextContext::CellFragment) {
+                                context
+                            } else {
+                                TextContext::Inline
+                            }
+                        ),
                         destination(url)
                     ));
                 } else {
@@ -640,7 +733,11 @@ fn inline_iter<'a>(
                     escape_into(alt, &mut out, context, items.clone());
                 }
             }
-            Inline::Break => out.push_str("  \n"),
+            Inline::Break => out.push_str(match context {
+                TextContext::Cell => "<br>",
+                TextContext::CellFragment => " ",
+                _ => "  \n",
+            }),
             Inline::Math { tex, display } => {
                 let d = if *display { "$$" } else { "$" };
                 out.push_str(&format!("{d}{tex}{d}"));
@@ -674,157 +771,95 @@ fn html_text(s: &str) -> String {
         .replace('<', "&lt;")
         .replace('>', "&gt;")
 }
-fn html_inlines(items: &[Inline]) -> String {
-    let mut out = String::new();
-    for item in items {
-        match item {
-            Inline::Text { text } => out.push_str(&html_text(text)),
-            Inline::Code { text } => out.push_str(&format!("<code>{}</code>", html_text(text))),
-            Inline::Strong { children } => {
-                out.push_str(&format!("<strong>{}</strong>", html_inlines(children)))
-            }
-            Inline::Emphasis { children } => {
-                out.push_str(&format!("<em>{}</em>", html_inlines(children)))
-            }
-            Inline::Strike { children } => {
-                out.push_str(&format!("<del>{}</del>", html_inlines(children)))
-            }
-            Inline::Link { url, children } => {
-                if safe_url(url) {
-                    out.push_str(&format!(
-                        "<a href=\"{}\">{}</a>",
-                        html_text(&destination(url)),
-                        html_inlines(children)
-                    ))
-                } else {
-                    out.push_str(&html_inlines(children))
-                }
-            }
-            Inline::Image { url, alt } => {
-                if safe_url(url) {
-                    let url = html_text(&destination(url));
-                    let alt = html_text(alt).replace('"', "&quot;");
-                    out.push_str(&format!("<img src=\"{url}\" alt=\"{alt}\">"));
-                } else {
-                    out.push_str(&html_text(alt));
-                }
-            }
-            Inline::Break => out.push_str("<br>"),
-            Inline::Math { tex, display } => {
-                let d = if *display { "$$" } else { "$" };
-                out.push_str(&format!("{d}{}{d}", html_text(tex)));
-            }
-            Inline::Anchor { id } => {
-                out.push_str(&format!("<a id=\"{}\"></a>", html_text(&destination(id))))
-            }
-        }
-    }
-    out
-}
 fn invisible_asset_block(block: &Block) -> bool {
     matches!(&block.content, BlockContent::Paragraph { inlines } | BlockContent::Heading { inlines, .. }
         if !inlines.is_empty() && inlines.iter().all(|i| matches!(i, Inline::Image { url, alt } if url.starts_with("asset:") && alt.is_empty())))
 }
 
-fn html_blocks(items: &[Block], diagnostics: &mut Vec<Diagnostic>) -> String {
+// GFM cells accept inline content only. Preserve text and inline formatting,
+// using line breaks for authored blocks and spaces for positioned PDF fragments.
+fn cell_blocks(items: &[Block], diagnostics: &mut Vec<Diagnostic>, positioned: bool) -> String {
     let mut out = String::new();
-    for b in items {
-        if invisible_asset_block(b) {
+    for block in items {
+        if invisible_asset_block(block) {
             continue;
         }
-        match &b.content {
-            BlockContent::Paragraph { inlines } => {
-                out.push_str(&format!("<p>{}</p>", html_inlines(inlines)))
+        let text = match &block.content {
+            BlockContent::Paragraph { inlines } | BlockContent::Heading { inlines, .. } => {
+                inline_iter(
+                    inlines.iter(),
+                    if positioned {
+                        TextContext::CellFragment
+                    } else {
+                        TextContext::Cell
+                    },
+                )
             }
-            BlockContent::Heading { level, inlines } => {
-                let l = level.clamp(&1, &6);
-                out.push_str(&format!("<h{l}>{}</h{l}>", html_inlines(inlines)));
-            }
-            BlockContent::Code { text, .. } | BlockContent::Raw { text, .. } => {
-                out.push_str(&format!("<pre><code>{}</code></pre>", html_text(text)))
-            }
-            BlockContent::Quote { blocks } => out.push_str(&format!(
-                "<blockquote>{}</blockquote>",
-                html_blocks(blocks, diagnostics)
-            )),
+            BlockContent::Quote { blocks } => cell_blocks(blocks, diagnostics, positioned),
             BlockContent::List { start, items } => {
-                if let Some(n) = start {
-                    out.push_str(&format!("<ol start=\"{n}\">"));
-                } else {
-                    out.push_str("<ul>");
+                let mut text = String::new();
+                for (i, item) in items.iter().enumerate() {
+                    if i > 0 {
+                        text.push_str("<br>");
+                    }
+                    if let Some(start) = start {
+                        use std::fmt::Write;
+                        let _ = write!(text, "{}. ", start.saturating_add(i as u64));
+                    } else {
+                        text.push_str("• ");
+                    }
+                    text.push_str(&cell_blocks(item, diagnostics, positioned));
                 }
-                for item in items {
-                    out.push_str(&format!("<li>{}</li>", html_blocks(item, diagnostics)));
-                }
-                out.push_str(if start.is_some() { "</ol>" } else { "</ul>" });
+                text
             }
             BlockContent::Table { rows, header_rows } => {
-                out.push_str(&native_table(rows, *header_rows, false, diagnostics))
+                let mut table = TableState::for_rows(rows, *header_rows, &block.source);
+                table_diagnostics(diagnostics, &block.source, table.spans, *header_rows);
+                let mut text = String::new();
+                let width = table.width;
+                for (i, row) in rows.iter().enumerate() {
+                    if i > 0 {
+                        text.push_str("<br>");
+                    }
+                    let mut positions = table.positions(row, i).peekable();
+                    for column in 0..width {
+                        if column > 0 {
+                            text.push_str(" / ");
+                        }
+                        if positions.peek().is_some_and(|(c, _)| *c == column) {
+                            let (_, cell) = positions.next().unwrap();
+                            text.push_str(&cell_blocks(&cell.blocks, diagnostics, positioned));
+                        }
+                    }
+                }
+                text
             }
-            BlockContent::ThematicBreak => out.push_str("<hr>"),
+            BlockContent::Code { text, .. } | BlockContent::Raw { text, .. } => {
+                let n = text.split(|c| c != '`').map(str::len).max().unwrap_or(0) + 1;
+                let fence = "`".repeat(n);
+                format!("{fence} {} {fence}", text.replace('\n', " "))
+            }
+            BlockContent::ThematicBreak => "—".into(),
+        };
+        let text = text.trim_end();
+        if text.trim().is_empty() {
+            continue;
+        }
+        if !out.is_empty() {
+            out.push_str(if positioned { " " } else { "<br>" });
+        }
+        if positioned {
+            for (i, word) in text.split_whitespace().enumerate() {
+                if i > 0 {
+                    out.push(' ');
+                }
+                out.push_str(word);
+            }
+        } else {
+            out.push_str(text);
         }
     }
     out
-}
-fn native_table(
-    rows: &[Vec<crate::Cell>],
-    header_rows: usize,
-    positioned_fragments: bool,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> String {
-    let mut rendered = String::from("<table>\n");
-    for (index, row) in rows.iter().enumerate() {
-        rendered.push_str("<tr>");
-        for cell in row {
-            let tag = if index < header_rows { "th" } else { "td" };
-            rendered.push('<');
-            rendered.push_str(tag);
-            if cell.col_span > 1 {
-                rendered.push_str(&format!(" colspan=\"{}\"", cell.col_span));
-            }
-            if cell.row_span > 1 {
-                rendered.push_str(&format!(" rowspan=\"{}\"", cell.row_span));
-            }
-            rendered.push('>');
-            // Bare page provenance describes positioned text fragments, not
-            // package-authored paragraph boundaries. Keep their existing spacing.
-            let mut visible = cell.blocks.iter().filter(|b| !invisible_asset_block(b));
-            let first = visible.next();
-            let single = visible.next().is_none();
-            let content = if positioned_fragments {
-                cell.blocks
-                    .iter()
-                    .map(|block| match &block.content {
-                        BlockContent::Paragraph { inlines }
-                        | BlockContent::Heading { inlines, .. } => {
-                            html_inlines(inlines).replace("<br>", " ")
-                        }
-                        _ => html_text(blocks(std::slice::from_ref(block), diagnostics).trim()),
-                    })
-                    .collect::<Vec<_>>()
-                    .join(" ")
-                    .split_whitespace()
-                    .collect::<Vec<_>>()
-                    .join(" ")
-            } else if let Some(Block {
-                content: BlockContent::Paragraph { inlines } | BlockContent::Heading { inlines, .. },
-                ..
-            }) = first.filter(|_| single)
-            {
-                html_inlines(inlines)
-                    .split_whitespace()
-                    .collect::<Vec<_>>()
-                    .join(" ")
-            } else {
-                html_blocks(&cell.blocks, diagnostics)
-            };
-            rendered.push_str(&content);
-            rendered.push_str(&format!("</{tag}>"));
-        }
-        rendered.push_str("</tr>\n");
-    }
-    rendered.push_str("</table>");
-    rendered
 }
 
 fn blocks(items: &[Block], diagnostics: &mut Vec<Diagnostic>) -> String {
@@ -847,7 +882,7 @@ fn blocks_in(items: &[Block], diagnostics: &mut Vec<Diagnostic>, context: TextCo
                 "#".repeat((*level).clamp(1, 6) as usize),
                 inline_iter(
                     content.iter(),
-                    if context == TextContext::Cell {
+                    if matches!(context, TextContext::Cell | TextContext::CellFragment) {
                         context
                     } else {
                         TextContext::Heading
@@ -885,70 +920,12 @@ fn blocks_in(items: &[Block], diagnostics: &mut Vec<Diagnostic>, context: TextCo
                 }
                 lines.join("\n")
             }
-            BlockContent::Table { rows, header_rows }
-                if (*header_rows == 0 && block.source.page.is_some())
-                    || *header_rows > 1
-                    || rows.iter().flatten().any(|c| {
-                        c.row_span > 1
-                            || c.col_span > 1
-                            || c.blocks.iter().any(|b| {
-                                !matches!(
-                                    b.content,
-                                    BlockContent::Paragraph { .. } | BlockContent::Heading { .. }
-                                )
-                            })
-                    }) =>
-            {
-                native_table(
-                    rows,
-                    *header_rows,
-                    block.source.page.is_some() && block.source.part.is_none(),
-                    diagnostics,
-                )
-            }
-            BlockContent::Table { rows, header_rows } => {
-                let width = rows.iter().map(Vec::len).max().unwrap_or(0);
-                if rows.is_empty() || width == 0 {
-                    continue;
-                }
-                if rows
-                    .iter()
-                    .flatten()
-                    .any(|c| c.col_span != 1 || c.row_span != 1)
-                {
-                    diagnostics.push(Diagnostic::new("markdown_table_spans", "Merged cells are flattened to one GFM cell per source cell; use JSON to preserve spans.", block.source.clone(), true));
-                }
-                if *header_rows > 1 {
-                    diagnostics.push(Diagnostic::new("markdown_table_headers", "Only the first header row is marked as a GFM header; remaining rows retain their text.", block.source.clone(), true));
-                }
-                let mut rendered = String::new();
-                let row_text =
-                    |cells: &[crate::Cell], diagnostics: &mut Vec<Diagnostic>| -> String {
-                        let mut values = Vec::new();
-                        for cell in cells {
-                            let text = blocks_in(&cell.blocks, diagnostics, TextContext::Cell);
-                            // Inline rendering already escapes raw HTML and pipes.
-                            let text = text
-                                .trim_end()
-                                .replace("\\|", "&#124;")
-                                .replace('|', "&#124;")
-                                .replace('\n', "<br>");
-                            values.push(text);
-                        }
-                        values.resize(width, String::new());
-                        format!("| {} |\n", values.join(" | "))
-                    };
-                let first = if *header_rows > 0 {
-                    row_text(&rows[0], diagnostics)
-                } else {
-                    format!("| {} |\n", vec![""; width].join(" | "))
-                };
-                rendered.push_str(&first);
-                rendered.push_str(&format!("| {} |\n", vec!["---"; width].join(" | ")));
-                for row in rows.iter().skip(usize::from(*header_rows > 0)) {
-                    rendered.push_str(&row_text(row, diagnostics));
-                }
-                rendered.trim_end().to_owned()
+            BlockContent::Table { .. } => {
+                let mut bytes = Vec::new();
+                let mut writer = Writer::new(&mut bytes);
+                writer.block(block).expect("Vec writes cannot fail");
+                diagnostics.extend(writer.diagnostics);
+                String::from_utf8(bytes).expect("renderer writes UTF-8")
             }
         };
         if content.is_empty()
